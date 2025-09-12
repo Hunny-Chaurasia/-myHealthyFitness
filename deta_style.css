@@ -422,12 +422,6 @@ h2,
         height: 100%;
         
     }
-
-        .Workouts-grid{
-        grid-template-columns: 1fr 1fr;
-            width:100%;
-    }
-            
     #Home_Data {
         grid-template-columns: 1fr;
     }
@@ -1147,7 +1141,6 @@ h2,
     #Home,
     #Workouts,
     #Nutrition,
-    #Workouts,
     #Progress,
     #Achivements,
     #Chatbot,
@@ -1199,7 +1192,6 @@ h2,
 #Home,
     #Workouts,
     #Nutrition,
-    #Workouts,
     #Progress,
     #Achivements,
     #Chatbot,
@@ -1207,6 +1199,9 @@ h2,
         position: relative;
         left: 0vw;
         width: 100vw;
+    }
+    .Workouts-grid{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -1234,4 +1229,3 @@ hr {
     width: 3vw;
     border-radius: 3px;
 }
-
