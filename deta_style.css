@@ -422,6 +422,12 @@ h2,
         height: 100%;
         
     }
+
+        .Workouts-grid{
+        grid-template-columns: 1fr 1fr;
+            width:100%;
+    }
+            
     #Home_Data {
         grid-template-columns: 1fr;
     }
@@ -1228,3 +1234,4 @@ hr {
     width: 3vw;
     border-radius: 3px;
 }
+
