@@ -62,13 +62,14 @@ body {
     background-color: #f2f3f3;
 }
 
-.bottom-nav .subtitle2{
-    color:rgb(129, 126, 126);
-    font-weight:lighter ;
+.bottom-nav .subtitle2 {
+    color: rgb(129, 126, 126);
+    font-weight: lighter;
     text-align: center;
     /* margin: 0; */
 }
-.bottom-nav p{
+
+.bottom-nav p {
     text-align: center;
     padding: auto;
     margin: auto;
@@ -80,19 +81,24 @@ body {
     background: linear-gradient(135deg, #218fa0, #21a027);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* For non-webkit browsers */
     background-clip: text;
     color: transparent;
     font-weight: bolder;
-    /* padding: 3%; */
     margin: auto;
     padding-top: 10%;
     padding-bottom: 3%;
-
 }
+
+#top-nav {
+    display: none;
+}
+
+#left-nav {
+    display: block;
+}
+
 /* Header */
 .header {
-
     text-align: center;
     position: relative;
     width: calc(100vw - 20vw);
@@ -109,61 +115,39 @@ body {
     opacity: 0.9;
 }
 
-.offline-indicator {
-    position: relative;
-    top: 2vh;
-    left: 50vh;
-    background: #27ae60;
-    color: white;
-    padding: 1vh 4vh;
-    border-radius: 5vh;
-    font-size: 1.5vh;
-    margin-bottom: 3vh;
-    width: fit-content;
-}
-
 /* Navigation */
 .bottom-nav {
     position: fixed;
     bottom: 0;
     top: 0%;
     left: 0%;
-    /* transform: translateX(-50%); */
     width: 20vw;
-    /* max-width: 20vw; */
     background: white;
+    padding-bottom: 2vh;
+    height: 100vh;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+.nav {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    height: 100vh;
-    /* padding: 10px 0; */
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    /* padding: 5%; */
-    /* padding: 0 2vw; */
-
+    flex-wrap: wrap;
 }
-
 .nav-item {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* align-items: center; */
-    /* justify-content: center; */
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 8px;
     width: 90%;
     text-align: left;
-    padding-left:AUTO ;
+    padding-left: AUTO;
     margin: auto;
-
-    /* padding-left: 5rem; */
-
 }
 
 .nav-item:hover {
     color: #ffef08;
-    
+
 }
 
 .nav-icon {
@@ -192,41 +176,47 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 
 }
-data{
+
+data {
     height: 5vh;
 }
 
-#data-item1{
-    border-bottom: 4px solid  #21a027;
+#data-item1 {
+    border-bottom: 4px solid #21a027;
 }
 
-#data-item2{
-    border-bottom: 4px solid  #f58383;
+#data-item2 {
+    border-bottom: 4px solid #f58383;
 }
 
-#data-item3{
-    border-bottom: 4px solid  #42beeb;
+#data-item3 {
+    border-bottom: 4px solid #42beeb;
 }
 
-#data-item4{
-    border-bottom: 4px solid  #a07c21;
+#data-item4 {
+    border-bottom: 4px solid #a07c21;
 }
 
-#data-item1 , #data-item2 , #data-item3 , #data-item4{
+#data-item1,
+#data-item2,
+#data-item3,
+#data-item4 {
     width: 20%;
     height: 20vh;
     border-radius: 15px;
     background-color: white;
 }
+
 h2,
 .subtitle2,
 .Level-Progress {
     text-align: left;
     margin-bottom: 3vh;
     margin-top: 1vh;
-    
+
 }
 
 .avatar {
@@ -248,6 +238,7 @@ h2,
     align-items: center;
     padding: 1vh;
     margin-bottom: 1vh;
+    flex-wrap: wrap;
 }
 
 #details {
@@ -263,7 +254,7 @@ h2,
 }
 
 .level-badge {
-        background: linear-gradient(135deg, #ff6b6b, #e74c3c);
+    background: linear-gradient(135deg, #ff6b6b, #e74c3c);
     color: white;
     padding: 8px 16px;
     border-radius: 20px;
@@ -289,7 +280,7 @@ h2,
     color: #904c3b;
 }
 
-#custom-btn , 
+#custom-btn,
 .continue-streak-btn,
 .start-learning-btn,
 #Quest-btn,
@@ -305,13 +296,13 @@ h2,
     font-size: 2vh;
     font-weight: bold;
     cursor: pointer;
-    transition: transf
-    orm 0.2s;
+    transition: transf orm 0.2s;
     margin-top: 2vh;
     box-shadow: 0 4px 15px rgba(0, 184, 148, 0.3);
     /* align-self: baseline; */
     word-wrap: break-word;
 }
+
 .continue-streak-btn:hover,
 .start-learning-btn:hover,
 .Join-Team-Quest:hover,
@@ -323,11 +314,19 @@ h2,
     box-shadow: 0 4px 15px rgba(3, 11, 9, 0.844);
 }
 
-.continue-streak-btn{
-    border-radius: 2px;
+.Achievers {
+    border: 2px solid rgba(0, 0, 0, 0.532);
+    border-radius: 15px;
 }
+
+.continue-streak-btn {
+    border-radius: 2px;
+
+}
+
 #Quest-btn {
     width: 100%;
+
 }
 
 .progress-card,
@@ -405,7 +404,8 @@ h2,
 
 #Home_Data {
     display: grid;
-    gap: 15px; /* optional: adds spacing between grid items */
+    gap: 15px;
+    /* optional: adds spacing between grid items */
 }
 
 /* Laptop/Desktop (≥1024px): 2 grids (left double size of right) */
@@ -417,27 +417,179 @@ h2,
 
 /* Tablet/Mobile (≤1023px): 1 grid (stacked full width) */
 @media (max-width: 1023px) {
+    .nav {
+        flex-direction : row;
+        height: 100%;
+        
+    }
     #Home_Data {
         grid-template-columns: 1fr;
     }
+
+    body {
+        word-wrap: break-word;
+        height: 100vh;
+
+    }
+
+    .bottom-nav {
+        word-wrap: break-word;
+        position: fixed;
+        bottom: 0%;
+        background: white;
+        height: fit-content;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+
+    }
+
+    .screen {
+        word-wrap: break-word;
+        display: none;
+        width: 100%;
+        min-height: 100%;
+        background-color: #f2f3f3;
+    }
+
+    #Home,
+    #Workouts,
+    #Nutrition,
+    #Workouts,
+    #Progress,
+    #Achivements,
+    #Chatbot,
+    #Settings {
+        position: relative;
+        left: 0vw;
+        width: 100vw;
+        word-wrap: break-word;
+    }
+
+    #screen_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0vw;
+    }
+
+    .container {
+        position: fixed;
+        width: 100%;
+        /* height: 100vh; */
+        overflow-y: auto;
+        /* allows scrolling inside container */
+        background: #2626261e;
+        background-color: #f2f3f3;
+    }
+
+    .header {
+
+        text-align: center;
+        position: relative;
+        width: 100vw;
+
+    }
+
+    .nav-text {
+        display: block;
+        font-size: small;
+        word-wrap: break-word;
+        width: 100%;
+        flex-shrink: 0;
+        flex-direction: column;
+
+    }
+
+    #fitness-pro {
+        padding: 0;
+        padding-top: 3%;
+    }
+
+    #screen_container {
+        display: flex;
+        flex-direction: column;
+        /* left: 20vw; */
+        /* max-width:calc(100vw-20vw); */
+        width: 100%;
+        padding-left: 0vw;
+        height: 100vh;
+    }
+
+    .bottom-nav p {
+        padding: 0;
+    }
+
+    .nav-item,
+    .nav-icon,
+    .subtitle2 {
+        word-wrap: break-word;
+        font-size: x-small;
+        padding: 0;
+    }
+
+    .nav-text {
+        font-size: 2vh;
+        font-weight: 500;
+        /* width: 14vw; */
+        text-align: left;
+        /* border: 2px solid  ; */
+    }
+
+    
+    hr {
+        display: none;
+    }
+
+    .nav-item,
+    .nav-icon,
+    .subtitle2 {
+        word-wrap: break-word;
+        font-size: 2VH;
+        width: fit-content;
+    }
+
+
+    #fitnes-pro {
+        height: 0;
+    }
 }
 
-#avatar1{
-    background: linear-gradient(135deg , rgb(1, 159, 1) , rgb(2, 235, 2));
+#top-nav {
+    display: block;
 }
-#avatar2{
-    background: linear-gradient(135deg , #e74c3c , #dc9991);
+
+#left-nav {
+    display: none;
 }
-#avatar3{
-    background: linear-gradient(135deg , rgb(1, 138, 159) , rgb(85, 219, 239));
+
+
+
+
+#avatar1 {
+    background: linear-gradient(135deg, rgb(1, 159, 1), rgb(2, 235, 2));
 }
-#avatar4{
-    background: linear-gradient(135deg , rgb(159, 146, 1) , rgb(220, 235, 2));
+
+#avatar2 {
+    background: linear-gradient(135deg, #e74c3c, #dc9991);
+}
+
+#avatar3 {
+    background: linear-gradient(135deg, rgb(1, 138, 159), rgb(85, 219, 239));
+}
+
+#avatar4 {
+    background: linear-gradient(135deg, rgb(159, 146, 1), rgb(220, 235, 2));
 }
 
 /* Workout Screen */
 
-#Workouts  , #Nutrition , #Workouts , #Progress , #Achivements , #Chatbot , #Settings {
+#Workouts,
+#Nutrition,
+#Workouts,
+#Progress,
+#Achivements,
+#Chatbot,
+#Settings {
     position: relative;
     left: 20vw;
     width: calc(100vw - 21vw);
@@ -468,7 +620,7 @@ h2,
     border-color: #3498db;
 }
 
-.workout-image img{
+.workout-image img {
     height: 10vh;
 }
 
@@ -482,7 +634,7 @@ h2,
     display: inline-block;
 }
 
-#custom-workout{
+#custom-workout {
     height: 40vh;
     width: 100%;
     background-color: white;
@@ -493,6 +645,7 @@ h2,
     justify-content: center;
     align-items: center;
 }
+
 /* Progress Screen */
 .Progress-stats {
     display: flex;
@@ -551,7 +704,11 @@ h2,
     font-weight: bold;
 }
 
-#today-Nutrition-card{
+.achieved {
+    font-size: 4vh;
+}
+
+#today-Nutrition-card {
     height: fit-content;
     width: 100%;
     background-color: #358acc;
@@ -635,7 +792,7 @@ h2,
 }
 
 .points-earned {
-        background: linear-gradient(135deg, #21a027, #21a027);
+    background: linear-gradient(135deg, #21a027, #21a027);
     color: white;
     padding: 10px;
     border-radius: 8px;
@@ -670,7 +827,7 @@ h2,
 
 /* Chatbot Screen */
 #Chatbot,
-#Achievements {
+#Achivements {
     background: linear-gradient(135deg, #e0f7fa, #ffffff);
     border-radius: 12px;
     padding: 20px;
@@ -680,7 +837,8 @@ h2,
     width: calc(100vw - 20vw);
 
 }
-#Achievements H3,
+
+#Achivements H3,
 #Chatbot h3 {
     font-size: 5vh;
     color: #00796b;
@@ -689,7 +847,7 @@ h2,
 
 }
 
-#Achievements P ,
+#Achivements P,
 #Chatbot p {
     font-size: 16px;
     color: #37474f;
@@ -736,7 +894,7 @@ h2,
 
 /* SETTINGS COPY */
 /* SETTINGS SCREEN */
-#Settings{
+#Settings {
     width: calc(100vw - 20vw);
     position: relative;
     left: 20vw;
@@ -979,6 +1137,25 @@ h2,
     .info-box {
         margin: 12px 15px;
     }
+
+    #Home,
+    #Workouts,
+    #Nutrition,
+    #Workouts,
+    #Progress,
+    #Achivements,
+    #Chatbot,
+    #Settings {
+        position: relative;
+        left: 0vw;
+        width: 98vw;
+        height: 100vh;
+        overflow-x: hidden;
+        /* top: 20vh; */
+        padding-top: 15vh;
+    }
+
+
 }
 
 @media (max-width: 480px) {
@@ -1013,24 +1190,40 @@ h2,
     .toggle-switch.active .toggle-slider {
         transform: translateX(18px);
     }
+#Home,
+    #Workouts,
+    #Nutrition,
+    #Workouts,
+    #Progress,
+    #Achivements,
+    #Chatbot,
+    #Settings {
+        position: relative;
+        left: 0vw;
+        width: 100vw;
+    }
 }
 
-hr{
+hr {
     width: 100%;
     color: #28a745;
     border-style: solid;
 }
 
-.workouts-streak{
+.workouts-streak {
     border-radius: 5px;
     width: 22%;
     padding: 4%;
-    background:linear-gradient(135deg ,rgb(249, 60, 85) , rgb(218, 147, 147));
+    background: linear-gradient(135deg, rgb(249, 60, 85), rgb(218, 147, 147));
     /* height: 40%; */
-    color:whitesmoke;
+    color: whitesmoke;
     font-size: 15%;
 }
-#avatar1 , #avatar2 , #avatar3 , #avatar4{
+
+#avatar1,
+#avatar2,
+#avatar3,
+#avatar4 {
     height: 3vw;
     width: 3vw;
     border-radius: 3px;
