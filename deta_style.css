@@ -127,6 +127,7 @@ body {
     height: 100vh;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .nav {
     height: 100vh;
     display: flex;
@@ -135,6 +136,7 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
 .nav-item {
     cursor: pointer;
     transition: all 0.3s ease;
@@ -180,8 +182,27 @@ body {
 
 }
 
-data {
-    height: 5vh;
+#data {
+    display: flex;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#data-item1,
+#data-item2,
+#data-item3,
+#data-item4 {
+    flex: 1;
+    height: 140px;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 }
 
 #data-item1 {
@@ -197,17 +218,95 @@ data {
 }
 
 #data-item4 {
-    border-bottom: 4px solid #a07c21;
+    border-bottom: 4px solid #ffc107;
 }
 
-#data-item1,
-#data-item2,
-#data-item3,
-#data-item4 {
-    width: 20%;
-    height: 20vh;
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#avatar1 {
+    background-color: #21a027;
+}
+
+#avatar2 {
+    background-color: #f58383;
+}
+
+#avatar3 {
+    background-color: #42beeb;
+}
+
+#avatar4 {
+    background-color: #ffc107;
+}
+
+.percent {
+    background-color: #e8f5e8;
+    color: #21a027;
+    padding: 4px 8px;
     border-radius: 15px;
-    background-color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.percent2 {
+    background-color: #ffe8e8;
+    color: #f58383;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.percent3 {
+    background-color: #e8f4fd;
+    color: #42beeb;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.percent4 {
+    background-color: #fff8e1;
+    color: #ffc107;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.subtitle3 {
+    color: #888;
+    font-size: 14px;
+    margin: 10px 0 5px 0;
+    font-weight: 500;
+}
+
+.main-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.unit {
+    font-size: 14px;
+    color: #888;
+    font-weight: 400;
 }
 
 h2,
@@ -216,6 +315,7 @@ h2,
     text-align: left;
     margin-bottom: 3vh;
     margin-top: 1vh;
+    word-break: break-all;
 
 }
 
@@ -279,7 +379,7 @@ h2,
 #details-icons-badges {
     color: #904c3b;
 }
-
+.log-btn,
 #custom-btn,
 .continue-streak-btn,
 .start-learning-btn,
@@ -302,7 +402,7 @@ h2,
     /* align-self: baseline; */
     word-wrap: break-word;
 }
-
+.log-btn:hover
 .continue-streak-btn:hover,
 .start-learning-btn:hover,
 .Join-Team-Quest:hover,
@@ -418,10 +518,11 @@ h2,
 /* Tablet/Mobile (≤1023px): 1 grid (stacked full width) */
 @media (max-width: 1023px) {
     .nav {
-        flex-direction : row;
+        flex-direction: row;
         height: 100%;
-        
+
     }
+
     #Home_Data {
         grid-template-columns: 1fr;
     }
@@ -535,7 +636,7 @@ h2,
         /* border: 2px solid  ; */
     }
 
-    
+
     hr {
         display: none;
     }
@@ -622,6 +723,7 @@ h2,
 
 .workout-image img {
     height: 10vh;
+    width: 10VH;
 }
 
 .download-status {
@@ -1154,10 +1256,61 @@ h2,
         padding-top: 15vh;
     }
 
+    .Workouts-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
 
 }
 
 @media (max-width: 480px) {
+    .settings-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .section-header {
+        padding: 15px;
+    }
+
+    .setting-item {
+        padding: 14px 15px;
+    }
+
+    .logout-btn {
+        width: calc(100% - 30px);
+        margin: 20px 15px;
+    }
+
+    .info-box {
+        margin: 12px 15px;
+    }
+
+    #Home,
+    #Workouts,
+    #Nutrition,
+    #Progress,
+    #Achivements,
+    #Chatbot,
+    #Settings {
+        position: relative;
+        left: 0vw;
+        width: 98vw;
+        height: 100vh;
+        overflow-x: hidden;
+        /* top: 20vh; */
+        padding-top: 15vh;
+    }
+
+
     .setting-item {
         padding: 12px 15px;
     }
@@ -1189,7 +1342,8 @@ h2,
     .toggle-switch.active .toggle-slider {
         transform: translateX(18px);
     }
-#Home,
+
+    #Home,
     #Workouts,
     #Nutrition,
     #Progress,
@@ -1200,8 +1354,9 @@ h2,
         left: 0vw;
         width: 100vw;
     }
-    .Workouts-grid{
-        grid-template-columns: 1fr 1fr;
+
+    .Workouts-grid {
+        grid-template-columns: 1fr;
     }
 }
 
