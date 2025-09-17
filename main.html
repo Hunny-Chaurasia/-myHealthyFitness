@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitness Pro | @myHealthyFitness</title>
+  <title>Motion Mentor | @myMotionMentor</title>
   <link rel="stylesheet" href="deta_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
 </head>
 
@@ -25,38 +26,26 @@
           <div id="details" class="flex">
             <div id="details-icons-score">
               <!-- Leaf SVG for Calories -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
-                style="vertical-align: middle; margin-right: 4px;">
-                <path
-                  d="M8 0C5.243 0 3 2.243 3 5c0 3.75 5 11 5 11s5-7.25 5-11c0-2.757-2.243-5-5-5zM8 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
-              </svg>
+              <i class="fa-solid fa-cookie-bite"></i><br>
               0 Calories
             </div>
             <div id="details-icons-badges">
               <!-- Trophy SVG for Workouts -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
-                style="vertical-align: middle; margin-right: 4px;">
-                <path
-                  d="M3 2a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h1v3H5v1h6v-1h-2v-3h1a3 3 0 0 0 3-3V3a1 1 0 0 0-1-1H3zm1 3v-2h8v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" />
-              </svg>
+              <i class="fa-solid fa-person-running"></i><br>
               0 Workouts
             </div>
             <div id="details-icons-completion">
               <!-- Target SVG for Streak -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
-                style="vertical-align: middle; margin-right: 4px;">
-                <path d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0-1A6 6 0 1 1 8 2a6 6 0 0 1 0 12z" />
-                <path d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 1a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
-                <circle cx="8" cy="8" r="1" />
-              </svg>
+              <i class="fa-solid fa-bolt-lightning"></i><br>
               0 Streak
             </div>
+        
           </div>
 
 
-          <div style=" margin-top: 3vh; justify-content: space-between;align-items: center;">
-            <p>Fitness Level</p>
-            <p>10/100px</p>
+          <div style="margin-top: 3vh; justify-content: space-between;align-items: center;">
+            <div class="flex"  style="color: aliceblue;"><p>Fitness Level</p>
+            <p>10/100px</p></div>
             <div class="progress-bar">
               <div class="progress-fill" style="width: 60%"> </div>
             </div>
@@ -65,157 +54,157 @@
       </div>
       <div id="data" class="flex">
         <div id="data-item1">
-            <div class="top-section">
-                <div id="avatar1" class="avatar">👟</div>
-                <div class="percent">📈 12%</div>
-            </div>
-            <p class="subtitle3">Steps Today</p>
-            <p class="main-value">8,549 <span class="unit">steps</span></p>
+          <div class="top-section">
+            <div id="avatar1" class="avatar"><i class="fa-solid fa-shoe-prints"></i></div>
+            <div class="percent"><i class="fa-solid fa-chart-column"></i> 12%</div>
+          </div>
+          <p class="subtitle3">Steps Today</p>
+          <p class="main-value">8,549 <span class="unit">steps</span></p>
         </div>
-        
+
         <div id="data-item2">
-            <div class="top-section">
-                <div id="avatar2" class="avatar">🔥</div>
-                <div class="percent2">📈 8%</div>
-            </div>
-            <p class="subtitle3">Calories Burned</p>
-            <p class="main-value">342 <span class="unit">kcal</span></p>
+          <div class="top-section">
+            <div id="avatar2" class="avatar"><i class="fa-solid fa-fire"></i> </div>
+            <div class="percent2"><i class="fa-solid fa-chart-column"></i> 8%</div>
+          </div>
+          <p class="subtitle3">Calories Burned</p>
+          <p class="main-value">342 <span class="unit">kcal</span></p>
         </div>
-        
+
         <div id="data-item3">
-            <div class="top-section">
-                <div id="avatar3" class="avatar">💧</div>
-                <div class="percent3">📉 5%</div>
-            </div>
-            <p class="subtitle3">Water Intake</p>
-            <p class="main-value">6.2 <span class="unit">L</span></p>
+          <div class="top-section">
+            <div id="avatar3" class="avatar"><i class="fa-solid fa-bottle-water"></i></div>
+            <div class="percent3">📉 5%</div>
+          </div>
+          <p class="subtitle3">Water Intake</p>
+          <p class="main-value">6.2 <span class="unit">L</span></p>
         </div>
-        
+
         <div id="data-item4">
-            <div class="top-section">
-                <div id="avatar4" class="avatar">😴</div>
-                <div class="percent4">📈 15%</div>
-            </div>
-            <p class="subtitle3">Sleep</p>
-            <p class="main-value">7.8 <span class="unit">hrs</span></p>
+          <div class="top-section">
+            <div id="avatar4" class="avatar"><i class="fa-solid fa-bed"></i></div>
+            <div class="percent4"><i class="fa-solid fa-chart-column"></i> 15%</div>
+          </div>
+          <p class="subtitle3">Sleep</p>
+          <p class="main-value">7.8 <span class="unit">hrs</span></p>
         </div>
-    </div>
-        <div id="Home_Data">
-          <div>
-            <div class="progress-card">
-              <h3>📊 This Week's Progress</h3>
-              <p>You've completed 3 out of 5 planned workouts this week.</p>
+      </div>
+      <div id="Home_Data">
+        <div>
+          <div class="progress-card">
+            <h3><i class="fa-solid fa-chart-column"></i>This Week's Progress</h3>
+            <p>You've completed 3 out of 5 planned workouts this week.</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 60%"></div>
+            </div> <small>2 more workouts to unlock the <span id="badge-name">"Consistency Champion" </span> badge!
+              <i class="fa-solid fa-trophy"></i></small>
+          </div>
+          <div class="progress-card ">
+            <h3><i class="fa-solid fa-fire"></i> Workouts Streak</h3>
+            <div class="flex">
+              <div class="workouts-streak">12</div>
+              <h3>Days in a row!</h3>
+              <p>Keep the momentum going....</p>
+            </div> <button class="continue-streak-btn" onclick="showLesson()"> <i class="fa-solid fa-rocket"></i> Continue Streak </button>
+          </div>
+          <div class="progress-card">
+            <h3><span class="challenge-icon">&#9876;</span> Active Callenges</h3>
+            <div class="Challenge-card">
+              <h3>30-Day Cardio Blast</h3>
+              <p class="subtitle3">Complete 30 minutes of Cardio For 30 Minutes of Trait.</p>
+              <div class="flex">
+                <div><span class="challenge-icon"><i class="fa-solid fa-trophy"></i></span> 250pts</div>
+                <div><span class="challenge-icon"><i class="fa-solid fa-people-line"></i></span>1250 joined</div>
+                <div><span class="challenge-icon"><i class="fa-solid fa-user-clock"></i></span>3 days left</div>
+              </div> <small>Your Progress 60%</small>
               <div class="progress-bar">
                 <div class="progress-fill" style="width: 60%"></div>
-              </div> <small>2 more workouts to unlock the <span id="badge-name">"Consistency Champion" </span> badge!
-                🏆</small>
+              </div> <button class="Join-Challenge-btn" onclick="showLesson()"> Join Challenge </button>
             </div>
-            <div class="progress-card ">
-              <h3>🔥 Workouts Streak</h3>
+            <div class="Challenge-card">
+              <h3>30-Day Cardio Blast</h3>
+              <p class="subtitle3">Complete 30 minutes of Cardio For 30 Minutes of Trait.</p>
               <div class="flex">
-                <div class="workouts-streak">12</div>
-                <h3>Days in a row!</h3>
-                <p>Keep the momentum going....</p>
-              </div> <button class="continue-streak-btn" onclick="showLesson()"> 🚀 Continue Streak </button>
+                <div><span class="challenge-icon"><i class="fa-solid fa-trophy"></i></span> 250pts</div>
+                <div><span class="challenge-icon"><i class="fa-solid fa-people-line"></i></span>1250 joined</div>
+                <div><span class="challenge-icon"><i class="fa-solid fa-user-clock"></i></span>3 days left</div>
+              </div> <small>Your Progress 60%</small>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div> <button class="Join-Challenge-btn" onclick="showLesson()"> Join Challenge </button>
             </div>
-            <div class="progress-card">
-              <h3><span class="challenge-icon">&#9876;</span> Active Callenges</h3>
-              <div class="Challenge-card">
-                <h3>30-Day Cardio Blast</h3>
-                <p class="subtitle3">Complete 30 minutes of Cardio For 30 Minutes of Trait.</p>
-                <div class="flex">
-                  <div><span class="challenge-icon">🏆</span> 250pts</div>
-                  <div><span class="challenge-icon">&#128101;</span>1250 joined</div>
-                  <div><span class="challenge-icon">&#9200;</span>3 days left</div>
-                </div> <small>Your Progress 60%</small>
-                <div class="progress-bar">
-                  <div class="progress-fill" style="width: 60%"></div>
-                </div> <button class="Join-Challenge-btn" onclick="showLesson()"> Join Challenge </button>
-              </div>
-              <div class="Challenge-card">
-                <h3>30-Day Cardio Blast</h3>
-                <p class="subtitle3">Complete 30 minutes of Cardio For 30 Minutes of Trait.</p>
-                <div class="flex">
-                  <div><span class="challenge-icon">🏆</span> 250pts</div>
-                  <div><span class="challenge-icon">&#128101;</span>1250 joined</div>
-                  <div><span class="challenge-icon">&#9200;</span>3 days left</div>
-                </div> <small>Your Progress 60%</small>
-                <div class="progress-bar">
-                  <div class="progress-fill" style="width: 60%"></div>
-                </div> <button class="Join-Challenge-btn" onclick="showLesson()"> Join Challenge </button>
-              </div>
-              <div class="Challenge-card">
-                <h3>30-Day Cardio Blast</h3>
-                <p class="subtitle3">Complete 30 minutes of Cardio For 30 Minutes of Trait.</p>
-                <div class="flex">
-                  <div><span class="challenge-icon">🏆</span> 250pts</div>
-                  <div><span class="challenge-icon">&#128101;</span>1250 joined</div>
-                  <div><span class="challenge-icon">&#9200;</span>3 days left</div>
-                </div> <small>Your Progress 60%</small>
-                <div class="progress-bar">
-                  <div class="progress-fill" style="width: 60%"></div>
-                </div> <button class="Join-Challenge-btn" onclick="showLesson()"> Join Challenge </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="Quick-card">
-              <h3><span class="icon">⚡</span>Quick Actions</h3> <button id="Quest-btn" onclick="showLesson()">
-                <span style="color: green;width: 100%;">🌟</span> Start New Challenge </button><br> <button
-                class="Join-Team-Quest" onclick="showLesson()"> <span class="icon">&#128101;</span> Join Team Quest
-              </button><br> <button class="Track-My-Impact" onclick="showLesson()"> <span class="icon"> </span>
-                Track My Impact </button>
-            </div>
-            <div class="progress-card">
-              <h3>Peak Achievers</h3>
-              <div class="flex Achievers">
-                <div class="flex"><span class="achived"> </span>
-                  <div class="avatar"></div>
-                  <div class="name-designation">Anika <br><span class="desg">Eco Champion</span> </div>
-                </div>
-                <div class="points">2345 <br><span class="num-points">points</span> </div>
-              </div>
-              <div class="flex Achievers">
-                <div class="flex "><span class="achived"> </span>
-                  <div class="avatar"></div>
-                  <div class="name-designation">Ankit <br><span class="desg">Eco Champion</span> </div>
-                </div>
-                <div class="points ">2345 <br><span class="num-points">points</span> </div>
-              </div>
-              <div class="flex Achievers">
-                <div class="flex "><span class="achived"> </span>
-                  <div class="avatar"></div>
-                  <div class="name-designation">Abhinav <br><span class="desg">Eco Champion</span> </div>
-                </div>
-                <div class="points">2345 <br><span class="num-points">points</span> </div>
-              </div>
-              <div class="flex Achievers" id="Your-Ranking">
-                <div>Your Ranking <br><span id="isRanked">Not Ranked Yet</span> </div>
-                <div>0 Pts<br> Start earning!</div>
-              </div>
+            <div class="Challenge-card">
+              <h3>30-Day Cardio Blast</h3>
+              <p class="subtitle3">Complete 30 minutes of Cardio For 30 Minutes of Trait.</p>
+              <div class="flex">
+                <div><span class="challenge-icon"><i class="fa-solid fa-trophy"></i></span> 250pts</div>
+                <div><span class="challenge-icon"><i class="fa-solid fa-people-line"></i></span>1250 joined</div>
+                <div><span class="challenge-icon"><i class="fa-solid fa-user-clock"></i></span>3 days left</div>
+              </div> <small>Your Progress 60%</small>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div> <button class="Join-Challenge-btn" onclick="showLesson()"> Join Challenge </button>
             </div>
           </div>
         </div>
-
-
-      </div>
-
-
-      <!-- Profile Screen -->
-      <div class="screen" id="profile">
-        <div class="welcome-section">
-          <div class="avatar">👧</div>
-          <h2>Bunny's Profile</h2>
-          <div class="level-badge">🌟 Student Hero - Level 5</div>
+        <div>
+          <div class="Quick-card">
+            <h3><span class="icon"><i class="fa-solid fa-bolt-lightning"></i></span>Quick Actions</h3> <button id="Quest-btn" onclick="showLesson()">
+              <span style="color: green;width: 100%;"><i class="fa-solid fa-hourglass-start"></i></span> Start New Challenge </button><br> <button
+              class="Join-Team-Quest" onclick="showLesson()"> <span class="icon"><i class="fa-solid fa-people-line"></i></span> Join Team Quest
+            </button><br> <button class="Track-My-Impact" onclick="showLesson()"> <span class="icon"> </span>
+              Track My Impact </button>
+          </div>
+          <div class="progress-card">
+            <h3>Peak Achievers</h3>
+            <div class="flex Achievers">
+              <div class="flex"><span class="achived"> </span>
+                <div class="avatar"></div>
+                <div class="name-designation">Anika <br><span class="desg">Eco Champion</span> </div>
+              </div>
+              <div class="points">2345 <br><span class="num-points">points</span> </div>
+            </div>
+            <div class="flex Achievers">
+              <div class="flex "><span class="achived"> </span>
+                <div class="avatar"></div>
+                <div class="name-designation">Ankit <br><span class="desg">Eco Champion</span> </div>
+              </div>
+              <div class="points ">2345 <br><span class="num-points">points</span> </div>
+            </div>
+            <div class="flex Achievers">
+              <div class="flex "><span class="achived"> </span>
+                <div class="avatar"></div>
+                <div class="name-designation">Abhinav <br><span class="desg">Eco Champion</span> </div>
+              </div>
+              <div class="points">2345 <br><span class="num-points">points</span> </div>
+            </div>
+            <div class="flex Achievers" id="Your-Ranking">
+              <div>Your Ranking <br><span id="isRanked">Not Ranked Yet</span> </div>
+              <div>0 Pts<br> Start earning!</div>
+            </div>
+          </div>
         </div>
-        ...
       </div>
 
-      <!-- Lesson Screen -->
-      <div class="screen" id="My-Schedule">
-        ...
-      </div>
+
     </div>
+
+
+    <!-- Profile Screen -->
+    <div class="screen" id="profile">
+      <div class="welcome-section">
+        <div class="avatar">👧</div>
+        <h2>Bunny's Profile</h2>
+        <div class="level-badge"><i class="fa-solid fa-hourglass-start"></i> Student Hero - Level 5</div>
+      </div>
+      ...
+    </div>
+
+    <!-- Lesson Screen -->
+    <div class="screen" id="My-Schedule">
+      ...
+    </div>
+  </div>
   </div>
   </div>
   <!-- Settings -->
@@ -331,7 +320,7 @@
               <div class="setting-subtitle">School Only</div>
             </div>
           </div>
-          <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg c lass="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>
         </div>
@@ -558,7 +547,7 @@
       <div class="progress-card">
         <div class="Achievers">
           <div class="flex">
-            <div class="flex"><span class="achived">🌅</span>
+            <div class="flex"><span class="achived"><i class="fa-solid fa-utensils"></i></span>
               <div class="name-designation">Breakast<br><span class="desg">200 calories</span> </div>
             </div>
             <div><button class="log-btn">Log Meal</button></div>
@@ -567,7 +556,7 @@
         </div>
         <div class="Achievers">
           <div class="flex ">
-            <div class="flex "><span class="achived">😎</span>
+            <div class="flex "><span class="achived"><i class="fa-solid fa-utensils"></i></span>
               <div class="name-designation">Snack<br><span class="desg">180 calories</span> </div>
             </div>
             <div><button class="log-btn">Log Meal</button></div>
@@ -576,7 +565,7 @@
         </div>
         <div class="Achievers">
           <div class="flex ">
-            <div class="flex "><span class="achived">🥜</span>
+            <div class="flex "><span class="achived"><i class="fa-solid fa-utensils"></i></span>
 
               <div class="name-designation">Lunch<br><span class="desg">150 calories</span> </div>
             </div>
@@ -587,7 +576,7 @@
         </div>
         <div class="Achievers">
           <div class="flex ">
-            <div class="flex "><span class="achived">🌛</span>
+            <div class="flex "><span class="achived"><i class="fa-solid fa-utensils"></i></span>
 
               <div class="name-designation">Dinner<br><span class="desg">580 calories</span> </div>
             </div>
@@ -608,10 +597,58 @@
   </div>
 
   <!-- Workouts Screen -->
-  <div class="screen" id="Workouts">
-    <h2>📖 Explore Workouts</h2>
+  <div class="screen " id="Workouts">
+    <div id="kids_5-12_section" class="Workouts-grid">
+      <div class="Workouts-card game" onclick="showLesson
+        ()">
+        <h3>Tangrams</h3>
+      </div>
+      <div class="Workouts-card game" onclick="showLesson
+        ()">
+        <h3>Puzzle Jigsaws</h3>
+      </div>
+      <div class="Workouts-card game" onclick="showLesson
+        ()">
+        <h3>Arrange in Order</h3>
+      </div>
+      <div class="Workouts-card game" onclick="showLesson
+        ()">
+        <H3>Let's Dance</H3>
+      </div>
+    </div>
+
+    <div id="kids_13-16_section" class="Workouts-grid">
+      <div class="Workouts-card game" onclick="showLesson
+        ()">
+        <h3>Sudoku</h3>
+      </div>
+      <div class="Workouts-card game" onclick="showLesson
+        ()">
+        <h3>Gungi Game</h3>
+      </div>
+      <div class="Workouts-card game" onclick="showLesson
+        ()">
+        <h3>Puzzle Solving</h3>
+      </div>
+      <div class="Workouts-card game" onclick="showLesson
+        ()">
+        <h3>What if ?</h3>
+      </div>
+      <div class="Workouts-card game" onclick="showLesson
+        ()">
+        <H3>Let's Dance</H3>
+      </div>
+    </div>
+
+    <div id="age_17-21_section" class="Workouts-grid">
+      <div class="Workouts-card game" onclick="showLesson
+        ()">
+
+      </div>
+    </div>
+    <h2><i class="fa-solid fa-bomb"></i>Explore Workouts</h2>
     <div class="flex">
-      <div class="Workouts-grid">
+      <div id="age_22-45_section" class="Workouts-grid">
         <div class="Workouts-card" onclick="showLesson
         ()">
           <div class="workout-image"><img
@@ -648,7 +685,21 @@
           <h3>OTHERS</h3>
         </div>
       </div>
+      <div id="age_46-75_section" class="Workouts-grid">
 
+        <div class="Workouts-card game" onclick="showLesson
+        ()">
+          <h3>Let's Remember</h3>
+        </div>
+        <div class="Workouts-card game" onclick="showLesson
+        ()">
+          <h3>Let's Walk</h3>
+        </div>
+        <div class="Workouts-card game" onclick="showLesson
+        ()">
+          <h3>Let's Dance</h3>
+        </div>
+      </div>
     </div>
     <div id="custom-workout">
       <h2>Create Custom Workouts</h2>
@@ -673,33 +724,30 @@
   <!-- ✅ Bottom Navigation (placed outside screens) -->
   <div class="bottom-nav">
     <div id="top-nav">
-      <p class="nav-text" id="fitness-pro">
-        Fitness Pro
+      <p class="nav-text" id="Motion-Mentor">
+        Motion Mentor
       <p class="subtitle2">Your Health Journey</p>
       </p>
     </div>
     <div class="nav">
       <div id="left-nav">
-        <p class="nav-text" id="fitness-pro">
-          Fitness Pro
+        <p class="nav-text" id="Motion-Mentor">
+          Motion Mentor
         <p class="subtitle2">Your Health Journey</p>
         </p>
       </div>
       <hr>
-      <div class="nav-item active" onclick="showScreen('home')"><span class="nav-icon">&#x1F3E0;</span>Home</div>
-      <div class="nav-item" onclick="showScreen('Workouts')"><span class="nav-icon">💪</span>Workouts</div>
-      <div class="nav-item" onclick="showScreen('Nutrition')"><span class="nav-icon">🥗</span>Nutrition</div>
-      <div class="nav-item" onclick="showScreen('Progress')"><span class="nav-icon">📊 </span>Progress</div>
-      <div class="nav-item" onclick="showScreen('Achivements')"><span class="nav-icon">&#x1F3C5;</span>Achivements
+      <div class="nav-item active" onclick="showScreen('home')"><span class="nav-icon"><i class="fa-regular fa-house"></i></span>Home</div>
+      <div class="nav-item" onclick="showScreen('Workouts')"><span class="nav-icon"><i class="fa-solid fa-person-running"></i></span>Workouts</div>
+      <div class="nav-item" onclick="showScreen('Nutrition')"><span class="nav-icon"><i class="fa-solid fa-wheat-awn-circle-exclamation"></i></span>Nutrition</div>
+      <div class="nav-item" onclick="showScreen('Progress')"><span class="nav-icon"><i class="fa-solid fa-chart-column"></i> </span>Progress</div>
+      <div class="nav-item" onclick="showScreen('Achivements')"><span class="nav-icon"><i class="fa-solid fa-star-half-stroke"></i></span>Achivements
       </div>
-      <div class="nav-item" onclick="showScreen('Chatbot')"><span class="nav-icon">&#x1F4AC;</span>Chatbot</div>
-      <div class="nav-item" onclick="showScreen('Settings')"><span class="nav-icon">&#x2699;</span>Settings</div>
+      <div class="nav-item" onclick="showScreen('Chatbot')"><span class="nav-icon"><i class="fa-solid fa-user-secret"></i></i>Chatbot</div>
+      <div class="nav-item" onclick="showScreen('Settings')"><span class="nav-icon"><i class="fa-solid fa-gear"></i></span>Settings</div>
       <hr>
 
       <div>
-
-
-
       </div>
     </div>
   </div>
@@ -708,4 +756,3 @@
 </body>
 
 </html>
-
