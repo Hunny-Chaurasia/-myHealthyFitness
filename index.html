@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitLife Portal - Sign In</title>
+    <title> Motion Mentor Portal - Sign In</title>
+      <link rel="icon" href="WhatsApp Image 2025-09-24 at 10.58.05 PM.jpeg">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css" />
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-size: 0.9rem;
-            word-wrap: break-word;
+            text-align: center;
+            overflow: visible;
+            /* word-wrap: break-word; */
+
+        }
+
+        .inter {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            /* font-style: italic; */
         }
 
         body {
-            
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            height: 100VH;
-                background: linear-gradient(135deg, #1b378f 0%, #6084f8 25%, #4f0f62 50%, #ff9ff3 75%, #f368e0 100%);
-            background-size: 400% 400%;
-            animation: gradientFlow 12s ease-in-out infinite;
+            color: #ffe8e8;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: conic-gradient(from 180deg at 50% 50%,
+                    #0a0f1c 0deg,
+                    #1a1f2e 60deg,
+                    #0f1419 120deg,
+                    #161b2a 180deg,
+                    #0a0f1c 240deg,
+                    #1a1f2e 300deg,
+                    #0a0f1c 360deg);
+            min-height: 100vh;
             display: flex;
-            justify-content: center;
             align-items: center;
-            position: relative;
-            overflow: scroll;
-            padding: 3vh;
+            justify-content: center;
+            padding: 20px;
         }
 
+
         @keyframes gradientFlow {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
         }
 
         .floating-elements {
@@ -47,13 +76,13 @@
             position: absolute;
             width: 6px;
             height: 6px;
-            background: rgba(255, 107, 107, 0.8);
+            background: #21a027;
             border-radius: 50%;
             animation: floatUp 8s linear infinite;
         }
 
         .health-icon:nth-child(odd) {
-            background: rgba(238, 90, 36, 0.6);
+            background: #17691b;
             width: 8px;
             height: 8px;
             animation-duration: 10s;
@@ -71,46 +100,66 @@
         }
 
         @keyframes floatUp {
-            0% { transform: translateY(100vh) scale(0) rotate(0deg); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateY(-100px) scale(1) rotate(360deg); opacity: 0; }
+            0% {
+                transform: translateY(100vh) scale(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100px) scale(1) rotate(360deg);
+                opacity: 0;
+            }
         }
 
         .auth-container {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(20px);
-    border-radius: 20px;
-    padding: 1vw 2vw;
-    box-shadow: 0 25px 50px rgba(50, 0, 0, 0.2),
-                0 0 0 1px rgba(255, 107, 107, 0.3);
-    text-align: center;
-    word-wrap: break-word;
-    max-width: 55vh;
-    width: 90%;
-    height: fit-content;
-   
-    position: relative;
-    top: 1%;
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); Center horizontally & vertically */
+            background: #153e185d;
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 1vw 2vw;
+                        box-shadow: 0 25px 50px #00000082,
+                0 0 0 1px #ffffff51;
+            text-align: center;
+            word-wrap: break-word;
+            max-width: 55vh;
+            width: 114%;
+            height: fit-content;
 
-    z-index: 5;
-    animation: slideInUp 0.8s ease-out;
-    transition: all 0.3s ease;
-}
+            position: relative;
+            top: 1%;
+            /* left: 50%; */
+            /* transform: translate(-50%, -50%); Center horizontally & vertically */
+
+            z-index: 5;
+            animation: slideInUp 0.8s ease-out;
+            transition: all 0.3s ease;
+        }
 
 
         @keyframes slideInUp {
-            0% { transform: translateY(50px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
 
-        
+
         .brand-logo {
             width: 6vh;
             height: 6vh;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 50%, #ff9ff3 100%);
+            background: linear-gradient(135deg, #21a027 0%, #3b973f 50%, #5f8461 100%);
             border-radius: 50%;
             margin: 0 auto 20px;
             display: flex;
@@ -118,7 +167,7 @@
             justify-content: center;
             font-size: 3VH;
             color: white;
-            box-shadow: 0 15px 35px rgba(255, 107, 107, 0.4);
+            box-shadow: 0 15px 35px #21a02798;
             animation: logoFloat 3s ease-in-out infinite;
             position: relative;
             overflow: hidden;
@@ -131,23 +180,35 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            background: linear-gradient(45deg, transparent, #21a027, transparent);
             animation: shimmer 2s linear infinite;
         }
 
         @keyframes shimmer {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+            0% {
+                transform: translateX(-100%) translateY(-100%) rotate(45deg);
+            }
+
+            100% {
+                transform: translateX(100%) translateY(100%) rotate(45deg);
+            }
         }
 
         @keyframes logoFloat {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-8px) rotate(5deg); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-8px) rotate(5deg);
+            }
         }
 
         .main-title {
             font-size: 1.4rem;
-            color: #8b0000;
+            color: #21a027;
             font-weight: 300;
             margin-bottom: 2vw;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -155,8 +216,8 @@
 
         .welcome-subtitle {
             font-size: 1rem;
-            color: #b8341f;
-            margin-bottom:2vh;
+            color: #21a027;
+            margin-bottom: 2vh;
             font-weight: 400;
         }
 
@@ -169,7 +230,7 @@
         .field-label {
             display: block;
             font-size: 0rem;
-            color: #8b0000;
+            color: #1b4e1e;
             font-weight: 500;
             margin-bottom: 2vh;
             transition: color 0.3s ease;
@@ -181,33 +242,33 @@
 
         .text-field {
             width: 100%;
-            padding:1vw 6vw ;
-            border: 2px solid rgba(255, 107, 107, 0.2);
+            padding: 1vw 6vw;
+            border: 2px solid #1b4e1e;
             border-radius: 12px;
-            
+
             background: rgba(255, 240, 240, 0.5);
             transition: all 0.3s ease;
             font-family: inherit;
-            color: #8b0000;
+            color: #1b4e1e;
             font-family: inherit;
             font-weight: bold;
         }
 
         .text-field:focus {
             outline: none;
-            border-color: #ff6b6b;
-            box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.15);
+            border-color: #21a027;
+            box-shadow: 0 0 0 3px #1b4e1e;
             transform: translateY(-1px);
             background: rgba(255, 240, 240, 0.8);
         }
 
-        .text-field:focus + .field-icon {
-            color: #ff6b6b;
+        .text-field:focus+.field-icon {
+            color: #21a027;
             transform: translateY(-50%) scale(1.1);
         }
 
         .text-field::placeholder {
-            color: #cc6b6b;
+            color: #1b4e1e;
         }
 
         .field-icon {
@@ -216,7 +277,7 @@
             top: 50%;
             transform: translateY(-50%);
             font-size: 1rem;
-            color: #cc6b6b;
+            color: #1b4e1e;
             transition: all 0.3s ease;
             pointer-events: none;
         }
@@ -224,11 +285,11 @@
         .dropdown-field {
             width: 100%;
             padding: 1vh 6vw;
-            border: 2px solid rgba(255, 107, 107, 0.2);
+            border: 2px solid #21a02786;
             border-radius: 12px;
             /* font-size: 1rem; */
             background: rgba(255, 240, 240, 0.5);
-            color: #8b0000;
+            color: #0d4810;
             font-family: inherit;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -237,7 +298,7 @@
 
         .dropdown-field:focus {
             outline: none;
-            border-color: #ff6b6b;
+            border-color: #21a027;
             box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.15);
             background: rgba(255, 240, 240, 0.8);
         }
@@ -251,7 +312,7 @@
         }
 
         .utility-link {
-            color: #b8341f;
+            color: #21a027;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.2s ease;
@@ -259,22 +320,22 @@
         }
 
         .utility-link:hover {
-            color: #ff6b6b;
+            color: #21a027;
             transform: translateY(-1px);
         }
 
         .action-button {
             width: 100%;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            background: linear-gradient(135deg, #21a027 0%, #63d068 100%);
             color: white;
             border: none;
             padding: 0.5vh;
-            font-size: 1rem ;
+            font-size: 1rem;
             font-weight: 600;
             border-radius: 12px;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+            box-shadow: 0 4px 15px #156a1a;
             text-transform: none;
             font-family: inherit;
             position: relative;
@@ -310,20 +371,22 @@
             align-items: center;
             flex-direction: column;
         }
+
         .content-divider {
             display: flex;
             align-items: center;
             margin: 2vh;
-        
-            color: #cc6b6b;
+
+            color: #21a027;
             font-size: 0.8rem;
         }
 
-        .content-divider::before, .content-divider::after {
+        .content-divider::before,
+        .content-divider::after {
             content: '';
             flex: 1;
             height: 2px;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            background: linear-gradient(135deg, #21a027 0%, #75d47a 100%);
         }
 
         .content-divider span {
@@ -350,13 +413,19 @@
             animation: spin 1s linear infinite;
         }
 
-        a{
+        a {
             text-decoration: none;
-            color :white;
+            color: white;
         }
+
         @keyframes spin {
-            0% { transform: translateY(-50%) rotate(0deg); }
-            100% { transform: translateY(-50%) rotate(360deg); }
+            0% {
+                transform: translateY(-50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translateY(-50%) rotate(360deg);
+            }
         }
 
         .action-button.success {
@@ -365,7 +434,7 @@
 
         .mode-selector {
             display: flex;
-            background: rgba(255, 107, 107, 0.2);
+            background: #0d4810;
             border-radius: 12px;
             padding: 1vh;
             margin-bottom: 2vh;
@@ -375,7 +444,7 @@
             flex: 1;
             padding: 2vh;
             background: transparent;
-            color: #b8341f;
+            color: #21a027;
             border: none;
             border-radius: 8px;
             cursor: pointer;
@@ -384,7 +453,7 @@
         }
 
         .mode-option.active {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            background: linear-gradient(135deg, #21a027 0%, #6cc270 100%);
             color: white;
             box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
         }
@@ -398,32 +467,46 @@
         }
 
         .health-feature {
-            background: rgba(255, 107, 107, 0.1);
-            border-left: 4px solid #ff6b6b;
+            background: #4aaa4f5c;
+            border-left: 4px solid #156a1a;
             padding: 1vh;
             margin: 1.5vh 0;
             border-radius: 8px;
             text-align: left;
             font-size: 0.9rem;
-            color: #b8341f;
+            color: #49b04f;
             word-wrap: break-word;
         }
 
         .health-feature-title {
             font-weight: 600;
-            color: #8b0000;
+            color: #16801b;
             word-wrap: break-word;
             /* margin-bottom: 0.3vh; */
         }
 
         @keyframes slideInRight {
-            from { transform: translateX(100%); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
-        
+
         @keyframes slideOutRight {
-            from { transform: translateX(0); opacity: 1; }
-            to { transform: translateX(100%); opacity: 0; }
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
         }
 
         @media (max-width: 480px) {
@@ -433,97 +516,109 @@
                 top: 30%;
                 margin-bottom: 30%;
             }
+
             .utility-links {
                 flex-direction: column;
                 gap: 1vh;
             }
+
             .main-title {
                 font-size: 2rem;
             }
         }
-        
     </style>
 </head>
+
 <body>
     <div class="floating-elements"></div>
 
-    <div class="auth-container">
-        <div class="brand-logo">💪</div>
-        <h1 class="main-title">FitLife</h1>
+    <div>
+        <div class="brand-logo"><div class="icon-biceps-flexed"></div></div>
+        <h1 class="main-title"> Motion Mentor</h1>
         <p class="welcome-subtitle" id="subtitle">Transform your health journey today</p>
-        
-        <div class="mode-selector">
-            <button class="mode-option active" id="signinMode" onclick="switchMode('signin')">Sign In</button>
-            <button class="mode-option" id="signupMode" onclick="switchMode('signup')">Sign Up</button>
+        <div class="auth-container">
+            <div class="mode-selector">
+                <button class="mode-option active" id="signinMode" onclick="switchMode('signin')">Sign In</button>
+                <button class="mode-option" id="signupMode" onclick="switchMode('signup')">Sign Up</button>
+            </div>
+
+            <form id="authForm">
+                <div class="input-section">
+                    <label class="field-label" for="username">Username</label>
+                    <div class="field-wrapper">
+                        <input type="text" id="username" class="text-field" placeholder="Fit-username" required>
+                        <span class="field-icon"><i class="fa-solid fa-circle-user"></i></span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <label class="field-label" for="password">Password</label>
+                    <div class="field-wrapper">
+                        <input type="password" id="password" class="text-field" placeholder="Strong-Password" required>
+                        <span class="field-icon"><div class="icon-lock-keyhole"></div></span>
+                    </div>
+                </div>
+                                <div class="input-section">
+                    <label class="field-label" for="password">Password</label>
+                    <div class="field-wrapper">
+                        <input type="password" id="password" class="text-field" placeholder="Enter Your Age" required>
+                        <span class="field-icon"><div class="icon-pen"></div></span>
+                    </div>
+                </div>
+
+
+                <div class="registration-fields" id="signupFields">
+                    <div class="input-section">
+                        <label class="field-label" for="confirmPassword">Confirm Password</label>
+                        <div class="field-wrapper">
+                            <input type="password" id="confirmPassword" class="text-field"
+                                placeholder="Confirm strong password">
+                            <span class="field-icon"><div class="icon-lock-keyhole"></div></span>
+                        </div>
+                    </div>
+
+                    <div class="input-section">
+                        <label class="field-label" for="email">Email (Optional)</label>
+                        <div class="field-wrapper">
+                            <input type="email" id="email" class="text-field" placeholder="fitness@gmail.com">
+                            <span class="field-icon"><div class="icon-mail"></div></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <label class="field-label" for="role">Fitness Goal</label>
+                    <div class="field-wrapper">
+                        <select id="role" class="dropdown-field" required>
+                            <option value="">Select your fitness focus</option>
+                            <option value="weight-loss">🔥 Weight Loss & Fat Burn</option>
+                            <option value="muscle-gain"><div class="icon-biceps-flexed"></div> Muscle Building & Strength</option>
+                            <option value="endurance">🏃 Cardio & Endurance</option>
+                            <option value="wellness">🧘 Overall Health & Wellness</option>
+                        </select>
+                        <span class="field-icon"><i class="fa-solid fa-crosshairs"></i></span>
+                    </div>
+                </div>
+
+                <div class="health-feature">
+                    <div class="health-feature-title"><div class="icon-heart"></div> 24/7 Health Monitoring</div>
+                    Track your progress with real-time health metrics and personalized insights!
+                </div>
+
+                <div class="utility-links">
+                    <a href="#" class="utility-link" onclick="showForgotPassword()">Forgot Password?</a>
+                    <a href="#" class="utility-link" onclick="showFitnessHelp()">Fitness Support</a>
+                </div>
+
+                <button type="submit" class="action-button" id="authBtn">
+                    <div class="icon-biceps-flexed"></div> Sign In to  Motion Mentor
+                </button>
+                <a href="data.html">Skip For Now</a>
+                <div class="content-divider">
+                    <span>Healthy • Strong • Motivated</span>
+                </div>
+            </form>
         </div>
-        
-        <form id="authForm">
-            <div class="input-section">
-                <label class="field-label" for="username">Username</label>
-                <div class="field-wrapper">
-                    <input type="text" id="username" class="text-field" placeholder="Fit-username" required>
-                    <span class="field-icon">🏋️</span>
-                </div>
-            </div>
-            
-            <div class="input-section">
-                <label class="field-label" for="password">Password</label>
-                <div class="field-wrapper">
-                    <input type="password" id="password" class="text-field" placeholder="Strong-Password" required>
-                    <span class="field-icon">🔐</span>
-                </div>
-            </div>
-
-            <div class="registration-fields" id="signupFields">
-                <div class="input-section">
-                    <label class="field-label" for="confirmPassword">Confirm Password</label>
-                    <div class="field-wrapper">
-                        <input type="password" id="confirmPassword" class="text-field" placeholder="Confirm strong password">
-                        <span class="field-icon">🔐</span>
-                    </div>
-                </div>
-
-                <div class="input-section">
-                    <label class="field-label" for="email">Email (Optional)</label>
-                    <div class="field-wrapper">
-                        <input type="email" id="email" class="text-field" placeholder="fitness@gmail.com">
-                        <span class="field-icon">📧</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="input-section">
-                <label class="field-label" for="role">Fitness Goal</label>
-                <div class="field-wrapper">
-                    <select id="role" class="dropdown-field" required>
-                        <option value="">Select your fitness focus</option>
-                        <option value="weight-loss">🔥 Weight Loss & Fat Burn</option>
-                        <option value="muscle-gain">💪 Muscle Building & Strength</option>
-                        <option value="endurance">🏃 Cardio & Endurance</option>
-                        <option value="wellness">🧘 Overall Health & Wellness</option>
-                    </select>
-                    <span class="field-icon">🎯</span>
-                </div>
-            </div>
-            
-            <div class="health-feature">
-                <div class="health-feature-title">❤️ 24/7 Health Monitoring</div>
-                Track your progress with real-time health metrics and personalized insights!
-            </div>
-            
-            <div class="utility-links">
-                <a href="#" class="utility-link" onclick="showForgotPassword()">Forgot Password?</a>
-                <a href="#" class="utility-link" onclick="showFitnessHelp()">Fitness Support</a>
-            </div>
-            
-            <button type="submit" class="action-button" id="authBtn">
-                💪 Sign In to FitLife
-            </button>
-            <a href="main.html">Skip For Now</a>
-            <div class="content-divider">
-                <span>Healthy • Strong • Motivated</span>
-            </div>
-        </form>
     </div>
 
     <script>
@@ -542,14 +637,14 @@
                 signinBtn.classList.remove('active');
                 signupBtn.classList.add('active');
                 signupFields.classList.add('active');
-                authBtn.innerHTML = '💪 Join FitLife Community';
+                authBtn.innerHTML = '<div class="icon-biceps-flexed"></div> Join  Motion-Mentor Community';
                 subtitle.textContent = 'Begin your transformation journey';
                 document.getElementById('confirmPassword').required = true;
             } else {
                 signupBtn.classList.remove('active');
                 signinBtn.classList.add('active');
                 signupFields.classList.remove('active');
-                authBtn.innerHTML = '💪 Sign In to FitLife';
+                authBtn.innerHTML = '<div class="icon-biceps-flexed"></div> Sign In to  Motion-Mentor';
                 subtitle.textContent = 'Transform your health journey today';
                 document.getElementById('confirmPassword').required = false;
             }
@@ -558,7 +653,7 @@
         function createHealthIcons() {
             const iconsContainer = document.querySelector('.floating-elements');
             const iconCount = 25;
-            
+
             for (let i = 0; i < iconCount; i++) {
                 const icon = document.createElement('div');
                 icon.className = 'health-icon';
@@ -579,9 +674,9 @@
                 const data = await response.json();
                 return { success: response.ok, data };
             } catch (error) {
-                return { 
-                    success: false, 
-                    data: { message: 'Connection error. Check your fitness network connection! 🏋️‍♀️' }
+                return {
+                    success: false,
+                    data: { message: 'Connection error. Check your fitness network connection! <i class="fa-solid fa-circle-user"></i>‍♀️' }
                 };
             }
         }
@@ -596,43 +691,43 @@
                 const data = await response.json();
                 return { success: response.ok, data };
             } catch (error) {
-                return { 
-                    success: false, 
-                    data: { message: 'Connection error. Our fitness servers are doing cardio! 💪' }
+                return {
+                    success: false,
+                    data: { message: 'Connection error. Our fitness servers are doing cardio! <div class="icon-biceps-flexed"></div>' }
                 };
             }
         }
 
-        document.getElementById('authForm').addEventListener('submit', async function(e) {
+        document.getElementById('authForm').addEventListener('submit', async function (e) {
             e.preventDefault();
-            
+
             const button = document.getElementById('authBtn');
             const username = document.getElementById('username').value.trim();
             const password = document.getElementById('password').value;
             const confirmPassword = document.getElementById('confirmPassword').value;
             const role = document.getElementById('role').value;
             const email = document.getElementById('email').value.trim();
-            
+
             if (!username || !password || !role) {
-                showNotification('💪 Please fill in all the required fitness fields!', 'error');
+                showNotification('<div class="icon-biceps-flexed"></div> Please fill in all the required fitness fields!', 'error');
                 return;
             }
 
             if (currentMode === 'signup') {
                 if (password !== confirmPassword) {
-                    showNotification('🔐 Passwords don\'t match - keep your fitness data secure!', 'error');
+                    showNotification('<div class="icon-lock-keyhole"></div> Passwords don\'t match - keep your fitness data secure!', 'error');
                     return;
                 }
                 if (password.length < 6) {
-                    showNotification('💪 Password needs to be stronger (6+ characters)!', 'error');
+                    showNotification('<div class="icon-biceps-flexed"></div> Password needs to be stronger (6+ characters)!', 'error');
                     return;
                 }
             }
-            
+
             button.classList.add('loading');
-            button.innerHTML = currentMode === 'signin' ? '💪 Connecting to FitLife...' : '🏋️ Building your profile...';
+            button.innerHTML = currentMode === 'signin' ? '<div class="icon-biceps-flexed"></div> Connecting to  Motion-Mentor...' : '<i class="fa-solid fa-circle-user"></i> Building your profile...';
             button.disabled = true;
-            
+
             let result;
             if (currentMode === 'signin') {
                 result = await signIn(username, password, role);
@@ -641,24 +736,24 @@
             }
 
             button.classList.remove('loading');
-            
+
             if (result.success) {
                 button.classList.add('success');
                 button.innerHTML = '✅ Welcome to your fitness journey!';
-                
+
                 const roleMessages = {
                     'weight-loss': '🔥 Welcome, Fat Burner! Ready to torch those calories?',
-                    'muscle-gain': '💪 Welcome, Muscle Builder! Time to get swole!',
+                    'muscle-gain': '<div class="icon-biceps-flexed"></div> Welcome, Muscle Builder! Time to get swole!',
                     'endurance': '🏃 Welcome, Endurance Athlete! Let\'s boost that stamina!',
                     'wellness': '🧘 Welcome, Wellness Warrior! Balance and health await!'
                 };
-                
-                const successMessage = currentMode === 'signin' 
+
+                const successMessage = currentMode === 'signin'
                     ? (roleMessages[role] || '🎉 Welcome to your health transformation!')
-                    : '💪 Account created successfully! You can now sign in and start your fitness journey!';
-                
+                    : '<div class="icon-biceps-flexed"></div> Account created successfully! You can now sign in and start your fitness journey!';
+
                 showNotification(successMessage, 'success');
-                
+
                 if (currentMode === 'signin') {
                     localStorage.setItem('fitUser', JSON.stringify({
                         username: username,
@@ -666,9 +761,9 @@
                         joinedAt: new Date().toISOString(),
                         caloriesBurned: 0
                     }));
-                    
+
                     setTimeout(() => {
-                        showNotification('🏋️ Redirecting to your fitness dashboard...', 'success');
+                        showNotification('<i class="fa-solid fa-circle-user"></i> Redirecting to your fitness dashboard...', 'success');
                     }, 2000);
                 } else {
                     setTimeout(() => {
@@ -677,12 +772,12 @@
                     }, 2000);
                 }
             } else {
-                showNotification(result.data.message || '💪 Something went wrong in our fitness system!', 'error');
+                showNotification(result.data.message || '<div class="icon-biceps-flexed"></div> Something went wrong in our fitness system!', 'error');
             }
-            
+
             setTimeout(() => {
                 button.classList.remove('success');
-                button.innerHTML = currentMode === 'signin' ? '💪 Sign In to FitLife' : '💪 Join FitLife Community';
+                button.innerHTML = currentMode === 'signin' ? '<div class="icon-biceps-flexed"></div> Sign In to  Motion-Mentor' : '<div class="icon-biceps-flexed"></div> Join  Motion-Mentor Community';
                 button.disabled = false;
             }, 3000);
         });
@@ -693,9 +788,9 @@
                 position: fixed;
                 top: 20px;
                 right: 20px;
-                background: ${type === 'success' ? 'linear-gradient(135deg, #27ae60, #2ecc71)' : 
-                           type === 'error' ? 'linear-gradient(135deg, #e67e22, #f39c12)' :
-                           'linear-gradient(135deg, #3498db, #2980b9)'};
+                background: ${type === 'success' ? 'linear-gradient(135deg, #27ae60, #2ecc71)' :
+                    type === 'error' ? 'linear-gradient(135deg, #e67e22, #f39c12)' :
+                        'linear-gradient(135deg, #3498db, #2980b9)'};
                 color: white;
                 padding: 15px 25px;
                 border-radius: 12px;
@@ -708,7 +803,7 @@
             `;
             notification.textContent = message;
             document.body.appendChild(notification);
-            
+
             setTimeout(() => {
                 notification.style.animation = 'slideOutRight 0.3s ease';
                 setTimeout(() => notification.remove(), 300);
@@ -716,11 +811,11 @@
         }
 
         function showForgotPassword() {
-            showNotification('💪 Fitness password recovery coming soon! Contact your trainer for help.', 'info');
+            showNotification('<div class="icon-biceps-flexed"></div> Fitness password recovery coming soon! Contact your trainer for help.', 'info');
         }
 
         function showFitnessHelp() {
-            showNotification('🏋️ Our fitness support team is here to help! Contact fit-support for assistance.', 'info');
+            showNotification('<i class="fa-solid fa-circle-user"></i> Our fitness support team is here to help! Contact fit-support for assistance.', 'info');
         }
 
         const style = document.createElement('style');
@@ -739,13 +834,14 @@
         document.addEventListener('DOMContentLoaded', createHealthIcons);
 
         document.querySelectorAll('.text-field, .dropdown-field').forEach(input => {
-            input.addEventListener('focus', function() {
-                this.closest('.input-section').querySelector('.field-label').style.color = '#ff6b6b';
+            input.addEventListener('focus', function () {
+                this.closest('.input-section').querySelector('.field-label').style.color = '#21a027';
             });
-            input.addEventListener('blur', function() {
+            input.addEventListener('blur', function () {
                 this.closest('.input-section').querySelector('.field-label').style.color = '#8b0000';
             });
         });
     </script>
 </body>
+
 </html>
