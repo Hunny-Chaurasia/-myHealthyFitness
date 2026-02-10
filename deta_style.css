@@ -18,14 +18,18 @@
 body {
     color: #ffe8e8;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: conic-gradient(from 180deg at 50% 50%,
-            #0a0f1c 0deg,
-            #1a1f2e 60deg,
-            #0f1419 120deg,
-            #161b2a 180deg,
-            #0a0f1c 240deg,
-            #1a1f2e 300deg,
-            #0a0f1c 360deg);
+    background:
+        conic-gradient(from 180deg at 50% 50%,
+            #0f1422,
+            #1a1f2e,
+            #0a0f1c,
+            #161b2a,
+            #0a0f1c,
+            #1a1f2e,
+            #0b101d),
+        radial-gradient(circle at center,
+            rgba(255, 255, 255, 0.03),
+            transparent 70%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -92,6 +96,7 @@ body {
 .nav-item {
     transition: all 0.3s ease;
 }
+
 /* .nav-item.active-nav {
     background-color: #56555530;
     color: #ffffff;
@@ -597,7 +602,7 @@ h2 {
     cursor: pointer;
     transition: transf orm 0.2s;
     margin-top: 2vh;
-    box-shadow: 2px 8px 2px rgba(62, 62, 62, 0.3);
+    /* box-shadow: 2px 8px 2px rgba(62, 62, 62, 0.3); */
     word-wrap: break-word;
 }
 
@@ -612,6 +617,42 @@ h2 {
 .Achievers:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(3, 11, 9, 0.844);
+    font-size: large;
+
+}
+
+.Join-Challenge-btn {
+    background: linear-gradient(90deg, green 0%, #764ba2 50%, #667eea 100%);
+    /* background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #667eea 100%); */
+    background: linear-gradient(90deg, green 0%, rgb(0, 71, 0) 50%, green 100%);
+    background-size: 200% 100%;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    transition: all 0.3s ease;
+}
+
+.Join-Challenge-btn:hover {
+    animation: gradientShift 1.5s ease infinite;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(118, 75, 162, 0.4);
+}
+
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        background-position: 0% center;
+    }
+
+    50% {
+        background-position: 100% center;
+    }
 }
 
 .Achievers {
@@ -730,7 +771,7 @@ h2 {
         z-index: 10;
         top: 0px;
         left: 0px;
-        color:white;
+        color: white;
     }
 
     #Home_Data {
@@ -1026,7 +1067,7 @@ h2 {
     border: 2px solid #1b0156aa;
 }
 
-#Chest-box {
+#back-box {
     color: #d87979;
     background-color: #b208083b;
     border: 2px solid #560101aa;
@@ -1061,19 +1102,26 @@ h2 {
     font-size: 0.9rem;
     font-weight: 500;
 }
+
 .mind-or,
 .or-line {
     color: white;
     border: 1px solid white;
-    height: 2px; /* Make it more visible */
-    background-color: white; /* Ensure it's white */
-    margin: 0; /* Remove default margins */
+    height: 2px;
+    /* Make it more visible */
+    background-color: white;
+    /* Ensure it's white */
+    margin: 0;
+    /* Remove default margins */
 }
+
 .line {
     background-color: rgba(255, 255, 255, 0.307);
     height: 1px;
-    flex: 1; /* This will make them expand to fill space */
+    flex: 1;
+    /* This will make them expand to fill space */
 }
+
 .play-button {
     width: 40px;
     height: 40px;
@@ -2859,7 +2907,7 @@ hr {
 .logo-nutrition {
     width: 6vh;
     height: 6vh;
-        background-color: #22c55e39;
+    background-color: #22c55e39;
     color: #22c55e;
     border: 1px solid #22c55e;
     border-radius: 8px;
@@ -3254,13 +3302,14 @@ hr {
 
 @media (max-width: 768px) {
     .stats-grid-nutrition {
-        grid-template-columns:1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         font-size: 0.8rem;
-        gap:10px;
+        gap: 10px;
         margin-bottom: 10px;
         /* padding: 0px; */
     }
-    .subtitle-nutrition{
+
+    .subtitle-nutrition {
         font-size: 1.5vh;
     }
 
@@ -3268,14 +3317,17 @@ hr {
         grid-template-columns: 1fr;
         margin-bottom: 10px;
     }
-    .stat-card-nutrition{
+
+    .stat-card-nutrition {
         padding: 5px;
     }
+
     .meal-macros-nutrition {
         flex-direction: column;
     }
-    .header-nutrition{
-        gap:0px;
+
+    .header-nutrition {
+        gap: 0px;
         margin-bottom: 0px;
     }
 }
@@ -3564,8 +3616,7 @@ body-progress {
 }
 
 .header-progress {
-display: flex
-;
+    display: flex;
     flex-direction: column;
     padding: 20px;
     background: linear-gradient(to right, #1c025e34, #927e9724);
@@ -4487,7 +4538,7 @@ display: flex
 .badge-beginner-community {
     background: #10b9815c;
     color: #97ddc6f5;
-        padding: 0.3vh 1vh;
+    padding: 0.3vh 1vh;
     border-radius: 3px;
     border: 1px solid #10b9815c;
 }
@@ -4732,7 +4783,7 @@ display: flex
 }
 
 .badge-easy-community {
-background: rgba(16, 185, 129, 0.36);
+    background: rgba(16, 185, 129, 0.36);
     color: rgba(151, 221, 198, 0.96);
     padding: 0.3vh 1vh;
     border-radius: 3px;
@@ -4749,7 +4800,7 @@ background: rgba(16, 185, 129, 0.36);
 
 .badge-cardio-community,
 .badge-medium-community {
-background: #ffa20463;
+    background: #ffa20463;
     color: #f1d1a7;
     padding: 0.3vh 1vh;
     border-radius: 3px;
@@ -4757,7 +4808,7 @@ background: #ffa20463;
 }
 
 .badge-strength-community {
-background: #ac04ff63;
+    background: #ac04ff63;
     color: #e5b0ff;
     padding: 0.3vh 1vh;
     border-radius: 3px;
@@ -6193,4 +6244,187 @@ background: #ac04ff63;
         align-items: flex-start;
         width: 100%;
     }
+}
+
+
+/* back */
+
+#Exercises_all ,
+#yogas_all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    background-color: #01342e;
+    padding: 0px;
+    margin: 0px;
+}
+
+.Begginer_Level_ex,
+#Novice_Level_ex,
+#Advance_Level_ex,
+#Intermediate_Level_ex,
+#Expert_Level_ex,
+#Master_Level_ex,
+#Grand_Master_Level_ex {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    gap: 3vw;
+    height: fit-content;
+    width: 100%;
+    padding: 10vw 5vw;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* background:linear-gradient(90deg ,#16222A, #3A6073); */
+    background: linear-gradient(90deg, #0F2027, #203A43, #2C5364);
+}
+
+.Begginer_Level_ex::-webkit-scrollbar,
+#Novice_Level_ex::-webkit-scrollbar,
+#Advance_Level_ex::-webkit-scrollbar,
+#Intermediate_Level_ex::-webkit-scrollbar,
+#Expert_Level_ex::-webkit-scrollbar,
+#Master_Level_ex::-webkit-scrollbar,
+#Grand_Master_Level_ex::-webkit-scrollbar {
+    display: none;
+}
+
+.all_beginner::-webkit-scrollbar,
+.all_Novice::-webkit-scrollbar,
+.all_Advance::-webkit-scrollbar,
+.all_Intermediate::-webkit-scrollbar,
+.all_Expert::-webkit-scrollbar,
+.all_Master::-webkit-scrollbar,
+.all_Grand_Master ::-webkit-scrollbar {
+    display: none;
+}
+
+.all_beginner,
+.all_Novice,
+.all_Advance,
+.all_Intermediate,
+.all_Expert,
+.all_Master,
+.all_Grand_Master 
+{
+    flex-shrink: 0;
+    justify-content: space-evenly;
+    background-color: white;
+    border: 2px solid transparent;
+    /* reserve space */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    height: 50vh;
+    width: 40vh;
+    backdrop-filter: blur(10px);
+    border-radius: 1vw;
+    padding: 0px;
+    margin: 0px;
+    overflow-y: scroll;
+    /* text-align: left; */
+    color: #000;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+
+/* Beginner hover */
+.all_beginner:hover {
+    border-color: rgb(12 69 52);
+}
+
+
+@media (max-width: 768px) {
+
+    .Begginer_Level_ex,
+    #Novice_Level_ex,
+    #Advance_Level_ex,
+    #Intermediate_Level_ex,
+    #Expert_Level_ex,
+    #Master_Level_ex,
+    #Grand_Master_Level_ex {
+
+        height: 100vh;
+        width: 100vw;
+        padding: 26vw 7vw;
+        overflow-x: scroll;
+
+    }
+
+}
+
+@media (max-width: 368px) {
+
+    .Begginer_Level_ex,
+    #Novice_Level_ex,
+    #Advance_Level_ex,
+    #Intermediate_Level_ex,
+    #Expert_Level_ex,
+    #Master_Level_ex,
+    #Grand_Master_Level_ex {
+
+        padding: 53vw 8vw;
+    }
+}
+
+.text_left {
+    text-align: justify;
+    padding: 0px 10px;
+}
+
+.text_right {
+    text-align: right;
+    padding: 0px 20px;
+}
+
+.form_name {
+    font-size: 1.2em;
+    font-weight: 600;
+    /* color: #000; */
+}
+
+.back_Head,
+.legs_Head,
+.arms_Head,
+.core_Head,
+.chest_Head,
+.yoga_Head{
+    font-size: 7vw;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.equipement {
+    color: #7d9caa;
+}
+
+.change_txt_btn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    width: 15vw;
+    height: 18vw;
+}
+
+.img_style {
+    width: 17vw;
+    height: auto;
+}
+
+.start_excercise{
+    background: linear-gradient(90deg, #0F2027, #203A43, #2C5364);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 2vh;
+    font-size: 2.2vh;
+}
+
+.Not_For{
+    color: red;
 }
