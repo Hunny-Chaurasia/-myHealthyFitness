@@ -83,6 +83,278 @@
         </step>
     </steps>
 </Pose>
+   <Pose id="4" difficulty="Beginner" safety="Maintain a straight, neutral spine throughout the entire movement. Do not round your back. Initiate the movement by pushing your hips back, not by bending at the waist. Low impact, but improper form can cause lower back strain. Start with a light kettlebell or no weight to master the technique." Pose_type="Strength Training">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/Kettlebell%20Sumo%20Deadlift.gif</url>
+    <Name>Kettlebell Sumo Deadlift</Name>
+    <Equipment>Kettlebell (Light to Medium Weight), Flat, Stable Surface</Equipment>
+    <Focused_Muscles>
+        <Primary>Hamstrings, Glutes (Maximus)</Primary>
+        <Secondary>Quadriceps, Inner Thighs (Adductors)</Secondary>
+        <Stabilizers>Lower Back (Erector Spinae), Core (Abdominals and Obliques), Trapezius</Stabilizers>
+    </Focused_Muscles>
+    <Preferred_Time>Morning or Early Evening, After a Dynamic Warm-Up. Can be performed on an empty stomach for fat-burning focus or with fuel for strength performance.</Preferred_Time>
+    <Diseases_Cured>
+        <Targeted>General Lower Back Pain (non-acute), Weak Posterior Chain, Poor Posture (Anterior Pelvic Tilt), Leg Muscle Atrophy</Targeted>
+        <Preventive>Osteoporosis (weight-bearing), Improves Functional Strength for Daily Activities</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup & Stance">
+            Stand tall with your feet placed significantly wider than shoulder-width apart. Point your toes outward at approximately a 45-degree angle. Position the kettlebell on the floor, centered directly between your feet.
+        </step>
+        <step order="2" focus="Grip & Hinge">
+            Initiate the movement by pushing your hips back and bending at your knees (not your waist). Lower your torso while keeping your chest up and back perfectly straight. Grasp the kettlebell handle with both hands using an overhand (pronated) grip. Your arms should remain long and straight.
+        </step>
+        <step order="3" focus="The Lift">
+            Take a deep breath and brace your core. Drive through the middle of your entire foot (emphasis on heels) to stand up. Extend your hips and knees simultaneously. At the top of the movement, stand fully upright and squeeze your glutes tightly. Avoid leaning backward.
+        </step>
+        <step order="4" focus="Descent & Repeat">
+            To lower the weight, reverse the motion precisely. Push your hips back first, then bend your knees as you lower the kettlebell back to the starting position with control. Maintain a neutral spine. Perform 8-12 repetitions for 3-4 sets.
+        </step>
+        <step order="5" focus="Form & Safety Tip">
+            **The single most important cue is to keep your back straight.** Imagine a rigid rod running along your spine. If you feel any strain in your lower back, immediately reduce the weight or practice the "hip hinge" motion without any weight. Look forward, not down, to help maintain spinal alignment.
+        </step>
+    </steps>
+    <Common_Mistakes>
+        <Mistake>Rounding the upper or lower back during the lift.</Mistake>
+        <Mistake>Leading the movement with the arms, attempting to "curl" the weight.</Mistake>
+        <Mistake>Letting the knees cave inward; they should track in line with your toes.</Mistake>
+        <Mistake>Hyperextending the back at the top of the movement.</Mistake>
+    </Common_Mistakes>
+</Pose>
+    <Pose id="5" difficulty="Beginner" safety="Maintain a neutral spine throughout the movement. Keep your knees tracking in line with your toes. Do not let your knees collapse inward. If you have knee or lower back issues, consult a professional first." Pose_type="Strength Training">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight-squat.gif</url>
+    <Name>Bodyweight Squat</Name>
+    <Equipment>None (Optional: Exercise Mat, Wall for Support)</Equipment>
+    <Focused_Muscles>
+        <Primary>Quadriceps, Glutes (Maximus)</Primary>
+        <Secondary>Hamstrings, Calves</Secondary>
+        <Stabilizers>Core (Abdominals and Obliques), Lower Back</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">After a brief warm-up, or any time of day after light activity. Can be performed on an empty stomach.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Weak Leg Muscles, Poor Mobility, Sedentary Lifestyle Effects</Targeted>
+        <Preventive>Osteoporosis (weight-bearing), Improves Balance and Functional Movement</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Stand with your feet shoulder-width to slightly wider than shoulder-width apart. Point your toes slightly outward (about 15-30 degrees). Keep your chest up, shoulders back, and look straight ahead.
+        </step>
+        <step order="2" focus="Descent">
+            Initiate the movement by pushing your hips back as if sitting in a chair. As you lower down, bend your knees and keep your torso as upright as possible. Lower until your thighs are parallel to the floor (or as far as comfortable).
+        </step>
+        <step order="3" focus="Ascent">
+            Drive through your entire foot, focusing on your heels and mid-foot, to push yourself back up to the starting position. Extend your hips and knees simultaneously, squeezing your glutes at the top.
+        </step>
+        <step order="4" focus="Repeat">
+            Perform the movement with control for 10-15 repetitions per set. Aim for 2-3 sets.
+        </step>
+        <step order="5" focus="Tip">
+            A common goal is to keep your knees from going past your toes, but a more important cue is to ensure your weight is centered over your mid-foot and your chest stays up. If you struggle with balance, practice squatting to a chair or against a wall.
+        </step>
+    </steps>
+        <common_mistakes>
+   <mistake>Letting the knees cave inward during the ascent or descent.</mistake>
+   <mistake>Rounding the lower back ("butt wink") at the bottom of the squat.</mistake>
+   <mistake>Lifting the heels off the ground, shifting weight onto the toes.</mistake>
+   <mistake>Leaning the torso too far forward, putting excessive strain on the lower back.</mistake>
+</common_mistakes>
+</Pose>
+
+   <Pose id="6" difficulty="Beginner" safety="Maintain a straight line from head to heels. Do not let your hips sag or rise too high. Engage your core and glutes to protect your lower back. If you have wrist pain, perform the plank on your forearms." Pose_type="Core Strength">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/planks</url>
+    <Name>Forearm Plank</Name>
+    <Equipment>Exercise Mat (Optional, for comfort)</Equipment>
+    <Focused_Muscles>
+        <Primary>Core (Rectus Abdominis, Transverse Abdominis)</Primary>
+        <Secondary>Shoulders (Deltoids), Chest (Pectorals)</Secondary>
+        <Stabilizers>Lower Back (Erector Spinae), Glutes, Quadriceps</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Excellent morning exercise to activate the core. Perform after a light warm-up or on an empty stomach.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Lower Back Pain (non-specific), Poor Posture, Core Weakness</Targeted>
+        <Preventive>Improves spinal stability, reduces risk of injury in daily activities, enhances balance.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Lie face down on the floor. Place your forearms on the ground with your elbows directly under your shoulders. Your arms should be parallel to each other. Curl your toes under.
+        </step>
+        <step order="2" focus="Engage & Lift">
+            Tighten your abdominal muscles as if bracing for a punch. Engage your glutes (buttocks) and quadriceps (thighs). Push through your forearms and toes to lift your entire body off the ground.
+        </step>
+        <step order="3" focus="Hold & Align">
+            Hold the position. Your body should form a straight, rigid line from your head to your heels. Look down at the floor to keep your neck in a neutral position. Breathe steadily.
+        </step>
+        <step order="4" focus="Repeat">
+            Hold for 20-30 seconds as a beginner. Rest for 30 seconds. Repeat for 3-4 sets. Focus on maintaining perfect form over a longer time.
+        </step>
+        <step order="5" focus="Tip">
+            **The most common mistake is hip sagging.** To prevent this, actively squeeze your glutes and pull your belly button towards your spine. If holding becomes too difficult, lower your knees to the floor while keeping your back straight (modified plank).
+        </step>
+    </steps>
+       <common_mistakes>
+   <mistake>Allowing the hips to sag toward the floor, which strains the lower back.</mistake>
+   <mistake>Lifting the hips too high, turning the exercise into a "downward dog" position and reducing core engagement.</mistake>
+   <mistake>Looking up or tucking the chin, putting the neck in an awkward position.</mistake>
+   <mistake>Holding the breath instead of maintaining steady, controlled breathing.</mistake>
+</common_mistakes>
+</Pose>
+
+    <Pose id="7" difficulty="Beginner" safety="Avoid pulling on your neck with your hands. Initiate the movement from your core, not your neck or shoulders. Exhale as you crunch up to engage the core effectively. If you have neck or lower back issues, perform with caution or consult a professional." Pose_type="Core Strength">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/crunches.gif</url>
+    <Name>Basic Crunch</Name>
+    <Equipment>Exercise Mat (Recommended, for spine comfort)</Equipment>
+    <Focused_Muscles>
+        <Primary>Upper Abdominals (Rectus Abdominis)</Primary>
+        <Secondary>Lower Abdominals, Obliques (as stabilizers)</Secondary>
+        <Stabilizers>Hip Flexors, Neck (if form is incorrect)</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Can be done in the morning on an empty stomach or as part of a full workout later in the day.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Weak Abdominal Muscles, Poor Core Stability</Targeted>
+        <Preventive>Helps support the lower back, may contribute to better posture over time.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Lie on your back on a mat. Bend your knees and place your feet flat on the floor, hip-width apart. Lightly place your fingertips behind your head, without interlocking them, to support your neck. Keep your elbows wide.
+        </step>
+        <step order="2" focus="Initiation">
+            Inhale deeply. As you exhale, gently engage your abdominal muscles by drawing your belly button toward your spine. Initiate the movement by lifting your head, neck, and shoulder blades off the floor.
+        </step>
+        <step order="3" focus="Contraction">
+            Continue curling upward until your upper back is off the mat. Focus on squeezing your abdominal muscles at the top of the movement. Your lower back should remain in contact with the floor throughout.
+        </step>
+        <step order="4" focus="Repeat">
+            Inhale as you slowly lower back down to the starting position with control. Aim for 15-20 repetitions for 2-3 sets. Quality of movement is more important than speed or quantity.
+        </step>
+        <step order="5" focus="Tip">
+            **Prevent neck strain** by keeping a tennis ball-sized space between your chin and chest. Your head should rest lightly in your hands; the work should come from your abs. Imagine bringing your rib cage toward your hips, not just lifting your shoulders.
+        </step>
+    </steps>
+        <common_mistakes>
+   <mistake>Pulling the head and neck forward with the hands, which can strain the cervical spine.</mistake>
+   <mistake>Using momentum to jerk the body up instead of a controlled, muscle-driven contraction.</mistake>
+   <mistake>Lifting the entire lower back off the floor, turning the crunch into a sit-up and engaging the hip flexors excessively.</mistake>
+   <mistake>Holding the breath; remember to exhale on the effort (as you crunch up) and inhale on the release.</mistake>
+</common_mistakes>
+</Pose>
+
+  <Pose id="8" difficulty="Beginner" safety="Maintain a strong, straight plank position throughout. Avoid letting your hips sag or rise too high. Keep movements controlled to prevent lower back strain. If you have wrist or shoulder issues, perform with caution." Pose_type="Cardio, Core Strength">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/mountain_climbers.gif</url>
+    <Name>Mountain Climbers</Name>
+    <Equipment>Exercise Mat (Optional, for comfort and grip)</Equipment>
+    <Focused_Muscles>
+        <Primary>Core (Rectus Abdominis, Obliques, Hip Flexors)</Primary>
+        <Secondary>Shoulders (Deltoids), Chest (Pectorals)</Secondary>
+        <Stabilizers>Glutes, Quadriceps, Hamstrings, Lower Back</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Excellent for morning cardio and core activation. Perform after a brief warm-up.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Sedentary Lifestyle, Poor Cardiovascular Endurance, Weak Core Stability</Targeted>
+        <Preventive>Improves heart health, enhances coordination and agility, supports metabolic health.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Start in a high plank position. Place your hands directly under your shoulders, arms straight. Your body should form a straight line from your head to your heels. Engage your core and glutes.
+        </step>
+        <step order="2" focus="Initiation">
+            Keeping your torso stable and hips level, quickly draw your right knee toward your chest. Try to bring it as close to your chest or opposite elbow as possible, without rounding your upper back.
+        </step>
+        <step order="3" focus="Switch">
+            As you return your right foot to the starting plank position, simultaneously drive your left knee toward your chest. This creates a running or climbing motion in place.
+        </step>
+        <step order="4" focus="Repeat">
+            Continue alternating knees in a controlled, rhythmic motion. Aim for 30-60 seconds of continuous movement, or perform 20-30 alternating reps (10-15 per side) for 2-3 sets.
+        </step>
+        <step order="5" focus="Tip">
+            **Speed is less important than form.** Focus on keeping your hips stable and low—imagine balancing a glass of water on your lower back. Start slow to master the coordination before increasing pace.
+        </step>
+    </steps>
+      <common_mistakes>
+   <mistake>Allowing the hips to bounce up and down or sag toward the floor, which strains the lower back and reduces core engagement.</mistake>
+   <mistake>Shifting weight unevenly between hands, causing shoulder instability.</mistake>
+   <mistake>Rushing the movement with poor control, leading to sloppy form and reduced effectiveness.</mistake>
+   <mistake>Holding the breath; maintain steady, rhythmic breathing throughout the exercise.</mistake>
+</common_mistakes>
+</Pose>
+
+   <Pose id="9" difficulty="Beginner" safety="Focus on engaging the oblique muscles on the side of your torso. Avoid pulling on your neck with your hand. Move in a controlled, lateral motion rather than twisting or pulling forward. If you have neck or lower back issues, perform with caution." Pose_type="Core Strength">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/side_crunches.gif</url>
+    <Name>Side Crunch</Name>
+    <Equipment>Exercise Mat (Recommended)</Equipment>
+    <Focused_Muscles>
+        <Primary>Obliques (External and Internal)</Primary>
+        <Secondary>Rectus Abdominis (Upper Abs), Hip Flexors</Secondary>
+        <Stabilizers>Lower Back, Shoulders, Neck</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Suitable for morning core workouts. Can be performed on an empty stomach.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Weak Oblique Muscles, Poor Core Stability, Lack of Torso Definition</Targeted>
+        <Preventive>Improves lateral stability, supports spinal health, and may help prevent side strain during rotational movements.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Lie on your back on a mat. Bend your knees and place your feet flat on the floor, hip-width apart. Gently roll your legs to one side so both knees are resting on the floor, keeping your shoulders flat on the mat. Place your hands lightly behind your head, elbows wide.
+        </step>
+        <step order="2" focus="Initiation">
+            Inhale to prepare. As you exhale, engage your oblique muscles on the side of your torso (the side your legs are leaning toward) to lift your head, neck, and shoulder blades off the floor.
+        </step>
+        <step order="3" focus="Contraction">
+            Lift diagonally, aiming your top elbow toward your top hip, creating a lateral crunch. Squeeze your side abs at the top of the movement, keeping the movement focused on the side, not forward.
+        </step>
+        <step order="4" focus="Repeat">
+            Inhale as you slowly lower back to the starting position with control. Complete 12-15 repetitions on one side before switching legs and arms to the opposite side. Perform 2-3 sets per side.
+        </step>
+        <step order="5" focus="Tip">
+            **Imagine lifting your rib cage toward your hip, not pulling your elbow toward your knee.** This focuses the work on the obliques. Keep your neck relaxed; your head should be supported by your hands, not pulled by them.
+        </step>
+    </steps>
+       <common_mistakes>
+   <mistake>Pulling the neck forward or sideways with the hands, causing neck strain instead of engaging the obliques.</mistake>
+   <mistake>Twisting the torso forward into a regular crunch, rather than performing a true lateral (sideways) lift.</mistake>
+   <mistake>Using momentum to jerk the upper body up, rather than a controlled muscle contraction.</mistake>
+   <mistake>Holding the breath; remember to exhale during the crunch (effort) and inhale during the release.</mistake>
+</common_mistakes>
+</Pose>
+
+   <Pose id="10" difficulty="Beginner" safety="Maintain a stable, engaged core throughout the movement to protect your lower back. Avoid rounding your spine; keep your back straight and chest lifted. Move in a controlled manner—do not use momentum to swing the weight. If you have lower back issues, perform without weight and with feet on the floor." Pose_type="Core Strength">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/weighted_russian_twist.gif</url>
+    <Name>Weighted Russian Twist</Name>
+    <Equipment>Dumbbell, Kettlebell, Medicine Ball, or Weight Plate; Exercise Mat (Optional)</Equipment>
+    <Focused_Muscles>
+        <Primary>Obliques (External and Internal), Rectus Abdominis</Primary>
+        <Secondary>Transverse Abdominis, Hip Flexors</Secondary>
+        <Stabilizers>Lower Back (Erector Spinae), Shoulders, Chest</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Best performed after a warm-up. Can be done in the morning or as part of a core/strength workout later in the day.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Weak Rotational Core Strength, Poor Spinal Mobility, Lack of Torso Stability</Targeted>
+        <Preventive>Enhances functional fitness for twisting movements, improves posture, and supports lower back health by building core stability.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Sit on the floor with your knees bent and feet flat on the ground. Lean back slightly so your torso is at about a 45-degree angle to the floor, keeping your back straight (no rounding). Hold a weight with both hands close to your chest.
+        </step>
+        <step order="2" focus="Engage & Lift">
+            Brace your core by pulling your navel toward your spine. Lift your feet a few inches off the floor, balancing on your sit bones. This is the starting V-sit position.
+        </step>
+        <step order="3" focus="Rotation">
+            Keeping your core tight and legs still, slowly rotate your torso to one side, bringing the weight toward the floor beside your hip. Keep your chest up and avoid hunching your shoulders.
+        </step>
+        <step order="4" focus="Repeat">
+            Rotate back through the center and then to the opposite side in a controlled motion. That is one repetition. Aim for 10-15 repetitions (each side counts as one) for 2-3 sets.
+        </step>
+        <step order="5" focus="Tip">
+            **Quality over speed and weight.** Focus on the controlled twist from your torso, not your arms. If balancing with feet off the floor is too challenging, keep your heels on the ground to build strength first. Exhale as you twist to the side.
+        </step>
+    </steps>
+       <common_mistakes>
+   <mistake>Using momentum to swing the weight instead of a slow, muscle-controlled rotation.</mistake>
+   <mistake>Rounding the spine and dropping the chest, which shifts stress to the lower back.</mistake>
+   <mistake>Moving the arms independently from the torso instead of rotating the entire upper body as one unit.</mistake>
+   <mistake>Holding the breath; remember to breathe steadily, exhaling on the twist for better core engagement.</mistake>
+</Pose>
+
+       
     <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
         <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
         <Name></Name>
@@ -243,146 +515,7 @@
             </step>
         </steps>
     </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
-    </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
-    </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
-    </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
-    </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
-    </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
-    </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
-    </Pose>
+
 
 
 </excercises_Begginer>
