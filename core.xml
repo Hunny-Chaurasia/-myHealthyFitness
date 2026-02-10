@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excercises_Begginer>
+    <Pose id="1" difficulty="Beginner" safety="Low Impact" Pose_type="Cat-Cow">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dead-bug.GIF</url>
+        <Name>Cat Cow Pose</Name>
+        <Equipment>Yoga Mat (optional)</Equipment>
+        <Focused_Muscles>Spine, Neck, Core, Shoulders</Focused_Muscles>
+        <Preferred time="Morning">Before Meal / Empty Stomach</Preferred>
+        <Diseases_Cured>Back Pain, Neck Pain, Digestive Issues, Stress</Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+                Kneel on the floor with hands under shoulders and knees under hips. Keep your back
+                flat like a table.
+            </step>
+            <step order="2" focus="Cow Pose (Inhale)">
+                Slowly drop your belly down, lift your head and tailbone up (like a cow). Breathe in
+                deeply.
+            </step>
+            <step order="3" focus="Cat Pose (Exhale)">
+                Round your spine upward, tuck your chin to chest (like a scared cat). Breathe out
+                fully.
+            </step>
+            <step order="4" focus="Repeat">
+                Move smoothly between Cow and Cat for 5-10 breaths. Go slow-no rush!
+            </step>
+            <step order="5" focus="Tip">
+                If your wrists hurt, try fists instead of flat hands.
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="Moderate Impact" Pose_type="Strength Training">
+        <url type="gif">
+            https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/how-to-do-a-kettlebell-sumo-squat.gif</url>
+        <Name>Kettlebell Sumo Squat</Name>
+        <Equipment>Kettlebell (optional)</Equipment>
+        <Focused_Muscles>Quads, Glutes, Hamstrings, Inner Thighs, Core</Focused_Muscles>
+        <Preferred time="Morning">Before Meal / After Warm-Up</Preferred>
+        <Diseases_Cured>Leg Weakness, Poor Posture, Lower Back Pain</Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+                Stand with feet wider than shoulder-width, toes pointed slightly outward. Place a
+                kettlebell between your feet (optional).
+            </step>
+            <step order="2" focus="Grip">
+                Hold the kettlebell handle with both hands, keeping your chest up and back straight.
+            </step>
+            <step order="3" focus="Squat">
+                Lower your body by bending your knees, keeping them in line with your toes. Go as
+                low as you comfortably can.
+            </step>
+            <step order="4" focus="Repeat">
+                Push through your heels to stand back up, squeezing your glutes at the top. Repeat
+                for 10–12 reps.
+            </step>
+            <step order="5" focus="Tip">
+                If you don’t have a kettlebell, use a water bottle or just focus on the squat
+                movement.
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="3" difficulty="Beginner" safety="Low Impact" Pose_type="Strength Training">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/Kettlebell%20Sumo%20Deadlift.gif</url>
+    <Name>Kettlebell Sumo Deadlift</Name>
+    <Equipment>Kettlebell (start with light weight)</Equipment>
+    <Focused_Muscles>Hamstrings, Glutes, Quadriceps, Lower Back, Core</Focused_Muscles>
+    <Preferred time="Morning">After Warm-Up / Empty Stomach</Preferred>
+    <Diseases_Cured>Lower Back Pain, Poor Posture, Weak Leg Muscles</Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Stand with feet wider than shoulder-width, toes pointed outward at 45 degrees. Place the kettlebell centered between your feet.
+        </step>
+        <step order="2" focus="Grip">
+            Bend at hips and knees to lower down. Grab the kettlebell with both hands using an overhand grip, keeping arms straight.
+        </step>
+        <step order="3" focus="Lift">
+            Keep back straight, push through heels to stand up, lifting the kettlebell. Squeeze glutes at the top (don't lean back).
+        </step>
+        <step order="4" focus="Repeat">
+            Lower back down with control by pushing hips back first, then bending knees. Repeat for 8-10 reps.
+        </step>
+        <step order="5" focus="Tip">
+            If you feel strain in your lower back, reduce weight or practice without the kettlebell first.
+        </step>
+    </steps>
+</Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
+        <Name></Name>
+        <Equipment></Equipment>
+        <Focused_Muscles></Focused_Muscles>
+        <Preferred time="Morning"></Preferred>
+        <Diseases_Cured></Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">
+            </step>
+            <step order="2" focus="">
+            </step>
+            <step order="3" focus="">
+            </step>
+            <step order="4" focus="Repeat">
+            </step>
+            <step order="5" focus="Tip">
+            </step>
+        </steps>
+    </Pose>
+
+
+</excercises_Begginer>
