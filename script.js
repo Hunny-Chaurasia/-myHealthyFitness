@@ -96,32 +96,32 @@ function toggleSwitch(element) {
 
 //workout acc age
 // document.addEventListener("DOMContentLoaded", function () {
-  // Hide all workout sections initially
-  // const sections = [
-  //   "kids_5-12_section",
-  //   "kids_13-16_section",
-  //   "age_17-21_section",
-  //   "age_22-45_section",
-  //   "age_46-75_section",
-  // ];
-  // sections.forEach((id) => {
-  //   const el = document.getElementById(id);
-  //   if (el) el.style.display = "none";
-  // });
-  // Prompt user for age
-  // let age = prompt("Please enter your age:");
-  // Validate input
-  // age = parseInt(age);
-  // if (isNaN(age) || age <= 0) {
-    // alert("Invalid age entered. Showing all workouts.");
-    // Show all sections if invalid age
-  //   sections.forEach((id) => {
-  //     const el = document.getElementById(id);
-  //     if (el) el.style.display = "grid";
-  //   });
-  //   return;
-  // }
-  // Show only the section corresponding to the age
+// Hide all workout sections initially
+// const sections = [
+//   "kids_5-12_section",
+//   "kids_13-16_section",
+//   "age_17-21_section",
+//   "age_22-45_section",
+//   "age_46-75_section",
+// ];
+// sections.forEach((id) => {
+//   const el = document.getElementById(id);
+//   if (el) el.style.display = "none";
+// });
+// Prompt user for age
+// let age = prompt("Please enter your age:");
+// Validate input
+// age = parseInt(age);
+// if (isNaN(age) || age <= 0) {
+// alert("Invalid age entered. Showing all workouts.");
+// Show all sections if invalid age
+//   sections.forEach((id) => {
+//     const el = document.getElementById(id);
+//     if (el) el.style.display = "grid";
+//   });
+//   return;
+// }
+// Show only the section corresponding to the age
 //   if (age >= 5 && age <= 12) {
 //     document.getElementById("kids_5-12_section").style.display = "grid";
 //   } else if (age >= 13 && age <= 16) {
@@ -1481,7 +1481,7 @@ function createFloatingParticles_PROGRESS_MONTHLY() {
                 left: 0;
                 width: 100%;
                 height: 100%;
-                pointer-events: none;
+                pointer-events:non;
                 z-index: -1;
                 overflow: hidden;
             `;
@@ -1491,8 +1491,8 @@ function createFloatingParticles_PROGRESS_MONTHLY() {
     particle_PROGRESS_MONTHLY.className = `particle-${i}-PROGRESS-MONTHLY`;
     particle_PROGRESS_MONTHLY.style.cssText = `
                     position: absolute;
-                    width: ${Math.random() * 4 + 2}px;
-                    height: ${Math.random() * 4 + 2}px;
+                    width: ${Math.random() * 9 + 2}px;
+                    height: ${Math.random() * 11 + 2}px;
                     background: ${['#3b82f6', '#fbbf24', '#f87171', '#a78bfa'][Math.floor(Math.random() * 4)]};
                     border-radius: 50%;
                     left: ${Math.random() * 100}%;
@@ -1511,7 +1511,7 @@ function createFloatingParticles_PROGRESS_MONTHLY() {
                             opacity: 0;
                         }
                         10% {
-                            opacity: ${Math.random() * 0.5 + 0.2};
+                            opacity: ${Math.random() * 1.5 + 0.2};
                         }
                         90% {
                             opacity: ${Math.random() * 0.5 + 0.2};
@@ -1973,3 +1973,193 @@ document.addEventListener('mouseout', (e) => {
     e.target.closest('.session-item-PROGRESS').style.borderColor = 'rgba(255, 255, 255, 0.05)';
   }
 });
+
+
+// back exercises
+function change_text() {
+  // Note: Ensure your HTML ID is actually spelled "Begginer" to match this
+  document.getElementById("Beginner_back1").innerHTML = `
+        <button style="background-color: transparent; border: none; cursor: pointer;" onclick="change_text()">
+            <img src="https://liftmanual.com/wp-content/uploads/2023/04/band-seated-row.webp" alt="Band Seated Row Form & Visual" style="width: 140px; height: auto;">
+        </button>
+        <p><strong>Seated Row Form & Visual</strong></p>
+          <ol style="text-align: left; padding-left: 25px;">
+    <li>
+      <p class="text_left">
+        <strong>Setup:</strong> Sit on the floor with your legs extended straight in front of you. Loop a resistance band around your feet and hold the ends with both hands.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>Starting Position:</strong> Keep your back straight and shoulders relaxed. Engage your core and slightly lean back to create tension in the band.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>The Pull:</strong> Pull the band towards your torso, squeezing your shoulder blades together. Keep your elbows close to your sides and avoid shrugging your shoulders.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>The Release:</strong> Slowly extend your arms back to the starting position, maintaining control of the band. Keep your back straight and core engaged throughout.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>Repeat:</strong> Perform 3-4 sets of 10-15 reps, focusing on smooth and controlled movements.
+      </p>
+    </li>
+  </ol>
+
+  <button class="start_excercise" onclick="">Start Workout</button>
+`;
+}
+
+function change_text2() {
+  // Note: Ensure your HTML ID is actually spelled "Begginer" to match this
+  document.getElementById("Beginner_back2").innerHTML = `
+        <button style="background-color: transparent; border: none; cursor: pointer;" onclick="change_text()">
+            <img src="https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/kettlebell-sumo-deadlift.gif" 
+                 alt="Double Kettlebell Sumo Deadlift" 
+                 style="width: 140px; height: auto;">
+        </button>
+        <p><strong>Double Kettlebell Sumo Deadlift</strong></p>
+       <ol style="text-align: left; padding-left: 25px;">
+    <li>
+      <p class="text_left">
+        <strong>Setup:</strong> Place two kettlebells on the floor slightly wider than shoulder-width apart. Stand in a sumo stance (feet wider than hip-width, toes pointed outward at ~45°). Position yourself between the kettlebells.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>Grip & Stance:</strong> Hinge at your hips and bend your knees to lower into position. Grasp each kettlebell with an overhand grip (palms facing you). Keep your back flat, chest up, and shoulders back.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>The Lift:</strong> Drive through your heels to stand up, keeping the kettlebells close to your body. Fully extend your hips and knees at the top, squeezing your glutes.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>The Descent:</strong> Hinge at your hips and bend your knees to lower the kettlebells back down. Maintain a flat back and control the movement throughout.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>Repeat:</strong> Perform 3-4 sets of 6-10 reps, focusing on maintaining perfect form.
+      </p>
+    </li>
+  </ol>
+  <button class="start_excercise" onclick="">Start Workout</button>`;
+}
+
+function change_text3() {
+  // Note: Ensure your HTML ID is actually spelled "Begginer" to match this
+  document.getElementById("Beginner_back3").innerHTML = `
+        <button style="background-color: transparent; border: none; cursor: pointer;" onclick="change_text()">
+            <img src="https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/how-to-do-a-kettlebell-sumo-squat.gif"
+                 alt="Kettlebell Sumo Squat" 
+                 style="width: 140px; height: auto;">
+        </button>
+        <p><strong>Kettlebell Sumo Squat</strong></p>
+          <ol style="text-align: left; padding-left: 25px;">
+    <li>
+      <p class="text_left">
+        <strong>Setup:</strong> Stand in a **sumo stance** (feet wider than shoulder-width, toes pointed outward at ~45°). Place a kettlebell on the floor in front of you.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>Grip the Kettlebell:</strong> Hinge at your hips and bend your knees to lower into a squat. Grasp the kettlebell handle with both hands using an **overhand grip**.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>The Squat:</strong> Push through your heels to stand up, lifting the kettlebell off the floor. Keep your chest up, back straight, and core engaged.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>Lower the Kettlebell:</strong> Hinge at your hips and bend your knees to lower the kettlebell back to the floor. Keep your back flat and control the movement.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>Repeat:</strong> Perform 3-4 sets of 8-12 reps, maintaining proper form throughout.
+      </p>
+    </li>
+  </ol>
+  <button class="start_excercise" onclick="">Start Workout</button>`;
+}
+
+function change_text4() {
+  // Note: Ensure your HTML ID is actually spelled "Begginer" to match this
+  document.getElementById("Beginner_back4").innerHTML = `
+        <button style="background-color: transparent; border: none; cursor: pointer;" onclick="change_text()">
+            <img src="https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/Kettlebell%20Sumo%20Deadlift.gif"  
+                 alt="Kettlebell Sumo Deadlift" 
+                 style="width: 140px; height: auto;">
+        </button>
+        <p><strong>Kettlebell Sumo Deadlift</strong></p>
+          <ol style="text-align: left; padding-left: 25px;">
+    <li>
+      <p class="text_left">
+        <strong>Setup:</strong> Place two kettlebells on the floor, slightly wider than shoulder-width. Stand in a sumo stance (feet wider than hip-width, toes pointed outward at ~45°). Position yourself so the kettlebells are centered between your feet.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>Grip & Body Positioning:</strong> Hinge at your hips and bend your knees to lower into a deep squat. Grip each kettlebell with an overhand grip (palms facing you). Keep your back straight, chest up, and shoulders pulled back. Engage your core to protect your lower back.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>The Lift (Upward Movement):</strong> Push through your heels (not toes) to stand up. Drive your hips forward while keeping the kettlebells close to your body. Fully extend your hips and knees at the top (but don’t hyperextend). Squeeze your glutes at the top for maximum engagement.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>The Descent (Downward Movement):</strong> Hinge at your hips and bend your knees to lower the kettlebells. Keep your back flat (no rounding!) as you lower them. Control the descent—don’t let gravity do the work.
+      </p>
+    </li><br>
+    <li>
+      <p class="text_left">
+        <strong>Repeat:</strong> Reset your stance if needed and perform 3-4 sets of 8-12 reps.
+      </p>
+    </li>
+  </ol>
+  <button class="start_excercise" onclick="">Start Workout</button>`;
+}
+
+function change_text5() {
+  // Note: Ensure your HTML ID is actually spelled "Begginer" to match this
+  document.getElementById("Beginner_back5").innerHTML = `
+        <button style="background-color: transparent; border: none; cursor: pointer;" onclick="change_text()">
+            <img src="https://liftmanual.com/wp-content/uploads/2023/04/band-seated-row.webp" 
+                 alt="Band Seated Row Form & Visual" 
+                 style="width: 140px; height: auto;">
+        </button>
+        <p><strong>Seated Row Form & Visual</strong></p>
+        <ol style="text-align: left; padding-left: 25px;">
+            <li><p class="text_left">Sit on the floor with your legs extended in front of you. Loop a resistance band around your feet and hold the ends with your hands.</p></li><br>
+            <li><p class="text_left">Keep your back straight and engage your core. Pull the band towards your torso, squeezing your shoulder blades together.</p></li><br>
+            <li><p class="text_left">Slowly return to the starting position and repeat for the desired number of reps.</p></li>
+        </ol>`;
+}
+
+function change_text6() {
+  // Note: Ensure your HTML ID is actually spelled "Begginer" to match this
+  document.getElementById("Beginner_back6").innerHTML = `
+        <button style="background-color: transparent; border: none; cursor: pointer;" onclick="change_text()">
+            <img src="https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/Kettlebell%20Sumo%20Deadlift.gif" 
+                 alt="Band Seated Row Form & Visual" 
+                 style="width: 140px; height: auto;">
+        </button>
+        <p><strong>Seated Row Form & Visual</strong></p>
+        <ol style="text-align: left; padding-left: 25px;">
+            <li><p class="text_left">Sit on the floor with your legs extended in front of you. Loop a resistance band around your feet and hold the ends with your hands.</p></li><br>
+            <li><p class="text_left">Keep your back straight and engage your core. Pull the band towards your torso, squeezing your shoulder blades together.</p></li><br>
+            <li><p class="text_left">Slowly return to the starting position and repeat for the desired number of reps.</p></li>
+        </ol>`;
+}
