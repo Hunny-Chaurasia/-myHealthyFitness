@@ -355,167 +355,915 @@
 </Pose>
 
        
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
+   <Pose id="10" difficulty="Beginner" safety="Keep your lower back pressed firmly against the floor throughout the entire movement to protect your spine. Move slowly and with control to prevent momentum from compromising form. If you experience lower back discomfort, reduce the range of motion or perform without the stability ball." Pose_type="Core Stability">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/stability_ball_dead_bug.gif</url>
+    <Name>Stability Ball Dead Bug</Name>
+    <Equipment>Stability Ball (Swiss Ball), Exercise Mat</Equipment>
+    <Focused_Muscles>
+        <Primary>Transverse Abdominis (Deep Core), Rectus Abdominis</Primary>
+        <Secondary>Obliques, Hip Flexors</Secondary>
+        <Stabilizers>Shoulders, Lower Back (to maintain neutral spine), Glutes</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Excellent for low-intensity morning core activation and spinal stability. Can be done on an empty stomach.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Lower Back Pain (due to core weakness), Poor Coordination, Lack of Core Stability</Targeted>
+        <Preventive>Enhances mind-muscle connection with the deep core, improves posture, and reduces risk of back injury during daily activities.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Lie flat on your back on a mat. Bend your knees to 90 degrees and place a stability ball between your lower legs (calves/hamstrings) and your hands. Gently squeeze the ball with both your legs and arms. Lift your knees to a tabletop position so your thighs are perpendicular to the floor.
+        </step>
+        <step order="2" focus="Engage & Extend">
+            Inhale to prepare. Exhale as you engage your core by pressing your lower back into the floor. Slowly and simultaneously extend your right arm overhead and your left leg toward the floor, keeping the ball secure with your remaining limbs.
+        </step>
+        <step order="3" focus="Return & Switch">
+            Inhale as you slowly return your extended arm and leg to the starting tabletop position, maintaining ball control. Keep your core braced and back flat.
+        </step>
+        <step order="4" focus="Repeat">
+            Repeat the movement on the opposite side, extending your left arm and right leg. Continue alternating sides in a slow, controlled manner. Aim for 8-12 repetitions per side for 2-3 sets.
+        </step>
+        <step order="5" focus="Tip">
+            **The key is to prevent your lower back from arching off the floor.** Imagine you are pressing your spine flat into the mat. Move only as far as you can while maintaining this contact. If the ball feels unstable, practice the movement without it first.
+        </step>
+    </steps>
+       <common_mistakes>
+   <mistake>Allowing the lower back to arch off the floor, which defeats the core-stabilizing purpose of the exercise.</mistake>
+   <mistake>Moving too quickly or using momentum, which reduces core engagement and can cause loss of ball control.</mistake>
+   <mistake>Holding the breath, which reduces intra-abdominal pressure and core stability. Breathe steadily.</mistake>
+   <mistake>Letting the stability ball wobble or drop due to insufficient squeezing force from the limbs.</mistake>
+</common_mistakes>
+</Pose>
+
+   <Pose id="12" difficulty="Beginner" safety="Move with slow, controlled motions to maintain balance and engage the correct muscles. Keep your spine in a neutral, long position—avoid arching or rounding your back. Focus on stability over speed. If you have wrist or shoulder issues, ensure proper hand placement and avoid locking your elbows." Pose_type="Core Stability, Balance">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight_bird_dog.gif</url>
+    <Name>Bird Dog</Name>
+    <Equipment>Exercise Mat (Optional, for knee comfort)</Equipment>
+    <Focused_Muscles>
+        <Primary>Core (Transverse Abdominis, Multifidus - deep spinal muscles), Glutes (Maximus)</Primary>
+        <Secondary>Shoulders (Deltoids), Lower Back (Erector Spinae as stabilizers)</Secondary>
+        <Stabilizers>Obliques, Hip Muscles, Scapular Stabilizers</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Ideal for morning routines to gently activate the core and posterior chain. Can be done on an empty stomach.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Lower Back Pain (non-specific), Poor Posture, Lack of Coordination and Balance</Targeted>
+        <Preventive>Builds spinal stability, improves proprioception (body awareness), and helps prevent back injuries by strengthening supportive muscles.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Start on your hands and knees in a tabletop position. Place your hands directly under your shoulders and your knees directly under your hips. Keep your spine in a neutral, flat position—neither arched nor sagging. Look down at the floor.
+        </step>
+        <step order="2" focus="Engage & Extend">
+            Inhale to prepare. Exhale as you gently engage your core. Simultaneously extend your right arm straight forward (in line with your shoulder) and your left leg straight back (in line with your hip). Keep your hips and shoulders square to the floor.
+        </step>
+        <step order="3" focus="Hold & Stabilize">
+            Hold the extended position for 1-2 seconds. Focus on maintaining perfect balance without tilting or rotating your torso. Your body should form a straight line from your fingertips to your heel.
+        </step>
+        <step order="4" focus="Repeat">
+            Inhale as you slowly return your arm and leg to the starting tabletop position with control. Repeat on the opposite side, extending your left arm and right leg. That is one repetition. Aim for 10-12 repetitions per side for 2-3 sets.
+        </step>
+        <step order="5" focus="Tip">
+            **Do not lift your arm or leg higher than your back can stay level.** The goal is stability, not height. Imagine balancing a glass of water on your lower back. If you wobble, reduce your range of motion until you can perform the movement steadily.
+        </step>
+    </steps>
+</Pose>
+<Pose id="12" difficulty="Beginner" safety="Move with slow, controlled motions to maintain balance and engage the correct muscles. Keep your spine in a neutral, long position—avoid arching or rounding your back. Focus on stability over speed. If you have wrist or shoulder issues, ensure proper hand placement and avoid locking your elbows." Pose_type="Core Stability, Balance">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight_bird_dog.gif</url>
+    <Name>Bird Dog</Name>
+    <Equipment>Exercise Mat (Optional, for knee comfort)</Equipment>
+    <Focused_Muscles>
+        <Primary>Core (Transverse Abdominis, Multifidus - deep spinal muscles), Glutes (Maximus)</Primary>
+        <Secondary>Shoulders (Deltoids), Lower Back (Erector Spinae as stabilizers)</Secondary>
+        <Stabilizers>Obliques, Hip Muscles, Scapular Stabilizers</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Ideal for morning routines to gently activate the core and posterior chain. Can be done on an empty stomach.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Lower Back Pain (non-specific), Poor Posture, Lack of Coordination and Balance</Targeted>
+        <Preventive>Builds spinal stability, improves proprioception (body awareness), and helps prevent back injuries by strengthening supportive muscles.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Start on your hands and knees in a tabletop position. Place your hands directly under your shoulders and your knees directly under your hips. Keep your spine in a neutral, flat position—neither arched nor sagging. Look down at the floor.
+        </step>
+        <step order="2" focus="Engage & Extend">
+            Inhale to prepare. Exhale as you gently engage your core. Simultaneously extend your right arm straight forward (in line with your shoulder) and your left leg straight back (in line with your hip). Keep your hips and shoulders square to the floor.
+        </step>
+        <step order="3" focus="Hold & Stabilize">
+            Hold the extended position for 1-2 seconds. Focus on maintaining perfect balance without tilting or rotating your torso. Your body should form a straight line from your fingertips to your heel.
+        </step>
+        <step order="4" focus="Repeat">
+            Inhale as you slowly return your arm and leg to the starting tabletop position with control. Repeat on the opposite side, extending your left arm and right leg. That is one repetition. Aim for 10-12 repetitions per side for 2-3 sets.
+        </step>
+        <step order="5" focus="Tip">
+            **Do not lift your arm or leg higher than your back can stay level.** The goal is stability, not height. Imagine balancing a glass of water on your lower back. If you wobble, reduce your range of motion until you can perform the movement steadily.
+        </step>
+    </steps>
+    <common_mistakes>
+   <mistake>Allowing the hips to tilt or rotate when extending the arm and leg, compromising spinal alignment.</mistake>
+   <mistake>Arching the lower back or lifting the extended limb too high, which can strain the lumbar spine.</mistake>
+   <mistake>Looking up or turning the head, which can misalign the neck and disrupt balance.</mistake>
+   <mistake>Moving too quickly or using momentum instead of relying on muscle control for stability.</mistake>
+</common_mistakes>
+</Pose>
+
+   <Pose id="13" difficulty="Beginner" safety="Maintain a strong, engaged core to keep your balance on the ball. Avoid rounding your spine; keep your chest lifted and back straight. Move in a controlled manner—do not use momentum to swing. If you feel unstable, perform without weight or with your feet wider apart for a better base." Pose_type="Core Strength, Stability">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/stability_ball_russian_twist.gif</url>
+    <Name>Stability Ball Russian Twist</Name>
+    <Equipment>Stability Ball (Swiss Ball), Optional: Dumbbell, Medicine Ball, or Weight Plate</Equipment>
+    <Focused_Muscles>
+        <Primary>Obliques (External and Internal), Rectus Abdominis</Primary>
+        <Secondary>Hip Flexors, Transverse Abdominis (for stabilization)</Secondary>
+        <Stabilizers>Lower Back (Erector Spinae), Shoulders, Glutes</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Can be done in the morning after a light warm-up. Provides both core activation and balance training to start the day.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Poor Rotational Stability, Weak Core Muscles, Lack of Balance and Coordination</Targeted>
+        <Preventive>Enhances functional core strength for twisting movements, improves posture, and reduces risk of injury during sports or daily activities.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Sit on the stability ball. Walk your feet forward as you lean back, rolling the ball until it supports your mid to upper back. Your knees should be bent at 90 degrees, feet flat on the floor hip-width apart. Lift your chest to create a straight torso from knees to shoulders. Clasp your hands together or hold a light weight at your chest.
+        </step>
+        <step order="2" focus="Engage & Rotate">
+            Inhale to brace your core. Exhale as you slowly rotate your torso to one side, keeping your hips stable and the ball still. Lead the movement with your chest and shoulders, not just your arms.
+        </step>
+        <step order="3" focus="Controlled Return">
+            Pause briefly when you feel a gentle stretch in your side abs. Inhale as you return to the center with control, maintaining your balance on the ball.
+        </step>
+        <step order="4" focus="Repeat">
+            Exhale as you rotate to the opposite side. Continue alternating sides in a slow, rhythmic motion. Aim for 10-15 repetitions per side for 2-3 sets.
+        </step>
+        <step order="5" focus="Tip">
+            **Focus on keeping the ball completely still.** Any rocking or rolling means your core is not fully engaged to stabilize your spine. Start with no weight to master the balance, and only add resistance once you can perform the movement without wobbling.
+        </step>
+    </steps>
+       <common_mistakes>
+   <mistake>Allowing the stability ball to rock or roll side-to-side, indicating insufficient core engagement and balance.</mistake>
+   <mistake>Dropping the chest or rounding the upper back, which shifts stress to the lower back and reduces oblique activation.</mistake>
+   <mistake>Using only the arms to swing the weight, rather than rotating the entire torso from the core muscles.</mistake>
+   <mistake>Moving too fast, which compromises form and reduces the effectiveness of the stability challenge.</mistake>
+</common_mistakes>
+</Pose>
+
+   <Pose id="14" difficulty="Beginner" safety="Ensure the stability ball is secure and does not slip. Keep the movement controlled to prevent straining your neck or lower back. Engage your core throughout—do not use momentum to rock back and forth. If you have balance issues, perform with feet on the floor before progressing to elevation." Pose_type="Core Strength, Stability">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/stability_ball_feet_elevated_crunch.gif</url>
+    <Name>Stability Ball Feet Elevated Crunch</Name>
+    <Equipment>Stability Ball (Swiss Ball), Optional: Exercise Mat</Equipment>
+    <Focused_Muscles>
+        <Primary>Rectus Abdominis (Upper and Lower), Transverse Abdominis</Primary>
+        <Secondary>Obliques, Hip Flexors</Secondary>
+        <Stabilizers>Quadriceps, Hamstrings, Glutes, Shoulders</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Suitable for morning core workouts after a brief warm-up. Provides activation and balance training to start the day.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Weak Abdominal Muscles, Poor Core Stability and Balance, Sedentary Lifestyle</Targeted>
+        <Preventive>Improves overall core endurance, enhances mind-muscle connection, and supports spinal health by building stabilizing strength.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Lie on your back on the floor. Place your lower legs (calves/ankles) on top of a stability ball. Extend your arms overhead or place your hands lightly behind your head (avoid pulling your neck). Engage your core to press your lower back into the floor.
+        </step>
+        <step order="2" focus="Elevate & Engage">
+            Inhale to prepare. As you exhale, gently squeeze the ball with your legs to stabilize it. Engage your abdominals, lifting your head, neck, and shoulder blades off the floor while simultaneously curling your torso upward.
+        </step>
+        <step order="3" focus="Peak Contraction">
+            At the top of the movement, focus on a strong contraction in your abdominal muscles. Keep the ball stable with your legs and avoid letting it roll. Your gaze should be toward the ceiling or slightly forward, not at your feet.
+        </step>
+        <step order="4" focus="Repeat">
+            Inhale as you slowly lower back down to the starting position with control, maintaining core engagement and ball stability. Aim for 12-15 repetitions for 2-3 sets.
+        </step>
+        <step order="5" focus="Tip">
+            **Think of bringing your ribcage toward your pelvis**, not just lifting your shoulders. The leg elevation increases core demand by reducing stability—if the ball rolls, you’re likely using momentum. Start with small, controlled crunches and increase range of motion as you gain strength.
+        </step>
+    </steps>
+       <common_mistakes>
+   <mistake>Using the legs to rock the body and create momentum instead of isolating the abdominal muscles.</mistake>
+   <mistake>Pulling the neck forward with the hands, which strains the cervical spine and takes focus away from the core.</mistake>
+   <mistake>Allowing the stability ball to roll or become unstable due to insufficient leg engagement and core control.</mistake>
+   <mistake>Arching the lower back off the floor on the descent, which reduces core engagement and can cause back strain.</mistake>
+</common_mistakes>
+</Pose>
+<Pose id="15" difficulty="Beginner" safety="Maintain a firm grip on the stability rings to prevent slipping. Avoid swinging or using momentum to lift your legs—focus on controlled movement. Keep your shoulders engaged and down, away from your ears, to protect the shoulder joints. If you experience shoulder, wrist, or lower back discomfort, discontinue and consider a regression (e.g., lying leg raises)." Pose_type="Core Strength, Upper Body Stability">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/stability_ring_hanging_knee_raise.gif</url>
+    <Name>Stability Ring Hanging Knee Raise</Name>
+    <Equipment>Stability/Gymnastics Rings, Pull-Up Bar or Rig to Hang Rings, Optional: Gloves for Grip</Equipment>
+    <Focused_Muscles>
+        <Primary>Lower Abdominals (Rectus Abdominis), Hip Flexors</Primary>
+        <Secondary>Obliques, Forearms (Grip Strength)</Secondary>
+        <Stabilizers>Latissimus Dorsi, Shoulders (Deltoids), Upper Back, Core (for anti-rotation)</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Can be done in the morning after a thorough warm-up of the shoulders, core, and grip. Not recommended on a completely empty stomach if full body engagement is needed.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Weak Lower Abdominals, Poor Grip Strength, Lack of Upper Body and Core Coordination</Targeted>
+        <Preventive>Enhances functional core strength for lifting and stability, improves shoulder stability, and builds foundational strength for advanced calisthenics movements.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Adjust the stability rings to an appropriate height. Grip each ring firmly with an overhand grip. Hang with your arms fully extended, keeping your shoulders engaged (slightly depressed). Let your legs hang straight down, with your body in a straight line from shoulders to ankles.
+        </step>
+        <step order="2" focus="Initiation">
+            Inhale to brace your core. Exhale as you slowly draw your knees upward toward your chest by contracting your lower abdominals. Keep the movement controlled and avoid swinging.
+        </step>
+        <step order="3" focus="Peak Contraction">
+            At the top of the movement, pause for a moment and focus on squeezing your abs. Your knees should be as high as possible without rounding your upper back excessively. Keep your gaze forward to maintain a neutral spine.
+        </step>
+        <step order="4" focus="Repeat">
+            Inhale as you slowly lower your legs back to the starting hanging position with full control. Resist swinging. Aim for 8-12 repetitions for 2-3 sets.
+        </step>
+        <step order="5" focus="Tip">
+            **Start with a slight bend in the knees** if straight legs are too challenging. The key is to prevent any swinging—imagine moving in slow motion. If your grip gives out before your abs, use wrist straps or focus on grip-strength exercises separately.
+        </step>
+    </steps>
+    <common_mistakes>
+   <mistake>Using momentum to swing the legs up, which reduces core engagement and increases strain on the lower back and shoulders.</mistake>
+   <mistake>Shrugging the shoulders up toward the ears, which can lead to neck and shoulder tension.</mistake>
+   <mistake>Rounding the upper back excessively at the top of the movement, compromising spinal alignment.</mistake>
+   <mistake>Lowering the legs too quickly, which creates a swinging motion and loss of control for the next repetition.</mistake>
+</common_mistakes>
+</Pose>
+
+  <Pose id="16" difficulty="Beginner" safety="Ensure the parallettes are stable and on a non-slip surface. Maintain a strong, straight plank position throughout—avoid letting your hips sag or rise. Keep your shoulders engaged and directly above your hands. Move with control to prevent wrist or shoulder strain. If you have wrist issues, perform on flat ground first." Pose_type="Cardio, Core Strength, Agility">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/parallette_mountain_climber.gif</url>
+    <Name>Parallette Mountain Climber</Name>
+    <Equipment>Parallettes (Low Parallel Bars), Exercise Mat (Optional)</Equipment>
+    <Focused_Muscles>
+        <Primary>Core (Rectus Abdominis, Transverse Abdominis), Hip Flexors</Primary>
+        <Secondary>Shoulders (Deltoids, Rotator Cuff), Triceps</Secondary>
+        <Stabilizers>Glutes, Quadriceps, Hamstrings, Grip Muscles</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Excellent for morning cardio and core activation. Elevates heart rate while building shoulder stability. Perform after a brief warm-up.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Poor Cardiovascular Endurance, Weak Core Stability, Limited Shoulder Mobility, Sedentary Lifestyle</Targeted>
+        <Preventive>Enhances coordination and agility, improves functional pushing strength, and builds resilience in the shoulder girdle.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Place two parallettes on the floor shoulder-width apart. Grip the handles firmly with your hands directly under your shoulders. Step back into a plank position with your body forming a straight line from head to heels. Engage your core and glutes.
+        </step>
+        <step order="2" focus="Drive">
+            Inhale to brace. Exhale as you drive your right knee forcefully toward your chest, keeping your hips level and your torso stable. Aim to bring your knee as close to your chest or elbow as possible without rounding your upper back.
+        </step>
+        <step order="3" focus="Switch">
+            Quickly and with control, return your right foot to the starting position while simultaneously driving your left knee toward your chest. This creates a continuous, rhythmic "climbing" motion.
+        </step>
+        <step order="4" focus="Repeat">
+            Continue alternating knees in a steady, controlled rhythm. Aim for 30-60 seconds of continuous movement, or 20-30 total reps (10-15 per side) for 2-3 sets.
+        </step>
+        <step order="5" focus="Tip">
+            **The parallettes allow for a deeper range of motion**—take advantage of this by pressing firmly through the handles and keeping your shoulders active (not sagging into your joints). To prevent hip bouncing, imagine a laser beam on your lower back; it should stay perfectly still.
+        </step>
+    </steps>
+      <common_mistakes>
+   <mistake>Allowing the hips to bounce, sag, or rise with each knee drive, which reduces core engagement and strains the lower back.</mistake>
+   <mistake>Shifting body weight unevenly between the parallettes, causing shoulder instability and wobbling of the equipment.</mistake>
+   <mistake>Rushing the movement without control, leading to sloppy form and reduced muscular engagement.</mistake>
+   <mistake>Letting the shoulders creep up toward the ears or allowing the chest to cave inward.</mistake>
+</common_mistakes>
+</Pose>
+
+   <Pose id="17" difficulty="Beginner" safety="Maintain a neutral spine throughout the movement—avoid arching or rounding your back. Keep your hips square and level. Move slowly and with control to prevent losing balance. If you feel strain in your lower back, reduce the hover height or return to the basic Bird Dog progression." Pose_type="Core Stability, Balance">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight_knee_hover_bird_dog.gif</url>
+    <Name>Bodyweight Knee Hover Bird Dog</Name>
+    <Equipment>Exercise Mat (Recommended for knee comfort)</Equipment>
+    <Focused_Muscles>
+        <Primary>Core (Transverse Abdominis, Multifidus), Glutes (Maximus)</Primary>
+        <Secondary>Quadriceps, Shoulders (Deltoids), Hamstrings</Secondary>
+        <Stabilizers>Lower Back (Erector Spinae), Hip Abductors, Scapular Stabilizers</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Ideal for morning core activation and balance training. Gently wakes up the posterior chain and deep stabilizers.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Lower Back Pain (due to core weakness), Poor Postural Control, Imbalance Between Left and Right Sides</Targeted>
+        <Preventive>Builds foundational core stability, improves hip and shoulder coordination, and enhances proprioception for daily movements.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Start on your hands and knees in a tabletop position. Place your hands directly under your shoulders and your knees directly under your hips. Keep your spine in a neutral, flat position. Engage your core gently.
+        </step>
+        <step order="2" focus="Knee Hover">
+            Inhale to prepare. Exhale as you engage your quadriceps and core to lift both knees approximately 1-2 inches off the floor, hovering. Maintain a flat back and keep your weight evenly distributed between your hands and toes. Hold this hover position stable.
+        </step>
+        <step order="3" focus="Extend">
+            Maintaining the knee hover, slowly extend your right arm forward and your left leg backward simultaneously. Keep your hips square and level. Your body should form a straight line from your fingertips to your heel. Hold briefly.
+        </step>
+        <step order="4" focus="Repeat">
+            With control, return your arm and leg to the starting hover position. Repeat on the opposite side (left arm, right leg). That is one repetition. Aim for 6-10 repetitions per side for 2-3 sets. Lower knees to rest between sets.
+        </step>
+        <step order="5" focus="Tip">
+            **This is an advanced stability variation.** The key challenge is keeping your knees hovering throughout the entire set—do not let them touch the floor between repetitions. If you cannot maintain a flat back or stable hips, master the standard Bird Dog first before attempting the hover.
+        </step>
+    </steps>
+       <common_mistakes>
+   <mistake>Allowing the lower back to arch or sag while hovering the knees, which strains the lumbar spine.</mistake>
+   <mistake>Dropping the knees to the floor between repetitions instead of maintaining a continuous hover.</mistake>
+   <mistake>Rotating the hips or shoulders when extending the arm and leg, compromising spinal alignment.</mistake>
+   <mistake>Shifting weight unevenly onto one hand or foot, causing instability and wobbling.</mistake>
+</common_mistakes
+</Pose>
+
+   <Pose id="18" difficulty="Beginner" safety="Maintain constant core engagement throughout the movement to protect your lower back. Avoid using momentum to swing the ball—move with control. Keep your movements slow and deliberate, especially when passing the ball. If you feel lower back strain, reduce your range of motion or perform the exercise with bent knees." Pose_type="Core Strength, Coordination">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/stability_ball_v_up_pass.gif</url>
+    <Name>Stability Ball V-Up Pass</Name>
+    <Equipment>Stability Ball (Swiss Ball), Exercise Mat</Equipment>
+    <Focused_Muscles>
+        <Primary>Rectus Abdominis (Upper and Lower), Transverse Abdominis</Primary>
+        <Secondary>Hip Flexors, Obliques, Quadriceps</Secondary>
+        <Stabilizers>Shoulders, Chest, Forearms (Grip), Lower Back</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Challenging morning core exercise. Best performed after a thorough warm-up to activate the entire core complex.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Weak Upper and Lower Abdominal Imbalance, Poor Coordination, Limited Hip Flexibility</Targeted>
+        <Preventive>Develops integrated core strength, improves mind-muscle connection between upper and lower body, and enhances functional movement patterns.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Lie flat on your back on a mat. Hold a stability ball with both hands extended overhead, arms straight. Extend your legs straight out along the floor. Engage your core by pressing your lower back into the mat.
+        </step>
+        <step order="2" focus="Simultaneous Lift">
+            Inhale to prepare. Exhale as you simultaneously lift your upper body and legs off the floor, reaching your arms and legs toward the ceiling. Your body should form a "V" shape. Keep your arms straight as you bring the ball toward your feet.
+        </step>
+        <step order="3" focus="Pass">
+            At the top of the V-up, carefully pass the ball from your hands to your legs, clamping it between your ankles or lower shins. Squeeze the ball firmly with your legs to secure it.
+        </step>
+        <step order="4" focus="Repeat">
+            Inhale as you slowly lower both your upper body and legs back to the starting position with control, keeping the ball secured between your legs. On your next repetition, lift up and pass the ball back from your legs to your hands. Continue alternating passes. Aim for 8-12 repetitions for 2-3 sets.
+        </step>
+        <step order="5" focus="Tip">
+            **Control the descent—it's just as important as the lift.** Lowering slowly is where your core works hardest. If the full V-up is too challenging, keep your knees bent at 90 degrees (tabletop position) to shorten the lever arm and reduce difficulty.
+        </step>
+    </steps>
+       <common_mistakes>
+   <mistake>Using momentum to swing the legs and arms up instead of relying on a controlled abdominal contraction.</mistake>
+   <mistake>Dropping the ball or losing control during the hand-to-leg or leg-to-hand pass.</mistake>
+   <mistake>Allowing the lower back to arch off the mat during the descent, which strains the lumbar spine.</mistake>
+   <mistake>Rushing through the movement, especially the pass, leading to sloppy form and reduced core engagement.</mistake>
+</common_mistakes>
+</Pose> 
+
+
+    <Pose id="19" difficulty="Beginner" safety="Keep your lower back pressed firmly into the floor throughout the entire movement. Move slowly and with control—do not use momentum. Only extend your limbs as far as you can while maintaining a neutral spine and stable core. If you feel lower back arching, reduce your range of motion." Pose_type="Core Stability, Coordination">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight_dead_bug.gif</url>
+    <Name>Bodyweight Dead Bug</Name>
+    <Equipment>Exercise Mat (Recommended for comfort)</Equipment>
+    <Focused_Muscles>
+        <Primary>Transverse Abdominis (Deep Core), Rectus Abdominis</Primary>
+        <Secondary>Obliques, Hip Flexors</Secondary>
+        <Stabilizers>Lower Back (Erector Spinae - in neutral position), Shoulders, Quadriceps</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Excellent low-impact morning exercise to activate the deep core stabilizers and improve mind-muscle connection.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Lower Back Pain (due to core instability), Poor Core Coordination, Weak Deep Abdominal Muscles</Targeted>
+        <Preventive>Builds foundational core stability, improves spinal protection mechanisms, and enhances coordination between limbs and torso.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Lie flat on your back on a mat. Lift your legs to a tabletop position with your knees bent at 90 degrees directly over your hips. Raise your arms straight up toward the ceiling with your hands directly over your shoulders. Press your lower back firmly into the mat.
+        </step>
+        <step order="2" focus="Engage & Extend">
+            Inhale to brace your core. Exhale as you slowly extend your right arm overhead and your left leg toward the floor simultaneously. Keep both moving limbs hovering just above the mat—do not let them rest. Maintain the press of your lower back into the floor.
+        </step>
+        <step order="3" focus="Return">
+            Inhale as you slowly return your extended arm and leg back to the starting tabletop position with control, maintaining core engagement throughout.
+        </step>
+        <step order="4" focus="Repeat">
+            Exhale as you extend your left arm and right leg. Continue alternating sides in a slow, controlled, rhythmic motion. Aim for 8-12 repetitions per side for 2-3 sets.
+        </step>
+        <step order="5" focus="Tip">
+            **Imagine you are lying on a very fragile surface that will crack if your lower back lifts off.** This mental cue helps maintain spinal contact. Move as slowly as you need to—the Dead Bug is about control, not speed. If you feel your back arching, reduce your range of motion immediately.
+        </step>
+    </steps>
+        <common_mistakes>
+   <mistake>Allowing the lower back to arch off the mat, which shifts the work away from the deep core and strains the lumbar spine.</mistake>
+   <mistake>Moving too quickly and using momentum instead of controlled, muscle-driven movement.</mistake>
+   <mistake>Letting the extended limb rest on the floor instead of hovering, reducing time under tension.</mistake>
+   <mistake>Holding the breath; remember to exhale during the extension phase for better core activation.</mistake>
+</common_mistakes>
+
+</Pose>
+
+
+    <Pose id="20" difficulty="Beginner" safety="Keep your lower back pressed firmly into the floor throughout the movement. Avoid pulling on your neck with your hands—your head should rest lightly in your fingertips. Engage your core to lift your shoulder blades, not your neck. If you feel neck strain, reduce the range of motion or perform with hands across your chest." Pose_type="Core Strength">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight_alternating_heel_taps.gif</url>
+    <Name>Bodyweight Alternating Heel Taps</Name>
+    <Equipment>Exercise Mat (Recommended)</Equipment>
+    <Focused_Muscles>
+        <Primary>Rectus Abdominis (Upper), Obliques (Internal and External)</Primary>
+        <Secondary>Transverse Abdominis (Deep Core)</Secondary>
+        <Stabilizers>Hip Flexors, Neck Flexors</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Gentle morning core activation exercise. Ideal for waking up the abdominals without excessive spinal loading.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Weak Upper Abdominals, Poor Oblique Engagement, Sedentary Core Weakness</Targeted>
+        <Preventive>Improves rotational core control, enhances posture, and builds foundational strength for more advanced core exercises.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Lie flat on your back on a mat. Bend your knees and place your feet flat on the floor, hip-width apart, about 12-16 inches from your glutes. Lightly place your fingertips behind your head, elbows wide. Press your lower back into the mat.
+        </step>
+        <step order="2" focus="Curl Up">
+            Inhale to prepare. Exhale as you engage your core and gently curl your head, neck, and shoulder blades off the floor. Keep your lower back pressed down. Hold this lifted position throughout the entire set.
+        </step>
+        <step order="3" focus="Tap">
+            Maintaining the lifted crunch position, slowly reach your right fingertips toward your right heel. Tap your heel lightly, then return your hand to the starting position behind your head. Keep your torso stable—do not rotate excessively.
+        </step>
+        <step order="4" focus="Repeat">
+            Reach your left fingertips toward your left heel. Continue alternating sides in a slow, controlled manner. Aim for 12-16 repetitions (each side counts as one rep) for 2-3 sets.
+        </step>
+        <step order="5" focus="Tip">
+            **Do not let your shoulder blades touch the floor between taps.** Keeping your upper back lifted throughout the entire set maintains constant tension on your abdominals. Focus on a slight twist from your rib cage, not just reaching your arm. If your neck hurts, imagine holding an orange under your chin to maintain proper alignment.
+        </step>
+    </steps>
+        <common_mistakes>
+   <mistake>Pulling the head and neck forward with the hands, causing cervical strain instead of core engagement.</mistake>
+   <mistake>Lowering the shoulder blades to the floor between each tap, releasing tension from the abdominals.</mistake>
+   <mistake>Rotating the entire torso excessively rather than initiating the movement from the oblique muscles.</mistake>
+   <mistake>Allowing the lower back to arch off the mat, which reduces core activation and strains the spine.</mistake>
+</common_mistakes>
+
+</Pose>
+
+
+    <Pose id="21" difficulty="Beginner" safety="Maintain a straight line from your head to your knees—avoid sagging your hips or arching your back. Keep your neck in a neutral position by looking down at the floor. Engage your core and glutes throughout the hold. If you feel lower back strain, check your hip position and tighten your abdominals." Pose_type="Core Strength, Stability">
+    <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight_kneeling_forearm_plank.gif</url>
+    <Name>Bodyweight Kneeling Forearm Plank</Name>
+    <Equipment>Exercise Mat (Recommended for comfort)</Equipment>
+    <Focused_Muscles>
+        <Primary>Rectus Abdominis, Transverse Abdominis (Deep Core)</Primary>
+        <Secondary>Shoulders (Deltoids), Glutes, Quadriceps</Secondary>
+        <Stabilizers>Lower Back (Erector Spinae), Chest (Pectorals), Neck Flexors</Stabilizers>
+    </Focused_Muscles>
+    <Preferred time="Morning">Perfect beginner morning exercise to activate the core and build foundational stability. Gentle on the lower back and wrists.</Preferred>
+    <Diseases_Cured>
+        <Targeted>Weak Core Muscles, Poor Postural Endurance, Lower Back Tenderness</Targeted>
+        <Preventive>Builds core stamina, improves spinal alignment awareness, and serves as a safe entry point for more advanced plank variations.</Preventive>
+    </Diseases_Cured>
+    <steps>
+        <step order="1" focus="Setup">
+            Begin on your hands and knees. Lower yourself onto your forearms, placing your elbows directly under your shoulders. Your forearms should be parallel to each other, palms flat on the mat or hands clasped. Extend your legs behind you and rest your knees on the floor.
+        </step>
+        <step order="2" focus="Engage">
+            Inhale to prepare. Exhale as you engage your core by drawing your belly button toward your spine. Squeeze your glutes gently. Lift your hips slightly so your body forms a straight, diagonal line from your head to your knees.
+        </step>
+        <step order="3" focus="Hold">
+            Hold this position, maintaining a flat back and neutral neck. Your gaze should be toward the floor, just beyond your hands. Breathe steadily throughout the hold. Do not let your hips sag or rise.
+        </step>
+        <step order="4" focus="Repeat">
+            Hold for 20-45 seconds as a beginner. Rest for 30 seconds. Repeat for 3-4 sets. Focus on maintaining perfect form throughout the entire hold—quality over duration.
+        </step>
+        <step order="5" focus="Tip">
+            **Imagine your body is a sturdy tabletop.** Your back should be completely flat—neither arched nor rounded. If you feel pressure in your lower back, tighten your abs and glutes more. This modified version is ideal for building confidence and strength before progressing to a full plank on your toes.
+        </step>
+    </steps>
+        <common_mistakes>
+   <mistake>Allowing the hips to sag toward the floor, which strains the lower back and reduces core engagement.</mistake>
+   <mistake>Lifting the hips too high, turning the exercise into a pike position and shifting focus away from the core.</mistake>
+   <mistake>Looking up or tucking the chin excessively, misaligning the cervical spine.</mistake>
+   <mistake>Holding the breath or breathing shallowly; maintain steady, rhythmic breathing throughout the hold.</mistake>
+</common_mistakes>
+</Pose>
+
+
+    
+    <Pose id="22" difficulty="Beginner" safety="Maintain a neutral spine and keep your hips stable throughout the circular motion. Initiate the movement from your core, not your legs. Keep your chest lifted and avoid rounding your back." Pose_type="Core Strength, Stability">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight_seated_ab_circles.gif</url>
+        <Name>Bodyweight Seated Ab Circles</Name>
+        <Equipment>Exercise Mat</Equipment>
+        <Focused_Muscles>
+            <Primary>Rectus Abdominis, Transverse Abdominis</Primary>
+            <Secondary>Obliques, Hip Flexors</Secondary>
+            <Stabilizers>Lower Back, Quadriceps</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Morning or Anytime Core Focus</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Weak Core Endurance, Poor Hip Stability</Targeted>
+            <Preventive>Improves rotational core control and abdominal stamina</Preventive>
+        </Diseases_Cured>
         <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
+            <step order="1" focus="Setup">Sit on the mat with your knees bent and feet flat. Lean back slightly to a 45-degree angle, keeping your spine straight. Place your hands on the floor beside your hips for support.</step>
+            <step order="2" focus="Lift">Lift both feet a few inches off the floor, balancing on your sit bones. Keep your knees bent at 90 degrees.</step>
+            <step order="3" focus="Circle">Using your core, move both knees together in a slow, controlled circular motion—clockwise 5-10 times, then counterclockwise.</step>
+            <step order="4" focus="Repeat">Complete 3-5 circles in each direction per set. Aim for 2-3 sets.</step>
+            <step order="5" focus="Tip">Make the circles as wide as possible while keeping your torso completely still. Only your legs should move.</step>
         </steps>
-    </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
-    </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
-    </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
-    </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
-    </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
-    </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
-    </Pose>
-    <Pose id="2" difficulty="Beginner" safety="" Pose_type="">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/</url>
-        <Name></Name>
-        <Equipment></Equipment>
-        <Focused_Muscles></Focused_Muscles>
-        <Preferred time="Morning"></Preferred>
-        <Diseases_Cured></Diseases_Cured>
-        <steps>
-            <step order="1" focus="Setup">
-            </step>
-            <step order="2" focus="">
-            </step>
-            <step order="3" focus="">
-            </step>
-            <step order="4" focus="Repeat">
-            </step>
-            <step order="5" focus="Tip">
-            </step>
-        </steps>
+        <common_mistakes>
+            <mistake>Rocking the torso side to side instead of isolating leg movement.</mistake>
+            <mistake>Rounding the lower back, reducing core engagement.</mistake>
+            <mistake>Rushing the circles instead of controlling the motion.</mistake>
+            <mistake>Holding the breath throughout the movement.</mistake>
+        </common_mistakes>
     </Pose>
 
+    <Pose id="23" difficulty="Intermediate" safety="Maintain a firm grip on the rings and avoid swinging. Keep your shoulders engaged and depressed. Control the oblique movement without rotating the torso excessively." Pose_type="Core Strength, Obliques">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/ring_hanging_oblique_knee_raise.gif</url>
+        <Name>Ring Hanging Oblique Knee Raise</Name>
+        <Equipment>Stability Rings, Pull-Up Bar or Rig</Equipment>
+        <Focused_Muscles>
+            <Primary>Obliques (Internal and External)</Primary>
+            <Secondary>Lower Rectus Abdominis, Hip Flexors</Secondary>
+            <Stabilizers>Forearms (Grip), Shoulders, Latissimus Dorsi</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>After Full Body Warm-Up</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Weak Obliques, Poor Rotational Core Strength</Targeted>
+            <Preventive>Builds lateral core stability and grip endurance</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Hang from rings with arms fully extended, shoulders engaged. Legs hang straight down.</step>
+            <step order="2" focus="Initiate">Engage your core. Keeping legs together, lift your knees diagonally toward your right elbow.</step>
+            <step order="3" focus="Squeeze">Pause briefly at the top, squeezing your right oblique. Avoid twisting your shoulders.</step>
+            <step order="4" focus="Repeat">Lower with control and repeat on the left side. Alternate sides for 8-12 reps per side, 2-3 sets.</step>
+            <step order="5" focus="Tip">Focus on lifting with your oblique, not swinging your legs. Start with bent knees before progressing to straight legs.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum to swing the legs upward.</mistake>
+            <mistake>Rotating the shoulders toward the lifting side.</mistake>
+            <mistake>Letting the shoulders shrug up toward the ears.</mistake>
+            <mistake>Lowering legs too quickly, creating a swinging motion.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="24" difficulty="Intermediate" safety="Keep your body in a rigid straight line from head to heels. Do not let your hips sag. Move the ball in small, controlled circles—larger circles increase difficulty significantly." Pose_type="Core Stability, Shoulder Strength">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/stability_ball_stir_the_pot.gif</url>
+        <Name>Stability Ball Stir the Pot</Name>
+        <Equipment>Stability Ball</Equipment>
+        <Focused_Muscles>
+            <Primary>Transverse Abdominis, Rectus Abdominis</Primary>
+            <Secondary>Shoulders (Anterior Deltoids), Chest</Secondary>
+            <Stabilizers>Lower Back, Glutes, Quadriceps</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Morning or Core Focus Day</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Deep Core Instability, Weak Shoulder Stabilizers</Targeted>
+            <Preventive>Builds anti-rotational core strength and shoulder endurance</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Place forearms on a stability ball in a plank position. Elbows under shoulders, body in a straight line from head to heels.</step>
+            <step order="2" focus="Engage">Brace your core and glutes. Keep hips completely still and level.</step>
+            <step order="3" focus="Stir">Move your forearms in slow, controlled clockwise circles, "stirring" the ball. Keep your body rigid.</step>
+            <step order="4" focus="Repeat">Perform 5-10 circles clockwise, then 5-10 counterclockwise. Repeat for 2-3 sets.</step>
+            <step order="5" focus="Tip">The smaller the circle, the easier the exercise. Start with tiny circles and gradually increase diameter as you gain stability.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting the hips sag or swing opposite to the arm movement.</mistake>
+            <mistake>Moving the ball too fast without control.</mistake>
+            <mistake>Allowing the lower back to arch.</mistake>
+            <mistake>Holding the breath during circular motion.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="25" difficulty="Intermediate" safety="Maintain a strong plank position throughout. Keep your hips level and avoid excessive rotation. Move with control to prevent shoulder strain." Pose_type="Core Strength, Agility">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight_alternating_lateral_kick_through.gif</url>
+        <Name>Bodyweight Alternating Lateral Kick Through</Name>
+        <Equipment>Exercise Mat</Equipment>
+        <Focused_Muscles>
+            <Primary>Obliques, Transverse Abdominis</Primary>
+            <Secondary>Shoulders, Hip Flexors</Secondary>
+            <Stabilizers>Glutes, Quadriceps, Triceps</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Morning Cardio or Core Circuit</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Poor Rotational Stability, Weak Anti-Rotation Core</Targeted>
+            <Preventive>Enhances dynamic core control and shoulder stability</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Start in a high plank position, hands under shoulders, body straight.</step>
+            <step order="2" focus="Kick">Lift your right hand and rotate your torso, kicking your right leg through laterally toward the left side.</step>
+            <step order="3" focus="Return">Return to plank and repeat on the opposite side.</step>
+            <step order="4" focus="Repeat">Alternate sides for 10-16 total reps (5-8 per side) for 2-3 sets.</step>
+            <step order="5" focus="Tip">Keep your hips as low and stable as possible. The movement should come from rotation, not hip lifting.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lifting the hips too high during the kick through.</mistake>
+            <mistake>Letting the supporting shoulder collapse.</mistake>
+            <mistake>Rushing the movement without control.</mistake>
+            <mistake>Failing to fully extend the leg during the kick.</mistake>
+        </common_mistakes>
+    </Pose>
+
+
+    <Pose id="26" difficulty="Beginner" safety="Maintain a neutral spine throughout the rotation. Avoid rounding your back. Choose a light ball to start and focus on controlled rotation, not speed." Pose_type="Core Strength, Rotational Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/slam_ball_russian_twist.gif</url>
+        <Name>Slam Ball Russian Twist</Name>
+        <Equipment>Slam Ball or Medicine Ball, Exercise Mat</Equipment>
+        <Focused_Muscles>
+            <Primary>Obliques (Internal and External)</Primary>
+            <Secondary>Rectus Abdominis, Hip Flexors</Secondary>
+            <Stabilizers>Lower Back, Shoulders</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>After Warm-Up, Core Focus</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Weak Rotational Core, Poor Oblique Strength</Targeted>
+            <Preventive>Builds functional twisting strength and spinal stability</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Sit on the mat, knees bent, feet elevated or crossed. Hold a slam ball at your chest.</step>
+            <step order="2" focus="Lean">Lean back to a 45-degree angle, keeping your spine straight.</step>
+            <step order="3" focus="Twist">Rotate your torso to the right, tapping the ball beside your hip, then to the left.</step>
+            <step order="4" focus="Repeat">Continue alternating sides for 12-16 reps (6-8 per side) for 2-3 sets.</step>
+            <step order="5" focus="Tip">Keep your chest lifted and avoid rounding forward. Rotate from your torso, not your arms.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back and dropping the chest.</mistake>
+            <mistake>Using only arms to move the ball without torso rotation.</mistake>
+            <mistake>Letting feet touch the floor (if elevated).</mistake>
+            <mistake>Moving too fast with momentum.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="27" difficulty="Intermediate" safety="Maintain constant tension in your core and crush grip throughout the movement. Keep your lower back pressed into the floor. Move slowly and with control." Pose_type="Core Strength, Grip Strength">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_crush_grip_otis_up.gif</url>
+        <Name>Dumbbell Crush Grip Otis Up</Name>
+        <Equipment>Single Dumbbell, Exercise Mat</Equipment>
+        <Focused_Muscles>
+            <Primary>Rectus Abdominis (Upper), Transverse Abdominis</Primary>
+            <Secondary>Forearm Flexors (Grip), Hip Flexors</Secondary>
+            <Stabilizers>Shoulders, Chest, Lower Back</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Core Strength Day</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Upper/Lower Abdominal Imbalance, Weak Grip Strength</Targeted>
+            <Preventive>Builds integrated core control and crushing grip endurance</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Lie on your back, legs extended. Hold a dumbbell vertically against your chest with both hands, squeezing the head.</step>
+            <step order="2" focus="Curl">Engage your core. Slowly curl your upper body off the floor, keeping the weight pressed against your chest.</step>
+            <step order="3" focus="Peak">At the top, squeeze the dumbbell head firmly and pause. Lower back down with control.</step>
+            <step order="4" focus="Repeat">Perform 10-15 controlled repetitions for 2-3 sets.</step>
+            <step order="5" focus="Tip">The "crush grip" activates your forearms and increases core tension. Squeeze the dumbbell as hard as you can throughout the movement.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum to jerk the upper body up.</mistake>
+            <mistake>Releasing grip tension during the movement.</mistake>
+            <mistake>Arching the lower back off the floor.</mistake>
+            <mistake>Pulling with the neck instead of engaging the core.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="28" difficulty="Intermediate" safety="Keep your body in a rigid straight line throughout the movement. Avoid letting your hips sag or rotate. Move slowly and with control to maintain stability." Pose_type="Core Stability, Obliques">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/single_arm_dumbbell_side_plank_reach_through.gif</url>
+        <Name>Single Arm Dumbbell Side Plank Reach Through</Name>
+        <Equipment>Single Dumbbell, Exercise Mat</Equipment>
+        <Focused_Muscles>
+            <Primary>Obliques, Quadratus Lumborum</Primary>
+            <Secondary>Shoulders (Deltoids), Glutes</Secondary>
+            <Stabilizers>Rectus Abdominis, Hip Abductors</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Core Strength or Upper Body Day</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Weak Lateral Core, Poor Shoulder Stability</Targeted>
+            <Preventive>Builds anti-rotational strength and hip stability</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Begin in a side plank on your right forearm, body straight. Hold a dumbbell in your left hand extended upward.</step>
+            <step order="2" focus="Reach">Slowly reach the dumbbell underneath your torso toward your right side, rotating your upper body.</step>
+            <step order="3" focus="Return">Return to the starting position with control, keeping hips elevated.</step>
+            <step order="4" focus="Repeat">Perform 8-12 reps, then switch sides. Complete 2-3 sets per side.</step>
+            <step order="5" focus="Tip">Don't let your hips drop during the reach-through. The movement should be challenging for your obliques, not your shoulder.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting the hips sag toward the floor.</mistake>
+            <mistake>Rushing the reach-through without control.</mistake>
+            <mistake>Twisting the hips instead of keeping them stacked.</mistake>
+            <mistake>Using a weight that's too heavy, compromising form.</mistake>
+        </common_mistakes>
+    </Pose>
+
+
+    <Pose id="29" difficulty="Beginner" safety="Maintain a neutral spine—do not arch or round your back. Engage your core before initiating the roll. Only roll out as far as you can while maintaining a straight back." Pose_type="Core Strength, Anti-Extension">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/ab_wheel_kneeling_rollout.gif</url>
+        <Name>Ab Wheel Kneeling Rollout</Name>
+        <Equipment>Ab Wheel, Exercise Mat</Equipment>
+        <Focused_Muscles>
+            <Primary>Rectus Abdominis, Transverse Abdominis</Primary>
+            <Secondary>Latissimus Dorsi, Shoulders, Triceps</Secondary>
+            <Stabilizers>Lower Back, Glutes, Hip Flexors</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Core Focus Day, After Warm-Up</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Weak Anti-Extension Core Strength, Poor Spinal Stability</Targeted>
+            <Preventive>Builds resilience against lower back arching and improves posture</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Kneel on the mat, hold the ab wheel under your shoulders, arms extended.</step>
+            <step order="2" focus="Brace">Engage your core and glutes. Maintain a neutral spine.</step>
+            <step order="3" focus="Roll">Slowly roll the wheel forward, extending your body while keeping your back flat.</step>
+            <step order="4" focus="Return">Pull the wheel back to start using your core, not your arms.</step>
+            <step order="5" focus="Tip">Your lower back should never arch. Stop rolling forward the moment you feel your back begin to sag.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Allowing the lower back to arch or sag during the rollout.</mistake>
+            <mistake>Rolling out too far without sufficient core strength.</mistake>
+            <mistake>Using arm strength to pull back instead of the core.</mistake>
+            <mistake>Hip flexion instead of maintaining a straight body line.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="30" difficulty="Beginner" safety="Maintain a neutral spine and avoid using momentum. Keep your hips stable throughout the movement. Control the weight on both the crunch and the return." Pose_type="Core Strength">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_seated_crunch.gif</url>
+        <Name>Cable Seated Crunch</Name>
+        <Equipment>Cable Machine, Rope Attachment, Bench</Equipment>
+        <Focused_Muscles>
+            <Primary>Rectus Abdominis (Upper)</Primary>
+            <Secondary>Obliques, Transverse Abdominis</Secondary>
+            <Stabilizers>Hip Flexors, Shoulders</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Strength Training Day</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Upper Abdominal Weakness, Poor Core Isolation</Targeted>
+            <Preventive>Builds concentrated abdominal contraction strength</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Sit on a bench facing a cable machine. Grip the rope attachment behind your head, elbows wide.</step>
+            <step order="2" focus="Crunch">Exhale and curl your upper body downward, bringing your elbows toward your thighs.</step>
+            <step order="3" focus="Squeeze">Pause briefly at the bottom, squeezing your abs. Keep hips stationary.</step>
+            <step order="4" focus="Return">Inhale and return to start with control. Perform 12-15 reps for 3 sets.</step>
+            <step order="5" focus="Tip">Imagine you're trying to roll your rib cage toward your pelvis. Don't just move your arms—curl your entire torso.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using arm strength to pull the cable instead of curling the torso.</mistake>
+            <mistake>Rocking the hips forward and backward.</mistake>
+            <mistake>Rounding the shoulders without engaging the abs.</mistake>
+            <mistake>Using momentum to swing the weight.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="31" difficulty="Beginner" safety="Keep your hips stable and avoid rocking backward. Control the movement throughout—do not let the weight pull you back." Pose_type="Core Strength">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_kneeling_crunch.gif</url>
+        <Name>Cable Kneeling Crunch</Name>
+        <Equipment>Cable Machine, Rope Attachment, Knee Pad</Equipment>
+        <Focused_Muscles>
+            <Primary>Rectus Abdominis</Primary>
+            <Secondary>Obliques, Hip Flexors</Secondary>
+            <Stabilizers>Lower Back, Shoulders</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Strength Training Day</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Core Weakness, Poor Abdominal Contraction Control</Targeted>
+            <Preventive>Builds concentrated spinal flexion strength</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Kneel facing a cable machine, holding the rope attachment behind your head.</step>
+            <step order="2" focus="Crunch">Exhale and curl your upper body downward, bringing elbows toward thighs.</step>
+            <step order="3" focus="Squeeze">Pause at the bottom, squeezing your abs. Keep hips extended, not sitting back.</step>
+            <step order="4" focus="Return">Inhale and return with control. Perform 12-15 reps for 3 sets.</step>
+            <step order="5" focus="Tip">Keep your hips pushed forward throughout the movement. This maintains constant tension on your abs.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Sitting back onto the heels, reducing core engagement.</mistake>
+            <mistake>Using arm strength instead of curling the torso.</mistake>
+            <mistake>Allowing the lower back to hyperextend.</mistake>
+            <mistake>Letting the weight pull you back too quickly.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    
+
+    <Pose id="32" difficulty="Intermediate" safety="Maintain control throughout the pass. Avoid arching your lower back. Only go as low as you can while keeping your legs straight and back flat." Pose_type="Core Strength, Coordination">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/medicine_ball_v_up.gif</url>
+        <Name>Medicine Ball V Up</Name>
+        <Equipment>Medicine Ball, Exercise Mat</Equipment>
+        <Focused_Muscles>
+            <Primary>Rectus Abdominis (Upper and Lower)</Primary>
+            <Secondary>Hip Flexors, Quadriceps</Secondary>
+            <Stabilizers>Shoulders, Chest, Lower Back</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Core Focus Day</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Upper/Lower Abdominal Imbalance, Poor Coordination</Targeted>
+            <Preventive>Builds integrated core strength and limb coordination</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Lie on your back, arms extended overhead holding a medicine ball, legs straight.</step>
+            <step order="2" focus="Lift">Simultaneously lift your arms and legs to meet over your torso, passing the ball to your feet.</step>
+            <step order="3" focus="Clamp">Secure the ball between your ankles/lower shins. Lower with control.</step>
+            <step order="4" focus="Repeat">On the next rep, pass the ball back from feet to hands. Alternate passes. Aim for 8-12 reps, 2-3 sets.</step>
+            <step order="5" focus="Tip">Keep your legs as straight as possible. If you can't straighten them fully, bend your knees slightly and work on flexibility.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum to swing the limbs up.</mistake>
+            <mistake>Arching the lower back off the floor.</mistake>
+            <mistake>Dropping the ball during the pass.</mistake>
+            <mistake>Rushing the movement without control.</mistake>
+        </common_mistakes>
+    </Pose>
+
+
+    <Pose id="33" difficulty="Intermediate" safety="Maintain a rigid plank position throughout. Keep your hips level and avoid sagging. Control the movement on both the tuck and the extension." Pose_type="Core Strength, Stability">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/suspension_knee_tuck.gif</url>
+        <Name>Suspension Knee Tuck</Name>
+        <Equipment>Suspension Trainer (TRX)</Equipment>
+        <Focused_Muscles>
+            <Primary>Rectus Abdominis, Transverse Abdominis</Primary>
+            <Secondary>Hip Flexors, Shoulders</Secondary>
+            <Stabilizers>Glutes, Quadriceps, Lower Back</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Core or Full Body Day</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Weak Core Stability, Poor Body Tension Control</Targeted>
+            <Preventive>Builds integrated core strength and shoulder stability</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Place feet in suspension straps, assume a plank position on your hands.</step>
+            <step order="2" focus="Tuck">Engage your core and draw both knees toward your chest.</step>
+            <step order="3" focus="Hold">Pause briefly at the top, then slowly extend legs back to plank.</step>
+            <step order="4" focus="Repeat">Perform 10-15 reps for 2-3 sets.</step>
+            <step order="5" focus="Tip">Don't let your hips sag or rise. Keep your back flat like a tabletop throughout the movement.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Allowing the hips to sag or pike up.</mistake>
+            <mistake>Using momentum to swing the knees in.</mistake>
+            <mistake>Letting the lower back arch during extension.</mistake>
+            <mistake>Rushing the movement without control.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="34" difficulty="Intermediate" safety="Maintain a stable plank position. Avoid rotating your hips—only your legs should move laterally. Control the movement throughout." Pose_type="Core Strength, Obliques">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/suspension_lateral_knee_tuck.gif</url>
+        <Name>Suspension Lateral Knee Tuck</Name>
+        <Equipment>Suspension Trainer (TRX)</Equipment>
+        <Focused_Muscles>
+            <Primary>Obliques (Internal and External)</Primary>
+            <Secondary>Rectus Abdominis, Hip Flexors</Secondary>
+            <Stabilizers>Shoulders, Glutes, Quadriceps</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Core or Full Body Day</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Weak Obliques, Poor Rotational Stability</Targeted>
+            <Preventive>Builds lateral core control and shoulder stability</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Place feet in suspension straps, assume a plank position on your hands.</step>
+            <step order="2" focus="Tuck">Draw both knees toward your left elbow, keeping hips square.</step>
+            <step order="3" focus="Return">Extend back to plank, then tuck toward your right elbow.</step>
+            <step order="4" focus="Repeat">Alternate sides for 10-16 total reps (5-8 per side) for 2-3 sets.</step>
+            <step order="5" focus="Tip">Keep your shoulders and hips as stable as possible. The movement comes from your obliques, not from twisting your torso.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rotating the hips and shoulders toward the tucking side.</mistake>
+            <mistake>Letting the hips sag during the movement.</mistake>
+            <mistake>Using momentum to swing the legs laterally.</mistake>
+            <mistake>Lifting the hips too high.</mistake>
+        </common_mistakes>
+    </Pose>
+
+
+
+    <Pose id="35" difficulty="Advanced" safety="This is a complex, full-body movement. Start with light weight or no weight to master the pattern. Keep the dumbbell stable and vertical at all times. Move slowly and deliberately." Pose_type="Full Body, Core Stability, Mobility">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/single_arm_dumbbell_turkish_get_up.gif</url>
+        <Name>Single Arm Dumbbell Turkish Get Up</Name>
+        <Equipment>Single Dumbbell or Kettlebell, Exercise Mat</Equipment>
+        <Focused_Muscles>
+            <Primary>Core (360-degree stability), Shoulders (Deltoids, Rotator Cuff)</Primary>
+            <Secondary>Glutes, Quadriceps, Hamstrings, Triceps</Secondary>
+            <Stabilizers>Every major muscle group—full body integration</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Strength or Mobility Day, After Warm-Up</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Poor Full-Body Coordination, Weak Overhead Stability, Limited Hip Mobility</Targeted>
+            <Preventive>Builds integrated strength, shoulder stability, and functional movement patterns</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Lie on your back, hold a dumbbell in your right hand pressed straight up. Bend your right knee, foot flat. Left leg straight, left arm at 45 degrees.</step>
+            <step order="2" focus="Elbow">Roll to your left elbow, keeping the weight pressed overhead and vertical.</step>
+            <step order="3" focus="Hand">Press onto your left hand, lifting your torso. Keep weight overhead.</step>
+            <step order="4" focus="Bridge">Lift your hips, sweep your left leg under you into a half-kneeling position. Weight remains overhead.</step>
+            <step order="5" focus="Stand">Stand up, keeping weight overhead. Reverse the sequence to return. Perform 3-5 reps per side.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting the dumbbell tilt or wobble overhead.</mistake>
+            <mistake>Taking eyes off the weight during transitions.</mistake>
+            <mistake>Rushing through the sequence without control.</mistake>
+            <mistake>Using too much weight before mastering form.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="36" difficulty="Intermediate" safety="Maintain a flat back throughout the crawl. Keep your hips low and stable. Move with control—do not rush." Pose_type="Core Stability, Cardio, Coordination">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight_bear_crawl.gif</url>
+        <Name>Bodyweight Bear Crawl</Name>
+        <Equipment>Exercise Mat, Open Space</Equipment>
+        <Focused_Muscles>
+            <Primary>Rectus Abdominis, Transverse Abdominis, Shoulders</Primary>
+            <Secondary>Quadriceps, Glutes, Hip Flexors</Secondary>
+            <Stabilizers>Lower Back, Hamstrings, Triceps</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Morning Cardio or Warm-Up</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Poor Core Stability, Lack of Coordination, Sedentary Lifestyle</Targeted>
+            <Preventive>Builds functional locomotion strength and cardiovascular endurance</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Start on hands and knees, lift knees 1-2 inches off floor, hovering. Back flat, hips level.</step>
+            <step order="2" focus="Crawl">Move your right hand and left foot forward simultaneously, then left hand and right foot.</step>
+            <step order="3" focus="Maintain">Keep hips low and stable throughout. Do not let knees drag or hips rise.</step>
+            <step order="4" focus="Repeat">Crawl forward for 10-20 yards, then backward. Repeat for 3-5 sets.</step>
+            <step order="5" focus="Tip">Imagine you're crawling under a low ceiling—your hips cannot rise. Keep your core braced and back flat.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting the knees drag on the floor.</mistake>
+            <mistake>Lifting the hips too high (downward dog position).</mistake>
+            <mistake>Rushing the crawl without coordinated movement.</mistake>
+            <mistake>Allowing the lower back to sag.</mistake>
+        </common_mistakes>
+    </Pose>
 
 
 </excercises_Begginer>
+
