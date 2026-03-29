@@ -1,1 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ChestWorkoutCatalog>
+    
+    <!-- ======================================================== -->
+    <!-- BEGINNER LEVEL EXERCISES -->
+    <!-- ======================================================== -->
+    
+    <!-- UPPER CHEST - Beginner -->
+    <Pose id="CHEST-UP-01" difficulty="Beginner" safety="Keep your back flat against the bench. Lower the dumbbells with control. Do not bounce the weights off your chest. Keep your feet planted on the floor." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_dumbbell_press.gif</url>
+        <Name>Incline Dumbbell Press</Name>
+        <Equipment>Adjustable Bench, Light Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Clavicular Head - Upper Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>3 - 15 kg (6 - 33 lbs) per hand</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set an adjustable bench to 30-45 degrees. Sit on the bench, hold dumbbells at your shoulders with palms facing forward. Lie back with dumbbells at chest level.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward and slightly inward until your arms are extended (but not locked).</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the top, squeezing your upper chest.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells back to chest level. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Keep your elbows at about a 45-degree angle to your body—not flared straight out. This protects your shoulders.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the lower back excessively.</mistake>
+            <mistake>Bouncing the dumbbells off the chest.</mistake>
+            <mistake>Locking elbows at the top.</mistake>
+            <mistake>Letting dumbbells drift too far apart.</mistake>
+        </common_mistakes>
+    </Pose>
 
+    <Pose id="CHEST-UP-02" difficulty="Beginner" safety="Keep your body in a straight line. Place your hands slightly wider than shoulders on an elevated surface. Lower your chest toward the surface with control." Pose_type="Strength, Bodyweight">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_push_up.gif</url>
+        <Name>Incline Push-Up</Name>
+        <Equipment>Bench, Step, or Sturdy Elevated Surface</Equipment>
+        <Focused_Muscles>Pectoralis Major (Upper Chest), Anterior Deltoids, Triceps, Core</Focused_Muscles>
+        <Weight_Max>Bodyweight only</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Wrist injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Place your hands on an elevated surface (bench, step) slightly wider than shoulder-width. Walk your feet back until your body forms a straight line from head to heels.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your chest toward the surface, keeping your elbows at a 45-degree angle.</step>
+            <step order="3" focus="Bottom">Lower until your chest nearly touches the surface or your elbows reach 90 degrees.</step>
+            <step order="4" focus="Push">Exhale as you push through your palms to return to the starting position. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">The higher the surface, the easier the push-up. Start with a high bench and gradually lower the surface as you get stronger.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Sagging the hips.</mistake>
+            <mistake>Flaring elbows straight out.</mistake>
+            <mistake>Not going deep enough.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- MIDDLE CHEST - Beginner -->
+    <Pose id="CHEST-MID-01" difficulty="Beginner" safety="Keep your back flat against the bench. Lower the dumbbells with control. Do not bounce the weights off your chest. Keep your feet planted." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/flat_dumbbell_press.gif</url>
+        <Name>Flat Dumbbell Press</Name>
+        <Equipment>Flat Bench, Light Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Sternal Head - Middle Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>3 - 15 kg (6 - 33 lbs) per hand</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie flat on a bench, feet planted on the floor. Hold dumbbells at your shoulders with palms facing forward.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward until your arms are extended (but not locked).</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the top, squeezing your chest.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells back to chest level. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Keep your shoulders pinned back against the bench. Don't let them round forward.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the lower back excessively.</mistake>
+            <mistake>Bouncing dumbbells off the chest.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Letting shoulders round forward.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-MID-02" difficulty="Beginner" safety="Keep your body in a straight line from head to heels. Place your hands slightly wider than shoulders. Lower your chest toward the floor with control." Pose_type="Strength, Bodyweight">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/standard_push_up.gif</url>
+        <Name>Standard Push-Up</Name>
+        <Equipment>None (Exercise Mat Optional)</Equipment>
+        <Focused_Muscles>Pectoralis Major (Middle Chest), Anterior Deltoids, Triceps, Core</Focused_Muscles>
+        <Weight_Max>Bodyweight only</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Wrist injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Start in a high plank position with hands slightly wider than shoulder-width, body in a straight line from head to heels.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your chest toward the floor, keeping your elbows at a 45-degree angle.</step>
+            <step order="3" focus="Bottom">Lower until your chest nearly touches the floor or your elbows reach 90 degrees.</step>
+            <step order="4" focus="Push">Exhale as you push through your palms to return to the starting position. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">If full push-ups are too difficult, perform them on your knees while keeping your body straight from knees to head.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Sagging hips.</mistake>
+            <mistake>Flaring elbows straight out.</mistake>
+            <mistake>Not going deep enough.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LOWER CHEST - Beginner -->
+    <Pose id="CHEST-LOW-01" difficulty="Beginner" safety="Keep your body in a straight line. Place your hands on an elevated surface with your feet on the floor. Lower your chest toward the floor with control." Pose_type="Strength, Bodyweight">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/decline_push_up.gif</url>
+        <Name>Decline Push-Up</Name>
+        <Equipment>Bench or Step for Feet Elevation</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Anterior Deltoids, Triceps, Core</Focused_Muscles>
+        <Weight_Max>Bodyweight only</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Wrist injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Place your feet on a bench or step. Walk your hands forward until your body forms a straight line from head to heels. Hands slightly wider than shoulders.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your chest toward the floor, keeping your elbows at a 45-degree angle.</step>
+            <step order="3" focus="Bottom">Lower until your chest nearly touches the floor or your elbows reach 90 degrees.</step>
+            <step order="4" focus="Push">Exhale as you push through your palms to return to the starting position. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Decline push-ups are more challenging than standard push-ups. Start with a low elevation and increase height as you get stronger.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Sagging hips.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Not going deep enough.</mistake>
+            <mistake>Letting head drop.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-LOW-02" difficulty="Beginner" safety="Keep your back flat on the floor. Lower the dumbbells with control. Do not bounce the weights. Keep your elbows at a comfortable angle." Pose_type="Strength, Joint-Friendly">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_floor_press.gif</url>
+        <Name>Dumbbell Floor Press</Name>
+        <Equipment>Light Dumbbells, Exercise Mat</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Triceps, Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>3 - 15 kg (6 - 33 lbs) per hand</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on your back on the floor with knees bent. Hold dumbbells at your shoulders with palms facing forward.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward until your arms are extended (but not locked).</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the top.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells until your upper arms touch the floor. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">The floor limits your range of motion, which protects your shoulders. This is a great alternative if you have shoulder pain.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Bouncing dumbbells off the floor.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Arching the lower back.</mistake>
+            <mistake>Flaring elbows.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- INNER CHEST - Beginner -->
+    <Pose id="CHEST-IN-01" difficulty="Beginner" safety="Keep a slight bend in your elbows throughout the movement. Do not lock your elbows. Lower the dumbbells with control. Avoid overstretching." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_fly_light.gif</url>
+        <Name>Dumbbell Fly (Light)</Name>
+        <Equipment>Light Dumbbells, Flat Bench</Equipment>
+        <Focused_Muscles>Pectoralis Major (Sternal Head), Anterior Deltoids (Stabilizer)</Focused_Muscles>
+        <Weight_Max>2 - 10 kg (4 - 22 lbs) per hand</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear, pec tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie flat on a bench, feet planted. Hold dumbbells above your chest with palms facing each other, elbows slightly bent.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the dumbbells out to your sides in an arc, keeping the slight bend in your elbows.</step>
+            <step order="3" focus="Stretch">Lower until you feel a stretch in your chest (upper arms parallel to floor or slightly below).</step>
+            <step order="4" focus="Squeeze">Exhale as you bring the dumbbells back together in an arc, squeezing your chest at the top. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Use lighter weight than you think you need. Dumbbell flies are an isolation exercise—heavy weight can injure your shoulders.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Using momentum to swing the weights.</mistake>
+            <mistake>Lowering too deep (past shoulder safety).</mistake>
+            <mistake>Using too much weight.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-IN-02" difficulty="Beginner" safety="Keep a slight bend in your elbows throughout. Control the cables—do not let them snap back. Squeeze your chest at the peak of the movement." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_crossover_light.gif</url>
+        <Name>Cable Crossover (Light)</Name>
+        <Equipment>Cable Machine with Dual Handles, Light Weight</Equipment>
+        <Focused_Muscles>Pectoralis Major (Inner Chest Focus), Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>2 - 10 kg (4 - 22 lbs) per side</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set both pulleys to the highest position. Attach D-handles. Stand in the center, holding one handle in each hand with palms facing forward.</step>
+            <step order="2" focus="Crossover">Exhale as you pull the handles downward and together in front of your hips, keeping a slight bend in your elbows.</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the peak, squeezing your chest.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Stand with one foot slightly forward for better balance. Keep your core engaged and back straight.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum to swing cables.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Leaning forward excessively.</mistake>
+            <mistake>Not squeezing at the peak.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- NOVICE LEVEL EXERCISES -->
+    <!-- ======================================================== -->
+    
+    <!-- UPPER CHEST - Novice -->
+    <Pose id="CHEST-UP-03" difficulty="Novice" safety="Keep your back flat against the bench. Lower the bar to your upper chest with control. Do not bounce the bar. Keep your feet planted." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_barbell_press.gif</url>
+        <Name>Incline Barbell Press</Name>
+        <Equipment>Barbell with Light Plates, Adjustable Bench, Squat Rack</Equipment>
+        <Focused_Muscles>Pectoralis Major (Upper Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>10 - 40 kg (22 - 88 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set an adjustable bench to 30-45 degrees. Lie back, grip the bar slightly wider than shoulder-width. Unrack the bar with a spotter if possible.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the bar to your upper chest (just below the collarbone), keeping your elbows at a 45-degree angle.</step>
+            <step order="3" focus="Press">Exhale as you press the bar back to the starting position, squeezing your upper chest.</step>
+            <step order="4" focus="Repeat">Perform 3 sets of 10 reps. Do not lock your elbows at the top.</step>
+            <step order="5" focus="Tip">Keep your shoulders pinned back against the bench. Don't let them round forward during the press.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the lower back excessively.</mistake>
+            <mistake>Bouncing the bar off the chest.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Lifting hips off the bench.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-UP-04" difficulty="Novice" safety="Keep your back flat against the bench. Lower the dumbbells with control. Do not bounce the weights. Keep your elbows at a comfortable angle." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_dumbbell_press_novice.gif</url>
+        <Name>Incline Dumbbell Press</Name>
+        <Equipment>Adjustable Bench, Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Upper Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>6 - 20 kg (13 - 44 lbs) per hand</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set an adjustable bench to 30-45 degrees. Lie back with dumbbells at your shoulders, palms facing forward.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward and slightly inward until arms are extended.</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the top, squeezing your upper chest.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells back to chest level. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Dumbbells allow a greater range of motion than barbells. Bring the dumbbells together at the top for a better squeeze.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the back.</mistake>
+            <mistake>Bouncing dumbbells.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Letting shoulders round.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-UP-05" difficulty="Novice" safety="Keep a slight bend in your elbows throughout. Lower the dumbbells with control. Do not overstretch. Use light weight for flies." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_dumbbell_fly.gif</url>
+        <Name>Incline Dumbbell Fly</Name>
+        <Equipment>Adjustable Bench (30-45 degrees), Light Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Upper Chest - Clavicular Head), Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>4 - 12 kg (9 - 26 lbs) per hand</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set bench to 30-45 degrees. Lie back with dumbbells above your chest, palms facing each other, elbows slightly bent.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the dumbbells out to your sides in an arc, keeping the slight bend in your elbows.</step>
+            <step order="3" focus="Stretch">Lower until you feel a stretch in your upper chest (upper arms parallel to floor or slightly below).</step>
+            <step order="4" focus="Squeeze">Exhale as you bring the dumbbells back together in an arc. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">The incline position emphasizes the upper chest. Keep your shoulders pinned back throughout the movement.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Using momentum.</mistake>
+            <mistake>Lowering too deep.</mistake>
+            <mistake>Using too much weight.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- MIDDLE CHEST - Novice -->
+    <Pose id="CHEST-MID-03" difficulty="Novice" safety="Keep your back flat against the bench. Lower the bar to your mid-chest with control. Do not bounce the bar. Keep your feet planted." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/flat_barbell_bench_press.gif</url>
+        <Name>Flat Barbell Bench Press</Name>
+        <Equipment>Barbell with Light Plates, Flat Bench, Squat Rack, Spotter</Equipment>
+        <Focused_Muscles>Pectoralis Major (Middle Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>15 - 50 kg (33 - 110 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie flat on a bench with feet planted. Grip the bar slightly wider than shoulder-width. Unrack with a spotter.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the bar to your mid-chest (nipple line), keeping elbows at a 45-degree angle.</step>
+            <step order="3" focus="Press">Exhale as you press the bar back to the starting position explosively.</step>
+            <step order="4" focus="Repeat">Perform 3 sets of 10 reps. Do not lock your elbows at the top.</step>
+            <step order="5" focus="Tip">Keep your shoulders pinned back and down throughout the press. Imagine you're trying to bend the bar—this engages your lats.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the back excessively.</mistake>
+            <mistake>Bouncing the bar off the chest.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Lifting hips off the bench.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-MID-04" difficulty="Novice" safety="Keep your back flat against the bench. Lower the dumbbells with control. Do not bounce the weights. Keep your feet planted." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/flat_dumbbell_press_novice.gif</url>
+        <Name>Flat Dumbbell Press</Name>
+        <Equipment>Flat Bench, Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Middle Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>6 - 22 kg (13 - 48 lbs) per hand</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie flat on a bench, feet planted. Hold dumbbells at your shoulders with palms facing forward.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward until arms are extended.</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the top, squeezing your chest.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells back to chest level. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Bring the dumbbells together at the top for an extra chest squeeze. Dumbbells allow for a more natural range of motion than barbells.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the back.</mistake>
+            <mistake>Bouncing dumbbells.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Letting shoulders round.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-MID-05" difficulty="Novice" safety="Keep your body in a straight line. Wear a weighted vest securely. Lower your chest toward the floor with control. Do not sag your hips." Pose_type="Strength, Bodyweight">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/push_up_weighted_vest.gif</url>
+        <Name>Push-Up (Weighted Vest)</Name>
+        <Equipment>Weighted Vest, Exercise Mat</Equipment>
+        <Focused_Muscles>Pectoralis Major, Anterior Deltoids, Triceps, Core</Focused_Muscles>
+        <Weight_Max>Bodyweight + 2 - 10 kg (4 - 22 lbs)</Weight_Max>
+        <Age_Grp>16-60 years</Age_Grp>
+        <Not_For_Injuries>Wrist injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Put on a weighted vest. Start in a high plank position with hands slightly wider than shoulders, body straight.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your chest toward the floor, keeping elbows at a 45-degree angle.</step>
+            <step order="3" focus="Bottom">Lower until your chest nearly touches the floor or elbows reach 90 degrees.</step>
+            <step order="4" focus="Push">Exhale as you push through your palms to return to start. Perform 2 sets of 15 reps.</step>
+            <step order="5" focus="Tip">If you can't complete 15 reps with good form, reduce the vest weight or go back to bodyweight push-ups.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Sagging hips.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Not going deep enough.</mistake>
+            <mistake>Arching the back.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LOWER CHEST - Novice -->
+    <Pose id="CHEST-LOW-03" difficulty="Novice" safety="Keep your back flat against the bench. Lower the bar to your lower chest with control. Do not bounce the bar. Keep your feet secured." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/decline_barbell_press.gif</url>
+        <Name>Decline Barbell Press</Name>
+        <Equipment>Decline Bench, Barbell, Squat Rack, Spotter</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Triceps, Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>10 - 45 kg (22 - 99 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on a decline bench with your feet secured. Grip the bar slightly wider than shoulder-width. Unrack with a spotter.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the bar to your lower chest (sternum area), keeping elbows at a 45-degree angle.</step>
+            <step order="3" focus="Press">Exhale as you press the bar back to the starting position explosively.</step>
+            <step order="4" focus="Repeat">Perform 3 sets of 10 reps. Do not lock your elbows at the top.</step>
+            <step order="5" focus="Tip">Decline presses target the lower chest effectively. Keep your shoulders pinned back against the bench.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Bouncing the bar off the chest.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Lifting hips off the bench.</mistake>
+            <mistake>Locking elbows.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-LOW-04" difficulty="Novice" safety="Keep your back flat against the bench. Lower the dumbbells with control. Do not bounce the weights. Keep your feet secured." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/decline_dumbbell_press.gif</url>
+        <Name>Decline Dumbbell Press</Name>
+        <Equipment>Decline Bench, Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Triceps, Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>6 - 22 kg (13 - 48 lbs) per hand</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on a decline bench with feet secured. Hold dumbbells at your shoulders with palms facing forward.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward until arms are extended.</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the top, squeezing your lower chest.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells back to chest level. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Bring the dumbbells together at the top for a better chest contraction. The decline angle reduces shoulder involvement.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the back.</mistake>
+            <mistake>Bouncing dumbbells.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Not squeezing at the top.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-LOW-05" difficulty="Novice" safety="Keep your body in a straight line. Place your feet on an elevated surface. Lower your chest toward the floor with control." Pose_type="Strength, Bodyweight">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/decline_push_up_novice.gif</url>
+        <Name>Decline Push-Up</Name>
+        <Equipment>Bench or Step for Feet Elevation</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Anterior Deltoids, Triceps, Core</Focused_Muscles>
+        <Weight_Max>Bodyweight only</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Wrist injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Place your feet on a bench or step. Walk your hands forward until your body forms a straight line. Hands slightly wider than shoulders.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your chest toward the floor, keeping elbows at a 45-degree angle.</step>
+            <step order="3" focus="Bottom">Lower until your chest nearly touches the floor or elbows reach 90 degrees.</step>
+            <step order="4" focus="Push">Exhale as you push through your palms to return to start. Perform 2 sets of 15 reps.</step>
+            <step order="5" focus="Tip">Decline push-ups increase the load on your upper body. Start with a low elevation (e.g., 6 inches) and increase height as you get stronger.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Sagging hips.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Not going deep enough.</mistake>
+            <mistake>Letting head drop.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- INNER CHEST - Novice -->
+    <Pose id="CHEST-IN-03" difficulty="Novice" safety="Keep a slight bend in your elbows throughout. Control the cables—do not let them snap back. Squeeze your chest at the peak of the movement." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_crossover_novice.gif</url>
+        <Name>Cable Crossover</Name>
+        <Equipment>Cable Machine with Dual Handles</Equipment>
+        <Focused_Muscles>Pectoralis Major (Inner Chest), Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>5 - 15 kg (11 - 33 lbs) per side</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set both pulleys to the highest position. Attach D-handles. Stand in the center, holding one handle in each hand with palms facing forward.</step>
+            <step order="2" focus="Crossover">Exhale as you pull the handles downward and together in front of your hips, keeping a slight bend in your elbows.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the peak, squeezing your chest as hard as possible.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Keep your chest up and shoulders back. Imagine you're hugging a large barrel—this helps engage the inner chest.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum to swing cables.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Leaning forward excessively.</mistake>
+            <mistake>Not squeezing at the peak.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-IN-04" difficulty="Novice" safety="Keep a slight bend in your elbows throughout. Lower the dumbbells with control. Do not overstretch. Use light to moderate weight." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_fly_novice.gif</url>
+        <Name>Dumbbell Fly</Name>
+        <Equipment>Flat Bench, Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Sternal Head), Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>5 - 15 kg (11 - 33 lbs) per hand</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie flat on a bench, feet planted. Hold dumbbells above your chest with palms facing each other, elbows slightly bent.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the dumbbells out to your sides in an arc, keeping the slight bend in your elbows.</step>
+            <step order="3" focus="Stretch">Lower until you feel a stretch in your chest (upper arms parallel to floor or slightly below).</step>
+            <step order="4" focus="Squeeze">Exhale as you bring the dumbbells back together in an arc. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Imagine you're hugging a tree—this mental cue helps maintain the proper arc and elbow bend.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Using momentum.</mistake>
+            <mistake>Lowering too deep.</mistake>
+            <mistake>Using too much weight.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-IN-05" difficulty="Novice" safety="Keep your back flat against the pad. Squeeze your chest at the peak of the movement. Control the weight—do not let it slam." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/pec_deck_machine.gif</url>
+        <Name>Pec Deck Machine</Name>
+        <Equipment>Pec Deck (Butterfly) Machine</Equipment>
+        <Focused_Muscles>Pectoralis Major (Inner Chest), Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>5 - 20 kg (11 - 44 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on the pec deck machine with your back pressed against the pad. Place your forearms on the pads with elbows at 90 degrees.</step>
+            <step order="2" focus="Squeeze">Exhale as you bring the pads together in front of your chest, squeezing your chest muscles.</step>
+            <step order="3" focus="Peak">Pause for 2 seconds at the peak, squeezing your chest as hard as possible.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 2 sets of 15 reps.</step>
+            <step order="5" focus="Tip">Keep your shoulders down and back throughout. Don't let them round forward as you squeeze.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum to swing pads.</mistake>
+            <mistake>Rounding shoulders forward.</mistake>
+            <mistake>Not squeezing at the peak.</mistake>
+            <mistake>Letting the weight stack slam.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- ADVANCED LEVEL EXERCISES -->
+    <!-- ======================================================== -->
+    
+    <!-- UPPER CHEST - Advanced -->
+    <Pose id="CHEST-UP-06" difficulty="Advanced" safety="Keep your back flat against the bench. Use a spotter for heavy sets. Lower the bar to your upper chest with control. Do not bounce." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_barbell_press_heavy.gif</url>
+        <Name>Incline Barbell Press (Heavy)</Name>
+        <Equipment>Barbell with Heavy Plates, Adjustable Bench, Squat Rack, Spotter</Equipment>
+        <Focused_Muscles>Pectoralis Major (Upper Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>20 - 80 kg (44 - 176 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set bench to 30-45 degrees. Lie back, grip the bar slightly wider than shoulders. Unrack with a spotter. Keep shoulders pinned back.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the bar to your upper chest (just below collarbone) over 2-3 seconds.</step>
+            <step order="3" focus="Press">Exhale as you press the bar explosively back to the starting position.</step>
+            <step order="4" focus="Repeat">Perform 4 sets of 8 reps. Do not lock elbows at the top.</step>
+            <step order="5" focus="Tip">At advanced weight levels, form is critical. Use a spotter, keep your back flat, and don't bounce the bar.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the back excessively.</mistake>
+            <mistake>Bouncing the bar.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Lifting hips.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-UP-07" difficulty="Advanced" safety="Keep your back flat against the bench. Lower the dumbbells with control. Squeeze your upper chest at the top. Use a spotter for heavy weight." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_dumbbell_press_advanced.gif</url>
+        <Name>Incline Dumbbell Press</Name>
+        <Equipment>Adjustable Bench, Heavy Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Upper Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>10 - 35 kg (22 - 77 lbs) per hand</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set bench to 30-45 degrees. Lie back with dumbbells at your shoulders, palms facing forward.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward and slightly inward until arms are extended.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the top, squeezing your upper chest.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells back to chest level over 2-3 seconds. Perform 4 sets of 10 reps.</step>
+            <step order="5" focus="Tip">Bring the dumbbells together at the top for maximum upper chest contraction. Control the descent—don't let gravity drop them.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the back.</mistake>
+            <mistake>Bouncing dumbbells.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Rushing the descent.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-UP-08" difficulty="Advanced" safety="Keep your core engaged and back straight. Control the cables—do not let them snap back. Squeeze your upper chest at the peak." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/high_to_low_cable_fly.gif</url>
+        <Name>High-to-Low Cable Fly</Name>
+        <Equipment>Cable Machine with Dual Handles</Equipment>
+        <Focused_Muscles>Pectoralis Major (Upper Chest - Clavicular Head)</Focused_Muscles>
+        <Weight_Max>8 - 25 kg (18 - 55 lbs) per side</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set both pulleys to the highest position. Attach D-handles. Stand in the center, holding one handle in each hand with palms facing forward.</step>
+            <step order="2" focus="Pull Down and In">Exhale as you pull the handles downward and together at waist height, keeping a slight bend in your elbows.</step>
+            <step order="3" focus="Squeeze">Pause for 2-3 seconds at the peak, squeezing your upper chest.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">High-to-low flies target the upper chest specifically. Focus on the squeeze at the bottom—imagine you're crushing something between your palms.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Leaning forward.</mistake>
+            <mistake>Not squeezing at the peak.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-UP-09" difficulty="Advanced" safety="Keep a slight bend in your elbows throughout. Lower the dumbbells with control. Do not overstretch. Use moderate weight." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_dumbbell_fly_advanced.gif</url>
+        <Name>Incline Dumbbell Fly</Name>
+        <Equipment>Adjustable Bench (30-45 degrees), Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Upper Chest), Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>6 - 18 kg (13 - 40 lbs) per hand</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set bench to 30-45 degrees. Lie back with dumbbells above your chest, palms facing each other, elbows slightly bent.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the dumbbells out to your sides in an arc, keeping the slight bend in your elbows.</step>
+            <step order="3" focus="Stretch">Lower until you feel a deep stretch in your upper chest.</step>
+            <step order="4" focus="Squeeze">Exhale as you bring the dumbbells back together in an arc. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Don't go too deep—stop when you feel a stretch, not pain. The incline position emphasizes the upper chest.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Using momentum.</mistake>
+            <mistake>Lowering too deep.</mistake>
+            <mistake>Using too much weight.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- MIDDLE CHEST - Advanced -->
+    <Pose id="CHEST-MID-06" difficulty="Advanced" safety="Keep your back flat against the bench. Use a spotter for heavy sets. Lower the bar to your mid-chest with control. Do not bounce." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/flat_barbell_bench_press_heavy.gif</url>
+        <Name>Flat Barbell Bench Press (Heavy)</Name>
+        <Equipment>Barbell with Heavy Plates, Flat Bench, Squat Rack, Spotter</Equipment>
+        <Focused_Muscles>Pectoralis Major (Middle Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>30 - 120 kg (66 - 264 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie flat on a bench with feet planted. Grip the bar slightly wider than shoulders. Unrack with a spotter. Keep shoulders pinned back.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the bar to your mid-chest (nipple line) over 2-3 seconds, elbows at 45 degrees.</step>
+            <step order="3" focus="Press">Exhale as you press the bar explosively back to the starting position.</step>
+            <step order="4" focus="Repeat">Perform 4 sets of 8 reps. Do not lock elbows at the top.</step>
+            <step order="5" focus="Tip">At advanced weight, every rep must be controlled. Use leg drive, keep your upper back tight, and never bounce the bar.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the back excessively.</mistake>
+            <mistake>Bouncing the bar.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Lifting hips.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-MID-07" difficulty="Advanced" safety="Keep your back flat against the bench. Lower the dumbbells with control. Squeeze your chest at the top. Control the descent." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/flat_dumbbell_press_advanced.gif</url>
+        <Name>Flat Dumbbell Press</Name>
+        <Equipment>Flat Bench, Heavy Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Middle Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>12 - 40 kg (26 - 88 lbs) per hand</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie flat on a bench, feet planted. Hold dumbbells at your shoulders with palms facing forward.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward until arms are extended.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the top, squeezing your chest.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells back to chest level over 2-3 seconds. Perform 4 sets of 10 reps.</step>
+            <step order="5" focus="Tip">Dumbbells require more stability than barbells. Keep your shoulders pinned back and don't let them round forward.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the back.</mistake>
+            <mistake>Bouncing dumbbells.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Rushing the descent.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-MID-08" difficulty="Advanced" safety="Keep a slight bend in your elbows throughout. Control the cables—do not let them snap back. Squeeze your chest at the peak." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_fly_mid.gif</url>
+        <Name>Cable Fly (Mid)</Name>
+        <Equipment>Cable Machine with Dual Handles, Pulleys at Mid Height</Equipment>
+        <Focused_Muscles>Pectoralis Major (Middle Chest), Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>8 - 30 kg (18 - 66 lbs) per side</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set both pulleys to mid height (shoulder level). Attach D-handles. Stand in the center, holding one handle in each hand with palms facing forward.</step>
+            <step order="2" focus="Crossover">Exhale as you pull the handles together in front of your chest, keeping a slight bend in your elbows.</step>
+            <step order="3" focus="Squeeze">Pause for 2-3 seconds at the peak, squeezing your chest.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Mid-height cable flies target the entire chest evenly. Focus on squeezing at the peak and controlling the return.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Leaning forward.</mistake>
+            <mistake>Not squeezing at the peak.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-MID-09" difficulty="Advanced" safety="Keep your body in a straight line. Lower your chest toward the floor with control over 3-4 seconds. Do not sag your hips." Pose_type="Strength, Eccentric Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/push_up_slow_eccentric.gif</url>
+        <Name>Push-Up (Slow Eccentric)</Name>
+        <Equipment>Exercise Mat</Equipment>
+        <Focused_Muscles>Pectoralis Major, Anterior Deltoids, Triceps, Core</Focused_Muscles>
+        <Weight_Max>Bodyweight</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Wrist injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Start in a high plank position with hands slightly wider than shoulders, body straight.</step>
+            <step order="2" focus="Lower Slow">Inhale as you slowly lower your chest toward the floor over 4 seconds, keeping elbows at 45 degrees.</step>
+            <step order="3" focus="Bottom">Pause for 1 second at the bottom.</step>
+            <step order="4" focus="Push">Exhale as you push explosively back to the starting position. Perform 3 sets of 15 reps.</step>
+            <step order="5" focus="Tip">The slow eccentric (lowering) phase builds muscle size. Count "one one thousand, two one thousand" on the way down.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Sagging hips.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Rushing the descent.</mistake>
+            <mistake>Not going deep enough.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LOWER CHEST - Advanced -->
+    <Pose id="CHEST-LOW-06" difficulty="Advanced" safety="Keep your back flat against the bench. Use a spotter for heavy sets. Lower the bar to your lower chest with control. Do not bounce." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/decline_barbell_press_heavy.gif</url>
+        <Name>Decline Barbell Press (Heavy)</Name>
+        <Equipment>Decline Bench, Heavy Barbell, Squat Rack, Spotter</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Triceps, Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>30 - 120 kg (66 - 264 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on a decline bench with feet secured. Grip the bar slightly wider than shoulders. Unrack with a spotter.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the bar to your lower chest (sternum area) over 2-3 seconds.</step>
+            <step order="3" focus="Press">Exhale as you press the bar explosively back to the starting position.</step>
+            <step order="4" focus="Repeat">Perform 4 sets of 8 reps. Do not lock elbows at the top.</step>
+            <step order="5" focus="Tip">Decline presses allow you to handle heavy weight while protecting the shoulders. Keep your shoulders pinned back.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Bouncing the bar.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Lifting hips.</mistake>
+            <mistake>Locking elbows.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-LOW-07" difficulty="Advanced" safety="Keep your back flat against the bench. Lower the dumbbells with control. Squeeze your lower chest at the top." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/decline_dumbbell_press_advanced.gif</url>
+        <Name>Decline Dumbbell Press</Name>
+        <Equipment>Decline Bench, Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Triceps, Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>12 - 40 kg (26 - 88 lbs) per hand</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on a decline bench with feet secured. Hold dumbbells at your shoulders with palms facing forward.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward until arms are extended.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the top, squeezing your lower chest.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells back to chest level. Perform 3 sets of 10 reps.</step>
+            <step order="5" focus="Tip">Decline presses emphasize the lower chest. Keep your shoulders pinned back—don't let them round forward.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the back.</mistake>
+            <mistake>Bouncing dumbbells.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Not squeezing at the top.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-LOW-08" difficulty="Advanced" safety="Keep a slight bend in your elbows throughout. Control the cables—do not let them snap back. Squeeze your lower chest at the peak." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/low_to_high_cable_fly.gif</url>
+        <Name>Low-to-High Cable Fly</Name>
+        <Equipment>Cable Machine with Dual Handles, Low Pulleys</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>8 - 25 kg (18 - 55 lbs) per side</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set both pulleys to the lowest position. Attach D-handles. Stand in the center, holding one handle in each hand with palms facing up.</step>
+            <step order="2" focus="Pull Up and In">Exhale as you pull the handles upward and together at chest height, keeping a slight bend in your elbows.</step>
+            <step order="3" focus="Squeeze">Pause for 2-3 seconds at the peak, squeezing your chest.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Low-to-high flies target the lower chest and upper chest tie-in. Focus on squeezing at the top.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Leaning back excessively.</mistake>
+            <mistake>Not squeezing at the peak.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-LOW-09" difficulty="Advanced" safety="Keep your body upright and close to the bars. Lean forward slightly to emphasize the chest. Lower yourself with control to 90 degrees." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dips_chest_focused.gif</url>
+        <Name>Dips (Chest Focused)</Name>
+        <Equipment>Dip Bars</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Triceps, Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>Bodyweight</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Grip parallel bars with palms facing inward. Jump or step up to support your weight with arms straight.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your body, leaning forward (about 30 degrees) to emphasize the chest. Lower until elbows reach 90 degrees.</step>
+            <step order="3" focus="Push">Exhale as you push through your palms to return to the starting position.</step>
+            <step order="4" focus="Repeat">Perform 3 sets of 10 reps. Keep your core engaged and shoulders down.</step>
+            <step order="5" focus="Tip">To target the chest, lean forward. To target triceps, keep your body upright. Never go past 90 degrees with your elbows.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lowering too deep (past 90 degrees).</mistake>
+            <mistake>Letting shoulders roll forward.</mistake>
+            <mistake>Not leaning forward enough.</mistake>
+            <mistake>Using momentum to push up.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- INNER CHEST - Advanced -->
+    <Pose id="CHEST-IN-06" difficulty="Advanced" safety="Keep a slight bend in your elbows throughout. Control the cables—do not let them snap back. Squeeze your chest hard at the peak." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_crossover_heavy.gif</url>
+        <Name>Cable Crossover (Heavy - Advanced)</Name>
+        <Equipment>Cable Machine with Dual Handles</Equipment>
+        <Focused_Muscles>Pectoralis Major (Inner Chest), Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>12 - 35 kg (26 - 77 lbs) per side</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set both pulleys to the highest position. Attach D-handles. Stand in the center with one foot slightly forward.</step>
+            <step order="2" focus="Crossover">Exhale as you pull the handles downward and together in front of your hips, keeping a slight bend in your elbows.</step>
+            <step order="3" focus="Squeeze">Pause for 2-3 seconds at the peak, squeezing your chest as hard as possible.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 4 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Use a weight that allows you to squeeze at the peak. Heavy weight is useless if you can't contract the muscle.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum to swing.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Leaning forward.</mistake>
+            <mistake>Not squeezing at the peak.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-IN-07" difficulty="Advanced" safety="Keep your back flat against the pad. Squeeze your chest at the peak of the movement. Control the weight—do not let it slam." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/pec_deck_machine_advanced.gif</url>
+        <Name>Pec Deck Machine</Name>
+        <Equipment>Pec Deck (Butterfly) Machine</Equipment>
+        <Focused_Muscles>Pectoralis Major (Inner Chest), Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>15 - 40 kg (33 - 88 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on the pec deck machine with your back pressed against the pad. Place your forearms on the pads with elbows at 90 degrees.</step>
+            <step order="2" focus="Squeeze">Exhale as you bring the pads together in front of your chest, squeezing your chest muscles.</step>
+            <step order="3" focus="Peak">Pause for 2-3 seconds at the peak, squeezing your chest as hard as possible.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 3 sets of 15 reps.</step>
+            <step order="5" focus="Tip">Don't let the weight stack touch between reps. Keep constant tension on your chest for better growth.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum.</mistake>
+            <mistake>Rounding shoulders forward.</mistake>
+            <mistake>Not squeezing at the peak.</mistake>
+            <mistake>Letting the weight stack slam.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-IN-08" difficulty="Advanced" safety="Keep your body in a straight line. Place your hands closer than shoulder-width. Lower your chest toward the floor with control." Pose_type="Strength, Inner Chest Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/close_grip_push_up.gif</url>
+        <Name>Close-Grip Push-Up</Name>
+        <Equipment>Exercise Mat</Equipment>
+        <Focused_Muscles>Pectoralis Major (Inner Chest), Triceps, Anterior Deltoids, Core</Focused_Muscles>
+        <Weight_Max>Bodyweight</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Wrist injury, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Start in a high plank position with hands placed directly under your shoulders (narrower than shoulder-width).</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your chest toward the floor, keeping your elbows close to your body.</step>
+            <step order="3" focus="Bottom">Lower until your chest nearly touches the floor or elbows reach 90 degrees.</step>
+            <step order="4" focus="Push">Exhale as you push through your palms to return to start. Perform 3 sets of 15 reps.</step>
+            <step order="5" focus="Tip">Keep your elbows tucked close to your body. This variation emphasizes the triceps and inner chest.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Sagging hips.</mistake>
+            <mistake>Flaring elbows outward.</mistake>
+            <mistake>Not going deep enough.</mistake>
+            <mistake>Letting hands slide apart.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-IN-09" difficulty="Advanced" safety="Keep a slight bend in your elbows throughout. Squeeze the dumbbells together as hard as possible. Control the movement—do not drop the weights." Pose_type="Isolation, Inner Chest Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_squeeze_press.gif</url>
+        <Name>Dumbbell Squeeze Press</Name>
+        <Equipment>Dumbbells, Flat Bench</Equipment>
+        <Focused_Muscles>Pectoralis Major (Inner Chest), Triceps</Focused_Muscles>
+        <Weight_Max>6 - 20 kg (13 - 44 lbs) per hand</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie flat on a bench. Hold two dumbbells together with palms facing each other, pressing them together tightly.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward, keeping them squeezed together throughout the movement.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the top, squeezing your inner chest.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells back to chest level, keeping them squeezed together. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">The squeeze press is an inner chest builder. Focus on squeezing the dumbbells together as hard as you can throughout the entire rep.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting dumbbells separate.</mistake>
+            <mistake>Using momentum.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Not squeezing at the peak.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- EXPERT LEVEL EXERCISES -->
+    <!-- ======================================================== -->
+    
+    <!-- UPPER CHEST - Expert -->
+    <Pose id="CHEST-UP-10" difficulty="Expert" safety="Use a spotter for heavy sets. Keep your back flat against the bench. Lower the bar to your upper chest with control. Do not bounce. This is a strength movement." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_barbell_press_expert.gif</url>
+        <Name>Incline Barbell Press (Heavy - Expert)</Name>
+        <Equipment>Barbell with Heavy Plates, Adjustable Bench, Squat Rack, Spotter, Belt</Equipment>
+        <Focused_Muscles>Pectoralis Major (Upper Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>30 - 140 kg (66 - 308 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set bench to 30-45 degrees. Lie back, grip the bar slightly wider than shoulders. Unrack with a spotter. Keep shoulders pinned back.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the bar to your upper chest over 2-3 seconds.</step>
+            <step order="3" focus="Press">Exhale as you press the bar explosively back to the starting position.</step>
+            <step order="4" focus="Repeat">Perform 5 sets of 5 reps. Do not lock elbows at the top.</step>
+            <step order="5" focus="Tip">At expert weight levels, incline press is a primary strength movement. Use a spotter, keep your back flat, and never sacrifice form.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the back excessively.</mistake>
+            <mistake>Bouncing the bar.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Lifting hips.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-UP-11" difficulty="Expert" safety="Keep your back flat against the bench. Lower the dumbbells with control over 3-4 seconds. Squeeze your upper chest at the top." Pose_type="Hypertrophy, Eccentric Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_dumbbell_press_slow_eccentric.gif</url>
+        <Name>Incline Dumbbell Press (Slow Eccentric - Expert)</Name>
+        <Equipment>Adjustable Bench, Heavy Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Upper Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>12 - 45 kg (26 - 99 lbs) per hand</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set bench to 30-45 degrees. Lie back with dumbbells at your shoulders, palms facing forward.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward until arms are extended (1 second).</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the top, squeezing your upper chest.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells back to chest level over 4 seconds. Perform 4 sets of 8 reps.</step>
+            <step order="5" focus="Tip">The 4-second eccentric builds upper chest size. Count "one one thousand, two one thousand" on the way down.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rushing the descent.</mistake>
+            <mistake>Bouncing dumbbells.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Letting shoulders round.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-UP-12" difficulty="Expert" safety="Keep a slight bend in your elbows throughout. Control the cables—do not let them snap back. Squeeze your upper chest at the peak." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/high_to_low_cable_fly_expert.gif</url>
+        <Name>High-to-Low Cable Fly (Heavy - Expert)</Name>
+        <Equipment>Cable Machine with Dual Handles</Equipment>
+        <Focused_Muscles>Pectoralis Major (Upper Chest - Clavicular Head)</Focused_Muscles>
+        <Weight_Max>15 - 45 kg (33 - 99 lbs) per side</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set both pulleys to the highest position. Attach D-handles. Stand in the center with one foot slightly forward.</step>
+            <step order="2" focus="Pull Down and In">Exhale as you pull the handles downward and together at waist height, keeping a slight bend in your elbows.</step>
+            <step order="3" focus="Squeeze">Pause for 3 seconds at the peak, squeezing your upper chest.</step>
+            <step order="4" focus="Return">Inhale as you slowly return over 3 seconds. Perform 4 sets of 12 reps.</step>
+            <step order="5" focus="Tip">The 3-second squeeze at the peak is key for upper chest development. Hold the contraction as long as you can.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Leaning forward.</mistake>
+            <mistake>Rushing the peak squeeze.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-UP-13" difficulty="Expert" safety="This is a drop set. Do not rest between drops. Keep a slight bend in your elbows throughout. Control the weight—do not let it drop." Pose_type="Drop Set, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_dumbbell_fly_drop_set.gif</url>
+        <Name>Incline Dumbbell Fly (Drop Set - Expert)</Name>
+        <Equipment>Adjustable Bench (30-45 degrees), Dumbbells, Multiple Weight Increments</Equipment>
+        <Focused_Muscles>Pectoralis Major (Upper Chest)</Focused_Muscles>
+        <Weight_Max>15 kg → 10 kg → 6 kg (Progressive Drop)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set bench to 30-45 degrees. Set up three weight increments: heavy, medium, light.</step>
+            <step order="2" focus="First Set">Perform 12 reps with heavy weight. Keep a slight bend in your elbows.</step>
+            <step order="3" focus="Drop">Immediately grab medium weight. Perform 8 more reps without rest.</step>
+            <step order="4" focus="Final Drop">Immediately grab light weight. Perform 6 more reps. Perform 3 drop sets total.</step>
+            <step order="5" focus="Tip">Drop sets on incline flies create an incredible upper chest pump. Perform them at the end of your chest workout.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Resting between drops.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Lowering too deep.</mistake>
+            <mistake>Using momentum.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-UP-14" difficulty="Expert" safety="Keep your core braced and back flat. Use a landmine attachment. Squeeze your upper chest at the peak. Control the movement throughout." Pose_type="Unilateral Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/landmine_press.gif</url>
+        <Name>Landmine Press</Name>
+        <Equipment>Barbell, Landmine Attachment, Weight Plates</Equipment>
+        <Focused_Muscles>Pectoralis Major (Upper Chest), Anterior Deltoids, Triceps, Core</Focused_Muscles>
+        <Weight_Max>10 - 50 kg (22 - 110 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Load one end of a barbell into a landmine attachment. Stand facing the loaded end with feet shoulder-width apart. Grip the end of the barbell with both hands or one hand.</step>
+            <step order="2" focus="Press">Exhale as you press the barbell upward and slightly inward, keeping your core braced.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the top, squeezing your upper chest.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower to the starting position. Perform 3 sets of 10 reps per side.</step>
+            <step order="5" focus="Tip">Landmine presses are shoulder-friendly and target the upper chest. Keep your back flat and don't arch.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the lower back.</mistake>
+            <mistake>Using momentum.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Letting core disengage.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- MIDDLE CHEST - Expert -->
+    <Pose id="CHEST-MID-10" difficulty="Expert" safety="Use a spotter for heavy sets. Keep your back flat against the bench. Lower the bar to your mid-chest with control. Do not bounce. This is a strength movement." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/flat_barbell_bench_press_expert.gif</url>
+        <Name>Flat Barbell Bench Press (Heavy - Expert)</Name>
+        <Equipment>Barbell with Heavy Plates, Flat Bench, Squat Rack, Spotter, Belt</Equipment>
+        <Focused_Muscles>Pectoralis Major (Middle Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>50 - 200 kg (110 - 440 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear, pectoral tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie flat on a bench with feet planted. Grip the bar slightly wider than shoulders. Unrack with a spotter. Keep shoulders pinned back.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the bar to your mid-chest (nipple line) over 2-3 seconds.</step>
+            <step order="3" focus="Press">Exhale as you press the bar explosively back to the starting position.</step>
+            <step order="4" focus="Repeat">Perform 5 sets of 3-5 reps. Do not lock elbows at the top.</step>
+            <step order="5" focus="Tip">At expert level, bench press is a competition lift. Use leg drive, keep your upper back tight, and never bounce the bar.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the back excessively.</mistake>
+            <mistake>Bouncing the bar.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Lifting hips.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-MID-11" difficulty="Expert" safety="Keep your back flat against the bench. Lower the dumbbells with control over 3-4 seconds. Squeeze your chest at the top." Pose_type="Hypertrophy, Eccentric Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/flat_dumbbell_press_slow_eccentric.gif</url>
+        <Name>Flat Dumbbell Press (Slow Eccentric - Expert)</Name>
+        <Equipment>Flat Bench, Heavy Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Middle Chest), Anterior Deltoids, Triceps</Focused_Muscles>
+        <Weight_Max>15 - 50 kg (33 - 110 lbs) per hand</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie flat on a bench, feet planted. Hold dumbbells at your shoulders with palms facing forward.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward until arms are extended (1 second).</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the top, squeezing your chest.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells back to chest level over 4 seconds. Perform 4 sets of 8 reps.</step>
+            <step order="5" focus="Tip">The 4-second eccentric builds chest size. Don't let the dumbbells drop—control them all the way down.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rushing the descent.</mistake>
+            <mistake>Bouncing dumbbells.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Letting shoulders round.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-MID-12" difficulty="Expert" safety="This is a drop set. Do not rest between drops. Keep a slight bend in your elbows throughout. Squeeze your chest at the peak." Pose_type="Drop Set, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_fly_mid_drop_set.gif</url>
+        <Name>Cable Fly (Mid, Drop Set - Expert)</Name>
+        <Equipment>Cable Machine with Dual Handles, Multiple Weight Increments</Equipment>
+        <Focused_Muscles>Pectoralis Major (Middle Chest)</Focused_Muscles>
+        <Weight_Max>30 kg → 20 kg → 12 kg (Progressive Drop)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set both pulleys to mid height (shoulder level). Set up three weight increments: heavy, medium, light.</step>
+            <step order="2" focus="First Set">Perform 12 reps with heavy weight. Keep a slight bend in your elbows.</step>
+            <step order="3" focus="Drop">Immediately reduce weight to medium. Perform 8 more reps without rest.</step>
+            <step order="4" focus="Final Drop">Immediately reduce to light weight. Perform 6 more reps. Perform 3 drop sets total.</step>
+            <step order="5" focus="Tip">Drop sets on cable flies create an incredible chest pump. Keep your chest up and shoulders back throughout.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Resting between drops.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Using momentum.</mistake>
+            <mistake>Not squeezing at the peak.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-MID-13" difficulty="Expert" safety="Keep your body upright and close to the bars. Lean forward slightly to emphasize the chest. Use a weight belt for added resistance. Lower with control." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/weighted_dips_chest.gif</url>
+        <Name>Weighted Dips (Chest Focused - Expert)</Name>
+        <Equipment>Dip Bars, Weight Belt, Weight Plates</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Triceps, Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>Bodyweight + 10 - 50 kg (22 - 110 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a weight plate to a dip belt. Grip parallel bars with palms facing inward. Jump or step up to support your weight.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your body, leaning forward (about 30 degrees) to emphasize the chest. Lower until elbows reach 90 degrees over 2-3 seconds.</step>
+            <step order="3" focus="Push">Exhale as you push through your palms to return to the starting position explosively.</step>
+            <step order="4" focus="Repeat">Perform 4 sets of 8 reps. Keep your core engaged and shoulders down.</step>
+            <step order="5" focus="Tip">Weighted dips are a powerful chest builder. Never go past 90 degrees with your elbows—this protects your shoulders.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lowering too deep.</mistake>
+            <mistake>Letting shoulders roll forward.</mistake>
+            <mistake>Not leaning forward enough.</mistake>
+            <mistake>Using momentum to push up.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-MID-14" difficulty="Expert" safety="This is an explosive plyometric movement. Land softly with bent elbows. Warm up thoroughly before attempting. Have a soft surface." Pose_type="Power, Plyometric">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/clap_push_up.gif</url>
+        <Name>Push-Up (Clap/Plyometric - Expert)</Name>
+        <Equipment>Exercise Mat (Soft Surface)</Equipment>
+        <Focused_Muscles>Pectoralis Major (Explosive Power), Triceps, Anterior Deltoids, Core</Focused_Muscles>
+        <Weight_Max>Bodyweight</Weight_Max>
+        <Age_Grp>20-45 years</Age_Grp>
+        <Not_For_Injuries>Wrist injury, shoulder impingement, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Start in a high plank position with hands slightly wider than shoulders, body straight.</step>
+            <step order="2" focus="Lower">Inhale as you lower your chest toward the floor.</step>
+            <step order="3" focus="Explode">Exhale as you push explosively to launch your hands off the floor. Clap your hands together mid-air.</step>
+            <step order="4" focus="Land">Land softly with bent elbows to absorb the impact. Immediately go into the next rep. Perform 3 sets of 10 reps.</step>
+            <step order="5" focus="Tip">Clap push-ups are advanced. Master regular push-ups first. If you can't clap, start with explosive push-ups (lifting hands off the floor without clapping).</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Locking elbows on landing.</mistake>
+            <mistake>Sagging hips.</mistake>
+            <mistake>Not getting enough height.</mistake>
+            <mistake>Landing with straight arms.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LOWER CHEST - Expert -->
+    <Pose id="CHEST-LOW-10" difficulty="Expert" safety="Use a spotter for heavy sets. Keep your back flat against the bench. Lower the bar to your lower chest with control. Do not bounce." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/decline_barbell_press_expert.gif</url>
+        <Name>Decline Barbell Press (Heavy - Expert)</Name>
+        <Equipment>Decline Bench, Heavy Barbell, Squat Rack, Spotter, Belt</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Triceps, Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>40 - 180 kg (88 - 396 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on a decline bench with feet secured. Grip the bar slightly wider than shoulders. Unrack with a spotter.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the bar to your lower chest (sternum area) over 2-3 seconds.</step>
+            <step order="3" focus="Press">Exhale as you press the bar explosively back to the starting position.</step>
+            <step order="4" focus="Repeat">Perform 5 sets of 5 reps. Do not lock elbows at the top.</step>
+            <step order="5" focus="Tip">Decline presses are often stronger than flat presses. Use a spotter and keep your shoulders pinned back.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Bouncing the bar.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Lifting hips.</mistake>
+            <mistake>Locking elbows.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-LOW-11" difficulty="Expert" safety="Keep your back flat against the bench. Lower the dumbbells with control over 3-4 seconds. Squeeze your lower chest at the top." Pose_type="Hypertrophy, Eccentric Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/decline_dumbbell_press_slow_eccentric.gif</url>
+        <Name>Decline Dumbbell Press (Slow Eccentric - Expert)</Name>
+        <Equipment>Decline Bench, Heavy Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Triceps, Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>15 - 50 kg (33 - 110 lbs) per hand</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on a decline bench with feet secured. Hold dumbbells at your shoulders with palms facing forward.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward until arms are extended (1 second).</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the top, squeezing your lower chest.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells back to chest level over 4 seconds. Perform 4 sets of 8 reps.</step>
+            <step order="5" focus="Tip">The 4-second eccentric builds lower chest size. Control the descent—don't let gravity drop the weights.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rushing the descent.</mistake>
+            <mistake>Bouncing dumbbells.</mistake>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Not squeezing at the top.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-LOW-12" difficulty="Expert" safety="Keep a slight bend in your elbows throughout. Control the cables—do not let them snap back. Squeeze your lower chest at the peak. Use heavy weight with control." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/low_to_high_cable_fly_heavy.gif</url>
+        <Name>Low-to-High Cable Fly (Heavy - Expert)</Name>
+        <Equipment>Cable Machine with Dual Handles, Low Pulleys</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>15 - 50 kg (33 - 110 lbs) per side</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set both pulleys to the lowest position. Attach D-handles. Stand in the center with one foot slightly forward.</step>
+            <step order="2" focus="Pull Up and In">Exhale as you pull the handles upward and together at chest height, keeping a slight bend in your elbows.</step>
+            <step order="3" focus="Squeeze">Pause for 3 seconds at the peak, squeezing your chest.</step>
+            <step order="4" focus="Return">Inhale as you slowly return over 3 seconds. Perform 4 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Low-to-high flies target the lower chest and the tie-in between chest and shoulders. The 3-second squeeze builds definition.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Leaning back excessively.</mistake>
+            <mistake>Rushing the peak squeeze.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-LOW-13" difficulty="Expert" safety="Keep your body upright and close to the bars. Lean forward to emphasize the lower chest. Use a weight belt for added resistance. Lower with control." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/weighted_chest_dip.gif</url>
+        <Name>Chest Dip (Weighted - Expert)</Name>
+        <Equipment>Dip Bars, Weight Belt, Heavy Plates</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Triceps, Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>Bodyweight + 10 - 60 kg (22 - 132 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach heavy weight to a dip belt. Grip parallel bars with palms facing inward. Lean forward (30-45 degrees) to emphasize the chest.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your body until elbows reach 90 degrees over 2-3 seconds.</step>
+            <step order="3" focus="Push">Exhale as you push through your palms to return to the starting position explosively.</step>
+            <step order="4" focus="Repeat">Perform 4 sets of 10 reps. Keep your core engaged and shoulders down.</step>
+            <step order="5" focus="Tip">Chest dips are one of the best lower chest builders. Never go past 90 degrees with your elbows—this protects your shoulders.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lowering too deep.</mistake>
+            <mistake>Letting shoulders roll forward.</mistake>
+            <mistake>Not leaning forward enough.</mistake>
+            <mistake>Using momentum.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-LOW-14" difficulty="Expert" safety="Keep a slight bend in your elbows throughout. Lower the dumbbells with control. Do not overstretch. Use moderate weight for flies." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/decline_dumbbell_fly.gif</url>
+        <Name>Decline Dumbbell Fly</Name>
+        <Equipment>Decline Bench, Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Lower Chest), Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>8 - 25 kg (18 - 55 lbs) per hand</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on a decline bench with feet secured. Hold dumbbells above your chest with palms facing each other, elbows slightly bent.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the dumbbells out to your sides in an arc, keeping the slight bend in your elbows.</step>
+            <step order="3" focus="Stretch">Lower until you feel a deep stretch in your lower chest.</step>
+            <step order="4" focus="Squeeze">Exhale as you bring the dumbbells back together in an arc. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Decline flies target the lower chest. Don't go too deep—stop when you feel a stretch, not pain.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Using momentum.</mistake>
+            <mistake>Lowering too deep.</mistake>
+            <mistake>Using too much weight.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- INNER CHEST - Expert -->
+    <Pose id="CHEST-IN-10" difficulty="Expert" safety="This is a drop set. Do not rest between drops. Keep a slight bend in your elbows throughout. Squeeze your chest hard at the peak." Pose_type="Drop Set, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_crossover_drop_set.gif</url>
+        <Name>Cable Crossover (Heavy, Drop Set - Expert)</Name>
+        <Equipment>Cable Machine with Dual Handles, Multiple Weight Increments</Equipment>
+        <Focused_Muscles>Pectoralis Major (Inner Chest)</Focused_Muscles>
+        <Weight_Max>40 kg → 25 kg → 15 kg (Progressive Drop)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set both pulleys to the highest position. Set up three weight increments: heavy, medium, light.</step>
+            <step order="2" focus="First Set">Perform 12 reps with heavy weight. Keep a slight bend in your elbows.</step>
+            <step order="3" focus="Drop">Immediately reduce weight to medium. Perform 8 more reps without rest.</step>
+            <step order="4" focus="Final Drop">Immediately reduce to light weight. Perform 6 more reps. Perform 4 drop sets total.</step>
+            <step order="5" focus="Tip">Drop sets on cable crossovers are a finishing exercise. Perform them at the end of your chest workout for maximum pump.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Resting between drops.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Using momentum.</mistake>
+            <mistake>Not squeezing at the peak.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-IN-11" difficulty="Expert" safety="Keep your back flat against the pad. Squeeze your chest at the peak. Control the slow eccentric phase. Do not let the weight stack slam." Pose_type="Isolation, Eccentric Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/pec_deck_machine_slow_eccentric.gif</url>
+        <Name>Pec Deck Machine (Slow Eccentric - Expert)</Name>
+        <Equipment>Pec Deck (Butterfly) Machine</Equipment>
+        <Focused_Muscles>Pectoralis Major (Inner Chest)</Focused_Muscles>
+        <Weight_Max>20 - 60 kg (44 - 132 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on the pec deck machine with your back pressed against the pad. Place your forearms on the pads with elbows at 90 degrees.</step>
+            <step order="2" focus="Squeeze">Exhale as you bring the pads together in front of your chest over 1 second, squeezing your chest muscles.</step>
+            <step order="3" focus="Peak">Pause for 2 seconds at the peak, squeezing your chest as hard as possible.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position over 4 seconds. Perform 4 sets of 15 reps.</step>
+            <step order="5" focus="Tip">The 4-second eccentric builds inner chest definition. Don't let the weight pull you back—control it.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum.</mistake>
+            <mistake>Rounding shoulders.</mistake>
+            <mistake>Rushing the descent.</mistake>
+            <mistake>Letting the weight stack slam.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-IN-12" difficulty="Expert" safety="Keep the dumbbells squeezed together throughout the entire movement. Do not let them separate. Squeeze your inner chest at the top." Pose_type="Isolation, Inner Chest Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_squeeze_press_heavy.gif</url>
+        <Name>Dumbbell Squeeze Press (Heavy - Expert)</Name>
+        <Equipment>Flat Bench, Heavy Dumbbells</Equipment>
+        <Focused_Muscles>Pectoralis Major (Inner Chest), Triceps</Focused_Muscles>
+        <Weight_Max>10 - 35 kg (22 - 77 lbs) per hand</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie flat on a bench. Hold two dumbbells together with palms facing each other, pressing them together as hard as possible.</step>
+            <step order="2" focus="Press">Exhale as you press the dumbbells upward, keeping them squeezed together throughout the movement.</step>
+            <step order="3" focus="Squeeze">Pause for 3 seconds at the top, squeezing your inner chest and the dumbbells together.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower the dumbbells back to chest level, keeping them squeezed together. Perform 4 sets of 10 reps.</step>
+            <step order="5" focus="Tip">The squeeze press builds the inner chest line. Squeeze the dumbbells together as if you're trying to crush them—this maximizes inner chest activation.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting dumbbells separate.</mistake>
+            <mistake>Rushing the movement.</mistake>
+            <mistake>Locking elbows.</mistake>
+            <mistake>Not squeezing at the peak.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-IN-13" difficulty="Expert" safety="Keep a slight bend in your elbow throughout. Control the cable—do not let it snap back. Squeeze your inner chest at the peak." Pose_type="Unilateral Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/single_arm_cable_fly.gif</url>
+        <Name>Single-Arm Cable Fly</Name>
+        <Equipment>Cable Machine with Single Handle, High Pulley</Equipment>
+        <Focused_Muscles>Pectoralis Major (Inner Chest - Unilateral)</Focused_Muscles>
+        <Weight_Max>10 - 35 kg (22 - 77 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set one pulley to the highest position. Attach a D-handle. Stand facing away from the cable, holding the handle with one hand.</step>
+            <step order="2" focus="Fly">Exhale as you pull the handle downward and across your body in an arc, keeping a slight bend in your elbow.</step>
+            <step order="3" focus="Squeeze">Pause for 3 seconds at the peak, squeezing your inner chest.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 3 sets of 12 reps per side.</step>
+            <step order="5" focus="Tip">Single-arm cable flies help correct strength imbalances. Focus on squeezing the chest, not just moving the cable.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum.</mistake>
+            <mistake>Locking elbow.</mistake>
+            <mistake>Rotating the torso.</mistake>
+            <mistake>Not squeezing at the peak.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="CHEST-IN-14" difficulty="Expert" safety="Keep your back flat against the bench. Use a close grip (hands shoulder-width or closer). Lower the bar to your lower chest with control. Do not bounce." Pose_type="Strength, Inner Chest Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/close_grip_bench_press_chest.gif</url>
+        <Name>Close-Grip Bench Press (Inner Chest Focus - Expert)</Name>
+        <Equipment>Barbell, Flat Bench, Squat Rack, Spotter</Equipment>
+        <Focused_Muscles>Pectoralis Major (Inner Chest), Triceps, Anterior Deltoids</Focused_Muscles>
+        <Weight_Max>30 - 120 kg (66 - 264 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis, wrist injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie flat on a bench with feet planted. Grip the bar with hands shoulder-width apart (closer than normal bench). Unrack with a spotter.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the bar to your lower chest (sternum area), keeping your elbows close to your body.</step>
+            <step order="3" focus="Press">Exhale as you press the bar back to the starting position.</step>
+            <step order="4" focus="Repeat">Perform 3 sets of 10 reps. Keep your shoulders pinned back throughout.</step>
+            <step order="5" focus="Tip">Close-grip bench press targets the inner chest and triceps. Keep your elbows tucked—don't let them flare.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Flaring elbows.</mistake>
+            <mistake>Bouncing the bar.</mistake>
+            <mistake>Arching the back.</mistake>
+            <mistake>Grip too narrow (hands touching).</mistake>
+        </common_mistakes>
+    </Pose>
+
+</ChestWorkoutCatalog>
