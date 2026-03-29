@@ -1,1 +1,1416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BackWorkoutCatalog>
+    
+    <!-- ======================================================== -->
+    <!-- BEGINNER LEVEL EXERCISES -->
+    <!-- ======================================================== -->
+    
+    <!-- UPPER BACK - Beginner -->
+    <Pose id="BACK-UB-01" difficulty="Beginner" safety="Keep your back straight and core braced. Squeeze your shoulder blades together at the peak of the movement. Avoid using momentum to pull the band." Pose_type="Strength, Activation">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/resistance_band_row.gif</url>
+        <Name>Resistance Band Row</Name>
+        <Equipment>Resistance Band, Anchor Point</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius (Middle/Lower), Rear Deltoids, Biceps</Focused_Muscles>
+        <Weight_Max>Light to Medium Resistance Band</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis, lower back injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Anchor a resistance band at chest height. Hold one end in each hand, step back to create tension. Stand with feet shoulder-width apart, knees slightly bent.</step>
+            <step order="2" focus="Row">Exhale as you pull the band toward your chest, squeezing your shoulder blades together. Keep your elbows close to your body.</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the peak, feeling your upper back contract.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Keep your shoulders down and back—don't let them shrug up toward your ears. Focus on squeezing your shoulder blades, not pulling with your arms.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Shrugging shoulders toward ears.</mistake>
+            <mistake>Using momentum to pull the band.</mistake>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Not fully extending arms at the end of each rep.</mistake>
+        </common_mistakes>
+    </Pose>
 
+    <Pose id="BACK-UB-02" difficulty="Beginner" safety="Keep your back straight and chest up. Squeeze your shoulder blades together at the peak. Avoid jerking the weight. Control the return." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_cable_row_light.gif</url>
+        <Name>Seated Cable Row (Light)</Name>
+        <Equipment>Cable Machine with V-Grip Handle</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius, Latissimus Dorsi, Rear Deltoids, Biceps</Focused_Muscles>
+        <Weight_Max>10 - 30 kg (22 - 66 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Lower back injury, shoulder impingement, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit at the cable row machine with your feet braced. Grip the V-handle, keep your back straight, chest up, and core braced.</step>
+            <step order="2" focus="Row">Exhale as you pull the handle toward your lower chest, squeezing your shoulder blades together. Keep your elbows close to your body.</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the peak, feeling your upper back contract.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position, feeling a stretch in your upper back. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Do not lean back excessively during the row. Keep your torso mostly upright—only a slight lean is natural.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Leaning too far back to use momentum.</mistake>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Pulling with the arms instead of the back.</mistake>
+            <mistake>Shrugging shoulders.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-UB-03" difficulty="Beginner" safety="Keep your back straight and core braced. Hinge at your hips. Avoid rounding your lower back. Squeeze your shoulder blades at the top of the row." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_bent_over_row.gif</url>
+        <Name>Dumbbell Bent-Over Row</Name>
+        <Equipment>Light Dumbbells, Bench (Optional for support)</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius, Latissimus Dorsi, Rear Deltoids, Biceps, Lower Back (Stabilizer)</Focused_Muscles>
+        <Weight_Max>3 - 12 kg (6 - 26 lbs) per hand</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, knees slightly bent. Hinge at your hips to lean forward until your torso is nearly parallel to the floor. Hold dumbbells with palms facing each other.</step>
+            <step order="2" focus="Row">Exhale as you pull the dumbbells toward your lower chest, squeezing your shoulder blades together. Keep your elbows close to your body.</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the top, feeling your upper back contract.</step>
+            <step order="4" focus="Lower">Inhale as you lower the dumbbells with control. Perform 2 sets of 10 reps.</step>
+            <step order="5" focus="Tip">If you have trouble maintaining a flat back, place one knee and hand on a bench for support (single-arm supported row).</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Using momentum to swing the dumbbells.</mistake>
+            <mistake>Pulling with the arms instead of the back.</mistake>
+            <mistake>Looking up (keep neck neutral).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LATS - Beginner -->
+    <Pose id="BACK-LAT-01" difficulty="Beginner" safety="Keep your core braced and back straight. Squeeze your lats at the bottom of the movement. Avoid using momentum to pull the bar down." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lat_pulldown_light.gif</url>
+        <Name>Lat Pulldown (Light)</Name>
+        <Equipment>Cable Machine with Wide Bar, Lat Pulldown Station</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Primary), Biceps, Rhomboids, Rear Deltoids</Focused_Muscles>
+        <Weight_Max>10 - 35 kg (22 - 77 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis, lower back injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit at the lat pulldown machine. Grip the bar wider than shoulder-width with palms facing forward. Secure your knees under the pads.</step>
+            <step order="2" focus="Pull">Exhale as you pull the bar down to your upper chest, leading with your elbows. Squeeze your lats at the bottom.</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the bottom, feeling your lats contract.</step>
+            <step order="4" focus="Return">Inhale as you slowly return the bar to the starting position, feeling a stretch in your lats. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Lean back slightly (10-15 degrees) to engage your lats better. Do not use your body weight to pull the bar down—control the movement.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum to swing the bar down.</mistake>
+            <mistake>Leaning too far back.</mistake>
+            <mistake>Pulling behind the neck (dangerous for shoulders).</mistake>
+            <mistake>Letting the bar pull your arms up too quickly.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LAT-02" difficulty="Beginner" safety="Keep your core braced and back straight. Squeeze your lats at the bottom of the movement. Avoid using momentum. Control the weight throughout." Pose_type="Isolation, Lat Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/straight_arm_pulldown.gif</url>
+        <Name>Straight Arm Pulldown</Name>
+        <Equipment>Cable Machine with Rope or Straight Bar</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Isolation), Teres Major, Triceps (Minor)</Focused_Muscles>
+        <Weight_Max>5 - 20 kg (11 - 44 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a rope or straight bar to a high pulley. Stand facing the cable, holding the attachment with an overhand grip. Keep a slight bend in your elbows.</step>
+            <step order="2" focus="Pull Down">Exhale as you pull the attachment down toward your thighs, keeping your arms straight (but not locked). Squeeze your lats at the bottom.</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the bottom, feeling your lats contract.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position, keeping your arms straight. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">This exercise isolates the lats because your arms stay straight. Focus on pulling with your lats, not your shoulders or arms.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Bending the elbows during the movement.</mistake>
+            <mistake>Using shoulder momentum.</mistake>
+            <mistake>Leaning forward excessively.</mistake>
+            <mistake>Locking elbows.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LOWER BACK - Beginner -->
+    <Pose id="BACK-LB-01" difficulty="Beginner" safety="Keep your neck in a neutral position (looking at the floor). Squeeze your glutes and lower back at the top. Do not overextend your spine." Pose_type="Strength, Core Stability">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/superman_hold.gif</url>
+        <Name>Superman Hold</Name>
+        <Equipment>Exercise Mat</Equipment>
+        <Focused_Muscles>Erector Spinae (Lower Back), Glutes, Hamstrings, Core</Focused_Muscles>
+        <Weight_Max>Bodyweight only</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, spinal stenosis, spondylolisthesis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie face down on a mat with your arms extended overhead and legs straight. Keep your neck in a neutral position (looking at the floor).</step>
+            <step order="2" focus="Lift">Exhale as you simultaneously lift your arms, chest, and legs off the floor. Squeeze your glutes and lower back.</step>
+            <step order="3" focus="Hold">Hold the lifted position for 2-3 seconds, keeping your neck neutral and core engaged.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower back to the starting position. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Do not lift too high—just a few inches is enough. Focus on squeezing your glutes and lower back, not arching your spine excessively.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lifting too high (overextending the spine).</mistake>
+            <mistake>Looking up (straining the neck).</mistake>
+            <mistake>Not squeezing glutes.</mistake>
+            <mistake>Using momentum to lift.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LB-02" difficulty="Beginner" safety="Keep your back straight and core braced. Move through a controlled range of motion. Avoid arching your back at the top." Pose_type="Strength, Core Stability">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/back_extension_bodyweight.gif</url>
+        <Name>Back Extension (Bodyweight)</Name>
+        <Equipment>Back Extension Bench or Roman Chair</Equipment>
+        <Focused_Muscles>Erector Spinae (Lower Back), Glutes, Hamstrings</Focused_Muscles>
+        <Weight_Max>Bodyweight only</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, spinal stenosis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Position yourself on a back extension bench with your hips on the pad and ankles secured. Cross your arms over your chest or place hands behind your head.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your upper body toward the floor, keeping your back straight.</step>
+            <step order="3" focus="Lift">Exhale as you lift your upper body back to the starting position, squeezing your lower back and glutes at the top.</step>
+            <step order="4" focus="Repeat">Perform 2 sets of 12 reps. Do not hyperextend at the top—stop when your body is in a straight line.</step>
+            <step order="5" focus="Tip">Keep your neck neutral throughout. Do not look up or tuck your chin excessively. The movement comes from your hips, not your spine.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Hyperextending the lower back at the top.</mistake>
+            <mistake>Using momentum to swing up.</mistake>
+            <mistake>Rounding the upper back.</mistake>
+            <mistake>Looking up (straining the neck).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- TRAPS - Beginner -->
+    <Pose id="BACK-TRAP-01" difficulty="Beginner" safety="Keep your core braced and back straight. Squeeze your traps at the top of the movement. Do not roll your shoulders—lift straight up and down." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_shrug.gif</url>
+        <Name>Dumbbell Shrug</Name>
+        <Equipment>Light Dumbbells</Equipment>
+        <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
+        <Weight_Max>4 - 15 kg (9 - 33 lbs) per hand</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Neck strain, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, holding a dumbbell in each hand at your sides. Keep your back straight and core braced.</step>
+            <step order="2" focus="Shrug">Exhale as you lift your shoulders straight up toward your ears as high as possible. Squeeze your traps at the top.</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the top, squeezing your traps.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower your shoulders back down to the starting position. Perform 2 sets of 15 reps.</step>
+            <step order="5" focus="Tip">Do not roll your shoulders forward or backward—this can strain your neck. Lift straight up and down.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rolling shoulders (circular motion).</mistake>
+            <mistake>Using momentum to jerk the shoulders up.</mistake>
+            <mistake>Bending the neck forward.</mistake>
+            <mistake>Dropping shoulders too quickly.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-TRAP-02" difficulty="Beginner" safety="Keep your core braced and back straight. Squeeze your shoulder blades together at the peak of the movement. Avoid using momentum." Pose_type="Activation, Rear Delt Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/band_pull_apart.gif</url>
+        <Name>Band Pull-Apart</Name>
+        <Equipment>Light Resistance Band</Equipment>
+        <Focused_Muscles>Trapezius (Middle/Lower), Rhomboids, Rear Deltoids, Rotator Cuff</Focused_Muscles>
+        <Weight_Max>Light Resistance Band (Thin)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart. Hold a resistance band with both hands shoulder-width apart, arms extended straight in front of you at shoulder height.</step>
+            <step order="2" focus="Pull Apart">Exhale as you pull the band apart by squeezing your shoulder blades together. Keep your arms straight (but not locked).</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the peak, squeezing your upper back.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 2 sets of 15 reps.</step>
+            <step order="5" focus="Tip">This is a great warm-up and posture exercise. Focus on squeezing your shoulder blades, not just moving your arms.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Bending the elbows during the movement.</mistake>
+            <mistake>Using momentum to pull.</mistake>
+            <mistake>Shrugging shoulders toward ears.</mistake>
+            <mistake>Not fully returning to the starting position.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- NOVICE LEVEL EXERCISES -->
+    <!-- ======================================================== -->
+    
+    <!-- UPPER BACK - Novice -->
+    <Pose id="BACK-UB-04" difficulty="Novice" safety="Keep your back straight and core braced. Hinge at your hips. Avoid rounding your lower back. Squeeze your shoulder blades at the top of the row." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_bent_over_row.gif</url>
+        <Name>Barbell Bent-Over Row</Name>
+        <Equipment>Barbell with Light Plates</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius (Middle), Latissimus Dorsi, Rear Deltoids, Biceps, Lower Back</Focused_Muscles>
+        <Weight_Max>15 - 40 kg (33 - 88 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, knees slightly bent. Hinge at your hips to lean forward until your torso is at 45-60 degrees. Grip the barbell with hands shoulder-width apart, palms facing you or away.</step>
+            <step order="2" focus="Row">Exhale as you pull the barbell toward your lower chest, squeezing your shoulder blades together. Keep your elbows close to your body.</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the top, feeling your upper back contract.</step>
+            <step order="4" focus="Lower">Inhale as you lower the barbell with control. Perform 3 sets of 10 reps.</step>
+            <step order="5" focus="Tip">Do not use your lower back to lift the weight. Keep your back straight throughout—imagine a broomstick along your spine.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Using momentum to swing the barbell.</mistake>
+            <mistake>Pulling with the arms instead of the back.</mistake>
+            <mistake>Standing too upright (reducing back engagement).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-UB-05" difficulty="Novice" safety="Keep your back straight and chest up. Squeeze your shoulder blades at the peak. Avoid jerking the weight. Control the return." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_cable_row_novice.gif</url>
+        <Name>Seated Cable Row</Name>
+        <Equipment>Cable Machine with V-Grip or Wide Bar</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius, Latissimus Dorsi, Rear Deltoids, Biceps</Focused_Muscles>
+        <Weight_Max>20 - 50 kg (44 - 110 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Lower back injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit at the cable row machine with your feet braced. Grip the handle, keep your back straight, chest up, and core braced.</step>
+            <step order="2" focus="Row">Exhale as you pull the handle toward your lower chest, squeezing your shoulder blades together. Keep your elbows close to your body.</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the peak, feeling your upper back contract.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Experiment with different grip attachments—wide grip targets upper back more, close grip targets lats more.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Leaning too far back to use momentum.</mistake>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Pulling with the arms instead of the back.</mistake>
+            <mistake>Letting the weight stack touch between reps.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-UB-06" difficulty="Novice" safety="Keep your chest pressed against the pad. Squeeze your shoulder blades at the peak. Avoid using momentum. Control the weight throughout." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/chest_supported_dumbbell_row.gif</url>
+        <Name>Chest-Supported Dumbbell Row</Name>
+        <Equipment>Incline Bench, Dumbbells</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius (Middle/Lower), Rear Deltoids, Biceps</Focused_Muscles>
+        <Weight_Max>5 - 20 kg (11 - 44 lbs) per hand</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, lower back injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set an incline bench to 30-45 degrees. Lie face down on the bench, chest supported, holding dumbbells with palms facing each other.</step>
+            <step order="2" focus="Row">Exhale as you pull the dumbbells toward your lower chest, squeezing your shoulder blades together. Keep your elbows close to your body.</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the peak.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">The chest-supported position eliminates lower back strain, allowing you to focus entirely on your upper back muscles.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lifting chest off the bench.</mistake>
+            <mistake>Using momentum to swing dumbbells.</mistake>
+            <mistake>Pulling with arms instead of back.</mistake>
+            <mistake>Not fully extending at the bottom.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-UB-07" difficulty="Novice" safety="Keep your core braced and back straight. Focus on external rotation of the shoulders. Avoid using momentum. Control the weight." Pose_type="Rotator Cuff Health, Posture">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/face_pull_novice.gif</url>
+        <Name>Face Pull</Name>
+        <Equipment>Cable Machine with Rope Attachment, High Pulley</Equipment>
+        <Focused_Muscles>Rear Deltoids, Trapezius (Middle/Lower), Rhomboids, Rotator Cuff (Infraspinatus/Teres Minor)</Focused_Muscles>
+        <Weight_Max>5 - 20 kg (11 - 44 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement (acute), rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a rope to a high pulley. Stand facing the cable, holding the rope with an overhand grip. Step back to create tension.</step>
+            <step order="2" focus="Pull">Exhale as you pull the rope toward your face, separating the ends. Keep your elbows high (shoulder height).</step>
+            <step order="3" focus="Rotate">At the peak, externally rotate your shoulders by pulling the rope ends past your ears. Squeeze your shoulder blades.</step>
+            <step order="4" focus="Return">Inhale as you return with control. Perform 2 sets of 15 reps.</step>
+            <step order="5" focus="Tip">Face pulls are essential for shoulder health. Use moderate weight and focus on external rotation—this builds balanced, resilient shoulders.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using too much weight, compromising form.</mistake>
+            <mistake>Not externally rotating at the peak.</mistake>
+            <mistake>Letting elbows drop below shoulder height.</mistake>
+            <mistake>Using momentum to pull.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LATS - Novice -->
+    <Pose id="BACK-LAT-03" difficulty="Novice" safety="Keep your core braced and back straight. Squeeze your lats at the bottom. Avoid using momentum to pull the bar down. Control the return." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lat_pulldown_novice.gif</url>
+        <Name>Lat Pulldown</Name>
+        <Equipment>Cable Machine with Wide Bar, Lat Pulldown Station</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Primary), Biceps, Rhomboids, Rear Deltoids</Focused_Muscles>
+        <Weight_Max>20 - 50 kg (44 - 110 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit at the lat pulldown machine. Grip the bar wider than shoulder-width. Secure your knees under the pads.</step>
+            <step order="2" focus="Pull">Exhale as you pull the bar down to your upper chest, leading with your elbows. Squeeze your lats at the bottom.</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the bottom, feeling your lats contract.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Lean back slightly (10-15 degrees). Imagine pulling your elbows down into your back pockets—this engages the lats effectively.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using body momentum to pull the bar down.</mistake>
+            <mistake>Leaning too far back.</mistake>
+            <mistake>Pulling behind the neck.</mistake>
+            <mistake>Letting the bar pull your arms up too quickly.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LAT-04" difficulty="Novice" safety="Keep your back straight and core braced. Use a bench for knee support if needed. Squeeze your lat at the peak of the row. Control the movement." Pose_type="Strength, Unilateral">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/single_arm_dumbbell_row.gif</url>
+        <Name>Single-Arm Dumbbell Row</Name>
+        <Equipment>Dumbbell, Bench</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Unilateral), Rhomboids, Trapezius, Biceps, Rear Deltoids</Focused_Muscles>
+        <Weight_Max>6 - 25 kg (13 - 55 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Place one knee and hand on a bench, with your other foot on the floor. Hold a dumbbell in your free hand, arm hanging straight down.</step>
+            <step order="2" focus="Row">Exhale as you pull the dumbbell toward your hip, squeezing your lat. Keep your elbow close to your body.</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the peak, feeling your lat contract.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Perform 3 sets of 10 reps per side.</step>
+            <step order="5" focus="Tip">Imagine pulling your elbow toward your back pocket. This cue helps engage the lat rather than just the arm.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rotating the torso during the row.</mistake>
+            <mistake>Using momentum to swing the dumbbell.</mistake>
+            <mistake>Pulling too high (toward chest instead of hip).</mistake>
+            <mistake>Rounding the back.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LAT-05" difficulty="Novice" safety="Keep your core braced and back straight. Squeeze your lats at the bottom. Keep your arms straight throughout. Control the weight." Pose_type="Isolation, Lat Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/straight_arm_pulldown_novice.gif</url>
+        <Name>Straight Arm Pulldown</Name>
+        <Equipment>Cable Machine with Rope or Straight Bar</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Isolation), Teres Major</Focused_Muscles>
+        <Weight_Max>10 - 30 kg (22 - 66 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a rope or straight bar to a high pulley. Stand facing the cable, holding the attachment with an overhand grip. Keep a slight bend in your elbows.</step>
+            <step order="2" focus="Pull Down">Exhale as you pull the attachment down toward your thighs, keeping your arms straight. Squeeze your lats at the bottom.</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the bottom.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">This is a lat isolation exercise—don't use heavy weight. Focus on feeling your lats stretch at the top and contract at the bottom.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Bending the elbows during the movement.</mistake>
+            <mistake>Using shoulder momentum.</mistake>
+            <mistake>Leaning forward excessively.</mistake>
+            <mistake>Locking elbows.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LOWER BACK - Novice -->
+    <Pose id="BACK-LB-03" difficulty="Novice" safety="Keep your back straight and core braced. Move through a controlled range of motion. Avoid hyperextending at the top." Pose_type="Strength, Core Stability">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/back_extension_novice.gif</url>
+        <Name>Back Extension</Name>
+        <Equipment>Back Extension Bench or Roman Chair</Equipment>
+        <Focused_Muscles>Erector Spinae (Lower Back), Glutes, Hamstrings</Focused_Muscles>
+        <Weight_Max>Bodyweight only (Novice)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, spinal stenosis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Position yourself on a back extension bench with your hips on the pad and ankles secured. Cross your arms over your chest or place hands behind your head.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your upper body toward the floor, keeping your back straight.</step>
+            <step order="3" focus="Lift">Exhale as you lift your upper body back to the starting position, squeezing your lower back and glutes at the top.</step>
+            <step order="4" focus="Repeat">Perform 3 sets of 12 reps. Stop when your body is in a straight line—do not hyperextend.</step>
+            <step order="5" focus="Tip">Keep your neck neutral throughout. The movement should come from your hips, not your spine.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Hyperextending the lower back at the top.</mistake>
+            <mistake>Using momentum to swing up.</mistake>
+            <mistake>Rounding the upper back.</mistake>
+            <mistake>Looking up (straining the neck).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LB-04" difficulty="Novice" safety="Keep your back straight and core braced. Hinge at your hips. Maintain a slight bend in your knees. Do not round your back." Pose_type="Strength, Hip Hinge">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/romanian_deadlift_light_back.gif</url>
+        <Name>Romanian Deadlift (Light - Lower Back Focus)</Name>
+        <Equipment>Light Barbell or Dumbbells</Equipment>
+        <Focused_Muscles>Erector Spinae, Hamstrings, Glutes</Focused_Muscles>
+        <Weight_Max>10 - 30 kg (22 - 66 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, hamstring tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet hip-width apart, holding a light barbell or dumbbells in front of your thighs. Keep a slight bend in your knees.</step>
+            <step order="2" focus="Hinge">Inhale as you push your hips back, lowering the weight down your shins. Keep your back completely straight.</step>
+            <step order="3" focus="Stretch">Lower until you feel a stretch in your hamstrings (typically mid-shin). Do not round your back.</step>
+            <step order="4" focus="Return">Exhale as you drive your hips forward to return to standing. Perform 3 sets of 10 reps.</step>
+            <step order="5" focus="Tip">Focus on pushing your hips back, not bending your lower back. The movement is a hip hinge, not a squat.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Bending the knees too much (turning into a squat).</mistake>
+            <mistake>Looking down (keep neck neutral).</mistake>
+            <mistake>Using back instead of hamstrings.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LB-05" difficulty="Novice" safety="Keep your back straight and core braced. Hinge at your hips. Do not round your back. Start with bodyweight only to master form." Pose_type="Strength, Hip Hinge">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/good_morning_bodyweight.gif</url>
+        <Name>Good Morning (Bodyweight)</Name>
+        <Equipment>None (Bodyweight), Broomstick (Optional for practice)</Equipment>
+        <Focused_Muscles>Erector Spinae, Hamstrings, Glutes</Focused_Muscles>
+        <Weight_Max>Bodyweight only</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, sciatica</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, knees slightly bent. Place a broomstick across your upper back (optional for practice). Keep your back straight.</step>
+            <step order="2" focus="Hinge">Inhale as you push your hips back, bending forward at the waist. Keep your back completely straight.</step>
+            <step order="3" focus="Stretch">Lower your torso until it is parallel to the floor (or as far as hamstring flexibility allows).</step>
+            <step order="4" focus="Return">Exhale as you drive your hips forward to return to standing. Squeeze your glutes at the top. Perform 2 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Keep your gaze forward or slightly down. Imagine a line from the top of your head to your tailbone—keep it straight.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Bending the knees too much.</mistake>
+            <mistake>Looking up (straining the neck).</mistake>
+            <mistake>Using momentum to return to standing.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- TRAPS - Novice -->
+    <Pose id="BACK-TRAP-03" difficulty="Novice" safety="Keep your core braced and back straight. Squeeze your traps at the top. Lift straight up and down—do not roll your shoulders." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_shrug.gif</url>
+        <Name>Barbell Shrug</Name>
+        <Equipment>Barbell with Light to Moderate Plates</Equipment>
+        <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
+        <Weight_Max>15 - 50 kg (33 - 110 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Neck strain, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, holding a barbell in front of your thighs with an overhand grip. Keep your back straight and core braced.</step>
+            <step order="2" focus="Shrug">Exhale as you lift your shoulders straight up toward your ears as high as possible. Squeeze your traps at the top.</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the top, squeezing your traps.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower your shoulders back down. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Do not roll your shoulders. Lift straight up and down. A barbell allows you to use heavier weight than dumbbells.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rolling shoulders (circular motion).</mistake>
+            <mistake>Using momentum to jerk the bar up.</mistake>
+            <mistake>Bending the neck forward.</mistake>
+            <mistake>Dropping shoulders too quickly.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-TRAP-04" difficulty="Novice" safety="Keep your core braced and back straight. Squeeze your traps at the top. Do not roll your shoulders—lift straight up and down." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_shrug_novice.gif</url>
+        <Name>Dumbbell Shrug</Name>
+        <Equipment>Dumbbells</Equipment>
+        <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
+        <Weight_Max>8 - 30 kg (18 - 66 lbs) per hand</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Neck strain, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, holding a dumbbell in each hand at your sides. Keep your back straight and core braced.</step>
+            <step order="2" focus="Shrug">Exhale as you lift your shoulders straight up toward your ears as high as possible. Squeeze your traps at the top.</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the top.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower your shoulders back down. Perform 3 sets of 15 reps.</step>
+            <step order="5" focus="Tip">Dumbbells allow a slightly different range of motion than barbells. Use both variations for complete trap development.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rolling shoulders.</mistake>
+            <mistake>Using momentum.</mistake>
+            <mistake>Bending the neck.</mistake>
+            <mistake>Dropping shoulders too quickly.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-TRAP-05" difficulty="Novice" safety="Keep your core braced and back straight. Squeeze your shoulder blades together at the peak. Avoid using momentum." Pose_type="Activation, Posture">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/band_pull_apart_novice.gif</url>
+        <Name>Band Pull-Apart</Name>
+        <Equipment>Resistance Band (Medium Resistance)</Equipment>
+        <Focused_Muscles>Trapezius (Middle/Lower), Rhomboids, Rear Deltoids</Focused_Muscles>
+        <Weight_Max>Medium Resistance Band</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart. Hold a resistance band with both hands shoulder-width apart, arms extended straight in front of you at shoulder height.</step>
+            <step order="2" focus="Pull Apart">Exhale as you pull the band apart by squeezing your shoulder blades together. Keep your arms straight.</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the peak, squeezing your upper back.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 2 sets of 15 reps.</step>
+            <step order="5" focus="Tip">Use this as a warm-up before upper body workouts or as a posture corrective. Focus on squeezing your shoulder blades.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Bending the elbows.</mistake>
+            <mistake>Using momentum.</mistake>
+            <mistake>Shrugging shoulders.</mistake>
+            <mistake>Not fully returning to start.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- ADVANCED LEVEL EXERCISES -->
+    <!-- ======================================================== -->
+    
+    <!-- UPPER BACK - Advanced -->
+    <Pose id="BACK-UB-08" difficulty="Advanced" safety="Keep your back straight and core braced. Hinge at your hips. Do not round your lower back. Squeeze your shoulder blades at the top." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_bent_over_row_heavy.gif</url>
+        <Name>Barbell Bent-Over Row (Heavy)</Name>
+        <Equipment>Barbell with Heavy Plates</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius (Middle), Latissimus Dorsi, Rear Deltoids, Biceps, Lower Back</Focused_Muscles>
+        <Weight_Max>30 - 100 kg (66 - 220 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, knees slightly bent. Hinge at your hips to lean forward until your torso is at 45 degrees. Grip the barbell slightly wider than shoulder-width.</step>
+            <step order="2" focus="Row">Exhale as you pull the barbell toward your lower chest, squeezing your shoulder blades together. Keep your elbows close to your body.</step>
+            <step order="3" focus="Squeeze">Pause for 1-2 seconds at the peak.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Perform 4 sets of 8 reps.</step>
+            <step order="5" focus="Tip">Use a belt for heavy sets. Keep your back straight—if you feel it rounding, the weight is too heavy.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Using momentum to swing the barbell.</mistake>
+            <mistake>Pulling with arms instead of back.</mistake>
+            <mistake>Standing too upright.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-UB-09" difficulty="Advanced" safety="Keep your back straight and core braced. Start each rep from a dead stop on the floor. Do not bounce the weight. Squeeze your shoulder blades at the top." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/pendlay_row.gif</url>
+        <Name>Pendlay Row</Name>
+        <Equipment>Barbell with Plates</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius, Latissimus Dorsi, Rear Deltoids, Biceps, Lower Back</Focused_Muscles>
+        <Weight_Max>30 - 100 kg (66 - 220 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand over a barbell with feet shoulder-width apart. Hinge at your hips until your torso is parallel to the floor. Grip the bar slightly wider than shoulder-width.</step>
+            <step order="2" focus="Row">Exhale as you explosively pull the barbell toward your lower chest, squeezing your shoulder blades. Keep your back straight.</step>
+            <step order="3" focus="Squeeze">Pause briefly at the top.</step>
+            <step order="4" focus="Lower">Inhale as you lower the bar to the floor, coming to a dead stop. Perform 4 sets of 6 reps.</step>
+            <step order="5" focus="Tip">Unlike bent-over rows, Pendlay rows start from a dead stop on the floor each rep. This eliminates momentum and builds explosive strength.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Bouncing the bar off the floor.</mistake>
+            <mistake>Using momentum to row.</mistake>
+            <mistake>Not fully stopping the bar on the floor.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-UB-10" difficulty="Advanced" safety="Keep your back straight and chest up. Squeeze your shoulder blades at the peak. Use a wide grip to target upper back. Control the return." Pose_type="Hypertrophy, Upper Back Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_cable_row_wide_grip.gif</url>
+        <Name>Seated Cable Row (Wide Grip)</Name>
+        <Equipment>Cable Machine with Wide Bar Attachment</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius (Middle), Rear Deltoids</Focused_Muscles>
+        <Weight_Max>30 - 80 kg (66 - 176 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Lower back injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit at the cable row machine with your feet braced. Grip a wide bar attachment. Keep your back straight, chest up, and core braced.</step>
+            <step order="2" focus="Row">Exhale as you pull the bar toward your upper chest, squeezing your shoulder blades together. Keep your elbows flared slightly outward.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the peak.</step>
+            <step order="4" focus="Return">Inhale as you slowly return to the starting position. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">A wide grip targets the upper back muscles more than a close grip. Focus on squeezing your shoulder blades, not just pulling with your arms.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Leaning too far back.</mistake>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Pulling with arms instead of back.</mistake>
+            <mistake>Letting the weight stack touch between reps.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-UB-11" difficulty="Advanced" safety="Keep your chest pressed against the pad. Squeeze your shoulder blades at the peak. Avoid using momentum. Control the weight." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/chest_supported_row.gif</url>
+        <Name>Chest-Supported Row</Name>
+        <Equipment>Chest-Supported Row Machine or Incline Bench with Dumbbells</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius (Middle/Lower), Rear Deltoids, Biceps</Focused_Muscles>
+        <Weight_Max>20 - 60 kg (44 - 132 lbs) on machine</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit at a chest-supported row machine or lie face down on an incline bench. Grip the handles with palms facing down.</step>
+            <step order="2" focus="Row">Exhale as you pull the handles toward your lower chest, squeezing your shoulder blades together.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the peak, feeling your upper back contract.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Chest-supported rows remove lower back strain, allowing you to focus entirely on your upper back. Use a slow, controlled tempo.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lifting chest off the pad.</mistake>
+            <mistake>Using momentum to swing.</mistake>
+            <mistake>Pulling with arms instead of back.</mistake>
+            <mistake>Not fully extending at the bottom.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-UB-12" difficulty="Advanced" safety="Keep your core braced and back straight. Focus on external rotation of the shoulders. Use moderate weight—this is a prehab exercise." Pose_type="Rotator Cuff Health, Posture">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/face_pull_advanced.gif</url>
+        <Name>Face Pull (Heavy - Advanced)</Name>
+        <Equipment>Cable Machine with Rope Attachment</Equipment>
+        <Focused_Muscles>Rear Deltoids, Trapezius (Middle/Lower), Rhomboids, Rotator Cuff</Focused_Muscles>
+        <Weight_Max>15 - 40 kg (33 - 88 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement (acute), rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a rope to a high pulley. Stand facing the cable, holding the rope with an overhand grip. Step back to create tension.</step>
+            <step order="2" focus="Pull">Exhale as you pull the rope toward your face, separating the ends. Keep your elbows high (shoulder height).</step>
+            <step order="3" focus="Rotate">At the peak, externally rotate your shoulders by pulling the rope ends past your ears. Squeeze your shoulder blades.</step>
+            <step order="4" focus="Return">Inhale as you return with control. Perform 3 sets of 15 reps.</step>
+            <step order="5" focus="Tip">Even at advanced levels, don't ego-lift on face pulls. Focus on the external rotation and squeeze—that's where the benefit lies.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using too much weight, compromising form.</mistake>
+            <mistake>Not externally rotating at the peak.</mistake>
+            <mistake>Letting elbows drop below shoulder height.</mistake>
+            <mistake>Using momentum to pull.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LATS - Advanced -->
+    <Pose id="BACK-LAT-06" difficulty="Advanced" safety="Use a controlled motion—no kipping or swinging. Squeeze your lats at the top. Keep your core braced and back straight." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/weighted_pull_up.gif</url>
+        <Name>Weighted Pull-Up</Name>
+        <Equipment>Pull-Up Bar, Weight Belt or Dip Belt, Weight Plates</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Primary), Biceps, Rhomboids, Trapezius, Core</Focused_Muscles>
+        <Weight_Max>Bodyweight + 5 - 30 kg (11 - 66 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis, rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a weight plate to a dip belt and secure it around your waist. Grip the pull-up bar with an overhand grip, hands slightly wider than shoulders.</step>
+            <step order="2" focus="Pull">Exhale as you pull yourself up until your chin clears the bar. Squeeze your lats at the top.</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the top.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower with control to full extension. Perform 4 sets of 8 reps.</step>
+            <step order="5" focus="Tip">If you can't complete 8 reps with added weight, drop the weight and master bodyweight pull-ups first. Form is everything.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Kipping or swinging for momentum.</mistake>
+            <mistake>Not fully extending arms at the bottom.</mistake>
+            <mistake>Shrugging shoulders toward the bar.</mistake>
+            <mistake>Using biceps instead of lats.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LAT-07" difficulty="Advanced" safety="Keep your core braced and back straight. Squeeze your lats at the bottom. Use a close grip to target lower lats. Control the return." Pose_type="Hypertrophy, Lower Lat Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lat_pulldown_close_grip.gif</url>
+        <Name>Lat Pulldown (Close Grip)</Name>
+        <Equipment>Cable Machine with Close Grip Bar or V-Handle</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Lower Lat Focus), Biceps</Focused_Muscles>
+        <Weight_Max>30 - 80 kg (66 - 176 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit at the lat pulldown machine. Attach a close grip bar or V-handle. Grip with palms facing each other. Secure your knees under the pads.</step>
+            <step order="2" focus="Pull">Exhale as you pull the handle down to your upper chest, leading with your elbows. Squeeze your lats at the bottom.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the bottom.</step>
+            <step order="4" focus="Return">Inhale as you slowly return. Perform 4 sets of 10 reps.</step>
+            <step order="5" focus="Tip">A close grip (palms facing each other) targets the lower lats more effectively than a wide grip. Pull to your upper chest, not behind your neck.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Leaning too far back.</mistake>
+            <mistake>Using momentum to pull.</mistake>
+            <mistake>Letting the bar pull your arms up too quickly.</mistake>
+            <mistake>Not squeezing lats at the bottom.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LAT-08" difficulty="Advanced" safety="Keep your back straight and core braced. Squeeze your lat at the peak of the row. Control the movement—do not use momentum." Pose_type="Isolation, Unilateral">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/single_arm_cable_row.gif</url>
+        <Name>Single-Arm Cable Row</Name>
+        <Equipment>Cable Machine with Single Handle Attachment</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Unilateral), Rhomboids, Biceps</Focused_Muscles>
+        <Weight_Max>15 - 50 kg (33 - 110 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Lower back injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a single handle to a low pulley. Sit at the cable row machine, gripping the handle with one hand. Place your other hand on your knee for support.</step>
+            <step order="2" focus="Row">Exhale as you pull the handle toward your hip, squeezing your lat. Keep your elbow close to your body.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the peak.</step>
+            <step order="4" focus="Return">Inhale as you slowly return. Perform 3 sets of 12 reps per side.</step>
+            <step order="5" focus="Tip">Single-arm rows help correct strength imbalances. Start with your weaker side and match reps on the stronger side.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rotating the torso during the row.</mistake>
+            <mistake>Using momentum to swing.</mistake>
+            <mistake>Pulling with arms instead of lats.</mistake>
+            <mistake>Letting the weight stack touch between reps.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LAT-09" difficulty="Advanced" safety="Keep your core braced and back straight. Squeeze your lats at the bottom. Keep your arms straight throughout. Control the weight." Pose_type="Isolation, Lat Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/straight_arm_pulldown_advanced.gif</url>
+        <Name>Straight Arm Pulldown</Name>
+        <Equipment>Cable Machine with Rope or Straight Bar</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Isolation), Teres Major</Focused_Muscles>
+        <Weight_Max>15 - 40 kg (33 - 88 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a rope or straight bar to a high pulley. Stand facing the cable, holding the attachment with an overhand grip. Keep a slight bend in your elbows.</step>
+            <step order="2" focus="Pull Down">Exhale as you pull the attachment down toward your thighs, keeping your arms straight. Squeeze your lats at the bottom.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the bottom.</step>
+            <step order="4" focus="Return">Inhale as you slowly return. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Use a weight that allows you to feel your lats working. This is an isolation exercise—heavy weight often leads to poor form.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Bending the elbows.</mistake>
+            <mistake>Using shoulder momentum.</mistake>
+            <mistake>Leaning forward excessively.</mistake>
+            <mistake>Locking elbows.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LOWER BACK - Advanced -->
+    <Pose id="BACK-LB-06" difficulty="Advanced" safety="Keep your back straight and core braced. Drive through your heels. Do not round your back at any point. Use a belt for heavy sets." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/conventional_deadlift_advanced.gif</url>
+        <Name>Conventional Deadlift</Name>
+        <Equipment>Barbell with Plates, Deadlift Platform, Belt (Optional)</Equipment>
+        <Focused_Muscles>Erector Spinae (Lower Back), Glutes, Hamstrings, Quadriceps, Traps, Forearms</Focused_Muscles>
+        <Weight_Max>40 - 180 kg (88 - 396 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, sciatica, hamstring tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet hip-width apart, shins close to the bar. Grip the bar just outside your knees. Keep your back straight, chest up.</step>
+            <step order="2" focus="Lift">Inhale and brace your core. Drive through your heels to stand up, keeping the bar close to your body.</step>
+            <step order="3" focus="Lock">At the top, squeeze your glutes and stand tall. Do not hyperextend your back.</step>
+            <step order="4" focus="Lower">Inhale as you lower the bar with control back to the floor. Perform 4 sets of 6 reps.</step>
+            <step order="5" focus="Tip">The deadlift is a full-body exercise. Keep your lats engaged by imagining you're squeezing oranges in your armpits.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Jerking the bar off the floor.</mistake>
+            <mistake>Hyperextending at the top.</mistake>
+            <mistake>Letting the bar drift away from the body.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LB-07" difficulty="Advanced" safety="Keep your back straight and core braced. Hinge at your hips. Maintain a slight bend in your knees. Do not round your back." Pose_type="Strength, Hip Hinge">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/romanian_deadlift_advanced_back.gif</url>
+        <Name>Romanian Deadlift (Advanced)</Name>
+        <Equipment>Barbell with Plates</Equipment>
+        <Focused_Muscles>Hamstrings (Primary), Glutes, Erector Spinae</Focused_Muscles>
+        <Weight_Max>40 - 120 kg (88 - 264 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, hamstring tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet hip-width apart, holding a barbell in front of your thighs. Keep a slight bend in your knees and core braced.</step>
+            <step order="2" focus="Hinge">Inhale as you push your hips back, lowering the bar down your shins. Keep your back completely straight.</step>
+            <step order="3" focus="Stretch">Lower until you feel a deep stretch in your hamstrings (typically mid-shin).</step>
+            <step order="4" focus="Return">Exhale as you drive your hips forward to return to standing. Perform 4 sets of 8 reps.</step>
+            <step order="5" focus="Tip">The RDL builds hamstring and lower back strength. Use a belt for heavy sets and focus on the stretch.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Bending the knees too much.</mistake>
+            <mistake>Using back instead of hamstrings.</mistake>
+            <mistake>Looking down (keep neck neutral).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LB-08" difficulty="Advanced" safety="Keep your back straight and core braced. Hinge at your hips. Do not round your back. Start with light weight to master form." Pose_type="Strength, Hip Hinge">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_good_morning.gif</url>
+        <Name>Barbell Good Morning</Name>
+        <Equipment>Barbell with Light to Moderate Plates</Equipment>
+        <Focused_Muscles>Erector Spinae, Hamstrings, Glutes</Focused_Muscles>
+        <Weight_Max>20 - 70 kg (44 - 154 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, sciatica</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Place a barbell across your upper back (low bar position). Stand with feet shoulder-width apart, knees slightly bent.</step>
+            <step order="2" focus="Hinge">Inhale as you push your hips back, bending forward at the waist. Keep your back completely straight.</step>
+            <step order="3" focus="Stretch">Lower your torso until it is parallel to the floor (or as far as hamstring flexibility allows).</step>
+            <step order="4" focus="Return">Exhale as you drive your hips forward to return to standing. Perform 3 sets of 10 reps.</step>
+            <step order="5" focus="Tip">Good mornings are unforgiving of poor form. Start with an empty bar and video yourself to check for back rounding.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Bending the knees too much.</mistake>
+            <mistake>Looking up (keep neck neutral).</mistake>
+            <mistake>Using too much weight.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LB-09" difficulty="Advanced" safety="Keep your back straight and core braced. Move through a controlled range of motion. Do not hyperextend at the top." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/hyperextension_weighted.gif</url>
+        <Name>Hyperextension (Weighted)</Name>
+        <Equipment>Back Extension Bench, Weight Plate or Dumbbell</Equipment>
+        <Focused_Muscles>Erector Spinae, Glutes, Hamstrings</Focused_Muscles>
+        <Weight_Max>5 - 30 kg (11 - 66 lbs) held against chest</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, spinal stenosis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Position yourself on a back extension bench with your hips on the pad. Hold a weight plate against your chest.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your upper body toward the floor, keeping your back straight.</step>
+            <step order="3" focus="Lift">Exhale as you lift your upper body back to the starting position, squeezing your lower back and glutes.</step>
+            <step order="4" focus="Repeat">Perform 3 sets of 12 reps. Do not hyperextend at the top—stop when your body is in a straight line.</step>
+            <step order="5" focus="Tip">Adding weight increases resistance significantly. Start with a small plate (5-10 kg) and progress gradually.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Hyperextending the lower back.</mistake>
+            <mistake>Using momentum to swing up.</mistake>
+            <mistake>Rounding the upper back.</mistake>
+            <mistake>Looking up (straining the neck).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- TRAPS - Advanced -->
+    <Pose id="BACK-TRAP-06" difficulty="Advanced" safety="Keep your core braced and back straight. Squeeze your traps at the top. Lift straight up and down—do not roll your shoulders." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_shrug_heavy.gif</url>
+        <Name>Barbell Shrug (Heavy)</Name>
+        <Equipment>Barbell with Heavy Plates</Equipment>
+        <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
+        <Weight_Max>40 - 150 kg (88 - 330 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Neck strain, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, holding a barbell in front of your thighs with an overhand grip. Keep your back straight and core braced.</step>
+            <step order="2" focus="Shrug">Exhale as you lift your shoulders straight up toward your ears as high as possible. Squeeze your traps at the top.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the top, squeezing your traps.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower your shoulders back down. Perform 4 sets of 10 reps.</step>
+            <step order="5" focus="Tip">Use lifting straps for heavy shrugs to prevent grip failure before trap fatigue. Do not roll your shoulders.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rolling shoulders.</mistake>
+            <mistake>Using momentum to jerk the bar up.</mistake>
+            <mistake>Bending the neck forward.</mistake>
+            <mistake>Dropping shoulders too quickly.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-TRAP-07" difficulty="Advanced" safety="Keep your core braced and back straight. Squeeze your traps at the top. Control the descent (eccentric) phase. Do not roll your shoulders." Pose_type="Hypertrophy, Eccentric Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_shrug_slow_eccentric.gif</url>
+        <Name>Dumbbell Shrug (Slow Eccentric)</Name>
+        <Equipment>Heavy Dumbbells</Equipment>
+        <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
+        <Weight_Max>15 - 50 kg (33 - 110 lbs) per hand</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Neck strain, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, holding a heavy dumbbell in each hand at your sides. Keep your back straight and core braced.</step>
+            <step order="2" focus="Shrug">Exhale as you lift your shoulders straight up toward your ears over 1 second. Squeeze your traps at the top.</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the top.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower your shoulders back down over 4 seconds. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">The slow eccentric (lowering) phase builds trap size effectively. Count to 4 on the way down—resist gravity.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rolling shoulders.</mistake>
+            <mistake>Rushing the descent.</mistake>
+            <mistake>Bending the neck.</mistake>
+            <mistake>Using momentum to shrug up.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-TRAP-08" difficulty="Advanced" safety="Keep your back straight and core braced. Use a rack to position the bar at knee height. Pull with your traps, not your lower back." Pose_type="Strength, Trap Isolation">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/rack_pull.gif</url>
+        <Name>Rack Pull</Name>
+        <Equipment>Barbell with Heavy Plates, Power Rack with Safety Pins</Equipment>
+        <Focused_Muscles>Trapezius (Upper), Rhomboids, Erector Spinae, Forearms (Grip)</Focused_Muscles>
+        <Weight_Max>60 - 250 kg (132 - 550 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, grip tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set the safety pins in a power rack at knee height. Load the barbell with heavy plates. Stand over the bar with feet hip-width apart.</step>
+            <step order="2" focus="Grip">Grip the bar just outside your knees. Keep your back straight, chest up, and core braced.</step>
+            <step order="3" focus="Pull">Exhale as you pull the bar up, driving through your heels. Shrug your shoulders at the top.</step>
+            <step order="4" focus="Lower">Inhale as you lower the bar back to the pins with control. Perform 3 sets of 6 reps.</step>
+            <step order="5" focus="Tip">Rack pulls allow you to handle heavier weight than deadlifts, overloading the traps. Use straps if grip fails.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Jerking the bar off the pins.</mistake>
+            <mistake>Not shrugging at the top.</mistake>
+            <mistake>Hyperextending at the top.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-TRAP-09" difficulty="Advanced" safety="Keep your core braced and back straight. Pull the bar close to your body. Do not use momentum. Keep your shoulders down and back." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/upright_row.gif</url>
+        <Name>Upright Row</Name>
+        <Equipment>Barbell or EZ-Bar with Moderate Plates</Equipment>
+        <Focused_Muscles>Trapezius (Upper), Deltoids (Medial), Biceps</Focused_Muscles>
+        <Weight_Max>15 - 50 kg (33 - 110 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury, wrist tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, holding a barbell with an overhand grip, hands slightly closer than shoulder-width. Let the bar hang at arm's length.</step>
+            <step order="2" focus="Row">Exhale as you pull the bar straight up along your body, leading with your elbows. Keep the bar close to your torso.</step>
+            <step order="3" focus="Peak">Stop when the bar reaches upper chest level and your elbows are shoulder height.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Perform 3 sets of 10 reps.</step>
+            <step order="5" focus="Tip">Do not pull the bar higher than your upper chest—this can impinge the shoulders. Use an EZ-bar for wrist comfort.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Pulling the bar too high (past upper chest).</mistake>
+            <mistake>Using momentum to swing the bar.</mistake>
+            <mistake>Shrugging shoulders at the top.</mistake>
+            <mistake>Letting elbows drop below the bar.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- EXPERT LEVEL EXERCISES -->
+    <!-- ======================================================== -->
+    
+    <!-- UPPER BACK - Expert -->
+    <Pose id="BACK-UB-13" difficulty="Expert" safety="Keep your back straight and core braced. Hinge at your hips. Do not round your lower back. Use a belt for heavy sets. This is a strength movement—form is critical." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_bent_over_row_heavy_expert.gif</url>
+        <Name>Barbell Bent-Over Row (Heavy - Expert)</Name>
+        <Equipment>Heavy Barbell with Plates, Belt (Optional)</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius (Middle), Latissimus Dorsi, Rear Deltoids, Biceps, Lower Back</Focused_Muscles>
+        <Weight_Max>50 - 180 kg (110 - 396 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, knees slightly bent. Hinge at your hips until your torso is at 45 degrees. Grip the bar slightly wider than shoulder-width.</step>
+            <step order="2" focus="Row">Exhale as you pull the barbell toward your lower chest explosively. Squeeze your shoulder blades together at the top.</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the peak.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control over 2 seconds. Perform 5 sets of 5 reps.</step>
+            <step order="5" focus="Tip">At expert level, bent-over rows are a power movement. Use a belt, keep your back rigid, and don't sacrifice form for weight.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Using momentum to swing.</mistake>
+            <mistake>Pulling with arms instead of back.</mistake>
+            <mistake>Standing too upright.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-UB-14" difficulty="Expert" safety="Keep your back straight and core braced. Start each rep from a dead stop. Do not bounce the weight. Squeeze your shoulder blades at the top." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/pendlay_row_expert.gif</url>
+        <Name>Pendlay Row</Name>
+        <Equipment>Barbell with Heavy Plates</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius, Latissimus Dorsi, Rear Deltoids, Biceps, Lower Back</Focused_Muscles>
+        <Weight_Max>40 - 140 kg (88 - 308 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand over a barbell with feet shoulder-width apart. Hinge at your hips until your torso is parallel to the floor. Grip the bar slightly wider than shoulder-width.</step>
+            <step order="2" focus="Row">Exhale as you explosively pull the barbell toward your lower chest, squeezing your shoulder blades.</step>
+            <step order="3" focus="Peak">Pause briefly at the top.</step>
+            <step order="4" focus="Lower">Inhale as you lower the bar to the floor, coming to a dead stop. Perform 4 sets of 5 reps.</step>
+            <step order="5" focus="Tip">Pendlay rows build explosive back strength. Each rep starts from a dead stop—no touch-and-go. Use a belt for heavy sets.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Bouncing the bar off the floor.</mistake>
+            <mistake>Using momentum to row.</mistake>
+            <mistake>Not fully stopping the bar.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-UB-15" difficulty="Expert" safety="Keep your back straight and core braced. Use a chest pad for support. Squeeze your shoulder blades at the peak. Control the weight." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/t_bar_row.gif</url>
+        <Name>T-Bar Row</Name>
+        <Equipment>T-Bar Row Machine or Landmine Attachment with V-Handle</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius (Middle), Latissimus Dorsi, Rear Deltoids, Biceps</Focused_Muscles>
+        <Weight_Max>30 - 120 kg (66 - 264 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Position yourself on a T-bar row machine with your chest against the pad. Grip the handles with palms facing each other.</step>
+            <step order="2" focus="Row">Exhale as you pull the handles toward your lower chest, squeezing your shoulder blades together.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the peak.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Perform 4 sets of 8 reps.</step>
+            <step order="5" focus="Tip">T-bar rows are excellent for building a thick upper back. Keep your chest pressed against the pad to isolate the back muscles.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lifting chest off the pad.</mistake>
+            <mistake>Using momentum to swing.</mistake>
+            <mistake>Pulling with arms instead of back.</mistake>
+            <mistake>Not fully extending at the bottom.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-UB-16" difficulty="Expert" safety="Keep your back straight and core braced. Use a landmine attachment. Squeeze your lat at the peak. Control the movement throughout." Pose_type="Unilateral Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/meadows_row.gif</url>
+        <Name>Meadows Row</Name>
+        <Equipment>Barbell, Landmine Attachment, Handle Attachment</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Unilateral), Rhomboids, Trapezius, Rear Deltoids, Biceps</Focused_Muscles>
+        <Weight_Max>20 - 80 kg (44 - 176 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Load one end of a barbell into a landmine attachment. Grip the loaded end with one hand. Stand with feet staggered, knees slightly bent.</step>
+            <step order="2" focus="Row">Exhale as you pull the handle toward your hip, squeezing your lat. Keep your elbow close to your body.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the peak.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Perform 4 sets of 10 reps per side.</step>
+            <step order="5" focus="Tip">Meadows rows allow a heavy, unilateral row with a natural arc. They're excellent for building lat thickness and correcting imbalances.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rotating the torso.</mistake>
+            <mistake>Using momentum to swing.</mistake>
+            <mistake>Pulling with arms instead of back.</mistake>
+            <mistake>Rounding the lower back.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-UB-17" difficulty="Expert" safety="This is a drop set. Do not rest between drops. Control the weight throughout. Keep your back straight and chest up. Stop if form breaks." Pose_type="Drop Set, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_cable_row_drop_set.gif</url>
+        <Name>Seated Cable Row (Drop Set)</Name>
+        <Equipment>Cable Machine with V-Grip, Multiple Weight Increments</Equipment>
+        <Focused_Muscles>Rhomboids, Trapezius, Latissimus Dorsi, Rear Deltoids, Biceps</Focused_Muscles>
+        <Weight_Max>60 kg → 40 kg → 25 kg (Progressive Drop)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Lower back injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set up three weight increments on the cable row: heavy, medium, light.</step>
+            <step order="2" focus="First Set">Perform 12 reps with heavy weight. Squeeze your shoulder blades at the peak of each rep.</step>
+            <step order="3" focus="Drop">Immediately reduce weight to medium. Perform 8 more reps without rest.</step>
+            <step order="4" focus="Final Drop">Immediately reduce to light weight. Perform 6 more reps. Perform 3 drop sets total.</step>
+            <step order="5" focus="Tip">Drop sets on cable rows are intense. Perform them at the end of your back workout for a finishing pump.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Resting between drops.</mistake>
+            <mistake>Leaning too far back.</mistake>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Pulling with arms instead of back.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-UB-18" difficulty="Expert" safety="Keep your core braced and back straight. Focus on external rotation of the shoulders. Use heavy weight but maintain form—this is a prehab and strength exercise." Pose_type="Strength, Rotator Cuff Health">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/face_pull_expert.gif</url>
+        <Name>Face Pull (Heavy - Expert)</Name>
+        <Equipment>Cable Machine with Rope Attachment</Equipment>
+        <Focused_Muscles>Rear Deltoids, Trapezius (Middle/Lower), Rhomboids, Rotator Cuff</Focused_Muscles>
+        <Weight_Max>20 - 60 kg (44 - 132 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement (acute), rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a rope to a high pulley. Stand facing the cable, holding the rope with an overhand grip. Step back to create tension.</step>
+            <step order="2" focus="Pull">Exhale as you pull the rope toward your face, separating the ends. Keep your elbows high (shoulder height).</step>
+            <step order="3" focus="Rotate">At the peak, externally rotate your shoulders by pulling the rope ends past your ears. Squeeze your shoulder blades.</step>
+            <step order="4" focus="Return">Inhale as you return with control. Perform 4 sets of 15 reps.</step>
+            <step order="5" focus="Tip">Even with heavy weight, the external rotation is key. If you can't rotate fully, the weight is too heavy.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using too much weight, losing rotation.</mistake>
+            <mistake>Not externally rotating at the peak.</mistake>
+            <mistake>Letting elbows drop.</mistake>
+            <mistake>Using momentum to pull.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LATS - Expert -->
+    <Pose id="BACK-LAT-10" difficulty="Expert" safety="Use a controlled motion—no kipping. Squeeze your lats at the top. Keep your core braced. Use a belt for heavy weighted pull-ups if needed." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/weighted_pull_up_heavy.gif</url>
+        <Name>Weighted Pull-Up (Heavy - Expert)</Name>
+        <Equipment>Pull-Up Bar, Weight Belt, Heavy Plates</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Primary), Biceps, Rhomboids, Trapezius, Core</Focused_Muscles>
+        <Weight_Max>Bodyweight + 10 - 50 kg (22 - 110 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis, rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach heavy weight to a dip belt. Grip the pull-up bar with an overhand grip, hands slightly wider than shoulders.</step>
+            <step order="2" focus="Pull">Exhale as you pull yourself up until your chin clears the bar. Squeeze your lats at the top.</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the top.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower with control. Perform 5 sets of 5 reps.</step>
+            <step order="5" focus="Tip">At expert level, weighted pull-ups are a primary strength movement. Use a belt, keep strict form, and don't kip.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Kipping or swinging.</mistake>
+            <mistake>Not fully extending arms at the bottom.</mistake>
+            <mistake>Shrugging shoulders.</mistake>
+            <mistake>Using biceps instead of lats.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LAT-11" difficulty="Expert" safety="Use a controlled motion—no kipping. Pull your chest to the bar for full range of motion. Squeeze your lats at the top." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/chest_to_bar_pull_up.gif</url>
+        <Name>Chest-to-Bar Pull-Up</Name>
+        <Equipment>Pull-Up Bar</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Primary), Biceps, Rhomboids, Trapezius, Core</Focused_Muscles>
+        <Weight_Max>Bodyweight + Optional Light Weight</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Grip the pull-up bar with an overhand grip, hands slightly wider than shoulders.</step>
+            <step order="2" focus="Pull">Exhale as you pull yourself up explosively, aiming to touch your upper chest to the bar.</step>
+            <step order="3" focus="Squeeze">Pause for 1 second at the top, squeezing your lats.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower with control. Perform 4 sets of 8 reps.</step>
+            <step order="5" focus="Tip">Chest-to-bar pull-ups require more lat and upper back strength than chin-over-bar. If you can't reach chest, work on explosive pulling power.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Kipping or swinging.</mistake>
+            <mistake>Not fully extending arms.</mistake>
+            <mistake>Arching the back excessively.</mistake>
+            <mistake>Shrugging shoulders.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LAT-12" difficulty="Expert" safety="This is a drop set. Do not rest between drops. Control the weight throughout. Keep your back straight and chest up. Stop if form breaks." Pose_type="Drop Set, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lat_pulldown_drop_set.gif</url>
+        <Name>Lat Pulldown (Drop Set)</Name>
+        <Equipment>Cable Machine with Wide Bar, Multiple Weight Increments</Equipment>
+        <Focused_Muscles>Latissimus Dorsi, Biceps, Rhomboids</Focused_Muscles>
+        <Weight_Max>60 kg → 40 kg → 25 kg (Progressive Drop)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set up three weight increments on the lat pulldown: heavy, medium, light.</step>
+            <step order="2" focus="First Set">Perform 12 reps with heavy weight. Squeeze your lats at the bottom of each rep.</step>
+            <step order="3" focus="Drop">Immediately reduce weight to medium. Perform 8 more reps without rest.</step>
+            <step order="4" focus="Final Drop">Immediately reduce to light weight. Perform 6 more reps. Perform 3 drop sets total.</step>
+            <step order="5" focus="Tip">Drop sets on lat pulldowns create an incredible pump. Keep your form strict even as fatigue sets in.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Resting between drops.</mistake>
+            <mistake>Leaning too far back.</mistake>
+            <mistake>Using momentum to pull.</mistake>
+            <mistake>Letting the bar pull your arms up.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LAT-13" difficulty="Expert" safety="Keep your back straight and core braced. Squeeze your lat at the peak. Control the slow eccentric phase. Do not use momentum." Pose_type="Hypertrophy, Eccentric Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/single_arm_cable_row_slow_eccentric.gif</url>
+        <Name>Single-Arm Cable Row (Slow Eccentric)</Name>
+        <Equipment>Cable Machine with Single Handle</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Unilateral)</Focused_Muscles>
+        <Weight_Max>20 - 60 kg (44 - 132 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Lower back injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a single handle to a low pulley. Sit at the cable row, gripping the handle with one hand. Place your other hand on your knee.</step>
+            <step order="2" focus="Row">Exhale as you pull the handle toward your hip over 1 second. Squeeze your lat at the peak.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the peak.</step>
+            <step order="4" focus="Lower">Inhale as you slowly return over 4 seconds. Perform 4 sets of 10 reps per side.</step>
+            <step order="5" focus="Tip">The 4-second eccentric builds lat size and strength. Fight the cable on the way back—don't let it pull you.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rotating the torso.</mistake>
+            <mistake>Rushing the descent.</mistake>
+            <mistake>Pulling with arms instead of lats.</mistake>
+            <mistake>Letting the weight stack touch between reps.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LAT-14" difficulty="Expert" safety="Keep your core braced and back straight. Squeeze your lats at the bottom. Keep your arms straight throughout. Use heavy weight with control." Pose_type="Strength, Isolation">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/straight_arm_pulldown_expert.gif</url>
+        <Name>Straight Arm Pulldown (Heavy - Expert)</Name>
+        <Equipment>Cable Machine with Rope or Straight Bar</Equipment>
+        <Focused_Muscles>Latissimus Dorsi (Isolation), Teres Major</Focused_Muscles>
+        <Weight_Max>20 - 60 kg (44 - 132 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a rope or straight bar to a high pulley. Stand facing the cable, holding the attachment with an overhand grip. Keep a slight bend in your elbows.</step>
+            <step order="2" focus="Pull Down">Exhale as you pull the attachment down toward your thighs, keeping your arms straight. Squeeze your lats at the bottom.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the bottom.</step>
+            <step order="4" focus="Return">Inhale as you slowly return. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Even with heavy weight, keep your arms straight. If you find yourself bending your elbows, reduce the weight.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Bending the elbows.</mistake>
+            <mistake>Using shoulder momentum.</mistake>
+            <mistake>Leaning forward excessively.</mistake>
+            <mistake>Locking elbows.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LOWER BACK - Expert -->
+    <Pose id="BACK-LB-10" difficulty="Expert" safety="This is a heavy strength movement. Use a belt. Keep your back straight—do not round at any point. Drive through your heels. Use a spotter or safety bars if needed." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/conventional_deadlift_heavy_expert.gif</url>
+        <Name>Conventional Deadlift (Heavy - Expert)</Name>
+        <Equipment>Heavy Barbell with Plates, Deadlift Platform, Belt, Chalk</Equipment>
+        <Focused_Muscles>Erector Spinae, Glutes, Hamstrings, Quadriceps, Traps, Forearms</Focused_Muscles>
+        <Weight_Max>80 - 300 kg (176 - 660 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, sciatica, hamstring tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet hip-width apart, shins close to the bar. Grip the bar just outside your knees. Set your back flat, chest up, core braced.</step>
+            <step order="2" focus="Lift">Inhale and brace. Drive through your heels to stand up, keeping the bar close to your body.</step>
+            <step order="3" focus="Lock">At the top, squeeze your glutes and stand tall. Do not hyperextend.</step>
+            <step order="4" focus="Lower">Inhale as you lower the bar with control. Perform 5 sets of 3-5 reps.</step>
+            <step order="5" focus="Tip">At expert level, deadlifts are a test of strength. Use chalk, a belt, and proper bracing. Never sacrifice form for weight.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Jerking the bar off the floor.</mistake>
+            <mistake>Hyperextending at the top.</mistake>
+            <mistake>Letting the bar drift away.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LB-11" difficulty="Expert" safety="Keep your back straight and core braced. Use a wide stance. Drive through your heels. Do not round your back at any point." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/sumo_deadlift_expert.gif</url>
+        <Name>Sumo Deadlift (Expert)</Name>
+        <Equipment>Barbell with Heavy Plates, Deadlift Platform, Belt</Equipment>
+        <Focused_Muscles>Erector Spinae, Glutes, Adductors (Inner Thighs), Hamstrings, Quadriceps</Focused_Muscles>
+        <Weight_Max>60 - 280 kg (132 - 616 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, groin pull, knee injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet wide (outside shoulder width), toes pointed outward. Grip the bar inside your knees, arms straight.</step>
+            <step order="2" focus="Lift">Inhale and brace your core. Drive through your heels to stand up, keeping your back straight. Push your knees outward.</step>
+            <step order="3" focus="Lock">At the top, squeeze your glutes and stand tall.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Perform 4 sets of 5 reps.</step>
+            <step order="5" focus="Tip">Sumo deadlifts shift emphasis to the glutes and adductors. Keep your chest up and knees pushed outward.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Letting knees cave inward.</mistake>
+            <mistake>Pulling with arms instead of legs.</mistake>
+            <mistake>Hyperextending at the top.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LB-12" difficulty="Expert" safety="Keep your back straight and core braced. Hinge at your hips. Do not round your back. Use a belt for heavy sets." Pose_type="Strength, Hip Hinge">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/romanian_deadlift_expert.gif</url>
+        <Name>Romanian Deadlift (Heavy - Expert)</Name>
+        <Equipment>Heavy Barbell with Plates, Belt</Equipment>
+        <Focused_Muscles>Hamstrings (Primary), Glutes, Erector Spinae</Focused_Muscles>
+        <Weight_Max>50 - 160 kg (110 - 352 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, hamstring tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet hip-width apart, holding a heavy barbell in front of your thighs. Keep a slight bend in your knees.</step>
+            <step order="2" focus="Hinge">Inhale as you push your hips back, lowering the bar down your shins. Keep your back completely straight.</step>
+            <step order="3" focus="Stretch">Lower until you feel a deep stretch in your hamstrings (typically mid-shin).</step>
+            <step order="4" focus="Return">Exhale as you drive your hips forward to return to standing. Perform 4 sets of 6 reps.</step>
+            <step order="5" focus="Tip">At expert weight, the RDL is a demanding hamstring exercise. Use a belt and focus on the stretch—don't bounce.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Bending the knees too much.</mistake>
+            <mistake>Using back instead of hamstrings.</mistake>
+            <mistake>Bouncing at the bottom.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LB-13" difficulty="Expert" safety="Keep your back straight and core braced. Hinge at your hips. Do not round your back. Start with light weight to master form—this is unforgiving." Pose_type="Strength, Hip Hinge">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_good_morning_heavy.gif</url>
+        <Name>Barbell Good Morning (Heavy - Expert)</Name>
+        <Equipment>Barbell with Heavy Plates, Belt</Equipment>
+        <Focused_Muscles>Erector Spinae, Hamstrings, Glutes</Focused_Muscles>
+        <Weight_Max>30 - 100 kg (66 - 220 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, sciatica</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Place a barbell across your upper back (low bar position). Stand with feet shoulder-width apart, knees slightly bent. Brace your core.</step>
+            <step order="2" focus="Hinge">Inhale as you push your hips back, bending forward at the waist. Keep your back completely straight.</step>
+            <step order="3" focus="Stretch">Lower your torso until it is parallel to the floor (or as far as flexibility allows).</step>
+            <step order="4" focus="Return">Exhale as you drive your hips forward to return to standing. Perform 4 sets of 8 reps.</step>
+            <step order="5" focus="Tip">Good mornings are highly effective but unforgiving. Use a belt, video yourself, and stop if you feel any back rounding.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Bending the knees too much.</mistake>
+            <mistake>Looking up (keep neck neutral).</mistake>
+            <mistake>Using too much weight.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-LB-14" difficulty="Expert" safety="Keep your back straight and core braced. Move through a controlled range of motion. Squeeze your glutes and lower back at the top." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/reverse_hyperextension_weighted.gif</url>
+        <Name>Reverse Hyperextension (Weighted - Expert)</Name>
+        <Equipment>Reverse Hyperextension Machine or Bench with Weight Plate</Equipment>
+        <Focused_Muscles>Erector Spinae, Glutes, Hamstrings</Focused_Muscles>
+        <Weight_Max>10 - 50 kg (22 - 110 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, hip impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Position yourself face down on a reverse hyper machine with your hips on the pad. Attach weight to the foot holder.</step>
+            <step order="2" focus="Lift">Exhale as you lift your legs toward the ceiling, squeezing your glutes and lower back.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the top.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Reverse hypers decompress the spine while building lower back strength. Use a controlled tempo—no swinging.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum to swing legs.</mistake>
+            <mistake>Lifting too high (overextending).</mistake>
+            <mistake>Letting hips lift off the pad.</mistake>
+            <mistake>Rushing the descent.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- TRAPS - Expert -->
+    <Pose id="BACK-TRAP-10" difficulty="Expert" safety="Keep your core braced and back straight. Squeeze your traps at the top. Lift straight up and down—do not roll your shoulders. Use straps if needed." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_shrug_expert.gif</url>
+        <Name>Barbell Shrug (Heavy - Expert)</Name>
+        <Equipment>Heavy Barbell with Plates, Lifting Straps (Optional)</Equipment>
+        <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
+        <Weight_Max>60 - 200 kg (132 - 440 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Neck strain, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, holding a heavy barbell in front of your thighs. Use straps if grip is limiting. Keep your back straight and core braced.</step>
+            <step order="2" focus="Shrug">Exhale as you lift your shoulders straight up toward your ears as high as possible. Squeeze your traps at the top.</step>
+            <step order="3" focus="Squeeze">Pause for 2-3 seconds at the top.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower your shoulders back down. Perform 5 sets of 8 reps.</step>
+            <step order="5" focus="Tip">At expert level, shrugs are a heavy strength movement. Use straps to bypass grip limitations and focus on trap contraction.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rolling shoulders.</mistake>
+            <mistake>Using momentum to jerk the bar up.</mistake>
+            <mistake>Bending the neck forward.</mistake>
+            <mistake>Dropping shoulders too quickly.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-TRAP-11" difficulty="Expert" safety="Keep your back straight and core braced. Use a rack to position the bar at knee height. Pull with your traps, not your lower back. Use straps." Pose_type="Strength, Trap Isolation">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/rack_pull_heavy.gif</url>
+        <Name>Rack Pull (Heavy - Expert)</Name>
+        <Equipment>Barbell with Heavy Plates, Power Rack, Lifting Straps</Equipment>
+        <Focused_Muscles>Trapezius (Upper), Rhomboids, Erector Spinae, Forearms</Focused_Muscles>
+        <Weight_Max>80 - 350 kg (176 - 770 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, grip tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set the safety pins in a power rack at knee height. Load the barbell with heavy plates. Stand over the bar with feet hip-width apart.</step>
+            <step order="2" focus="Grip">Grip the bar just outside your knees using straps. Keep your back straight, chest up, core braced.</step>
+            <step order="3" focus="Pull">Exhale as you pull the bar up, driving through your heels. Shrug your shoulders as hard as possible at the top.</step>
+            <step order="4" focus="Lower">Inhale as you lower the bar back to the pins with control. Perform 4 sets of 5 reps.</step>
+            <step order="5" focus="Tip">Rack pulls allow you to handle massive weight, overloading the traps. Use straps, a belt, and keep your back rigid.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Jerking the bar off the pins.</mistake>
+            <mistake>Not shrugging at the top.</mistake>
+            <mistake>Hyperextending at the top.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-TRAP-12" difficulty="Expert" safety="Keep your core braced and back straight. Squeeze your traps at the top. Control the slow eccentric phase. Do not roll your shoulders." Pose_type="Hypertrophy, Eccentric Focus">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_shrug_expert.gif</url>
+        <Name>Dumbbell Shrug (Slow Eccentric - Expert)</Name>
+        <Equipment>Heavy Dumbbells</Equipment>
+        <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
+        <Weight_Max>20 - 70 kg (44 - 154 lbs) per hand</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Neck strain, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, holding a heavy dumbbell in each hand at your sides. Keep your back straight and core braced.</step>
+            <step order="2" focus="Shrug">Exhale as you lift your shoulders straight up toward your ears over 1 second. Squeeze your traps at the top.</step>
+            <step order="3" focus="Squeeze">Pause for 2 seconds at the top.</step>
+            <step order="4" focus="Lower">Inhale as you slowly lower your shoulders back down over 4 seconds. Perform 4 sets of 12 reps.</step>
+            <step order="5" focus="Tip">The slow eccentric (4-second descent) builds trap size. Use heavy dumbbells and count the negative—resist gravity.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rolling shoulders.</mistake>
+            <mistake>Rushing the descent.</mistake>
+            <mistake>Bending the neck.</mistake>
+            <mistake>Using momentum to shrug up.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-TRAP-13" difficulty="Expert" safety="Keep your core braced and back straight. Pull the bar close to your body. Do not pull higher than upper chest. Use an EZ-bar for wrist comfort." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/upright_row_expert.gif</url>
+        <Name>Upright Row (Barbell - Expert)</Name>
+        <Equipment>Barbell or EZ-Bar with Moderate Plates</Equipment>
+        <Focused_Muscles>Trapezius (Upper), Deltoids (Medial), Biceps</Focused_Muscles>
+        <Weight_Max>20 - 70 kg (44 - 154 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, holding a barbell with an overhand grip, hands slightly closer than shoulder-width. Let the bar hang at arm's length.</step>
+            <step order="2" focus="Row">Exhale as you pull the bar straight up along your body, leading with your elbows. Keep the bar close to your torso.</step>
+            <step order="3" focus="Peak">Stop when the bar reaches upper chest level and your elbows are shoulder height.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Perform 3 sets of 10 reps.</step>
+            <step order="5" focus="Tip">Do not pull the bar higher than your upper chest—this impinges the shoulders. Use a wider grip if you have shoulder issues.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Pulling the bar too high.</mistake>
+            <mistake>Using momentum to swing.</mistake>
+            <mistake>Shrugging shoulders at the top.</mistake>
+            <mistake>Letting elbows drop below the bar.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="BACK-TRAP-14" difficulty="Expert" safety="Keep your shoulders down and back. Maintain a straight posture. Walk with control—do not rush. Use heavy weight but maintain form." Pose_type="Grip Strength, Functional, Traps">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/farmers_carry_expert.gif</url>
+        <Name>Farmer's Carry (Heavy - Expert)</Name>
+        <Equipment>Heavy Dumbbells, Kettlebells, or Farmer's Walk Handles</Equipment>
+        <Focused_Muscles>Forearm Flexors (Grip), Trapezius, Core Stabilizers, Glutes, Quadriceps</Focused_Muscles>
+        <Weight_Max>30 - 80 kg (66 - 176 lbs) per hand</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, shoulder injury, grip tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Pick up heavy dumbbells or farmer's handles from the floor with a flat back. Stand tall, shoulders back, core braced.</step>
+            <step order="2" focus="Walk">Walk forward with controlled, deliberate steps. Keep your chest up and gaze forward.</step>
+            <step order="3" focus="Maintain">Do not let the weights swing. Keep your core braced and shoulders down.</step>
+            <step order="4" focus="Repeat">Walk for 40 seconds, rest, then repeat. Perform 3 sets of 40 seconds.</step>
+            <step order="5" focus="Tip">At expert level, farmer's carries are a test of grip and full-body tension. Use heavy weight, walk tall, and don't let your shoulders shrug.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back when picking up.</mistake>
+            <mistake>Letting shoulders shrug up.</mistake>
+            <mistake>Swinging the weights.</mistake>
+            <mistake>Walking too fast without control.</mistake>
+        </common_mistakes>
+    </Pose>
+
+</BackWorkoutCatalog>
