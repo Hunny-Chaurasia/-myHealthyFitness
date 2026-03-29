@@ -385,9 +385,902 @@
     </Pose>
 
     <!-- FOREARMS - Novice -->
-    <Pose id="ARM-F-03" difficulty="Novice" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight throughout." Pose_type="Strength, Grip">
+    <!-- FOREARMS - Novice -->
+    <Pose id="ARM-F-03" difficulty="Novice" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight throughout. Avoid jerky movements or using momentum." Pose_type="Strength, Grip">
         <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_wrist_curl.gif</url>
         <Name>Barbell Wrist Curl</Name>
         <Equipment>Barbell, Bench</Equipment>
         <Focused_Muscles>Forearm Flexors, Grip Muscles</Focused_Muscles>
-        <Weight_Max>5 - 20 kg (11 - 44 lbs)</Weight
+        <Weight_Max>5 - 20 kg (11 - 44 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Wrist tendinitis, carpal tunnel syndrome, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on a bench. Rest your forearms on your thighs with your wrists hanging over your knees, palms facing up. Hold a barbell with an underhand grip.</step>
+            <step order="2" focus="Curl">Exhale as you curl your wrists upward, bringing the barbell toward your forearms. Keep your forearms pressed firmly against your thighs.</step>
+            <step order="3" focus="Squeeze">Pause briefly at the top, squeezing your forearm flexors. Do not lift your arms off your thighs.</step>
+            <step order="4" focus="Lower">Inhale as you lower the barbell with control back to the starting position, allowing your wrists to extend fully. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Focus on full range of motion. Let your wrists drop as low as comfortable at the bottom before curling back up. The slower you go, the better the activation.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Moving the entire arm instead of isolating the wrists.</mistake>
+            <mistake>Using momentum to swing the weight up.</mistake>
+            <mistake>Letting wrists hyperextend painfully at the bottom.</mistake>
+            <mistake>Lifting forearms off the thighs during the curl.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-F-04" difficulty="Novice" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight throughout—do not let it drop quickly." Pose_type="Strength, Grip">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/reverse_wrist_curl_novice.gif</url>
+        <Name>Reverse Wrist Curl</Name>
+        <Equipment>Barbell or Light Dumbbells, Bench</Equipment>
+        <Focused_Muscles>Forearm Extensors, Brachioradialis</Focused_Muscles>
+        <Weight_Max>3 - 15 kg (6 - 33 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Tennis elbow (lateral epicondylitis), wrist tendinitis, carpal tunnel syndrome</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on a bench. Rest your forearms on your thighs with your wrists hanging over your knees, palms facing down. Hold a barbell with an overhand grip.</step>
+            <step order="2" focus="Raise">Exhale as you extend your wrists upward, raising the back of your hands toward the ceiling. Keep your forearms pressed against your thighs.</step>
+            <step order="3" focus="Squeeze">Pause briefly at the top, feeling the contraction in your forearm extensors (top of the forearm).</step>
+            <step order="4" focus="Lower">Inhale as you lower with control back to the starting position. Perform 3 sets of 10 reps.</step>
+            <step order="5" focus="Tip">This exercise is typically weaker than regular wrist curls. Start with an empty barbell or very light dumbbells to master the movement pattern.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Moving the arms instead of isolating the wrists.</mistake>
+            <mistake>Using too much weight, causing jerky movement.</mistake>
+            <mistake>Rushing the descent (eccentric) phase.</mistake>
+            <mistake>Letting wrists drop too low at the bottom.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-F-05" difficulty="Novice" safety="Keep your shoulders down and back. Maintain a straight posture. Avoid swinging your body. Walk with control, not speed. Keep your core braced." Pose_type="Grip Strength, Functional, Cardio">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/farmers_carry_novice.gif</url>
+        <Name>Farmer's Carry</Name>
+        <Equipment>Dumbbells or Kettlebells (Moderate Weight)</Equipment>
+        <Focused_Muscles>Forearm Flexors, Grip Muscles, Trapezius, Core Stabilizers, Glutes, Quadriceps, Hamstrings</Focused_Muscles>
+        <Weight_Max>8 - 20 kg per hand (18 - 44 lbs)</Weight_Max>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Lower back strain, shoulder injury, grip tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Place two dumbbells or kettlebells on the floor shoulder-width apart. Squat down with a flat back, grip the handles firmly, and stand up tall. Keep your shoulders back and core braced.</step>
+            <step order="2" focus="Walk">Begin walking forward with controlled, deliberate steps. Keep your chest up and gaze forward (not down at your feet).</step>
+            <step order="3" focus="Maintain">Do not let the weights swing side to side. Keep your core engaged and shoulders down. Breathe steadily.</step>
+            <step order="4" focus="Turn & Return">Walk for 30 seconds, then carefully turn around (using small steps) and walk back to the starting point.</step>
+            <step order="5" focus="Tip">Choose a weight that challenges your grip by the end of 30 seconds but allows you to maintain good posture. If you feel your lower back rounding or shoulders shrugging, the weight is too heavy.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back when picking up the weights.</mistake>
+            <mistake>Letting shoulders shrug up toward the ears.</mistake>
+            <mistake>Swinging the weights side to side while walking.</mistake>
+            <mistake>Walking too fast, losing control of posture.</mistake>
+            <mistake>Holding the breath during the carry.</mistake>
+        </common_mistakes>
+    </Pose>
+
+
+
+
+        <?xml version="1.0" encoding="UTF-8"?>
+<ArmWorkoutCatalog>
+    
+    <!-- ======================================================== -->
+    <!-- ADVANCED LEVEL EXERCISES -->
+    <!-- ======================================================== -->
+    
+    <!-- BICEPS - Advanced -->
+    <Pose id="ARM-B-05" difficulty="Advanced" safety="Keep your core braced and back straight. Avoid using momentum—control the barbell on both the curl and the descent. Do not arch your lower back." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_curl_heavy.gif</url>
+        <Name>Barbell Curl (Heavy)</Name>
+        <Equipment>Barbell with Weight Plates</Equipment>
+        <Focused_Muscles>Biceps Brachii (Both Heads), Brachialis</Focused_Muscles>
+        <Weight_Max>15 - 50 kg (33 - 110 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, wrist injury, lower back herniation, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart. Hold the barbell with an underhand grip, hands shoulder-width apart. Elbows pinned to sides, core braced.</step>
+            <step order="2" focus="Curl">Exhale as you curl the barbell toward your shoulders, keeping your upper arms completely stationary. Do not swing your back.</step>
+            <step order="3" focus="Squeeze">Pause at the top for 1-2 seconds, squeezing your biceps as hard as possible.</step>
+            <step order="4" focus="Lower">Inhale as you lower the barbell with control over 3-4 seconds. Perform 4 sets of 8 reps.</step>
+            <step order="5" focus="Tip">The eccentric (lowering) phase is where muscle growth happens. Lower slowly and deliberately—don't let gravity do the work.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using lower back momentum to lift the weight (cheating curl).</mistake>
+            <mistake>Letting elbows drift forward during the curl.</mistake>
+            <mistake>Dropping the weight quickly on the descent.</mistake>
+            <mistake>Holding breath during the lift.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-B-06" difficulty="Advanced" safety="Keep your upper arms and back pressed firmly against the bench pad. Do not let your shoulders lift. Control the weight throughout." Pose_type="Hypertrophy, Isolation">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_dumbbell_curl_advanced.gif</url>
+        <Name>Incline Dumbbell Curl</Name>
+        <Equipment>Adjustable Bench, Dumbbells</Equipment>
+        <Focused_Muscles>Biceps Brachii (Long Head), Brachialis</Focused_Muscles>
+        <Weight_Max>6 - 18 kg (13 - 40 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, shoulder impingement, biceps tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set bench to 45-60 degrees. Lie back with dumbbells, arms hanging straight, palms facing forward. Press your upper back into the bench.</step>
+            <step order="2" focus="Curl">Exhale as you curl both dumbbells toward your shoulders. Keep elbows stationary and back against the bench.</step>
+            <step order="3" focus="Squeeze">Pause at the top, squeezing your biceps. Squeeze your shoulder blades together.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control over 3 seconds. Perform 3 sets of 10 reps.</step>
+            <step order="5" focus="Tip">For an even deeper stretch, let your arms hang fully extended at the bottom before curling again.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting shoulders lift off the bench.</mistake>
+            <mistake>Using momentum to swing dumbbells up.</mistake>
+            <mistake>Elbows moving forward during the curl.</mistake>
+            <mistake>Rushing the descent phase.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-B-07" difficulty="Advanced" safety="Keep your upper arm pressed against the inner thigh for stability. Avoid using body momentum. Control the curl and descent fully." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/concentration_curl.gif</url>
+        <Name>Concentration Curl</Name>
+        <Equipment>Dumbbells, Bench</Equipment>
+        <Focused_Muscles>Biceps Brachii (Peak Development), Brachialis</Focused_Muscles>
+        <Weight_Max>5 - 15 kg (11 - 33 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, wrist injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on a bench. Spread your legs, hold a dumbbell in one hand. Place your upper arm against your inner thigh, palm facing up.</step>
+            <step order="2" focus="Curl">Exhale as you curl the dumbbell toward your shoulder, keeping your upper arm pressed against your thigh.</step>
+            <step order="3" focus="Squeeze">Pause at the top, squeezing your biceps as hard as possible.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control to full extension. Perform 3 sets of 12 reps per arm.</step>
+            <step order="5" focus="Tip">This is a pure isolation exercise. Turn your pinky slightly upward at the top for an even better biceps contraction.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using body momentum to swing the weight.</mistake>
+            <mistake>Lifting the upper arm off the thigh.</mistake>
+            <mistake>Rushing the movement.</mistake>
+            <mistake>Not fully extending at the bottom.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-B-08" difficulty="Advanced" safety="Keep your elbows pinned to your sides. Avoid leaning back or using body momentum. Control the cable tension throughout." Pose_type="Hypertrophy, Constant Tension">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_curl.gif</url>
+        <Name>Cable Curl</Name>
+        <Equipment>Cable Machine with Bar or Rope Attachment</Equipment>
+        <Focused_Muscles>Biceps Brachii (Constant Tension throughout ROM)</Focused_Muscles>
+        <Weight_Max>15 - 50 kg (33 - 110 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, wrist injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a straight bar or rope to a low pulley. Stand facing the cable, holding the attachment with an underhand grip. Elbows pinned to sides.</step>
+            <step order="2" focus="Curl">Exhale as you curl the weight toward your shoulders, keeping upper arms stationary.</step>
+            <step order="3" focus="Squeeze">Pause at the top, squeezing your biceps. The cable maintains tension even at the top.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Do not let the weight stack touch between reps. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">The cable provides constant tension throughout the movement, unlike dumbbells where tension decreases at the top and bottom.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Leaning back to use body weight.</mistake>
+            <mistake>Letting elbows drift forward.</mistake>
+            <mistake>Allowing weight stack to rest between reps.</mistake>
+            <mistake>Using wrist flexion instead of elbow flexion.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- TRICEPS - Advanced -->
+    <Pose id="ARM-T-06" difficulty="Advanced" safety="Keep your elbows tucked close to your body. Lower the bar to your lower chest. Control the weight—do not bounce it off your chest." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/close_grip_bench_press.gif</url>
+        <Name>Close-Grip Bench Press</Name>
+        <Equipment>Barbell, Bench, Squat Rack</Equipment>
+        <Focused_Muscles>Triceps Brachii (All Heads), Chest (Medial), Anterior Deltoid</Focused_Muscles>
+        <Weight_Max>30 - 100 kg (66 - 220 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, wrist injury, shoulder impingement, pectoral tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on a bench. Grip the barbell with hands shoulder-width apart (closer than regular bench). Lower the bar to your lower chest.</step>
+            <step order="2" focus="Lower">Inhale as you lower the bar with control, keeping elbows tucked close to your body.</step>
+            <step order="3" focus="Press">Exhale as you press the bar explosively back to the starting position, locking out your elbows.</step>
+            <step order="4" focus="Repeat">Perform 4 sets of 8 reps. Keep your feet planted and core braced.</step>
+            <step order="5" focus="Tip">Your elbows should track close to your body—think about bending the bar to engage your lats and protect your shoulders.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting elbows flare outward.</mistake>
+            <mistake>Bouncing the bar off the chest.</mistake>
+            <mistake>Arching the lower back excessively.</mistake>
+            <mistake>Using a grip that's too narrow (hands touching).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-T-07" difficulty="Advanced" safety="Keep your elbows pointing toward the ceiling. Avoid flaring elbows outward. Control the weight—do not let it crash down." Pose_type="Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/skull_crusher_advanced.gif</url>
+        <Name>Skull Crushers (Lying Tricep Extension)</Name>
+        <Equipment>EZ-Bar, Bench</Equipment>
+        <Focused_Muscles>Triceps Brachii (Long Head focus)</Focused_Muscles>
+        <Weight_Max>10 - 35 kg (22 - 77 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, wrist injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on a bench holding an EZ-bar with an overhand grip. Extend arms straight up over your chest.</step>
+            <step order="2" focus="Lower">Inhale as you bend your elbows, lowering the bar toward your forehead. Keep upper arms perpendicular to the floor.</step>
+            <step order="3" focus="Extend">Exhale as you extend your arms back to the starting position, squeezing your triceps.</step>
+            <step order="4" focus="Repeat">Perform 3 sets of 10 reps. Lower slowly (3 seconds), press explosively (1 second).</step>
+            <step order="5" focus="Tip">Lower the bar to your forehead, not past your head. The EZ-bar is easier on your wrists than a straight bar.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting elbows flare outward.</mistake>
+            <mistake>Lowering the bar past the head (behind the head).</mistake>
+            <mistake>Using momentum to extend the arms.</mistake>
+            <mistake>Arching the lower back.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-T-08" difficulty="Advanced" safety="Keep your elbows tucked close to your head. Avoid flaring elbows outward. Control the cable tension throughout." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/overhead_cable_extension.gif</url>
+        <Name>Overhead Cable Extension</Name>
+        <Equipment>Cable Machine with Rope Attachment</Equipment>
+        <Focused_Muscles>Triceps Brachii (Long Head focus)</Focused_Muscles>
+        <Weight_Max>10 - 40 kg (22 - 88 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a rope to a low pulley. Stand facing away from the cable, holding the rope behind your head with elbows bent.</step>
+            <step order="2" focus="Extend">Exhale as you extend your arms overhead, keeping elbows pointed forward and tucked close to your head.</step>
+            <step order="3" focus="Split">At the top, split the rope apart for a better triceps contraction.</step>
+            <step order="4" focus="Return">Inhale as you return to the starting position with control. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">This exercise emphasizes the long head of the triceps, which adds mass to the back of the arm.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting elbows flare outward.</mistake>
+            <mistake>Using body momentum to extend.</mistake>
+            <mistake>Not fully extending at the top.</mistake>
+            <mistake>Rushing the return phase.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-T-09" difficulty="Advanced" safety="Keep your body upright and close to the bars. Lower yourself only to 90 degrees. Avoid shoulder rolling or excessive leaning." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/weighted_tricep_dip.gif</url>
+        <Name>Tricep Dips (Weighted)</Name>
+        <Equipment>Dip Bars, Weight Belt or Dumbbell between Feet</Equipment>
+        <Focused_Muscles>Triceps Brachii (All Heads), Chest (Minor), Anterior Deltoid</Focused_Muscles>
+        <Weight_Max>Bodyweight + 5 - 30 kg (11 - 66 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear, elbow tendinitis, sternum injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a weight belt or hold a dumbbell between your feet. Grip parallel bars, arms straight, shoulders down.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your body, keeping elbows tucked and torso upright (triceps focus).</step>
+            <step order="3" focus="Push">Exhale as you push through your palms to straighten your arms explosively.</step>
+            <step order="4" focus="Repeat">Perform 3 sets of 10 reps. Keep your core braced throughout.</step>
+            <step order="5" focus="Tip">For pure triceps focus, keep your body as vertical as possible. Leaning forward shifts emphasis to the chest.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lowering too deep (past 90 degrees).</mistake>
+            <mistake>Letting shoulders roll forward and hunch.</mistake>
+            <mistake>Leaning too far forward (chest dip).</mistake>
+            <mistake>Using momentum to push up.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- SHOULDERS - Advanced -->
+    <Pose id="ARM-S-06" difficulty="Advanced" safety="Keep your core braced and lower back neutral. Avoid arching your back to press heavier weight. Control the barbell throughout." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_overhead_press_heavy.gif</url>
+        <Name>Barbell Overhead Press (Heavy)</Name>
+        <Equipment>Barbell, Squat Rack</Equipment>
+        <Focused_Muscles>Deltoids (Anterior and Medial Heads), Triceps, Trapezius, Core</Focused_Muscles>
+        <Weight_Max>20 - 80 kg (44 - 176 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear, lower back herniation</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart. Hold the barbell at your collarbone, hands slightly wider than shoulders. Squeeze glutes and brace core.</step>
+            <step order="2" focus="Press">Exhale as you press the barbell overhead, moving your head back to clear the bar. Keep your torso rigid.</step>
+            <step order="3" focus="Lock">Lock out at the top with the bar directly over your shoulders and ears.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control back to collarbone. Perform 4 sets of 8 reps.</step>
+            <step order="5" focus="Tip">Squeeze your glutes and quads throughout the press. This creates full-body tension and protects your lower back.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the lower back excessively (leaning back).</mistake>
+            <mistake>Moving the bar around the head instead of moving the head.</mistake>
+            <mistake>Letting the bar drift forward.</mistake>
+            <mistake>Not bracing the core before pressing.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-S-07" difficulty="Advanced" safety="Keep your core braced throughout the rotation. Avoid arching your lower back. Control the dumbbells during the twist." Pose_type="Hypertrophy, Joint-Friendly">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/arnold_press.gif</url>
+        <Name>Arnold Press</Name>
+        <Equipment>Dumbbells, Bench (Seated or Standing)</Equipment>
+        <Focused_Muscles>Deltoids (All 3 Heads - Anterior, Medial, Posterior)</Focused_Muscles>
+        <Weight_Max>6 - 20 kg (13 - 44 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff injury, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on a bench with back support. Hold dumbbells at shoulder level, palms facing your body, elbows tucked.</step>
+            <step order="2" focus="Press & Rotate">Exhale as you press the dumbbells overhead while simultaneously rotating your palms to face forward.</step>
+            <step order="3" focus="Lock">At the top, palms face forward, arms extended (not locked).</step>
+            <step order="4" focus="Reverse">Inhale as you reverse the motion—lower while rotating palms back to starting position. Perform 3 sets of 10 reps.</step>
+            <step order="5" focus="Tip">The rotation engages all three deltoid heads. Move slowly and deliberately—this is a technical exercise, not a heavy one.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rushing the rotation.</mistake>
+            <mistake>Arching the lower back.</mistake>
+            <mistake>Using too much weight, losing control of the rotation.</mistake>
+            <mistake>Not fully rotating palms at the top.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-S-08" difficulty="Advanced" safety="Keep a slight bend in your elbows throughout. Avoid using momentum. Control the descent—do not let gravity drop the weights." Pose_type="Hypertrophy, High Volume">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lateral_raise_high_volume.gif</url>
+        <Name>Lateral Raise</Name>
+        <Equipment>Dumbbells</Equipment>
+        <Focused_Muscles>Deltoids (Medial Head)</Focused_Muscles>
+        <Weight_Max>3 - 12 kg (6 - 26 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Rotator cuff injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand holding dumbbells at your sides, palms facing your body. Slight bend in elbows, shoulders down.</step>
+            <step order="2" focus="Raise">Exhale as you raise the dumbbells out to your sides, leading with your elbows. Stop when arms are parallel to the floor.</step>
+            <step order="3" focus="Peak">Pause for 1 second at the top, feeling the medial deltoid contract.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control over 2-3 seconds. Perform 3 sets of 15 reps.</step>
+            <step order="5" focus="Tip">High reps (15+) work best for lateral raises. Use lighter weight and focus on the burn—not how much you can lift.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum to swing the weights up.</mistake>
+            <mistake>Shrugging shoulders toward the ears.</mistake>
+            <mistake>Raising arms above shoulder height.</mistake>
+            <mistake>Dropping the weight quickly on the descent.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-S-09" difficulty="Advanced" safety="Keep your chest supported against the bench. Avoid using momentum. Control the dumbbells throughout." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/rear_delt_fly_advanced.gif</url>
+        <Name>Rear Delt Fly</Name>
+        <Equipment>Dumbbells or Rear Delt Machine, Bench</Equipment>
+        <Focused_Muscles>Deltoids (Posterior Head), Rhomboids, Trapezius, Rotator Cuff (Infraspinatus/Teres Minor)</Focused_Muscles>
+        <Weight_Max>4 - 15 kg (9 - 33 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Rotator cuff tear, shoulder impingement, neck strain</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set an incline bench to 30-45 degrees. Lie face down, chest supported. Hold dumbbells with palms facing each other.</step>
+            <step order="2" focus="Raise">Exhale as you raise the dumbbells out to your sides, leading with your elbows. Keep a slight bend.</step>
+            <step order="3" focus="Squeeze">At the top, squeeze your shoulder blades together for 1-2 seconds.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Imagine you're trying to squeeze a walnut between your shoulder blades. This mental cue improves rear delt activation.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum to swing the weights.</mistake>
+            <mistake>Rounding the upper back instead of squeezing blades together.</mistake>
+            <mistake>Raising arms too high (past parallel).</mistake>
+            <mistake>Locking elbows straight.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- FOREARMS - Advanced -->
+    <Pose id="ARM-F-04" difficulty="Advanced" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight—do not let it roll out of your hands." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_wrist_curl_advanced.gif</url>
+        <Name>Barbell Wrist Curl</Name>
+        <Equipment>Barbell, Bench</Equipment>
+        <Focused_Muscles>Forearm Flexors, Grip Muscles</Focused_Muscles>
+        <Weight_Max>10 - 35 kg (22 - 77 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Wrist tendinitis, carpal tunnel syndrome, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on a bench. Rest your forearms on your thighs with wrists hanging over knees, palms up.</step>
+            <step order="2" focus="Curl">Exhale as you curl your wrists upward, bringing the bar toward your forearms. Squeeze at the top.</step>
+            <step order="3" focus="Lower">Inhale as you lower with control, allowing your wrists to extend fully at the bottom.</step>
+            <step order="4" focus="Repeat">Perform 3 sets of 15 reps. Do not let the bar roll out of your hands.</step>
+            <step order="5" focus="Tip">For advanced development, add a pause at the top (2 seconds) and bottom (2 seconds) of each rep.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Moving the entire arm instead of just the wrist.</mistake>
+            <mistake>Using momentum to curl the weight.</mistake>
+            <mistake>Not extending fully at the bottom.</mistake>
+            <mistake>Letting wrists hyperextend painfully.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-F-05" difficulty="Advanced" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight throughout—no jerking." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/reverse_barbell_curl.gif</url>
+        <Name>Reverse Barbell Curl</Name>
+        <Equipment>Barbell, Bench</Equipment>
+        <Focused_Muscles>Forearm Extensors, Brachioradialis, Brachialis</Focused_Muscles>
+        <Weight_Max>5 - 25 kg (11 - 55 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Tennis elbow (lateral epicondylitis), wrist tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on a bench. Rest your forearms on your thighs with wrists hanging over knees, palms facing down.</step>
+            <step order="2" focus="Raise">Exhale as you extend your wrists upward, raising the back of your hands toward the ceiling.</step>
+            <step order="3" focus="Squeeze">Pause at the top, feeling the contraction in your forearm extensors.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Perform 3 sets of 10 reps.</step>
+            <step order="5" focus="Tip">This exercise builds the top of your forearm and helps with grip endurance for pulling movements.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Moving the arms instead of isolating wrists.</mistake>
+            <mistake>Using too much weight, causing jerky movement.</mistake>
+            <mistake>Not controlling the descent.</mistake>
+            <mistake>Letting wrists drop too low.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-F-06" difficulty="Advanced" safety="Keep your shoulders down and back. Maintain a straight posture. Avoid swinging your body. Walk with control, not speed." Pose_type="Grip Strength, Functional">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/farmers_carry.gif</url>
+        <Name>Farmer's Carry</Name>
+        <Equipment>Heavy Dumbbells, Kettlebells, or Farmer's Walk Handles</Equipment>
+        <Focused_Muscles>Forearm Flexors, Grip Muscles, Trapezius, Core Stabilizers, Glutes, Quadriceps</Focused_Muscles>
+        <Weight_Max>15 - 50 kg per hand (33 - 110 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, shoulder injury, grip tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Pick up heavy dumbbells or kettlebells from the floor with a flat back. Stand tall, shoulders back, core braced.</step>
+            <step order="2" focus="Walk">Walk forward with controlled, deliberate steps. Keep your chest up and gaze forward.</step>
+            <step order="3" focus="Maintain">Do not let the weights swing. Keep your core braced and shoulders down.</step>
+            <step order="4" focus="Repeat">Walk for 30 seconds, rest, then repeat. Perform 2 sets of 30 seconds.</step>
+            <step order="5" focus="Tip">This is a full-body grip and core exercise. Go heavy enough that your grip is challenged by 30 seconds, but not so heavy that you can't maintain posture.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back when picking up weights.</mistake>
+            <mistake>Letting shoulders shrug up toward the ears.</mistake>
+            <mistake>Swinging the weights side to side.</mistake>
+            <mistake>Walking too fast without control.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- EXPERT LEVEL EXERCISES -->
+    <!-- ======================================================== -->
+    
+    <!-- BICEPS - Expert -->
+    <Pose id="ARM-B-09" difficulty="Expert" safety="This is a heavy strength movement. Use a spotter if possible. Keep your core braced and back straight. Avoid using momentum—strict form is essential." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_curl_heavy_strict.gif</url>
+        <Name>Barbell Curl (Heavy - Strict)</Name>
+        <Equipment>Barbell with Heavy Plates</Equipment>
+        <Focused_Muscles>Biceps Brachii (Both Heads), Brachialis</Focused_Muscles>
+        <Weight_Max>25 - 70 kg (55 - 154 lbs)</Weight_Max>
+        <Age_Grp>20-55 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, biceps tear, lower back injury, wrist injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, core braced. Hold the barbell with an underhand grip, hands shoulder-width apart.</step>
+            <step order="2" focus="Curl">Exhale as you curl the barbell toward your shoulders with strict form—no back swing, no momentum.</step>
+            <step order="3" focus="Squeeze">Pause at the top for 1-2 seconds, squeezing your biceps as hard as possible.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control over 3-4 seconds. Perform 5 sets of 5 reps.</step>
+            <step order="5" focus="Tip">At this weight level, strict form is non-negotiable. If you can't maintain perfect form, reduce the weight. Quality over ego.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using lower back to generate momentum.</mistake>
+            <mistake>Letting elbows drift forward.</mistake>
+            <mistake>Rushing the descent (eccentric) phase.</mistake>
+            <mistake>Holding breath during heavy lifts.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-B-10" difficulty="Expert" safety="Keep your upper arms and back pressed firmly against the preacher pad. Do not lift your elbows off the pad. Control the weight throughout." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/preacher_curl.gif</url>
+        <Name>Preacher Curl</Name>
+        <Equipment>EZ-Bar or Dumbbells, Preacher Curl Bench</Equipment>
+        <Focused_Muscles>Biceps Brachii (Lower Biceps Peak), Brachialis</Focused_Muscles>
+        <Weight_Max>15 - 45 kg (33 - 99 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, biceps tendinopathy, wrist injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit at a preacher curl bench. Place your upper arms flat on the pad, armpits pressed against the top edge. Grip the EZ-bar.</step>
+            <step order="2" focus="Curl">Exhale as you curl the bar toward your shoulders, keeping your upper arms pressed against the pad.</step>
+            <step order="3" focus="Squeeze">Pause at the top, squeezing your biceps. Do not let elbows lift off the pad.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control to full extension. Perform 4 sets of 8 reps.</step>
+            <step order="5" focus="Tip">The preacher bench removes momentum and isolates the biceps. Don't let the weight stack rest between reps—keep constant tension.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lifting elbows off the preacher pad.</mistake>
+            <mistake>Using momentum to curl the weight.</mistake>
+            <mistake>Not fully extending at the bottom.</mistake>
+            <mistake>Arching the back to lift heavier weight.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-B-11" difficulty="Expert" safety="Keep your upper arms stationary throughout. Avoid using momentum. Control the dumbbells on both the curl and descent." Pose_type="Hypertrophy, Muscle Separation">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_dumbbell_curl_expert.gif</url>
+        <Name>Incline Dumbbell Curl</Name>
+        <Equipment>Adjustable Bench (60-70 degrees), Dumbbells</Equipment>
+        <Focused_Muscles>Biceps Brachii (Long Head - Outer Biceps), Brachialis</Focused_Muscles>
+        <Weight_Max>8 - 22 kg (18 - 48 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set bench to 60-70 degrees. Lie back with dumbbells, arms hanging straight, palms facing forward.</step>
+            <step order="2" focus="Curl">Exhale as you curl both dumbbells toward your shoulders. Keep elbows stationary and back pressed into the bench.</step>
+            <step order="3" focus="Supinate">As you curl, supinate your wrists (rotate palms up) for maximum biceps contraction.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control over 3-4 seconds. Perform 4 sets of 10 reps.</step>
+            <step order="5" focus="Tip">The steep incline stretches the long head of the biceps more than any other curl variation, promoting muscle growth and separation.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting shoulders lift off the bench.</mistake>
+            <mistake>Elbows moving forward during the curl.</mistake>
+            <mistake>Rushing the descent phase.</mistake>
+            <mistake>Not fully extending at the bottom.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-B-12" difficulty="Expert" safety="Keep your elbows pinned to your sides. This is a drop set—have lighter weights ready. Do not sacrifice form for extra reps." Pose_type="Drop Set, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_curl_drop_set.gif</url>
+        <Name>Cable Curl (Drop Set)</Name>
+        <Equipment>Cable Machine with Bar Attachment, Multiple Weight Increments</Equipment>
+        <Focused_Muscles>Biceps Brachii (Constant Tension through Drop Set)</Focused_Muscles>
+        <Weight_Max>20 kg → 15 kg → 10 kg (Progressive Drop)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, biceps tendinopathy</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a straight bar to a low pulley. Set up three weight increments: heavy, medium, light.</step>
+            <step order="2" focus="First Set">Perform 12 reps with heavy weight. Do not let the weight stack rest between reps.</step>
+            <step order="3" focus="Drop">Immediately reduce weight to medium. Perform 8 more reps without rest.</step>
+            <step order="4" focus="Final Drop">Immediately reduce to light weight. Perform 6 more reps. That's one drop set. Rest, repeat for 3 sets.</step>
+            <step order="5" focus="Tip">Drop sets are intense. Perform them at the end of your workout, not the beginning. The goal is muscle fatigue, not injury.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Resting between drops (defeats the purpose).</mistake>
+            <mistake>Using poor form on later reps due to fatigue.</mistake>
+            <mistake>Not having weights ready for quick transition.</mistake>
+            <mistake>Performing drop sets at the beginning of the workout.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-B-13" difficulty="Expert" safety="Keep your upper arms perpendicular to the floor. Avoid using momentum. Control the dumbbell throughout." Pose_type="Isolation, Peak Contraction">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/spider_curl.gif</url>
+        <Name>Spider Curl</Name>
+        <Equipment>EZ-Bar or Dumbbells, Incline Bench (Set at 45 degrees)</Equipment>
+        <Focused_Muscles>Biceps Brachii (Peak Development), Brachialis</Focused_Muscles>
+        <Weight_Max>10 - 30 kg (22 - 66 lbs) for EZ-Bar</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, lower back strain</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Set an incline bench to 45 degrees. Lie face down on the bench, chest supported. Let your arms hang straight down holding an EZ-bar.</step>
+            <step order="2" focus="Curl">Exhale as you curl the bar toward your shoulders, keeping your upper arms stationary.</step>
+            <step order="3" focus="Squeeze">Pause at the top, squeezing your biceps. Your upper arms should remain perpendicular to the floor.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control to full extension. Perform 3 sets of 12 reps.</step>
+            <step order="5" focus="Tip">The spider curl position prevents body momentum, forcing the biceps to do all the work. You'll likely need less weight than standing curls.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting upper arms swing during the curl.</mistake>
+            <mistake>Raising chest off the bench.</mistake>
+            <mistake>Using momentum to lift.</mistake>
+            <mistake>Not fully extending at the bottom.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- TRICEPS - Expert -->
+    <Pose id="ARM-T-10" difficulty="Expert" safety="Keep your elbows tucked close to your body. Use a spotter for heavy sets. Control the bar—do not bounce it off your chest." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/close_grip_bench_press_heavy.gif</url>
+        <Name>Close-Grip Bench Press (Heavy)</Name>
+        <Equipment>Barbell, Bench, Squat Rack, Spotter</Equipment>
+        <Focused_Muscles>Triceps Brachii (All Heads), Chest (Medial)</Focused_Muscles>
+        <Weight_Max>50 - 150 kg (110 - 330 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Pectoral tear, shoulder impingement, elbow tendinitis, wrist injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on a bench. Grip the barbell with hands shoulder-width apart. Unrack with spotter assistance.</step>
+            <step order="2" focus="Lower">Inhale as you lower the bar to your lower chest, keeping elbows tucked at 45 degrees.</step>
+            <step order="3" focus="Press">Exhale as you press the bar explosively back to the starting position, locking out your elbows.</step>
+            <step order="4" focus="Repeat">Perform 5 sets of 5 reps. Keep your feet planted and core braced throughout.</step>
+            <step order="5" focus="Tip">At expert level, this is a competition-style lift. Use leg drive, keep your upper back tight, and never bounce the bar off your chest.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting elbows flare outward.</mistake>
+            <mistake>Bouncing the bar off the chest.</mistake>
+            <mistake>Lifting hips off the bench.</mistake>
+            <mistake>Not using a spotter for heavy weight.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-T-11" difficulty="Expert" safety="Keep your elbows pointing toward the ceiling. Avoid flaring elbows outward. Control the weight on the descent—do not let it crash down." Pose_type="Hypertrophy, Strength">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/skull_crusher_expert.gif</url>
+        <Name>Skull Crushers (Lying Tricep Extension)</Name>
+        <Equipment>EZ-Bar, Bench</Equipment>
+        <Focused_Muscles>Triceps Brachii (Long Head emphasis)</Focused_Muscles>
+        <Weight_Max>15 - 45 kg (33 - 99 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on a bench holding an EZ-bar with an overhand grip. Extend arms straight up over your chest.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the bar toward your forehead over 3-4 seconds.</step>
+            <step order="3" focus="Extend">Exhale as you extend your arms back to the starting position explosively.</step>
+            <step order="4" focus="Repeat">Perform 4 sets of 8 reps. Keep upper arms perpendicular to the floor throughout.</step>
+            <step order="5" focus="Tip">For expert development, add a 2-second pause at the bottom (bar just above forehead) before extending. This increases time under tension.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting elbows flare outward.</mistake>
+            <mistake>Lowering the bar past the head (behind the head).</mistake>
+            <mistake>Rushing the descent phase.</mistake>
+            <mistake>Arching the lower back excessively.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-T-12" difficulty="Expert" safety="Keep your elbows tucked close to your head. Avoid flaring elbows outward. Control the dumbbell throughout—do not let it drop." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/overhead_dumbbell_extension.gif</url>
+        <Name>Overhead Dumbbell Extension</Name>
+        <Equipment>Single Dumbbell, Bench (Seated)</Equipment>
+        <Focused_Muscles>Triceps Brachii (Long Head focus)</Focused_Muscles>
+        <Weight_Max>10 - 35 kg (22 - 77 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on a bench. Hold a dumbbell with both hands, gripping the inner plates. Extend the dumbbell overhead.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower the dumbbell behind your head, keeping elbows tucked close to your ears.</step>
+            <step order="3" focus="Extend">Exhale as you extend your arms back to the starting position, squeezing your triceps at the top.</step>
+            <step order="4" focus="Repeat">Perform 4 sets of 10 reps. Keep your core braced and lower back neutral.</step>
+            <step order="5" focus="Tip">This is one of the best exercises for the long head of the triceps. Go deep—lower the dumbbell until your forearms touch your biceps.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting elbows flare outward.</mistake>
+            <mistake>Arching the lower back to assist the lift.</mistake>
+            <mistake>Not going deep enough in the descent.</mistake>
+            <mistake>Using momentum to extend.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-T-13" difficulty="Expert" safety="Keep your elbows pinned to your sides. This is a drop set—have lighter weights ready. Do not sacrifice form for extra reps." Pose_type="Drop Set, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_pushdown_drop_set.gif</url>
+        <Name>Cable Pushdown (Drop Set)</Name>
+        <Equipment>Cable Machine with Rope Attachment, Multiple Weight Increments</Equipment>
+        <Focused_Muscles>Triceps Brachii (All Heads, Constant Tension)</Focused_Muscles>
+        <Weight_Max>30 kg → 20 kg → 15 kg (Progressive Drop)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, wrist injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a rope to a high pulley. Set up three weight increments: heavy, medium, light.</step>
+            <step order="2" focus="First Set">Perform 12 reps with heavy weight. Keep elbows pinned to sides.</step>
+            <step order="3" focus="Drop">Immediately reduce weight to medium. Perform 8 more reps without rest.</step>
+            <step order="4" focus="Final Drop">Immediately reduce to light weight. Perform 6 more reps. Perform 3 drop sets total.</step>
+            <step order="5" focus="Tip">At the bottom of each rep, split the rope apart for a deeper triceps contraction. This is a finisher—do it at the end of your triceps workout.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Resting between drops (defeats the purpose).</mistake>
+            <mistake>Letting elbows flare outward.</mistake>
+            <mistake>Leaning forward to use body weight.</mistake>
+            <mistake>Not splitting the rope at the bottom.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-T-14" difficulty="Expert" safety="Keep your body upright and close to the bars. Lower yourself only to 90 degrees. Control the descent—do not drop into the bottom position." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/weighted_tricep_dip_expert.gif</url>
+        <Name>Tricep Dips (Weighted - Heavy)</Name>
+        <Equipment>Dip Bars, Heavy Weight Belt or Weight Vest</Equipment>
+        <Focused_Muscles>Triceps Brachii (All Heads), Core, Shoulders</Focused_Muscles>
+        <Weight_Max>Bodyweight + 15 - 50 kg (33 - 110 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear, elbow tendinitis, sternum injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a heavy weight belt or wear a weight vest. Grip parallel bars, arms straight, shoulders down.</step>
+            <step order="2" focus="Lower">Inhale as you slowly lower your body over 3-4 seconds, keeping elbows tucked and torso upright.</step>
+            <step order="3" focus="Push">Exhale as you push explosively back to the starting position, locking out your elbows.</step>
+            <step order="4" focus="Repeat">Perform 3 sets of 12 reps. Keep your core braced throughout.</step>
+            <step order="5" focus="Tip">At expert level with heavy weight, every rep must be controlled. If you can't maintain strict form, reduce the weight.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lowering too deep (past 90 degrees).</mistake>
+            <mistake>Letting shoulders roll forward.</mistake>
+            <mistake>Using momentum to push up.</mistake>
+            <mistake>Leaning too far forward (chest dip).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- SHOULDERS - Expert -->
+    <Pose id="ARM-S-10" difficulty="Expert" safety="This is a heavy strength movement. Use a spotter if possible. Keep your core braced and lower back neutral. Avoid arching your back." Pose_type="Strength, Power">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_overhead_press_expert.gif</url>
+        <Name>Barbell Overhead Press (Heavy)</Name>
+        <Equipment>Barbell, Squat Rack, Spotter (Optional)</Equipment>
+        <Focused_Muscles>Deltoids (Anterior and Medial Heads), Triceps, Trapezius, Core</Focused_Muscles>
+        <Weight_Max>40 - 120 kg (88 - 264 lbs)</Weight_Max>
+        <Age_Grp>20-50 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear, lower back herniation, cervical spine issues</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet shoulder-width apart, core braced, glutes squeezed. Hold the barbell at your collarbone.</step>
+            <step order="2" focus="Press">Exhale as you press the barbell overhead with maximum force, moving your head back to clear the bar.</step>
+            <step order="3" focus="Lock">Lock out at the top with the bar directly over your shoulders and ears.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control back to collarbone. Perform 5 sets of 5 reps.</step>
+            <step order="5" focus="Tip">Full-body tension is key at expert level. Squeeze your glutes, quads, and core as hard as you can throughout the entire set.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the lower back excessively.</mistake>
+            <mistake>Not bracing the core before pressing.</mistake>
+            <mistake>Letting the bar drift forward of the shoulders.</mistake>
+            <mistake>Rushing the descent phase.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-S-11" difficulty="Expert" safety="Keep your core braced throughout the rotation. Avoid arching your lower back. Control the dumbbells during the twist—do not rush." Pose_type="Hypertrophy, Joint-Friendly">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/arnold_press_expert.gif</url>
+        <Name>Arnold Press</Name>
+        <Equipment>Dumbbells, Bench (Seated with Back Support)</Equipment>
+        <Focused_Muscles>Deltoids (All 3 Heads), Rotator Cuff (Minor), Triceps</Focused_Muscles>
+        <Weight_Max>10 - 30 kg (22 - 66 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on a bench with back support. Hold dumbbells at shoulder level, palms facing your body, elbows tucked.</step>
+            <step order="2" focus="Press & Rotate">Exhale as you press the dumbbells overhead while rotating palms to face forward.</step>
+            <step order="3" focus="Squeeze">At the top, squeeze your deltoids. Keep the dumbbells close together but not touching.</step>
+            <step order="4" focus="Reverse">Inhale as you reverse the motion slowly—lower while rotating palms back. Perform 4 sets of 10 reps.</step>
+            <step order="5" focus="Tip">The Arnold press is a complete shoulder movement. Control the rotation—it's not a race. Each rep should take 4-5 seconds total.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rushing the rotation phase.</mistake>
+            <mistake>Using too much weight, losing control.</mistake>
+            <mistake>Arching the lower back.</mistake>
+            <mistake>Not fully rotating palms at the top.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-S-12" difficulty="Expert" safety="Keep a slight bend in your elbows throughout. Avoid using momentum. Use cable resistance for constant tension." Pose_type="Hypertrophy, Constant Tension">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_lateral_raise.gif</url>
+        <Name>Lateral Raise (Cable)</Name>
+        <Equipment>Cable Machine with Handle Attachment, Low Pulley</Equipment>
+        <Focused_Muscles>Deltoids (Medial Head - Side Shoulder)</Focused_Muscles>
+        <Weight_Max>5 - 20 kg (11 - 44 lbs) per side</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Rotator cuff injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a handle to a low pulley. Stand sideways to the cable, holding the handle in the hand farthest from the machine.</step>
+            <step order="2" focus="Raise">Exhale as you raise the cable across your body to shoulder height, leading with your elbow.</step>
+            <step order="3" focus="Peak">Pause at the top for 2 seconds, feeling the medial deltoid contract.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control. Perform 4 sets of 15 reps per side.</step>
+            <step order="5" focus="Tip">Cables provide constant tension throughout the range of motion, unlike dumbbells. Use this to your advantage by never letting the weight stack touch between reps.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum to swing the cable.</mistake>
+            <mistake>Raising arm above shoulder height.</mistake>
+            <mistake>Shrugging the shoulder toward the ear.</mistake>
+            <mistake>Letting the weight stack rest between reps.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-S-13" difficulty="Expert" safety="Keep your chest supported against the pad. Avoid using momentum. Control the weight throughout." Pose_type="Isolation, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/rear_delt_machine_fly.gif</url>
+        <Name>Rear Delt Fly (Machine)</Name>
+        <Equipment>Rear Delt / Pec Deck Machine</Equipment>
+        <Focused_Muscles>Deltoids (Posterior Head), Rhomboids, Trapezius, Rotator Cuff</Focused_Muscles>
+        <Weight_Max>20 - 60 kg (44 - 132 lbs) on machine stack</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Rotator cuff tear, shoulder impingement, neck strain</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit at the rear delt machine with your chest pressed against the pad. Grip the handles with palms facing each other.</step>
+            <step order="2" focus="Raise">Exhale as you pull the handles back in a wide arc, leading with your elbows. Keep a slight bend in your elbows.</step>
+            <step order="3" focus="Squeeze">At the peak, squeeze your shoulder blades together for 2 seconds.</step>
+            <step order="4" focus="Return">Inhale as you return to the starting position with control. Perform 4 sets of 12 reps.</step>
+            <step order="5" focus="Tip">Don't let the weight stack touch between reps. Keep constant tension on the rear delts for maximum growth.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using momentum to swing the handles.</mistake>
+            <mistake>Rounding the upper back instead of squeezing blades together.</mistake>
+            <mistake>Locking elbows straight.</mistake>
+            <mistake>Letting the weight stack rest between reps.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-S-14" difficulty="Expert" safety="Keep your core braced and back straight. Avoid using momentum. Focus on external rotation of the shoulders." Pose_type="Rotator Cuff Health, Posture">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/face_pull.gif</url>
+        <Name>Face Pull</Name>
+        <Equipment>Cable Machine with Rope Attachment, High Pulley</Equipment>
+        <Focused_Muscles>Posterior Deltoids, Trapezius, Rhomboids, Rotator Cuff (Infraspinatus/Teres Minor)</Focused_Muscles>
+        <Weight_Max>10 - 35 kg (22 - 77 lbs)</Weight_Max>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement (acute), rotator cuff tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Attach a rope to a high pulley. Stand facing the cable, holding the rope with an overhand grip. Step back to create tension.</step>
+            <step order="2" focus="Pull">Exhale as you pull the rope toward your face, separating the ends. Keep your elbows high (shoulder height).</step>
+            <step order="3" focus="Rotate">At the peak, externally rotate your shoulders by pulling the rope ends past your ears. Squeeze your shoulder blades.</step>
+            <step order="4" focus="Return">Inhale as you return with control. Perform 3 sets of 15 reps.</step>
+            <step order="5" focus="Tip">Face pulls are a prehab exercise. Use moderate weight and focus on external rotation—this builds healthy, resilient shoulders.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Using too much weight, compromising form.</mistake>
+            <mistake>Not externally rotating at the peak.</mistake>
+            <mistake>Letting elbows drop below shoulder height.</mistake>
+            <mistake>Using momentum to pull the rope.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- FOREARMS - Expert -->
+    <Pose id="ARM-F-07" difficulty="Expert" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight—do not let it roll out of your hands." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_wrist_curl_expert.gif</url>
+        <Name>Barbell Wrist Curl</Name>
+        <Equipment>Barbell, Bench</Equipment>
+        <Focused_Muscles>Forearm Flexors, Grip Muscles</Focused_Muscles>
+        <Weight_Max>15 - 50 kg (33 - 110 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Wrist tendinitis, carpal tunnel syndrome, elbow tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on a bench. Rest your forearms on your thighs with wrists hanging over knees, palms up.</step>
+            <step order="2" focus="Curl">Exhale as you curl your wrists upward over 2 seconds, squeezing your forearm flexors at the top.</step>
+            <step order="3" focus="Pause">Hold the top position for 2 seconds, squeezing as hard as possible.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control over 3 seconds. Perform 4 sets of 15 reps.</step>
+            <step order="5" focus="Tip">At expert level, add pauses and slow negatives. A 2-second hold at the top and 3-second descent increases time under tension significantly.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Moving the entire arm instead of just the wrist.</mistake>
+            <mistake>Using momentum to curl the weight.</mistake>
+            <mistake>Rushing the descent or eliminating the pause.</mistake>
+            <mistake>Letting wrists hyperextend painfully.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-F-08" difficulty="Expert" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight throughout." Pose_type="Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/reverse_barbell_curl_expert.gif</url>
+        <Name>Reverse Barbell Curl</Name>
+        <Equipment>Barbell, Bench</Equipment>
+        <Focused_Muscles>Forearm Extensors, Brachioradialis</Focused_Muscles>
+        <Weight_Max>10 - 40 kg (22 - 88 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Tennis elbow (lateral epicondylitis), wrist tendinitis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on a bench. Rest your forearms on your thighs with wrists hanging over knees, palms facing down.</step>
+            <step order="2" focus="Raise">Exhale as you extend your wrists upward over 2 seconds, raising the back of your hands toward the ceiling.</step>
+            <step order="3" focus="Pause">Hold the top position for 2 seconds, squeezing your forearm extensors.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control over 3 seconds. Perform 4 sets of 10 reps.</step>
+            <step order="5" focus="Tip">This is often the weaker forearm movement. Don't compare the weight to your regular wrist curl—it will naturally be lower.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Moving the arms instead of isolating wrists.</mistake>
+            <mistake>Using too much weight, causing jerky movement.</mistake>
+            <mistake>Rushing the descent or eliminating the pause.</mistake>
+            <mistake>Not controlling the negative phase.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-F-09" difficulty="Expert" safety="Keep your wrists neutral throughout the movement. Control the eccentric (lowering) phase slowly. Avoid using momentum." Pose_type="Grip Strength, Hypertrophy">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/hammer_curl_slow_eccentric.gif</url>
+        <Name>Hammer Curl (Slow Eccentric)</Name>
+        <Equipment>Dumbbells</Equipment>
+        <Focused_Muscles>Brachioradialis, Brachialis, Forearm Muscles</Focused_Muscles>
+        <Weight_Max>8 - 25 kg (18 - 55 lbs)</Weight_Max>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Elbow tendinitis, wrist injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand holding dumbbells at your sides with palms facing each other (neutral grip). Elbows pinned to sides.</step>
+            <step order="2" focus="Curl">Exhale as you curl the dumbbells toward your shoulders over 1 second.</step>
+            <step order="3" focus="Squeeze">Pause at the top for 1 second, squeezing your brachioradialis.</step>
+            <step order="4" focus="Lower">Inhale as you lower with control over 4-5 seconds. Perform 3 sets of 10 reps.</step>
+            <step order="5" focus="Tip">The slow eccentric (lowering) phase builds forearm and grip strength faster than normal tempo. Focus on fighting gravity on the way down.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rushing the descent phase.</mistake>
+            <mistake>Letting elbows drift forward.</mistake>
+            <mistake>Rotating palms during the curl.</mistake>
+            <mistake>Using momentum to curl up.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-F-10" difficulty="Expert" safety="Keep your back straight and core braced. Do not let the plates slip. Use chalk if necessary for grip." Pose_type="Grip Strength, Pinch Strength">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/plate_pinch.gif</url>
+        <Name>Plate Pinch</Name>
+        <Equipment>Weight Plates (Smooth Sides Together)</Equipment>
+        <Focused_Muscles>Pinch Grip Muscles (Thumb Flexors, Finger Flexors)</Focused_Muscles>
+        <Weight_Max>5 - 20 kg (11 - 44 lbs) total pinched weight</Weight_Max>
+         <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Thumb injury, finger tendinitis, carpal tunnel syndrome</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Place two weight plates with smooth sides facing outward. Pinch them together with your fingers on one side and thumb on the other.</step>
+            <step order="2" focus="Lift">With a flat back, lift the plates off the floor or rack. Stand tall, arm hanging straight down.</step>
+            <step order="3" focus="Hold">Hold for the prescribed time, squeezing as hard as possible. Do not let the plates slip or rotate.</step>
+            <step order="4" focus="Repeat">Perform 3 sets of 45 seconds per hand. Switch hands and repeat.</step>
+            <step order="5" focus="Tip">Pinch strength is crucial for climbing, grappling, and overall hand health. Use two plates of equal size for a stable pinch.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting plates slip or rotate.</mistake>
+            <mistake>Using momentum to lift the plates.</mistake>
+            <mistake>Rounding the back when lifting.</mistake>
+            <mistake>Resting the plates against the body.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="ARM-F-11" difficulty="Expert" safety="Keep your shoulders engaged and down. Do not swing or kip. Hang with control—do not drop suddenly." Pose_type="Grip Strength, Endurance">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dead_hang.gif</url>
+        <Name>Dead Hang</Name>
+        <Equipment>Pull-Up Bar</Equipment>
+        <Focused_Muscles>Grip Muscles (Flexors), Forearm Endurance, Latissimus Dorsi (Stretch), Shoulder Stabilizers</Focused_Muscles>
+        <Weight_Max>Bodyweight + Optional Weight Vest</Weight_Max>
+        <Age_Grp>16-60 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, rotator cuff tear, elbow tendinitis, wrist injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Grip a pull-up bar with an overhand grip, hands shoulder-width apart. Hang with arms fully extended, shoulders engaged (not shrugged).</step>
+            <step order="2" focus="Hang">Hang passively, allowing your body to stretch. Keep your core braced to prevent swinging.</step>
+            <step order="3" focus="Maintain">Do not let your shoulders shrug up to your ears. Keep them slightly engaged.</step>
+            <step order="4" focus="Repeat">Hold for 30-60 seconds. Rest, then repeat. Perform 3 sets.</step>
+            <step order="5" focus="Tip">For advanced grip training, add weight via a dip belt or vest. For variety, alternate grip types (overhand, underhand, mixed, towel).</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting shoulders shrug up to the ears.</mistake>
+            <mistake>Swinging the body back and forth.</mistake>
+            <mistake>Dropping suddenly from the bar (risk of shoulder injury).</mistake>
+            <mistake>Holding breath during the hang.</mistake>
+        </common_mistakes>
+    </Pose>
+
+</ArmWorkoutCatalog>
