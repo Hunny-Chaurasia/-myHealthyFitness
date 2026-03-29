@@ -1,1 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<YogaPoseCatalog>
+    
+    <!-- ======================================================== -->
+    <!-- 1. TITLI ASANA / BUTTERFLY POSE (Baddha Konasana) -->
+    <!-- ======================================================== -->
+    
+    <Pose id="YOGA-01" difficulty="Beginner" safety="Do not force your knees toward the floor—let gravity do the work over time. If you have groin, hip, or knee injuries, place blocks or folded blankets under your thighs for support. Avoid this pose if you have a recent or severe groin injury. Pregnant women in later stages should practice with caution and avoid deep forward folds." Pose_type="Yoga, Flexibility, Hip Opening">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/titli_asana_butterfly_pose.gif</url>
+        <Name>Titli Asana (Butterfly Pose / Baddha Konasana)</Name>
+        <Equipment>Yoga Mat, Optional: Blocks or Folded Blankets for Support</Equipment>
+        <Focused_Muscles>
+            <Primary>Hip Adductors (Inner Thighs / Groin), Hip Flexors</Primary>
+            <Secondary>Lower Back (Erector Spinae), Pelvic Floor Muscles, Quadriceps</Secondary>
+            <Stabilizers>Core, Spine, Shoulders</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Morning (to wake up the hips), Evening (to release hip tension), or after a workout (cool-down stretch)</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Tight Hip Adductors (Groin), Lower Back Tension, Poor Hip Mobility, Sciatica (mild)</Targeted>
+            <Preventive>Improves hip flexibility, relieves menstrual discomfort, aids digestion (massages abdominal organs), prepares hips for childbirth</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup">Sit on your mat with your legs extended straight in front of you. If your lower back rounds, sit on a folded blanket or block to tilt your pelvis forward. Keep your spine long and chest lifted. Engage your core slightly.</step>
+            <step order="2" focus="Bring Soles Together">Bend your knees and bring the soles of your feet together, allowing your knees to drop out to the sides. Draw your heels as close to your pelvis as comfortable—do not force. Your feet should be held gently in your hands.</step>
+            <step order="3" focus="Hold the Feet">Gently hold your feet or ankles with your hands. Keep your shoulders relaxed and away from your ears. Engage your core slightly to maintain a long spine. Press your sit bones firmly into the mat.</step>
+            <step order="4" focus="Flutter (Titli Movement) - Optional Dynamic">For the dynamic "butterfly" movement: Gently press your knees up and down using your inner thigh muscles (not your hands). Move slowly and rhythmically like a butterfly flapping its wings. Perform 15-20 gentle flaps while breathing naturally.</step>
+            <step order="5" focus="Static Hold (Baddha Konasana) - Optional Forward Fold">To hold the pose statically: Keep your knees dropped toward the floor. On an inhale, lengthen your spine. On an exhale, gently hinge forward from your hips, keeping your back straight. Only go as far as you feel a stretch—no pain. Hold for 5-10 deep breaths. To release, inhale and slowly lift your torso back up.</step>
+            <step order="6" focus="Tip">Imagine your knees are heavy and melting toward the floor. Do not push them down with your hands—let gravity and your breath do the work. For a deeper stretch, place a block under each knee for support. If you have knee issues, place rolled blankets behind your knees.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Forcing the knees down with your hands or elbows (this can strain the groin).</mistake>
+            <mistake>Rounding the lower back instead of hinging from the hips when folding forward.</mistake>
+            <mistake>Lifting the shoulders toward the ears (keep them relaxed and down).</mistake>
+            <mistake>Bouncing the knees aggressively during the dynamic version (move gently and slowly).</mistake>
+            <mistake>Holding the breath—breathe deeply and steadily throughout.</mistake>
+        </common_mistakes>
+    </Pose>
 
+    <!-- ======================================================== -->
+    <!-- 2. CAT-COW POSE (Chakravakasana / Marjaryasana-Bitilasana) -->
+    <!-- ======================================================== -->
+    
+    <Pose id="YOGA-02" difficulty="Beginner" safety="Move slowly with your breath. Do not force the movement—let your spine move naturally. If you have neck injuries, keep your head in a neutral position rather than looking up or down. Avoid this pose if you have severe carpal tunnel syndrome or recent abdominal surgery. If you have wrist pain, make fists instead of keeping palms flat." Pose_type="Yoga, Mobility, Spinal Health">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cat_cow_pose.gif</url>
+        <Name>Cat-Cow Pose (Marjaryasana-Bitilasana / Chakravakasana)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>
+            <Primary>Spinal Erectors (Cat), Core/Abdominals (Cow), Neck Flexors/Extensors</Primary>
+            <Secondary>Glutes, Hamstrings, Shoulders, Chest, Pelvic Floor</Secondary>
+            <Stabilizers>Wrists, Arms, Core, Quadriceps</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Morning (to wake up the spine), Before Bed (to release tension), or as a Warm-Up for any workout or yoga session</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Lower Back Stiffness, Neck Tension, Poor Spinal Mobility, Posture Issues, Stress and Anxiety</Targeted>
+            <Preventive>Improves spinal flexibility and circulation, relieves tension headaches, promotes healthy digestion (massages abdominal organs), warms up the back for exercise, reduces stress through breath coordination</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup - Tabletop Position">Begin on your hands and knees in a tabletop position. Place your hands directly under your shoulders and your knees directly under your hips. Keep your back flat and neutral. Spread your fingers wide for stability. Align your head and neck with your spine—gaze at the floor.</step>
+            <step order="2" focus="Cow Pose (Bitilasana) - Inhale">Inhale deeply as you slowly drop your belly toward the floor. Lift your sit bones and chest toward the ceiling. Gently lift your gaze upward (without straining your neck—keep it as a natural extension of the spine). Draw your shoulder blades together and down your back. Feel a gentle stretch in your chest and belly.</step>
+            <step order="3" focus="Cat Pose (Marjaryasana) - Exhale">Exhale fully as you round your spine toward the ceiling like a stretching cat. Tuck your tailbone under. Draw your belly button toward your spine. Gently drop your head and gaze toward your navel. Feel a stretch through your upper, middle, and lower back. Keep your shoulders relaxed.</step>
+            <step order="4" focus="Flow with Breath">Continue flowing between Cow Pose on each inhale and Cat Pose on each exhale. Move slowly and deliberately, coordinating each movement with your breath. Perform 8-12 complete rounds (one round = one inhale Cow + one exhale Cat). Let the movement become meditative.</step>
+            <step order="5" focus="Rest in Neutral Tabletop">After completing your rounds, return to a neutral tabletop position with a flat back. Take a few natural breaths. Notice how your spine feels—more mobile, relaxed, and awake.</step>
+            <step order="6" focus="Tip">Let your breath guide the movement—don't rush. The inhale naturally opens the chest (Cow), and the exhale naturally rounds the spine (Cat). Imagine each vertebra moving one by one as you flow. If you have wrist discomfort, make fists instead of keeping palms flat, or use a folded mat under your wrists.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Moving too quickly without coordinating with breath.</mistake>
+            <mistake>Forcing the neck to look too far up or down (keep it as a natural extension of the spine).</mistake>
+            <mistake>Locking the elbows (keep a micro-bend to protect the joints).</mistake>
+            <mistake>Holding tension in the shoulders instead of letting them relax and move with the spine.</mistake>
+            <mistake>Holding the breath—breathe deeply and steadily throughout the flow.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- 3. DOUBLE PIGEON POSE (Agnistambhasana / Fire Log Pose) -->
+    <!-- ======================================================== -->
+    
+    <Pose id="YOGA-03" difficulty="Intermediate" safety="This is an intense hip opener. Do not force your knees or ankles. If you have knee or ankle injuries, avoid this pose or practice with significant support (blankets under the knees). Listen to your body—discomfort is okay, but sharp pain means stop. Practice on a soft surface." Pose_type="Yoga, Flexibility, Hip Opening">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/double_pigeon_pose.gif</url>
+        <Name>Double Pigeon Pose (Agnistambhasana / Fire Log Pose)</Name>
+        <Equipment>Yoga Mat, Optional: Blocks or Folded Blankets</Equipment>
+        <Focused_Muscles>
+            <Primary>External Hip Rotators (Piriformis, Gluteal Muscles), Hip Adductors</Primary>
+            <Secondary>Lower Back (Erector Spinae), Quadriceps, Ankles</Secondary>
+            <Stabilizers>Core, Spine, Pelvic Floor</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Evening (to release deep hip tension), or after a workout (cool-down stretch)</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Tight Hips, Piriformis Syndrome, Sciatica (mild to moderate), Lower Back Tension</Targeted>
+            <Preventive>Improves hip mobility for sitting and walking, relieves tension from prolonged sitting, prepares hips for meditation postures, reduces risk of hip injuries</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup - Seated Position">Sit on your mat with your legs extended straight. If your lower back rounds, sit on a folded blanket or block to tilt your pelvis forward. Stack your spine tall, shoulders relaxed, chest open.</step>
+            <step order="2" focus="First Leg Placement">Bend your right knee and place your right shin on the mat parallel to the front edge of your mat. Your right ankle should be in front of your left hip, and your right knee in front of your right hip. The outer edge of your right shin and foot rests on the mat.</step>
+            <step order="3" focus="Second Leg Placement">Bend your left knee and place your left shin on top of your right shin. Stack your left ankle directly above your right knee, and your left knee directly above your right ankle. Your shins should be stacked like logs on a fire.</step>
+            <step order="4" focus="Align and Adjust">Your knees and ankles should be stacked vertically. If there is a large gap or significant discomfort, place a folded blanket or block between your shins for support. Flex both feet to protect your ankles.</step>
+            <step order="5" focus="Deepen (Optional Forward Fold)">On an inhale, lengthen your spine. On an exhale, gently hinge forward from your hips, keeping your back straight. Walk your hands forward on the mat. Only go as far as you feel a deep stretch in your outer hips—no sharp pain. Hold for 5-10 breaths. To release, inhale and slowly lift your torso. Unstack your legs one at a time. Repeat on the opposite side (left shin on bottom, right shin on top).</step>
+            <step order="6" focus="Tip">Double Pigeon is an intense stretch. Start with just 1-2 minutes on each side. Use blankets under your sit bones and between your shins for support. If you cannot stack your shins, practice with only the first leg (Single Pigeon) or place a block between your knees. Flex your feet to protect your ankles.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Forcing the stacked shin position when hips are not ready (use support instead).</mistake>
+            <mistake>Rounding the lower back when folding forward (hinge from the hips).</mistake>
+            <mistake>Letting the top foot point (keep the foot flexed to protect the ankle).</mistake>
+            <mistake>Holding the breath—breathe deeply into the sensation.</mistake>
+            <mistake>Staying in the pose too long if there is sharp pain (discomfort is okay, pain is not).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- 4. MINDFUL BREATHING MEDITATION (Pranayama - Dirga Swasam) -->
+    <!-- ======================================================== -->
+    
+    <Pose id="YOGA-04" difficulty="Beginner" safety="Practice in a quiet, comfortable space where you won't be disturbed. If you feel lightheaded or dizzy, return to normal breathing. Do not force your breath—let it be natural and easy. Avoid this practice if you have severe respiratory conditions without consulting a doctor." Pose_type="Meditation, Pranayama, Mindfulness">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/mindful_breathing_meditation.gif</url>
+        <Name>Mindful Breathing Meditation (Pranayama / Dirga Swasam)</Name>
+        <Equipment>Yoga Mat, Meditation Cushion or Folded Blanket (Optional), Quiet Space</Equipment>
+        <Focused_Muscles>
+            <Primary>Diaphragm, Intercostal Muscles (Between Ribs)</Primary>
+            <Secondary>Abdominal Muscles (Minor), Pelvic Floor, Respiratory Muscles</Secondary>
+            <Stabilizers>No major stabilizers—this is a seated, restful practice</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Morning (to start the day with calm), Evening (to unwind before sleep), or Anytime you feel stressed or overwhelmed</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Stress, Anxiety, Insomnia, High Blood Pressure (mild to moderate), Racing Thoughts</Targeted>
+            <Preventive>Improves lung capacity, reduces cortisol (stress hormone), lowers heart rate and blood pressure, enhances focus and concentration, promotes emotional regulation, strengthens the mind-body connection</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Find a Comfortable Seat">Sit in a comfortable cross-legged position (Sukhasana) on a cushion or folded blanket to elevate your hips slightly above your knees. Alternatively, sit on a chair with your feet flat on the floor and hands resting on your thighs. Keep your spine tall but not rigid—natural curves preserved.</step>
+            <step order="2" focus="Relax Your Body">Gently close your eyes or soften your gaze toward the floor. Relax your shoulders away from your ears. Rest your hands on your knees or thighs, palms up (receptive) or palms down (grounding). Unclench your jaw and relax your tongue.</step>
+            <step order="3" focus="Bring Awareness to Natural Breath">Without changing your breath, simply notice it. Feel the sensation of the breath entering through your nostrils, filling your lungs, and leaving your body. Notice the coolness of the inhale and the warmth of the exhale. Do this for 1-2 minutes.</step>
+            <step order="4" focus="Count Your Breaths (Optional Focus)">To anchor your attention, count each exhale: Inhale naturally, then as you exhale, silently count "one." Next exhale, count "two." Continue up to "five," then start back at "one." If you lose count, simply begin again at "one" without judgment.</step>
+            <step order="5" focus="Observe Without Judgment">When your mind wanders (and it will—this is normal), gently notice where it went without criticism. Softly return your attention to the sensation of your breath. Each time you return, you are strengthening your mindfulness muscle. Practice for 5-10 minutes to start.</step>
+            <step order="6" focus="Tip">Consistency is more important than duration. Even 2-3 minutes of mindful breathing daily is beneficial. Use a timer so you don't watch the clock. If you feel anxious focusing on your breath, try focusing on the feeling of your hands resting on your thighs instead. There is no "perfect" meditation—just showing up is enough.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Expecting the mind to be completely still (this is unrealistic—thoughts are normal).</mistake>
+            <mistake>Judging yourself for having wandering thoughts (gently return without criticism).</mistake>
+            <mistake>Forcing or controlling the breath (let it be natural and easy).</mistake>
+            <mistake>Slouching or collapsing the chest (keep a tall, open posture for better breathing).</mistake>
+            <mistake>Giving up when it feels "boring" or "hard" (these feelings are part of the practice).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- 5. SHOULDER STAND YOGA POSE (Sarvangasana) -->
+    <!-- ======================================================== -->
+    
+    <Pose id="YOGA-05" difficulty="Intermediate" safety="This is an inversion. Do not practice if you have high blood pressure (uncontrolled), glaucoma, retinal detachment, neck or spine injuries, herniated discs, are menstruating, or in late pregnancy (2nd/3rd trimester). If you have thyroid issues, practice with caution. Always come out of the pose if you feel any neck discomfort. Use folded blankets under your shoulders to protect your neck." Pose_type="Yoga, Inversion, Full Body">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/shoulder_stand_pose.gif</url>
+        <Name>Shoulder Stand Pose (Sarvangasana - "All Limbs Pose")</Name>
+        <Equipment>Yoga Mat, 2-3 Folded Blankets (to protect the neck), Wall (Optional for support)</Equipment>
+        <Focused_Muscles>
+            <Primary>Neck (Stabilizers), Shoulders (Deltoids), Core (Abdominals), Glutes, Legs</Primary>
+            <Secondary>Thyroid Gland (Stimulation), Parathyroid Glands, Abdominal Organs</Secondary>
+            <Stabilizers>Upper Back (Trapezius, Rhomboids), Arms, Triceps</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Morning or Early Evening, on an Empty Stomach (wait 2-3 hours after a meal)</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Poor Circulation, Fatigue, Insomnia, Thyroid Imbalance (mild), Sinus Congestion (drainage)</Targeted>
+            <Preventive>Improves blood flow to the brain and upper body, stimulates the thyroid and parathyroid glands, strengthens shoulders and core, calms the nervous system, relieves mild depression and anxiety, improves digestion (through gentle pressure)</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup - Blanket Support">Fold 2-3 blankets into a firm stack (about 1-2 inches thick). Place the blankets on your mat near the center. Lie on your back with your shoulders on the blankets and your head resting on the mat. Your head should be lower than your shoulders to create a slight chin-to-chest position.</step>
+            <step order="2" focus="Prepare - Lift Legs">Lie on your back with your arms alongside your body, palms down. Press your palms into the mat. Inhale as you lift your legs straight up to 90 degrees (like a reverse leg lift). Engage your core.</step>
+            <step order="3" focus="Lift Hips - Roll Onto Shoulders">Exhale as you press your palms down and lift your hips off the floor, rolling your spine up. Support your lower back with your hands (palms on your back, fingers pointing upward). Walk your hands toward your shoulder blades.</step>
+            <step order="4" focus="Straighten the Body">Inhale as you slowly straighten your legs and torso upward. Your weight should rest on your shoulders and upper arms—NOT on your neck. Your hips should be aligned over your shoulders, and your toes pointing toward the ceiling. Keep your elbows shoulder-width apart.</step>
+            <step order="5" focus="Hold the Pose">Breathe slowly and steadily through your nose. Hold the pose for 30 seconds to 3 minutes depending on your experience. Keep your gaze toward your chest (not turning your head). Engage your core to keep the body stable.</step>
+            <step order="6" focus="Release - Roll Down Slowly">To exit, exhale as you slowly roll your spine back down to the floor, vertebra by vertebra. Lower your legs to the floor when your hips touch the mat. Rest in Corpse Pose (Savasana) for at least 30 seconds to neutralize your spine.</step>
+            <step order="7" focus="Tip">Never turn your head while in Shoulder Stand—this can injure your neck. Keep your weight on your shoulders, not your neck. If you feel any neck pressure, come out immediately. Beginners should practice with a wall for support or learn from an experienced teacher. After Shoulder Stand, practice Fish Pose (Matsyasana) as a counterpose to release the neck.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Putting weight on the neck instead of the shoulders (use blankets and keep weight on shoulders).</mistake>
+            <mistake>Turning the head while in the pose (this can cause serious neck injury).</mistake>
+            <mistake>Elbows slipping too wide apart (keep elbows shoulder-width and press down).</mistake>
+            <mistake>Rushing the exit—roll down slowly and with control.</mistake>
+            <mistake>Holding the breath (breathe deeply and steadily).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- 6. TREE POSE (Vrksasana) -->
+    <!-- ======================================================== -->
+    
+    <Pose id="YOGA-06" difficulty="Beginner" safety="Practice near a wall for balance support. Do not place your foot directly on your knee joint (always place it above or below the knee). If you have high or low blood pressure, raise your arms only when stable. Avoid this pose if you have recent hip, knee, or ankle injuries." Pose_type="Yoga, Balance, Standing">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/tree_pose_vrksasana.gif</url>
+        <Name>Tree Pose (Vrksasana)</Name>
+        <Equipment>Yoga Mat, Wall (Optional for balance support)</Equipment>
+        <Focused_Muscles>
+            <Primary>Standing Leg: Quadriceps, Glutes, Calves, Foot Intrinsics (Balance)</Primary>
+            <Secondary>Lifted Leg: Hip Abductors (Tensor Fasciae Latae, Gluteus Medius), Hip Flexors</Secondary>
+            <Stabilizers>Core (Transverse Abdominis, Obliques), Spine, Shoulders (if arms are raised)</Stabilizers>
+        </Focused_Muscles>
+        <Preferred_Time>Morning (to build focus and balance for the day), or as a standing pose in any yoga sequence</Preferred_Time>
+        <Diseases_Cured>
+            <Targeted>Poor Balance, Weak Ankles, Lack of Focus, Sciatica (mild)</Targeted>
+            <Preventive>Improves proprioception (body awareness), strengthens ankles and knees, builds mental focus and concentration, opens the hips, improves posture, reduces flat feet over time</Preventive>
+        </Diseases_Cured>
+        <steps>
+            <step order="1" focus="Setup - Mountain Pose">Begin standing in Mountain Pose (Tadasana) with your feet together or hip-width apart. Distribute your weight evenly across both feet. Engage your thighs, lift your kneecaps, and tuck your tailbone slightly. Lengthen your spine and relax your shoulders.</step>
+            <step order="2" focus="Shift Weight to Left Foot">Shift your weight onto your left foot. Press down firmly through all four corners of your left foot. Find a focal point (drishti)—a stationary object at eye level—to help with balance.</step>
+            <step order="3" focus="Place the Right Foot">Bend your right knee and rotate it outward. Place the sole of your right foot on your left inner thigh, above the knee (or below the knee on your calf). NEVER place your foot directly on the knee joint—this can injure the knee.</step>
+            <step order="4" focus="Alternative Foot Placement (Beginner)">If placing your foot on your inner thigh is too challenging, place the sole of your right foot on your left ankle or calf (below the knee). Alternatively, keep your toes on the floor with your heel resting against your ankle.</step>
+            <step order="5" focus="Find Balance and Raise Arms">Once stable, press your right foot firmly into your left leg (and your left leg back into your right foot). Engage your core to stabilize. On an inhale, bring your palms together at your heart center (Anjali Mudra). For more challenge, inhale and raise your arms overhead with palms facing each other or together.</step>
+            <step order="6" focus="Hold and Breathe">Hold the pose for 5-10 breaths. Keep your gaze soft but fixed on your drishti. Relax your shoulders away from your ears. Keep your standing leg engaged (not locked). To release, exhale as you lower your arms and right foot. Return to Mountain Pose. Repeat on the opposite side (standing on your right foot, left foot lifted).</step>
+            <step order="7" focus="Tip">If you wobble, that's okay—wobbling means you're learning. Engage your core and find a soft gaze. Imagine roots growing from your standing foot into the earth. Use a wall for support by standing with your back or side against it. The tree grows slowly—be patient with yourself.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Placing the foot directly on the knee joint (always place above or below the knee).</mistake>
+            <mistake>Leaning toward the lifted leg (keep your hips level and centered).</mistake>
+            <mistake>Locking the standing knee (keep a micro-bend to protect the joint).</mistake>
+            <mistake>Holding the lifted foot with your hand (use your leg strength to hold it in place).</mistake>
+            <mistake>Looking down (fix your gaze on a stationary point at eye level for better balance).</mistake>
+            <mistake>Holding the breath (breathe deeply and steadily).</mistake>
+        </common_mistakes>
+    </Pose>
+
+</YogaPoseCatalog>
