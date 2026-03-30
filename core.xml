@@ -1,6 +1,6 @@
 <exercises_Beginner>
     <Pose id="1" difficulty="Beginner" safety="Low Impact" Pose_type="Cat-Cow">
-        <url type="gif">[raw.githubusercontent.com](https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dead-bug.GIF)</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dead-bug</url>
         <Name>Cat Cow Pose</Name>
         <Equipment>Yoga Mat (optional)</Equipment>
         <Focused_Muscles>Spine, Neck, Core, Shoulders</Focused_Muscles>
