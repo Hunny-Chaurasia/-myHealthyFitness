@@ -1,6 +1,6 @@
 <exercises_Beginner>
     <Pose id="1" difficulty="Beginner" safety="Low Impact" Pose_type="Cat-Cow">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/Kettlebell%20Sumo%20Deadlift.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cat-cow-pose.gif</url>
         <Name>Cat Cow Pose</Name>
         <Equipment>Yoga Mat (optional)</Equipment>
         <Focused_Muscles>Spine, Neck, Core, Shoulders</Focused_Muscles>
@@ -29,8 +29,7 @@
         </steps>
     </Pose>
     <Pose id="2" difficulty="Beginner" safety="Moderate Impact" Pose_type="Strength Training">
-        <url type="gif">
-            [raw.githubusercontent.com](https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/how-to-do-a-kettlebell-sumo-squat.gif)</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/Kettlebell%20Sumo%20Deadlift.gif</url>
         <Name>Kettlebell Sumo Squat</Name>
         <Equipment>Kettlebell (optional)</Equipment>
         <Focused_Muscles>Quads, Glutes, Hamstrings, Inner Thighs, Core</Focused_Muscles>
