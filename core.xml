@@ -124,7 +124,7 @@
         </Common_Mistakes>
     </Pose>
     <Pose id="5" difficulty="Beginner" safety="Maintain a neutral spine throughout the movement. Keep your knees tracking in line with your toes. Do not let your knees collapse inward. If you have knee or lower back issues, consult a professional first." Pose_type="Strength Training">
-        <url type="gif">[raw.githubusercontent.com](https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight-squat.gif)</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight-squat.gif</url>
         <Name>Bodyweight Squat</Name>
         <Equipment>None (Optional: Exercise Mat, Wall for Support)</Equipment>
         <Focused_Muscles>
