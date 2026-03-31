@@ -31,7 +31,7 @@
 
     <Pose id="ARM-B-02" difficulty="Beginner" safety="Keep your wrists neutral (straight) throughout the movement. Avoid rotating your palms—the hammer grip is fixed. Control the movement." Pose_type="Strength, Hypertrophy">
         <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/hammer_curl.gif</url>
-        <Name>Hammer Curl</Name>
+        <Name>Dumbbells Hammer Curl</Name>
         <Equipment>Dumbbells</Equipment>
         <Focused_Muscles>Brachialis, Brachioradialis, Biceps Brachii</Focused_Muscles>
         <Weight_Max>2.5 - 10 kg (5 - 22 lbs)</Weight_Max>
