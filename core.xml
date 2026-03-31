@@ -591,45 +591,6 @@
             <mistake>Shifting weight unevenly onto one hand or foot, causing instability and wobbling.</mistake>
         </common_mistakes>
     </Pose>
-    <Pose id="18" difficulty="Beginner" safety="Maintain constant core engagement throughout the movement to protect your lower back. Avoid using momentum to swing the ball—move with control. Keep your movements slow and deliberate, especially when passing the ball. If you feel lower back strain, reduce your range of motion or perform the exercise with bent knees." Pose_type="Core Strength, Coordination">
-        <url type="gif">[raw.githubusercontent.com](https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/stability_ball_v_up_pass.gif)</url>
-        <Name>Stability Ball V-Up Pass</Name>
-        <Equipment>Stability Ball (Swiss Ball), Exercise Mat</Equipment>
-        <Focused_Muscles>
-            <Primary>Rectus Abdominis (Upper and Lower), Transverse Abdominis</Primary>
-            <Secondary>Hip Flexors, Obliques, Quadriceps</Secondary>
-            <Stabilizers>Shoulders, Chest, Forearms (Grip), Lower Back</Stabilizers>
-        </Focused_Muscles>
-        <Preferred time="Morning">Challenging morning core exercise. Best performed after a thorough warm-up to activate the entire core complex.</Preferred>
-        <Diseases_Cured>
-            <Targeted>Weak Upper and Lower Abdominal Imbalance, Poor Coordination, Limited Hip Flexibility</Targeted>
-            <Preventive>Develops integrated core strength, improves mind-muscle connection between upper and lower body, and enhances functional movement patterns.</Preventive>
-        </Diseases_Cured>
-        <Age>18-60 years (requires good flexibility and core strength)</Age>
-        <steps>
-            <step order="1" focus="Setup">
-                Lie flat on your back on a mat. Hold a stability ball with both hands extended overhead, arms straight. Extend your legs straight out along the floor. Engage your core by pressing your lower back into the mat.
-            </step>
-            <step order="2" focus="Simultaneous Lift">
-                Inhale to prepare. Exhale as you simultaneously lift your upper body and legs off the floor, reaching your arms and legs toward the ceiling. Your body should form a "V" shape. Keep your arms straight as you bring the ball toward your feet.
-            </step>
-            <step order="3" focus="Pass">
-                At the top of the V-up, carefully pass the ball from your hands to your legs, clamping it between your ankles or lower shins. Squeeze the ball firmly with your legs to secure it.
-            </step>
-            <step order="4" focus="Repeat">
-                Inhale as you slowly lower both your upper body and legs back to the starting position with control, keeping the ball secured between your legs. On your next repetition, lift up and pass the ball back from your legs to your hands. Continue alternating passes. Aim for 8-12 repetitions for 2-3 sets.
-            </step>
-            <step order="5" focus="Tip">
-                **Control the descent—it's just as important as the lift.** Lowering slowly is where your core works hardest. If the full V-up is too challenging, keep your knees bent at 90 degrees (tabletop position) to shorten the lever arm and reduce difficulty.
-            </step>
-        </steps>
-        <common_mistakes>
-            <mistake>Using momentum to swing the legs and arms up instead of relying on a controlled abdominal contraction.</mistake>
-            <mistake>Dropping the ball or losing control during the hand-to-leg or leg-to-hand pass.</mistake>
-            <mistake>Allowing the lower back to arch off the mat during the descent, which strains the lumbar spine.</mistake>
-            <mistake>Rushing through the movement, especially the pass, leading to sloppy form and reduced core engagement.</mistake>
-        </common_mistakes>
-    </Pose>
     <Pose id="19" difficulty="Beginner" safety="Keep your lower back pressed firmly into the floor throughout the entire movement. Move slowly and with control—do not use momentum. Only extend your limbs as far as you can while maintaining a neutral spine and stable core. If you feel lower back arching, reduce your range of motion." Pose_type="Core Stability, Coordination">
         <url type="gif">[raw.githubusercontent.com](https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight_dead_bug.gif)</url>
         <Name>Bodyweight Dead Bug</Name>
