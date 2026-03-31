@@ -65,9 +65,7 @@
             line-height: 1.05;
             color: #fff;
         }
-        .app-header h1 span {
-            color: var(--accent);
-        }
+        .app-header h1 span { color: var(--accent); }
         .header-sub {
             margin-top: 0.8rem;
             font-size: 0.85rem;
@@ -116,9 +114,6 @@
             border-radius: 50%;
             flex-shrink: 0;
         }
-        .dot-green { background: #5aff6b; }
-        .dot-orange { background: #ff9d3b; }
-        .dot-red { background: #ff4f4f; }
 
         /* ── GRID ────────────────────────────────── */
         .exercise-grid {
@@ -158,9 +153,7 @@
             display: block;
             transition: transform 0.3s ease;
         }
-        .exercise-card:hover .card-media img {
-            transform: scale(1.04);
-        }
+        .exercise-card:hover .card-media img { transform: scale(1.04); }
         .card-media-overlay {
             position: absolute;
             inset: 0;
@@ -265,7 +258,7 @@
             cursor: pointer;
             transition: background 0.15s;
         }
-        .retry-btn:hover { background: #daff66; }
+        .retry-btn:hover { background: #c084fc; }
 
         /* ── MODAL ───────────────────────────────── */
         #steps_modal {
@@ -472,19 +465,19 @@
 <div class="app-header">
     <div class="header-eyebrow"><span class="live-dot"></span>MOTION MENTOR · LIVE XML</div>
     <h1>ARM <span>LAB</span></h1>
-    <div class="header-sub">Complete arms &amp; shoulders exercise library · tap any card for full instructions & execution steps</div>
+    <div class="header-sub">Complete arms &amp; shoulders exercise library · tap any card for full instructions &amp; execution steps</div>
 </div>
 
 <!-- LOADING -->
 <div id="loading_msg">
     <div class="spinner"></div>
-    <div>Fetching exercises from Arm.xml …</div>
+    <div>Fetching exercises from arms.xml …</div>
 </div>
 
 <!-- ERROR -->
 <div id="error_msg" style="display:none;"></div>
 
-<!-- SECTIONS: dynamically injected by JS -->
+<!-- SECTIONS injected by JS -->
 <div id="sections_container"></div>
 
 <!-- MODAL -->
@@ -497,25 +490,46 @@
 
 <script>
 (function () {
-    const XML_RAW_URL = "https://raw.githubusercontent.com/Hunny-Chaurasia/-myHealthyFitness/main/arms.xml";
+    /* ─────────────────────────────────────────────────────────
+       FIX 1: Use the correct raw.githubusercontent.com URL.
+               The /edit/ URL is the GitHub editor page, not raw XML.
+    ───────────────────────────────────────────────────────── */
+    const XML_RAW_URL =
+        "https://raw.githubusercontent.com/Hunny-Chaurasia/-myHealthyFitness/main/arms.xml";
 
-    /* ── helpers ─────────────────────────────── */
+    /* ── helpers ─────────────────────────────────────────── */
     function esc(str) {
         if (!str) return '';
-        return str.replace(/[&<>"']/g, m => ({
-            '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        return String(str).replace(/[&<>"']/g, m => ({
+            '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
         }[m]));
     }
-    function getText(parent, tag) {
-        if (!parent) return '';
-        const el = parent.getElementsByTagName(tag)[0];
-        return el ? el.textContent.trim() : '';
+
+    /* FIX 2: Try multiple tag names for the exercise name.
+              The XML uses <n> not <Name>, so we check both. */
+    function getExerciseName(poseEl) {
+        // Try <Name> first, then <n> (the tag used in the provided XML)
+        const tags = ['Name', 'n', 'name', 'title', 'Title'];
+        for (const tag of tags) {
+            const el = poseEl.getElementsByTagName(tag)[0];
+            if (el && el.textContent.trim()) return el.textContent.trim();
+        }
+        return 'Exercise';
     }
-    // Canonical order for rendering sections top-to-bottom
-    const LEVEL_ORDER = ['Novice', 'Beginner', 'Intermediate', 'Advanced', 'Expert'];
-    const LEVEL_META = {
-        'Novice':       { emoji: '⚪', dot: '#aaaaaa', label: 'NOVICE'       },
+
+    function getTextByTag(parent, ...tags) {
+        for (const tag of tags) {
+            const el = parent.getElementsByTagName(tag)[0];
+            if (el && el.textContent.trim()) return el.textContent.trim();
+        }
+        return '';
+    }
+
+    /* Canonical display order */
+    const LEVEL_ORDER = ['Beginner', 'Novice', 'Intermediate', 'Advanced', 'Expert'];
+    const LEVEL_META  = {
         'Beginner':     { emoji: '🟢', dot: '#5aff6b', label: 'BEGINNER'     },
+        'Novice':       { emoji: '⚪', dot: '#aaaaaa', label: 'NOVICE'       },
         'Intermediate': { emoji: '🟡', dot: '#f5e03b', label: 'INTERMEDIATE' },
         'Advanced':     { emoji: '🟠', dot: '#ff9d3b', label: 'ADVANCED'     },
         'Expert':       { emoji: '🔴', dot: '#ff4f4f', label: 'EXPERT'       },
@@ -524,56 +538,50 @@
     function normDiff(d) {
         if (!d) return 'Beginner';
         const s = d.trim().toLowerCase();
-        // exact match first
         for (const lvl of LEVEL_ORDER) {
             if (s === lvl.toLowerCase()) return lvl;
         }
-        // partial match
         for (const lvl of LEVEL_ORDER) {
             if (s.includes(lvl.toLowerCase())) return lvl;
         }
-        // unknown — capitalise and keep
         return d.trim().charAt(0).toUpperCase() + d.trim().slice(1);
     }
 
-    /* ── XML parsing ─────────────────────────── */
+    /* ── XML parsing ─────────────────────────────────────── */
     function parsePoses(xmlDoc) {
+        /* FIX 3: The XML may have multiple root elements (two <ArmWorkoutCatalog>
+                  blocks). getElementsByTagName searches all descendants so it will
+                  still find every <Pose> regardless of how many root elements exist. */
         const poses = xmlDoc.getElementsByTagName('Pose');
         if (!poses.length) throw new Error('No <Pose> elements found in XML.');
+
         const out = [];
         for (let i = 0; i < poses.length; i++) {
             const p = poses[i];
 
-            // GIF url
+            /* GIF url */
             let gif = '';
             const urls = p.getElementsByTagName('url');
-            for (let u of urls) {
+            for (const u of urls) {
                 const t = u.getAttribute('type');
                 if (!t || t === 'gif') { gif = u.textContent.trim(); break; }
             }
             if (!gif && urls.length) gif = urls[0].textContent.trim();
 
-            // muscles
+            /* muscles */
             const muscNode = p.getElementsByTagName('Focused_Muscles')[0];
             let muscles = 'Core & stabilizers';
             if (muscNode) {
                 const prim = muscNode.getElementsByTagName('Primary')[0];
-                muscles = prim ? prim.textContent.trim() : muscNode.textContent.trim().replace(/\s+/g, ' ');
+                muscles = prim
+                    ? prim.textContent.trim()
+                    : muscNode.textContent.trim().replace(/\s+/g, ' ');
                 if (muscles.length > 70) muscles = muscles.slice(0, 68) + '…';
             }
 
-            // diseases
-            const dcNode = p.getElementsByTagName('Diseases_Cured')[0];
-            let diseases = 'Supports overall mobility';
-            if (dcNode) {
-                const targ = dcNode.getElementsByTagName('Targeted')[0];
-                diseases = targ ? targ.textContent.trim() : dcNode.textContent.trim().replace(/\s+/g, ' ').slice(0, 120);
-            }
-
-            // steps
+            /* steps */
             const steps = [];
-            const stepNodes = p.getElementsByTagName('step');
-            for (let s of stepNodes) {
+            for (const s of p.getElementsByTagName('step')) {
                 steps.push({
                     order: s.getAttribute('order') || (steps.length + 1),
                     focus: s.getAttribute('focus') || 'Movement',
@@ -581,29 +589,28 @@
                 });
             }
 
-            // mistakes
+            /* mistakes */
             const mistakes = [];
             const cmNode = p.getElementsByTagName('common_mistakes')[0];
             if (cmNode) {
-                for (let m of cmNode.getElementsByTagName('mistake')) {
+                for (const m of cmNode.getElementsByTagName('mistake')) {
                     const t = m.textContent.trim();
                     if (t) mistakes.push(t);
                 }
             }
 
             out.push({
-                id:            p.getAttribute('id') || i,
-                name:          getText(p, 'Name') || 'Exercise',
-                difficulty:    normDiff(p.getAttribute('difficulty')),
-                poseType:      p.getAttribute('Pose_type') || 'Functional',
-                safety:        p.getAttribute('safety') || '',
+                id:         p.getAttribute('id') || i,
+                name:       getExerciseName(p),
+                difficulty: normDiff(p.getAttribute('difficulty')),
+                poseType:   p.getAttribute('Pose_type') || 'Functional',
+                safety:     p.getAttribute('safety') || '',
                 gif,
-                equipment:     getText(p, 'Equipment') || 'No equipment',
+                equipment:  getTextByTag(p, 'Equipment') || 'No equipment',
                 muscles,
-                weightMax:     getText(p, 'Weight_Max') || '',
-                ageGrp:        getText(p, 'Age_Grp') || '',
-                preferredTime: getText(p, 'Preferred_Time') || getText(p, 'Preferred') || 'Anytime, after warm-up',
-                diseases,
+                weightMax:  getTextByTag(p, 'Weight_Max') || '',
+                ageGrp:     getTextByTag(p, 'Age_Grp') || '',
+                injuries:   getTextByTag(p, 'Not_For_Injuries') || '',
                 steps,
                 mistakes
             });
@@ -611,32 +618,37 @@
         return out;
     }
 
-    /* ── fetch with CORS fallbacks ───────────── */
+    /* ── fetch with CORS fallbacks ───────────────────────── */
     async function fetchXml() {
         const errors = [];
         const proxies = [
-            { label: 'Direct (GitHub raw)',  url: XML_RAW_URL },
-            { label: 'allorigins proxy',     url: `https://api.allorigins.win/raw?url=${encodeURIComponent(XML_RAW_URL)}` },
-            { label: 'corsproxy.io',         url: `https://corsproxy.io/?${encodeURIComponent(XML_RAW_URL)}` },
-            { label: 'codetabs proxy',       url: `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(XML_RAW_URL)}` },
+            { label: 'Direct (GitHub raw)', url: XML_RAW_URL },
+            { label: 'allorigins proxy',    url: `https://api.allorigins.win/raw?url=${encodeURIComponent(XML_RAW_URL)}` },
+            { label: 'corsproxy.io',        url: `https://corsproxy.io/?${encodeURIComponent(XML_RAW_URL)}` },
+            { label: 'codetabs proxy',      url: `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(XML_RAW_URL)}` },
         ];
         for (const { label, url } of proxies) {
             try {
-                const res = await fetch(url, { cache: 'no-store', headers: { Accept: 'application/xml, text/xml, */*' } });
+                const res = await fetch(url, {
+                    cache: 'no-store',
+                    headers: { Accept: 'application/xml, text/xml, */*' }
+                });
                 if (!res.ok) { errors.push(`${label}: HTTP ${res.status}`); continue; }
                 const txt = await res.text();
                 if (txt.includes('<Pose')) return txt;
-                errors.push(`${label}: responded but no <Pose> found (got ${txt.length} chars)`);
+                errors.push(`${label}: no <Pose> found (${txt.length} chars). First 200: ${txt.slice(0,200)}`);
             } catch (e) {
                 errors.push(`${label}: ${e.message}`);
             }
         }
         throw new Error(
-            `All fetch attempts failed for Arm.xml.\n\nDetails:\n${errors.join('\n')}\n\nMake sure:\n• The file is named exactly "Arm.xml" (case-sensitive)\n• The repository is PUBLIC\n• The file is on the "main" branch`
+            `All fetch attempts failed.\n\nDetails:\n${errors.join('\n')}\n\nCheck that:\n• Repository is PUBLIC\n• File is on "main" branch\n• Filename is exactly "arms.xml" (lowercase)`
         );
     }
 
-    /* ── card builder ────────────────────────── */
+    /* ── card builder ────────────────────────────────────── */
+    const FALLBACK_IMG = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180"%3E%3Crect width="320" height="180" fill="%23151515"/%3E%3Ctext x="50%25" y="50%25" fill="%23333" font-size="13" font-family="sans-serif" text-anchor="middle" dy=".3em"%3EPreview unavailable%3C/text%3E%3C/svg%3E';
+
     function buildCard(pose) {
         const card = document.createElement('div');
         card.className = 'exercise-card';
@@ -646,15 +658,14 @@
         card.addEventListener('click', () => openModal(pose));
         card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') openModal(pose); });
 
-        // media
+        /* media */
         const media = document.createElement('div');
         media.className = 'card-media';
         const img = document.createElement('img');
         img.alt = pose.name;
         img.loading = 'lazy';
-        const FALLBACK = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180"%3E%3Crect width="320" height="180" fill="%23151515"/%3E%3Ctext x="50%25" y="50%25" fill="%23333" font-size="13" font-family="sans-serif" text-anchor="middle" dy=".3em"%3EPreview unavailable%3C/text%3E%3C/svg%3E';
-        img.src = pose.gif && pose.gif.startsWith('http') ? pose.gif : FALLBACK;
-        img.onerror = () => { img.src = FALLBACK; };
+        img.src = (pose.gif && pose.gif.startsWith('http')) ? pose.gif : FALLBACK_IMG;
+        img.onerror = () => { img.src = FALLBACK_IMG; };
         const overlay = document.createElement('div');
         overlay.className = 'card-media-overlay';
         const badge = document.createElement('div');
@@ -664,17 +675,19 @@
         media.appendChild(overlay);
         media.appendChild(badge);
 
-        // body
+        /* body */
         const body = document.createElement('div');
         body.className = 'card-body';
+
         const name = document.createElement('div');
         name.className = 'card-name';
         name.textContent = pose.name;
+
         const meta = document.createElement('div');
         meta.className = 'card-meta';
         meta.innerHTML = `
-            <span class="meta-chip">🛠️ <strong>${esc(pose.equipment.slice(0, 35))}</strong></span>
-            <span class="meta-chip">🎯 ${esc(pose.muscles.slice(0, 50))}</span>
+            <span class="meta-chip">🛠️ <strong>${esc(pose.equipment.slice(0,35))}</strong></span>
+            <span class="meta-chip">🎯 ${esc(pose.muscles.slice(0,50))}</span>
         `;
         const hint = document.createElement('div');
         hint.className = 'card-tap-hint';
@@ -688,21 +701,20 @@
         return card;
     }
 
-    /* ── modal ───────────────────────────────── */
+    /* ── modal ───────────────────────────────────────────── */
     function openModal(pose) {
         const mb = document.getElementById('modal_body');
         mb.innerHTML = '';
 
-        // image
         if (pose.gif && pose.gif.startsWith('http')) {
             const img = document.createElement('img');
             img.src = pose.gif;
             img.className = 'modal-img';
             img.alt = pose.name;
+            img.onerror = () => { img.src = FALLBACK_IMG; };
             mb.appendChild(img);
         }
 
-        // title + meta chips
         const title = document.createElement('div');
         title.className = 'modal-title';
         title.textContent = pose.name;
@@ -718,16 +730,15 @@
         });
         mb.appendChild(chips);
 
-        // info grid
+        /* info grid */
         const grid = document.createElement('div');
         grid.className = 'modal-info-grid';
-        const cells = [
-            ['📦 Equipment', pose.equipment],
-            ['💪 Muscles', pose.muscles],
+        [
+            ['📦 Equipment',   pose.equipment],
+            ['💪 Muscles',     pose.muscles],
             ['⚖️ Weight Range', pose.weightMax || 'Bodyweight'],
-            ['🌟 Helps With', pose.diseases],
-        ];
-        cells.forEach(([label, val]) => {
+            ['🚫 Avoid If',    pose.injuries],
+        ].forEach(([label, val]) => {
             if (!val) return;
             const cell = document.createElement('div');
             cell.className = 'info-cell';
@@ -736,7 +747,7 @@
         });
         mb.appendChild(grid);
 
-        // safety note
+        /* safety note */
         if (pose.safety) {
             const safeDiv = document.createElement('div');
             safeDiv.style.cssText = 'background:#12130a;border:1px solid rgba(168,85,247,0.15);border-radius:12px;padding:0.8rem 1rem;font-size:0.78rem;color:#c4a8d4;line-height:1.55;margin-bottom:0.5rem;';
@@ -744,7 +755,7 @@
             mb.appendChild(safeDiv);
         }
 
-        // steps
+        /* steps */
         if (pose.steps.length) {
             const st = document.createElement('div');
             st.className = 'steps-title';
@@ -765,7 +776,7 @@
             });
         }
 
-        // mistakes
+        /* mistakes */
         if (pose.mistakes.length) {
             const mt = document.createElement('div');
             mt.className = 'mistakes-title';
@@ -782,7 +793,6 @@
         const modal = document.getElementById('steps_modal');
         modal.style.display = 'flex';
         document.body.style.overflow = 'hidden';
-        // scroll modal to top
         modal.querySelector('.modal_inner').scrollTop = 0;
     }
 
@@ -795,32 +805,27 @@
     });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') window.closeModalFunc(); });
 
-    /* ── populate (fully dynamic — any difficulty value) ── */
+    /* ── populate sections ───────────────────────────────── */
     function populate(poses) {
-        // Group by difficulty
         const groups = {};
         poses.forEach(p => {
             if (!groups[p.difficulty]) groups[p.difficulty] = [];
             groups[p.difficulty].push(p);
         });
 
-        // Sort keys: known levels first in order, then any unknowns alphabetically
-        const knownKeys = LEVEL_ORDER.filter(l => groups[l]);
+        const knownKeys   = LEVEL_ORDER.filter(l => groups[l]);
         const unknownKeys = Object.keys(groups).filter(k => !LEVEL_ORDER.includes(k)).sort();
         const orderedKeys = [...knownKeys, ...unknownKeys];
 
-        // Inject sections into DOM dynamically
         const container = document.getElementById('sections_container');
         container.innerHTML = '';
 
         orderedKeys.forEach(lvl => {
-            const arr = groups[lvl];
+            const arr  = groups[lvl];
             const meta = LEVEL_META[lvl] || { emoji: '⚫', dot: '#666', label: lvl.toUpperCase() };
 
-            // Section wrapper
-            const sec = document.createElement('div');
+            const sec  = document.createElement('div');
 
-            // Section heading
             const head = document.createElement('div');
             head.className = 'section-head';
             head.innerHTML = `
@@ -831,7 +836,6 @@
                 </span>
             `;
 
-            // Grid
             const grid = document.createElement('div');
             grid.className = 'exercise-grid';
             arr.forEach(p => grid.appendChild(buildCard(p)));
@@ -842,31 +846,44 @@
         });
     }
 
-    /* ── init ────────────────────────────────── */
+    /* ── init ────────────────────────────────────────────── */
     async function init() {
-        const loading = document.getElementById('loading_msg');
+        const loading  = document.getElementById('loading_msg');
         const errorDiv = document.getElementById('error_msg');
-        loading.style.display = 'flex';
+        loading.style.display  = 'flex';
         errorDiv.style.display = 'none';
+        document.getElementById('sections_container').innerHTML = '';
+
         try {
             const raw = await fetchXml();
+
+            /* Sanitise bare ampersands that would break the XML parser */
             const clean = raw.replace(/&(?!(amp|lt|gt|quot|apos|#x?[0-9a-fA-F]+);)/g, '&amp;');
+
             const parser = new DOMParser();
             const doc = parser.parseFromString(clean, 'text/xml');
-            const err = doc.querySelector('parsererror');
-            if (err) throw new Error('XML parse error: ' + err.textContent.slice(0, 200));
+
+            /* Check for a fatal parse error */
+            const parseErr = doc.querySelector('parsererror');
+            if (parseErr) throw new Error('XML parse error: ' + parseErr.textContent.slice(0, 300));
+
             const poses = parsePoses(doc);
-            if (!poses.length) throw new Error('No exercises found in Legs.xml.');
+            if (!poses.length) throw new Error('Parsed successfully but found 0 exercises.');
+
             populate(poses);
             loading.style.display = 'none';
+
         } catch (err) {
-            console.error(err);
-            loading.style.display = 'none';
+            console.error('[ArmLab]', err);
+            loading.style.display  = 'none';
             errorDiv.style.display = 'block';
             errorDiv.innerHTML = `
                 <div style="font-size:1.1rem;margin-bottom:10px;font-weight:700;">⚠️ LOAD FAILED</div>
-                <div style="background:#0e0a0a;padding:0.9rem;border-radius:12px;font-size:0.82rem;color:#f88;">${esc(err.message)}</div>
-                <div style="margin-top:0.9rem;font-size:0.75rem;color:#666;">Ensure <code style="background:#000;padding:2px 6px;border-radius:4px;">${XML_RAW_URL}</code> is publicly accessible.</div>
+                <div style="background:#0e0a0a;padding:0.9rem;border-radius:12px;font-size:0.82rem;color:#f88;white-space:pre-wrap;text-align:left;">${esc(err.message)}</div>
+                <div style="margin-top:0.9rem;font-size:0.75rem;color:#666;">
+                    Fetching from:<br>
+                    <code style="background:#000;padding:2px 6px;border-radius:4px;word-break:break-all;">${esc(XML_RAW_URL)}</code>
+                </div>
                 <button class="retry-btn" id="retryBtn">⟳ RETRY</button>
             `;
             document.getElementById('retryBtn').addEventListener('click', init);
