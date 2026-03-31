@@ -215,3 +215,1255 @@
     </Pose>
 
 </YogaPoseCatalog>
+<?xml version="1.0" encoding="UTF-8"?>
+<YogaPoseCatalog>
+    
+    <!-- ======================================================== -->
+    <!-- BEGINNER LEVEL YOGA POSES -->
+    <!-- ======================================================== -->
+    
+    <!-- STANDING POSES - Beginner -->
+    
+    <Pose id="YOGA-B-01" difficulty="Beginner" safety="Keep your weight evenly distributed on both feet. Avoid locking your knees—keep a micro-bend. Engage your core to protect your lower back. If you feel dizzy, come out of the pose gently." Pose_type="Yoga, Standing, Foundation">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/mountain_pose_tadasana.gif</url>
+        <Name>Mountain Pose (Tadasana)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Full body alignment—spine, core, legs, feet</Focused_Muscles>
+        <Hold_Time>30-60 seconds</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Severe vertigo, recent knee surgery, uncontrolled high blood pressure</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with your feet together or hip-width apart. Distribute your weight evenly across all four corners of your feet.</step>
+            <step order="2" focus="Align">Engage your thighs, lift your kneecaps slightly (without locking knees). Tuck your tailbone slightly. Lengthen your spine.</step>
+            <step order="3" focus="Open Chest">Roll your shoulders back and down. Let your arms hang naturally at your sides with palms facing forward or inward.</step>
+            <step order="4" focus="Hold">Keep your chin parallel to the floor. Soften your gaze. Breathe deeply for 30-60 seconds.</step>
+            <step order="5" focus="Tip">Mountain pose looks simple but is the foundation for all standing poses. Imagine a string pulling the crown of your head toward the ceiling.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Locking the knees.</mistake>
+            <mistake>Slouching or rounding shoulders forward.</mistake>
+            <mistake>Arching the lower back excessively.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-B-02" difficulty="Beginner" safety="Practice near a wall for balance support. Do not place your foot directly on your knee joint. If you have high or low blood pressure, raise your arms only when stable." Pose_type="Yoga, Standing, Balance">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/tree_pose_vrksasana.gif</url>
+        <Name>Tree Pose (Vrksasana)</Name>
+        <Equipment>Yoga Mat, Wall (Optional)</Equipment>
+        <Focused_Muscles>Standing leg (quadriceps, glutes, calves), core, hip abductors</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Recent knee surgery, severe ankle instability, inner ear disorders affecting balance</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Start in Mountain Pose. Shift weight to your left foot. Find a focal point (drishti) at eye level.</step>
+            <step order="2" focus="Place Foot">Bend your right knee and place the sole of your right foot on your left inner thigh (above knee) or calf (below knee). Never place foot on the knee joint.</step>
+            <step order="3" focus="Hands">Bring palms together at your heart center. For more challenge, raise arms overhead.</step>
+            <step order="4" focus="Hold">Press your foot into your leg and your leg back into your foot. Hold for 30 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">If you wobble, that's okay. Engage your core and soften your gaze. Imagine roots growing from your standing foot into the earth.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Placing foot on the knee joint.</mistake>
+            <mistake>Leaning toward the lifted leg.</mistake>
+            <mistake>Locking the standing knee.</mistake>
+            <mistake>Looking down instead of at a drishti.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-B-03" difficulty="Beginner" safety="Keep your front knee bent at 90 degrees, aligned over your ankle. Do not let your knee extend past your toes. Engage your core to protect your lower back." Pose_type="Yoga, Standing, Hip Opener">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/warrior_i_pose.gif</url>
+        <Name>Warrior I (Virabhadrasana I)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Quadriceps, glutes, hamstrings, hip flexors, shoulders, core</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Recent knee injury, high blood pressure (uncontrolled), heart conditions</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand at the front of your mat. Step your left foot back 3-4 feet. Turn your left foot out 45 degrees. Square your hips toward the front.</step>
+            <step order="2" focus="Bend Front Knee">Bend your right knee to 90 degrees, directly over your ankle. Keep your back leg straight and strong.</step>
+            <step order="3" focus="Arms">On an inhale, sweep your arms overhead with palms facing each other or together. Lift your chest.</step>
+            <step order="4" focus="Hold">Keep your shoulders relaxed away from your ears. Gaze forward or slightly up. Hold for 30 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Imagine your back foot is pressing firmly into the floor and your front knee is pushing forward like pressing against a wall.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting front knee extend past toes.</mistake>
+            <mistake>Collapsing the lower back arch.</mistake>
+            <mistake>Lifting shoulders toward ears.</mistake>
+            <mistake>Hips not squared to the front.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-B-04" difficulty="Beginner" safety="Keep your front knee bent at 90 degrees, aligned over your ankle. Open your hips to the side. Keep your shoulders stacked over your hips." Pose_type="Yoga, Standing, Hip Opener">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/warrior_ii_pose.gif</url>
+        <Name>Warrior II (Virabhadrasana II)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Quadriceps, glutes, hamstrings, inner thighs, shoulders, core</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Recent knee injury, high blood pressure (uncontrolled)</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand at the front of your mat. Step your left foot back 3-4 feet. Turn your left foot out 90 degrees, right foot forward.</step>
+            <step order="2" focus="Bend Front Knee">Bend your right knee to 90 degrees, directly over your ankle. Open your hips to the side (facing the long edge of your mat).</step>
+            <step order="3" focus="Arms">Extend your arms out to the sides at shoulder height, palms down. Gaze over your right fingertips.</step>
+            <step order="4" focus="Hold">Keep your shoulders stacked directly over your hips. Hold for 30 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Imagine your arms are being pulled in opposite directions. Press through the outer edge of your back foot.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting front knee collapse inward.</mistake>
+            <mistake>Leaning torso toward the front leg.</mistake>
+            <mistake>Lifting shoulders toward ears.</mistake>
+            <mistake>Back foot not pressing down firmly.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-B-05" difficulty="Beginner" safety="Keep your legs straight but not locked. Avoid rounding your back. Reach through both sides of your torso equally. If you have neck issues, keep your gaze forward instead of looking up." Pose_type="Yoga, Standing, Side Stretch">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/triangle_pose_trikonasana.gif</url>
+        <Name>Triangle Pose (Trikonasana)</Name>
+        <Equipment>Yoga Mat, Block (Optional)</Equipment>
+        <Focused_Muscles>Hamstrings, inner thighs, obliques, spinal muscles, shoulders</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Recent hamstring tear, lower back herniation, neck injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet 3-4 feet apart. Turn your right foot out 90 degrees, left foot in slightly. Align your heels.</step>
+            <step order="2" focus="Reach">Extend your arms out to the sides at shoulder height. Reach forward through your right fingertips.</step>
+            <step order="3" focus="Hinge">Hinge at your right hip, lowering your right hand to your shin, ankle, or a block. Reach your left arm straight up toward the ceiling.</step>
+            <step order="4" focus="Hold">Keep both legs straight. Open your chest toward the side. Gaze up at your left thumb or forward. Hold for 30 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Imagine your torso is sandwiched between two glass panes—avoid leaning forward or backward. Lengthen through both sides of your waist equally.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the spine.</mistake>
+            <mistake>Locking the knees.</mistake>
+            <mistake>Letting the bottom hand bear weight on the knee.</mistake>
+            <mistake>Looking down instead of up (if neck allows).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- SEATED POSES - Beginner -->
+    
+    <Pose id="YOGA-S-01" difficulty="Beginner" safety="Sit on a folded blanket or block if your hips are tight. Keep your spine tall. Avoid slouching or rounding your back." Pose_type="Yoga, Seated, Meditation">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/easy_pose_sukhasana.gif</url>
+        <Name>Easy Pose (Sukhasana)</Name>
+        <Equipment>Yoga Mat, Cushion or Blanket (Optional)</Equipment>
+        <Focused_Muscles>Hip rotators, spine, core (gentle engagement)</Focused_Muscles>
+        <Hold_Time>1-2 minutes</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Recent hip surgery, severe knee arthritis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on your mat. Cross your shins, placing each foot under the opposite knee. If needed, elevate your hips with a blanket or block.</step>
+            <step order="2" focus="Align">Stack your spine tall. Roll your shoulders back and down. Rest your hands on your knees with palms up or down.</step>
+            <step order="3" focus="Relax">Soften your gaze or close your eyes. Relax your jaw and tongue. Breathe naturally for 1-2 minutes.</step>
+            <step order="4" focus="Tip">If one knee sits higher than the other, place a block or folded blanket under the higher knee for support.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Slouching or rounding the back.</mistake>
+            <mistake>Lifting shoulders toward ears.</mistake>
+            <mistake>Letting knees float too high without support.</mistake>
+            <mistake>Holding tension in the face or jaw.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-S-02" difficulty="Beginner" safety="Keep your legs straight but not locked. Engage your thigh muscles. If your lower back rounds, sit on a folded blanket to tilt your pelvis forward." Pose_type="Yoga, Seated, Posture">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/staff_pose_dandasana.gif</url>
+        <Name>Staff Pose (Dandasana)</Name>
+        <Equipment>Yoga Mat, Blanket (Optional)</Equipment>
+        <Focused_Muscles>Spine, hamstrings, quadriceps, core</Focused_Muscles>
+        <Hold_Time>30-60 seconds</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Recent hamstring tear, lower back herniation</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on your mat with your legs extended straight in front of you. Sit on a blanket if your lower back rounds.</step>
+            <step order="2" focus="Engage Legs">Press through your heels. Engage your thigh muscles. Point your toes toward the ceiling (flex feet).</step>
+            <step order="3" focus="Spine">Stack your spine tall. Place your hands beside your hips with fingers pointing forward. Press down through your hands.</step>
+            <step order="4" focus="Hold">Lift through the crown of your head. Draw your shoulders back and down. Hold for 30-60 seconds.</step>
+            <step order="5" focus="Tip">Staff pose is the seated equivalent of Mountain Pose. Use it as a foundation for seated forward folds and twists.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Locking the knees.</mistake>
+            <mistake>Pointing toes (flexing feet protects the knees).</mistake>
+            <mistake>Slouching shoulders forward.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-S-03" difficulty="Beginner" safety="Keep your spine long—hinge from your hips, not your waist. Only go as far as you can with a flat back. Use a strap around your feet if you can't reach your toes." Pose_type="Yoga, Seated, Forward Fold">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_forward_fold_paschimottanasana.gif</url>
+        <Name>Seated Forward Fold (Paschimottanasana)</Name>
+        <Equipment>Yoga Mat, Strap (Optional), Blanket (Optional)</Equipment>
+        <Focused_Muscles>Hamstrings, spine, lower back, calves</Focused_Muscles>
+        <Hold_Time>30-60 seconds</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Recent hamstring tear, lower back herniation, sciatica (severe)</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit in Staff Pose (Dandasana). Sit on a blanket if your lower back rounds.</step>
+            <step order="2" focus="Inhale">Inhale and lengthen your spine. Reach your arms overhead.</step>
+            <step order="3" focus="Fold">Exhale as you hinge forward from your hips, keeping your back flat. Reach for your feet, shins, or ankles.</step>
+            <step order="4" focus="Hold">If you can, hold your feet with your hands. Let your head relax. Breathe deeply for 30-60 seconds.</step>
+            <step order="5" focus="Tip">Imagine your torso is a flat tabletop folding over your legs. If your hamstrings are tight, bend your knees slightly.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the spine to reach the feet.</mistake>
+            <mistake>Hinging from the waist instead of the hips.</mistake>
+            <mistake>Pulling aggressively on the feet.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-S-04" difficulty="Beginner" safety="Do not force your knees toward the floor. If you have knee or groin injuries, place blocks or blankets under your thighs for support." Pose_type="Yoga, Seated, Hip Opener">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/butterfly_pose_baddha_konasana.gif</url>
+        <Name>Butterfly Pose (Baddha Konasana)</Name>
+        <Equipment>Yoga Mat, Blocks or Blankets (Optional)</Equipment>
+        <Focused_Muscles>Hip adductors (inner thighs/groin), hip flexors, lower back</Focused_Muscles>
+        <Hold_Time>1-2 minutes</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Recent groin injury, severe hip arthritis, knee injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on your mat. Bend your knees and bring the soles of your feet together. Let your knees drop out to the sides.</step>
+            <step order="2" focus="Hold Feet">Hold your feet or ankles with your hands. Sit on a blanket if your lower back rounds.</step>
+            <step order="3" focus="Flutter (Optional)">Gently press your knees up and down like butterfly wings for 15-20 flaps.</step>
+            <step order="4" focus="Static Hold">Keep your spine tall. On an exhale, hinge forward from your hips for a deeper stretch. Hold for 1-2 minutes.</step>
+            <step order="5" focus="Tip">Imagine your knees are heavy and melting toward the floor. Do not push them down with your hands—let gravity work.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Forcing knees down with hands.</mistake>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Lifting shoulders toward ears.</mistake>
+            <mistake>Holding tension in the face.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-S-05" difficulty="Beginner" safety="If you have knee or ankle injuries, place a folded blanket under your knees. Rest your forehead on a block if you cannot reach the floor. Avoid this pose if you have diarrhea or recent abdominal surgery." Pose_type="Yoga, Seated, Restorative">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/childs_pose_balasana.gif</url>
+        <Name>Child's Pose (Balasana)</Name>
+        <Equipment>Yoga Mat, Blanket or Block (Optional)</Equipment>
+        <Focused_Muscles>Lower back, hips, quadriceps, shoulders, neck</Focused_Muscles>
+        <Hold_Time>1-2 minutes</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Recent knee surgery, late pregnancy (avoid deep pressure on abdomen), diarrhea</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Kneel on your mat with your knees wide and big toes touching. Sit back on your heels.</step>
+            <step order="2" focus="Fold">Exhale as you fold your torso forward, resting your belly between your thighs.</step>
+            <step order="3" focus="Rest">Rest your forehead on the floor. Extend your arms forward or alongside your body with palms up.</step>
+            <step order="4" focus="Hold">Breathe deeply into your lower back. Hold for 1-2 minutes. To release, walk your hands back and slowly roll up.</step>
+            <step order="5" focus="Tip">Child's pose is a resting pose. Use it anytime you need a break during your practice. Place a block under your forehead if it doesn't reach the floor.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lifting the hips off the heels.</mistake>
+            <mistake>Tension in the neck or shoulders.</mistake>
+            <mistake>Holding the breath.</mistake>
+            <mistake>Rushing to come out of the pose.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LYING POSES - Beginner -->
+    
+    <Pose id="YOGA-L-01" difficulty="Beginner" safety="This is a resting pose. Allow your body to completely relax. If you have lower back discomfort, place a blanket under your knees." Pose_type="Yoga, Restorative, Relaxation">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/corpse_pose_savasana.gif</url>
+        <Name>Corpse Pose (Savasana)</Name>
+        <Equipment>Yoga Mat, Blanket (Optional), Eye Pillow (Optional)</Equipment>
+        <Focused_Muscles>Full body relaxation—no active muscle engagement</Focused_Muscles>
+        <Hold_Time>3-5 minutes</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Late pregnancy (lie on left side instead), severe sleep apnea</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie flat on your back. Let your feet fall open naturally. Place your arms alongside your body with palms facing up.</step>
+            <step order="2" focus="Adjust">Tuck your shoulder blades under your chest. Lengthen the back of your neck. Close your eyes.</step>
+            <step order="3" focus="Release">Systematically relax each part of your body from your toes to the crown of your head.</step>
+            <step order="4" focus="Hold">Let your breath become natural and effortless. Rest for 3-5 minutes. To come out, gently roll to your right side and press yourself up.</step>
+            <step order="5" focus="Tip">Savasana is the most important pose of your practice. It allows your body to integrate the benefits. If your mind wanders, gently bring it back to your breath.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Keeping muscles engaged (fully relax).</mistake>
+            <mistake>Thinking of it as "doing nothing" (it's an active relaxation).</mistake>
+            <mistake>Falling asleep (gentle awareness is the goal).</mistake>
+            <mistake>Rushing to get up at the end.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-L-02" difficulty="Beginner" safety="Keep both shoulders on the floor. Turn your head in the same direction as your bent knees. Use a blanket under your head if needed." Pose_type="Yoga, Lying, Spinal Twist">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/supine_twist_supta_matsyendrasana.gif</url>
+        <Name>Supine Twist (Supta Matsyendrasana)</Name>
+        <Equipment>Yoga Mat, Blanket (Optional)</Equipment>
+        <Focused_Muscles>Spine (rotators), lower back, chest, shoulders, glutes</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Recent spinal surgery, herniated disc (severe), osteoporosis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on your back. Hug your right knee into your chest.</step>
+            <step order="2" focus="Cross">Cross your right knee over your body to the left side. Extend your right arm out to the side at shoulder height.</step>
+            <step order="3" focus="Gaze">Turn your head to look at your right hand. Keep both shoulders on the floor.</step>
+            <step order="4" focus="Hold">Hold for 30 seconds. To release, bring your knee back to center. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Use your left hand on your right knee to gently deepen the twist. Breathe into the side of your torso.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting the top shoulder lift off the floor.</mistake>
+            <mistake>Forcing the twist beyond comfortable range.</mistake>
+            <mistake>Holding the breath.</mistake>
+            <mistake>Turning head opposite to the twist (keep same side).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-L-03" difficulty="Beginner" safety="Keep your sacrum (lower back) on the floor. If you have neck or knee issues, support your head with a blanket and avoid pulling on your feet." Pose_type="Yoga, Lying, Hip Opener">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/happy_baby_ananda_balasana.gif</url>
+        <Name>Happy Baby (Ananda Balasana)</Name>
+        <Equipment>Yoga Mat, Blanket (Optional)</Equipment>
+        <Focused_Muscles>Hip adductors (groin), lower back, hamstrings, shoulders</Focused_Muscles>
+        <Hold_Time>1-2 minutes</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Recent knee surgery, neck injury, late pregnancy</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on your back. Bend your knees toward your chest.</step>
+            <step order="2" focus="Grip">Reach your hands between your legs and grip the outsides of your feet (or ankles).</step>
+            <step order="3" focus="Position">Open your knees wider than your torso, bringing them toward your armpits. Stack your ankles directly over your knees.</step>
+            <step order="4" focus="Hold">Gently pull your feet down with your hands. Rock gently side to side. Hold for 1-2 minutes.</step>
+            <step order="5" focus="Tip">Imagine you are a happy baby playing with your feet. Keep your sacrum on the floor—don't let your lower back lift.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lifting the lower back off the floor.</mistake>
+            <mistake>Knees too far apart (should be aligned with armpits).</mistake>
+            <mistake>Pulling feet aggressively.</mistake>
+            <mistake>Holding tension in the neck.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-L-04" difficulty="Beginner" safety="Place a folded blanket under your hips for comfort. Do not force your legs to touch the wall if your hamstrings are tight. If you have high blood pressure, place a pillow under your head." Pose_type="Yoga, Restorative, Inversion">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/legs_up_the_wall_viparita_karani.gif</url>
+        <Name>Legs Up the Wall (Viparita Karani)</Name>
+        <Equipment>Yoga Mat, Wall, Blanket (Optional)</Equipment>
+        <Focused_Muscles>Hamstrings (passive stretch), lower back (release), legs (drainage)</Focused_Muscles>
+        <Hold_Time>2-5 minutes</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Glaucoma, detached retina, high blood pressure (uncontrolled), recent hip surgery</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit sideways next to a wall. Swing your legs up as you lie back. Your hips should be close to the wall.</step>
+            <step order="2" focus="Adjust">Rest your legs vertically against the wall. Place a folded blanket under your hips for comfort if desired.</step>
+            <step order="3" focus="Arms">Rest your arms alongside your body with palms up. Close your eyes.</step>
+            <step order="4" focus="Hold">Breathe deeply and rest for 2-5 minutes. To release, bend your knees and roll to your side.</step>
+            <step order="5" focus="Tip">This pose helps drain fluid from the legs and calms the nervous system. Perfect before bed or after standing all day.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Hips too far from the wall.</mistake>
+            <mistake>Tensing the leg muscles (relax and let the wall support you).</mistake>
+            <mistake>Holding the breath.</mistake>
+            <mistake>Rushing to come out (bend knees and roll slowly).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- BALANCING POSES - Beginner -->
+    
+    <Pose id="YOGA-BAL-01" difficulty="Beginner" safety="Keep your weight in your heels. Do not let your knees extend past your toes. Engage your core to protect your lower back. If you have knee issues, avoid deep bending." Pose_type="Yoga, Standing, Strength">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/chair_pose_utkatasana.gif</url>
+        <Name>Chair Pose (Utkatasana)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Quadriceps, glutes, core, spine, shoulders</Focused_Muscles>
+        <Hold_Time>20-30 seconds</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Recent knee surgery, patellofemoral pain, lower back herniation</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand in Mountain Pose with feet together or hip-width apart.</step>
+            <step order="2" focus="Sit Back">Inhale, raise arms overhead. Exhale as you sit back as if sitting in an invisible chair.</step>
+            <step order="3" focus="Weight">Keep your weight in your heels. Do not let your knees extend past your toes.</step>
+            <step order="4" focus="Hold">Keep your back flat, chest lifted. Gaze forward or slightly up. Hold for 20-30 seconds. Release on an exhale.</step>
+            <step order="5" focus="Tip">Imagine you are squeezing a block between your thighs to engage your inner legs. Press your heels down as if trying to lift your toes.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Knees extending past toes.</mistake>
+            <mistake>Collapsing the lower back arch.</mistake>
+            <mistake>Weight shifting to the balls of the feet.</mistake>
+            <mistake>Lifting shoulders toward ears.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-BAL-02" difficulty="Beginner" safety="Practice with a wall or chair for support. Keep your standing leg straight but not locked. Keep your hips level." Pose_type="Yoga, Standing, Balance">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/warrior_iii_modified.gif</url>
+        <Name>Warrior III (Modified, with Support)</Name>
+        <Equipment>Yoga Mat, Wall or Chair for Support</Equipment>
+        <Focused_Muscles>Standing leg (glutes, hamstrings, quadriceps), core, spinal extensors</Focused_Muscles>
+        <Hold_Time>20 seconds each side</Hold_Time>
+        <Age_Grp>All ages</Age_Grp>
+        <Not_For_Injuries>Recent knee injury, ankle instability, high blood pressure (uncontrolled)</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand facing a wall or place hands on a chair. Shift weight to your left foot.</step>
+            <step order="2" focus="Lift">Inhale as you lift your right leg behind you, keeping it straight. Hinge forward from your hips.</step>
+            <step order="3" focus="Align">Keep your hips level. Your torso, lifted leg, and arms should form a straight line parallel to the floor.</step>
+            <step order="4" focus="Hold">Hold for 20 seconds. To release, lower your leg and return to standing. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Imagine a string pulling your heel back and the crown of your head forward. Keep your standing leg engaged but not locked.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Locking the standing knee.</mistake>
+            <mistake>Lifting the lifted leg hip higher than the standing leg side.</mistake>
+            <mistake>Rounding the upper back.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- NOVICE LEVEL YOGA POSES -->
+    <!-- ======================================================== -->
+    
+    <!-- STANDING POSES - Novice -->
+    
+    <Pose id="YOGA-N-01" difficulty="Novice" safety="Keep your front knee at 90 degrees, aligned over your ankle. Square your hips as much as possible. If you have high blood pressure, keep your arms at heart level instead of overhead." Pose_type="Yoga, Standing, Hip Opener">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/warrior_i_deep.gif</url>
+        <Name>Warrior I (Deep - Virabhadrasana I)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Quadriceps, glutes, hamstrings, hip flexors, shoulders, core</Focused_Muscles>
+        <Hold_Time>45 seconds each side</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Recent knee injury, high blood pressure (uncontrolled)</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">From Mountain Pose, step your left foot back 3-4 feet. Turn your left foot out 45 degrees. Square your hips forward.</step>
+            <step order="2" focus="Bend Front Knee">Bend your right knee to 90 degrees, directly over your ankle. Keep your back leg straight and strong.</step>
+            <step order="3" focus="Arms">On an inhale, sweep your arms overhead with palms facing each other or together. Lift your chest.</step>
+            <step order="4" focus="Hold">Keep your shoulders relaxed. Gaze forward or slightly up. Hold for 45 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Press the outer edge of your back foot firmly into the mat. Imagine your front knee is pressing against a wall.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting front knee extend past toes.</mistake>
+            <mistake>Collapsing the lower back arch.</mistake>
+            <mistake>Hips not squared to the front.</mistake>
+            <mistake>Lifting shoulders toward ears.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-N-02" difficulty="Novice" safety="Keep your front knee at 90 degrees, aligned over your ankle. Open your hips to the side. Keep your shoulders stacked over your hips." Pose_type="Yoga, Standing, Hip Opener">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/warrior_ii_deep.gif</url>
+        <Name>Warrior II (Deep - Virabhadrasana II)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Quadriceps, glutes, hamstrings, inner thighs, shoulders, core</Focused_Muscles>
+        <Hold_Time>45 seconds each side</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Recent knee injury, high blood pressure</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">From Mountain Pose, step your left foot back 3-4 feet. Turn your left foot out 90 degrees, right foot forward.</step>
+            <step order="2" focus="Bend Front Knee">Bend your right knee to 90 degrees, directly over your ankle. Open your hips to the side.</step>
+            <step order="3" focus="Arms">Extend your arms out to the sides at shoulder height, palms down. Gaze over your right fingertips.</step>
+            <step order="4" focus="Hold">Keep your shoulders stacked over your hips. Hold for 45 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Press through the outer edge of your back foot. Imagine your arms are being pulled in opposite directions.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting front knee collapse inward.</mistake>
+            <mistake>Leaning torso toward the front leg.</mistake>
+            <mistake>Lifting shoulders toward ears.</mistake>
+            <mistake>Back foot not pressing down firmly.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-N-03" difficulty="Novice" safety="Keep your standing leg straight but not locked. Keep your hips level. Practice near a wall for balance. If you have high blood pressure, keep your head in a neutral position." Pose_type="Yoga, Standing, Balance">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/warrior_iii_full.gif</url>
+        <Name>Warrior III (Full - Virabhadrasana III)</Name>
+        <Equipment>Yoga Mat, Wall (Optional)</Equipment>
+        <Focused_Muscles>Standing leg (glutes, hamstrings, quadriceps), core, spinal extensors, shoulders</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>16-65 years</Age_Grp>
+        <Not_For_Injuries>Recent knee injury, ankle instability, high blood pressure</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">From Mountain Pose, shift weight to your left foot. Hinge forward from your hips as you lift your right leg behind you.</step>
+            <step order="2" focus="Align">Keep both legs straight (but not locked). Your torso, lifted leg, and arms should form a straight line parallel to the floor.</step>
+            <step order="3" focus="Arms">Extend your arms forward alongside your ears, palms facing each other.</step>
+            <step order="4" focus="Hold">Keep your hips level. Engage your core. Gaze at the floor a few feet in front of you. Hold for 30 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Imagine a string pulling your lifted heel back and your fingertips forward. Press your standing foot into the floor as if rooting down.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Locking the standing knee.</mistake>
+            <mistake>Lifting the lifted leg hip higher than the standing leg side.</mistake>
+            <mistake>Rounding the upper back.</mistake>
+            <mistake>Looking up (strain the neck).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-N-04" difficulty="Novice" safety="Keep your front knee bent at 90 degrees. Reach your top arm over your ear. Keep both sides of your torso equally long." Pose_type="Yoga, Standing, Side Stretch">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/extended_side_angle_pose.gif</url>
+        <Name>Extended Side Angle (Utthita Parsvakonasana)</Name>
+        <Equipment>Yoga Mat, Block (Optional)</Equipment>
+        <Focused_Muscles>Obliques, quadriceps, glutes, hamstrings, shoulders</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Recent knee injury, lower back herniation, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">From Warrior II, bend your right knee to 90 degrees. Place your right forearm on your right thigh or hand on a block.</step>
+            <step order="2" focus="Reach">Reach your left arm over your left ear, palm facing down. Keep your left leg straight and strong.</step>
+            <step order="3" focus="Lengthen">Lengthen through your left side ribs. Open your chest toward the ceiling.</step>
+            <step order="4" focus="Hold">Gaze up at your left hand or forward. Hold for 30 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Imagine you are between two panes of glass—avoid leaning forward or backward. Press through the outer edge of your back foot.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Collapsing the chest toward the front leg.</mistake>
+            <mistake>Letting the front knee collapse inward.</mistake>
+            <mistake>Rounding the spine.</mistake>
+            <mistake>Top arm dropping forward instead of reaching over ear.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-N-05" difficulty="Novice" safety="Practice near a wall for balance. Keep your standing leg straight but not locked. Open your hips to the side. If you have neck issues, keep your gaze forward." Pose_type="Yoga, Standing, Balance">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/half_moon_pose.gif</url>
+        <Name>Half Moon Pose (Ardha Chandrasana)</Name>
+        <Equipment>Yoga Mat, Block, Wall (Optional)</Equipment>
+        <Focused_Muscles>Standing leg (glutes, hamstrings, quadriceps), core, obliques, shoulders</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>16-65 years</Age_Grp>
+        <Not_For_Injuries>Recent knee surgery, ankle instability, high blood pressure</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">From Triangle Pose, bend your right knee. Place your right hand on the floor or a block in front of your right foot.</step>
+            <step order="2" focus="Lift Back Leg">Shift weight onto your right leg. Inhale as you lift your left leg parallel to the floor. Flex your left foot.</step>
+            <step order="3" focus="Open Hip">Open your left hip to the side. Stack your left shoulder over your right shoulder. Gaze up at your left hand or forward.</step>
+            <step order="4" focus="Hold">Keep your standing leg straight (but not locked). Hold for 30 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Place a block under your hand for support. Imagine a wall behind your lifted leg—press your heel into it.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Locking the standing knee.</mistake>
+            <mistake>Letting the lifted leg hip drop.</mistake>
+            <mistake>Rounding the upper back.</mistake>
+            <mistake>Not stacking shoulders vertically.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-N-06" difficulty="Novice" safety="Keep your front knee at 90 degrees, aligned over your ankle. Square your hips forward. If you have knee issues, place a blanket under your back knee." Pose_type="Yoga, Standing, Hip Opener">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/crescent_lunge_pose.gif</url>
+        <Name>Crescent Lunge (Anjaneyasana)</Name>
+        <Equipment>Yoga Mat, Blanket (Optional)</Equipment>
+        <Focused_Muscles>Quadriceps, glutes, hip flexors, hamstrings, shoulders, core</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Recent knee injury, quadriceps tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">From Downward Dog, step your right foot forward between your hands. Lower your left knee to the floor (or keep it lifted for more challenge).</step>
+            <step order="2" focus="Bend Front Knee">Bend your right knee to 90 degrees, directly over your ankle. Square your hips forward.</step>
+            <step order="3" focus="Arms">On an inhale, sweep your arms overhead with palms facing each other. Lift your chest.</step>
+            <step order="4" focus="Hold">Keep your shoulders relaxed. Gaze forward or slightly up. Hold for 30 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Keep your front knee tracking over your second toe. Press the top of your back foot into the mat.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting front knee extend past toes.</mistake>
+            <mistake>Collapsing the lower back arch.</mistake>
+            <mistake>Hips not squared forward.</mistake>
+            <mistake>Lifting shoulders toward ears.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-N-07" difficulty="Novice" safety="Keep your knees tracking over your toes. Sink your hips low. Keep your spine tall. If you have knee issues, avoid deep bending." Pose_type="Yoga, Standing, Strength">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/goddess_pose.gif</url>
+        <Name>Goddess Pose (Utkata Konasana)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Quadriceps, glutes, inner thighs, core, shoulders</Focused_Muscles>
+        <Hold_Time>30-45 seconds</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Recent knee surgery, hip impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet wide (3-4 feet apart). Turn your toes outward 45 degrees.</step>
+            <step order="2" focus="Sink">Bend your knees, sinking your hips low. Keep your knees tracking over your second toes.</step>
+            <step order="3" focus="Arms">Bend your elbows to 90 degrees with palms facing forward (like cactus arms). Lift your chest.</step>
+            <step order="4" focus="Hold">Keep your spine tall. Engage your core. Hold for 30-45 seconds.</step>
+            <step order="5" focus="Tip">Imagine you are pressing your feet into the floor and drawing energy up through your legs. Keep your shoulders relaxed.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Knees collapsing inward.</mistake>
+            <mistake>Leaning torso forward.</mistake>
+            <mistake>Arching the lower back.</mistake>
+            <mistake>Lifting shoulders toward ears.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- SEATED POSES - Novice -->
+    
+    <Pose id="YOGA-S-N-01" difficulty="Novice" safety="Keep your extended leg straight but not locked. Hinge from your hips, not your waist. Only go as far as you can with a flat back." Pose_type="Yoga, Seated, Forward Fold">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/head_to_knee_pose.gif</url>
+        <Name>Head-to-Knee Pose (Janu Sirsasana)</Name>
+        <Equipment>Yoga Mat, Strap (Optional)</Equipment>
+        <Focused_Muscles>Hamstrings, spine, lower back, hip flexors</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Recent hamstring tear, lower back herniation</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit in Staff Pose. Bend your right knee and place the sole of your right foot against your left inner thigh.</step>
+            <step order="2" focus="Reach">Inhale and reach your arms overhead. Exhale as you hinge forward over your left leg.</step>
+            <step order="3" focus="Hold">Hold your left foot, shin, or ankle. Keep your left leg straight and flexed. Hold for 30 seconds. Repeat on the other side.</step>
+            <step order="4" focus="Tip">If you can't reach your foot, use a strap around your foot. Keep your shoulders relaxed and away from your ears.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the spine.</mistake>
+            <mistake>Locking the extended knee.</mistake>
+            <mistake>Pulling aggressively on the foot.</mistake>
+            <mistake>Lifting the bent knee off the floor.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-S-N-02" difficulty="Novice" safety="Keep your spine tall. Turn your torso from your waist, not just your head. Keep both sit bones grounded." Pose_type="Yoga, Seated, Spinal Twist">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_twist_ardha_matsyendrasana.gif</url>
+        <Name>Seated Twist (Ardha Matsyendrasana)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Spine (rotators), obliques, shoulders, neck</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Recent spinal surgery, herniated disc (severe)</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit in Staff Pose. Bend your right knee and place your right foot outside your left thigh.</step>
+            <step order="2" focus="Cross">Bend your left knee and bring your left heel toward your right hip.</step>
+            <step order="3" focus="Twist">Inhale to lengthen your spine. Exhale as you twist to the right, placing your left elbow outside your right knee.</step>
+            <step order="4" focus="Hold">Place your right hand behind you for support. Gaze over your right shoulder. Hold for 30 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Lengthen your spine on each inhale, twist deeper on each exhale. Keep both sit bones grounded.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the spine.</mistake>
+            <mistake>Lifting the sit bone opposite the twist.</mistake>
+            <mistake>Using arm strength instead of core to twist.</mistake>
+            <mistake>Forcing the twist beyond comfortable range.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-S-N-03" difficulty="Novice" safety="Keep your legs straight but not locked. Hinge from your hips. If your lower back rounds, sit on a blanket. Only go as far as comfortable." Pose_type="Yoga, Seated, Forward Fold">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/wide_legged_forward_fold.gif</url>
+        <Name>Wide-Legged Forward Fold (Upavistha Konasana)</Name>
+        <Equipment>Yoga Mat, Blanket (Optional)</Equipment>
+        <Focused_Muscles>Hamstrings, inner thighs, spine, lower back</Focused_Muscles>
+        <Hold_Time>45 seconds</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Recent hamstring tear, lower back herniation, groin injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit in Staff Pose. Open your legs wide to a comfortable V-shape. Sit on a blanket if your lower back rounds.</step>
+            <step order="2" focus="Reach">Inhale and reach your arms overhead. Exhale as you hinge forward from your hips.</step>
+            <step order="3" focus="Walk Hands">Walk your hands forward along the floor between your legs. Keep your back flat as long as possible.</step>
+            <step order="4" focus="Hold">When you feel a stretch, relax your head. Hold for 45 seconds. To release, walk your hands back and slowly roll up.</step>
+            <step order="5" focus="Tip">Keep your toes pointing toward the ceiling and your legs engaged. Use blocks under your hands if you can't reach the floor.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the spine.</mistake>
+            <mistake>Letting legs rotate outward (keep toes pointing up).</mistake>
+            <mistake>Locking the knees.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-S-N-04" difficulty="Novice" safety="Keep your spine straight—do not round. Engage your core. If you have lower back issues, keep your knees bent slightly." Pose_type="Yoga, Seated, Core Strength">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/boat_pose_navasana.gif</url>
+        <Name>Boat Pose (Navasana)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Core (rectus abdominis, transverse abdominis), hip flexors, spine</Focused_Muscles>
+        <Hold_Time>20-30 seconds</Hold_Time>
+        <Age_Grp>16-65 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, recent abdominal surgery</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on your mat with your knees bent and feet flat. Lean back slightly, balancing on your sit bones.</step>
+            <step order="2" focus="Lift Feet">Lift your feet off the floor, bringing your shins parallel to the floor. Keep your knees bent or straighten for more challenge.</step>
+            <step order="3" focus="Arms">Extend your arms forward alongside your ears, parallel to the floor.</step>
+            <step order="4" focus="Hold">Keep your spine straight and chest lifted. Hold for 20-30 seconds. To release, lower your feet gently.</step>
+            <step order="5" focus="Tip">If you feel your lower back rounding, bend your knees more or lower your feet. Imagine balancing a cup of tea on your shins.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the lower back.</mistake>
+            <mistake>Holding the breath.</mistake>
+            <mistake>Letting the chest collapse.</mistake>
+            <mistake>Gripping tension in the neck.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-S-N-05" difficulty="Novice" safety="Keep your front knee bent at 90 degrees. Square your hips forward. If you have knee issues, place a blanket under your bent knee. Do not force the stretch." Pose_type="Yoga, Seated, Hip Opener">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/pigeon_pose.gif</url>
+        <Name>Pigeon Pose (Eka Pada Rajakapotasana)</Name>
+        <Equipment>Yoga Mat, Blanket (Optional)</Equipment>
+        <Focused_Muscles>External hip rotators (piriformis), glutes, hip flexors</Focused_Muscles>
+        <Hold_Time>45 seconds each side</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Recent knee injury, sacroiliac joint dysfunction, hip impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">From Downward Dog, bring your right knee forward toward your right wrist. Place your right shin on the floor at an angle.</step>
+            <step order="2" focus="Extend Back Leg">Extend your left leg straight behind you, keeping the top of your foot on the floor. Square your hips forward.</step>
+            <step order="3" focus="Lower Torso">On an exhale, lower your torso over your right leg. Rest on your forearms or fold forward completely.</step>
+            <step order="4" focus="Hold">Hold for 45 seconds. To release, press through your hands and lift your torso. Repeat on the other side.</step>
+            <step order="5" focus="Tip">If your right hip lifts off the floor, place a blanket under it for support. Flex your back foot to protect your knee.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting the front hip lift off the floor.</mistake>
+            <mistake>Rounding the spine when folding forward.</mistake>
+            <mistake>Turning the back foot out (keep top of foot on floor).</mistake>
+            <mistake>Forcing the shin parallel to the front of the mat.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- LYING POSES - Novice -->
+    
+    <Pose id="YOGA-L-N-01" difficulty="Novice" safety="Keep your knees aligned over your ankles. Press through your feet and shoulders. Do not lift your hips higher than comfortable. If you have neck issues, place a blanket under your shoulders." Pose_type="Yoga, Backbend, Chest Opener">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bridge_pose_setu_bandha.gif</url>
+        <Name>Bridge Pose (Setu Bandha Sarvangasana)</Name>
+        <Equipment>Yoga Mat, Blanket (Optional)</Equipment>
+        <Focused_Muscles>Glutes, hamstrings, lower back, chest, shoulders, neck</Focused_Muscles>
+        <Hold_Time>30-45 seconds</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Recent neck injury, spinal fusion, severe osteoporosis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on your back with knees bent and feet flat on the floor, hip-width apart. Place your arms alongside your body, palms down.</step>
+            <step order="2" focus="Lift">Press through your feet and arms. Inhale as you lift your hips toward the ceiling.</step>
+            <step order="3" focus="Interlace (Optional)">Interlace your fingers under your back and press your arms into the floor.</step>
+            <step order="4" focus="Hold">Roll your shoulders under your chest. Lift your chest toward your chin. Hold for 30-45 seconds. Exhale as you lower.</step>
+            <step order="5" focus="Tip">Keep your knees aligned over your ankles. Imagine you are sliding a block under your sacrum—maintain that lift.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting knees splay outward.</mistake>
+            <mistake>Turning the head (keep it neutral).</mistake>
+            <mistake>Lifting hips too high, compressing the lower back.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-L-N-02" difficulty="Novice" safety="Keep your neck long and relaxed. Lift your chest and legs simultaneously. Do not lift higher than comfortable. If you have lower back issues, lift only your chest or legs, not both." Pose_type="Yoga, Backbend, Back Strengthener">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/locust_pose_salabhasana.gif</url>
+        <Name>Locust Pose (Salabhasana)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Lower back (erector spinae), glutes, hamstrings, shoulders</Focused_Muscles>
+        <Hold_Time>20-30 seconds</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Recent spinal surgery, herniated disc, severe osteoporosis</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie face down on your mat with arms alongside your body, palms down. Place your forehead on the floor.</step>
+            <step order="2" focus="Lift">Inhale as you lift your chest, arms, and legs off the floor. Keep your neck long—gaze at the floor.</step>
+            <step order="3" focus="Reach">Reach through your fingers and toes. Squeeze your glutes and engage your lower back.</step>
+            <step order="4" focus="Hold">Hold for 20-30 seconds. Exhale as you lower with control.</step>
+            <step order="5" focus="Tip">Keep your legs straight and engaged. Do not lift higher than comfortable—a small lift is effective.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Lifting the head too high (strain the neck).</mistake>
+            <mistake>Bending the knees (keep them straight).</mistake>
+            <mistake>Holding the breath.</mistake>
+            <mistake>Letting the arms drop.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-L-N-03" difficulty="Novice" safety="Keep your elbows hugged close to your body. Lift your chest without straining your lower back. If you have wrist issues, place your forearms on the floor instead of hands." Pose_type="Yoga, Backbend, Chest Opener">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cobra_pose_bhujangasana.gif</url>
+        <Name>Cobra Pose (Bhujangasana)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Spine (extensors), chest, shoulders, glutes, core</Focused_Muscles>
+        <Hold_Time>20-30 seconds</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Recent spinal surgery, herniated disc, carpal tunnel syndrome (severe)</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie face down with legs together. Place your hands under your shoulders, elbows hugged close to your body.</step>
+            <step order="2" focus="Lift">Press gently into your hands. Inhale as you lift your chest off the floor. Keep your pelvis and legs on the floor.</step>
+            <step order="3" focus="Engage">Engage your glutes and lower back. Keep your shoulders relaxed away from your ears.</step>
+            <step order="4" focus="Hold">Gaze forward or slightly up without straining your neck. Hold for 20-30 seconds. Exhale as you lower.</step>
+            <step order="5" focus="Tip">Keep your elbows hugging your ribs. Do not push into your hands—use your back muscles to lift.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Pushing into hands instead of using back muscles.</mistake>
+            <mistake>Letting elbows flare out.</mistake>
+            <mistake>Lifting the head too high (strain the neck).</mistake>
+            <mistake>Lifting the pelvis off the floor.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-L-N-04" difficulty="Novice" safety="Keep your knees hip-width apart. Lift your chest and legs simultaneously. If you have lower back issues, avoid lifting too high or practice with a blanket under your pelvis." Pose_type="Yoga, Backbend, Full Body">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bow_pose_dhanurasana.gif</url>
+        <Name>Bow Pose (Dhanurasana)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Full back (upper, middle, lower), glutes, hamstrings, chest, shoulders</Focused_Muscles>
+        <Hold_Time>20-30 seconds</Hold_Time>
+        <Age_Grp>16-65 years</Age_Grp>
+        <Not_For_Injuries>Recent spinal surgery, herniated disc, high blood pressure, pregnancy</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie face down with knees hip-width apart. Bend your knees and reach your hands back to hold your ankles.</step>
+            <step order="2" focus="Lift">Inhale as you lift your chest and thighs off the floor. Press your feet into your hands.</step>
+            <step order="3" focus="Rock">Gently rock forward onto your belly. Keep your gaze forward.</step>
+            <step order="4" focus="Hold">Hold for 20-30 seconds. Exhale as you release. Rest in Child's Pose.</step>
+            <step order="5" focus="Tip">Keep your knees hip-width apart. Imagine your body is a bow—your torso and legs are the bow, your hands are the string.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting knees splay wide.</mistake>
+            <mistake>Lifting the head too high.</mistake>
+            <mistake>Holding the breath.</mistake>
+            <mistake>Compressing the lower back excessively.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- BALANCING POSES - Novice -->
+    
+    <Pose id="YOGA-BAL-N-01" difficulty="Novice" safety="Practice near a wall for balance. Keep your standing leg engaged but not locked. Keep your hips level." Pose_type="Yoga, Standing, Balance">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/tree_pose_deep.gif</url>
+        <Name>Tree Pose (Deep - Vrksasana)</Name>
+        <Equipment>Yoga Mat, Wall (Optional)</Equipment>
+        <Focused_Muscles>Standing leg (quadriceps, glutes, calves), core, hip abductors</Focused_Muscles>
+        <Hold_Time>45 seconds each side</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Recent knee surgery, severe ankle instability</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Start in Mountain Pose. Shift weight to your left foot. Find a drishti at eye level.</step>
+            <step order="2" focus="Place Foot">Place your right foot high on your left inner thigh (above the knee). Press your foot into your thigh and your thigh back into your foot.</step>
+            <step order="3" focus="Arms">Bring palms together at heart center or raise arms overhead.</step>
+            <step order="4" focus="Hold">Engage your core. Keep your standing leg engaged. Hold for 45 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">To improve balance, focus on a stationary point. Imagine your standing foot has four corners all pressing into the floor.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Placing foot on the knee joint.</mistake>
+            <mistake>Leaning toward the lifted leg.</mistake>
+            <mistake>Locking the standing knee.</mistake>
+            <mistake>Looking down.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-BAL-N-02" difficulty="Novice" safety="Keep your standing leg straight but not locked. Wrap your arms and legs as much as comfortable. If you have knee issues, practice without wrapping the lifted leg." Pose_type="Yoga, Standing, Balance">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/eagle_pose_garudasana.gif</url>
+        <Name>Eagle Pose (Garudasana)</Name>
+        <Equipment>Yoga Mat, Wall (Optional)</Equipment>
+        <Focused_Muscles>Standing leg (glutes, quadriceps, calves), core, shoulders, hip abductors</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>16-65 years</Age_Grp>
+        <Not_For_Injuries>Recent knee surgery, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Start in Mountain Pose. Shift weight to your left foot. Bend your right knee and cross your right thigh over your left.</step>
+            <step order="2" focus="Wrap Leg">Hook your right foot behind your left calf (or touch toes to floor for balance).</step>
+            <step order="3" focus="Wrap Arms">Cross your right arm under your left. Bend elbows and wrap forearms, pressing palms together.</step>
+            <step order="4" focus="Hold">Sink your hips slightly. Lift your elbows. Hold for 30 seconds. Unwind and repeat on the other side.</step>
+            <step order="5" focus="Tip">Keep your gaze soft. Imagine your elbows are lifting toward the ceiling as your hips sink.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Locking the standing knee.</mistake>
+            <mistake>Letting the wrapped leg hip drop.</mistake>
+            <mistake>Lifting shoulders toward ears.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-BAL-N-03" difficulty="Novice" safety="Practice near a wall for balance. Keep your standing leg engaged. Reach your lifted leg back as far as comfortable. If you have lower back issues, avoid leaning too far forward." Pose_type="Yoga, Standing, Balance">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dancer_pose_modified.gif</url>
+        <Name>Dancer Pose (Modified - Natarajasana)</Name>
+        <Equipment>Yoga Mat, Wall (Optional), Strap (Optional)</Equipment>
+        <Focused_Muscles>Standing leg (glutes, quadriceps), core, quadriceps (lifted leg), shoulders, chest</Focused_Muscles>
+        <Hold_Time>20 seconds each side</Hold_Time>
+        <Age_Grp>16-65 years</Age_Grp>
+        <Not_For_Injuries>Recent knee surgery, shoulder impingement, lower back herniation</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand in Mountain Pose. Shift weight to your left foot. Bend your right knee, bringing your right heel toward your glute.</step>
+            <step order="2" focus="Hold Foot">Reach back with your right hand and hold the inside of your right foot or ankle.</step>
+            <step order="3" focus="Lift">Press your foot into your hand as you lift your right leg behind you. Extend your left arm forward for balance.</step>
+            <step order="4" focus="Hold">Keep your standing leg engaged. Gaze forward. Hold for 20 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Use a strap around your foot if you can't reach it. Keep your hips level—don't tilt toward the lifted leg.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting the lifted leg hip rise.</mistake>
+            <mistake>Locking the standing knee.</mistake>
+            <mistake>Leaning too far forward.</mistake>
+            <mistake>Lifting the shoulder toward the ear.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- INVERSIONS - Novice -->
+    
+    <Pose id="YOGA-INV-01" difficulty="Novice" safety="If you have high blood pressure, glaucoma, or recent stroke, avoid this pose. Keep your weight in your heels. Do not let your shoulders collapse." Pose_type="Yoga, Inversion, Full Body">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/downward_dog_adho_mukha_svanasana.gif</url>
+        <Name>Downward Dog (Adho Mukha Svanasana)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Hamstrings, calves, shoulders, spine, core, arms</Focused_Muscles>
+        <Hold_Time>45-60 seconds</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>High blood pressure (uncontrolled), glaucoma, recent stroke, carpal tunnel syndrome</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Start on hands and knees. Place hands shoulder-width apart, knees under hips.</step>
+            <step order="2" focus="Lift Hips">Tuck your toes. Exhale as you lift your hips toward the ceiling, straightening your legs.</step>
+            <step order="3" focus="Press">Press your palms into the mat. Draw your shoulders away from your ears. Keep your head between your arms.</step>
+            <step order="4" focus="Hold">Bend your knees slightly if your hamstrings are tight. Pedal your feet to stretch each calf. Hold for 45-60 seconds.</step>
+            <step order="5" focus="Tip">Imagine your hips are being pulled back by a string. Keep your spine long—don't round your upper back.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the upper back.</mistake>
+            <mistake>Letting shoulders collapse toward ears.</mistake>
+            <mistake>Locking the knees.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-INV-02" difficulty="Novice" safety="If you have high blood pressure, glaucoma, or shoulder injuries, avoid this pose or practice with caution. Keep your weight in your forearms, not your head." Pose_type="Yoga, Inversion, Shoulder Strength">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dolphin_pose.gif</url>
+        <Name>Dolphin Pose</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Shoulders, upper back, hamstrings, calves, core</Focused_Muscles>
+        <Hold_Time>30-45 seconds</Hold_Time>
+        <Age_Grp>16-65 years</Age_Grp>
+        <Not_For_Injuries>High blood pressure (uncontrolled), glaucoma, recent shoulder injury, carpal tunnel</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Start on hands and knees. Lower onto your forearms, elbows shoulder-width apart. Interlace your fingers or keep palms flat.</step>
+            <step order="2" focus="Lift Hips">Tuck your toes. Exhale as you lift your hips toward the ceiling, straightening your legs.</step>
+            <step order="3" focus="Press">Press your forearms into the mat. Draw your shoulders away from your ears. Let your head hang between your arms.</step>
+            <step order="4" focus="Hold">Keep your spine long. Hold for 30-45 seconds. To release, lower your knees to the floor.</step>
+            <step order="5" focus="Tip">Dolphin pose builds shoulder strength for headstands. Keep your elbows directly under your shoulders.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting shoulders collapse toward ears.</mistake>
+            <mistake>Elbows sliding wider than shoulders.</mistake>
+            <mistake>Rounding the upper back.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-INV-03" difficulty="Novice" safety="Use a wall for support. Place a folded blanket under your hips for comfort. Do not force your legs to touch the wall. Avoid if you have high blood pressure or glaucoma." Pose_type="Yoga, Restorative, Inversion">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/legs_up_the_wall_long.gif</url>
+        <Name>Legs Up the Wall (Extended - Viparita Karani)</Name>
+        <Equipment>Yoga Mat, Wall, Blanket (Optional)</Equipment>
+        <Focused_Muscles>Hamstrings (passive), lower back (release), legs (circulation)</Focused_Muscles>
+        <Hold_Time>3-5 minutes</Hold_Time>
+        <Age_Grp>16-70 years</Age_Grp>
+        <Not_For_Injuries>Glaucoma, high blood pressure (uncontrolled), detached retina</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit sideways next to a wall. Swing your legs up as you lie back. Your hips should be close to the wall.</step>
+            <step order="2" focus="Adjust">Rest your legs vertically against the wall. Place a folded blanket under your hips for comfort if desired.</step>
+            <step order="3" focus="Arms">Rest your arms alongside your body with palms up. Close your eyes.</step>
+            <step order="4" focus="Hold">Breathe deeply and rest for 3-5 minutes. To release, bend your knees and roll to your side.</step>
+            <step order="5" focus="Tip">This pose helps calm the nervous system. Perfect before bed or after standing all day.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Hips too far from the wall.</mistake>
+            <mistake>Tensing the leg muscles (relax).</mistake>
+            <mistake>Holding the breath.</mistake>
+            <mistake>Rushing to come out.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- ADVANCED LEVEL YOGA POSES -->
+    <!-- ======================================================== -->
+    
+    <!-- STANDING POSES - Advanced -->
+    
+    <Pose id="YOGA-A-01" difficulty="Advanced" safety="This is a deep twist. Keep your standing leg straight but not locked. Do not force the twist—breathe into it. If you have lower back issues, avoid or practice with caution." Pose_type="Yoga, Standing, Twist">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/revolved_triangle_pose.gif</url>
+        <Name>Revolved Triangle (Parivrtta Trikonasana)</Name>
+        <Equipment>Yoga Mat, Block (Optional)</Equipment>
+        <Focused_Muscles>Hamstrings, obliques, spine (rotators), shoulders, hips</Focused_Muscles>
+        <Hold_Time>45 seconds each side</Hold_Time>
+        <Age_Grp>18-60 years</Age_Grp>
+        <Not_For_Injuries>Recent lower back herniation, spinal fusion, hamstring tear</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Stand with feet 3-4 feet apart. Turn your right foot out 90 degrees, left foot in slightly.</step>
+            <step order="2" focus="Hinge">Hinge forward from your hips, keeping your back flat. Place your left hand on the floor or a block inside your right foot.</step>
+            <step order="3" focus="Twist">Twist your torso to the right, reaching your right arm straight up toward the ceiling.</step>
+            <step order="4" focus="Hold">Keep both legs straight. Gaze up at your right hand. Hold for 45 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Imagine your torso is being twisted like a washcloth—keep length in your spine as you twist.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Rounding the spine.</mistake>
+            <mistake>Locking the knees.</mistake>
+            <mistake>Letting the bottom hand bear weight on the knee.</mistake>
+            <mistake>Forcing the twist.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-A-02" difficulty="Advanced" safety="This is an advanced balance pose. Practice near a wall. Keep your standing leg engaged. If you feel dizzy, come out slowly." Pose_type="Yoga, Standing, Balance">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/revolved_half_moon.gif</url>
+        <Name>Revolved Half Moon (Parivrtta Ardha Chandrasana)</Name>
+        <Equipment>Yoga Mat, Block, Wall (Optional)</Equipment>
+        <Focused_Muscles>Standing leg (glutes, hamstrings), core, obliques, shoulders</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Recent lower back injury, hamstring tear, high blood pressure</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">From Revolved Triangle, bend your front knee. Shift weight onto your front foot as you lift your back leg.</step>
+            <step order="2" focus="Balance">Balance on your front leg. Keep your bottom hand on the floor or a block.</step>
+            <step order="3" focus="Reach">Reach your top arm straight up, then twist it across your body to open your chest.</step>
+            <step order="4" focus="Hold">Keep your hips level. Gaze up or down. Hold for 30 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Use a wall for balance. Keep your lifted leg active—press through your heel.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting the lifted leg hip drop.</mistake>
+            <mistake>Locking the standing knee.</mistake>
+            <mistake>Rounding the spine.</mistake>
+            <mistake>Looking up if it strains the neck.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-A-03" difficulty="Advanced" safety="Keep your standing leg straight but not locked. Hinge from your hips. If you have high blood pressure, keep your head in a neutral position." Pose_type="Yoga, Standing, Forward Fold">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/standing_split_urdhva_prasarita.gif</url>
+        <Name>Standing Split (Urdhva Prasarita Eka Padasana)</Name>
+        <Equipment>Yoga Mat, Block (Optional)</Equipment>
+        <Focused_Muscles>Standing leg (hamstrings, glutes), lifted leg (hamstrings, hip flexors), core</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Recent hamstring tear, lower back herniation, high blood pressure</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">From Mountain Pose, hinge forward from your hips. Place your hands on the floor or blocks.</step>
+            <step order="2" focus="Lift Leg">Shift weight onto your left foot. Inhale as you lift your right leg straight up toward the ceiling.</step>
+            <step order="3" focus="Square Hips">Square your hips toward the floor. Keep both legs straight.</step>
+            <step order="4" focus="Hold">Walk your hands back toward your standing foot. Hold for 30 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">Keep your standing leg engaged. Imagine your lifted leg is pressing into a wall behind you.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Locking the standing knee.</mistake>
+            <mistake>Letting the lifted leg hip rise.</mistake>
+            <mistake>Rounding the spine.</mistake>
+            <mistake>Looking up (strain the neck).</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- SEATED POSES - Advanced -->
+    
+    <Pose id="YOGA-A-S-01" difficulty="Advanced" safety="Do not force the lotus position. Only attempt if you have open hips. If you feel knee pain, come out immediately. Practice on a soft surface." Pose_type="Yoga, Seated, Meditation">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/full_lotus_padmasana.gif</url>
+        <Name>Full Lotus (Padmasana)</Name>
+        <Equipment>Yoga Mat, Cushion (Optional)</Equipment>
+        <Focused_Muscles>Hip rotators, knees, ankles, spine</Focused_Muscles>
+        <Hold_Time>3-5 minutes</Hold_Time>
+        <Age_Grp>18-50 years</Age_Grp>
+        <Not_For_Injuries>Recent knee surgery, hip replacement, ankle injury, sciatica</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Sit on your mat. Bend your right knee and place your right foot on top of your left thigh.</step>
+            <step order="2" focus="Second Leg">Bend your left knee and place your left foot on top of your right thigh.</step>
+            <step order="3" focus="Spine">Stack your spine tall. Rest your hands on your knees with palms up or down.</step>
+            <step order="4" focus="Hold">Breathe deeply. Hold for 3-5 minutes. To release, slowly unfold one leg at a time.</step>
+            <step order="5" focus="Tip">If you cannot sit in Full Lotus, practice Half Lotus (one foot on opposite thigh). Never force your knees.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Forcing the knees to the floor.</mistake>
+            <mistake>Rounding the spine.</mistake>
+            <mistake>Knee pain (come out immediately).</mistake>
+            <mistake>Lifting shoulders toward ears.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- BACKBENDS - Advanced -->
+    
+    <Pose id="YOGA-A-B-01" difficulty="Advanced" safety="Warm up thoroughly before attempting. If you have wrist, shoulder, or lower back issues, avoid. Practice on a soft surface. Come out slowly if you feel dizziness." Pose_type="Yoga, Backbend, Full Body">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/wheel_pose_urdhva_dhanurasana.gif</url>
+        <Name>Wheel Pose (Urdhva Dhanurasana)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Full spine (extensors), shoulders, chest, glutes, hamstrings, quadriceps, wrists</Focused_Muscles>
+        <Hold_Time>20-30 seconds</Hold_Time>
+        <Age_Grp>18-50 years</Age_Grp>
+        <Not_For_Injuries>Carpal tunnel syndrome, shoulder impingement, lower back herniation, high blood pressure</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Lie on your back with knees bent and feet flat on the floor, hip-width apart. Place your hands beside your ears, fingers pointing toward your shoulders.</step>
+            <step order="2" focus="Lift">Press into your hands and feet. Inhale as you lift your hips and head off the floor.</step>
+            <step order="3" focus="Straighten">Straighten your arms and legs as much as comfortable. Keep your knees aligned over your ankles.</step>
+            <step order="4" focus="Hold">Hold for 20-30 seconds. To release, lower slowly. Rest in Child's Pose.</step>
+            <step order="5" focus="Tip">Keep your elbows parallel—don't let them flare out. Press your chest toward the wall behind you.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting elbows flare out.</mistake>
+            <mistake>Letting knees splay outward.</mistake>
+            <mistake>Collapsing into the lower back.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- BALANCING POSES - Advanced -->
+    
+    <Pose id="YOGA-A-BAL-01" difficulty="Advanced" safety="Practice on a soft surface. Place a blanket in front of you to cushion your head. Engage your core. If you feel wrist pain, come out." Pose_type="Yoga, Arm Balance, Core Strength">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/crow_pose_bakasana.gif</url>
+        <Name>Crow Pose (Bakasana)</Name>
+        <Equipment>Yoga Mat, Blanket (Optional)</Equipment>
+        <Focused_Muscles>Core, arms (triceps, biceps), shoulders, wrists, hip flexors</Focused_Muscles>
+        <Hold_Time>10-20 seconds</Hold_Time>
+        <Age_Grp>18-50 years</Age_Grp>
+        <Not_For_Injuries>Carpal tunnel syndrome, wrist injury, shoulder impingement</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Start in a squat with feet hip-width apart. Place your hands on the floor shoulder-width apart.</step>
+            <step order="2" focus="Knees">Place your knees on the backs of your upper arms, as high as possible.</step>
+            <step order="3" focus="Lean Forward">Lean forward, shifting weight into your hands. Engage your core.</step>
+            <step order="4" focus="Lift Feet">Lift your feet off the floor, bringing your heels toward your glutes. Gaze forward. Hold for 10-20 seconds.</step>
+            <step order="5" focus="Tip">Keep your gaze forward, not down. If you're falling, place a blanket under your face for confidence.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Looking down (causes tipping).</mistake>
+            <mistake>Not engaging the core.</mistake>
+            <mistake>Knees too low on arms.</mistake>
+            <mistake>Arching the back.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- INVERSIONS - Advanced -->
+    
+    <Pose id="YOGA-A-INV-01" difficulty="Advanced" safety="Practice against a wall first. Do not attempt if you have neck, shoulder, or back injuries. Keep your weight on your forearms, not your head. Have a spotter." Pose_type="Yoga, Inversion, Full Body">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/supported_headstand_salamba_sirsasana.gif</url>
+        <Name>Supported Headstand (Salamba Sirsasana)</Name>
+        <Equipment>Yoga Mat, Wall (for support), Blanket (for head)</Equipment>
+        <Focused_Muscles>Neck, shoulders, core, spine, legs (full body integration)</Focused_Muscles>
+        <Hold_Time>30-60 seconds</Hold_Time>
+        <Age_Grp>18-50 years</Age_Grp>
+        <Not_For_Injuries>Neck injury, high blood pressure, glaucoma, recent stroke, spinal issues</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Kneel on your mat. Place your forearms on the floor, interlace your fingers. Place the crown of your head on the floor, cradled by your hands.</step>
+            <step order="2" focus="Lift Hips">Lift your hips, straightening your legs. Walk your feet toward your head.</step>
+            <step order="3" focus="Lift Legs">Engage your core. Lift one leg at a time, bringing both legs straight up.</step>
+            <step order="4" focus="Hold">Keep your weight on your forearms, not your head. Hold for 30-60 seconds. To release, lower legs slowly.</step>
+            <step order="5" focus="Tip">Do not turn your head in headstand. Practice with a wall behind you. If you feel neck pressure, come out immediately.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Putting weight on the head instead of forearms.</mistake>
+            <mistake>Kicking up (use controlled lifting).</mistake>
+            <mistake>Letting shoulders collapse.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-A-INV-02" difficulty="Advanced" safety="Place folded blankets under your shoulders to protect your neck. Keep your weight on your shoulders, not your neck. If you have neck or shoulder issues, avoid." Pose_type="Yoga, Inversion, Full Body">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/supported_shoulderstand_salamba_sarvangasana.gif</url>
+        <Name>Supported Shoulderstand (Salamba Sarvangasana)</Name>
+        <Equipment>Yoga Mat, 2-3 Folded Blankets</Equipment>
+        <Focused_Muscles>Neck (stabilizers), shoulders, core, spine, legs, thyroid gland</Focused_Muscles>
+        <Hold_Time>30-60 seconds</Hold_Time>
+        <Age_Grp>18-55 years</Age_Grp>
+        <Not_For_Injuries>Neck injury, high blood pressure, glaucoma, detached retina, pregnancy</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Place folded blankets on your mat. Lie on your back with your shoulders on the blankets and head on the mat.</step>
+            <step order="2" focus="Lift Legs">Press your palms into the floor. Inhale as you lift your legs straight up to 90 degrees.</step>
+            <step order="3" focus="Lift Hips">Press into your arms and lift your hips off the floor. Support your lower back with your hands.</step>
+            <step order="4" focus="Straighten">Walk your hands up your back toward your shoulder blades. Straighten your legs toward the ceiling.</step>
+            <step order="5" focus="Tip">Keep your weight on your shoulders, not your neck. Do not turn your head. After the pose, rest in Fish Pose (Matsyasana).</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Putting weight on the neck.</mistake>
+            <mistake>Turning the head.</mistake>
+            <mistake>Elbows too wide apart.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- ======================================================== -->
+    <!-- EXPERT LEVEL YOGA POSES -->
+    <!-- ======================================================== -->
+    
+    <!-- STANDING POSES - Expert -->
+    
+    <Pose id="YOGA-E-01" difficulty="Expert" safety="This is a deep standing balance. Practice against a wall. Keep your standing leg engaged. If you have high blood pressure or neck issues, keep your gaze forward." Pose_type="Yoga, Standing, Balance">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/sugarcane_pose_ardha_chandra_chapasana.gif</url>
+        <Name>Sugarcane Pose (Ardha Chandra Chapasana)</Name>
+        <Equipment>Yoga Mat, Wall (Optional), Strap (Optional)</Equipment>
+        <Focused_Muscles>Standing leg (glutes, hamstrings, quadriceps), core, quadriceps (lifted leg), shoulders, chest</Focused_Muscles>
+        <Hold_Time>30 seconds each side</Hold_Time>
+        <Age_Grp>20-45 years</Age_Grp>
+        <Not_For_Injuries>Recent knee surgery, shoulder impingement, lower back herniation</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Start in Half Moon Pose (Ardha Chandrasana) on your right leg.</step>
+            <step order="2" focus="Bend Back Knee">Bend your left knee, bringing your left heel toward your glute.</step>
+            <step order="3" focus="Reach Back">Reach your left hand back to hold your left foot. Press your foot into your hand.</step>
+            <step order="4" focus="Open Chest">Reach your right arm forward. Open your chest toward the side. Gaze at your right hand.</step>
+            <step order="5" focus="Tip">This pose looks like a sugarcane stalk. Keep your standing leg engaged. Use a wall for balance.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Locking the standing knee.</mistake>
+            <mistake>Letting the lifted leg hip drop.</mistake>
+            <mistake>Rounding the upper back.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- SEATED POSES - Expert -->
+    
+    <Pose id="YOGA-E-S-01" difficulty="Expert" safety="This is an advanced arm balance and hip opener. Practice on a soft surface. Use blocks for support. Do not attempt without proper warm-up." Pose_type="Yoga, Arm Balance, Hip Opener">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/firefly_pose_tittibhasana.gif</url>
+        <Name>Firefly Pose (Full - Tittibhasana)</Name>
+        <Equipment>Yoga Mat, Blocks (Optional)</Equipment>
+        <Focused_Muscles>Core, arms (triceps), shoulders, hip adductors, hamstrings, wrists</Focused_Muscles>
+        <Hold_Time>20-30 seconds</Hold_Time>
+        <Age_Grp>20-45 years</Age_Grp>
+        <Not_For_Injuries>Carpal tunnel syndrome, wrist injury, shoulder impingement, lower back herniation</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Squat with feet wider than hips. Thread your hands under your legs, palms flat on the floor.</step>
+            <step order="2" focus="Lift">Press into your hands. Engage your core. Lift your feet off the floor.</step>
+            <step order="3" focus="Straighten">Straighten your legs out to the sides as much as comfortable.</step>
+            <step order="4" focus="Hold">Keep your gaze forward. Hold for 20-30 seconds. Release gently.</step>
+            <step order="5" focus="Tip">This pose requires open hamstrings and hip adductors. Practice with blocks under your hands for height.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Looking down (causes tipping).</mistake>
+            <mistake>Not engaging the core.</mistake>
+            <mistake>Letting shoulders collapse.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- BACKBENDS - Expert -->
+    
+    <Pose id="YOGA-E-B-01" difficulty="Expert" safety="This is a deep backbend. Warm up thoroughly with Camel, Wheel, and Bridge poses. If you feel sharp pain in your lower back or knees, come out. Practice on a soft surface." Pose_type="Yoga, Backbend, Deep Hip Opener">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/king_pigeon_kapotasana.gif</url>
+        <Name>King Pigeon (Kapotasana)</Name>
+        <Equipment>Yoga Mat, Blanket (Optional for knees)</Equipment>
+        <Focused_Muscles>Full spine (extensors), hip flexors, quadriceps, shoulders, chest</Focused_Muscles>
+        <Hold_Time>20-30 seconds</Hold_Time>
+        <Age_Grp>20-45 years</Age_Grp>
+        <Not_For_Injuries>Lower back herniation, knee injury, shoulder impingement, high blood pressure</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">From Downward Dog, bring your right knee forward toward your right wrist. Extend your left leg straight behind you.</step>
+            <step order="2" focus="Square Hips">Square your hips forward. Place your hands on the floor or on your right knee.</step>
+            <step order="3" focus="Reach Back">Bend your left knee, reaching your left foot toward your head. Reach your left hand back to hold your foot.</step>
+            <step order="4" focus="Open Chest">Press your foot into your hand. Lift your chest. Gaze forward or up. Hold for 20-30 seconds. Repeat on the other side.</step>
+            <step order="5" focus="Tip">If you cannot reach your foot, use a strap around your foot. Keep your front knee aligned over your hip.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Letting the front hip lift.</mistake>
+            <mistake>Compressing the lower back.</mistake>
+            <mistake>Lifting the shoulders toward ears.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- BALANCING POSES - Expert -->
+    
+    <Pose id="YOGA-E-BAL-01" difficulty="Expert" safety="Practice on a soft surface. Warm up your wrists and shoulders. If you feel wrist pain, come out. Engage your core. Have a spotter or wall for confidence." Pose_type="Yoga, Arm Balance, Core Strength">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/peacock_pose_mayurasana.gif</url>
+        <Name>Peacock Pose (Mayurasana)</Name>
+        <Equipment>Yoga Mat</Equipment>
+        <Focused_Muscles>Core (entire abdominal wall), arms (triceps, biceps), shoulders, wrists</Focused_Muscles>
+        <Hold_Time>10-20 seconds</Hold_Time>
+        <Age_Grp>20-45 years</Age_Grp>
+        <Not_For_Injuries>Carpal tunnel syndrome, wrist injury, elbow tendinitis, pregnancy</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Kneel on your mat. Place your hands on the floor with fingers pointing toward your knees.</step>
+            <step order="2" focus="Elbows">Press your elbows together against your belly. Lean forward, placing your belly on your elbows.</step>
+            <step order="3" focus="Extend Legs">Extend your legs straight behind you. Engage your core.</step>
+            <step order="4" focus="Lift">Press into your hands. Lift your legs off the floor. Hold for 10-20 seconds. To release, lower gently.</step>
+            <step order="5" focus="Tip">Peacock pose is an advanced core strengthener. Practice with a blanket under your face for confidence.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Not engaging the core.</mistake>
+            <mistake>Letting elbows separate.</mistake>
+            <mistake>Looking down.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <!-- INVERSIONS - Expert -->
+    
+    <Pose id="YOGA-E-INV-01" difficulty="Expert" safety="This is a full inversion. Practice against a wall. Warm up your shoulders and core. Do not attempt if you have wrist, shoulder, or neck injuries." Pose_type="Yoga, Inversion, Full Body">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/freestanding_handstand_adho_mukha_vrksasana.gif</url>
+        <Name>Freestanding Handstand (Adho Mukha Vrksasana)</Name>
+        <Equipment>Yoga Mat, Wall (for practice)</Equipment>
+        <Focused_Muscles>Shoulders, core, wrists, spine, legs (full body integration)</Focused_Muscles>
+        <Hold_Time>10-30 seconds</Hold_Time>
+        <Age_Grp>20-45 years</Age_Grp>
+        <Not_For_Injuries>Wrist injury, shoulder impingement, high blood pressure, glaucoma, neck injury</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Start in Downward Dog facing a wall. Walk your feet up the wall until your hips are over your shoulders.</step>
+            <step order="2" focus="Lift One Leg">Shift weight into your hands. Lift one leg off the wall, then the other.</step>
+            <step order="3" focus="Balance">Find balance by pressing through your hands. Engage your core. Gaze between your hands.</step>
+            <step order="4" focus="Hold">Hold for 10-30 seconds. To release, lower one leg at a time back to the wall or floor.</step>
+            <step order="5" focus="Tip">Build handstand strength against a wall first. Keep your shoulders stacked over your wrists. Don't arch your back.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the lower back.</mistake>
+            <mistake>Letting shoulders collapse.</mistake>
+            <mistake>Looking at the floor (look between hands).</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+    <Pose id="YOGA-E-INV-02" difficulty="Expert" safety="This is an advanced inversion. Practice against a wall. Warm up your shoulders and core. Do not attempt if you have neck, shoulder, or back injuries." Pose_type="Yoga, Inversion, Arm Balance">
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/forearm_stand_freestanding.gif</url>
+        <Name>Forearm Stand (Freestanding - Pincha Mayurasana)</Name>
+        <Equipment>Yoga Mat, Wall (for practice)</Equipment>
+        <Focused_Muscles>Shoulders, core, upper back, wrists, spine</Focused_Muscles>
+        <Hold_Time>15-30 seconds</Hold_Time>
+        <Age_Grp>20-45 years</Age_Grp>
+        <Not_For_Injuries>Shoulder impingement, neck injury, high blood pressure, glaucoma</Not_For_Injuries>
+        <steps>
+            <step order="1" focus="Setup">Kneel on your mat. Place your forearms on the floor, elbows shoulder-width apart. Interlace your fingers.</step>
+            <step order="2" focus="Lift Hips">Lift your hips, straightening your legs. Walk your feet toward your head.</step>
+            <step order="3" focus="Lift Legs">Engage your core. Lift one leg, then the other, into a vertical position.</step>
+            <step order="4" focus="Balance">Press through your forearms. Keep your shoulders stacked over your elbows. Gaze between your hands.</step>
+            <step order="5" focus="Tip">Practice against a wall first. Keep your core engaged to prevent backbending. A slight hollow body position helps balance.</step>
+        </steps>
+        <common_mistakes>
+            <mistake>Arching the lower back.</mistake>
+            <mistake>Letting shoulders collapse toward ears.</mistake>
+            <mistake>Elbows wider than shoulders.</mistake>
+            <mistake>Holding the breath.</mistake>
+        </common_mistakes>
+    </Pose>
+
+</YogaPoseCatalog>
