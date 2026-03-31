@@ -969,35 +969,6 @@
             <mistake>Letting the weight pull you back too quickly.</mistake>
         </common_mistakes>
     </Pose>
-    <Pose id="32" difficulty="Intermediate" safety="Maintain control throughout the pass. Avoid arching your lower back. Only go as low as you can while keeping your legs straight and back flat." Pose_type="Core Strength, Coordination">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/medicine_ball_v_up.gif)</url>
-        <Name>Medicine Ball V Up</Name>
-        <Equipment>Medicine Ball, Exercise Mat</Equipment>
-        <Focused_Muscles>
-            <Primary>Rectus Abdominis (Upper and Lower)</Primary>
-            <Secondary>Hip Flexors, Quadriceps</Secondary>
-            <Stabilizers>Shoulders, Chest, Lower Back</Stabilizers>
-        </Focused_Muscles>
-        <Preferred_Time>Core Focus Day</Preferred_Time>
-        <Diseases_Cured>
-            <Targeted>Upper/Lower Abdominal Imbalance, Poor Coordination</Targeted>
-            <Preventive>Builds integrated core strength and limb coordination</Preventive>
-        </Diseases_Cured>
-        <Age>18-60 years (requires good flexibility)</Age>
-        <steps>
-            <step order="1" focus="Setup">Lie on your back, arms extended overhead holding a medicine ball, legs straight.</step>
-            <step order="2" focus="Lift">Simultaneously lift your arms and legs to meet over your torso, passing the ball to your feet.</step>
-            <step order="3" focus="Clamp">Secure the ball between your ankles/lower shins. Lower with control.</step>
-            <step order="4" focus="Repeat">On the next rep, pass the ball back from feet to hands. Alternate passes. Aim for 8-12 reps, 2-3 sets.</step>
-            <step order="5" focus="Tip">Keep your legs as straight as possible. If you can't straighten them fully, bend your knees slightly and work on flexibility.</step>
-        </steps>
-        <common_mistakes>
-            <mistake>Using momentum to swing the limbs up.</mistake>
-            <mistake>Arching the lower back off the floor.</mistake>
-            <mistake>Dropping the ball during the pass.</mistake>
-            <mistake>Rushing the movement without control.</mistake>
-        </common_mistakes>
-    </Pose>
     <Pose id="33" difficulty="Intermediate" safety="Maintain a rigid plank position throughout. Keep your hips level and avoid sagging. Control the movement on both the tuck and the extension." Pose_type="Core Strength, Stability">
         <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/suspension_knee_tuck.gif)</url>
         <Name>Suspension Knee Tuck</Name>
