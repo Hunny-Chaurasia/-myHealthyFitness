@@ -248,7 +248,7 @@
     <Pose id="ARM-T-03" difficulty="Novice" safety="Keep your elbows pointing toward the ceiling throughout. Avoid flaring elbows outward. Control the weight on the descent." Pose_type="Strength, Hypertrophy">
         <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/skull_crusher.gif</url>
         <Name>Skull Crushers (Lying Tricep Extension)</Name>
-        <Equipment>EZ-Bar or Dumbbells, Bench</Equipment>
+        <Equipment>EZ-Bar or Barbell with weight plates,Dumbbells, Bench</Equipment>
         <Focused_Muscles>Triceps Brachii (All 3 Heads, especially Long Head)</Focused_Muscles>
         <Weight_Max>5 - 25 kg (11 - 55 lbs)</Weight_Max>
         <Age_Grp>16-70 years</Age_Grp>
