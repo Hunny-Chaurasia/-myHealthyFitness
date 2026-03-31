@@ -824,35 +824,6 @@
             <mistake>Failing to fully extend the leg during the kick.</mistake>
         </common_mistakes>
     </Pose>
-    <Pose id="26" difficulty="Beginner" safety="Maintain a neutral spine throughout the rotation. Avoid rounding your back. Choose a light ball to start and focus on controlled rotation, not speed." Pose_type="Core Strength, Rotational Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/slam_ball_russian_twist.gif)</url>
-        <Name>Slam Ball Russian Twist</Name>
-        <Equipment>Slam Ball or Medicine Ball, Exercise Mat</Equipment>
-        <Focused_Muscles>
-            <Primary>Obliques (Internal and External)</Primary>
-            <Secondary>Rectus Abdominis, Hip Flexors</Secondary>
-            <Stabilizers>Lower Back, Shoulders</Stabilizers>
-        </Focused_Muscles>
-        <Preferred_Time>After Warm-Up, Core Focus</Preferred_Time>
-        <Diseases_Cured>
-            <Targeted>Weak Rotational Core, Poor Oblique Strength</Targeted>
-            <Preventive>Builds functional twisting strength and spinal stability</Preventive>
-        </Diseases_Cured>
-        <Age>18-65 years</Age>
-        <steps>
-            <step order="1" focus="Setup">Sit on the mat, knees bent, feet elevated or crossed. Hold a slam ball at your chest.</step>
-            <step order="2" focus="Lean">Lean back to a 45-degree angle, keeping your spine straight.</step>
-            <step order="3" focus="Twist">Rotate your torso to the right, tapping the ball beside your hip, then to the left.</step>
-            <step order="4" focus="Repeat">Continue alternating sides for 12-16 reps (6-8 per side) for 2-3 sets.</step>
-            <step order="5" focus="Tip">Keep your chest lifted and avoid rounding forward. Rotate from your torso, not your arms.</step>
-        </steps>
-        <common_mistakes>
-            <mistake>Rounding the lower back and dropping the chest.</mistake>
-            <mistake>Using only arms to move the ball without torso rotation.</mistake>
-            <mistake>Letting feet touch the floor (if elevated).</mistake>
-            <mistake>Moving too fast with momentum.</mistake>
-        </common_mistakes>
-    </Pose>
     <Pose id="27" difficulty="Intermediate" safety="Maintain constant tension in your core and crush grip throughout the movement. Keep your lower back pressed into the floor. Move slowly and with control." Pose_type="Core Strength, Grip Strength">
         <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_crush_grip_otis_up.gif)</url>
         <Name>Dumbbell Crush Grip Otis Up</Name>
