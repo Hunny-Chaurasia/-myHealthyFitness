@@ -2163,3 +2163,132 @@ function change_text6() {
             <li><p class="text_left">Slowly return to the starting position and repeat for the desired number of reps.</p></li>
         </ol>`;
 }
+// news-shelter
+const API_KEY = 'pub_f5d56eeaa27e40b78e43569ccf60c896';
+        const TAG_CYCLE = ['training', 'sports', 'nutrition', 'fitness', 'training'];
+
+        function readTime(text) {
+            if (!text) return '3 min read';
+            const words = text.trim().split(/\s+/).length;
+            return Math.max(1, Math.round(words / 200)) + ' min read';
+        }
+
+        function timeAgo(pubDate) {
+            if (!pubDate) return '';
+            const diff = Date.now() - new Date(pubDate).getTime();
+            const h = Math.floor(diff / 3600000);
+            if (h < 1) return 'Just now';
+            if (h < 24) return h + ' hour' + (h > 1 ? 's' : '') + ' ago';
+            const d = Math.floor(h / 24);
+            return d + ' day' + (d > 1 ? 's' : '') + ' ago';
+        }
+
+        function buildTrending(articles) {
+            const seeds = [
+                { tag: 'HIITWorkouts',       category: 'Training',   growth: '+23%' },
+                { tag: 'PlantBasedAthletes', category: 'Nutrition',  growth: '+18%' },
+                { tag: 'RecoveryTips',       category: 'Wellness',   growth: '+15%' },
+                { tag: 'MentalTraining',     category: 'Psychology', growth: '+31%' },
+                { tag: 'OlympicPrep',        category: 'Sports',     growth: '+42%' }
+            ];
+            return seeds.map(seed => {
+                const kw = seed.tag.replace(/([A-Z])/g, ' $1').toLowerCase().trim();
+                const hits = articles.filter(a =>
+                    ((a.title || '') + ' ' + (a.description || '')).toLowerCase().includes(kw)
+                ).length;
+                const posts = (900 + hits * 50 + Math.floor(Math.random() * 300)).toLocaleString();
+                return { ...seed, posts };
+            });
+        }
+
+        function renderBreaking(article) {
+            const el = document.getElementById('breaking-article');
+            el.innerHTML = `
+                <h2>${article.title || 'Top Sports Story'}</h2>
+                <p>${article.description || ''}</p>
+                <div class="article-meta">
+                    <span>${readTime(article.description)}</span>
+                    <span><i class="fa-solid fa-eye"></i> ${(Math.floor(Math.random()*25000)+8000).toLocaleString()}</span>
+                    <span><i class="fa-regular fa-heart"></i> ${(Math.floor(Math.random()*5000)+800).toLocaleString()}</span>
+                    <div class="article-actions">
+                        <a href="${article.link || '#'}" target="_blank" rel="noopener" class="btn-read">
+                            <i class="fa-solid fa-book-open-reader"></i> Read
+                        </a>
+                    </div>
+                </div>`;
+        }
+
+        function renderGrid(articles) {
+            const grid = document.getElementById('articles-grid');
+            if (!articles.length) { grid.innerHTML = '<p style="padding:1rem;color:#888;">No articles found.</p>'; return; }
+            const fallbackAuthors = ['Dr. Sarah Johnson','Mike Chen','Emma Rodriguez','Lisa Thompson','Jake Morrison'];
+            grid.innerHTML = articles.map((a, i) => {
+                const tagClass = TAG_CYCLE[i % TAG_CYCLE.length];
+                const desc = a.description ? a.description.slice(0, 160) + (a.description.length > 160 ? '…' : '') : '';
+                return `
+                <div class="article-card">
+                    <span class="article-tag ${tagClass}">${tagClass.charAt(0).toUpperCase()+tagClass.slice(1)}</span>
+                    <h3><a href="${a.link||'#'}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">${a.title||'Untitled'}</a></h3>
+                    <p>${desc}</p>
+                    <div class="article-footer">
+                        <div class="author-info">
+                            <span>${a.source_id || fallbackAuthors[i % fallbackAuthors.length]}</span>
+                            <span>${timeAgo(a.pubDate)}</span>
+                        </div>
+                        <span class="read-time">${readTime(a.description)}</span>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        function renderTrending(articles) {
+            document.getElementById('trending-list').innerHTML = buildTrending(articles).map(t => `
+                <div class="trending-item">
+                    <div class="trending-info">
+                        <h4>#${t.tag}</h4>
+                        <div class="trending-stats">${t.posts} posts • ${t.category} <span class="growth">${t.growth}</span></div>
+                    </div>
+                </div>`).join('');
+        }
+
+        function showError(msg, detail) {
+            document.getElementById('breaking-article').innerHTML = `
+                <h2 style="color:#f87171;">⚠ ${msg}</h2>
+                <p style="font-size:.85rem;opacity:.7;">${detail}</p>
+                <div class="article-meta"><div class="article-actions">
+                    <button class="btn-read" onclick="fetchNews()"><i class="fa-solid fa-rotate-right"></i> Retry</button>
+                </div></div>`;
+            document.getElementById('articles-grid').innerHTML = `<p style="padding:1rem;color:#f87171;">${detail}</p>`;
+            document.getElementById('trending-list').innerHTML = `<p style="padding:.5rem;color:#f87171;">Could not load.</p>`;
+        }
+
+        async function fetchOneBatch(category) {
+            const url = `https://newsdata.io/api/1/latest?apikey=${API_KEY}&country=in,us,wo,np,mm&language=hi,en&category=${category}&size=10`;
+            const res = await fetch(url, { mode: 'cors' });
+            if (!res.ok) throw new Error(`HTTP ${res.status} for category: ${category}`);
+            const data = await res.json();
+            if (data.status === 'error') throw new Error(data.results?.message || JSON.stringify(data));
+            return data.results || [];
+        }
+
+        async function fetchNews() {
+            document.getElementById('breaking-article').querySelector('h2').textContent = 'Fetching live news…';
+            try {
+                const batch1 = await fetchOneBatch('sports,health');
+                const batch2 = await fetchOneBatch('food,lifestyle');
+                const valid = [...batch1, ...batch2].filter(a => a.title && a.description);
+                if (!valid.length) { showError('No articles returned', 'Check your plan limits at newsdata.io.'); return; }
+                valid.sort((a, b) => new Date(b.pubDate||0) - new Date(a.pubDate||0));
+                document.getElementById('articles-today').textContent = valid.length;
+                document.getElementById('topics').textContent = 5;
+                renderBreaking(valid[0]);
+                renderGrid(valid.slice(1, 6));
+                renderTrending(valid);
+            } catch (err) {
+                console.error('[NewsHub]', err);
+                showError('Could not load live news.', err.message + '. Check DevTools Console.');
+            }
+        }
+
+        fetchNews();
+
