@@ -1,810 +1,874 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motion Mentor | @myMotionMentor</title>
-    <link rel="icon" href="WhatsApp Image 2025-09-24 at 10.58.05 PM.jpeg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css" />
-    <link rel="stylesheet" href="deta_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Motion Mentor | Back Exercise Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #35d4f1;
+            --accent-dark: #1eb8d4;
+            --bg: #080808;
+            --card-bg: #101010;
+            --border: #1e1e1e;
+            --border-hover: #35d4f1;
+            --text: #e8e8e8;
+            --muted: #888;
+            --dim: #444;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'DM Sans', system-ui, sans-serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ── HEADER ─────────────────────────────── */
+        .app-header {
+            position: relative;
+            padding: 3rem 2.5rem 2rem;
+            background: linear-gradient(160deg, #0a0f1a 0%, #080808 60%);
+            border-bottom: 1px solid var(--border);
+            overflow: hidden;
+        }
+        .app-header::before {
+            content: 'BACK';
+            position: absolute;
+            right: -1rem;
+            top: -1.5rem;
+            font-family: 'Syne', sans-serif;
+            font-size: 9rem;
+            font-weight: 800;
+            color: rgba(53,212,241,0.04);
+            letter-spacing: -4px;
+            pointer-events: none;
+            user-select: none;
+        }
+        .header-eyebrow {
+            font-size: 0.7rem;
+            letter-spacing: 3px;
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0.6rem;
+        }
+        .app-header h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            line-height: 1.05;
+            color: #fff;
+        }
+        .app-header h1 span {
+            color: var(--accent);
+        }
+        .header-sub {
+            margin-top: 0.8rem;
+            font-size: 0.85rem;
+            color: var(--muted);
+            max-width: 460px;
+        }
+        .live-dot {
+            display: inline-block;
+            width: 7px; height: 7px;
+            background: var(--accent);
+            border-radius: 50%;
+            margin-right: 6px;
+            animation: pulse 2s ease infinite;
+        }
+        @keyframes pulse {
+            0%,100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.7); }
+        }
+
+        /* ── SECTION HEADING ─────────────────────── */
+        .section-head {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 2.5rem 2.5rem 0.8rem;
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+        .section-head .pill {
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+            background: #151515;
+            border: 1px solid var(--border);
+            border-radius: 40px;
+            padding: 0.35rem 0.9rem;
+            font-size: 0.75rem;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 400;
+            color: var(--muted);
+        }
+        .section-head .pill .dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .dot-green { background: #5aff6b; }
+        .dot-orange { background: #ff9d3b; }
+        .dot-red { background: #ff4f4f; }
+
+        /* ── GRID ────────────────────────────────── */
+        .exercise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            gap: 1.4rem;
+            padding: 1rem 2.5rem 2rem;
+        }
+
+        /* ── CARD ────────────────────────────────── */
+        .exercise-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: border-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .exercise-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+            box-shadow: 0 24px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(53,212,241,0.08);
+        }
+        .card-media {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #151515;
+            overflow: hidden;
+        }
+        .card-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .exercise-card:hover .card-media img {
+            transform: scale(1.04);
+        }
+        .card-media-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(8,8,8,0.7) 0%, transparent 55%);
+            pointer-events: none;
+        }
+        .card-diff-badge {
+            position: absolute;
+            top: 10px; left: 10px;
+            background: rgba(8,8,8,0.82);
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            padding: 3px 10px;
+            font-size: 0.65rem;
+            letter-spacing: 0.5px;
+            color: var(--muted);
+            font-weight: 500;
+            backdrop-filter: blur(4px);
+        }
+        .card-body {
+            padding: 1rem 1.1rem 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .card-name {
+            font-family: 'Syne', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.25;
+        }
+        .card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem 0.6rem;
+        }
+        .meta-chip {
+            font-size: 0.68rem;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .meta-chip strong {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .card-tap-hint {
+            margin-top: auto;
+            padding-top: 0.6rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.65rem;
+            color: var(--dim);
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+
+        /* ── LOADING ─────────────────────────────── */
+        #loading_msg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 40vh;
+            gap: 1.2rem;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        .spinner {
+            width: 44px; height: 44px;
+            border: 2px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.75s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* ── ERROR ───────────────────────────────── */
+        #error_msg {
+            max-width: 640px;
+            margin: 3rem auto;
+            background: #120e0e;
+            border: 1px solid #3a1c1c;
+            border-left: 4px solid #ff5050;
+            border-radius: 18px;
+            padding: 2rem;
+            text-align: center;
+        }
+        .retry-btn {
+            margin-top: 1.2rem;
+            background: var(--accent);
+            border: none;
+            color: #080808;
+            font-weight: 700;
+            font-family: 'Syne', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        .retry-btn:hover { background: #daff66; }
+
+        /* ── MODAL ───────────────────────────────── */
+        #steps_modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.88);
+            backdrop-filter: blur(8px);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .modal_inner {
+            max-width: 680px;
+            width: 100%;
+            max-height: 92vh;
+            overflow-y: auto;
+            background: #0e0e0e;
+            border: 1px solid #252525;
+            border-radius: 24px;
+            padding: 1.8rem 2rem 2.2rem;
+            position: relative;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.7);
+            scrollbar-width: thin;
+            scrollbar-color: #2a2a2a transparent;
+        }
+        .modal_inner::-webkit-scrollbar { width: 4px; }
+        .modal_inner::-webkit-scrollbar-track { background: transparent; }
+        .modal_inner::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 4px; }
+        #close_modal_btn {
+            position: sticky;
+            top: 0;
+            float: right;
+            background: #1a1a1a;
+            border: 1px solid #2e2e2e;
+            color: #aaa;
+            padding: 5px 16px;
+            border-radius: 30px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+            z-index: 2;
+        }
+        #close_modal_btn:hover { background: var(--accent); color: #000; border-color: var(--accent); }
+        .modal-img {
+            width: 100%;
+            border-radius: 16px;
+            display: block;
+            margin: 0.5rem 0 1.2rem;
+            background: #181818;
+        }
+        .modal-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1.2;
+            margin-bottom: 0.3rem;
+        }
+        .modal-meta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.2rem;
+        }
+        .modal-chip {
+            background: #181818;
+            border: 1px solid #262626;
+            border-radius: 30px;
+            padding: 3px 12px;
+            font-size: 0.7rem;
+            color: var(--muted);
+        }
+        .modal-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.6rem;
+            margin-bottom: 1.2rem;
+        }
+        .info-cell {
+            background: #141414;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 0.7rem 0.9rem;
+        }
+        .info-cell .info-label {
+            font-size: 0.62rem;
+            color: var(--dim);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 0.3rem;
+        }
+        .info-cell .info-val {
+            font-size: 0.82rem;
+            color: var(--text);
+            font-weight: 500;
+        }
+        .steps-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: 0.8px;
+            margin: 1.4rem 0 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .steps-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+        .step-item {
+            display: flex;
+            gap: 0.9rem;
+            margin-bottom: 0.9rem;
+            align-items: flex-start;
+        }
+        .step-num {
+            flex-shrink: 0;
+            width: 26px; height: 26px;
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--accent);
+            font-family: 'Syne', sans-serif;
+        }
+        .step-content .step-focus {
+            font-size: 0.68rem;
+            color: var(--accent);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+        .step-content .step-text {
+            font-size: 0.84rem;
+            color: #c4c4c4;
+            line-height: 1.55;
+        }
+        .mistakes-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #ff9d3b;
+            letter-spacing: 0.8px;
+            margin: 1.4rem 0 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .mistakes-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+        .mistake-item {
+            display: flex;
+            gap: 0.7rem;
+            align-items: flex-start;
+            margin-bottom: 0.6rem;
+            font-size: 0.83rem;
+            color: #bbb;
+        }
+        .mistake-item::before {
+            content: '!';
+            flex-shrink: 0;
+            width: 18px; height: 18px;
+            background: rgba(255,157,59,0.12);
+            border: 1px solid rgba(255,157,59,0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.62rem;
+            font-weight: 700;
+            color: #ff9d3b;
+            margin-top: 1px;
+        }
+
+        /* ── RESPONSIVE ──────────────────────────── */
+        @media (max-width: 640px) {
+            .exercise-grid { padding: 0.8rem 1rem 1.5rem; gap: 1rem; }
+            .section-head { padding: 1.8rem 1rem 0.6rem; }
+            .app-header { padding: 2rem 1.2rem 1.5rem; }
+            .modal_inner { padding: 1.2rem; }
+            .modal-info-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
+<body>
 
-<Body id="Exercises_all" style="margin: 0px;">
-    <h2 class="back_Head">Beginner</h2>
-    <div class="Begginer_Level_ex">
+<!-- HEADER -->
+<div class="app-header">
+    <div class="header-eyebrow"><span class="live-dot"></span>MOTION MENTOR · LIVE XML</div>
+    <h1>BACK <span>BUILDER</span></h1>
+    <div class="header-sub">Complete back muscle exercise library · tap any card for full instructions & execution steps</div>
+</div>
 
-        <div class="all_beginner" id="Beginner_back1">
-            <button class="change_txt_btn" onclick="change_text()">
-                <img src="https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/band-seated-row.GIF"
-                    alt="Band Seated Row Exercise" style="width:17vw; height:auto;">
-            </button>
-            <p class="form_name">Seated Row Form & Visual</p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement ">Resistance Band</a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i>Latissimus Dorsi, Rhomboids, Middle
-                        Trapezius</i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+<!-- LOADING -->
+<div id="loading_msg">
+    <div class="spinner"></div>
+    <div>Fetching exercises from Back.xml …</div>
+</div>
 
+<!-- ERROR -->
+<div id="error_msg" style="display:none;"></div>
 
-        <div class="all_beginner" id="Beginner_back2">
-            <button class="change_txt_btn" onclick="change_text2()">
-                <img src="https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/kettlebell-sumo-deadlift.gif"
-                    alt="" class="img_style">
-            </button>
-            <p class="form_name">Double Kettlebell Sumo Deadlift</p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement ">Kettlebell</a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i>Glutes, Hamstrings, Quadriceps ,
-                        Lower Back,Core, Upper Back, Grip Strength.</i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_beginner" id="Beginner_back3">
-            <button class="change_txt_btn" onclick="change_text3()">
-                <img src="https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/how-to-do-a-kettlebell-sumo-squat.gif"
-                    alt="" class="img_style">
-            </button>
-            <p class="form_name">Kettlebell Sumo Squat</p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement ">Kettlebell</a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i>Glutes, Quadriceps, Inner Thighs,
-                        Core, Lower Back.</i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_beginner" id="Beginner_back4">
-            <button class="change_txt_btn" onclick="change_text4()">
-                <img src="https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/Kettlebell%20Sumo%20Deadlift.gif"
-                    alt="" class="img_style">
-            </button>
-            <p class="form_name">Kettlebell Sumo Deadlift</p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement ">Kettlebell</a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i>Glutes, Hamstrings, Quadriceps,
-                        Lower Back,Core, Upper Back, Grip Strength.</i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_beginner" id="Beginner_back5">
-            <button class="change_txt_btn" onclick="change_text()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_beginner" id="Beginner_back4">
-            <button class="change_txt_btn" onclick="change_text5()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_beginner" id="Beginner_back5">
-            <button class="change_txt_btn" onclick="change_text6()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_beginner" id="Beginner_back4">
-            <button class="change_txt_btn" onclick="change_text7()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_beginner" id="Beginner_back5">
-            <button class="change_txt_btn" onclick="change_text8()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_beginner" id="Beginner_back4">
-            <button class="change_txt_btn" onclick="change_text9()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_beginner" id="Beginner_back5">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+<!-- SECTIONS: dynamically injected by JS -->
+<div id="sections_container"></div>
+
+<!-- MODAL -->
+<div id="steps_modal" role="dialog" aria-modal="true">
+    <div class="modal_inner">
+        <button id="close_modal_btn" onclick="window.closeModalFunc()">✕ CLOSE</button>
+        <div id="modal_body"></div>
     </div>
-    <h2 class="back_Head">Novice</h2>
-    <div id="Novice_Level_ex">
+</div>
 
-        <div class="all_Novice" id="Novice_Level_ex1">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Novice" id="Novice_Level_ex2"><button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Novice" id="Novice_Level_ex3">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Novice" id="Novice_Level_ex4">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Novice" id="Novice_Level_ex5">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Novice" id="Novice_Level_ex6">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Novice" id="Novice_Level_ex7">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Novice" id="Novice_Level_ex8">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-    </div>
-    <h2 class="back_Head">Intermediate</h2>
-    <div id="Intermediate_Level_ex">
-        <div class="all_Intermediate" id="Intermediate_Level_ex1">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Intermediate" id="Intermediate_Level_ex2">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Intermediate" id="Intermediate_Level_ex3">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Intermediate" id="Intermediate_Level_ex4">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Intermediate" id="Intermediate_Level_ex5">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Intermediate" id="Intermediate_Level_ex6">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-    </div>
-    <h2 class="back_Head">Advanced</h2>
-    <div id="Advance_Level_ex">
-        <div class="all_Advance" id="Advance_Level_ex1">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+<script>
+(function () {
+    const XML_RAW_URL = "https://raw.githubusercontent.com/Hunny-Chaurasia/-myHealthyFitness/main/Back.xml";
 
-        <div class="all_Advance" id="Advance_Level_ex1">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+    /* ── helpers ─────────────────────────────── */
+    function esc(str) {
+        if (!str) return '';
+        return str.replace(/[&<>"']/g, m => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        }[m]));
+    }
+    function getText(parent, tag) {
+        if (!parent) return '';
+        const el = parent.getElementsByTagName(tag)[0];
+        return el ? el.textContent.trim() : '';
+    }
+    // Canonical order for rendering sections top-to-bottom
+    const LEVEL_ORDER = ['Novice', 'Beginner', 'Intermediate', 'Advanced', 'Expert'];
+    const LEVEL_META = {
+        'Novice':       { emoji: '⚪', dot: '#aaaaaa', label: 'NOVICE'       },
+        'Beginner':     { emoji: '🟢', dot: '#5aff6b', label: 'BEGINNER'     },
+        'Intermediate': { emoji: '🟡', dot: '#f5e03b', label: 'INTERMEDIATE' },
+        'Advanced':     { emoji: '🟠', dot: '#ff9d3b', label: 'ADVANCED'     },
+        'Expert':       { emoji: '🔴', dot: '#ff4f4f', label: 'EXPERT'       },
+    };
 
-        <div class="all_Advance" id="Advance_Level_ex2">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+    function normDiff(d) {
+        if (!d) return 'Beginner';
+        const s = d.trim().toLowerCase();
+        // exact match first
+        for (const lvl of LEVEL_ORDER) {
+            if (s === lvl.toLowerCase()) return lvl;
+        }
+        // partial match
+        for (const lvl of LEVEL_ORDER) {
+            if (s.includes(lvl.toLowerCase())) return lvl;
+        }
+        // unknown — capitalise and keep
+        return d.trim().charAt(0).toUpperCase() + d.trim().slice(1);
+    }
 
-        <div class="all_Advance" id="Advance_Level_ex3">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+    /* ── XML parsing ─────────────────────────── */
+    function parsePoses(xmlDoc) {
+        const poses = xmlDoc.getElementsByTagName('Pose');
+        if (!poses.length) throw new Error('No <Pose> elements found in XML.');
+        const out = [];
+        for (let i = 0; i < poses.length; i++) {
+            const p = poses[i];
 
-        <div class="all_Advance" id="Advance_Level_ex4">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+            // GIF url
+            let gif = '';
+            const urls = p.getElementsByTagName('url');
+            for (let u of urls) {
+                const t = u.getAttribute('type');
+                if (!t || t === 'gif') { gif = u.textContent.trim(); break; }
+            }
+            if (!gif && urls.length) gif = urls[0].textContent.trim();
 
-        <div class="all_Advance" id="Advance_Level_ex5">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+            // muscles
+            const muscNode = p.getElementsByTagName('Focused_Muscles')[0];
+            let muscles = 'Core & stabilizers';
+            if (muscNode) {
+                const prim = muscNode.getElementsByTagName('Primary')[0];
+                muscles = prim ? prim.textContent.trim() : muscNode.textContent.trim().replace(/\s+/g, ' ');
+                if (muscles.length > 70) muscles = muscles.slice(0, 68) + '…';
+            }
 
-        <div class="all_Advance" id="Advance_Level_ex6">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+            // diseases
+            const dcNode = p.getElementsByTagName('Diseases_Cured')[0];
+            let diseases = 'Supports overall mobility';
+            if (dcNode) {
+                const targ = dcNode.getElementsByTagName('Targeted')[0];
+                diseases = targ ? targ.textContent.trim() : dcNode.textContent.trim().replace(/\s+/g, ' ').slice(0, 120);
+            }
 
-        <div class="all_Advance" id="Advance_Level_ex7">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+            // steps
+            const steps = [];
+            const stepNodes = p.getElementsByTagName('step');
+            for (let s of stepNodes) {
+                steps.push({
+                    order: s.getAttribute('order') || (steps.length + 1),
+                    focus: s.getAttribute('focus') || 'Movement',
+                    text:  s.textContent.trim().replace(/\s+/g, ' ')
+                });
+            }
 
-    </div>
-    <h2 class="back_Head">Expert</h2>
-    <div id="Expert_Level_ex">
-        <div class="all_Expert" id="Expert_Level_ex1">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+            // mistakes
+            const mistakes = [];
+            const cmNode = p.getElementsByTagName('common_mistakes')[0];
+            if (cmNode) {
+                for (let m of cmNode.getElementsByTagName('mistake')) {
+                    const t = m.textContent.trim();
+                    if (t) mistakes.push(t);
+                }
+            }
 
-        <div class="all_Expert" id="Expert_Level_ex2">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+            out.push({
+                id:            p.getAttribute('id') || i,
+                name:          getText(p, 'Name') || 'Exercise',
+                difficulty:    normDiff(p.getAttribute('difficulty')),
+                poseType:      p.getAttribute('Pose_type') || 'Functional',
+                safety:        p.getAttribute('safety') || '',
+                gif,
+                equipment:     getText(p, 'Equipment') || 'No equipment',
+                muscles,
+                weightMax:     getText(p, 'Weight_Max') || '',
+                ageGrp:        getText(p, 'Age_Grp') || '',
+                preferredTime: getText(p, 'Preferred_Time') || getText(p, 'Preferred') || 'Anytime, after warm-up',
+                diseases,
+                steps,
+                mistakes
+            });
+        }
+        return out;
+    }
 
-        <div class="all_Expert" id="Expert_Level_ex3">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+    /* ── fetch with CORS fallbacks ───────────── */
+    async function fetchXml() {
+        const proxies = [
+            XML_RAW_URL,
+            `https://api.allorigins.win/raw?url=${encodeURIComponent(XML_RAW_URL)}`,
+            `https://corsproxy.io/?${encodeURIComponent(XML_RAW_URL)}`,
+            `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(XML_RAW_URL)}`
+        ];
+        for (const url of proxies) {
+            try {
+                const res = await fetch(url, { cache: 'no-store', headers: { Accept: 'application/xml, text/xml' } });
+                if (!res.ok) continue;
+                const txt = await res.text();
+                if (txt.includes('<Pose')) return txt;
+            } catch (_) {}
+        }
+        throw new Error('Unable to fetch Legs.xml. Make sure the repository is public and the file exists.');
+    }
 
-        <div class="all_Expert" id="Expert_Level_ex4">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+    /* ── card builder ────────────────────────── */
+    function buildCard(pose) {
+        const card = document.createElement('div');
+        card.className = 'exercise-card';
+        card.setAttribute('role', 'button');
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('aria-label', `View guide for ${pose.name}`);
+        card.addEventListener('click', () => openModal(pose));
+        card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') openModal(pose); });
 
-        <div class="all_Expert" id="Expert_Level_ex5">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        // media
+        const media = document.createElement('div');
+        media.className = 'card-media';
+        const img = document.createElement('img');
+        img.alt = pose.name;
+        img.loading = 'lazy';
+        const FALLBACK = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180"%3E%3Crect width="320" height="180" fill="%23151515"/%3E%3Ctext x="50%25" y="50%25" fill="%23333" font-size="13" font-family="sans-serif" text-anchor="middle" dy=".3em"%3EPreview unavailable%3C/text%3E%3C/svg%3E';
+        img.src = pose.gif && pose.gif.startsWith('http') ? pose.gif : FALLBACK;
+        img.onerror = () => { img.src = FALLBACK; };
+        const overlay = document.createElement('div');
+        overlay.className = 'card-media-overlay';
+        const badge = document.createElement('div');
+        badge.className = 'card-diff-badge';
+        badge.textContent = `${pose.difficulty} · ${pose.poseType}`;
+        media.appendChild(img);
+        media.appendChild(overlay);
+        media.appendChild(badge);
 
-        <div class="all_Expert" id="Expert_Level_ex6">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        // body
+        const body = document.createElement('div');
+        body.className = 'card-body';
+        const name = document.createElement('div');
+        name.className = 'card-name';
+        name.textContent = pose.name;
+        const meta = document.createElement('div');
+        meta.className = 'card-meta';
+        meta.innerHTML = `
+            <span class="meta-chip">🛠️ <strong>${esc(pose.equipment.slice(0, 35))}</strong></span>
+            <span class="meta-chip">🎯 ${esc(pose.muscles.slice(0, 50))}</span>
+        `;
+        const hint = document.createElement('div');
+        hint.className = 'card-tap-hint';
+        hint.textContent = '👆 Tap for full guide & steps';
 
-        <div class="all_Expert" id="Expert_Level_ex7">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        body.appendChild(name);
+        body.appendChild(meta);
+        body.appendChild(hint);
+        card.appendChild(media);
+        card.appendChild(body);
+        return card;
+    }
 
-        <div class="all_Expert" id="Expert_Level_ex8">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+    /* ── modal ───────────────────────────────── */
+    function openModal(pose) {
+        const mb = document.getElementById('modal_body');
+        mb.innerHTML = '';
 
-        <div class="all_Expert" id="Expert_Level_ex9">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        // image
+        if (pose.gif && pose.gif.startsWith('http')) {
+            const img = document.createElement('img');
+            img.src = pose.gif;
+            img.className = 'modal-img';
+            img.alt = pose.name;
+            mb.appendChild(img);
+        }
 
-        <div class="all_Expert" id="Expert_Level_ex10">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        // title + meta chips
+        const title = document.createElement('div');
+        title.className = 'modal-title';
+        title.textContent = pose.name;
+        mb.appendChild(title);
 
-        <div class="all_Expert" id="Expert_Level_ex11">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-    </div>
-    <h2 class="back_Head">Master</h2>
-    <div id="Master_Level_ex">
-        <div class="all_Master" id="Master_Level_ex1">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Master" id="Master_Level_ex2">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
-        <div class="all_Master" id="Master_Level_ex3">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-            <div class="all_Master" id="Master_Level_ex4">
-                <button class="change_txt_btn" onclick="change_text10()">
-                    <img src="" alt="" class="img_style">
-                </button>
-                <p class="form_name"></p>
-                <br>
-                <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-                <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-                <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-                <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-            </div>
-            <div class="all_Master" id="Master_Level_ex5">
-                <button class="change_txt_btn" onclick="change_text10()">
-                    <img src="" alt="" class="img_style">
-                </button>
-                <p class="form_name"></p>
-                <br>
-                <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-                <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-                <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-                <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-            </div>
-            <div class="all_Master" id="Master_Level_ex6">
-                <button class="change_txt_btn" onclick="change_text10()">
-                    <img src="" alt="" class="img_style">
-                </button>
-                <p class="form_name"></p>
-                <br>
-                <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-                <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-                <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-                <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-            </div>
-            <div class="all_Master" id="Master_Level_ex7">
-                <button class="change_txt_btn" onclick="change_text10()">
-                    <img src="" alt="" class="img_style">
-                </button>
-                <p class="form_name"></p>
-                <br>
-                <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-                <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-                <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-                <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-            </div>
-            <div class="all_Master" id="Master_Level_ex8">
-                <button class="change_txt_btn" onclick="change_text10()">
-                    <img src="" alt="" class="img_style">
-                </button>
-                <p class="form_name"></p>
-                <br>
-                <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-                <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-                <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-                <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-            </div>
-            <div class="all_Master" id="Master_Level_ex9">
-                <button class="change_txt_btn" onclick="change_text10()">
-                    <img src="" alt="" class="img_style">
-                </button>
-                <p class="form_name"></p>
-                <br>
-                <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-                <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-                <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-                <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-            </div>
-            <div class="all_Master" id="Master_Level_ex10">
-                <button class="change_txt_btn" onclick="change_text10()">
-                    <img src="" alt="" class="img_style">
-                </button>
-                <p class="form_name"></p>
-                <br>
-                <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-                <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-                <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-                <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-            </div>
-            <div class="all_Master" id="Master_Level_ex11">
-                <button class="change_txt_btn" onclick="change_text10()">
-                    <img src="" alt="" class="img_style">
-                </button>
-                <p class="form_name"></p>
-                <br>
-                <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-                <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-                <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-                <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-            </div>
-        </div>
-    </div>
-    <h2 class="back_Head">Grand Master</h2>
-    <div id="Grand_Master_Level_ex">
-        <div class="all_Grand_Master" id="Grand_Master_Level_ex1">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        const chips = document.createElement('div');
+        chips.className = 'modal-meta-row';
+        [pose.difficulty, pose.poseType, pose.ageGrp].filter(Boolean).forEach(t => {
+            const c = document.createElement('span');
+            c.className = 'modal-chip';
+            c.textContent = t;
+            chips.appendChild(c);
+        });
+        mb.appendChild(chips);
 
-        <div class="all_Grand_Master" id="Grand_Master_Level_ex2">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        // info grid
+        const grid = document.createElement('div');
+        grid.className = 'modal-info-grid';
+        const cells = [
+            ['📦 Equipment', pose.equipment],
+            ['💪 Muscles', pose.muscles],
+            ['⚖️ Weight Range', pose.weightMax || 'Bodyweight'],
+            ['🌟 Helps With', pose.diseases],
+        ];
+        cells.forEach(([label, val]) => {
+            if (!val) return;
+            const cell = document.createElement('div');
+            cell.className = 'info-cell';
+            cell.innerHTML = `<div class="info-label">${label}</div><div class="info-val">${esc(val)}</div>`;
+            grid.appendChild(cell);
+        });
+        mb.appendChild(grid);
 
-        <div class="all_Grand_Master" id="Grand_Master_Level_ex3">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        // safety note
+        if (pose.safety) {
+            const safeDiv = document.createElement('div');
+            safeDiv.style.cssText = 'background:#12130a;border:1px solid rgba(53,212,241,0.15);border-radius:12px;padding:0.8rem 1rem;font-size:0.78rem;color:#8ac8d4;line-height:1.55;margin-bottom:0.5rem;';
+            safeDiv.innerHTML = `<span style="color:#35d4f1;font-weight:700;letter-spacing:0.5px;">⚠ SAFETY NOTE</span><br>${esc(pose.safety)}`;
+            mb.appendChild(safeDiv);
+        }
 
-        <div class="all_Grand_Master" id="Grand_Master_Level_ex4">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        // steps
+        if (pose.steps.length) {
+            const st = document.createElement('div');
+            st.className = 'steps-title';
+            st.textContent = '📋 EXECUTION STEPS';
+            mb.appendChild(st);
+            pose.steps.forEach(s => {
+                const row = document.createElement('div');
+                row.className = 'step-item';
+                const num = document.createElement('div');
+                num.className = 'step-num';
+                num.textContent = s.order;
+                const cont = document.createElement('div');
+                cont.className = 'step-content';
+                cont.innerHTML = `<div class="step-focus">${esc(s.focus)}</div><div class="step-text">${esc(s.text)}</div>`;
+                row.appendChild(num);
+                row.appendChild(cont);
+                mb.appendChild(row);
+            });
+        }
 
-        <div class="all_Grand_Master" id="Grand_Master_Level_ex5">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        // mistakes
+        if (pose.mistakes.length) {
+            const mt = document.createElement('div');
+            mt.className = 'mistakes-title';
+            mt.textContent = '⚠️ COMMON MISTAKES';
+            mb.appendChild(mt);
+            pose.mistakes.forEach(m => {
+                const item = document.createElement('div');
+                item.className = 'mistake-item';
+                item.textContent = m;
+                mb.appendChild(item);
+            });
+        }
 
-        <div class="all_Grand_Master" id="Grand_Master_Level_ex6">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        const modal = document.getElementById('steps_modal');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        // scroll modal to top
+        modal.querySelector('.modal_inner').scrollTop = 0;
+    }
 
-        <div class="all_Grand_Master" id="Grand_Master_Level_ex7">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+    window.closeModalFunc = function () {
+        document.getElementById('steps_modal').style.display = 'none';
+        document.body.style.overflow = '';
+    };
+    document.getElementById('steps_modal').addEventListener('click', function (e) {
+        if (e.target === this) window.closeModalFunc();
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') window.closeModalFunc(); });
 
-        <div class="all_Grand_Master" id="Grand_Master_Level_ex8">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+    /* ── populate (fully dynamic — any difficulty value) ── */
+    function populate(poses) {
+        // Group by difficulty
+        const groups = {};
+        poses.forEach(p => {
+            if (!groups[p.difficulty]) groups[p.difficulty] = [];
+            groups[p.difficulty].push(p);
+        });
 
-        <div class="all_Grand_Master" id="Grand_Master_Level_ex9">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        // Sort keys: known levels first in order, then any unknowns alphabetically
+        const knownKeys = LEVEL_ORDER.filter(l => groups[l]);
+        const unknownKeys = Object.keys(groups).filter(k => !LEVEL_ORDER.includes(k)).sort();
+        const orderedKeys = [...knownKeys, ...unknownKeys];
 
-        <div class="all_Grand_Master" id="Grand_Master_Level_ex10">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        // Inject sections into DOM dynamically
+        const container = document.getElementById('sections_container');
+        container.innerHTML = '';
 
-        <div class="all_Grand_Master" id="Grand_Master_Level_ex11">
-            <button class="change_txt_btn" onclick="change_text10()">
-                <img src="" alt="" class="img_style">
-            </button>
-            <p class="form_name"></p>
-            <br>
-            <p class="text_left">Equipment : <a href="http://" class="equipement "></a></p>
-            <p class="text_left">Focused Muscles : <span class="Focused_Muscles"><i></i></span></p><br>
-            <p class="text_left Click_image">Click the image to view the steps & start!!</p>
-            <p class="text_right">Your Points : <span id="seated_row_points">0</span>pts</p>
-        </div>
+        orderedKeys.forEach(lvl => {
+            const arr = groups[lvl];
+            const meta = LEVEL_META[lvl] || { emoji: '⚫', dot: '#666', label: lvl.toUpperCase() };
 
-    </div>
-    <script src="script.js">
+            // Section wrapper
+            const sec = document.createElement('div');
 
-    </script>
-</Body>
+            // Section heading
+            const head = document.createElement('div');
+            head.className = 'section-head';
+            head.innerHTML = `
+                ${meta.emoji} ${meta.label}
+                <span class="pill">
+                    <span class="dot" style="background:${meta.dot}"></span>
+                    ${arr.length} exercise${arr.length !== 1 ? 's' : ''}
+                </span>
+            `;
+
+            // Grid
+            const grid = document.createElement('div');
+            grid.className = 'exercise-grid';
+            arr.forEach(p => grid.appendChild(buildCard(p)));
+
+            sec.appendChild(head);
+            sec.appendChild(grid);
+            container.appendChild(sec);
+        });
+    }
+
+    /* ── init ────────────────────────────────── */
+    async function init() {
+        const loading = document.getElementById('loading_msg');
+        const errorDiv = document.getElementById('error_msg');
+        loading.style.display = 'flex';
+        errorDiv.style.display = 'none';
+        try {
+            const raw = await fetchXml();
+            const clean = raw.replace(/&(?!(amp|lt|gt|quot|apos|#x?[0-9a-fA-F]+);)/g, '&amp;');
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(clean, 'text/xml');
+            const err = doc.querySelector('parsererror');
+            if (err) throw new Error('XML parse error: ' + err.textContent.slice(0, 200));
+            const poses = parsePoses(doc);
+            if (!poses.length) throw new Error('No exercises found in Legs.xml.');
+            populate(poses);
+            loading.style.display = 'none';
+        } catch (err) {
+            console.error(err);
+            loading.style.display = 'none';
+            errorDiv.style.display = 'block';
+            errorDiv.innerHTML = `
+                <div style="font-size:1.1rem;margin-bottom:10px;font-weight:700;">⚠️ LOAD FAILED</div>
+                <div style="background:#0e0a0a;padding:0.9rem;border-radius:12px;font-size:0.82rem;color:#f88;">${esc(err.message)}</div>
+                <div style="margin-top:0.9rem;font-size:0.75rem;color:#666;">Ensure <code style="background:#000;padding:2px 6px;border-radius:4px;">${XML_RAW_URL}</code> is publicly accessible.</div>
+                <button class="retry-btn" id="retryBtn">⟳ RETRY</button>
+            `;
+            document.getElementById('retryBtn').addEventListener('click', init);
+        }
+    }
+
+    init();
+})();
+</script>
+</body>
+</html>
