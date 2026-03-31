@@ -435,45 +435,6 @@
             <mistake>Moving too quickly or using momentum instead of relying on muscle control for stability.</mistake>
         </common_mistakes>
     </Pose>
-    <Pose id="13" difficulty="Beginner" safety="Maintain a strong, engaged core to keep your balance on the ball. Avoid rounding your spine; keep your chest lifted and back straight. Move in a controlled manner—do not use momentum to swing. If you feel unstable, perform without weight or with your feet wider apart for a better base." Pose_type="Core Strength, Stability">
-        <url type="gif">[raw.githubusercontent.com](https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/stability_ball_russian_twist.gif)</url>
-        <Name>Stability Ball Russian Twist</Name>
-        <Equipment>Stability Ball (Swiss Ball), Optional: Dumbbell, Medicine Ball, or Weight Plate</Equipment>
-        <Focused_Muscles>
-            <Primary>Obliques (External and Internal), Rectus Abdominis</Primary>
-            <Secondary>Hip Flexors, Transverse Abdominis (for stabilization)</Secondary>
-            <Stabilizers>Lower Back (Erector Spinae), Shoulders, Glutes</Stabilizers>
-        </Focused_Muscles>
-        <Preferred time="Morning">Can be done in the morning after a light warm-up. Provides both core activation and balance training to start the day.</Preferred>
-        <Diseases_Cured>
-            <Targeted>Poor Rotational Stability, Weak Core Muscles, Lack of Balance and Coordination</Targeted>
-            <Preventive>Enhances functional core strength for twisting movements, improves posture, and reduces risk of injury during sports or daily activities.</Preventive>
-        </Diseases_Cured>
-        <Age>18-70 years (with stability and balance)</Age>
-        <steps>
-            <step order="1" focus="Setup">
-                Sit on the stability ball. Walk your feet forward as you lean back, rolling the ball until it supports your mid to upper back. Your knees should be bent at 90 degrees, feet flat on the floor hip-width apart. Lift your chest to create a straight torso from knees to shoulders. Clasp your hands together or hold a light weight at your chest.
-            </step>
-            <step order="2" focus="Engage & Rotate">
-                Inhale to brace your core. Exhale as you slowly rotate your torso to one side, keeping your hips stable and the ball still. Lead the movement with your chest and shoulders, not just your arms.
-            </step>
-            <step order="3" focus="Controlled Return">
-                Pause briefly when you feel a gentle stretch in your side abs. Inhale as you return to the center with control, maintaining your balance on the ball.
-            </step>
-            <step order="4" focus="Repeat">
-                Exhale as you rotate to the opposite side. Continue alternating sides in a slow, rhythmic motion. Aim for 10-15 repetitions per side for 2-3 sets.
-            </step>
-            <step order="5" focus="Tip">
-                **Focus on keeping the ball completely still.** Any rocking or rolling means your core is not fully engaged to stabilize your spine. Start with no weight to master the balance, and only add resistance once you can perform the movement without wobbling.
-            </step>
-        </steps>
-        <common_mistakes>
-            <mistake>Allowing the stability ball to rock or roll side-to-side, indicating insufficient core engagement and balance.</mistake>
-            <mistake>Dropping the chest or rounding the upper back, which shifts stress to the lower back and reduces oblique activation.</mistake>
-            <mistake>Using only the arms to swing the weight, rather than rotating the entire torso from the core muscles.</mistake>
-            <mistake>Moving too fast, which compromises form and reduces the effectiveness of the stability challenge.</mistake>
-        </common_mistakes>
-    </Pose>
     <Pose id="14" difficulty="Beginner" safety="Ensure the stability ball is secure and does not slip. Keep the movement controlled to prevent straining your neck or lower back. Engage your core throughout—do not use momentum to rock back and forth. If you have balance issues, perform with feet on the floor before progressing to elevation." Pose_type="Core Strength, Stability">
         <url type="gif">[raw.githubusercontent.com](https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/stability_ball_feet_elevated_crunch.gif)</url>
         <Name>Stability Ball Feet Elevated Crunch</Name>
