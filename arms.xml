@@ -30,7 +30,7 @@
     </Pose>
 
     <Pose id="ARM-B-02" difficulty="Beginner" safety="Keep your wrists neutral (straight) throughout the movement. Avoid rotating your palms - the hammer grip is fixed. Control the movement." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/hammer_curl.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/dumbbell-hammer-curl.gif</url>
         <Name>Dumbbells Hammer Curl</Name>
         <Equipment>Dumbbells</Equipment>
         <Focused_Muscles>Brachialis, Brachioradialis, Biceps Brachii</Focused_Muscles>
@@ -54,7 +54,7 @@
 
     <!-- TRICEPS - Beginner -->
     <Pose id="ARM-T-01" difficulty="Beginner" safety="Keep your elbows pinned to your sides. Avoid letting your elbows flare outward. Control the weight on both the push and the return." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/tricep_pushdown_cable.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/resistance-band-triceps-pushdown.gif</url>
         <Name>Tricep Pushdown (Cable/Band)</Name>
         <Equipment>Cable Machine or Resistance Band, Rope or Bar Attachment</Equipment>
         <Focused_Muscles>Triceps Brachii (All 3 heads - Long, Lateral, Medial)</Focused_Muscles>
@@ -77,7 +77,7 @@
     </Pose>
 
     <Pose id="ARM-T-02" difficulty="Beginner" safety="Keep your shoulders down and back. Lower yourself only as far as your shoulders comfortably allow. Avoid letting your elbows flare outward." Pose_type="Strength, Bodyweight">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bench_dip.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/bench_dip.gif</url>
         <Name>Bench Dip</Name>
         <Equipment>Bench or Chair, Optional: Weight on Lap</Equipment>
         <Focused_Muscles>Triceps Brachii, Anterior Deltoid (Stabilizer), Chest (Minor)</Focused_Muscles>
@@ -101,7 +101,7 @@
 
     <!-- SHOULDERS - Beginner -->
     <Pose id="ARM-S-01" difficulty="Beginner" safety="Keep your core engaged and back straight. Avoid arching your lower back. Do not lock out your elbows at the top." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_shoulder_press.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/dumbbell_shoulder_press.gif</url>
         <Name>Dumbbell Shoulder Press</Name>
         <Equipment>Dumbbells, Bench (Seated) or Chair</Equipment>
         <Focused_Muscles>Deltoids (Anterior and Medial Heads), Triceps, Trapezius</Focused_Muscles>
@@ -124,7 +124,7 @@
     </Pose>
 
     <Pose id="ARM-S-02" difficulty="Beginner" safety="Keep a slight bend in your elbows throughout the movement. Avoid using momentum to swing the weights up. Control the descent." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lateral_raise.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/lateral_raise.gif</url>
         <Name>Lateral Raise</Name>
         <Equipment>Light Dumbbells</Equipment>
         <Focused_Muscles>Deltoids (Medial Head - Side Shoulder), Trapezius (Upper)</Focused_Muscles>
@@ -148,7 +148,7 @@
 
     <!-- FOREARMS - Beginner -->
     <Pose id="ARM-F-01" difficulty="Beginner" safety="Rest your forearms fully on your thighs for stability. Move only your wrists - keep your arms and body still. Avoid jerky movements." Pose_type="Strength, Grip">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/wrist_curl.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/wrist_curl.gif</url>
         <Name>Wrist Curl</Name>
         <Equipment>Light Barbell or Dumbbells, Bench</Equipment>
         <Focused_Muscles>Forearm Flexors, Grip Muscles</Focused_Muscles>
@@ -171,7 +171,7 @@
     </Pose>
 
     <Pose id="ARM-F-02" difficulty="Beginner" safety="Keep your forearms fully supported. Move only your wrists. Avoid jerking the weight - control is key." Pose_type="Strength, Grip">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/reverse_wrist_curl.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/reverse_wrist_curl.gif</url>
         <Name>Reverse Wrist Curl</Name>
         <Equipment>Light Barbell or Dumbbells, Bench</Equipment>
         <Focused_Muscles>Forearm Extensors</Focused_Muscles>
@@ -199,7 +199,7 @@
 
     <!-- BICEPS - Novice -->
     <Pose id="ARM-B-03" difficulty="Novice" safety="Avoid using your lower back to swing the weight. Keep your core braced and elbows pinned to your sides. Control the barbell throughout." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_curl.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell_curl.gif</url>
         <Name>Barbell Curl</Name>
         <Equipment>Barbell with weight plates</Equipment>
         <Focused_Muscles>Biceps Brachii (Both Heads), Brachialis</Focused_Muscles>
@@ -222,7 +222,7 @@
     </Pose>
 
     <Pose id="ARM-B-04" difficulty="Novice" safety="Keep your shoulders and upper back pressed firmly against the bench. Avoid using momentum to swing the dumbbells." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_dumbbell_curl.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/incline_dumbbell_curl.gif</url>
         <Name>Incline Dumbbell Curl</Name>
         <Equipment>Adjustable Bench, Dumbbells</Equipment>
         <Focused_Muscles>Biceps Brachii (Long Head - Outer Biceps), Brachialis</Focused_Muscles>
@@ -246,7 +246,7 @@
 
     <!-- TRICEPS - Novice -->
     <Pose id="ARM-T-03" difficulty="Novice" safety="Keep your elbows pointing toward the ceiling throughout. Avoid flaring elbows outward. Control the weight on the descent." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/skull_crusher.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/skull_crusher.gif</url>
         <Name>Skull Crushers (Lying Tricep Extension)</Name>
         <Equipment>EZ-Bar or Barbell with weight plates, Dumbbells, Bench</Equipment>
         <Focused_Muscles>Triceps Brachii (All 3 Heads, especially Long Head)</Focused_Muscles>
@@ -269,7 +269,7 @@
     </Pose>
 
     <Pose id="ARM-T-04" difficulty="Novice" safety="Keep your elbows pinned to your sides. Avoid leaning forward or using body momentum. Control the weight throughout." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_pushdown_tricep.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/cable_pushdown_tricep.gif</url>
         <Name>Cable Pushdown</Name>
         <Equipment>Cable Machine with V-Bar or Rope</Equipment>
         <Focused_Muscles>Triceps Brachii (Lateral and Medial Heads)</Focused_Muscles>
@@ -292,7 +292,7 @@
     </Pose>
 
     <Pose id="ARM-T-05" difficulty="Novice" safety="Lower yourself only as far as your shoulders comfortably allow. Keep your body close to the bars. Avoid letting your shoulders roll forward." Pose_type="Strength, Bodyweight">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/tricep_dip.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/tricep_dip.gif</url>
         <Name>Tricep Dips</Name>
         <Equipment>Dip Bars or Parallel Bars</Equipment>
         <Focused_Muscles>Triceps Brachii (All 3 Heads), Chest (Minor), Anterior Deltoid</Focused_Muscles>
@@ -316,7 +316,7 @@
 
     <!-- SHOULDERS - Novice -->
     <Pose id="ARM-S-03" difficulty="Novice" safety="Keep your core braced and lower back neutral. Avoid arching your back to press heavier weight. Control the barbell throughout." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/overhead_press_barbell.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/overhead_press_barbell.gif</url>
         <Name>Overhead Press (Barbell)</Name>
         <Equipment>Barbell with Weight Plates, Squat Rack (Optional)</Equipment>
         <Focused_Muscles>Deltoids (Anterior and Medial Heads), Triceps, Trapezius, Core Stabilizers</Focused_Muscles>
@@ -339,7 +339,7 @@
     </Pose>
 
     <Pose id="ARM-S-04" difficulty="Novice" safety="Keep a slight bend in your elbows throughout. Avoid using momentum to swing the dumbbells. Control the descent." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lateral_raise_dumbbell.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/lateral_raise_dumbbell.gif</url>
         <Name>Lateral Raise (Dumbbell)</Name>
         <Equipment>Dumbbells</Equipment>
         <Focused_Muscles>Deltoids (Medial Head - Side Shoulder), Trapezius (Upper)</Focused_Muscles>
@@ -362,7 +362,7 @@
     </Pose>
 
     <Pose id="ARM-S-05" difficulty="Novice" safety="Keep your chest supported against the bench. Avoid using momentum to swing the dumbbells. Control the movement throughout." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/rear_delt_fly.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/rear_delt_fly.gif</url>
         <Name>Rear Delt Fly</Name>
         <Equipment>Dumbbells, Incline Bench</Equipment>
         <Focused_Muscles>Deltoids (Posterior Head - Rear Shoulder), Rhomboids, Trapezius</Focused_Muscles>
@@ -386,7 +386,7 @@
 
     <!-- FOREARMS - Novice -->
     <Pose id="ARM-F-03" difficulty="Novice" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight throughout. Avoid jerky movements or using momentum." Pose_type="Strength, Grip">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_wrist_curl.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell_wrist_curl.gif</url>
         <Name>Barbell Wrist Curl</Name>
         <Equipment>Barbell, Bench</Equipment>
         <Focused_Muscles>Forearm Flexors, Grip Muscles</Focused_Muscles>
@@ -409,7 +409,7 @@
     </Pose>
 
     <Pose id="ARM-F-04-N" difficulty="Novice" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight throughout - do not let it drop quickly." Pose_type="Strength, Grip">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/reverse_wrist_curl_novice.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/reverse_wrist_curl_novice.gif</url>
         <Name>Reverse Wrist Curl</Name>
         <Equipment>Barbell or Light Dumbbells, Bench</Equipment>
         <Focused_Muscles>Forearm Extensors, Brachioradialis</Focused_Muscles>
@@ -432,7 +432,7 @@
     </Pose>
 
     <Pose id="ARM-F-05-N" difficulty="Novice" safety="Keep your shoulders down and back. Maintain a straight posture. Avoid swinging your body. Walk with control, not speed. Keep your core braced." Pose_type="Grip Strength, Functional, Cardio">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/farmers_carry_novice.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/farmers_carry_novice.gif</url>
         <Name>Farmer's Carry</Name>
         <Equipment>Dumbbells or Kettlebells (Moderate Weight)</Equipment>
         <Focused_Muscles>Forearm Flexors, Grip Muscles, Trapezius, Core Stabilizers, Glutes, Quadriceps, Hamstrings</Focused_Muscles>
@@ -461,7 +461,7 @@
 
     <!-- BICEPS - Advanced -->
     <Pose id="ARM-B-05" difficulty="Advanced" safety="Keep your core braced and back straight. Avoid using momentum - control the barbell on both the curl and the descent. Do not arch your lower back." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_curl_heavy.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell_curl_heavy.gif</url>
         <Name>Barbell Curl (Heavy)</Name>
         <Equipment>Barbell with Weight Plates</Equipment>
         <Focused_Muscles>Biceps Brachii (Both Heads), Brachialis</Focused_Muscles>
@@ -484,7 +484,7 @@
     </Pose>
 
     <Pose id="ARM-B-06" difficulty="Advanced" safety="Keep your upper arms and back pressed firmly against the bench pad. Do not let your shoulders lift. Control the weight throughout." Pose_type="Hypertrophy, Isolation">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_dumbbell_curl_advanced.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/incline_dumbbell_curl_advanced.gif</url>
         <Name>Incline Dumbbell Curl (Advanced)</Name>
         <Equipment>Adjustable Bench, Dumbbells</Equipment>
         <Focused_Muscles>Biceps Brachii (Long Head), Brachialis</Focused_Muscles>
@@ -507,7 +507,7 @@
     </Pose>
 
     <Pose id="ARM-B-07" difficulty="Advanced" safety="Keep your upper arm pressed against the inner thigh for stability. Avoid using body momentum. Control the curl and descent fully." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/concentration_curl.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/concentration_curl.gif</url>
         <Name>Concentration Curl</Name>
         <Equipment>Dumbbells, Bench</Equipment>
         <Focused_Muscles>Biceps Brachii (Peak Development), Brachialis</Focused_Muscles>
@@ -530,7 +530,7 @@
     </Pose>
 
     <Pose id="ARM-B-08" difficulty="Advanced" safety="Keep your elbows pinned to your sides. Avoid leaning back or using body momentum. Control the cable tension throughout." Pose_type="Hypertrophy, Constant Tension">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_curl.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/cable_curl.gif</url>
         <Name>Cable Curl</Name>
         <Equipment>Cable Machine with Bar or Rope Attachment</Equipment>
         <Focused_Muscles>Biceps Brachii (Constant Tension throughout ROM)</Focused_Muscles>
@@ -554,7 +554,7 @@
 
     <!-- TRICEPS - Advanced -->
     <Pose id="ARM-T-06" difficulty="Advanced" safety="Keep your elbows tucked close to your body. Lower the bar to your lower chest. Control the weight - do not bounce it off your chest." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/close_grip_bench_press.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/close_grip_bench_press.gif</url>
         <Name>Close-Grip Bench Press</Name>
         <Equipment>Barbell, Bench, Squat Rack</Equipment>
         <Focused_Muscles>Triceps Brachii (All Heads), Chest (Medial), Anterior Deltoid</Focused_Muscles>
@@ -577,7 +577,7 @@
     </Pose>
 
     <Pose id="ARM-T-07" difficulty="Advanced" safety="Keep your elbows pointing toward the ceiling. Avoid flaring elbows outward. Control the weight - do not let it crash down." Pose_type="Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/skull_crusher_advanced.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/skull_crusher_advanced.gif</url>
         <Name>Skull Crushers (Advanced)</Name>
         <Equipment>EZ-Bar, Bench</Equipment>
         <Focused_Muscles>Triceps Brachii (Long Head focus)</Focused_Muscles>
@@ -600,7 +600,7 @@
     </Pose>
 
     <Pose id="ARM-T-08" difficulty="Advanced" safety="Keep your elbows tucked close to your head. Avoid flaring elbows outward. Control the cable tension throughout." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/overhead_cable_extension.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/overhead_cable_extension.gif</url>
         <Name>Overhead Cable Extension</Name>
         <Equipment>Cable Machine with Rope Attachment</Equipment>
         <Focused_Muscles>Triceps Brachii (Long Head focus)</Focused_Muscles>
@@ -623,7 +623,7 @@
     </Pose>
 
     <Pose id="ARM-T-09" difficulty="Advanced" safety="Keep your body upright and close to the bars. Lower yourself only to 90 degrees. Avoid shoulder rolling or excessive leaning." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/weighted_tricep_dip.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/weighted_tricep_dip.gif</url>
         <Name>Tricep Dips (Weighted)</Name>
         <Equipment>Dip Bars, Weight Belt or Dumbbell between Feet</Equipment>
         <Focused_Muscles>Triceps Brachii (All Heads), Chest (Minor), Anterior Deltoid</Focused_Muscles>
@@ -647,7 +647,7 @@
 
     <!-- SHOULDERS - Advanced -->
     <Pose id="ARM-S-06" difficulty="Advanced" safety="Keep your core braced and lower back neutral. Avoid arching your back to press heavier weight. Control the barbell throughout." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_overhead_press_heavy.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell_overhead_press_heavy.gif</url>
         <Name>Barbell Overhead Press (Heavy)</Name>
         <Equipment>Barbell, Squat Rack</Equipment>
         <Focused_Muscles>Deltoids (Anterior and Medial Heads), Triceps, Trapezius, Core</Focused_Muscles>
@@ -670,7 +670,7 @@
     </Pose>
 
     <Pose id="ARM-S-07" difficulty="Advanced" safety="Keep your core braced throughout the rotation. Avoid arching your lower back. Control the dumbbells during the twist." Pose_type="Hypertrophy, Joint-Friendly">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/arnold_press.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/arnold_press.gif</url>
         <Name>Arnold Press</Name>
         <Equipment>Dumbbells, Bench (Seated or Standing)</Equipment>
         <Focused_Muscles>Deltoids (All 3 Heads - Anterior, Medial, Posterior)</Focused_Muscles>
@@ -693,7 +693,7 @@
     </Pose>
 
     <Pose id="ARM-S-08" difficulty="Advanced" safety="Keep a slight bend in your elbows throughout. Avoid using momentum. Control the descent - do not let gravity drop the weights." Pose_type="Hypertrophy, High Volume">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lateral_raise_high_volume.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/lateral_raise_high_volume.gif</url>
         <Name>Lateral Raise (High Volume)</Name>
         <Equipment>Dumbbells</Equipment>
         <Focused_Muscles>Deltoids (Medial Head)</Focused_Muscles>
@@ -716,7 +716,7 @@
     </Pose>
 
     <Pose id="ARM-S-09" difficulty="Advanced" safety="Keep your chest supported against the bench. Avoid using momentum. Control the dumbbells throughout." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/rear_delt_fly_advanced.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/rear_delt_fly_advanced.gif</url>
         <Name>Rear Delt Fly (Advanced)</Name>
         <Equipment>Dumbbells or Rear Delt Machine, Bench</Equipment>
         <Focused_Muscles>Deltoids (Posterior Head), Rhomboids, Trapezius, Rotator Cuff (Infraspinatus/Teres Minor)</Focused_Muscles>
@@ -740,7 +740,7 @@
 
     <!-- FOREARMS - Advanced -->
     <Pose id="ARM-F-04-A" difficulty="Advanced" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight - do not let it roll out of your hands." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_wrist_curl_advanced.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell_wrist_curl_advanced.gif</url>
         <Name>Barbell Wrist Curl (Advanced)</Name>
         <Equipment>Barbell, Bench</Equipment>
         <Focused_Muscles>Forearm Flexors, Grip Muscles</Focused_Muscles>
@@ -763,7 +763,7 @@
     </Pose>
 
     <Pose id="ARM-F-05-A" difficulty="Advanced" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight throughout - no jerking." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/reverse_barbell_curl.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/reverse_barbell_curl.gif</url>
         <Name>Reverse Barbell Curl</Name>
         <Equipment>Barbell, Bench</Equipment>
         <Focused_Muscles>Forearm Extensors, Brachioradialis, Brachialis</Focused_Muscles>
@@ -786,7 +786,7 @@
     </Pose>
 
     <Pose id="ARM-F-06" difficulty="Advanced" safety="Keep your shoulders down and back. Maintain a straight posture. Avoid swinging your body. Walk with control, not speed." Pose_type="Grip Strength, Functional">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/farmers_carry.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/farmers_carry.gif</url>
         <Name>Farmer's Carry (Heavy)</Name>
         <Equipment>Heavy Dumbbells, Kettlebells, or Farmer's Walk Handles</Equipment>
         <Focused_Muscles>Forearm Flexors, Grip Muscles, Trapezius, Core Stabilizers, Glutes, Quadriceps</Focused_Muscles>
@@ -814,7 +814,7 @@
 
     <!-- BICEPS - Expert -->
     <Pose id="ARM-B-09" difficulty="Expert" safety="This is a heavy strength movement. Use a spotter if possible. Keep your core braced and back straight. Avoid using momentum - strict form is essential." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_curl_heavy_strict.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell_curl_heavy_strict.gif</url>
         <Name>Barbell Curl (Heavy - Strict)</Name>
         <Equipment>Barbell with Heavy Plates</Equipment>
         <Focused_Muscles>Biceps Brachii (Both Heads), Brachialis</Focused_Muscles>
@@ -837,7 +837,7 @@
     </Pose>
 
     <Pose id="ARM-B-10" difficulty="Expert" safety="Keep your upper arms and back pressed firmly against the preacher pad. Do not lift your elbows off the pad. Control the weight throughout." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/preacher_curl.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/preacher_curl.gif</url>
         <Name>Preacher Curl</Name>
         <Equipment>EZ-Bar or Dumbbells, Preacher Curl Bench</Equipment>
         <Focused_Muscles>Biceps Brachii (Lower Biceps Peak), Brachialis</Focused_Muscles>
@@ -860,7 +860,7 @@
     </Pose>
 
     <Pose id="ARM-B-11" difficulty="Expert" safety="Keep your upper arms stationary throughout. Avoid using momentum. Control the dumbbells on both the curl and descent." Pose_type="Hypertrophy, Muscle Separation">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/incline_dumbbell_curl_expert.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/incline_dumbbell_curl_expert.gif</url>
         <Name>Incline Dumbbell Curl (Expert)</Name>
         <Equipment>Adjustable Bench (60-70 degrees), Dumbbells</Equipment>
         <Focused_Muscles>Biceps Brachii (Long Head - Outer Biceps), Brachialis</Focused_Muscles>
@@ -883,7 +883,7 @@
     </Pose>
 
     <Pose id="ARM-B-12" difficulty="Expert" safety="Keep your elbows pinned to your sides. This is a drop set - have lighter weights ready. Do not sacrifice form for extra reps." Pose_type="Drop Set, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_curl_drop_set.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/cable_curl_drop_set.gif</url>
         <Name>Cable Curl (Drop Set)</Name>
         <Equipment>Cable Machine with Bar Attachment, Multiple Weight Increments</Equipment>
         <Focused_Muscles>Biceps Brachii (Constant Tension through Drop Set)</Focused_Muscles>
@@ -906,7 +906,7 @@
     </Pose>
 
     <Pose id="ARM-B-13" difficulty="Expert" safety="Keep your upper arms perpendicular to the floor. Avoid using momentum. Control the dumbbell throughout." Pose_type="Isolation, Peak Contraction">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/spider_curl.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/spider_curl.gif</url>
         <Name>Spider Curl</Name>
         <Equipment>EZ-Bar or Dumbbells, Incline Bench (Set at 45 degrees)</Equipment>
         <Focused_Muscles>Biceps Brachii (Peak Development), Brachialis</Focused_Muscles>
@@ -930,7 +930,7 @@
 
     <!-- TRICEPS - Expert -->
     <Pose id="ARM-T-10" difficulty="Expert" safety="Keep your elbows tucked close to your body. Use a spotter for heavy sets. Control the bar - do not bounce it off your chest." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/close_grip_bench_press_heavy.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/close_grip_bench_press_heavy.gif</url>
         <Name>Close-Grip Bench Press (Heavy)</Name>
         <Equipment>Barbell, Bench, Squat Rack, Spotter</Equipment>
         <Focused_Muscles>Triceps Brachii (All Heads), Chest (Medial)</Focused_Muscles>
@@ -953,7 +953,7 @@
     </Pose>
 
     <Pose id="ARM-T-11" difficulty="Expert" safety="Keep your elbows pointing toward the ceiling. Avoid flaring elbows outward. Control the weight on the descent - do not let it crash down." Pose_type="Hypertrophy, Strength">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/skull_crusher_expert.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/skull_crusher_expert.gif</url>
         <Name>Skull Crushers (Expert)</Name>
         <Equipment>EZ-Bar, Bench</Equipment>
         <Focused_Muscles>Triceps Brachii (Long Head emphasis)</Focused_Muscles>
@@ -976,7 +976,7 @@
     </Pose>
 
     <Pose id="ARM-T-12" difficulty="Expert" safety="Keep your elbows tucked close to your head. Avoid flaring elbows outward. Control the dumbbell throughout - do not let it drop." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/overhead_dumbbell_extension.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/overhead_dumbbell_extension.gif</url>
         <Name>Overhead Dumbbell Extension</Name>
         <Equipment>Single Dumbbell, Bench (Seated)</Equipment>
         <Focused_Muscles>Triceps Brachii (Long Head focus)</Focused_Muscles>
@@ -999,7 +999,7 @@
     </Pose>
 
     <Pose id="ARM-T-13" difficulty="Expert" safety="Keep your elbows pinned to your sides. This is a drop set - have lighter weights ready. Do not sacrifice form for extra reps." Pose_type="Drop Set, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_pushdown_drop_set.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/cable_pushdown_drop_set.gif</url>
         <Name>Cable Pushdown (Drop Set)</Name>
         <Equipment>Cable Machine with Rope Attachment, Multiple Weight Increments</Equipment>
         <Focused_Muscles>Triceps Brachii (All Heads, Constant Tension)</Focused_Muscles>
@@ -1022,7 +1022,7 @@
     </Pose>
 
     <Pose id="ARM-T-14" difficulty="Expert" safety="Keep your body upright and close to the bars. Lower yourself only to 90 degrees. Control the descent - do not drop into the bottom position." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/weighted_tricep_dip_expert.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/weighted_tricep_dip_expert.gif</url>
         <Name>Tricep Dips (Weighted - Heavy)</Name>
         <Equipment>Dip Bars, Heavy Weight Belt or Weight Vest</Equipment>
         <Focused_Muscles>Triceps Brachii (All Heads), Core, Shoulders</Focused_Muscles>
@@ -1046,7 +1046,7 @@
 
     <!-- SHOULDERS - Expert -->
     <Pose id="ARM-S-10" difficulty="Expert" safety="This is a heavy strength movement. Use a spotter if possible. Keep your core braced and lower back neutral. Avoid arching your back." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_overhead_press_expert.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell_overhead_press_expert.gif</url>
         <Name>Barbell Overhead Press (Expert)</Name>
         <Equipment>Barbell, Squat Rack, Spotter (Optional)</Equipment>
         <Focused_Muscles>Deltoids (Anterior and Medial Heads), Triceps, Trapezius, Core</Focused_Muscles>
@@ -1069,7 +1069,7 @@
     </Pose>
 
     <Pose id="ARM-S-11" difficulty="Expert" safety="Keep your core braced throughout the rotation. Avoid arching your lower back. Control the dumbbells during the twist - do not rush." Pose_type="Hypertrophy, Joint-Friendly">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/arnold_press_expert.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/arnold_press_expert.gif</url>
         <Name>Arnold Press (Expert)</Name>
         <Equipment>Dumbbells, Bench (Seated with Back Support)</Equipment>
         <Focused_Muscles>Deltoids (All 3 Heads), Rotator Cuff (Minor), Triceps</Focused_Muscles>
@@ -1092,7 +1092,7 @@
     </Pose>
 
     <Pose id="ARM-S-12" difficulty="Expert" safety="Keep a slight bend in your elbows throughout. Avoid using momentum. Use cable resistance for constant tension." Pose_type="Hypertrophy, Constant Tension">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_lateral_raise.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/cable_lateral_raise.gif</url>
         <Name>Lateral Raise (Cable)</Name>
         <Equipment>Cable Machine with Handle Attachment, Low Pulley</Equipment>
         <Focused_Muscles>Deltoids (Medial Head - Side Shoulder)</Focused_Muscles>
@@ -1115,7 +1115,7 @@
     </Pose>
 
     <Pose id="ARM-S-13" difficulty="Expert" safety="Keep your chest supported against the pad. Avoid using momentum. Control the weight throughout." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/rear_delt_machine_fly.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/rear_delt_machine_fly.gif</url>
         <Name>Rear Delt Fly (Machine)</Name>
         <Equipment>Rear Delt / Pec Deck Machine</Equipment>
         <Focused_Muscles>Deltoids (Posterior Head), Rhomboids, Trapezius, Rotator Cuff</Focused_Muscles>
@@ -1138,7 +1138,7 @@
     </Pose>
 
     <Pose id="ARM-S-14" difficulty="Expert" safety="Keep your core braced and back straight. Avoid using momentum. Focus on external rotation of the shoulders." Pose_type="Rotator Cuff Health, Posture">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/face_pull.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/face_pull.gif</url>
         <Name>Face Pull</Name>
         <Equipment>Cable Machine with Rope Attachment, High Pulley</Equipment>
         <Focused_Muscles>Posterior Deltoids, Trapezius, Rhomboids, Rotator Cuff (Infraspinatus/Teres Minor)</Focused_Muscles>
@@ -1162,7 +1162,7 @@
 
     <!-- FOREARMS - Expert -->
     <Pose id="ARM-F-07" difficulty="Expert" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight - do not let it roll out of your hands." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_wrist_curl_expert.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell_wrist_curl_expert.gif</url>
         <Name>Barbell Wrist Curl (Expert)</Name>
         <Equipment>Barbell, Bench</Equipment>
         <Focused_Muscles>Forearm Flexors, Grip Muscles</Focused_Muscles>
@@ -1185,7 +1185,7 @@
     </Pose>
 
     <Pose id="ARM-F-08" difficulty="Expert" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight throughout." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/reverse_barbell_curl_expert.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/reverse_barbell_curl_expert.gif</url>
         <Name>Reverse Barbell Curl (Expert)</Name>
         <Equipment>Barbell, Bench</Equipment>
         <Focused_Muscles>Forearm Extensors, Brachioradialis</Focused_Muscles>
@@ -1208,7 +1208,7 @@
     </Pose>
 
     <Pose id="ARM-F-09" difficulty="Expert" safety="Keep your wrists neutral throughout the movement. Control the eccentric (lowering) phase slowly. Avoid using momentum." Pose_type="Grip Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/hammer_curl_slow_eccentric.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/hammer_curl_slow_eccentric.gif</url>
         <Name>Hammer Curl (Slow Eccentric)</Name>
         <Equipment>Dumbbells</Equipment>
         <Focused_Muscles>Brachioradialis, Brachialis, Forearm Muscles</Focused_Muscles>
@@ -1231,7 +1231,7 @@
     </Pose>
 
     <Pose id="ARM-F-10" difficulty="Expert" safety="Keep your back straight and core braced. Do not let the plates slip. Use chalk if necessary for grip." Pose_type="Grip Strength, Pinch Strength">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/plate_pinch.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/plate_pinch.gif</url>
         <Name>Plate Pinch</Name>
         <Equipment>Weight Plates (Smooth Sides Together)</Equipment>
         <Focused_Muscles>Pinch Grip Muscles (Thumb Flexors, Finger Flexors)</Focused_Muscles>
@@ -1254,7 +1254,7 @@
     </Pose>
 
     <Pose id="ARM-F-11" difficulty="Expert" safety="Keep your shoulders engaged and down. Do not swing or kip. Hang with control - do not drop suddenly." Pose_type="Grip Strength, Endurance">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dead_hang.gif</url>
+        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/dead_hang.gif</url>
         <Name>Dead Hang</Name>
         <Equipment>Pull-Up Bar</Equipment>
         <Focused_Muscles>Grip Muscles (Flexors), Forearm Endurance, Latissimus Dorsi (Stretch), Shoulder Stabilizers</Focused_Muscles>
