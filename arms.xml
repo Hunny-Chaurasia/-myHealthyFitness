@@ -7,7 +7,7 @@
 
     <!-- BICEPS - Beginner -->
     <Pose id="ARM-B-01" difficulty="Beginner" safety="Keep your elbows pinned to your sides throughout the movement. Avoid swinging your back to lift the weight. Control the descent." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_curl.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/Barbell-Lying-Triceps.gif</url>
         <Name>Dumbbell Curl</Name>
         <Equipment>Dumbbells, Bench (Optional)</Equipment>
         <Focused_Muscles>Biceps Brachii, Brachialis</Focused_Muscles>
