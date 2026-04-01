@@ -786,7 +786,7 @@
     </Pose>
 
     <Pose id="ARM-F-06" difficulty="Advanced" safety="Keep your shoulders down and back. Maintain a straight posture. Avoid swinging your body. Walk with control, not speed." Pose_type="Grip Strength, Functional">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/farmers_carry.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/farmers-walks.gif</url>
         <Name>Farmer's Carry (Heavy)</Name>
         <Equipment>Heavy Dumbbells, Kettlebells, or Farmer's Walk Handles</Equipment>
         <Focused_Muscles>Forearm Flexors, Grip Muscles, Trapezius, Core Stabilizers, Glutes, Quadriceps</Focused_Muscles>
@@ -953,7 +953,7 @@
     </Pose>
 
     <Pose id="ARM-T-11" difficulty="Expert" safety="Keep your elbows pointing toward the ceiling. Avoid flaring elbows outward. Control the weight on the descent - do not let it crash down." Pose_type="Hypertrophy, Strength">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/skull_crusher_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/flat-bench-skull-crusher.gif</url>
         <Name>Skull Crushers (Expert)</Name>
         <Equipment>EZ-Bar, Bench</Equipment>
         <Focused_Muscles>Triceps Brachii (Long Head emphasis)</Focused_Muscles>
