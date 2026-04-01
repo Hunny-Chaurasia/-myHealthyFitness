@@ -386,7 +386,7 @@
 
     <!-- FOREARMS - Novice -->
     <Pose id="ARM-F-03" difficulty="Novice" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight throughout. Avoid jerky movements or using momentum." Pose_type="Strength, Grip">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell_wrist_curl.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell-wrist-curl.gif</url>
         <Name>Barbell Wrist Curl</Name>
         <Equipment>Barbell, Bench</Equipment>
         <Focused_Muscles>Forearm Flexors, Grip Muscles</Focused_Muscles>
@@ -409,7 +409,7 @@
     </Pose>
 
     <Pose id="ARM-F-04-N" difficulty="Novice" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight throughout - do not let it drop quickly." Pose_type="Strength, Grip">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/reverse_wrist_curl_novice.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell-reverse-wrist-curl.gif</url>
         <Name>Reverse Wrist Curl</Name>
         <Equipment>Barbell or Light Dumbbells, Bench</Equipment>
         <Focused_Muscles>Forearm Extensors, Brachioradialis</Focused_Muscles>
@@ -740,7 +740,7 @@
 
     <!-- FOREARMS - Advanced -->
     <Pose id="ARM-F-04-A" difficulty="Advanced" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight - do not let it roll out of your hands." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell_wrist_curl_advanced.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell-wrist-curl.gif</url>
         <Name>Barbell Wrist Curl (Advanced)</Name>
         <Equipment>Barbell, Bench</Equipment>
         <Focused_Muscles>Forearm Flexors, Grip Muscles</Focused_Muscles>
@@ -763,7 +763,7 @@
     </Pose>
 
     <Pose id="ARM-F-05-A" difficulty="Advanced" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight throughout - no jerking." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/reverse_barbell_curl.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell-reverse-wrist-curl.gif</url>
         <Name>Reverse Barbell Curl</Name>
         <Equipment>Barbell, Bench</Equipment>
         <Focused_Muscles>Forearm Extensors, Brachioradialis, Brachialis</Focused_Muscles>
@@ -1162,7 +1162,7 @@
 
     <!-- FOREARMS - Expert -->
     <Pose id="ARM-F-07" difficulty="Expert" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight - do not let it roll out of your hands." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell_wrist_curl_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell-wrist-curl.gif</url>
         <Name>Barbell Wrist Curl (Expert)</Name>
         <Equipment>Barbell, Bench</Equipment>
         <Focused_Muscles>Forearm Flexors, Grip Muscles</Focused_Muscles>
@@ -1185,7 +1185,7 @@
     </Pose>
 
     <Pose id="ARM-F-08" difficulty="Expert" safety="Rest your forearms fully on your thighs. Move only your wrists. Control the weight throughout." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/reverse_barbell_curl_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell-reverse-wrist-curl.gif</url>
         <Name>Reverse Barbell Curl (Expert)</Name>
         <Equipment>Barbell, Bench</Equipment>
         <Focused_Muscles>Forearm Extensors, Brachioradialis</Focused_Muscles>
