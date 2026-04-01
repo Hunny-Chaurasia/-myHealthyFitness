@@ -30,7 +30,7 @@
     </Pose>
 
     <Pose id="ARM-B-02" difficulty="Beginner" safety="Keep your wrists neutral (straight) throughout the movement. Avoid rotating your palms - the hammer grip is fixed. Control the movement." Pose_type="Strength, Hypertrophy">
-        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/dumbbell-hammer-curl.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/dumbbell-hammer-curl.gif</url>
         <Name>Dumbbells Hammer Curl</Name>
         <Equipment>Dumbbells</Equipment>
         <Focused_Muscles>Brachialis, Brachioradialis, Biceps Brachii</Focused_Muscles>
@@ -54,7 +54,7 @@
 
     <!-- TRICEPS - Beginner -->
     <Pose id="ARM-T-01" difficulty="Beginner" safety="Keep your elbows pinned to your sides. Avoid letting your elbows flare outward. Control the weight on both the push and the return." Pose_type="Strength, Hypertrophy">
-        <url type="gif">>https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/resistance-band-triceps-pushdown.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/resistance-band-triceps-pushdown.gif</url>
         <Name>Tricep Pushdown (Cable/Band)</Name>
         <Equipment>Cable Machine or Resistance Band, Rope or Bar Attachment</Equipment>
         <Focused_Muscles>Triceps Brachii (All 3 heads - Long, Lateral, Medial)</Focused_Muscles>
