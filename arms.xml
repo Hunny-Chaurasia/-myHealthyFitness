@@ -461,7 +461,7 @@
 
     <!-- BICEPS - Advanced -->
     <Pose id="ARM-B-05" difficulty="Advanced" safety="Keep your core braced and back straight. Avoid using momentum - control the barbell on both the curl and the descent. Do not arch your lower back." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell_curl_heavy.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/barbell-curl.gif</url>
         <Name>Barbell Curl (Heavy)</Name>
         <Equipment>Barbell with Weight Plates</Equipment>
         <Focused_Muscles>Biceps Brachii (Both Heads), Brachialis</Focused_Muscles>
@@ -484,7 +484,7 @@
     </Pose>
 
     <Pose id="ARM-B-06" difficulty="Advanced" safety="Keep your upper arms and back pressed firmly against the bench pad. Do not let your shoulders lift. Control the weight throughout." Pose_type="Hypertrophy, Isolation">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/incline_dumbbell_curl_advanced.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/dumbbell-incline-biceps-curl.gif</url>
         <Name>Incline Dumbbell Curl (Advanced)</Name>
         <Equipment>Adjustable Bench, Dumbbells</Equipment>
         <Focused_Muscles>Biceps Brachii (Long Head), Brachialis</Focused_Muscles>
@@ -507,7 +507,7 @@
     </Pose>
 
     <Pose id="ARM-B-07" difficulty="Advanced" safety="Keep your upper arm pressed against the inner thigh for stability. Avoid using body momentum. Control the curl and descent fully." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/concentration_curl.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/dumbbell-concentration-curl.gif</url>
         <Name>Concentration Curl</Name>
         <Equipment>Dumbbells, Bench</Equipment>
         <Focused_Muscles>Biceps Brachii (Peak Development), Brachialis</Focused_Muscles>
@@ -530,7 +530,7 @@
     </Pose>
 
     <Pose id="ARM-B-08" difficulty="Advanced" safety="Keep your elbows pinned to your sides. Avoid leaning back or using body momentum. Control the cable tension throughout." Pose_type="Hypertrophy, Constant Tension">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/cable_curl.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/cable-curl.gif</url>
         <Name>Cable Curl</Name>
         <Equipment>Cable Machine with Bar or Rope Attachment</Equipment>
         <Focused_Muscles>Biceps Brachii (Constant Tension throughout ROM)</Focused_Muscles>
@@ -554,7 +554,7 @@
 
     <!-- TRICEPS - Advanced -->
     <Pose id="ARM-T-06" difficulty="Advanced" safety="Keep your elbows tucked close to your body. Lower the bar to your lower chest. Control the weight - do not bounce it off your chest." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/close_grip_bench_press.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/close-grip-bench-press-movement.gif</url>
         <Name>Close-Grip Bench Press</Name>
         <Equipment>Barbell, Bench, Squat Rack</Equipment>
         <Focused_Muscles>Triceps Brachii (All Heads), Chest (Medial), Anterior Deltoid</Focused_Muscles>
@@ -577,7 +577,7 @@
     </Pose>
 
     <Pose id="ARM-T-07" difficulty="Advanced" safety="Keep your elbows pointing toward the ceiling. Avoid flaring elbows outward. Control the weight - do not let it crash down." Pose_type="Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/skull_crusher_advanced.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/flat-bench-skull-crusher.gif</url>
         <Name>Skull Crushers (Advanced)</Name>
         <Equipment>EZ-Bar, Bench</Equipment>
         <Focused_Muscles>Triceps Brachii (Long Head focus)</Focused_Muscles>
