@@ -432,7 +432,7 @@
     </Pose>
 
     <Pose id="ARM-F-05-N" difficulty="Novice" safety="Keep your shoulders down and back. Maintain a straight posture. Avoid swinging your body. Walk with control, not speed. Keep your core braced." Pose_type="Grip Strength, Functional, Cardio">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/farmers_carry_novice.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/farmers-walks.gif</url>
         <Name>Farmer's Carry</Name>
         <Equipment>Dumbbells or Kettlebells (Moderate Weight)</Equipment>
         <Focused_Muscles>Forearm Flexors, Grip Muscles, Trapezius, Core Stabilizers, Glutes, Quadriceps, Hamstrings</Focused_Muscles>
