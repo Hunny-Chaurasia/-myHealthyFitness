@@ -623,7 +623,7 @@
     </Pose>
 
     <Pose id="ARM-T-09" difficulty="Advanced" safety="Keep your body upright and close to the bars. Lower yourself only to 90 degrees. Avoid shoulder rolling or excessive leaning." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/weighted_tricep_dip.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/tricep_dip.gif</url>
         <Name>Tricep Dips (Weighted)</Name>
         <Equipment>Dip Bars, Weight Belt or Dumbbell between Feet</Equipment>
         <Focused_Muscles>Triceps Brachii (All Heads), Chest (Minor), Anterior Deltoid</Focused_Muscles>
@@ -1022,7 +1022,7 @@
     </Pose>
 
     <Pose id="ARM-T-14" difficulty="Expert" safety="Keep your body upright and close to the bars. Lower yourself only to 90 degrees. Control the descent - do not drop into the bottom position." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/weighted_tricep_dip_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/tricep_dip.gif</url>
         <Name>Tricep Dips (Weighted - Heavy)</Name>
         <Equipment>Dip Bars, Heavy Weight Belt or Weight Vest</Equipment>
         <Focused_Muscles>Triceps Brachii (All Heads), Core, Shoulders</Focused_Muscles>
