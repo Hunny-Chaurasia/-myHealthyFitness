@@ -716,7 +716,7 @@
     </Pose>
 
     <Pose id="ARM-S-09" difficulty="Advanced" safety="Keep your chest supported against the bench. Avoid using momentum. Control the dumbbells throughout." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/rear_delt_fly_advanced.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/arm-gif/main/seated-reverse-fly.gif</url>
         <Name>Rear Delt Fly (Advanced)</Name>
         <Equipment>Dumbbells or Rear Delt Machine, Bench</Equipment>
         <Focused_Muscles>Deltoids (Posterior Head), Rhomboids, Trapezius, Rotator Cuff (Infraspinatus/Teres Minor)</Focused_Muscles>
