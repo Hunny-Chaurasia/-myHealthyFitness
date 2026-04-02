@@ -319,7 +319,7 @@
         </common_mistakes>
     </Pose>
     <Pose id="10" difficulty="Beginner" safety="Maintain a stable, engaged core throughout the movement to protect your lower back. Avoid rounding your spine; keep your back straight and chest lifted. Move in a controlled manner—do not use momentum to swing the weight. If you have lower back issues, perform without weight and with feet on the floor." Pose_type="Core Strength">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/weighted_russian_twist.gif)</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/weighted-russian-twist.gif</url>
         <Name>Weighted Russian Twist</Name>
         <Equipment>Dumbbell, Kettlebell, Medicine Ball, or Weight Plate; Exercise Mat (Optional)</Equipment>
         <Focused_Muscles>
