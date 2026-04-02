@@ -163,7 +163,7 @@
         </common_mistakes>
     </Pose>
     <Pose id="6" difficulty="Beginner" safety="Maintain a straight line from head to heels. Do not let your hips sag or rise too high. Engage your core and glutes to protect your lower back. If you have wrist pain, perform the plank on your forearms." Pose_type="Core Strength">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/body-saw-plank.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/body-saw-plank.gif</url>
         <Name>Forearm Plank</Name>
         <Equipment>Exercise Mat (Optional, for comfort)</Equipment>
         <Focused_Muscles>
