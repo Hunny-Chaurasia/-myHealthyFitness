@@ -28,7 +28,6 @@
             overflow-x: hidden;
         }
 
-        /* ── HEADER ─────────────────────────────── */
         .app-header {
             position: relative;
             padding: 3rem 2.5rem 2rem;
@@ -85,6 +84,73 @@
             50% { opacity: 0.4; transform: scale(0.7); }
         }
 
+        /* ── SEARCH BAR ─────────────────────────────── */
+        .search-wrapper {
+            padding: 1.6rem 2.5rem 0.6rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+        }
+        .search-inner {
+            position: relative;
+            max-width: 680px;
+        }
+        .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            pointer-events: none;
+            color: var(--muted);
+        }
+        #search_input {
+            width: 100%;
+            background: #111;
+            border: 1px solid #2a2a2a;
+            border-radius: 50px;
+            padding: 0.72rem 3rem 0.72rem 2.7rem;
+            font-size: 0.9rem;
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text);
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        #search_input::placeholder { color: var(--dim); }
+        #search_input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(168,85,247,0.12);
+        }
+        #search_clear {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #222;
+            border: 1px solid #333;
+            border-radius: 50%;
+            width: 24px; height: 24px;
+            color: var(--muted);
+            font-size: 0.75rem;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.15s, color 0.15s;
+        }
+        #search_clear:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+        #search_meta {
+            font-size: 0.72rem;
+            color: var(--muted);
+            margin-top: 0.5rem;
+            padding-left: 4px;
+            min-height: 18px;
+        }
+        #search_meta .highlight { color: var(--accent); font-weight: 500; }
+
         /* ── SECTION HEADING ─────────────────────── */
         .section-head {
             display: flex;
@@ -139,6 +205,9 @@
             transform: translateY(-5px);
             box-shadow: 0 24px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(168,85,247,0.08);
         }
+        .exercise-card.search-match {
+            border-color: rgba(168,85,247,0.45);
+        }
         .card-media {
             position: relative;
             width: 100%;
@@ -152,7 +221,7 @@
             object-fit: cover;
             display: block;
             transition: transform 0.3s ease;
-            background:whitesmoke;
+            background: whitesmoke;
         }
         .exercise-card:hover .card-media img { transform: scale(1.04); }
         .card-media-overlay {
@@ -188,6 +257,12 @@
             color: #fff;
             line-height: 1.25;
         }
+        .card-name mark {
+            background: rgba(168,85,247,0.28);
+            color: #d4aaff;
+            border-radius: 3px;
+            padding: 0 2px;
+        }
         .card-meta {
             display: flex;
             flex-wrap: wrap;
@@ -214,7 +289,69 @@
             letter-spacing: 0.3px;
         }
 
-        /* ── LOADING ─────────────────────────────── */
+        /* ── SEARCH RESULTS SECTION ─────────────── */
+        #search_results_section { display: none; }
+        .search-results-head {
+            padding: 2rem 2.5rem 0.5rem;
+            font-family: 'Syne', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            color: var(--accent);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* ── NO RESULTS ─────────────────────────── */
+        #no_results {
+            display: none;
+            margin: 2rem 2.5rem;
+            background: #0e0a14;
+            border: 1px solid rgba(168,85,247,0.18);
+            border-left: 3px solid var(--accent);
+            border-radius: 16px;
+            padding: 1.8rem 2rem;
+        }
+        .no-results-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.4rem;
+        }
+        .no-results-sub {
+            font-size: 0.82rem;
+            color: var(--muted);
+            margin-bottom: 1.2rem;
+        }
+        .related-label {
+            font-size: 0.68rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+        }
+        .suggestion-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .suggestion-chip {
+            background: #161616;
+            border: 1px solid #2a2a2a;
+            border-radius: 30px;
+            padding: 0.3rem 0.85rem;
+            font-size: 0.76rem;
+            color: var(--text);
+            cursor: pointer;
+            transition: border-color 0.15s, color 0.15s;
+        }
+        .suggestion-chip:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* ── LOADING / ERROR ─────────────────────── */
         #loading_msg {
             display: flex;
             flex-direction: column;
@@ -233,8 +370,6 @@
             animation: spin 0.75s linear infinite;
         }
         @keyframes spin { to { transform: rotate(360deg); } }
-
-        /* ── ERROR ───────────────────────────────── */
         #error_msg {
             max-width: 640px;
             margin: 3rem auto;
@@ -311,7 +446,7 @@
             border-radius: 16px;
             display: block;
             margin: 0.5rem 0 1.2rem;
-            background:whitesmoke;
+            background: whitesmoke;
         }
         .modal-title {
             font-family: 'Syne', sans-serif;
@@ -450,23 +585,36 @@
             margin-top: 1px;
         }
 
-        /* ── RESPONSIVE ──────────────────────────── */
         @media (max-width: 640px) {
             .exercise-grid { padding: 0.8rem 1rem 1.5rem; gap: 1rem; }
             .section-head { padding: 1.8rem 1rem 0.6rem; }
             .app-header { padding: 2rem 1.2rem 1.5rem; }
             .modal_inner { padding: 1.2rem; }
             .modal-info-grid { grid-template-columns: 1fr; }
+            .search-wrapper { padding: 1rem 1rem 0.6rem; }
+            #no_results { margin: 1.5rem 1rem; }
+            .search-results-head { padding: 1.5rem 1rem 0.5rem; }
         }
     </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <div class="app-header">
     <div class="header-eyebrow"><span class="live-dot"></span>MOTION MENTOR · LIVE XML</div>
     <h1>ARM <span>LAB</span></h1>
     <div class="header-sub">Complete arms &amp; shoulders exercise library · tap any card for full instructions &amp; execution steps</div>
+</div>
+
+<!-- SEARCH BAR -->
+<div class="search-wrapper">
+    <div class="search-inner">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" id="search_input" placeholder="Search exercises, muscles, equipment…" autocomplete="off" spellcheck="false" />
+        <button id="search_clear" aria-label="Clear search">✕</button>
+    </div>
+    <div id="search_meta"></div>
 </div>
 
 <!-- LOADING -->
@@ -477,6 +625,19 @@
 
 <!-- ERROR -->
 <div id="error_msg" style="display:none;"></div>
+
+<!-- SEARCH RESULTS (shown when searching) -->
+<div id="search_results_section">
+    <div class="search-results-head" id="search_results_label">RESULTS</div>
+    <div class="exercise-grid" id="search_results_grid"></div>
+    <!-- NO RESULTS -->
+    <div id="no_results">
+        <div class="no-results-title" id="no_results_title">No exercises found</div>
+        <div class="no-results-sub" id="no_results_sub">Try a different keyword or browse the categories below.</div>
+        <div class="related-label">You might like these instead</div>
+        <div class="suggestion-chips" id="suggestion_chips"></div>
+    </div>
+</div>
 
 <!-- SECTIONS injected by JS -->
 <div id="sections_container"></div>
@@ -491,25 +652,15 @@
 
 <script>
 (function () {
-    /* ─────────────────────────────────────────────────────────
-       FIX 1: Use the correct raw.githubusercontent.com URL.
-               The /edit/ URL is the GitHub editor page, not raw XML.
-    ───────────────────────────────────────────────────────── */
-    const XML_RAW_URL =
-        "https://raw.githubusercontent.com/Hunny-Chaurasia/-myHealthyFitness/main/arms.xml";
+    const XML_RAW_URL = "https://raw.githubusercontent.com/Hunny-Chaurasia/-myHealthyFitness/main/arms.xml";
+    let ALL_POSES = [];
 
-    /* ── helpers ─────────────────────────────────────────── */
     function esc(str) {
         if (!str) return '';
-        return String(str).replace(/[&<>"']/g, m => ({
-            '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
-        }[m]));
+        return String(str).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
     }
 
-    /* FIX 2: Try multiple tag names for the exercise name.
-              The XML uses <n> not <Name>, so we check both. */
     function getExerciseName(poseEl) {
-        // Try <Name> first, then <n> (the tag used in the provided XML)
         const tags = ['Name', 'n', 'name', 'title', 'Title'];
         for (const tag of tags) {
             const el = poseEl.getElementsByTagName(tag)[0];
@@ -526,41 +677,29 @@
         return '';
     }
 
-    /* Canonical display order */
     const LEVEL_ORDER = ['Beginner', 'Novice', 'Intermediate', 'Advanced', 'Expert'];
-    const LEVEL_META  = {
-        'Beginner':     { emoji: '🟢', dot: '#5aff6b', label: 'BEGINNER'     },
-        'Novice':       { emoji: '⚪', dot: '#aaaaaa', label: 'NOVICE'       },
+    const LEVEL_META = {
+        'Beginner':     { emoji: '🟢', dot: '#5aff6b', label: 'BEGINNER' },
+        'Novice':       { emoji: '⚪', dot: '#aaaaaa', label: 'NOVICE' },
         'Intermediate': { emoji: '🟡', dot: '#f5e03b', label: 'INTERMEDIATE' },
-        'Advanced':     { emoji: '🟠', dot: '#ff9d3b', label: 'ADVANCED'     },
-        'Expert':       { emoji: '🔴', dot: '#ff4f4f', label: 'EXPERT'       },
+        'Advanced':     { emoji: '🟠', dot: '#ff9d3b', label: 'ADVANCED' },
+        'Expert':       { emoji: '🔴', dot: '#ff4f4f', label: 'EXPERT' },
     };
 
     function normDiff(d) {
         if (!d) return 'Beginner';
         const s = d.trim().toLowerCase();
-        for (const lvl of LEVEL_ORDER) {
-            if (s === lvl.toLowerCase()) return lvl;
-        }
-        for (const lvl of LEVEL_ORDER) {
-            if (s.includes(lvl.toLowerCase())) return lvl;
-        }
+        for (const lvl of LEVEL_ORDER) { if (s === lvl.toLowerCase()) return lvl; }
+        for (const lvl of LEVEL_ORDER) { if (s.includes(lvl.toLowerCase())) return lvl; }
         return d.trim().charAt(0).toUpperCase() + d.trim().slice(1);
     }
 
-    /* ── XML parsing ─────────────────────────────────────── */
     function parsePoses(xmlDoc) {
-        /* FIX 3: The XML may have multiple root elements (two <ArmWorkoutCatalog>
-                  blocks). getElementsByTagName searches all descendants so it will
-                  still find every <Pose> regardless of how many root elements exist. */
         const poses = xmlDoc.getElementsByTagName('Pose');
         if (!poses.length) throw new Error('No <Pose> elements found in XML.');
-
         const out = [];
         for (let i = 0; i < poses.length; i++) {
             const p = poses[i];
-
-            /* GIF url */
             let gif = '';
             const urls = p.getElementsByTagName('url');
             for (const u of urls) {
@@ -568,29 +707,17 @@
                 if (!t || t === 'gif') { gif = u.textContent.trim(); break; }
             }
             if (!gif && urls.length) gif = urls[0].textContent.trim();
-
-            /* muscles */
             const muscNode = p.getElementsByTagName('Focused_Muscles')[0];
             let muscles = 'Core & stabilizers';
             if (muscNode) {
                 const prim = muscNode.getElementsByTagName('Primary')[0];
-                muscles = prim
-                    ? prim.textContent.trim()
-                    : muscNode.textContent.trim().replace(/\s+/g, ' ');
+                muscles = prim ? prim.textContent.trim() : muscNode.textContent.trim().replace(/\s+/g, ' ');
                 if (muscles.length > 70) muscles = muscles.slice(0, 68) + '…';
             }
-
-            /* steps */
             const steps = [];
             for (const s of p.getElementsByTagName('step')) {
-                steps.push({
-                    order: s.getAttribute('order') || (steps.length + 1),
-                    focus: s.getAttribute('focus') || 'Movement',
-                    text:  s.textContent.trim().replace(/\s+/g, ' ')
-                });
+                steps.push({ order: s.getAttribute('order') || (steps.length + 1), focus: s.getAttribute('focus') || 'Movement', text: s.textContent.trim().replace(/\s+/g, ' ') });
             }
-
-            /* mistakes */
             const mistakes = [];
             const cmNode = p.getElementsByTagName('common_mistakes')[0];
             if (cmNode) {
@@ -599,19 +726,18 @@
                     if (t) mistakes.push(t);
                 }
             }
-
             out.push({
-                id:         p.getAttribute('id') || i,
-                name:       getExerciseName(p),
+                id: p.getAttribute('id') || i,
+                name: getExerciseName(p),
                 difficulty: normDiff(p.getAttribute('difficulty')),
-                poseType:   p.getAttribute('Pose_type') || 'Functional',
-                safety:     p.getAttribute('safety') || '',
+                poseType: p.getAttribute('Pose_type') || 'Functional',
+                safety: p.getAttribute('safety') || '',
                 gif,
-                equipment:  getTextByTag(p, 'Equipment') || 'No equipment',
+                equipment: getTextByTag(p, 'Equipment') || 'No equipment',
                 muscles,
-                weightMax:  getTextByTag(p, 'Weight_Max') || '',
-                ageGrp:     getTextByTag(p, 'Age_Grp') || '',
-                injuries:   getTextByTag(p, 'Not_For_Injuries') || '',
+                weightMax: getTextByTag(p, 'Weight_Max') || '',
+                ageGrp: getTextByTag(p, 'Age_Grp') || '',
+                injuries: getTextByTag(p, 'Not_For_Injuries') || '',
                 steps,
                 mistakes
             });
@@ -619,47 +745,43 @@
         return out;
     }
 
-    /* ── fetch with CORS fallbacks ───────────────────────── */
     async function fetchXml() {
         const errors = [];
         const proxies = [
-            { label: 'Direct (GitHub raw)', url: XML_RAW_URL },
-            { label: 'allorigins proxy',    url: `https://api.allorigins.win/raw?url=${encodeURIComponent(XML_RAW_URL)}` },
-            { label: 'corsproxy.io',        url: `https://corsproxy.io/?${encodeURIComponent(XML_RAW_URL)}` },
-            { label: 'codetabs proxy',      url: `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(XML_RAW_URL)}` },
+            { label: 'Direct', url: XML_RAW_URL },
+            { label: 'allorigins', url: `https://api.allorigins.win/raw?url=${encodeURIComponent(XML_RAW_URL)}` },
+            { label: 'corsproxy.io', url: `https://corsproxy.io/?${encodeURIComponent(XML_RAW_URL)}` },
+            { label: 'codetabs', url: `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(XML_RAW_URL)}` },
         ];
         for (const { label, url } of proxies) {
             try {
-                const res = await fetch(url, {
-                    cache: 'no-store',
-                    headers: { Accept: 'application/xml, text/xml, */*' }
-                });
+                const res = await fetch(url, { cache: 'no-store', headers: { Accept: 'application/xml, text/xml, */*' } });
                 if (!res.ok) { errors.push(`${label}: HTTP ${res.status}`); continue; }
                 const txt = await res.text();
                 if (txt.includes('<Pose')) return txt;
-                errors.push(`${label}: no <Pose> found (${txt.length} chars). First 200: ${txt.slice(0,200)}`);
+                errors.push(`${label}: no <Pose> found`);
             } catch (e) {
                 errors.push(`${label}: ${e.message}`);
             }
         }
-        throw new Error(
-            `All fetch attempts failed.\n\nDetails:\n${errors.join('\n')}\n\nCheck that:\n• Repository is PUBLIC\n• File is on "main" branch\n• Filename is exactly "arms.xml" (lowercase)`
-        );
+        throw new Error(`All fetch attempts failed.\n\n${errors.join('\n')}`);
     }
 
-    /* ── card builder ────────────────────────────────────── */
     const FALLBACK_IMG = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180"%3E%3Crect width="320" height="180" fill="%23151515"/%3E%3Ctext x="50%25" y="50%25" fill="%23333" font-size="13" font-family="sans-serif" text-anchor="middle" dy=".3em"%3EPreview unavailable%3C/text%3E%3C/svg%3E';
 
-    function buildCard(pose) {
+    function highlight(text, query) {
+        if (!query) return esc(text);
+        const safe = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        return esc(text).replace(new RegExp(`(${safe})`, 'gi'), '<mark>$1</mark>');
+    }
+
+    function buildCard(pose, query) {
         const card = document.createElement('div');
-        card.className = 'exercise-card';
+        card.className = 'exercise-card' + (query ? ' search-match' : '');
         card.setAttribute('role', 'button');
         card.setAttribute('tabindex', '0');
-        card.setAttribute('aria-label', `View guide for ${pose.name}`);
         card.addEventListener('click', () => openModal(pose));
         card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') openModal(pose); });
-
-        /* media */
         const media = document.createElement('div');
         media.className = 'card-media';
         const img = document.createElement('img');
@@ -675,25 +797,17 @@
         media.appendChild(img);
         media.appendChild(overlay);
         media.appendChild(badge);
-
-        /* body */
         const body = document.createElement('div');
         body.className = 'card-body';
-
         const name = document.createElement('div');
         name.className = 'card-name';
-        name.textContent = pose.name;
-
+        name.innerHTML = query ? highlight(pose.name, query) : esc(pose.name);
         const meta = document.createElement('div');
         meta.className = 'card-meta';
-        meta.innerHTML = `
-            <span class="meta-chip">🛠️ <strong>${esc(pose.equipment.slice(0,35))}</strong></span>
-            <span class="meta-chip">🎯 ${esc(pose.muscles.slice(0,50))}</span>
-        `;
+        meta.innerHTML = `<span class="meta-chip">🛠️ <strong>${esc(pose.equipment.slice(0,35))}</strong></span><span class="meta-chip">🎯 ${esc(pose.muscles.slice(0,50))}</span>`;
         const hint = document.createElement('div');
         hint.className = 'card-tap-hint';
         hint.textContent = '👆 Tap for full guide & steps';
-
         body.appendChild(name);
         body.appendChild(meta);
         body.appendChild(hint);
@@ -702,11 +816,121 @@
         return card;
     }
 
-    /* ── modal ───────────────────────────────────────────── */
+    /* ── SEARCH LOGIC ───────────────────────────────── */
+    let searchTimeout = null;
+
+    function scoreMatch(pose, q) {
+        const lq = q.toLowerCase();
+        let score = 0;
+        const nameLower = pose.name.toLowerCase();
+        if (nameLower === lq) score += 100;
+        else if (nameLower.startsWith(lq)) score += 70;
+        else if (nameLower.includes(lq)) score += 50;
+        if (pose.muscles.toLowerCase().includes(lq)) score += 30;
+        if (pose.equipment.toLowerCase().includes(lq)) score += 20;
+        if (pose.poseType.toLowerCase().includes(lq)) score += 15;
+        if (pose.difficulty.toLowerCase().includes(lq)) score += 10;
+        return score;
+    }
+
+    function fuzzyRelated(poses, q) {
+        // pick top 6 by partial word overlap for "related" suggestions
+        const words = q.toLowerCase().split(/\s+/).filter(w => w.length > 2);
+        return poses
+            .map(p => {
+                const blob = (p.name + ' ' + p.muscles + ' ' + p.equipment + ' ' + p.poseType).toLowerCase();
+                let s = words.reduce((acc, w) => acc + (blob.includes(w) ? 1 : 0), 0);
+                return { pose: p, s };
+            })
+            .filter(x => x.s > 0)
+            .sort((a, b) => b.s - a.s)
+            .slice(0, 6)
+            .map(x => x.pose);
+    }
+
+    function doSearch(raw) {
+        const q = raw.trim();
+        const searchSection = document.getElementById('search_results_section');
+        const sectionsContainer = document.getElementById('sections_container');
+        const grid = document.getElementById('search_results_grid');
+        const noResults = document.getElementById('no_results');
+        const meta = document.getElementById('search_meta');
+        const label = document.getElementById('search_results_label');
+        const clearBtn = document.getElementById('search_clear');
+
+        if (!q) {
+            searchSection.style.display = 'none';
+            sectionsContainer.style.display = '';
+            clearBtn.style.display = 'none';
+            meta.innerHTML = '';
+            return;
+        }
+
+        clearBtn.style.display = 'flex';
+        searchSection.style.display = 'block';
+        sectionsContainer.style.display = 'none';
+
+        const results = ALL_POSES
+            .map(p => ({ pose: p, score: scoreMatch(p, q) }))
+            .filter(x => x.score > 0)
+            .sort((a, b) => b.score - a.score)
+            .map(x => x.pose);
+
+        grid.innerHTML = '';
+        noResults.style.display = 'none';
+
+        if (results.length > 0) {
+            label.textContent = `RESULTS FOR "${q.toUpperCase()}"`;
+            meta.innerHTML = `<span class="highlight">${results.length}</span> exercise${results.length !== 1 ? 's' : ''} matched`;
+            results.forEach(p => grid.appendChild(buildCard(p, q)));
+        } else {
+            label.textContent = 'NO DIRECT MATCHES';
+            meta.innerHTML = `<span style="color:#ff6b6b;">0 results</span> for "${esc(q)}"`;
+            grid.innerHTML = '';
+            noResults.style.display = 'block';
+            document.getElementById('no_results_title').textContent = `No results for "${q}"`;
+            document.getElementById('no_results_sub').textContent = 'We couldn\'t find an exact match. Here are some related exercises you might like:';
+
+            const related = fuzzyRelated(ALL_POSES, q);
+            const chips = document.getElementById('suggestion_chips');
+            chips.innerHTML = '';
+            if (related.length > 0) {
+                related.forEach(p => {
+                    const chip = document.createElement('button');
+                    chip.className = 'suggestion-chip';
+                    chip.textContent = p.name;
+                    chip.addEventListener('click', () => {
+                        document.getElementById('search_input').value = p.name;
+                        doSearch(p.name);
+                    });
+                    chips.appendChild(chip);
+                });
+            } else {
+                chips.innerHTML = '<span style="font-size:0.78rem;color:var(--dim);">No related exercises found. Try broader terms like "bicep", "shoulder", or "dumbbell".</span>';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const input = document.getElementById('search_input');
+        const clearBtn = document.getElementById('search_clear');
+
+        input.addEventListener('input', () => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => doSearch(input.value), 200);
+        });
+
+        clearBtn.addEventListener('click', () => {
+            input.value = '';
+            doSearch('');
+            input.focus();
+        });
+    });
+
+    /* ── MODAL ─────────────────────────────────────── */
     function openModal(pose) {
         const mb = document.getElementById('modal_body');
         mb.innerHTML = '';
-
         if (pose.gif && pose.gif.startsWith('http')) {
             const img = document.createElement('img');
             img.src = pose.gif;
@@ -715,12 +939,10 @@
             img.onerror = () => { img.src = FALLBACK_IMG; };
             mb.appendChild(img);
         }
-
         const title = document.createElement('div');
         title.className = 'modal-title';
         title.textContent = pose.name;
         mb.appendChild(title);
-
         const chips = document.createElement('div');
         chips.className = 'modal-meta-row';
         [pose.difficulty, pose.poseType, pose.ageGrp].filter(Boolean).forEach(t => {
@@ -730,16 +952,9 @@
             chips.appendChild(c);
         });
         mb.appendChild(chips);
-
-        /* info grid */
         const grid = document.createElement('div');
         grid.className = 'modal-info-grid';
-        [
-            ['📦 Equipment',   pose.equipment],
-            ['💪 Muscles',     pose.muscles],
-            ['⚖️ Weight Range', pose.weightMax || 'Bodyweight'],
-            ['🚫 Avoid If',    pose.injuries],
-        ].forEach(([label, val]) => {
+        [['📦 Equipment', pose.equipment], ['💪 Muscles', pose.muscles], ['⚖️ Weight Range', pose.weightMax || 'Bodyweight'], ['🚫 Avoid If', pose.injuries]].forEach(([label, val]) => {
             if (!val) return;
             const cell = document.createElement('div');
             cell.className = 'info-cell';
@@ -747,16 +962,12 @@
             grid.appendChild(cell);
         });
         mb.appendChild(grid);
-
-        /* safety note */
         if (pose.safety) {
             const safeDiv = document.createElement('div');
             safeDiv.style.cssText = 'background:#12130a;border:1px solid rgba(168,85,247,0.15);border-radius:12px;padding:0.8rem 1rem;font-size:0.78rem;color:#c4a8d4;line-height:1.55;margin-bottom:0.5rem;';
             safeDiv.innerHTML = `<span style="color:#a855f7;font-weight:700;letter-spacing:0.5px;">⚠ SAFETY NOTE</span><br>${esc(pose.safety)}`;
             mb.appendChild(safeDiv);
         }
-
-        /* steps */
         if (pose.steps.length) {
             const st = document.createElement('div');
             st.className = 'steps-title';
@@ -776,8 +987,6 @@
                 mb.appendChild(row);
             });
         }
-
-        /* mistakes */
         if (pose.mistakes.length) {
             const mt = document.createElement('div');
             mt.className = 'mistakes-title';
@@ -790,7 +999,6 @@
                 mb.appendChild(item);
             });
         }
-
         const modal = document.getElementById('steps_modal');
         modal.style.display = 'flex';
         document.body.style.overflow = 'hidden';
@@ -806,87 +1014,58 @@
     });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') window.closeModalFunc(); });
 
-    /* ── populate sections ───────────────────────────────── */
+    /* ── POPULATE SECTIONS ─────────────────────────── */
     function populate(poses) {
         const groups = {};
         poses.forEach(p => {
             if (!groups[p.difficulty]) groups[p.difficulty] = [];
             groups[p.difficulty].push(p);
         });
-
-        const knownKeys   = LEVEL_ORDER.filter(l => groups[l]);
+        const knownKeys = LEVEL_ORDER.filter(l => groups[l]);
         const unknownKeys = Object.keys(groups).filter(k => !LEVEL_ORDER.includes(k)).sort();
         const orderedKeys = [...knownKeys, ...unknownKeys];
-
         const container = document.getElementById('sections_container');
         container.innerHTML = '';
-
         orderedKeys.forEach(lvl => {
-            const arr  = groups[lvl];
+            const arr = groups[lvl];
             const meta = LEVEL_META[lvl] || { emoji: '⚫', dot: '#666', label: lvl.toUpperCase() };
-
-            const sec  = document.createElement('div');
-
+            const sec = document.createElement('div');
             const head = document.createElement('div');
             head.className = 'section-head';
-            head.innerHTML = `
-                ${meta.emoji} ${meta.label}
-                <span class="pill">
-                    <span class="dot" style="background:${meta.dot}"></span>
-                    ${arr.length} exercise${arr.length !== 1 ? 's' : ''}
-                </span>
-            `;
-
+            head.innerHTML = `${meta.emoji} ${meta.label}<span class="pill"><span class="dot" style="background:${meta.dot}"></span>${arr.length} exercise${arr.length !== 1 ? 's' : ''}</span>`;
             const grid = document.createElement('div');
             grid.className = 'exercise-grid';
-            arr.forEach(p => grid.appendChild(buildCard(p)));
-
+            arr.forEach(p => grid.appendChild(buildCard(p, '')));
             sec.appendChild(head);
             sec.appendChild(grid);
             container.appendChild(sec);
         });
     }
 
-    /* ── init ────────────────────────────────────────────── */
+    /* ── INIT ──────────────────────────────────────── */
     async function init() {
-        const loading  = document.getElementById('loading_msg');
+        const loading = document.getElementById('loading_msg');
         const errorDiv = document.getElementById('error_msg');
-        loading.style.display  = 'flex';
+        loading.style.display = 'flex';
         errorDiv.style.display = 'none';
         document.getElementById('sections_container').innerHTML = '';
-
         try {
             const raw = await fetchXml();
-
-            /* Sanitise bare ampersands that would break the XML parser */
             const clean = raw.replace(/&(?!(amp|lt|gt|quot|apos|#x?[0-9a-fA-F]+);)/g, '&amp;');
-
             const parser = new DOMParser();
             const doc = parser.parseFromString(clean, 'text/xml');
-
-            /* Check for a fatal parse error */
             const parseErr = doc.querySelector('parsererror');
             if (parseErr) throw new Error('XML parse error: ' + parseErr.textContent.slice(0, 300));
-
             const poses = parsePoses(doc);
             if (!poses.length) throw new Error('Parsed successfully but found 0 exercises.');
-
+            ALL_POSES = poses;
             populate(poses);
             loading.style.display = 'none';
-
         } catch (err) {
             console.error('[ArmLab]', err);
-            loading.style.display  = 'none';
+            loading.style.display = 'none';
             errorDiv.style.display = 'block';
-            errorDiv.innerHTML = `
-                <div style="font-size:1.1rem;margin-bottom:10px;font-weight:700;">⚠️ LOAD FAILED</div>
-                <div style="background:#0e0a0a;padding:0.9rem;border-radius:12px;font-size:0.82rem;color:#f88;white-space:pre-wrap;text-align:left;">${esc(err.message)}</div>
-                <div style="margin-top:0.9rem;font-size:0.75rem;color:#666;">
-                    Fetching from:<br>
-                    <code style="background:#000;padding:2px 6px;border-radius:4px;word-break:break-all;">${esc(XML_RAW_URL)}</code>
-                </div>
-                <button class="retry-btn" id="retryBtn">⟳ RETRY</button>
-            `;
+            errorDiv.innerHTML = `<div style="font-size:1.1rem;margin-bottom:10px;font-weight:700;">⚠️ LOAD FAILED</div><div style="background:#0e0a0a;padding:0.9rem;border-radius:12px;font-size:0.82rem;color:#f88;white-space:pre-wrap;text-align:left;">${esc(err.message)}</div><div style="margin-top:0.9rem;font-size:0.75rem;color:#666;">Fetching from:<br><code style="background:#000;padding:2px 6px;border-radius:4px;word-break:break-all;">${esc(XML_RAW_URL)}</code></div><button class="retry-btn" id="retryBtn">⟳ RETRY</button>`;
             document.getElementById('retryBtn').addEventListener('click', init);
         }
     }
