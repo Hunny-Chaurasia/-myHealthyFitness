@@ -85,7 +85,7 @@
         </steps>
     </Pose>
     <Pose id="4" difficulty="Beginner" safety="Maintain a straight, neutral spine throughout the entire movement. Do not round your back. Initiate the movement by pushing your hips back, not by bending at the waist. Low impact, but improper form can cause lower back strain. Start with a light kettlebell or no weight to master the technique." Pose_type="Strength Training">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/Kettlebell%20Sumo%20Deadlift.gif)</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/Kettlebell%20Sumo%20Deadlift.gif</url>
         <Name>Kettlebell Sumo Deadlift</Name>
         <Equipment>Kettlebell (Light to Medium Weight), Flat, Stable Surface</Equipment>
         <Focused_Muscles>
@@ -163,7 +163,7 @@
         </common_mistakes>
     </Pose>
     <Pose id="6" difficulty="Beginner" safety="Maintain a straight line from head to heels. Do not let your hips sag or rise too high. Engage your core and glutes to protect your lower back. If you have wrist pain, perform the plank on your forearms." Pose_type="Core Strength">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/planks)</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/body-saw-plank.gif</url>
         <Name>Forearm Plank</Name>
         <Equipment>Exercise Mat (Optional, for comfort)</Equipment>
         <Focused_Muscles>
@@ -202,7 +202,7 @@
         </common_mistakes>
     </Pose>
     <Pose id="7" difficulty="Beginner" safety="Avoid pulling on your neck with your hands. Initiate the movement from your core, not your neck or shoulders. Exhale as you crunch up to engage the core effectively. If you have neck or lower back issues, perform with caution or consult a professional." Pose_type="Core Strength">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/crunches.gif)</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/basic-crunch.gif</url>
         <Name>Basic Crunch</Name>
         <Equipment>Exercise Mat (Recommended, for spine comfort)</Equipment>
         <Focused_Muscles>
@@ -241,7 +241,7 @@
         </common_mistakes>
     </Pose>
     <Pose id="8" difficulty="Beginner" safety="Maintain a strong, straight plank position throughout. Avoid letting your hips sag or rise too high. Keep movements controlled to prevent lower back strain. If you have wrist or shoulder issues, perform with caution." Pose_type="Cardio, Core Strength">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/mountain_climbers.gif)</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/mountain-climber.gif</url>
         <Name>Mountain Climbers</Name>
         <Equipment>Exercise Mat (Optional, for comfort and grip)</Equipment>
         <Focused_Muscles>
@@ -280,7 +280,7 @@
         </common_mistakes>
     </Pose>
     <Pose id="9" difficulty="Beginner" safety="Focus on engaging the oblique muscles on the side of your torso. Avoid pulling on your neck with your hand. Move in a controlled, lateral motion rather than twisting or pulling forward. If you have neck or lower back issues, perform with caution." Pose_type="Core Strength">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/side_crunches.gif)</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/side-crunch.gif</url>
         <Name>Side Crunch</Name>
         <Equipment>Exercise Mat (Recommended)</Equipment>
         <Focused_Muscles>
