@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Motion Mentor | Dynamic Exercise Library</title>
-    <link rel="icon" href="WhatsApp Image 2025-09-24 at 10.58.05 PM.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -90,6 +89,109 @@
             50% { opacity: 0.4; transform: scale(0.7); }
         }
 
+        /* ── SEARCH BAR ──────────────────────────── */
+        .search-wrapper {
+            padding: 1.4rem 2.5rem 0.4rem;
+            position: relative;
+            max-width: 780px;
+        }
+        .search-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            color: var(--muted);
+            font-size: 1rem;
+            pointer-events: none;
+            z-index: 1;
+        }
+        #search_input {
+            width: 100%;
+            background: #111;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 0.8rem 3rem 0.8rem 2.8rem;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text);
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        #search_input::placeholder { color: var(--dim); }
+        #search_input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(200,241,53,0.08);
+        }
+        .search-clear {
+            position: absolute;
+            right: 0.9rem;
+            background: #222;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            width: 22px; height: 22px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--muted);
+            font-size: 0.65rem;
+            transition: all 0.15s;
+        }
+        .search-clear:hover { background: var(--accent); color: #000; border-color: var(--accent); }
+        .search-clear.visible { display: flex; }
+        .search-stats {
+            margin-top: 0.5rem;
+            font-size: 0.72rem;
+            color: var(--dim);
+            padding-left: 0.2rem;
+            min-height: 1.2rem;
+        }
+        .search-stats .hl { color: var(--accent); font-weight: 600; }
+
+        /* ── SEARCH RESULTS SECTION ─────────────── */
+        #search_results_section { display: none; }
+        #search_results_section .core_Head { padding-top: 1rem; }
+
+        /* ── NO RESULTS ──────────────────────────── */
+        #no_results_msg {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 2rem;
+            text-align: center;
+            gap: 0.8rem;
+        }
+        .no-results-icon {
+            font-size: 2.5rem;
+            opacity: 0.4;
+        }
+        .no-results-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.1rem;
+            color: var(--muted);
+        }
+        .no-results-sub {
+            font-size: 0.8rem;
+            color: var(--dim);
+            max-width: 320px;
+        }
+        .no-results-query {
+            background: #181818;
+            border: 1px dashed #303030;
+            border-radius: 8px;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.78rem;
+            color: var(--accent);
+            font-family: monospace;
+        }
+
+        /* ── RELATED EXERCISES ───────────────────── */
+        #related_section { display: none; }
+
         /* ── SECTION HEADING ─────────────────────── */
         .core_Head {
             display: flex;
@@ -147,6 +249,9 @@
             border-color: var(--accent);
             transform: translateY(-5px);
             box-shadow: 0 24px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(200,241,53,0.08);
+        }
+        .exercise-card.search-match {
+            border-color: rgba(200,241,53,0.35);
         }
 
         .card-btn {
@@ -498,6 +603,7 @@
             .app-header { padding: 2rem 1.2rem 1.5rem; }
             .modal_inner { padding: 1.2rem; }
             .modal-info-grid { grid-template-columns: 1fr; }
+            .search-wrapper { padding: 1.2rem 1rem 0.4rem; }
         }
     </style>
 </head>
@@ -509,6 +615,16 @@
     <p class="header-sub">Powered by your live XML · tap any card for full instructions & steps</p>
 </div>
 
+<!-- ── SEARCH BAR ─────────────────────────────────── -->
+<div class="search-wrapper" id="search_wrapper" style="display:none;">
+    <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search_input" placeholder="Search exercises, muscles, equipment..." autocomplete="off" spellcheck="false" />
+        <button class="search-clear" id="search_clear" title="Clear search">✕</button>
+    </div>
+    <div class="search-stats" id="search_stats"></div>
+</div>
+
 <div id="loading_msg">
     <div class="spinner"></div>
     <div style="color:#aaa;">Fetching exercises from repository ...</div>
@@ -517,23 +633,52 @@
 
 <div id="error_msg" style="display: none;"></div>
 
-<h2 class="core_Head" id="head_Beginner" style="display: none;">
-    🟢 BEGINNER
-    <span class="pill"><span class="dot" style="background:#4ade80;"></span>Foundation level</span>
-</h2>
-<div class="exercise-grid" id="grid_Beginner"></div>
+<!-- ── SEARCH RESULTS ────────────────────────────── -->
+<div id="search_results_section">
+    <h2 class="core_Head">
+        🔎 SEARCH RESULTS
+        <span class="pill"><span class="dot" style="background:var(--accent);"></span><span id="result_count_label">0 found</span></span>
+    </h2>
+    <div class="exercise-grid" id="grid_search_results"></div>
+</div>
 
-<h2 class="core_Head" id="head_Intermediate" style="display: none;">
-    🟠 INTERMEDIATE
-    <span class="pill"><span class="dot" style="background:#fb923c;"></span>Building strength</span>
-</h2>
-<div class="exercise-grid" id="grid_Intermediate"></div>
+<!-- ── NO RESULTS ────────────────────────────────── -->
+<div id="no_results_msg">
+    <div class="no-results-icon">🏋️</div>
+    <div class="no-results-title">No exact match found</div>
+    <div class="no-results-sub">No exercise matched <span class="no-results-query" id="no_results_query"></span></div>
+    <div style="font-size:0.75rem;color:var(--dim);margin-top:0.3rem;">Try searching by muscle group, equipment, or exercise type</div>
+</div>
 
-<h2 class="core_Head" id="head_Advanced" style="display: none;">
-    🔴 ADVANCED
-    <span class="pill"><span class="dot" style="background:#f87171;"></span>Peak performance</span>
-</h2>
-<div class="exercise-grid" id="grid_Advanced"></div>
+<!-- ── RELATED RESULTS ───────────────────────────── -->
+<div id="related_section">
+    <h2 class="core_Head">
+        💡 RELATED EXERCISES
+        <span class="pill"><span class="dot" style="background:#fb923c;"></span>Similar matches</span>
+    </h2>
+    <div class="exercise-grid" id="grid_related"></div>
+</div>
+
+<!-- ── NORMAL SECTIONS (hidden during search) ─────── -->
+<div id="normal_sections">
+    <h2 class="core_Head" id="head_Beginner" style="display: none;">
+        🟢 BEGINNER
+        <span class="pill"><span class="dot" style="background:#4ade80;"></span>Foundation level</span>
+    </h2>
+    <div class="exercise-grid" id="grid_Beginner"></div>
+
+    <h2 class="core_Head" id="head_Intermediate" style="display: none;">
+        🟠 INTERMEDIATE
+        <span class="pill"><span class="dot" style="background:#fb923c;"></span>Building strength</span>
+    </h2>
+    <div class="exercise-grid" id="grid_Intermediate"></div>
+
+    <h2 class="core_Head" id="head_Advanced" style="display: none;">
+        🔴 ADVANCED
+        <span class="pill"><span class="dot" style="background:#f87171;"></span>Peak performance</span>
+    </h2>
+    <div class="exercise-grid" id="grid_Advanced"></div>
+</div>
 
 <!-- modal overlay -->
 <div id="steps_modal">
@@ -546,6 +691,9 @@
 <script>
     (function(){
         const XML_RAW_URL = "https://raw.githubusercontent.com/Hunny-Chaurasia/-myHealthyFitness/main/core.xml";
+
+        let ALL_EXERCISES = [];
+        let searchTimeout = null;
 
         function getElementText(parent, tagName) {
             if(!parent) return '';
@@ -680,6 +828,109 @@
             });
         }
 
+        /* ── SEARCH LOGIC ────────────────────────── */
+        function getSearchScore(pose, query) {
+            const q = query.toLowerCase().trim();
+            const name = pose.name.toLowerCase();
+            const muscles = pose.muscles.toLowerCase();
+            const equipment = pose.equipment.toLowerCase();
+            const poseType = pose.poseType.toLowerCase();
+            const diseases = pose.diseases.toLowerCase();
+            const difficulty = pose.difficulty.toLowerCase();
+
+            // Exact name match = highest
+            if(name === q) return 100;
+            // Name starts with query
+            if(name.startsWith(q)) return 90;
+            // Name contains query
+            if(name.includes(q)) return 80;
+            // Muscles or equipment exact-ish
+            if(muscles.includes(q)) return 70;
+            if(equipment.includes(q)) return 65;
+            if(poseType.includes(q)) return 60;
+            if(diseases.includes(q)) return 55;
+            if(difficulty.includes(q)) return 50;
+
+            // Word-level partial matching for "related"
+            const words = q.split(/\s+/).filter(w => w.length > 2);
+            let partialScore = 0;
+            for(const w of words) {
+                if(name.includes(w)) partialScore += 15;
+                if(muscles.includes(w)) partialScore += 10;
+                if(equipment.includes(w)) partialScore += 8;
+                if(poseType.includes(w)) partialScore += 7;
+                if(diseases.includes(w)) partialScore += 5;
+            }
+            return partialScore;
+        }
+
+        function runSearch(query) {
+            const q = query.trim();
+            const searchSection = document.getElementById('search_results_section');
+            const noResultsDiv = document.getElementById('no_results_msg');
+            const relatedSection = document.getElementById('related_section');
+            const normalSections = document.getElementById('normal_sections');
+            const statsDiv = document.getElementById('search_stats');
+
+            if(!q) {
+                // Reset to normal view
+                searchSection.style.display = 'none';
+                noResultsDiv.style.display = 'none';
+                relatedSection.style.display = 'none';
+                normalSections.style.display = 'block';
+                statsDiv.textContent = '';
+                document.getElementById('search_clear').classList.remove('visible');
+                return;
+            }
+
+            document.getElementById('search_clear').classList.add('visible');
+            normalSections.style.display = 'none';
+
+            // Score all exercises
+            const scored = ALL_EXERCISES.map(p => ({ pose: p, score: getSearchScore(p, q) }));
+            const directMatches = scored.filter(s => s.score >= 50).sort((a,b) => b.score - a.score);
+            const related = scored.filter(s => s.score > 0 && s.score < 50).sort((a,b) => b.score - a.score).slice(0, 6);
+
+            const grid = document.getElementById('grid_search_results');
+            const relGrid = document.getElementById('grid_related');
+            grid.innerHTML = '';
+            relGrid.innerHTML = '';
+
+            if(directMatches.length > 0) {
+                searchSection.style.display = 'block';
+                noResultsDiv.style.display = 'none';
+                directMatches.forEach(s => {
+                    const card = createExerciseCard(s.pose);
+                    card.classList.add('search-match');
+                    grid.appendChild(card);
+                });
+                document.getElementById('result_count_label').textContent = `${directMatches.length} found`;
+                statsDiv.innerHTML = `Showing <span class="hl">${directMatches.length}</span> result${directMatches.length !== 1 ? 's' : ''} for "<span class="hl">${escapeHtml(q)}</span>"`;
+
+                // Show related only if there's room
+                if(related.length > 0) {
+                    relatedSection.style.display = 'block';
+                    related.forEach(s => relGrid.appendChild(createExerciseCard(s.pose)));
+                } else {
+                    relatedSection.style.display = 'none';
+                }
+            } else {
+                searchSection.style.display = 'none';
+                noResultsDiv.style.display = 'flex';
+                document.getElementById('no_results_query').textContent = q;
+                statsDiv.innerHTML = `No results for "<span class="hl">${escapeHtml(q)}</span>"`;
+
+                if(related.length > 0) {
+                    relatedSection.style.display = 'block';
+                    related.forEach(s => relGrid.appendChild(createExerciseCard(s.pose)));
+                } else {
+                    relatedSection.style.display = 'none';
+                    statsDiv.innerHTML += ' — try a different keyword';
+                }
+            }
+        }
+
+        /* ── CARD BUILDER ───────────────────────── */
         function createExerciseCard(pose) {
             const card = document.createElement('div');
             card.className = 'exercise-card';
@@ -689,7 +940,6 @@
             btn.setAttribute('aria-label', `View details for ${pose.name}`);
             btn.addEventListener('click', (e) => { e.preventDefault(); openModal(pose); });
 
-            // media wrapper
             const mediaDiv = document.createElement('div');
             mediaDiv.className = 'card-media';
 
@@ -718,7 +968,6 @@
 
             btn.appendChild(mediaDiv);
 
-            // card body
             const contentDiv = document.createElement('div');
             contentDiv.className = 'card-content';
 
@@ -748,6 +997,7 @@
             return card;
         }
 
+        /* ── MODAL ──────────────────────────────── */
         function openModal(pose) {
             const modalBody = document.getElementById('modal_body');
             modalBody.innerHTML = '';
@@ -760,13 +1010,11 @@
                 modalBody.appendChild(modalImg);
             }
 
-            // title
             const title = document.createElement('div');
             title.className = 'modal-title';
             title.textContent = pose.name;
             modalBody.appendChild(title);
 
-            // chips row
             const metaRow = document.createElement('div');
             metaRow.className = 'modal-meta-row';
             [pose.difficulty, pose.poseType].forEach(t => {
@@ -777,7 +1025,6 @@
             });
             modalBody.appendChild(metaRow);
 
-            // info grid
             const infoGrid = document.createElement('div');
             infoGrid.className = 'modal-info-grid';
 
@@ -794,7 +1041,6 @@
             });
             modalBody.appendChild(infoGrid);
 
-            // steps
             if(pose.steps && pose.steps.length) {
                 const stepsTitle = document.createElement('div');
                 stepsTitle.className = 'steps-title';
@@ -830,7 +1076,6 @@
                 });
             }
 
-            // mistakes
             if(pose.mistakes && pose.mistakes.length) {
                 const warnTitle = document.createElement('div');
                 warnTitle.className = 'mistakes-title';
@@ -867,6 +1112,7 @@
             if(e.target === this) window.closeModalFunc();
         });
 
+        /* ── SECTION POPULATION ─────────────────── */
         function populateSections(posesArray) {
             const grids = { Beginner: document.getElementById('grid_Beginner'), Intermediate: document.getElementById('grid_Intermediate'), Advanced: document.getElementById('grid_Advanced') };
             const heads = { Beginner: document.getElementById('head_Beginner'), Intermediate: document.getElementById('head_Intermediate'), Advanced: document.getElementById('head_Advanced') };
@@ -885,6 +1131,7 @@
             });
         }
 
+        /* ── INIT ───────────────────────────────── */
         async function initApp() {
             const loadingDiv = document.getElementById('loading_msg');
             const errorDiv = document.getElementById('error_msg');
@@ -899,8 +1146,36 @@
                 if(parseError) throw new Error(`XML parse error: ${parseError.textContent.substring(0, 150)}`);
                 const exercises = parsePosesFromXML(xmlDoc);
                 if(!exercises.length) throw new Error('No exercises found in XML');
+                ALL_EXERCISES = exercises;
                 populateSections(exercises);
                 loadingDiv.style.display = 'none';
+
+                // Show search bar now that data is ready
+                document.getElementById('search_wrapper').style.display = 'block';
+
+                // Wire up search input
+                const searchInput = document.getElementById('search_input');
+                const searchClear = document.getElementById('search_clear');
+
+                searchInput.addEventListener('input', function() {
+                    clearTimeout(searchTimeout);
+                    const val = this.value;
+                    searchTimeout = setTimeout(() => runSearch(val), 220);
+                });
+
+                searchInput.addEventListener('keydown', function(e) {
+                    if(e.key === 'Escape') {
+                        this.value = '';
+                        runSearch('');
+                    }
+                });
+
+                searchClear.addEventListener('click', function() {
+                    searchInput.value = '';
+                    runSearch('');
+                    searchInput.focus();
+                });
+
             } catch (err) {
                 console.error('MotionMentor error:', err);
                 loadingDiv.style.display = 'none';
