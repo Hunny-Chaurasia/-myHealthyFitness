@@ -1252,7 +1252,7 @@
     </Pose>
 
     <Pose id="BACK-LB-13" difficulty="Expert" safety="Keep your back straight and core braced. Hinge at your hips. Do not round your back. Start with light weight to master form—this is unforgiving." Pose_type="Strength, Hip Hinge">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_good_morning_heavy.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-good-morning.gif</url>
         <Name>Barbell Good Morning (Heavy - Expert)</Name>
         <Equipment>Barbell with Heavy Plates, Belt</Equipment>
         <Focused_Muscles>Erector Spinae, Hamstrings, Glutes</Focused_Muscles>
@@ -1275,7 +1275,7 @@
     </Pose>
 
     <Pose id="BACK-LB-14" difficulty="Expert" safety="Keep your back straight and core braced. Move through a controlled range of motion. Squeeze your glutes and lower back at the top." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/reverse_hyperextension_weighted.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/Reverse%20Hyperextension.gif</url>
         <Name>Reverse Hyperextension (Weighted - Expert)</Name>
         <Equipment>Reverse Hyperextension Machine or Bench with Weight Plate</Equipment>
         <Focused_Muscles>Erector Spinae, Glutes, Hamstrings</Focused_Muscles>
@@ -1299,7 +1299,7 @@
 
     <!-- TRAPS - Expert -->
     <Pose id="BACK-TRAP-10" difficulty="Expert" safety="Keep your core braced and back straight. Squeeze your traps at the top. Lift straight up and down—do not roll your shoulders. Use straps if needed." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_shrug_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-shrug.gif</url>
         <Name>Barbell Shrug (Heavy - Expert)</Name>
         <Equipment>Heavy Barbell with Plates, Lifting Straps (Optional)</Equipment>
         <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
@@ -1322,7 +1322,7 @@
     </Pose>
 
     <Pose id="BACK-TRAP-11" difficulty="Expert" safety="Keep your back straight and core braced. Use a rack to position the bar at knee height. Pull with your traps, not your lower back. Use straps." Pose_type="Strength, Trap Isolation">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/rack_pull_heavy.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-rack-pull.gif</url>
         <Name>Rack Pull (Heavy - Expert)</Name>
         <Equipment>Barbell with Heavy Plates, Power Rack, Lifting Straps</Equipment>
         <Focused_Muscles>Trapezius (Upper), Rhomboids, Erector Spinae, Forearms</Focused_Muscles>
@@ -1345,7 +1345,7 @@
     </Pose>
 
     <Pose id="BACK-TRAP-12" difficulty="Expert" safety="Keep your core braced and back straight. Squeeze your traps at the top. Control the slow eccentric phase. Do not roll your shoulders." Pose_type="Hypertrophy, Eccentric Focus">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_shrug_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/dumbbell-shrug.gif</url>
         <Name>Dumbbell Shrug (Slow Eccentric - Expert)</Name>
         <Equipment>Heavy Dumbbells</Equipment>
         <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
@@ -1368,7 +1368,7 @@
     </Pose>
 
     <Pose id="BACK-TRAP-13" difficulty="Expert" safety="Keep your core braced and back straight. Pull the bar close to your body. Do not pull higher than upper chest. Use an EZ-bar for wrist comfort." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/upright_row_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-upright-row.gif</url>
         <Name>Upright Row (Barbell - Expert)</Name>
         <Equipment>Barbell or EZ-Bar with Moderate Plates</Equipment>
         <Focused_Muscles>Trapezius (Upper), Deltoids (Medial), Biceps</Focused_Muscles>
