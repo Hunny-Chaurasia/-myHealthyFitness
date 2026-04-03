@@ -124,7 +124,7 @@
 
     <!-- LOWER BACK - Beginner -->
     <Pose id="BACK-LB-01" difficulty="Beginner" safety="Keep your neck in a neutral position (looking at the floor). Squeeze your glutes and lower back at the top. Do not overextend your spine." Pose_type="Strength, Core Stability">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/superman_hold.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/superman-hold.gif</url>
         <Name>Superman Hold</Name>
         <Equipment>Exercise Mat</Equipment>
         <Focused_Muscles>Erector Spinae (Lower Back), Glutes, Hamstrings, Core</Focused_Muscles>
@@ -147,7 +147,7 @@
     </Pose>
 
     <Pose id="BACK-LB-02" difficulty="Beginner" safety="Keep your back straight and core braced. Move through a controlled range of motion. Avoid arching your back at the top." Pose_type="Strength, Core Stability">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/back_extension_bodyweight.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/Back%20Extension.gif</url>
         <Name>Back Extension (Bodyweight)</Name>
         <Equipment>Back Extension Bench or Roman Chair</Equipment>
         <Focused_Muscles>Erector Spinae (Lower Back), Glutes, Hamstrings</Focused_Muscles>
@@ -171,7 +171,7 @@
 
     <!-- TRAPS - Beginner -->
     <Pose id="BACK-TRAP-01" difficulty="Beginner" safety="Keep your core braced and back straight. Squeeze your traps at the top of the movement. Do not roll your shoulders—lift straight up and down." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_shrug.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/dumbbell-shrug.gif</url>
         <Name>Dumbbell Shrug</Name>
         <Equipment>Light Dumbbells</Equipment>
         <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
@@ -194,7 +194,7 @@
     </Pose>
 
     <Pose id="BACK-TRAP-02" difficulty="Beginner" safety="Keep your core braced and back straight. Squeeze your shoulder blades together at the peak of the movement. Avoid using momentum." Pose_type="Activation, Rear Delt Focus">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/band_pull_apart.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/Band%20Pull-Apart.gif</url>
         <Name>Band Pull-Apart</Name>
         <Equipment>Light Resistance Band</Equipment>
         <Focused_Muscles>Trapezius (Middle/Lower), Rhomboids, Rear Deltoids, Rotator Cuff</Focused_Muscles>
@@ -222,7 +222,7 @@
     
     <!-- UPPER BACK - Novice -->
     <Pose id="BACK-UB-04" difficulty="Novice" safety="Keep your back straight and core braced. Hinge at your hips. Avoid rounding your lower back. Squeeze your shoulder blades at the top of the row." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_bent_over_row.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-bent-over-row.gif</url>
         <Name>Barbell Bent-Over Row</Name>
         <Equipment>Barbell with Light Plates</Equipment>
         <Focused_Muscles>Rhomboids, Trapezius (Middle), Latissimus Dorsi, Rear Deltoids, Biceps, Lower Back</Focused_Muscles>
@@ -245,7 +245,7 @@
     </Pose>
 
     <Pose id="BACK-UB-05" difficulty="Novice" safety="Keep your back straight and chest up. Squeeze your shoulder blades at the peak. Avoid jerking the weight. Control the return." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_cable_row_novice.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/cable-seated-wide-grip-row.gif</url>
         <Name>Seated Cable Row</Name>
         <Equipment>Cable Machine with V-Grip or Wide Bar</Equipment>
         <Focused_Muscles>Rhomboids, Trapezius, Latissimus Dorsi, Rear Deltoids, Biceps</Focused_Muscles>
@@ -268,7 +268,7 @@
     </Pose>
 
     <Pose id="BACK-UB-06" difficulty="Novice" safety="Keep your chest pressed against the pad. Squeeze your shoulder blades at the peak. Avoid using momentum. Control the weight throughout." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/chest_supported_dumbbell_row.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/Chest-Supported%20Dumbbell%20Row.gif</url>
         <Name>Chest-Supported Dumbbell Row</Name>
         <Equipment>Incline Bench, Dumbbells</Equipment>
         <Focused_Muscles>Rhomboids, Trapezius (Middle/Lower), Rear Deltoids, Biceps</Focused_Muscles>
@@ -291,7 +291,7 @@
     </Pose>
 
     <Pose id="BACK-UB-07" difficulty="Novice" safety="Keep your core braced and back straight. Focus on external rotation of the shoulders. Avoid using momentum. Control the weight." Pose_type="Rotator Cuff Health, Posture">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/face_pull_novice.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/face-pull-band.gif</url>
         <Name>Face Pull</Name>
         <Equipment>Cable Machine with Rope Attachment, High Pulley</Equipment>
         <Focused_Muscles>Rear Deltoids, Trapezius (Middle/Lower), Rhomboids, Rotator Cuff (Infraspinatus/Teres Minor)</Focused_Muscles>
@@ -315,7 +315,7 @@
 
     <!-- LATS - Novice -->
     <Pose id="BACK-LAT-03" difficulty="Novice" safety="Keep your core braced and back straight. Squeeze your lats at the bottom. Avoid using momentum to pull the bar down. Control the return." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lat_pulldown_novice.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/lat-pulldown%20close%20grip.gif</url>
         <Name>Lat Pulldown</Name>
         <Equipment>Cable Machine with Wide Bar, Lat Pulldown Station</Equipment>
         <Focused_Muscles>Latissimus Dorsi (Primary), Biceps, Rhomboids, Rear Deltoids</Focused_Muscles>
@@ -338,7 +338,7 @@
     </Pose>
 
     <Pose id="BACK-LAT-04" difficulty="Novice" safety="Keep your back straight and core braced. Use a bench for knee support if needed. Squeeze your lat at the peak of the row. Control the movement." Pose_type="Strength, Unilateral">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/single_arm_dumbbell_row.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/Single-Arm%20Dumbbell%20Row.gif</url>
         <Name>Single-Arm Dumbbell Row</Name>
         <Equipment>Dumbbell, Bench</Equipment>
         <Focused_Muscles>Latissimus Dorsi (Unilateral), Rhomboids, Trapezius, Biceps, Rear Deltoids</Focused_Muscles>
@@ -361,7 +361,7 @@
     </Pose>
 
     <Pose id="BACK-LAT-05" difficulty="Novice" safety="Keep your core braced and back straight. Squeeze your lats at the bottom. Keep your arms straight throughout. Control the weight." Pose_type="Isolation, Lat Focus">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/straight_arm_pulldown_novice.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/cable-straight-arm-pulldown.gif</url>
         <Name>Straight Arm Pulldown</Name>
         <Equipment>Cable Machine with Rope or Straight Bar</Equipment>
         <Focused_Muscles>Latissimus Dorsi (Isolation), Teres Major</Focused_Muscles>
@@ -385,7 +385,7 @@
 
     <!-- LOWER BACK - Novice -->
     <Pose id="BACK-LB-03" difficulty="Novice" safety="Keep your back straight and core braced. Move through a controlled range of motion. Avoid hyperextending at the top." Pose_type="Strength, Core Stability">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/back_extension_novice.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/Back%20Extension.gif</url>
         <Name>Back Extension</Name>
         <Equipment>Back Extension Bench or Roman Chair</Equipment>
         <Focused_Muscles>Erector Spinae (Lower Back), Glutes, Hamstrings</Focused_Muscles>
@@ -408,7 +408,7 @@
     </Pose>
 
     <Pose id="BACK-LB-04" difficulty="Novice" safety="Keep your back straight and core braced. Hinge at your hips. Maintain a slight bend in your knees. Do not round your back." Pose_type="Strength, Hip Hinge">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/romanian_deadlift_light_back.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-romanian-deadlift.gif</url>
         <Name>Romanian Deadlift (Light - Lower Back Focus)</Name>
         <Equipment>Light Barbell or Dumbbells</Equipment>
         <Focused_Muscles>Erector Spinae, Hamstrings, Glutes</Focused_Muscles>
@@ -431,7 +431,7 @@
     </Pose>
 
     <Pose id="BACK-LB-05" difficulty="Novice" safety="Keep your back straight and core braced. Hinge at your hips. Do not round your back. Start with bodyweight only to master form." Pose_type="Strength, Hip Hinge">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/good_morning_bodyweight.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-good-morning.gif</url>
         <Name>Good Morning (Bodyweight)</Name>
         <Equipment>None (Bodyweight), Broomstick (Optional for practice)</Equipment>
         <Focused_Muscles>Erector Spinae, Hamstrings, Glutes</Focused_Muscles>
@@ -455,7 +455,7 @@
 
     <!-- TRAPS - Novice -->
     <Pose id="BACK-TRAP-03" difficulty="Novice" safety="Keep your core braced and back straight. Squeeze your traps at the top. Lift straight up and down—do not roll your shoulders." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_shrug.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-shrug.gif</url>
         <Name>Barbell Shrug</Name>
         <Equipment>Barbell with Light to Moderate Plates</Equipment>
         <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
@@ -478,7 +478,7 @@
     </Pose>
 
     <Pose id="BACK-TRAP-04" difficulty="Novice" safety="Keep your core braced and back straight. Squeeze your traps at the top. Do not roll your shoulders—lift straight up and down." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_shrug_novice.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/dumbbell-shrug.gif</url>
         <Name>Dumbbell Shrug</Name>
         <Equipment>Dumbbells</Equipment>
         <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
@@ -501,7 +501,7 @@
     </Pose>
 
     <Pose id="BACK-TRAP-05" difficulty="Novice" safety="Keep your core braced and back straight. Squeeze your shoulder blades together at the peak. Avoid using momentum." Pose_type="Activation, Posture">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/band_pull_apart_novice.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/Band%20Pull-Apart.gif</url>
         <Name>Band Pull-Apart</Name>
         <Equipment>Resistance Band (Medium Resistance)</Equipment>
         <Focused_Muscles>Trapezius (Middle/Lower), Rhomboids, Rear Deltoids</Focused_Muscles>
@@ -529,7 +529,7 @@
     
     <!-- UPPER BACK - Advanced -->
     <Pose id="BACK-UB-08" difficulty="Advanced" safety="Keep your back straight and core braced. Hinge at your hips. Do not round your lower back. Squeeze your shoulder blades at the top." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_bent_over_row_heavy.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-bent-over-row.gif</url>
         <Name>Barbell Bent-Over Row (Heavy)</Name>
         <Equipment>Barbell with Heavy Plates</Equipment>
         <Focused_Muscles>Rhomboids, Trapezius (Middle), Latissimus Dorsi, Rear Deltoids, Biceps, Lower Back</Focused_Muscles>
@@ -552,7 +552,7 @@
     </Pose>
 
     <Pose id="BACK-UB-09" difficulty="Advanced" safety="Keep your back straight and core braced. Start each rep from a dead stop on the floor. Do not bounce the weight. Squeeze your shoulder blades at the top." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/pendlay_row.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-pendlay-row.gif</url>
         <Name>Pendlay Row</Name>
         <Equipment>Barbell with Plates</Equipment>
         <Focused_Muscles>Rhomboids, Trapezius, Latissimus Dorsi, Rear Deltoids, Biceps, Lower Back</Focused_Muscles>
@@ -575,7 +575,7 @@
     </Pose>
 
     <Pose id="BACK-UB-10" difficulty="Advanced" safety="Keep your back straight and chest up. Squeeze your shoulder blades at the peak. Use a wide grip to target upper back. Control the return." Pose_type="Hypertrophy, Upper Back Focus">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_cable_row_wide_grip.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/cable-seated-wide-grip-row.gif</url>
         <Name>Seated Cable Row (Wide Grip)</Name>
         <Equipment>Cable Machine with Wide Bar Attachment</Equipment>
         <Focused_Muscles>Rhomboids, Trapezius (Middle), Rear Deltoids</Focused_Muscles>
@@ -598,7 +598,7 @@
     </Pose>
 
     <Pose id="BACK-UB-11" difficulty="Advanced" safety="Keep your chest pressed against the pad. Squeeze your shoulder blades at the peak. Avoid using momentum. Control the weight." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/chest_supported_row.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/Chest-Supported%20Dumbbell%20Row.gif</url>
         <Name>Chest-Supported Row</Name>
         <Equipment>Chest-Supported Row Machine or Incline Bench with Dumbbells</Equipment>
         <Focused_Muscles>Rhomboids, Trapezius (Middle/Lower), Rear Deltoids, Biceps</Focused_Muscles>
@@ -621,7 +621,7 @@
     </Pose>
 
     <Pose id="BACK-UB-12" difficulty="Advanced" safety="Keep your core braced and back straight. Focus on external rotation of the shoulders. Use moderate weight—this is a prehab exercise." Pose_type="Rotator Cuff Health, Posture">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/face_pull_advanced.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/face-pull-band.gif</url>
         <Name>Face Pull (Heavy - Advanced)</Name>
         <Equipment>Cable Machine with Rope Attachment</Equipment>
         <Focused_Muscles>Rear Deltoids, Trapezius (Middle/Lower), Rhomboids, Rotator Cuff</Focused_Muscles>
@@ -645,7 +645,7 @@
 
     <!-- LATS - Advanced -->
     <Pose id="BACK-LAT-06" difficulty="Advanced" safety="Use a controlled motion—no kipping or swinging. Squeeze your lats at the top. Keep your core braced and back straight." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/weighted_pull_up.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/weighted-pull-up.gif</url>
         <Name>Weighted Pull-Up</Name>
         <Equipment>Pull-Up Bar, Weight Belt or Dip Belt, Weight Plates</Equipment>
         <Focused_Muscles>Latissimus Dorsi (Primary), Biceps, Rhomboids, Trapezius, Core</Focused_Muscles>
@@ -668,7 +668,7 @@
     </Pose>
 
     <Pose id="BACK-LAT-07" difficulty="Advanced" safety="Keep your core braced and back straight. Squeeze your lats at the bottom. Use a close grip to target lower lats. Control the return." Pose_type="Hypertrophy, Lower Lat Focus">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lat_pulldown_close_grip.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/lat-pulldown%20close%20grip.gif</url>
         <Name>Lat Pulldown (Close Grip)</Name>
         <Equipment>Cable Machine with Close Grip Bar or V-Handle</Equipment>
         <Focused_Muscles>Latissimus Dorsi (Lower Lat Focus), Biceps</Focused_Muscles>
@@ -691,7 +691,7 @@
     </Pose>
 
     <Pose id="BACK-LAT-08" difficulty="Advanced" safety="Keep your back straight and core braced. Squeeze your lat at the peak of the row. Control the movement—do not use momentum." Pose_type="Isolation, Unilateral">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/single_arm_cable_row.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/cable-one-arm-seated-row.gif</url>
         <Name>Single-Arm Cable Row</Name>
         <Equipment>Cable Machine with Single Handle Attachment</Equipment>
         <Focused_Muscles>Latissimus Dorsi (Unilateral), Rhomboids, Biceps</Focused_Muscles>
