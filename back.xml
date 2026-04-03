@@ -714,7 +714,7 @@
     </Pose>
 
     <Pose id="BACK-LAT-09" difficulty="Advanced" safety="Keep your core braced and back straight. Squeeze your lats at the bottom. Keep your arms straight throughout. Control the weight." Pose_type="Isolation, Lat Focus">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/straight_arm_pulldown_advanced.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/cable-straight-arm-pulldown.gif</url>
         <Name>Straight Arm Pulldown</Name>
         <Equipment>Cable Machine with Rope or Straight Bar</Equipment>
         <Focused_Muscles>Latissimus Dorsi (Isolation), Teres Major</Focused_Muscles>
@@ -738,7 +738,7 @@
 
     <!-- LOWER BACK - Advanced -->
     <Pose id="BACK-LB-06" difficulty="Advanced" safety="Keep your back straight and core braced. Drive through your heels. Do not round your back at any point. Use a belt for heavy sets." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/conventional_deadlift_advanced.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/Conventional%20Deadlift.gif</url>
         <Name>Conventional Deadlift</Name>
         <Equipment>Barbell with Plates, Deadlift Platform, Belt (Optional)</Equipment>
         <Focused_Muscles>Erector Spinae (Lower Back), Glutes, Hamstrings, Quadriceps, Traps, Forearms</Focused_Muscles>
@@ -761,7 +761,7 @@
     </Pose>
 
     <Pose id="BACK-LB-07" difficulty="Advanced" safety="Keep your back straight and core braced. Hinge at your hips. Maintain a slight bend in your knees. Do not round your back." Pose_type="Strength, Hip Hinge">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/romanian_deadlift_advanced_back.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-romanian-deadlift.gif</url>
         <Name>Romanian Deadlift (Advanced)</Name>
         <Equipment>Barbell with Plates</Equipment>
         <Focused_Muscles>Hamstrings (Primary), Glutes, Erector Spinae</Focused_Muscles>
@@ -784,7 +784,7 @@
     </Pose>
 
     <Pose id="BACK-LB-08" difficulty="Advanced" safety="Keep your back straight and core braced. Hinge at your hips. Do not round your back. Start with light weight to master form." Pose_type="Strength, Hip Hinge">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_good_morning.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-good-morning.gif</url>
         <Name>Barbell Good Morning</Name>
         <Equipment>Barbell with Light to Moderate Plates</Equipment>
         <Focused_Muscles>Erector Spinae, Hamstrings, Glutes</Focused_Muscles>
@@ -807,7 +807,7 @@
     </Pose>
 
     <Pose id="BACK-LB-09" difficulty="Advanced" safety="Keep your back straight and core braced. Move through a controlled range of motion. Do not hyperextend at the top." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/hyperextension_weighted.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/weighted-hyperextension.gif</url>
         <Name>Hyperextension (Weighted)</Name>
         <Equipment>Back Extension Bench, Weight Plate or Dumbbell</Equipment>
         <Focused_Muscles>Erector Spinae, Glutes, Hamstrings</Focused_Muscles>
@@ -831,7 +831,7 @@
 
     <!-- TRAPS - Advanced -->
     <Pose id="BACK-TRAP-06" difficulty="Advanced" safety="Keep your core braced and back straight. Squeeze your traps at the top. Lift straight up and down—do not roll your shoulders." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_shrug_heavy.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-shrug.gif</url>
         <Name>Barbell Shrug (Heavy)</Name>
         <Equipment>Barbell with Heavy Plates</Equipment>
         <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
@@ -854,7 +854,7 @@
     </Pose>
 
     <Pose id="BACK-TRAP-07" difficulty="Advanced" safety="Keep your core braced and back straight. Squeeze your traps at the top. Control the descent (eccentric) phase. Do not roll your shoulders." Pose_type="Hypertrophy, Eccentric Focus">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_shrug_slow_eccentric.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/dumbbell-shrug.gif</url>
         <Name>Dumbbell Shrug (Slow Eccentric)</Name>
         <Equipment>Heavy Dumbbells</Equipment>
         <Focused_Muscles>Trapezius (Upper), Levator Scapulae</Focused_Muscles>
@@ -877,7 +877,7 @@
     </Pose>
 
     <Pose id="BACK-TRAP-08" difficulty="Advanced" safety="Keep your back straight and core braced. Use a rack to position the bar at knee height. Pull with your traps, not your lower back." Pose_type="Strength, Trap Isolation">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/rack_pull.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-rack-pull.gif</url>
         <Name>Rack Pull</Name>
         <Equipment>Barbell with Heavy Plates, Power Rack with Safety Pins</Equipment>
         <Focused_Muscles>Trapezius (Upper), Rhomboids, Erector Spinae, Forearms (Grip)</Focused_Muscles>
@@ -900,7 +900,7 @@
     </Pose>
 
     <Pose id="BACK-TRAP-09" difficulty="Advanced" safety="Keep your core braced and back straight. Pull the bar close to your body. Do not use momentum. Keep your shoulders down and back." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/upright_row.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-upright-row.gif</url>
         <Name>Upright Row</Name>
         <Equipment>Barbell or EZ-Bar with Moderate Plates</Equipment>
         <Focused_Muscles>Trapezius (Upper), Deltoids (Medial), Biceps</Focused_Muscles>
@@ -928,7 +928,7 @@
     
     <!-- UPPER BACK - Expert -->
     <Pose id="BACK-UB-13" difficulty="Expert" safety="Keep your back straight and core braced. Hinge at your hips. Do not round your lower back. Use a belt for heavy sets. This is a strength movement—form is critical." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_bent_over_row_heavy_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-bent-over-row.gif</url>
         <Name>Barbell Bent-Over Row (Heavy - Expert)</Name>
         <Equipment>Heavy Barbell with Plates, Belt (Optional)</Equipment>
         <Focused_Muscles>Rhomboids, Trapezius (Middle), Latissimus Dorsi, Rear Deltoids, Biceps, Lower Back</Focused_Muscles>
@@ -951,7 +951,7 @@
     </Pose>
 
     <Pose id="BACK-UB-14" difficulty="Expert" safety="Keep your back straight and core braced. Start each rep from a dead stop. Do not bounce the weight. Squeeze your shoulder blades at the top." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/pendlay_row_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-pendlay-row.gif</url>
         <Name>Pendlay Row</Name>
         <Equipment>Barbell with Heavy Plates</Equipment>
         <Focused_Muscles>Rhomboids, Trapezius, Latissimus Dorsi, Rear Deltoids, Biceps, Lower Back</Focused_Muscles>
@@ -1020,7 +1020,7 @@
     </Pose>
 
     <Pose id="BACK-UB-17" difficulty="Expert" safety="This is a drop set. Do not rest between drops. Control the weight throughout. Keep your back straight and chest up. Stop if form breaks." Pose_type="Drop Set, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_cable_row_drop_set.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/cable-seated-row.gif</url>
         <Name>Seated Cable Row (Drop Set)</Name>
         <Equipment>Cable Machine with V-Grip, Multiple Weight Increments</Equipment>
         <Focused_Muscles>Rhomboids, Trapezius, Latissimus Dorsi, Rear Deltoids, Biceps</Focused_Muscles>
@@ -1043,7 +1043,7 @@
     </Pose>
 
     <Pose id="BACK-UB-18" difficulty="Expert" safety="Keep your core braced and back straight. Focus on external rotation of the shoulders. Use heavy weight but maintain form—this is a prehab and strength exercise." Pose_type="Strength, Rotator Cuff Health">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/face_pull_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/face-pull-band.gif</url>
         <Name>Face Pull (Heavy - Expert)</Name>
         <Equipment>Cable Machine with Rope Attachment</Equipment>
         <Focused_Muscles>Rear Deltoids, Trapezius (Middle/Lower), Rhomboids, Rotator Cuff</Focused_Muscles>
@@ -1067,7 +1067,7 @@
 
     <!-- LATS - Expert -->
     <Pose id="BACK-LAT-10" difficulty="Expert" safety="Use a controlled motion—no kipping. Squeeze your lats at the top. Keep your core braced. Use a belt for heavy weighted pull-ups if needed." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/weighted_pull_up_heavy.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/weighted-pull-up.gif</url>
         <Name>Weighted Pull-Up (Heavy - Expert)</Name>
         <Equipment>Pull-Up Bar, Weight Belt, Heavy Plates</Equipment>
         <Focused_Muscles>Latissimus Dorsi (Primary), Biceps, Rhomboids, Trapezius, Core</Focused_Muscles>
@@ -1113,7 +1113,7 @@
     </Pose>
 
     <Pose id="BACK-LAT-12" difficulty="Expert" safety="This is a drop set. Do not rest between drops. Control the weight throughout. Keep your back straight and chest up. Stop if form breaks." Pose_type="Drop Set, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lat_pulldown_drop_set.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/lat-pulldown%20close%20grip.gif</url>
         <Name>Lat Pulldown (Drop Set)</Name>
         <Equipment>Cable Machine with Wide Bar, Multiple Weight Increments</Equipment>
         <Focused_Muscles>Latissimus Dorsi, Biceps, Rhomboids</Focused_Muscles>
@@ -1136,7 +1136,7 @@
     </Pose>
 
     <Pose id="BACK-LAT-13" difficulty="Expert" safety="Keep your back straight and core braced. Squeeze your lat at the peak. Control the slow eccentric phase. Do not use momentum." Pose_type="Hypertrophy, Eccentric Focus">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/single_arm_cable_row_slow_eccentric.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/cable-single-arm-high-row.gif</url>
         <Name>Single-Arm Cable Row (Slow Eccentric)</Name>
         <Equipment>Cable Machine with Single Handle</Equipment>
         <Focused_Muscles>Latissimus Dorsi (Unilateral)</Focused_Muscles>
@@ -1159,7 +1159,7 @@
     </Pose>
 
     <Pose id="BACK-LAT-14" difficulty="Expert" safety="Keep your core braced and back straight. Squeeze your lats at the bottom. Keep your arms straight throughout. Use heavy weight with control." Pose_type="Strength, Isolation">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/straight_arm_pulldown_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/band-straight-arm-pulldown.gif</url>
         <Name>Straight Arm Pulldown (Heavy - Expert)</Name>
         <Equipment>Cable Machine with Rope or Straight Bar</Equipment>
         <Focused_Muscles>Latissimus Dorsi (Isolation), Teres Major</Focused_Muscles>
@@ -1183,7 +1183,7 @@
 
     <!-- LOWER BACK - Expert -->
     <Pose id="BACK-LB-10" difficulty="Expert" safety="This is a heavy strength movement. Use a belt. Keep your back straight—do not round at any point. Drive through your heels. Use a spotter or safety bars if needed." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/conventional_deadlift_heavy_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/Conventional%20Deadlift.gif</url>
         <Name>Conventional Deadlift (Heavy - Expert)</Name>
         <Equipment>Heavy Barbell with Plates, Deadlift Platform, Belt, Chalk</Equipment>
         <Focused_Muscles>Erector Spinae, Glutes, Hamstrings, Quadriceps, Traps, Forearms</Focused_Muscles>
@@ -1229,7 +1229,7 @@
     </Pose>
 
     <Pose id="BACK-LB-12" difficulty="Expert" safety="Keep your back straight and core braced. Hinge at your hips. Do not round your back. Use a belt for heavy sets." Pose_type="Strength, Hip Hinge">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/romanian_deadlift_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/barbell-romanian-deadlift.gif</url>
         <Name>Romanian Deadlift (Heavy - Expert)</Name>
         <Equipment>Heavy Barbell with Plates, Belt</Equipment>
         <Focused_Muscles>Hamstrings (Primary), Glutes, Erector Spinae</Focused_Muscles>
