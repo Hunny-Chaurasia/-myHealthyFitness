@@ -7,7 +7,7 @@
     
     <!-- UPPER BACK - Beginner -->
     <Pose id="BACK-UB-01" difficulty="Beginner" safety="Keep your back straight and core braced. Squeeze your shoulder blades together at the peak of the movement. Avoid using momentum to pull the band." Pose_type="Strength, Activation">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/resistance-band-rear-delt-row.gifs</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/resistance-band-rear-delt-row.gif</url>
         <Name>Resistance Band Row</Name>
         <Equipment>Resistance Band, Anchor Point</Equipment>
         <Focused_Muscles>Rhomboids, Trapezius (Middle/Lower), Rear Deltoids, Biceps</Focused_Muscles>
