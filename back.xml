@@ -30,7 +30,7 @@
     </Pose>
 
     <Pose id="BACK-UB-02" difficulty="Beginner" safety="Keep your back straight and chest up. Squeeze your shoulder blades together at the peak. Avoid jerking the weight. Control the return." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_cable_row_light.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/cable-seated-row.gif</url>
         <Name>Seated Cable Row (Light)</Name>
         <Equipment>Cable Machine with V-Grip Handle</Equipment>
         <Focused_Muscles>Rhomboids, Trapezius, Latissimus Dorsi, Rear Deltoids, Biceps</Focused_Muscles>
@@ -53,7 +53,7 @@
     </Pose>
 
     <Pose id="BACK-UB-03" difficulty="Beginner" safety="Keep your back straight and core braced. Hinge at your hips. Avoid rounding your lower back. Squeeze your shoulder blades at the top of the row." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/dumbbell_bent_over_row.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/dumbbell-bent-over-row-against-wall.gif</url>
         <Name>Dumbbell Bent-Over Row</Name>
         <Equipment>Light Dumbbells, Bench (Optional for support)</Equipment>
         <Focused_Muscles>Rhomboids, Trapezius, Latissimus Dorsi, Rear Deltoids, Biceps, Lower Back (Stabilizer)</Focused_Muscles>
@@ -77,7 +77,7 @@
 
     <!-- LATS - Beginner -->
     <Pose id="BACK-LAT-01" difficulty="Beginner" safety="Keep your core braced and back straight. Squeeze your lats at the bottom of the movement. Avoid using momentum to pull the bar down." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lat_pulldown_light.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/lat-pulldown%20close%20grip.gif</url>
         <Name>Lat Pulldown (Light)</Name>
         <Equipment>Cable Machine with Wide Bar, Lat Pulldown Station</Equipment>
         <Focused_Muscles>Latissimus Dorsi (Primary), Biceps, Rhomboids, Rear Deltoids</Focused_Muscles>
@@ -100,7 +100,7 @@
     </Pose>
 
     <Pose id="BACK-LAT-02" difficulty="Beginner" safety="Keep your core braced and back straight. Squeeze your lats at the bottom of the movement. Avoid using momentum. Control the weight throughout." Pose_type="Isolation, Lat Focus">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/straight_arm_pulldown.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/Back-gif/main/band-straight-arm-pulldown.gif</url>
         <Name>Straight Arm Pulldown</Name>
         <Equipment>Cable Machine with Rope or Straight Bar</Equipment>
         <Focused_Muscles>Latissimus Dorsi (Isolation), Teres Major, Triceps (Minor)</Focused_Muscles>
