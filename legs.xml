@@ -7,7 +7,7 @@
     
     <!-- QUADS - Beginner -->
     <Pose id="LEG-Q-01" difficulty="Beginner" safety="Maintain a neutral spine throughout. Keep your chest up and knees tracking over your toes. Do not let your knees collapse inward. If you feel knee pain, reduce range of motion." Pose_type="Strength, Mobility">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bodyweight_squat.gif</url>
+        <url type="gif">squat.gif</url>
         <Name>Bodyweight Squat</Name>
         <Equipment>None (Exercise Mat Optional)</Equipment>
         <Focused_Muscles>Quadriceps, Glutes, Hamstrings, Core Stabilizers</Focused_Muscles>
