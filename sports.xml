@@ -1,1 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<badmintonCompleteGuide>
 
+  <!-- ======================== 1. COURT / FIELD IMAGE ======================== -->
+  <courtFieldImage>
+    <imageUrl>images/badminton_court_diagram.png</imageUrl>
+    <dimensions>
+      <length>13.4 meters (44 ft)</length>
+      <widthSingles>5.18 meters (17 ft)</widthSingles>
+      <widthDoubles>6.1 meters (20 ft)</widthDoubles>
+      <netHeightEdges>1.55 meters</netHeightEdges>
+      <netHeightCentre>1.524 meters</netHeightCentre>
+    </dimensions>
+    <layout>
+      <lines>Baseline, singles sideline, doubles sideline, short service line, centre line, net line</lines>
+      <serviceCourts>Left and right service courts for singles and doubles</serviceCourts>
+    </layout>
+    <surfaceTypes>
+      <surface>Wooden floor (professional)</surface>
+      <surface>PU synthetic mat (international)</surface>
+      <surface>Rubber mat (club level)</surface>
+    </surfaceTypes>
+    <venues>Indoor hall with non‑glare lighting, no air drafts, minimum 9m ceiling height</venues>
+  </courtFieldImage>
+
+  <!-- ======================== 2. HEALTH BENEFITS ======================== -->
+  <healthBenefits>
+    <physical>
+      <benefit>Improves cardiovascular endurance (VO2max)</benefit>
+      <benefit>Strengthens legs, glutes, core, shoulders, and forearms</benefit>
+      <benefit>Burns 350–500 calories per hour</benefit>
+      <benefit>Enhances bone density and joint flexibility</benefit>
+      <benefit>Develops hand‑eye coordination and reflexes</benefit>
+    </physical>
+    <mental>
+      <benefit>Reduces stress and anxiety through focus</benefit>
+      <benefit>Improves concentration and tactical thinking</benefit>
+      <benefit>Boosts self‑esteem when mastering skills</benefit>
+    </mental>
+  </healthBenefits>
+
+  <!-- ======================== 3. WARM-UP & COOL-DOWN ======================== -->
+  <warmupCooldown>
+    <warmup>
+      <stretching>Dynamic: arm circles (30 sec), leg swings (30 sec), torso twists (30 sec), lunges (10 each leg)</stretching>
+      <pregameExercises>Light jogging (5 min), shadow footwork (3 min), skipping (2 min), low‑intensity clears (2 min)</pregameExercises>
+      <duration>10–15 minutes minimum</duration>
+    </warmup>
+    <cooldown>
+      <postgameRecovery>Slow walking (3 min), static stretches: hamstring, quad, calf, shoulder stretch, wrist flexor stretch (30 sec each)</postgameRecovery>
+      <duration>5–10 minutes</duration>
+    </cooldown>
+  </warmupCooldown>
+
+  <!-- ======================== 4. RULES & REGULATIONS (COMPLETE) ======================== -->
+  <rulesRegulations>
+    <basicRules>
+      <rule>Match is won by winning 2 out of 3 games (or 1 game in short format).</rule>
+      <rule>Each game is to 21 points, win by 2, capped at 30 points.</rule>
+      <rule>Players change ends after each game, and in the third game when leading player reaches 11 points.</rule>
+      <rule>Shuttlecock must be hit only once before crossing the net.</rule>
+      <rule>If shuttle touches the net (except on serve) and lands in opponent's court, it's in play.</rule>
+    </basicRules>
+    <numberOfPlayers>
+      <singles>1 vs 1</singles>
+      <doubles>2 vs 2 (can be men's, women's, or mixed)</doubles>
+    </numberOfPlayers>
+    <matchTimings>Typically 30–75 minutes depending on skill and format</matchTimings>
+    <breaksIntervals>
+      <betweenPoints>No fixed break – continuous play</betweenPoints>
+      <at11Points>60 seconds break when either player reaches 11 points in a game</betweenPoints>
+      <betweenGames>120 seconds (2 minutes) between games</betweenGames>
+      <technicalTimeouts>None in standard rules (except TV timeouts in some tournaments)</technicalTimeouts>
+    </breaksIntervals>
+    <formats>
+      <shortMatch>Best of 1 game to 21 points (no cap) – used in some team events</shortMatch>
+      <longMatch>Best of 3 games to 21 points, win by 2, max 30</longMatch>
+    </formats>
+    <substitutesAndRoles>No substitutions. In doubles, partners can switch positions but no replacement player</substitutesAndRoles>
+    <playersRoles>
+      <singles>One player covers entire court – requires high endurance and speed</singles>
+      <doubles>
+        <role>Front player (net kills, interceptions)</role>
+        <role>Back player (smash, clear, drop)</role>
+        <role>Rotation system – partners rotate after each shot in advanced play</role>
+      </doubles>
+    </playersRoles>
+    <scoringSystem>Rally point system – point scored on every rally regardless of server. First to 21 wins, must lead by 2, max 30</scoringSystem>
+    <howToWin>Win two games (or one in short format). The match ends immediately when a player/team reaches winning condition</howToWin>
+    <foulsAndPenalties>
+      <faultDuringServe>
+        <penalty>Loss of rally, opponent gets point</penalty>
+        <conditions>
+          <cond>Shuttle above waist at point of strike</cond>
+          <cond>Racket head not pointing downward</cond>
+          <cond>Feet not stationary (any movement)</cond>
+          <cond>Shuttle landing outside service court</cond>
+        </conditions>
+      </faultDuringServe>
+      <faultDuringRally>
+        <penalty>Loss of rally</penalty>
+        <conditions>
+          <cond>Shuttle hits ceiling or walls</cond>
+          <cond>Player touches net with racket or body</cond>
+          <cond>Shuttle hits player's body or clothing</cond>
+          <cond>Double hit (two consecutive hits by same player)</cond>
+          <cond>Carrying or slinging shuttle on racket</cond>
+        </conditions>
+      </faultDuringRally>
+    </foulsAndPenalties>
+    <fairPlay>
+      <rule>Accept line calls; if unsure, replay the rally (only if both agree)</rule>
+      <rule>No distracting opponents (shouting, waving racket)</rule>
+      <rule>Shake hands with opponent and umpire after match</rule>
+    </fairPlay>
+    <judgementCriteria>
+      <umpire>Makes final decisions on faults and lets</rule>
+      <serviceJudge>Monitors service legality (height, racket angle)</serviceJudge>
+      <lineJudges>Call shuttle in/out – if unsure, call "in" (shuttle is in)</lineJudges>
+      <instantReviewSystem>In professional tournaments, players can challenge line calls (limited per game)</instantReviewSystem>
+    </judgementCriteria>
+  </rulesRegulations>
+
+  <!-- ======================== 5. INJURY PREVENTION ======================== -->
+  <injuryPrevention>
+    <commonInjuries>
+      <injury>Ankle sprain (lateral)</injury>
+      <injury>Tennis elbow (lateral epicondylitis)</injury>
+      <injury>Rotator cuff tendinitis (shoulder)</injury>
+      <injury>Patellar tendinitis (jumper's knee)</injury>
+      <injury>Achilles tendinitis</injury>
+      <injury>Lower back strain</injury>
+    </commonInjuries>
+    <preventionMethods>
+      <method>Wear proper badminton shoes with ankle support and non‑marking sole</method>
+      <method>Do dynamic warm‑up before every session</method>
+      <method>Strengthen wrist and shoulder with theraband exercises</method>
+      <method>Use correct grip size (too small/large causes elbow strain)</method>
+      <method>Land softly on forefoot, avoid heel strike</method>
+      <method>Take rest days – avoid playing with fatigue</method>
+    </preventionMethods>
+    <diseasesToAvoidPlaying>
+      <condition>Acute respiratory infections (fever, cough) – risk of myocarditis</condition>
+      <condition>Uncontrolled hypertension (high blood pressure) – sudden exertion risk</condition>
+      <condition>Severe asthma without pre‑exercise medication</condition>
+      <condition>Recent concussion (within 2 weeks)</condition>
+      <condition>Acute musculoskeletal injury (sprain, fracture)</condition>
+      <condition>Heart conditions not cleared by doctor (arrhythmias, valve disease)</condition>
+      <advice>Always consult doctor if you have chronic illness before starting badminton</advice>
+    </diseasesToAvoidPlaying>
+  </injuryPrevention>
+
+  <!-- ======================== 6. COMMON MISTAKES ======================== -->
+  <commonMistakes>
+    <mistake>Gripping racket too tightly – reduces wrist snap and causes elbow pain</mistake>
+    <mistake>Standing flat‑footed; not staying on balls of feet</mistake>
+    <mistake>Serving too high (fault) or too low (into net)</mistake>
+    <mistake>Not returning to centre (base position) after each shot</mistake>
+    <mistake>Using only arm power for smash – should involve wrist and body rotation</mistake>
+    <mistake>Looking at the shuttle instead of opponent's position before hitting</mistake>
+    <mistake>Playing without footwork drills – leads to lunging awkwardly</mistake>
+  </commonMistakes>
+
+  <!-- ======================== 7. HYDRATION IMPORTANCE ======================== -->
+  <hydrationImportance>
+    <beforeMatch>Drink 400–600 ml water 2 hours before; 200 ml 15 minutes before</beforeMatch>
+    <duringMatch>Sip 150–200 ml every 15 minutes or at each break (60 sec at 11 points)</duringMatch>
+    <afterMatch>Replace 150% of weight lost (weigh before/after). Drink 1.5 L for each kg lost, with electrolytes if heavy sweat</afterMatch>
+    <warningAvoid>Avoid sugary sodas, energy drinks (high caffeine), alcohol</warningAvoid>
+    <signsOfDehydration>Dry mouth, dizziness, dark urine, reduced performance – stop and hydrate</signsOfDehydration>
+  </hydrationImportance>
+
+  <!-- ======================== 8. NUTRITION TIPS ======================== -->
+  <nutritionTips>
+    <preGame>2–3 hours before: complex carbs (oatmeal, banana, whole grain bread) + small protein (yogurt)</preGame>
+    <preGameSnack>30 min before: banana or energy gel (if long match)</preGameSnack>
+    <duringGame>Only water or isotonic drink (no solid food)</duringGame>
+    <postGame>Within 30 minutes: protein (whey, chicken, eggs) + carbs (rice, fruit) for recovery</postGame>
+    <daily>Iron (leafy greens), calcium (dairy), omega‑3 (fish) for joint health</daily>
+  </nutritionTips>
+
+  <!-- ======================== 9. AVOIDING BURNOUT ======================== -->
+  <avoidingBurnout>
+    <physicalBurnout>
+      <limit>Play intense matches max 3‑4 times per week</limit>
+      <restDays>At least 1‑2 full rest days per week</restDays>
+      <crossTrain>Swimming, cycling, or yoga on off days to reduce impact</crossTrain>
+    </physicalBurnout>
+    <mentalBurnout>
+      <signs>Loss of motivation, irritability, dreading practice</signs>
+      <solution>Take 1‑2 weeks break, set new small goals, play for fun without scoring</solution>
+    </mentalBurnout>
+  </avoidingBurnout>
+
+  <!-- ======================== 10. EQUIPMENT (SEPARATE SECTION) ======================== -->
+  <equipment>
+    <racket>
+      <types>Carbon fibre (light, stiff), aluminium (heavy, beginner), hybrid</types>
+      <weightRange>80–100 grams (4U = 80‑84g, 3U = 85‑89g)</weightRange>
+      <balance>Head‑heavy (power), even (all‑round), head‑light (control)</balance>
+      <stringTension>22–28 lbs (beginners 22‑24, advanced 26‑28)</stringTension>
+    </racket>
+    <shuttlecock>
+      <feather>Used in professional matches – faster but breaks easily</feather>
+      <nylon>Durable for beginners and recreational play – slower flight</nylon>
+    </shuttlecock>
+    <shoes>
+      <features>Non‑marking gum sole, gel cushioning, lateral support, ankle stability</features>
+      <brandsExample>Yonex, Victor, Li‑Ning, Asics</brandsExample>
+    </shoes>
+    <apparel>
+      <top>Polyester/spandex (moisture wicking)</top>
+      <bottom>Shorts or skirt (flexible)</bottom>
+      <accessories>Headband, wristband (sweat absorption)</accessories>
+    </apparel>
+    <accessories>
+      <item>Grip (overgrip or replacement grip for tackiness)</item>
+      <item>Racket bag (to protect frame)</item>
+      <item>Feather shuttlecock conditioner (steamer)</item>
+    </accessories>
+  </equipment>
+
+  <!-- ======================== 11. SAFETY GEAR (PROTECTIVE ONLY) ======================== -->
+  <safetyGear>
+    <protective>
+      <item>Ankle braces (if previous sprains)</item>
+      <item>Knee pads (for hard court diving)</item>
+      <item>Wrist splint (for chronic wrist pain)</item>
+      <item>Protective eyewear (recommended for doubles to avoid shuttle hit to eye)</item>
+    </protective>
+    <firstAid>Always have ice pack, elastic bandage, antiseptic spray in kit</firstAid>
+  </safetyGear>
+
+  <!-- ======================== 12. IMPORTANT SKILLS ======================== -->
+  <importantSkills>
+    <coordination>
+      <desc>Hand‑eye coordination to time shuttle contact precisely</desc>
+      <drill>Wall rally – hit shuttle against wall continuously (aim for 50 hits)</drill>
+    </coordination>
+    <speedAgility>
+      <desc>Quick direction changes, explosive lunges, split step</desc>
+      <drill>Agility ladder (one foot in each square, lateral hops)</drill>
+    </speedAgility>
+    <focusReaction>
+      <desc>React to opponent's smash within 0.2‑0.3 seconds</desc>
+      <drill>Partner feeds random drops and smashes – defender reacts</drill>
+    </focusReaction>
+    <xFactors>
+      <strategy>
+        <offensive>Attack opponent's backhand, force weak lift then smash</offensive>
+        <defensive>Clear deep to push opponent to baseline, then net shot</defensive>
+        <doubles>Serve low to force lift, then front‑back attack formation</doubles>
+      </strategy>
+      <gameSense>Anticipate shuttle trajectory based on opponent's body angle</gameSense>
+      <decisionMaking>Choose clear (safe), drop (deceptive), or smash (winner) based on position</decisionMaking>
+    </xFactors>
+  </importantSkills>
+
+  <!-- ======================== 13. PRACTICE ROUTINES ======================== -->
+  <practiceRoutines>
+    <dailyPlan>
+      <day label="Monday">Footwork (20 min) + High serve practice (20 min) + Match play (30 min)</day>
+      <day label="Tuesday">Wall rally (15 min) + Net shot drills (20 min) + Shadow badminton (15 min)</day>
+      <day label="Wednesday">Rest or light cardio (jogging 20 min)</day>
+      <day label="Thursday">Smash & drop combination (25 min) + Defense drills (25 min)</day>
+      <day label="Friday">Doubles positioning drills (20 min) + Service practice (15 min) + Game (30 min)</day>
+      <day label="Saturday">Match simulation (45 min) + Cool‑down stretching (10 min)</day>
+      <day label="Sunday">Active recovery (yoga or swimming)</day>
+    </dailyPlan>
+    <drillsForBeginners>
+      <drill name="High serve">Stand at service line, serve to back tramline – 20 reps per side</drill>
+      <drill name="Forehand clear">Partner feeds high shuttle – hit to opponent's baseline – 20 reps</drill>
+      <drill name="Shadow footwork">Move to 6 corners (net left/right, mid left/right, back left/right) without shuttle – 5 min</drill>
+      <drill name="Wall rally">Hit shuttle against wall continuously – goal 20 consecutive hits</drill>
+    </drillsForBeginners>
+    <skillImprovementProgram>
+      <phase1 weeks="2">Focus on grip, service, and basic footwork – 3x per week</phase1>
+      <phase2 weeks="3">Add clear, drop, and smash technique – 4x per week</phase2>
+      <phase3 weeks="4">Game strategy, doubles rotation, defense – 4x per week + one match</phase3>
+      <phase4 ongoing>Maintenance: drills 2x per week, matches 2x per week</phase4>
+    </skillImprovementProgram>
+  </practiceRoutines>
+
+  <!-- ======================== 14. MENTAL PREPARATION ======================== -->
+  <mentalPreparation>
+    <focusingTechniques>
+      <technique name="Breath counting">Inhale 4 sec, hold 2 sec, exhale 6 sec – repeat 10 times before match</technique>
+      <technique name="Visualization">Close eyes, imagine perfect serve or smash – 2 minutes</technique>
+      <technique name="Single point focus">Watch the shuttle's seams during rally to block distractions</technique>
+    </focusingTechniques>
+    <pressureHandling>
+      <tip>Use self‑talk: "Watch shuttle, not the score"</tip>
+      <tip>Between points, turn away, take deep breath, bounce on toes</tip>
+      <tip>Play point by point – forget previous mistakes immediately</tip>
+      <tip>In critical points (e.g., 20‑20), rely on your most consistent shot (clear or drop)</tip>
+    </pressureHandling>
+    <sportsmanship>
+      <rule>Acknowledge opponent's good shots (nod or tap racket)</rule>
+      <rule>Never argue with line judges; use proper challenge system if available</rule>
+      <rule>Help opponent if injured; don't celebrate excessively</rule>
+    </sportsmanship>
+    <howToJoinSport>
+      <step>Find local badminton club or community centre (search "badminton near me")</step>
+      <step>Rent racket initially or buy beginner combo (₹1000‑2000 / $15‑30)</step>
+      <step>Join beginner group lessons (usually 4‑8 sessions)</step>
+      <step>Play friendly matches with players of similar level</step>
+      <step>Enter local tournaments (D or E grade) after 6 months</step>
+      <costEstimate>Monthly club fees: ₹500‑2000 ($6‑25) depending on city</costEstimate>
+    </howToJoinSport>
+    <terminologyComplete>
+      <term>Clear – high deep shot to baseline</term>
+      <term>Drop – soft shot that lands just over net</term>
+      <term>Smash – hard downward shot</term>
+      <term>Net shot – tight shot that barely clears net</term>
+      <term>Drive – fast flat shot</term>
+      <term>Fault – violation of rules</term>
+      <term>Let – rally replayed (e.g., shuttle stuck on net)</term>
+      <term>Deuce – score 20‑20</term>
+      <term>Forecourt – area near net</term>
+      <term>Midcourt – middle area</term>
+      <term>Rearcourt – back area</term>
+    </terminologyComplete>
+    <qualitiesOfGoodPlayer>
+      <quality>Consistent serve (low error rate)</quality>
+      <quality>Quick recovery to centre after every shot</quality>
+      <quality>Good shot selection – knows when to smash vs clear</quality>
+      <quality>Mental resilience – stays calm when trailing</quality>
+      <quality>Respects opponents and officials</quality>
+    </qualitiesOfGoodPlayer>
+  </mentalPreparation>
+
+  <!-- ======================== 15. STRATEGIES (EXPANDED) ======================== -->
+  <strategies>
+    <singles>
+      <strategy name="Attacking clear">Push opponent deep to backhand corner, then net shot</strategy>
+      <strategy name="Deceptive drop">Use same preparation as clear but soft touch</strategy>
+      <strategy name="Fast drop">Steep downward drop to midcourt to catch opponent off balance</strategy>
+    </singles>
+    <doubles>
+      <strategy name="Front‑back attack">After lift, one player attacks net, other covers rear</strategy>
+      <strategy name="Side‑by‑side defense">When defending smashes, both stay in midcourt covering left/right</strategy>
+      <strategy name="Serve low">Aim for service line to force weak return</strategy>
+    </doubles>
+    <mixedDoubles>
+      <strategy>Female typically plays front (net kills), male covers rear (smash)</strategy>
+    </mixedDoubles>
+  </strategies>
+
+</badmintonCompleteGuide>
