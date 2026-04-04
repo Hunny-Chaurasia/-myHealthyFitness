@@ -7,7 +7,7 @@
     
     <!-- QUADS - Beginner -->
     <Pose id="LEG-Q-01" difficulty="Beginner" safety="Maintain a neutral spine throughout. Keep your chest up and knees tracking over your toes. Do not let your knees collapse inward. If you feel knee pain, reduce range of motion." Pose_type="Strength, Mobility">
-        <url type="gif">squat.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/squat.gif</url>
         <Name>Bodyweight Squat</Name>
         <Equipment>None (Exercise Mat Optional)</Equipment>
         <Focused_Muscles>Quadriceps, Glutes, Hamstrings, Core Stabilizers</Focused_Muscles>
@@ -30,7 +30,7 @@
     </Pose>
 
     <Pose id="LEG-Q-02" difficulty="Beginner" safety="Keep your lower back pressed against the seat. Do not lock out your knees at the top of the movement. Control the weight on both the press and the return." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/leg_press_light.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/leg-press.gif</url>
         <Name>Leg Press (Light)</Name>
         <Equipment>Leg Press Machine</Equipment>
         <Focused_Muscles>Quadriceps (Primary), Glutes, Hamstrings</Focused_Muscles>
@@ -54,7 +54,7 @@
 
     <!-- HAMSTRINGS - Beginner -->
     <Pose id="LEG-H-01" difficulty="Beginner" safety="Keep your hips pressed firmly into the pad. Avoid jerking the weight—control the movement. Do not hyperextend your knees at the top." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lying_leg_curl.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/leg-curl.gif</url>
         <Name>Lying Leg Curl</Name>
         <Equipment>Lying Leg Curl Machine</Equipment>
         <Focused_Muscles>Hamstrings (Primary), Calves (Minor)</Focused_Muscles>
@@ -77,7 +77,7 @@
     </Pose>
 
     <Pose id="LEG-H-02" difficulty="Beginner" safety="Keep your core engaged and lower back neutral. Avoid arching your back. Squeeze your glutes at the top of the movement." Pose_type="Strength, Activation">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/glute_bridge.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/glute-bridge.gif</url>
         <Name>Glute Bridge</Name>
         <Equipment>Exercise Mat</Equipment>
         <Focused_Muscles>Glutes (Primary), Hamstrings (Secondary), Core Stabilizers</Focused_Muscles>
