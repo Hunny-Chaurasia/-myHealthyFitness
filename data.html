@@ -2209,73 +2209,51 @@
 
   <!-- Chatbot -->
   <div class="screen" id="Chatbot">
-    <h1>Motion Mentor </h1>
-    <p style="text-align:center;">Your personal AI fitness and wellbeing guide with dynamic responses</p>
-    <div class="container-chatbot">
-      <div id="header-chatbot">
-
-        <div>
-
-          <div class="main-content-chatbot">
-            <div class="features-chatbot">
-              <div class="feature-card-chatbot">
-                <div class="feature-icon">
-                  <i class="fas fa-dumbbell"></i>
-                </div>
-                <h3>Personalized Workouts</h3>
-                <p>Get customized workout plans based on your fitness level, goals, and available equipment.</p>
-              </div>
-
-              <div class="feature-card-chatbot">
-                <div class="feature-icon">
-                  <i class="fas fa-apple-alt"></i>
-                </div>
-                <h3>Nutrition Guidance</h3>
-                <p>Receive tailored nutrition advice and meal plans to support your fitness journey.</p>
-              </div>
-
-              <div class="feature-card-chatbot">
-                <div class="feature-icon">
-                  <i class="fas fa-heartbeat"></i>
-                </div>
-                <h3>Wellbeing Support</h3>
-                <p>Get advice on recovery, mental health, and maintaining a balanced lifestyle.</p>
-              </div>
-
-            </div>
-
-            <div class="chat-container-chatbot">
-              <div class="chat-header-chatbot">
-                <h2><i class="fas fa-robot"></i> Let's Talk </h2>
-              </div>
-
-              <div class="chat-messages" id="chatMessages">
-                <div class="message bot-message">
-                  Hi there! I'm Motion Mentor, your personal fitness motion mentor . I can help you with workout plans,
-                  nutrition advice, recovery techniques, and overall wellbeing. How can I assist you today?
-                </div>
-              </div>
-
-              <div class="suggestions">
-                <div class="suggestion" onclick="sendSuggestion('Hello!')">Say Hello</div>
-                <div class="suggestion" onclick="sendSuggestion('What can you help me with?')">Ask for Help</div>
-                <div class="suggestion" onclick="sendSuggestion('How often should I work out?')">Workout frequency
-                </div>
-                <div class="suggestion" onclick="sendSuggestion('Best exercises for weight loss')">Weight loss</div>
-              </div>
-
-              <div class="chat-input">
-                <input type="text" id="userInput" placeholder="Ask about fitness or anything else..."
-                  onkeypress="handleKeyPress(event)">
-                <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-
+  <div id="mm-app">
+ 
+  <!-- Header -->
+  <div id="mm-hdr">
+    <div class="mm-logo">💪</div>
+    <div>
+      <h2>Motion Mentor</h2>
+      <div class="mm-sub">AI Fitness Coach</div>
+    </div>
+    <div class="mm-status"><div class="mm-dot"></div> Online</div>
+  </div>
+ 
+  <!-- Messages -->
+  <div id="mm-msgs">
+    <div class="mm-msg mm-bot">
+      <div style="font-family:'Syne',sans-serif;font-size:15px;font-weight:800;margin-bottom:8px">Hey, I'm Motion Mentor 💪</div>
+      <div style="color:#94A3B8;font-size:13.5px;line-height:1.8">
+        Your AI-powered fitness coach. Ask me anything about exercises, form, or common mistakes.<br><br>
+        <span style="color:#22C55E">→</span> "How to do push ups with proper form"<br>
+        <span style="color:#22C55E">→</span> "Common mistakes in deadlift"<br>
+        <span style="color:#22C55E">→</span> "List beginner chest exercises"<br>
+        <span style="color:#22C55E">→</span> "Best yoga poses for flexibility"
       </div>
     </div>
   </div>
+ 
+  <!-- Suggestion chips -->
+  <div id="mm-sugs">
+    <button class="mm-sb" onclick="mmSend('List all chest exercises')">Chest exercises</button>
+    <button class="mm-sb" onclick="mmSend('How to do push ups with proper form')">Push up form</button>
+    <button class="mm-sb" onclick="mmSend('Common mistakes in deadlift')">Deadlift mistakes</button>
+    <button class="mm-sb" onclick="mmSend('Best beginner yoga poses')">Beginner yoga</button>
+    <button class="mm-sb" onclick="mmSend('Leg exercises without equipment')">No equipment legs</button>
+    <button class="mm-sb" onclick="mmSend('Best dumbbell arm exercises')">Dumbbell arms</button>
+  </div>
+ 
+  <!-- Input -->
+  <div id="mm-irow">
+    <input id="mm-ui" type="text" placeholder="Ask about any exercise, muscle, form, mistakes…"/>
+    <button id="mm-send" onclick="mmSendMsg()">&#10148;</button>
+  </div>
+ 
+</div>
+  </div>
+  
   <!-- Progress -->
   <div class="screen" id="Progress">
     <header class="header-progress">
