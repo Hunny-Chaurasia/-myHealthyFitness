@@ -2209,173 +2209,50 @@
 
 
   <!-- Chatbot -->
-  <div class="screen" id="Chatbot">
+<div class="screen" id="Chatbot">
   <div id="mm-app">
  
-    <!-- ── Header ── -->
-    <div id="mm-hdr">
-      <div class="mm-logo">💪</div>
-      <div>
-        <h2>Motion Mentor</h2>
-        <div class="mm-sub">AI Fitness Coach</div>
-      </div>
-      <div class="mm-status">
-        <div class="mm-dot"></div> Online
-      </div>
+  <!-- Header -->
+  <div id="mm-hdr">
+    <div class="mm-logo">💪</div>
+    <div>
+      <h2>Motion Mentor</h2>
+      <div class="mm-sub">AI Fitness Coach</div>
     </div>
- 
-    <!-- ── Messages ── -->
-    <div id="mm-msgs">
-      <div class="mm-msg mm-bot">
-        <div class="mm-greeting-title">Hey, I'm Motion Mentor 💪</div>
-        <div style="color:#64748b;font-size:13px;line-height:1.85">
-          Your AI-powered fitness coach. Ask me anything about exercises,
-          form, muscles, or common mistakes.<br><br>
-          <span style="color:#22C55E;font-weight:600">→</span>
-          <span style="color:#94a3b8"> "How to do push-ups with proper form"</span><br>
-          <span style="color:#22C55E;font-weight:600">→</span>
-          <span style="color:#94a3b8"> "Common mistakes in deadlift"</span><br>
-          <span style="color:#22C55E;font-weight:600">→</span>
-          <span style="color:#94a3b8"> "List beginner chest exercises"</span><br>
-          <span style="color:#22C55E;font-weight:600">→</span>
-          <span style="color:#94a3b8"> "Best yoga poses for flexibility"</span>
-        </div>
-      </div>
-    </div>
- 
-    <!-- ── Suggestion Chips ── -->
-    <div id="mm-sugs">
-      <button class="mm-sb" onclick="mmSend('List all chest exercises')">Chest exercises</button>
-      <button class="mm-sb" onclick="mmSend('How to do push ups with proper form')">Push-up form</button>
-      <button class="mm-sb" onclick="mmSend('Common mistakes in deadlift')">Deadlift mistakes</button>
-      <button class="mm-sb" onclick="mmSend('Best beginner yoga poses')">Beginner yoga</button>
-      <button class="mm-sb" onclick="mmSend('Leg exercises without equipment')">No-equipment legs</button>
-      <button class="mm-sb" onclick="mmSend('Best dumbbell arm exercises')">Dumbbell arms</button>
-    </div>
- 
-    <!-- ── Input Row ── -->
-    <div id="mm-irow">
-      <input
-        id="mm-ui"
-        type="text"
-        placeholder="Ask about any exercise, muscle, form, mistakes…"
-      />
-      <button id="mm-send" onclick="mmSendMsg()">&#10148;</button>
-    </div>
- 
+    <div class="mm-status"><div class="mm-dot"></div> Online</div>
   </div>
+ 
+  <!-- Messages -->
+  <div id="mm-msgs">
+    <div class="mm-msg mm-bot">
+      <div style="font-family:'Syne',sans-serif;font-size:15px;font-weight:800;margin-bottom:8px">Hey, I'm Motion Mentor 💪</div>
+      <div style="color:#94A3B8;font-size:13.5px;line-height:1.8">
+        Your AI-powered fitness coach. Ask me anything about exercises, form, or common mistakes.<br><br>
+        <span style="color:#22C55E">→</span> "How to do push ups with proper form"<br>
+        <span style="color:#22C55E">→</span> "Common mistakes in deadlift"<br>
+        <span style="color:#22C55E">→</span> "List beginner chest exercises"<br>
+        <span style="color:#22C55E">→</span> "Best yoga poses for flexibility"
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Suggestion chips -->
+  <div id="mm-sugs">
+    <button class="mm-sb" onclick="mmSend('List all chest exercises')">Chest exercises</button>
+    <button class="mm-sb" onclick="mmSend('How to do push ups with proper form')">Push up form</button>
+    <button class="mm-sb" onclick="mmSend('Common mistakes in deadlift')">Deadlift mistakes</button>
+    <button class="mm-sb" onclick="mmSend('Best beginner yoga poses')">Beginner yoga</button>
+    <button class="mm-sb" onclick="mmSend('Leg exercises without equipment')">No equipment legs</button>
+    <button class="mm-sb" onclick="mmSend('Best dumbbell arm exercises')">Dumbbell arms</button>
+  </div>
+ 
+  <!-- Input -->
+  <div id="mm-irow">
+    <input id="mm-ui" type="text" placeholder="Ask about any exercise, muscle, form, mistakes…"/>
+    <button id="mm-send" onclick="mmSendMsg()">&#10148;</button>
+  </div>
+ 
 </div>
- 
- 
-
-  <span class="mm-found-label">Found 7 back exercises</span>
- 
-  <div class="ex-list-item">
-    <span class="ex-num">1</span>
-    <span class="ex-list-name">Pull-Up</span>
-    <span class="badge badge-beg">Beginner</span>
-    <span class="ex-list-meta">lats, biceps</span>
-  </div>
- 
-  <div class="ex-list-item">
-    <span class="ex-num">2</span>
-    <span class="ex-list-name">Resistance Band Row</span>
-    <span class="badge badge-beg">Beginner</span>
-    <span class="ex-list-meta">rhomboids, trapezius</span>
-  </div>
- 
-  <div class="ex-list-item">
-    <span class="ex-num">3</span>
-    <span class="ex-list-name">Seated Cable Row</span>
-    <span class="badge badge-beg">Beginner</span>
-    <span class="ex-list-meta">rhomboids, trapezius</span>
-  </div>
- 
-  <div class="ex-list-item">
-    <span class="ex-num">4</span>
-    <span class="ex-list-name">Lat Pulldown</span>
-    <span class="badge badge-beg">Beginner</span>
-    <span class="ex-list-meta">latissimus dorsi, biceps</span>
-  </div>
- 
-  <div class="ex-list-item">
-    <span class="ex-num">5</span>
-    <span class="ex-list-name">Barbell Bent-Over Row</span>
-    <span class="badge badge-nov">Novice</span>
-    <span class="ex-list-meta">rhomboids, trapezius</span>
-  </div>
- 
-  <div class="ex-list-item">
-    <span class="ex-num">6</span>
-    <span class="ex-list-name">Conventional Deadlift</span>
-    <span class="badge badge-adv">Advanced</span>
-    <span class="ex-list-meta">lower back, glutes</span>
-  </div>
- 
-  <div class="ex-list-item">
-    <span class="ex-num">7</span>
-    <span class="ex-list-name">Face Pull</span>
-    <span class="badge badge-nov">Novice</span>
-    <span class="ex-list-meta">rear deltoids, trapezius</span>
-  </div>
- 
-  <div class="page-cta">
-    <span class="page-cta-icon">🏋️</span>
-    <div class="page-cta-text">
-      <p><strong>Want the full Back Training Guide?</strong>
-      Detailed programs, videos &amp; tips inside.</p>
-    </div>
-    <button class="cta-btn" onclick="showScreen('Workouts')">Explore →</button>
-  </div>
- 
- 
-  ── TEMPLATE 2: Exercise Form Detail (e.g. "How to do push-ups") ──
- 
-  <div class="exercise-card">
-    <div class="ex-name">Push-Up</div>
-    <div class="badges">
-      <span class="badge badge-beg">Beginner</span>
-      <span class="badge badge-cat">Chest / Triceps</span>
-      <span class="badge badge-equip">No Equipment</span>
-    </div>
-    <div class="meta-row">
-      <span>🎯 Chest, Triceps, Shoulders</span>
-      <span>⏱ 3×10–15 reps</span>
-    </div>
-    <div class="section-title">Steps</div>
-    <ol class="steps-list">
-      <li><span class="step-num">1</span><span>Start in a high plank: wrists under shoulders, body straight.</span></li>
-      <li><span class="step-num">2</span><span>Lower your chest until it nearly touches the floor.</span></li>
-      <li><span class="step-num">3</span><span>Push back up explosively while keeping core tight.</span></li>
-      <li><span class="step-num">4</span><span>Squeeze chest at the top — don't lock elbows.</span></li>
-    </ol>
-    <div class="tip-box">
-      <div class="tip-label">Coach's Note</div>
-      Keep your hips level — no sagging or piking. If it's too hard, start on your knees.
-    </div>
-  </div>
- 
- 
-  ── TEMPLATE 3: Mistakes List (e.g. "Common mistakes in deadlift") ──
- 
-  <div class="exercise-card">
-    <div class="ex-name">Conventional Deadlift</div>
-    <div class="badges">
-      <span class="badge badge-adv">Advanced</span>
-      <span class="badge badge-cat">Posterior Chain</span>
-    </div>
-    <div class="section-title">Common Mistakes</div>
-    <ul class="mistakes-list">
-      <li><span class="mistake-icon">✕</span><span>Rounding the lower back — always keep a neutral spine.</span></li>
-      <li><span class="mistake-icon">✕</span><span>Bar drifting away from the body during the lift.</span></li>
-      <li><span class="mistake-icon">✕</span><span>Jerking the bar off the floor instead of a smooth pull.</span></li>
-      <li><span class="mistake-icon">✕</span><span>Locking knees before hips during lockout.</span></li>
-      <li><span class="mistake-icon">✕</span><span>Hyperextending the back at the top.</span></li>
-    </ul>
-    <div class="tip-box">
-      <div class="tip-label">Fix It Fast</div>
-      Film yourself from the side. Your hips and shoulders should rise at the same rate off the floor.
-    </div>
   </div>
   
   <!-- Progress -->
