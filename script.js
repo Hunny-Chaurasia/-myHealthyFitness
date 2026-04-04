@@ -554,244 +554,271 @@ window.addEventListener('popstate', function () {
 
 
 // chatbot
-let conversationMode = 'fitness'; // 'fitness' or 'general'
-
-// Toggle between fitness-focused and general conversation modes
-function toggleConversationMode() {
-  conversationMode = conversationMode === 'fitness' ? 'general' : 'fitness';
-  document.getElementById('modeStatus').textContent = `Current Mode: ${conversationMode === 'fitness' ? 'Fitness Focused' : 'General Conversation'}`;
-
-  addMessage(`I've switched to ${conversationMode === 'fitness' ? 'fitness-focused mode. Ask me anything about workouts, nutrition, or wellbeing!' : 'general conversation mode. I can chat about various topics but still specialize in fitness!'}`, 'bot');
+(function(){
+// ── Database ────────────────────────────────────────────────────
+const DB = {
+  chest:[
+    {name:"Incline Barbell Press",difficulty:"Beginner",muscles:["pectorals","anterior deltoids","triceps"],equipment:["barbell","bench"],steps:["Lie on incline bench at 30-45°","Grip bar wider than shoulders","Lower bar to chest controlled","Press up explosively","Squeeze chest at top"]},
+    {name:"Decline Barbell Press",difficulty:"Beginner",muscles:["lower chest","pectorals","triceps"],equipment:["barbell","decline bench"],steps:["Set bench to 15-30° decline","Grip bar, secure feet","Lower bar to lower chest","Press up with control","Use spotter for safety"]},
+    {name:"Dumbbell Bench Press",difficulty:"Beginner",muscles:["pectorals","deltoids","triceps"],equipment:["dumbbells","flat bench"],steps:["Lie flat, hold dumbbells at chest","Press up until arms extended","Lower slowly with control","Keep core engaged throughout"]},
+    {name:"Push-Up",difficulty:"Beginner",muscles:["chest","triceps","shoulders","core"],equipment:[],steps:["Start in plank position","Lower chest to floor","Keep body straight","Press back up","Engage core throughout"]},
+    {name:"Cable Fly",difficulty:"Novice",muscles:["pectorals"],equipment:["cable machine"],steps:["Set cables at shoulder height","Stand in center, step forward","Bring handles together in arc","Squeeze chest at center","Return slowly"]},
+    {name:"Dips (Chest Focus)",difficulty:"Novice",muscles:["lower chest","triceps","shoulders"],equipment:["dip bars"],steps:["Grip bars, lean forward 30°","Lower until shoulders below elbows","Push back up explosively","Keep lean forward for chest focus"]},
+    {name:"Barbell Bench Press",difficulty:"Advanced",muscles:["pectorals","deltoids","triceps"],equipment:["barbell","flat bench","rack"],steps:["Lie flat, grip slightly wider than shoulders","Unrack bar above chest","Lower to lower chest controlled","Press explosively back up","Lock out but don't hyperextend"]},
+    {name:"Dumbbell Fly",difficulty:"Novice",muscles:["pectorals"],equipment:["dumbbells","bench"],steps:["Lie flat holding dumbbells above chest","Lower arms in wide arc","Feel stretch in chest","Bring back together in arc","Keep slight bend in elbows"]}
+  ],
+  arms:[
+    {name:"Dumbbell Curl",difficulty:"Beginner",muscles:["biceps","brachialis"],equipment:["dumbbells"],steps:["Stand with dumbbells at sides, palms forward","Keep elbows pinned to sides","Curl toward shoulders","Squeeze at top","Lower with control"]},
+    {name:"Hammer Curl",difficulty:"Beginner",muscles:["brachialis","brachioradialis","biceps"],equipment:["dumbbells"],steps:["Stand with neutral grip","Keep elbows at sides","Curl up maintaining neutral grip","Squeeze at top","Lower controlled"]},
+    {name:"Tricep Pushdown",difficulty:"Beginner",muscles:["triceps"],equipment:["cable machine"],steps:["Grip attachment with elbows at 90°","Keep elbows pinned to sides","Push down until arms straight","Squeeze triceps","Return slowly"]},
+    {name:"Bench Dip",difficulty:"Beginner",muscles:["triceps","anterior deltoid"],equipment:["bench"],steps:["Hands on bench edge, walk feet forward","Lower by bending elbows to 90°","Keep back close to bench","Press back up","Keep shoulders down"]},
+    {name:"Barbell Curl",difficulty:"Novice",muscles:["biceps","brachialis"],equipment:["barbell"],steps:["Stand holding barbell underhand","Elbows pinned to sides","Curl to shoulders","Squeeze hard at top","Lower slowly over 3 seconds"]},
+    {name:"Skull Crushers",difficulty:"Novice",muscles:["triceps"],equipment:["ez-bar","bench"],steps:["Lie on bench, arms straight up","Keep elbows pointing up","Lower bar to forehead","Extend back up","Squeeze triceps at top"]},
+    {name:"Lateral Raise",difficulty:"Beginner",muscles:["deltoids","medial deltoid"],equipment:["dumbbells"],steps:["Stand with dumbbells at sides","Slight bend in elbows","Raise out to sides to shoulder height","Pause at top","Lower slowly"]},
+    {name:"Barbell Overhead Press",difficulty:"Novice",muscles:["deltoids","triceps","trapezius"],equipment:["barbell"],steps:["Hold bar at collarbone, elbows forward","Brace core, squeeze glutes","Press directly overhead","Move head back to clear bar","Lower with control"]},
+    {name:"Concentration Curl",difficulty:"Advanced",muscles:["biceps"],equipment:["dumbbell","bench"],steps:["Sit on bench, rest upper arm on inner thigh","Curl dumbbell to shoulder","Squeeze hard at top","Pinky slightly up","Lower fully"]},
+    {name:"Close-Grip Bench Press",difficulty:"Advanced",muscles:["triceps","chest"],equipment:["barbell","bench"],steps:["Grip shoulder-width","Tuck elbows close to body","Lower to lower chest","Press explosively","Lock out elbows"]},
+  ],
+  back:[
+    {name:"Resistance Band Row",difficulty:"Beginner",muscles:["rhomboids","trapezius","rear deltoids","biceps"],equipment:["resistance band"],steps:["Anchor band at chest height","Pull toward chest squeezing shoulder blades","Keep elbows close","Pause at peak","Return slowly"]},
+    {name:"Seated Cable Row",difficulty:"Beginner",muscles:["rhomboids","trapezius","lats","rear deltoids","biceps"],equipment:["cable machine"],steps:["Sit with back straight, feet braced","Pull handle to lower chest","Squeeze shoulder blades at peak","Pause 1-2 seconds","Return controlled"]},
+    {name:"Lat Pulldown",difficulty:"Beginner",muscles:["latissimus dorsi","biceps","rhomboids"],equipment:["cable machine"],steps:["Grip wider than shoulder-width","Lean back 10-15°","Pull bar to upper chest leading with elbows","Squeeze lats at bottom","Return slowly feeling stretch"]},
+    {name:"Barbell Bent-Over Row",difficulty:"Novice",muscles:["rhomboids","trapezius","lats","lower back"],equipment:["barbell"],steps:["Stand feet shoulder-width, knees soft","Hinge to 45°, back flat","Pull bar to lower chest","Squeeze shoulder blades","Lower controlled"]},
+    {name:"Conventional Deadlift",difficulty:"Advanced",muscles:["lower back","glutes","hamstrings","quads","traps"],equipment:["barbell"],steps:["Feet hip-width, shins close to bar","Grip just outside knees","Back flat, chest up","Drive through heels to stand","Squeeze glutes at top"]},
+    {name:"Face Pull",difficulty:"Novice",muscles:["rear deltoids","trapezius","rhomboids","rotator cuff"],equipment:["cable machine"],steps:["Attach rope to high pulley","Pull toward face, elbows high","Externally rotate at peak","Squeeze shoulder blades","Return controlled"]},
+    {name:"Superman Hold",difficulty:"Beginner",muscles:["erector spinae","glutes","hamstrings"],equipment:[],steps:["Lie face down, arms extended overhead","Lift arms, chest, and legs off floor","Squeeze glutes and lower back","Hold 2-3 seconds","Lower with control"]},
+  ],
+  core:[
+    {name:"Forearm Plank",difficulty:"Beginner",muscles:["core","shoulders","glutes","lower back"],equipment:[],steps:["Lift onto forearms and toes","Body in straight line head to heels","Squeeze glutes and core","Breathe steadily","Hold 20-30 seconds"]},
+    {name:"Mountain Climbers",difficulty:"Beginner",muscles:["core","hip flexors","shoulders"],equipment:[],steps:["Start in high plank position","Drive right knee toward chest","Switch legs alternating","Keep hips level throughout","30-60 seconds continuous"]},
+    {name:"Dead Bug",difficulty:"Beginner",muscles:["deep core","transverse abdominis"],equipment:[],steps:["Lie on back, legs in tabletop, arms up","Press lower back into floor","Extend opposite arm and leg slowly","Hover above floor without touching","Return and alternate sides"]},
+    {name:"Russian Twist",difficulty:"Beginner",muscles:["obliques","rectus abdominis"],equipment:["dumbbell"],steps:["Sit at 45° knees bent","Lift feet off floor","Rotate torso side to side","Control the movement","10-15 reps per side"]},
+    {name:"Ab Wheel Rollout",difficulty:"Intermediate",muscles:["rectus abdominis","transverse abdominis","lats"],equipment:["ab wheel"],steps:["Kneel holding ab wheel under shoulders","Brace core and glutes","Roll forward keeping back flat","Stop before back sags","Pull back using core"]},
+  ],
+  legs:[
+    {name:"Bodyweight Squat",difficulty:"Beginner",muscles:["quadriceps","glutes","hamstrings","core"],equipment:[],steps:["Feet shoulder-width, toes slightly out","Push hips back and bend knees","Lower until thighs parallel","Drive through heels to stand","Squeeze glutes at top"]},
+    {name:"Glute Bridge",difficulty:"Beginner",muscles:["glutes","hamstrings","core"],equipment:[],steps:["Lie on back, knees bent, feet flat","Drive through heels to lift hips","Squeeze glutes at top","Hold 1-2 seconds","Lower with control"]},
+    {name:"Goblet Squat",difficulty:"Novice",muscles:["quadriceps","glutes","core"],equipment:["dumbbell","kettlebell"],steps:["Hold weight at chest vertically","Feet shoulder-width, toes out","Lower into squat keeping chest up","Use elbows to push knees out","Drive through heels to stand"]},
+    {name:"Barbell Back Squat",difficulty:"Advanced",muscles:["quadriceps","glutes","hamstrings","core","lower back"],equipment:["barbell","squat rack"],steps:["Bar on upper back, grip wider than shoulders","Feet shoulder-width, toes out","Lower with control until thighs parallel","Drive through feet explosively","Keep chest up throughout"]},
+    {name:"Romanian Deadlift",difficulty:"Novice",muscles:["hamstrings","glutes","lower back"],equipment:["barbell","dumbbells"],steps:["Stand holding weight in front of thighs","Slight bend in knees","Push hips back, lower weight down shins","Feel hamstring stretch","Drive hips forward to stand"]},
+    {name:"Bulgarian Split Squat",difficulty:"Advanced",muscles:["quadriceps","glutes","hamstrings","core"],equipment:["dumbbells","bench"],steps:["Rear foot on bench 2 feet behind","Hold dumbbells at sides","Lower back knee toward floor","Keep front heel planted","Drive through front heel to stand"]},
+    {name:"Walking Lunge",difficulty:"Advanced",muscles:["glutes","quadriceps","hamstrings"],equipment:[],steps:["Step forward with right leg","Lower back knee toward floor","Front thigh parallel to floor","Drive through front heel to step forward","Keep torso upright"]},
+    {name:"Standing Calf Raise",difficulty:"Beginner",muscles:["gastrocnemius","calves"],equipment:[],steps:["Stand on balls of feet on step","Rise as high as possible","Squeeze calves at top 1-2 seconds","Lower heels below step for stretch","No bouncing"]},
+  ],
+  yoga:[
+    {name:"Mountain Pose",aliases:["tadasana"],difficulty:"Beginner",muscles:["full body","spine","core"],equipment:[],steps:["Feet together or hip-width","Distribute weight evenly","Engage thighs, micro-bend knees","Roll shoulders back and down","Breathe deeply 30-60 seconds"]},
+    {name:"Warrior I",aliases:["virabhadrasana i","warrior 1"],difficulty:"Beginner",muscles:["quadriceps","glutes","hip flexors","shoulders"],equipment:[],steps:["Step left foot back 3-4 feet","Turn left foot out 45°","Bend right knee to 90°","Sweep arms overhead","Hold 30-45 seconds each side"]},
+    {name:"Warrior II",aliases:["virabhadrasana ii","warrior 2"],difficulty:"Beginner",muscles:["quadriceps","glutes","inner thighs","shoulders"],equipment:[],steps:["Feet 3-4 feet apart","Front foot forward, back foot 90°","Bend front knee over ankle","Extend arms to sides at shoulder height","Hold 30-45 seconds each side"]},
+    {name:"Child's Pose",aliases:["balasana"],difficulty:"Beginner",muscles:["lower back","hips","quadriceps","shoulders"],equipment:[],steps:["Kneel with knees wide, big toes touching","Sit back on heels","Fold torso forward, belly between thighs","Arms extended or alongside body","Rest 1-2 minutes, breathe into lower back"]},
+    {name:"Downward Dog",aliases:["adho mukha svanasana","down dog"],difficulty:"Novice",muscles:["hamstrings","calves","shoulders","spine"],equipment:[],steps:["Start on hands and knees","Tuck toes, lift hips toward ceiling","Press palms down, draw shoulders back","Bend knees if hamstrings are tight","Hold 45-60 seconds"]},
+    {name:"Bridge Pose",aliases:["setu bandha"],difficulty:"Novice",muscles:["glutes","hamstrings","lower back","chest"],equipment:[],steps:["Lie on back, knees bent, feet flat hip-width","Press through feet and arms","Lift hips toward ceiling","Roll shoulders under, lift chest","Hold 30-45 seconds"]},
+    {name:"Wheel Pose",aliases:["urdhva dhanurasana"],difficulty:"Advanced",muscles:["full spine","shoulders","chest","glutes","wrists"],equipment:[],steps:["Lie on back, hands by ears fingers toward shoulders","Press into hands and feet","Lift hips then head off floor","Straighten arms and legs","Hold 20-30 seconds"]},
+    {name:"Boat Pose",aliases:["navasana"],difficulty:"Novice",muscles:["core","hip flexors","spine"],equipment:[],steps:["Sit, lean back slightly on sit bones","Lift feet, shins parallel to floor","Extend arms forward","Keep spine straight, chest lifted","Hold 20-30 seconds"]},
+  ]
+};
+ 
+const ALL = [];
+for(const [cat,exs] of Object.entries(DB)) exs.forEach(ex=>ALL.push({...ex,category:cat}));
+ 
+// ── Page map ─────────────────────────────────────────────────────
+const PAGE_MAP = {
+  chest:{file:'chest.html',  label:'Chest Workout Guide',       emoji:'🏋️'},
+  arms: {file:'arms.html',   label:'Arms & Shoulders Guide',    emoji:'💪'},
+  back: {file:'back.html',   label:'Back Training Guide',       emoji:'🔙'},
+  core: {file:'core.html',   label:'Core & Abs Guide',          emoji:'🎯'},
+  legs: {file:'legs.html',   label:'Legs & Glutes Guide',       emoji:'🦵'},
+  yoga: {file:'yoga.html',   label:'Yoga & Flexibility Guide',  emoji:'🧘'},
+};
+ 
+// ── Keyword maps ──────────────────────────────────────────────────
+const CAT_KW={
+  chest:['chest','pec','bench'],
+  arms:['arm','bicep','tricep','curl','shoulder','delt','forearm','overhead press'],
+  back:['back','lat','trap','deadlift','row','pulldown','rhomboid'],
+  core:['core','ab','plank','crunch','oblique','abdominal'],
+  legs:['leg','squat','glute','hamstring','quad','calf','lunge','hip thrust'],
+  yoga:['yoga','pose','asana','stretch','flexibility','warrior','downward','meditation']
+};
+const DIFF_KW={
+  Beginner:['beginner','basic','easy','simple','start','new'],
+  Novice:['novice','intermediate','medium'],
+  Advanced:['advanced','hard','difficult','challenging','expert','pro']
+};
+const EQUIP_KW={
+  dumbbell:['dumbbell','dumbbells'],
+  barbell:['barbell'],
+  'cable machine':['cable'],
+  kettlebell:['kettlebell'],
+};
+ 
+// ── Renderers ─────────────────────────────────────────────────────
+function diffBadge(d){
+  const cls={Beginner:'mm-badge-beg',Novice:'mm-badge-nov',Advanced:'mm-badge-adv',Intermediate:'mm-badge-nov'}[d]||'mm-badge-nov';
+  return `<span class="mm-badge ${cls}">${d}</span>`;
 }
-
-// Function to handle sending a message
-function sendMessage() {
-  const userInput = document.getElementById('userInput');
-  const message = userInput.value.trim();
-
-  if (message) {
-    addMessage(message, 'user');
-    userInput.value = '';
-
-    // Show typing indicator
-    showTypingIndicator();
-
-    // Generate AI response
-    generateAIResponse(message);
+function catBadge(c){return `<span class="mm-badge mm-badge-cat">${c}</span>`;}
+function eqBadge(e){return `<span class="mm-badge mm-badge-eq">${e||'Bodyweight'}</span>`;}
+ 
+function renderCard(ex, showSteps=true){
+  const eqBadges = ex.equipment.length ? ex.equipment.map(eqBadge).join('') : eqBadge('');
+  let h=`<div class="mm-exercise-card">
+    <div class="mm-ex-name">${ex.name}</div>
+    <div class="mm-badges">${diffBadge(ex.difficulty)}${catBadge(ex.category)}${eqBadges}</div>
+    <div class="mm-meta">💪 ${ex.muscles.join(', ')}</div>`;
+  if(showSteps){
+    h+=`<div class="mm-section-label">Steps</div>
+    <ul class="mm-steps">${ex.steps.map((s,i)=>`<li><div class="mm-step-num">${i+1}</div><span>${s}</span></li>`).join('')}</ul>`;
   }
+  return h+'</div>';
 }
-
-// Function to handle suggestion clicks
-function sendSuggestion(suggestion) {
-  document.getElementById('userInput').value = suggestion;
-  sendMessage();
+function renderListItem(ex,i){
+  return `<div class="mm-list-item">
+    <div class="mm-list-num">${i}</div>
+    <div class="mm-list-name">${ex.name}</div>
+    ${diffBadge(ex.difficulty)}
+    <div class="mm-list-meta">${ex.muscles.slice(0,2).join(', ')}</div>
+  </div>`;
 }
-
-// Function to handle Enter key press
-function handleKeyPress(event) {
-  if (event.key === 'Enter') {
-    sendMessage();
-  }
+function renderCTA(cats){
+  const cat=(cats||[])[0]; if(!cat) return '';
+  const pg=PAGE_MAP[cat]; if(!pg) return '';
+  return `<div class="mm-cta">
+    <p>${pg.emoji} <strong>Full ${pg.label}</strong><br>Programs, videos & tips inside.</p>
+    <a class="mm-cta-btn" href="${pg.file}">Explore →</a>
+  </div>`;
 }
-
-// Function to add a message to the chat
-function addMessage(text, sender) {
-  const chatMessages = document.getElementById('chatMessages');
-  const messageDiv = document.createElement('div');
-  messageDiv.classList.add('message');
-  messageDiv.classList.add(sender + '-message');
-  messageDiv.innerHTML = text;
-  chatMessages.appendChild(messageDiv);
-  chatMessages.scrollTop = chatMessages.scrollHeight;
+ 
+// ── Parse ─────────────────────────────────────────────────────────
+function parseQ(msg){
+  const m=msg.toLowerCase();
+  const cats=[],diffs=[],equips=[];
+  for(const [c,kws] of Object.entries(CAT_KW))  if(kws.some(k=>m.includes(k))) cats.push(c);
+  for(const [d,kws] of Object.entries(DIFF_KW)) if(kws.some(k=>m.includes(k))) diffs.push(d);
+  for(const [e,kws] of Object.entries(EQUIP_KW))if(kws.some(k=>m.includes(k))) equips.push(e);
+  const noEquip=/no equipment|bodyweight|without equipment|at home/.test(m);
+  const wantList=/list|all |show all|what are|give me/.test(m);
+  const wantSteps=/how to|steps|guide|technique|form|do |mistakes|common mistake/.test(m);
+  return{cats,diffs,equips,noEquip,wantList,wantSteps};
 }
-
-// Show typing indicator
-function showTypingIndicator() {
-  const chatMessages = document.getElementById('chatMessages');
-  const typingDiv = document.createElement('div');
-  typingDiv.classList.add('typing-indicator');
-  typingDiv.id = 'typingIndicator';
-  typingDiv.innerHTML = 'FitAI is thinking <div class="typing-dots"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>';
-  chatMessages.appendChild(typingDiv);
-  chatMessages.scrollTop = chatMessages.scrollHeight;
+ 
+// ── Claude API ────────────────────────────────────────────────────
+async function askClaude(userMsg, intent, ctx){
+  const sys=`You are Motion Mentor, an expert AI fitness coach. Give clear, encouraging, science-backed advice.
+Style: direct, short paragraphs, no markdown bullets or headers, plain text with line breaks.
+For "common mistakes": list 4-5 specific mistakes with fixes.
+For "how to": give technique cues beyond step numbers.
+Keep under 180 words. End with one motivational line.
+Do NOT repeat the steps from context, add VALUE beyond them.
+Context: ${JSON.stringify(ctx)}
+Query type: ${intent.wantSteps?'technique':'general'}`;
+  const r=await fetch("https://api.anthropic.com/v1/messages",{
+    method:"POST",headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:1000,system:sys,messages:[{role:"user",content:userMsg}]})
+  });
+  const d=await r.json();
+  return d.content?.[0]?.text||null;
 }
-
-// Remove typing indicator
-function removeTypingIndicator() {
-  const typingIndicator = document.getElementById('typingIndicator');
-  if (typingIndicator) {
-    typingIndicator.remove();
+ 
+// ── Build response ────────────────────────────────────────────────
+async function buildReply(msg){
+  const intent=parseQ(msg);
+  const m=msg.toLowerCase();
+  const GREETS=['hi','hello','hey','namaste','sup','yo','good morning','good afternoon','good evening'];
+  const THANKS=['thank','thanks','appreciate'];
+  if(GREETS.some(g=>m===g||m.startsWith(g+' ')||m.endsWith(' '+g))){
+    const h=new Date().getHours();
+    const tg=h<12?'Good morning':h<17?'Good afternoon':'Good evening';
+    return `<div style="font-family:'Syne',sans-serif;font-size:15px;font-weight:700;margin-bottom:6px">${tg}! 💪</div>
+<div style="color:#94A3B8;font-size:13.5px">I'm <strong style="color:#F1F5F9">Motion Mentor</strong>, your AI fitness coach. Ask me about exercises, technique, or common mistakes.</div>`;
   }
+  if(THANKS.some(t=>m.includes(t))) return `You're welcome! Consistency separates progress from potential. 🔥 Anything else?`;
+ 
+  // Filter pool
+  let pool=[...ALL];
+  if(intent.cats.length)   pool=pool.filter(ex=>intent.cats.includes(ex.category));
+  if(intent.diffs.length)  pool=pool.filter(ex=>intent.diffs.includes(ex.difficulty));
+  if(intent.noEquip)       pool=pool.filter(ex=>ex.equipment.length===0);
+  else if(intent.equips.length) pool=pool.filter(ex=>intent.equips.some(eq=>ex.equipment.some(e=>e.includes(eq)||eq.includes(e))));
+ 
+  // Specific exercise?
+  const specific=ALL.find(ex=>{
+    const nm=ex.name.toLowerCase();
+    return nm===m||(ex.aliases||[]).some(a=>m.includes(a))||(nm.split(' ').length>1&&m.includes(nm));
+  });
+ 
+  const ctx=specific?[specific]:pool.slice(0,5);
+  let aiText=null;
+  try{ aiText=await askClaude(msg,intent,ctx); }catch(e){}
+ 
+  let html='';
+ 
+  if(specific){
+    html+=renderCard(specific,true);
+    if(aiText) html+=`<div class="mm-tip-box"><div class="mm-tip-label">💡 Coach's Notes</div>${aiText.replace(/\n/g,'<br>')}</div>`;
+    html+=renderCTA(intent.cats.length?intent.cats:[specific.category]);
+    return html;
+  }
+ 
+  if(intent.wantList||pool.length>3){
+    const show=pool.slice(0,12);
+    const catLabel=intent.cats.length?intent.cats.map(c=>c[0].toUpperCase()+c.slice(1)).join(' & '):'Matching';
+    html+=`<div class="mm-section-label">Found ${pool.length} ${catLabel} Exercises</div>`;
+    html+=show.map((ex,i)=>renderListItem(ex,i+1)).join('');
+    if(pool.length>12) html+=`<div style="font-size:12px;color:#94A3B8;margin-top:8px">...and ${pool.length-12} more</div>`;
+    if(aiText) html+=`<div style="margin-top:12px;font-size:13px;color:#94A3B8;border-top:1px solid #252B3B;padding-top:10px;text-align:left">${aiText.replace(/\n/g,'<br>')}</div>`;
+  } else if(pool.length>0){
+    const show=pool.slice(0,3);
+    const catLabel=intent.cats.length?intent.cats.map(c=>c[0].toUpperCase()+c.slice(1)).join(' & '):'';
+    if(catLabel) html+=`<div class="mm-section-label">${catLabel} Exercises</div>`;
+    html+=show.map(ex=>renderCard(ex,intent.wantSteps||pool.length<=2)).join('<hr class="mm-divider">');
+    if(pool.length>3) html+=`<div style="font-size:12px;color:#94A3B8;margin-top:6px">+${pool.length-3} more — ask "list all ${intent.cats[0]||'matching'} exercises"</div>`;
+    if(aiText) html+=`<div class="mm-tip-box"><div class="mm-tip-label">💡 Coach's Notes</div>${aiText.replace(/\n/g,'<br>')}</div>`;
+  } else {
+    html=aiText?`<div style="text-align:left">${aiText.replace(/\n/g,'<br>')}</div>`
+               :`<div>Couldn't find exercises for "<strong>${msg}</strong>". Try a muscle group or exercise name.</div>`;
+  }
+ 
+  html+=renderCTA(intent.cats);
+  return html;
 }
-
-// Function to generate AI response
-async function generateAIResponse(userMessage) {
-  // Simulate API call delay
-  await new Promise(resolve => setTimeout(resolve, 1000 + Math.random() * 1000));
-
-  removeTypingIndicator();
-
-  // Generate response based on conversation mode and user message
-  const response = generateDynamicResponse(userMessage);
-  addMessage(response, 'bot');
+ 
+// ── UI helpers ────────────────────────────────────────────────────
+function mmAddMsg(html,role){
+  const d=document.getElementById('mm-msgs');
+  const el=document.createElement('div');
+  el.className=`mm-msg mm-${role}`;
+  el.innerHTML=html;
+  d.appendChild(el);
+  d.scrollTop=d.scrollHeight;
 }
-
-// Generate dynamic responses based on user input
-function generateDynamicResponse(userMessage) {
-  const lowerCaseMessage = userMessage.toLowerCase();
-
-  // Handle greetings and casual conversation
-  if (lowerCaseMessage.includes('hi') || lowerCaseMessage.includes('hello') || lowerCaseMessage.includes('hey') || lowerCaseMessage.includes('namaste')) {
-    const greetings = [
-      "Hello there! How can I help with your fitness journey today?",
-      "Hi! Ready to work on your fitness goals?",
-      "Hey! What fitness questions can I answer for you?",
-      "Hello! How are you feeling today? Any fitness challenges I can help with?"
-    ];
-    return greetings[Math.floor(Math.random() * greetings.length)];
-  }
-
-  if (lowerCaseMessage.includes('how are you')) {
-    return "I'm doing great, thanks for asking! Ready to help you with your fitness goals. What would you like to know today?";
-  }
-
-  if (lowerCaseMessage.includes('thank') || lowerCaseMessage.includes('shukriya')) {
-    return "You're welcome! I'm always here to help with your fitness journey. Is there anything else you'd like to know?";
-  }
-
-  if (lowerCaseMessage.includes('your name') || lowerCaseMessage.includes('who are you')) {
-    return "I'm FitAI, your personal fitness assistant! I specialize in helping people with workout plans, nutrition advice, and overall wellbeing.";
-  }
-
-  // Handle general questions when in general mode
-  if (conversationMode === 'general') {
-    if (lowerCaseMessage.includes('weather')) {
-      return "I specialize in fitness rather than weather, but I can tell you that great weather is perfect for outdoor workouts!";
-    }
-
-    if (lowerCaseMessage.includes('joke') || lowerCaseMessage.includes('funny')) {
-      const jokes = [
-        "Why did the gym close down? It just didn't work out!",
-        "Why was the robot so good at exercise? It had lots of core processing power!",
-        "I was going to tell a time-traveling joke, but you didn't like it yet!"
-      ];
-      return jokes[Math.floor(Math.random() * jokes.length)];
-    }
-  }
-
-  // Fitness-related responses
-  if (lowerCaseMessage.includes('workout') || lowerCaseMessage.includes('exercise')) {
-    if (lowerCaseMessage.includes('how often') || lowerCaseMessage.includes('frequency')) {
-      return "For most people, 3-5 workouts per week is ideal. Beginners should start with 3 days, while advanced trainees can do 5-6 days with proper programming.";
-    } else if (lowerCaseMessage.includes('long') || lowerCaseMessage.includes('duration')) {
-      return "A good workout should last 45-90 minutes. Focus on quality over quantity - intense, focused training is better than hours of half-hearted exercise.";
-    } else if (lowerCaseMessage.includes('time') || lowerCaseMessage.includes('when')) {
-      return "The best time to workout is when you can be consistent! Morning workouts help with consistency, while afternoon workouts may have better performance due to higher body temperature.";
-    } else {
-      const workoutTips = [
-        "For effective workouts, focus on compound movements like squats, deadlifts, and push-ups that work multiple muscle groups.",
-        "Remember to warm up before workouts and cool down afterward to prevent injury and improve recovery.",
-        "Progressive overload is key - gradually increase the weight, reps, or intensity of your workouts to keep making progress."
-      ];
-      return workoutTips[Math.floor(Math.random() * workoutTips.length)];
-    }
-  }
-
-  if (lowerCaseMessage.includes('food') || lowerCaseMessage.includes('diet') || lowerCaseMessage.includes('eat') || lowerCaseMessage.includes('nutrition')) {
-    if (lowerCaseMessage.includes('before') || lowerCaseMessage.includes('pre-workout')) {
-      return "Eat a balanced meal with carbs and protein 2-3 hours before training. For quick energy 30-60 minutes before, try a banana or small smoothie.";
-    } else if (lowerCaseMessage.includes('after') || lowerCaseMessage.includes('post-workout')) {
-      return "After training, consume protein and carbs within 2 hours. A shake with whey protein and a banana is a great option for muscle recovery.";
-    } else if (lowerCaseMessage.includes('protein')) {
-      return "Active individuals need 1.6-2.2g of protein per kg of bodyweight daily. Spread your protein intake across 3-5 meals for optimal muscle synthesis.";
-    } else {
-      const nutritionTips = [
-        "Focus on whole foods like lean proteins, complex carbs, healthy fats, and plenty of vegetables for optimal nutrition.",
-        "Hydration is crucial for performance and recovery. Aim for 2-3 liters of water daily, more if you're sweating heavily.",
-        "Don't eliminate entire food groups - balanced nutrition with occasional treats is more sustainable than extreme restriction."
-      ];
-      return nutritionTips[Math.floor(Math.random() * nutritionTips.length)];
-    }
-  }
-
-  if (lowerCaseMessage.includes('muscle') || lowerCaseMessage.includes('build')) {
-    if (lowerCaseMessage.includes('build') || lowerCaseMessage.includes('gain')) {
-      return "To build muscle: 1) Follow a progressive resistance training program 2) Eat in a slight calorie surplus with enough protein 3) Get 7-9 hours of sleep 4) Be consistent for at least 3-6 months";
-    } else if (lowerCaseMessage.includes('recover') || lowerCaseMessage.includes('recovery')) {
-      return "Muscles grow during recovery, not during workouts. Ensure you're getting enough sleep, managing stress, and allowing 48 hours before working the same muscle group again.";
-    } else {
-      return "Building muscle requires consistent resistance training, proper nutrition with adequate protein, and sufficient recovery time between workouts.";
-    }
-  }
-
-  if (lowerCaseMessage.includes('weight loss') || lowerCaseMessage.includes('fat loss') || lowerCaseMessage.includes('lose weight')) {
-    if (lowerCaseMessage.includes('cardio')) {
-      return "Both HIIT and steady-state cardio are effective. HIIT burns more calories in less time, while steady-state is easier to recover from. Aim for 150-300 minutes of cardio per week.";
-    } else if (lowerCaseMessage.includes('diet') || lowerCaseMessage.includes('eat')) {
-      return "The best diet for weight loss is one you can maintain long-term. Focus on whole foods, protein intake, and a moderate calorie deficit of 500 calories per day.";
-    } else {
-      return "Weight loss requires a combination of proper nutrition, training, and consistency. The most effective approach is a moderate calorie deficit with resistance training and cardio.";
-    }
-  }
-
-  if (lowerCaseMessage.includes('water') || lowerCaseMessage.includes('hydrat')) {
-    return "Aim for 2-3 liters of water daily. During workouts, drink 500ml 2 hours before and 200-300ml every 15-20 minutes during exercise.";
-  }
-
-  if (lowerCaseMessage.includes('sleep')) {
-    return "7-9 hours of quality sleep is crucial for recovery, hormone balance, and performance. Maintain a consistent sleep schedule and create a dark, cool sleeping environment.";
-  }
-
-  if (lowerCaseMessage.includes('chest')) {
-    // bench press without machine
-    if (lowerCaseMessage.includes('barbell') &&
-      (lowerCaseMessage.includes('bench press') || lowerCaseMessage.includes('barbell without machineries') || lowerCaseMessage.includes('barbell without machine') || lowerCaseMessage.includes('barbell press for chest'))) {
-
-      return `
-    Muscles: Pectorals, anterior deltoids, triceps <br>
-    Setup: Lie on bench, grip bar wider than shoulders <br>
-    Movement: Lower bar to chest, press up <br>
-    Variations: Incline, decline, close-grip <br><br>
-
-    <strong>1. Incline Barbell Press</strong><br>
-    &bull; Angle: 30-45 degrees <br>
-    &bull; Focus: Upper chest <br>
-    &bull; Form: Keep core tight, controlled movement <br><br>
-
-    <strong>2. Decline Barbell Press</strong><br>
-    &bull; Angle: 15-30 degrees decline <br>
-    &bull; Focus: Lower chest <br>
-    &bull; Safety: Use spotter, secure feet <br>
-    `;
-    } else if (lowerCaseMessage.includes('dumbbell') || lowerCaseMessage.includes('dumbell')) {
-
-      return `chest dumbell`;
-
-    } else if (lowerCaseMessage.includes('with equipments') || lowerCaseMessage.includes('with machines') || lowerCaseMessage.includes('using machine')) {
-
-      return `chest machines`;
-
-    } else {
-      return `
-    Choose one from our scope:<br>
-    &bull; Chest Barbell Exercises without Machineries<br>
-    &bull; Chest Dumbbell Exercises <br>
-    &bull; Chest Machine Exercises <br>`
-    }
-  }
-
-
-  // Default response for unknown queries
-  const defaultResponses = [
-    "I specialize in fitness advice. Could you tell me more about what you'd like to know?",
-    "I'm here to help with your fitness journey! Could you please provide more details so I can give you the best advice?",
-    "That's an interesting question! As a fitness assistant, I can help with workout plans, nutrition advice, and wellbeing tips.",
-    "I'm not sure I understand. Could you rephrase that? I'm best at answering fitness-related questions."
-  ];
-
-  return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+function mmShowTyping(){
+  const d=document.getElementById('mm-msgs');
+  const el=document.createElement('div');
+  el.className='mm-typing';el.id='mm-typ';
+  el.innerHTML='<div class="mm-da"></div><div class="mm-da"></div><div class="mm-da"></div>';
+  d.appendChild(el);d.scrollTop=d.scrollHeight;
 }
-
+function mmRemoveTyping(){const t=document.getElementById('mm-typ');if(t)t.remove();}
+ 
+window.mmSend=function(msg){document.getElementById('mm-ui').value=msg;mmSendMsg();};
+window.mmSendMsg=async function(){
+  const inp=document.getElementById('mm-ui');
+  const msg=inp.value.trim();
+  if(!msg)return;
+  inp.value='';
+  mmAddMsg(msg,'user');
+  mmShowTyping();
+  try{
+    const html=await buildReply(msg);
+    mmRemoveTyping();
+    mmAddMsg(html,'bot');
+  }catch(e){
+    mmRemoveTyping();
+    mmAddMsg('Something went wrong. Please try again!','bot');
+  }
+};
+document.getElementById('mm-ui').addEventListener('keypress',e=>{if(e.key==='Enter')mmSendMsg();});
+})();
 //Progress
 document.addEventListener('DOMContentLoaded', () => {
   // Sample data to populate the dashboard
