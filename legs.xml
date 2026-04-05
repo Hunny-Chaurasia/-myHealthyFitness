@@ -576,7 +576,7 @@
 
     <!-- HAMSTRINGS - Advanced -->
     <Pose id="LEG-H-06" difficulty="Advanced" safety="Keep your back straight and core braced. Hinge at your hips, not your lower back. Maintain a slight bend in your knees throughout. Do not round your back." Pose_type="Strength, Hip Hinge">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/romanian_deadlift_advanced.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/barbell-romanian-deadlift.gif</url>
         <Name>Romanian Deadlift (Heavy)</Name>
         <Equipment>Barbell with Weight Plates</Equipment>
         <Focused_Muscles>Hamstrings (Primary), Glutes, Lower Back, Core</Focused_Muscles>
@@ -1183,7 +1183,7 @@
     </Pose>
 
     <Pose id="LEG-G-14" difficulty="Expert" safety="Keep your core engaged and lower back neutral. Squeeze your glutes at the top of each pump. Do not arch your back." Pose_type="Hypertrophy, Metabolic Stress">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/frog_pump.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/frog-hip-thrust.gif</url>
         <Name>Frog Pump</Name>
         <Equipment>Exercise Mat</Equipment>
         <Focused_Muscles>Glutes (Upper Glute Focus), Core</Focused_Muscles>
