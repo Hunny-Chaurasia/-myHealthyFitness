@@ -1,375 +1,2397 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sportsData>
 <indoorGames>
-<chessCompleteGuide>
 
-  <!-- ======================== 1. COURT / FIELD IMAGE (BOARD DIAGRAM) ======================== -->
+<!-- ===================== CHESS ===================== -->
+<chessCompleteGuide>
   <courtFieldImage>
     <imageUrl>images/chess_board_diagram.png</imageUrl>
     <dimensions>
       <boardSize>8x8 squares (64 total)</boardSize>
-      <squareSize>5–6 cm (tournament) / 3.5–5 cm (club)</squareSize>
+      <squareSize>5-6 cm (tournament) / 3.5-5 cm (club)</squareSize>
       <boardOrientation>Light square on right corner (h1 = light)</boardOrientation>
     </dimensions>
-    <layout>
-      <files>a to h (vertical columns)</files>
-      <ranks>1 to 8 (horizontal rows)</ranks>
-      <!-- FIX 4: bare & replaced with &amp; -->
-      <zones>Back rank (rank 1 &amp; 8), centre (d4,e4,d5,e5), kingside (files e‑h), queenside (files a‑d)</zones>
-    </layout>
     <surfaceTypes>Cardboard, vinyl, wood, or silicone board</surfaceTypes>
-    <venues>Indoor: home, chess club, tournament hall, park (outdoor with weighted pieces)</venues>
+    <venues>Indoor: home, chess club, tournament hall</venues>
   </courtFieldImage>
-
-  <!-- ======================== 2. HEALTH BENEFITS ======================== -->
   <healthBenefits>
-    <physical>
-      <benefit>Improves hand‑eye coordination (when moving pieces quickly in blitz)</benefit>
-      <benefit>Reduces risk of dementia and Alzheimer's (cognitive reserve)</benefit>
-      <benefit>May lower blood pressure through stress reduction</benefit>
-    </physical>
-    <mental>
-      <benefit>Enhances memory and concentration</benefit>
-      <benefit>Develops logical thinking and problem‑solving skills</benefit>
-      <benefit>Improves patience and emotional control</benefit>
-      <benefit>Reduces anxiety through structured thinking</benefit>
-    </mental>
+    <benefit>Improves memory and concentration</benefit>
+    <benefit>Develops logical thinking and problem-solving skills</benefit>
+    <benefit>Reduces risk of dementia and Alzheimer's</benefit>
+    <benefit>Improves patience and emotional control</benefit>
+    <benefit>Reduces anxiety through structured thinking</benefit>
   </healthBenefits>
-
-  <!-- ======================== 3. WARM-UP & COOL-DOWN ======================== -->
   <warmupCooldown>
     <warmup>
-      <stretching>Neck rotations, shoulder shrugs, wrist circles (5 min) – prevents stiffness during long games</stretching>
-      <pregameExercises>Solve 5 simple tactics puzzles (e.g., mate in 1), review a favourite opening line (5 min)</pregameExercises>
+      <stretching>Neck rotations, shoulder shrugs, wrist circles (5 min)</stretching>
+      <pregameExercises>Solve 5 simple tactics puzzles, review a favourite opening line</pregameExercises>
       <duration>10 minutes</duration>
     </warmup>
     <cooldown>
-      <postgameRecovery>Review the game briefly (5 min), stand up and walk, deep breathing (2 min), eye relaxation (palming)</postgameRecovery>
-      <duration>5–10 minutes</duration>
+      <postgameRecovery>Review the game briefly, stand up and walk, deep breathing, eye relaxation</postgameRecovery>
+      <duration>5-10 minutes</duration>
     </cooldown>
   </warmupCooldown>
-
-  <!-- ======================== 4. RULES & REGULATIONS (COMPLETE) ======================== -->
   <rulesRegulations>
     <basicRules>
       <rule>Game is played between two players, one controlling white pieces, the other black.</rule>
       <rule>White moves first. Players alternate moves.</rule>
-      <rule>Objective: checkmate the opponent's king (king under attack with no escape).</rule>
-      <rule>Pieces move: king (1 square any direction), queen (any distance horizontally/vertically/diagonally), rook (any distance horizontally/vertically), bishop (any distance diagonally), knight (L‑shape: 2+1), pawn (forward 1, capture diagonally).</rule>
-      <rule>Special moves: castling (king + rook move together), en passant (pawn capture), pawn promotion (to queen, rook, bishop, or knight upon reaching last rank).</rule>
+      <rule>Objective: checkmate the opponent's king.</rule>
+      <rule>Special moves: castling, en passant, pawn promotion.</rule>
+      <rule>Draw by stalemate, threefold repetition, or mutual agreement.</rule>
     </basicRules>
-    <numberOfPlayers>2 players (singles). No team variant in standard chess.</numberOfPlayers>
+    <numberOfPlayers>2 players</numberOfPlayers>
     <matchTimings>
-      <rapid>10–60 minutes per player (total game 20‑120 min)</rapid>
-      <classical>60–180 minutes per player (2‑6 hours total)</classical>
-      <blitz>3–5 minutes per player (6‑10 min total)</blitz>
-      <bullet>1–2 minutes per player (2‑4 min total)</bullet>
+      <rapid>10-60 minutes per player</rapid>
+      <classical>60-180 minutes per player</classical>
+      <blitz>3-5 minutes per player</blitz>
     </matchTimings>
     <breaksIntervals>
-      <standard>No scheduled breaks; players may leave board on their turn (but clock runs)</standard>
-      <!-- FIX 2: was </interval> — corrected to </tournament> -->
-      <tournament>After 2‑3 hours, a 30‑min break may be scheduled (before time control)</tournament>
-      <!-- FIX 3: was </interval> — corrected to </bathroomBreaks> -->
-      <bathroomBreaks>Allowed during opponent's turn (not recommended during critical moments)</bathroomBreaks>
+      <standard>No scheduled breaks in standard play</standard>
+      <tournament>30-min break may be scheduled after 2-3 hours</tournament>
     </breaksIntervals>
-    <formats>
-      <shortMatch>Blitz (3+2) or Bullet (1+0) – fast, intuitive play</shortMatch>
-      <longMatch>Classical (90+30) – deep calculation and strategy</longMatch>
-    </formats>
-    <substitutesAndRoles>No substitutes; each player plays alone. In team events (Olympiad), each board has a designated player.</substitutesAndRoles>
-    <playersRoles>
-      <role>Attacking player – seeks checkmate, sacrifices material</role>
-      <role>Positional player – builds small advantages, controls squares</role>
-      <role>Endgame specialist – excels with few pieces</role>
-    </playersRoles>
     <scoringSystem>
       <win>1 point</win>
-      <draw>0.5 point each (by stalemate, threefold repetition, insufficient material, or mutual agreement)</draw>
+      <draw>0.5 point each</draw>
       <loss>0 points</loss>
     </scoringSystem>
-    <howToWin>Deliver checkmate, or opponent resigns, or opponent runs out of time (in timed games)</howToWin>
+    <howToWin>Deliver checkmate, or opponent resigns, or opponent runs out of time</howToWin>
     <foulsAndPenalties>
-      <illegalMove>
-        <penalty>In standard play: move retracted, alternative legal move required; in blitz: loss if illegal move completed</penalty>
-        <examples>Moving knight as bishop, leaving king in check, moving into check</examples>
-      </illegalMove>
-      <touchMove>
-        <penalty>If you touch a piece, you must move it (if possible). If you adjust a piece, say "j'adoube" (I adjust)</penalty>
-      </touchMove>
-      <clockViolation>
-        <penalty>Loss of game if flag falls (time runs out) – unless opponent cannot checkmate with remaining material</penalty>
-      </clockViolation>
-      <unsportsmanlikeConduct>
-        <penalty>Warning, forfeit of game, or expulsion (depending on severity)</penalty>
-        <examples>Distracting opponent, offering draw repeatedly, using phone</examples>
-      </unsportsmanlikeConduct>
+      <penalty>Illegal move: move retracted; in blitz: loss of game</penalty>
+      <penalty>Touch-move rule: if you touch a piece you must move it</penalty>
+      <penalty>Clock violation: loss of game if time runs out</penalty>
     </foulsAndPenalties>
-    <fairPlay>
-      <rule>No outside assistance (books, engines, or other people)</rule>
-      <rule>No distracting noises or gestures</rule>
-      <rule>Record moves (in classical games) on scoresheet</rule>
-      <rule>Shake hands before and after game</rule>
-    </fairPlay>
-    <judgementCriteria>
-      <arbiter>Enforces rules, handles disputes, watches for cheating</arbiter>
-      <electronicBoards>Used in top tournaments to broadcast moves</electronicBoards>
-      <antiCheating>Metal detectors, delayed live broadcast, analysis of engine correlation</antiCheating>
-    </judgementCriteria>
   </rulesRegulations>
-
-  <!-- ======================== 5. INJURY PREVENTION ======================== -->
   <injuryPrevention>
     <commonInjuries>
-      <injury>Eye strain (dry eyes, headache, blurred vision)</injury>
-      <injury>Repetitive strain injury (wrist, forearm from mouse or clock pressing)</injury>
-      <injury>Neck and back pain (prolonged sitting)</injury>
-      <injury>Mental fatigue (brain fog, reduced decision‑making)</injury>
-      <injury>Carpal tunnel syndrome (excessive mouse use in online chess)</injury>
+      <injury>Eye strain</injury>
+      <injury>Neck and back pain from prolonged sitting</injury>
+      <injury>Repetitive strain injury (wrist)</injury>
+      <injury>Mental fatigue</injury>
     </commonInjuries>
     <preventionMethods>
-      <method>Use 20‑20‑20 rule: every 20 min, look 20 feet away for 20 seconds</method>
-      <method>Adjust chair height so elbows at 90° and wrists straight</method>
-      <method>Take a 2‑minute break after every 30 min of play (stand, stretch, walk)</method>
-      <method>Use ergonomic mouse and wrist rest for online chess</method>
-      <method>Blink consciously and use lubricating eye drops if needed</method>
-      <method>Do neck stretches (chin tucks, side bends) between games</method>
+      <method>Use 20-20-20 rule: every 20 min, look 20 feet away for 20 seconds</method>
+      <method>Take a 2-minute break after every 30 min of play</method>
+      <method>Do neck stretches between games</method>
     </preventionMethods>
     <diseasesToAvoidPlaying>
-      <condition>Migraine or severe headache – bright screens and concentration worsen it</condition>
-      <condition>Acute conjunctivitis (pink eye) – risk of spreading in over‑the‑board events</condition>
-      <condition>Severe anxiety or panic disorder – timed pressure may trigger episodes</condition>
-      <condition>Recent concussion (within 2 weeks) – cognitive rest needed</condition>
-      <advice>If you have epilepsy triggered by flickering screens, avoid online blitz or use flicker‑free monitors</advice>
+      <condition>Migraine or severe headache</condition>
+      <condition>Recent concussion - cognitive rest needed</condition>
     </diseasesToAvoidPlaying>
   </injuryPrevention>
-
-  <!-- ======================== 6. COMMON MISTAKES ======================== -->
-  <commonMistakes>
-    <mistake>Moving too quickly without calculating opponent's threats</mistake>
-    <mistake>Not developing pieces in opening (moving same piece multiple times)</mistake>
-    <mistake>Leaving pieces undefended (hanging pieces)</mistake>
-    <mistake>Failing to castle early – king remains exposed</mistake>
-    <mistake>Overlooking checks and captures</mistake>
-    <mistake>Playing too passively (no plan, just reacting)</mistake>
-    <mistake>Blundering in time pressure (flagging without thinking)</mistake>
-  </commonMistakes>
-
-  <!-- ======================== 7. HYDRATION IMPORTANCE ======================== -->
   <hydrationImportance>
-    <beforeMatch>Drink 300‑500 ml water 1‑2 hours before; avoid excess (bathroom breaks disrupt focus)</beforeMatch>
-    <duringMatch>Sip 100‑150 ml every 30 minutes (keep water bottle on table, allowed in most tournaments)</duringMatch>
-    <afterMatch>Rehydrate with 400‑600 ml water or electrolyte drink</afterMatch>
-    <warningAvoid>Excessive caffeine before/during (jitters, frequent urination); sugary drinks (energy crash)</warningAvoid>
-    <signsOfDehydration>Dry mouth, headache, irritability, reduced concentration – take a sip and breathe</signsOfDehydration>
+    <beforeMatch>Drink 300-500 ml water 1-2 hours before</beforeMatch>
+    <duringMatch>Sip 100-150 ml every 30 minutes</duringMatch>
+    <afterMatch>Rehydrate with 400-600 ml water</afterMatch>
+    <warningAvoid>Excessive caffeine; sugary drinks (energy crash)</warningAvoid>
+    <signsOfDehydration>Dry mouth, headache, irritability, reduced concentration</signsOfDehydration>
   </hydrationImportance>
-
-  <!-- ======================== 8. NUTRITION TIPS ======================== -->
   <nutritionTips>
-    <preGame>1‑2 hours before: complex carbs (oatmeal, whole grain toast) + protein (eggs, yogurt) + healthy fat (nuts) – avoid heavy meals</preGame>
-    <preGameSnack>30 min before: banana, dark chocolate (70%+), or a handful of almonds (brain fuel)</preGameSnack>
-    <duringGame>Only water or unsweetened tea; avoid sugar spikes (lollies, soda). In long games (more than 3h), small snacks like nuts or dried fruit allowed between moves</duringGame>
-    <postGame>Protein + carbs (chicken and rice, or Greek yogurt with berries) to replenish mental energy</postGame>
-    <daily>Omega‑3 (fish, walnuts), antioxidants (blueberries), B vitamins (whole grains, eggs) for brain health</daily>
+    <preGame>Complex carbs + protein + healthy fat 1-2 hours before; avoid heavy meals</preGame>
+    <duringGame>Water or unsweetened tea; small snacks like nuts in long games</duringGame>
+    <postGame>Protein + carbs to replenish mental energy</postGame>
+    <daily>Omega-3 (fish, walnuts), antioxidants (blueberries), B vitamins for brain health</daily>
   </nutritionTips>
-
-  <!-- ======================== 9. AVOIDING BURNOUT ======================== -->
   <avoidingBurnout>
     <physicalBurnout>
-      <limit>Play serious games max 3‑4 days per week (classical time control)</limit>
-      <restDays>At least 2 days with no chess, or only light puzzles (10 min)</restDays>
+      <limit>Play serious games max 3-4 days per week</limit>
+      <restDays>At least 2 days with no chess or only light puzzles</restDays>
       <crossTrain>Physical exercise (walking, swimming) to clear mind</crossTrain>
     </physicalBurnout>
     <mentalBurnout>
       <signs>Dreading study, making uncharacteristic blunders, loss of enjoyment</signs>
-      <solution>Take 1‑2 weeks break, play casual variants (chess960, bughouse), reduce rating pressure</solution>
+      <solution>Take 1-2 weeks break, play casual variants, reduce rating pressure</solution>
     </mentalBurnout>
   </avoidingBurnout>
-
-  <!-- ======================== 10. EQUIPMENT ======================== -->
   <equipment>
-    <board>
-      <types>Vinyl roll‑up (tournament), wooden (premium), silicone (travel), magnetic (travel)</types>
-      <coordinates>Optional – letters/numbers on edges</coordinates>
-    </board>
-    <pieces>
-      <material>Plastic (most common), wood (e.g., boxwood), silicone, or marble</material>
-      <kingHeight>Standard tournament: 95‑105 mm (3.75‑4.1 inches)</kingHeight>
-      <weight>Weighted pieces for stability</weight>
-    </pieces>
-    <clock>
-      <types>Analog (traditional), digital (standard with delay/increment)</types>
-      <commonBrands>DGT, Chronos, Leap, Garde</commonBrands>
-      <timeControls>Classical (90+30), Rapid (15+10), Blitz (3+2)</timeControls>
-    </clock>
-    <scoresheet>
-      <format>Paper scoresheet with move numbers (required in classical tournaments)</format>
-      <notation>Algebraic notation (e.g., Nf3, e5, O‑O)</notation>
-    </scoresheet>
-    <accessories>
-      <item>Chess bag (carry board, pieces, clock)</item>
-      <item>Pen (for recording moves)</item>
-      <item>Analysis board for post‑game</item>
-    </accessories>
+    <item>Chess board (vinyl, wooden, or silicone)</item>
+    <item>Chess pieces (plastic or wood, standard tournament size)</item>
+    <item>Chess clock (digital DGT or analog)</item>
+    <item>Score sheet and pen (for classical games)</item>
   </equipment>
-
-  <!-- ======================== 11. SAFETY GEAR ======================== -->
   <safetyGear>
-    <protective>
-      <item>None required. For physical safety: comfortable chair with back support</item>
-      <item>Anti‑glare glasses (if sensitive to lighting)</item>
-      <item>Wrist brace (if prone to repetitive strain)</item>
-    </protective>
-    <firstAid>Eye drops, pain reliever (headache), hand sanitizer (for over‑the‑board hygiene)</firstAid>
+    <item>Comfortable chair with back support</item>
+    <item>Anti-glare glasses if sensitive to lighting</item>
+    <item>Wrist brace if prone to repetitive strain</item>
   </safetyGear>
-
-  <!-- ======================== 12. IMPORTANT SKILLS ======================== -->
   <importantSkills>
     <coordination>
-      <desc>Not physical; mental coordination – integrate calculation, memory, and pattern recognition</desc>
-      <drill>Solve tactical puzzles (Chess.com, Lichess) – 15 min daily</drill>
+      <desc>Mental coordination: integrate calculation, memory, and pattern recognition</desc>
+      <drill>Solve tactical puzzles daily - 15 min on Chess.com or Lichess</drill>
     </coordination>
     <speedAgility>
-      <desc>Mental speed – quickly recognise threats and candidate moves</desc>
-      <drill>Blitz games (3+0) or puzzle rush survival – trains rapid pattern recognition</drill>
+      <desc>Mental speed: quickly recognise threats and candidate moves</desc>
     </speedAgility>
     <focusReaction>
       <desc>Maintain concentration for hours, avoid distractions</desc>
-      <drill>Play 30‑minute games without looking away from board (use physical board)</drill>
     </focusReaction>
     <xFactors>
       <strategy>
-        <opening>Control centre, develop pieces, king safety (castle)</opening>
+        <opening>Control centre, develop pieces, castle early</opening>
         <middlegame>Create weaknesses, improve piece activity, launch attack</middlegame>
-        <endgame>King activation, pawn promotion, opposition</endgame>
       </strategy>
-      <gameSense>Evaluate when to trade pieces, when to sacrifice, when to simplify to a winning endgame</gameSense>
-      <decisionMaking>Choose between candidate moves based on safety, activity, and long‑term plan</decisionMaking>
+      <gameSense>Evaluate when to trade pieces, sacrifice, or simplify</gameSense>
+      <decisionMaking>Choose between candidate moves based on safety, activity, and long-term plan</decisionMaking>
     </xFactors>
   </importantSkills>
-
-  <!-- ======================== 13. PRACTICE ROUTINES ======================== -->
   <practiceRoutines>
     <dailyPlan>
-      <day label="Monday">Tactics (20 puzzles) + Openings (15 min) + One rapid game (15+10)</day>
-      <day label="Tuesday">Endgame study (30 min: king + pawn vs king) + Analysis of master game (30 min)</day>
-      <day label="Wednesday">Blitz games (10 x 3+0) for pattern recognition – but not for deep learning</day>
-      <day label="Thursday">Positional exercises (30 min) + Play through annotated game (30 min)</day>
-      <day label="Friday">Simulate tournament conditions: one classical game (90+30) with analysis afterwards</day>
-      <day label="Saturday">Solve advanced tactics (10 puzzles) + Review personal games from week</day>
-      <day label="Sunday">Rest or light puzzles only (10 min) + physical activity</day>
+      <day label="Monday">Tactics (20 puzzles) + Openings (15 min) + One rapid game</day>
+      <day label="Tuesday">Endgame study + Analysis of master game</day>
+      <day label="Wednesday">Blitz games for pattern recognition</day>
+      <day label="Thursday">Positional exercises + Annotated game review</day>
+      <day label="Friday">One classical game with analysis</day>
+      <day label="Saturday">Advanced tactics + Review personal games from week</day>
+      <day label="Sunday">Rest or light puzzles only + physical activity</day>
     </dailyPlan>
     <drillsForBeginners>
       <drill name="Basic checkmates">Mate with king+queen vs king (practice 10 times)</drill>
-      <drill name="Fork drill">Place knight to fork two pieces – 10 positions</drill>
-      <drill name="Opening principles">Play 5 games focusing only on centre control, development, castling (ignore tactics)</drill>
-      <drill name="One‑move threats">Given a position, find all checks, captures, and threats – 10 positions</drill>
+      <drill name="Fork drill">Place knight to fork two pieces - 10 positions</drill>
+      <drill name="Opening principles">Play 5 games focusing only on centre control and development</drill>
     </drillsForBeginners>
-    <skillImprovementProgram>
-      <phase1 weeks="2">Learn piece moves, checkmate patterns, basic tactics (forks, pins) – 3x per week</phase1>
-      <phase2 weeks="4">Study openings (e4/e5), endgame basics (king+pawn), play 30+0 games – 4x per week</phase2>
-      <phase3 weeks="6">Add positional concepts (weak squares, pawn structure), analyse own games, join local club – 4x per week + weekend tournament</phase3>
-      <phase4 ongoing="true">Maintain with daily puzzles, weekly classical game, opening repertoire refinement</phase4>
-    </skillImprovementProgram>
   </practiceRoutines>
-
-  <!-- ======================== 14. MENTAL PREPARATION ======================== -->
   <mentalPreparation>
     <focusingTechniques>
-      <technique name="Breath counting">Inhale 4 sec, hold 2 sec, exhale 6 sec – before each move in critical positions</technique>
-      <technique name="Visualization">Close eyes, imagine the board and move sequences (3‑4 moves deep) – 5 min daily</technique>
-      <technique name="Routine development">Before each game: set up pieces, deep breath, remind yourself of opening plan</technique>
+      <technique name="Breath counting">Inhale 4 sec, hold 2 sec, exhale 6 sec before critical moves</technique>
+      <technique name="Visualization">Imagine board and move sequences 3-4 moves deep</technique>
     </focusingTechniques>
     <pressureHandling>
-      <tip>When low on time, play safe moves (avoid complications) and rely on intuition</tip>
-      <tip>If opponent offers a draw in a winning position, take 10 seconds to recalculate before deciding</tip>
-      <tip>Use positive self‑talk: I have a plan, I can execute it</tip>
-      <tip>After a blunder, don't dwell – look for counterplay or swindles</tip>
+      <tip>When low on time, play safe moves and rely on intuition</tip>
+      <tip>Use positive self-talk: I have a plan, I can execute it</tip>
+      <tip>After a blunder, look for counterplay or swindles</tip>
     </pressureHandling>
     <sportsmanship>
-      <rule>Resign only when defeat is certain (don't waste time)</rule>
-      <rule>Offer draw only on your move, before pressing clock</rule>
-      <rule>Don't distract opponent (tapping fingers, humming)</rule>
-      <rule>Congratulate opponent after loss; analyse together if both agree</rule>
+      <rule>Resign only when defeat is certain</rule>
+      <rule>Don't distract opponent with noise or gestures</rule>
+      <rule>Congratulate opponent after loss</rule>
     </sportsmanship>
     <howToJoinSport>
-      <step>Learn rules and basic tactics (free on Chess.com, Lichess, or local library)</step>
-      <step>Buy a basic chess set ($15‑30) or use free online platforms</step>
-      <step>Join a local chess club (meetup.com or USCF/FIDE affiliates)</step>
-      <step>Play rated games online to get a starting rating (e.g., Lichess rapid)</step>
-      <step>Enter your first tournament: scholastic, open, or novice section at local club</step>
-      <costEstimate>Online free; club membership $20‑50/year; tournament entry $20‑50; USCF/FIDE membership $20‑60/year</costEstimate>
+      <step>Learn rules and basic tactics free on Chess.com or Lichess</step>
+      <step>Buy a basic chess set or use free online platforms</step>
+      <step>Join a local chess club</step>
+      <step>Play rated games online to get a starting rating</step>
+      <step>Enter your first local tournament</step>
+      <costEstimate>Online free; club membership $20-50/year; tournament entry $20-50</costEstimate>
     </howToJoinSport>
     <qualitiesOfGoodPlayer>
-      <quality>Patience – waits for opponent to make mistake</quality>
-      <quality>Objectivity – evaluates positions without wishful thinking</quality>
-      <quality>Resilience – recovers after bad losses</quality>
-      <quality>Curiosity – studies openings and endgames continuously</quality>
-      <quality>Time management – allocates clock wisely</quality>
+      <quality>Patience</quality>
+      <quality>Objectivity</quality>
+      <quality>Resilience after bad losses</quality>
+      <quality>Curiosity - continuous study</quality>
+      <quality>Time management on the clock</quality>
     </qualitiesOfGoodPlayer>
   </mentalPreparation>
-
-  <!-- ======================== 15. STRATEGIES ======================== -->
   <strategies>
-    <opening>
-      <strategy name="Open games (1.e4 e5)">Control centre, develop knights before bishops, castle quickly</strategy>
-      <strategy name="Closed games (1.d4 d5)">Pawn chains, positional manoeuvring, slow build‑up</strategy>
-      <strategy name="Hypermodern">Allow opponent to occupy centre, then attack with pieces (e.g., Nimzo‑Indian)</strategy>
-    </opening>
-    <middlegame>
-      <strategy name="Attack on king">Open files, sacrifice pieces, bring queen and rooks</strategy>
-      <strategy name="Prophylaxis">Prevent opponent's plans (e.g., move before they do)</strategy>
-      <strategy name="Minority attack">Advance pawns on opposite side to create weaknesses</strategy>
-    </middlegame>
-    <endgame>
-      <strategy name="King activation">Bring king to centre, use as attacking piece</strategy>
-      <strategy name="Passed pawn push">Create and promote a passed pawn</strategy>
-      <strategy name="Opposition">Kings face off with one square between – crucial in pawn endgames</strategy>
-    </endgame>
-    <specialSituations>
-      <situation>Winning position – trade pieces, simplify, avoid unnecessary risks</situation>
-      <situation>Losing position – create complications, set traps, hope for opponent blunder</situation>
-    </specialSituations>
+    <strategy name="Open games (1.e4 e5)">Control centre, develop knights before bishops, castle quickly</strategy>
+    <strategy name="Closed games (1.d4 d5)">Pawn chains, positional manoeuvring, slow build-up</strategy>
+    <strategy name="Attack on king">Open files, sacrifice pieces, bring queen and rooks</strategy>
+    <strategy name="King activation (endgame)">Bring king to centre, use as attacking piece</strategy>
   </strategies>
-
-  <!-- ======================== 16. TERMINOLOGIES ======================== -->
   <terminologies>
-    <term>Check – king is under attack</term>
-    <term>Checkmate – king under attack with no legal escape (game ends)</term>
-    <term>Stalemate – player to move has no legal moves but king not in check (draw)</term>
-    <term>Fork – single piece attacks two or more enemy pieces</term>
-    <term>Pin – piece cannot move without exposing a more valuable piece behind it</term>
-    <term>Skewer – attack on a valuable piece that forces it to move, exposing a less valuable piece behind</term>
-    <term>Discovery – moving a piece reveals an attack from another piece behind it</term>
-    <term>Sacrifice – give up material for a positional or attacking advantage</term>
-    <term>Zugzwang – any move worsens player's position (often in endgames)</term>
-    <term>Blunder – very bad move that loses material or the game</term>
-    <term>Increment – extra time added after each move (e.g., 3+2 means 3 min + 2 sec per move)</term>
-    <term>Flag fall – time runs out on a player's clock</term>
-    <term>Touch move – rule requiring player to move a piece they touch</term>
-    <term>En passant – special pawn capture when opponent moves two squares from start</term>
-    <term>Castling – move with king and rook (king moves two squares towards rook)</term>
-    <term>Promotion – pawn reaching last rank becomes queen, rook, bishop, or knight</term>
-    <term>Algebraic notation – standard move recording (e.g., Nf3, exd5, O‑O, Qh8=Q)</term>
-    <term>Elo rating – numerical measure of player strength (average 1200, grandmaster 2500+)</term>
-    <term>Blitz – fast time control (3‑5 min per player)</term>
-    <term>Bullet – very fast (1‑2 min per player)</term>
-    <term>Rapid – medium (10‑60 min per player)</term>
-    <term>Classical – long (60+ min per player)</term>
-    <term>Gambit – opening where a pawn is sacrificed for development (e.g., King's Gambit)</term>
-    <term>Endgame – stage with few pieces left</term>
-    <term>Middlegame – after development, before endgame</term>
-    <term>Opening – first 10‑15 moves of the game</term>
-    <term>FIDE – International Chess Federation (World Chess governing body)</term>
-    <term>USCF – United States Chess Federation</term>
+    <term>Check - king is under attack</term>
+    <term>Checkmate - king under attack with no legal escape</term>
+    <term>Stalemate - no legal moves but king not in check (draw)</term>
+    <term>Fork - single piece attacks two or more enemy pieces</term>
+    <term>Pin - piece cannot move without exposing a more valuable piece</term>
+    <term>Sacrifice - give up material for positional or attacking advantage</term>
+    <term>Zugzwang - any move worsens player's position</term>
+    <term>Blunder - very bad move that loses material or the game</term>
+    <term>En passant - special pawn capture</term>
+    <term>Castling - king and rook move together</term>
+    <term>Promotion - pawn reaches last rank and becomes a stronger piece</term>
+    <term>Elo rating - numerical measure of player strength</term>
+    <term>Gambit - opening where a pawn is sacrificed for development</term>
+    <term>FIDE - International Chess Federation</term>
   </terminologies>
-
 </chessCompleteGuide>
 
-<!-- NOTE: swimmingCompleteGuide, fencingCompleteGuide, tableTennisCompleteGuide,
-     badmintonCompleteGuide, gymnasticsCompleteGuide, basketballCompleteGuide,
-     judoCompleteGuide continue here with the fixes below applied.
-     See FIXES_SUMMARY.md for the exact line-by-line changes needed. -->
+<!-- ===================== SWIMMING ===================== -->
+<swimmingCompleteGuide>
+  <courtFieldImage>
+    <imageUrl>images/swimming_pool.png</imageUrl>
+    <dimensions>
+      <length>50 metres (Olympic) / 25 metres (short course)</length>
+      <width>25 metres (8 lanes, each 2.5 m wide)</width>
+      <depth>2 metres minimum</depth>
+    </dimensions>
+    <surfaceTypes>Indoor heated pool, outdoor lido, open water (lake, sea, river)</surfaceTypes>
+    <venues>Aquatic centres, leisure centres, open water events</venues>
+  </courtFieldImage>
+  <healthBenefits>
+    <benefit>Full-body cardiovascular workout with low joint impact</benefit>
+    <benefit>Builds muscle strength and endurance across all major groups</benefit>
+    <benefit>Improves lung capacity and respiratory efficiency</benefit>
+    <benefit>Reduces stress and anxiety (meditative rhythm)</benefit>
+    <benefit>Excellent rehabilitation exercise for injuries</benefit>
+    <benefit>Burns 400-700 calories per hour</benefit>
+  </healthBenefits>
+  <warmupCooldown>
+    <warmup>
+      <stretching>Arm circles, shoulder rotations, hip flexor stretch, ankle rolls (5 min)</stretching>
+      <pregameExercises>200 m easy freestyle warm-up swim at 50% effort</pregameExercises>
+      <duration>10-15 minutes</duration>
+    </warmup>
+    <cooldown>
+      <postgameRecovery>200 m easy backstroke cool-down, static stretching of shoulders and calves poolside</postgameRecovery>
+      <duration>10 minutes</duration>
+    </cooldown>
+  </warmupCooldown>
+  <rulesRegulations>
+    <basicRules>
+      <rule>Swimmers must stay in their assigned lane throughout the race.</rule>
+      <rule>False start results in disqualification (one false start allowed in some formats).</rule>
+      <rule>Freestyle: any stroke allowed; most use front crawl.</rule>
+      <rule>Backstroke: must touch wall on back; back at all times except turns.</rule>
+      <rule>Breaststroke: simultaneous arm pull and frog kick; touch wall with both hands.</rule>
+      <rule>Butterfly: simultaneous arm recovery over water; dolphin kick only.</rule>
+    </basicRules>
+    <numberOfPlayers>Individual or relay teams of 4</numberOfPlayers>
+    <matchTimings>
+      <sprint>50 m freestyle: 20-25 seconds (elite)</sprint>
+      <middle>200 m: approx 1 min 45 sec (elite)</middle>
+      <distance>1500 m: approx 15-16 minutes (elite)</distance>
+    </matchTimings>
+    <breaksIntervals>
+      <standard>Rest between heats: 30 min to 2 hours depending on event</standard>
+    </breaksIntervals>
+    <scoringSystem>
+      <win>Fastest time wins; points awarded by place in multi-event meets</win>
+    </scoringSystem>
+    <howToWin>Touch the wall first in your lane with correct stroke technique</howToWin>
+    <foulsAndPenalties>
+      <penalty>Disqualification (DQ) for false start, stroke violation, or missing touch</penalty>
+      <penalty>Lane infringement: DQ if interfering with another swimmer</penalty>
+    </foulsAndPenalties>
+  </rulesRegulations>
+  <injuryPrevention>
+    <commonInjuries>
+      <injury>Swimmer's shoulder (rotator cuff impingement)</injury>
+      <injury>Breaststroker's knee (medial collateral ligament strain)</injury>
+      <injury>Neck strain (butterfly and freestyle breathing)</injury>
+      <injury>Ear infections (swimmer's ear)</injury>
+      <injury>Lower back pain (butterfly)</injury>
+    </commonInjuries>
+    <preventionMethods>
+      <method>Warm up thoroughly before entering the pool</method>
+      <method>Rotate training between all four strokes to prevent overuse</method>
+      <method>Use earplugs to prevent swimmer's ear</method>
+      <method>Maintain correct technique - poor form causes most injuries</method>
+      <method>Strengthen rotator cuff with resistance band exercises on land</method>
+    </preventionMethods>
+    <diseasesToAvoidPlaying>
+      <condition>Ear infection - worsened by water exposure</condition>
+      <condition>Open wounds or skin infections - risk of contamination</condition>
+      <condition>Severe asthma without medical clearance</condition>
+    </diseasesToAvoidPlaying>
+  </injuryPrevention>
+  <hydrationImportance>
+    <beforeMatch>500 ml water 2 hours before; 250 ml 30 min before</beforeMatch>
+    <duringMatch>150-200 ml every 20 minutes poolside</duringMatch>
+    <afterMatch>500-750 ml water or electrolyte drink immediately after</afterMatch>
+    <warningAvoid>Do not rely on thirst - you sweat in water but don't feel it</warningAvoid>
+    <signsOfDehydration>Dizziness, cramps, fatigue, dark urine post-swim</signsOfDehydration>
+  </hydrationImportance>
+  <nutritionTips>
+    <preGame>Light meal 2-3 hours before: pasta, rice, or bread with protein (chicken, tuna)</preGame>
+    <duringGame>Energy gels or banana between heats for longer sessions</duringGame>
+    <postGame>Recovery shake or chocolate milk within 30 min; full meal within 2 hours</postGame>
+    <daily>High protein diet (1.4-1.7 g/kg body weight); complex carbs for energy</daily>
+  </nutritionTips>
+  <avoidingBurnout>
+    <physicalBurnout>
+      <limit>Max 10-12 sessions per week for elite; 4-6 for recreational</limit>
+      <restDays>One full rest day per week minimum</restDays>
+      <crossTrain>Dryland training (gym, yoga) to balance pool work</crossTrain>
+    </physicalBurnout>
+    <mentalBurnout>
+      <signs>Dreading pool, slower times despite more effort, persistent fatigue</signs>
+      <solution>Reduce volume, swim for fun, change training environment</solution>
+    </mentalBurnout>
+  </avoidingBurnout>
+  <equipment>
+    <item>Swimsuit (competitive: tech suit; training: polyester or chlorine-resistant)</item>
+    <item>Goggles (watertight, UV-protected for outdoor)</item>
+    <item>Swim cap (silicone or latex)</item>
+    <item>Kickboard and pull buoy (training aids)</item>
+    <item>Fins (for kick drills)</item>
+    <item>Resistance bands (dryland training)</item>
+  </equipment>
+  <safetyGear>
+    <item>Goggles - protect eyes from chlorine</item>
+    <item>Swim cap - reduces drag and protects hair</item>
+    <item>Earplugs (optional) - prevent swimmer's ear</item>
+    <item>Nose clip (breaststroke training)</item>
+  </safetyGear>
+  <importantSkills>
+    <coordination>
+      <desc>Synchronising arm pull, kick, and breathing rhythm for each stroke</desc>
+      <drill>Catch-up drill: one arm stays extended until other hand passes it</drill>
+    </coordination>
+    <speedAgility>
+      <desc>Explosive start off blocks and fast flip turns</desc>
+    </speedAgility>
+    <focusReaction>
+      <desc>React instantly to starting signal; maintain focus over long distances</desc>
+    </focusReaction>
+    <xFactors>
+      <strategy>
+        <offensive>Negative split strategy - swim second half faster than first</offensive>
+        <defensive>Pace control in distance events to avoid early burnout</defensive>
+      </strategy>
+      <gameSense>Reading competition and knowing when to surge</gameSense>
+      <decisionMaking>Choosing stroke rate vs distance-per-stroke balance</decisionMaking>
+    </xFactors>
+  </importantSkills>
+  <practiceRoutines>
+    <dailyPlan>
+      <day label="Monday">Technique drills + 2000 m aerobic set</day>
+      <day label="Tuesday">Sprint sets (10 x 50 m) + dryland strength</day>
+      <day label="Wednesday">Distance (1 x 1500 m) + kick drills</day>
+      <day label="Thursday">Race simulation + turns practice</day>
+      <day label="Friday">Mixed stroke session + video analysis</day>
+      <day label="Saturday">Long easy swim (3000 m) + stretching</day>
+      <day label="Sunday">Rest or light yoga</day>
+    </dailyPlan>
+    <drillsForBeginners>
+      <drill name="Kicking with board">Hold kickboard, kick freestyle - develop leg strength</drill>
+      <drill name="Single arm freestyle">Alternate one arm at a time to focus on pull technique</drill>
+      <drill name="Breathing pattern">Practice bilateral breathing every 3 strokes</drill>
+    </drillsForBeginners>
+  </practiceRoutines>
+  <mentalPreparation>
+    <focusingTechniques>
+      <technique name="Race visualisation">Mentally swim the entire race the night before</technique>
+      <technique name="Cue words">Repeat a cue word (e.g., "smooth", "strong") per stroke cycle</technique>
+    </focusingTechniques>
+    <pressureHandling>
+      <tip>Focus on process (stroke mechanics) not outcome (place)</tip>
+      <tip>Use pre-race routine (same warm-up, same music) to calm nerves</tip>
+      <tip>Control breathing on the blocks before the start signal</tip>
+    </pressureHandling>
+    <sportsmanship>
+      <rule>Stay in your lane and don't interfere with other swimmers</rule>
+      <rule>Congratulate competitors after race regardless of result</rule>
+    </sportsmanship>
+    <howToJoinSport>
+      <step>Find a local pool offering adult or youth swimming lessons</step>
+      <step>Learn the four competitive strokes with a qualified coach</step>
+      <step>Join a swimming club affiliated with national federation</step>
+      <step>Register for your first graded time trial or club gala</step>
+      <costEstimate>Lessons $15-30/session; club membership $50-150/year; goggles $15-50</costEstimate>
+    </howToJoinSport>
+    <qualitiesOfGoodPlayer>
+      <quality>Discipline for early morning training</quality>
+      <quality>Technical precision in stroke mechanics</quality>
+      <quality>Mental toughness in pain threshold events</quality>
+      <quality>Competitive drive</quality>
+    </qualitiesOfGoodPlayer>
+  </mentalPreparation>
+  <strategies>
+    <strategy name="Negative split">Swim the second half of the race faster than the first</strategy>
+    <strategy name="Even pace">Maintain consistent speed throughout (best for distance)</strategy>
+    <strategy name="Front runner">Go out fast, build a lead, hold on</strategy>
+    <strategy name="Drafting">Stay close behind a faster swimmer to reduce drag (open water)</strategy>
+  </strategies>
+  <terminologies>
+    <term>Stroke - one complete arm cycle</term>
+    <term>Flip turn - tumble turn at wall for freestyle and backstroke</term>
+    <term>Touch turn - open turn used in breaststroke and butterfly</term>
+    <term>Drag suit - extra resistance suit worn in training</term>
+    <term>DPS - distance per stroke</term>
+    <term>Pace clock - poolside clock showing elapsed time</term>
+    <term>Heat - preliminary round of a swimming race</term>
+    <term>PB / PR - personal best / personal record</term>
+    <term>FINA / World Aquatics - international governing body</term>
+    <term>Taper - reducing training load before a major competition</term>
+    <term>Split - time for a portion of the race (e.g., 50 m split in a 200 m race)</term>
+  </terminologies>
+</swimmingCompleteGuide>
+
+<!-- ===================== TABLE TENNIS ===================== -->
+<tableTennisCompleteGuide>
+  <courtFieldImage>
+    <imageUrl>images/table_tennis.png</imageUrl>
+    <dimensions>
+      <length>2.74 m (9 ft)</length>
+      <width>1.525 m (5 ft)</width>
+      <height>76 cm (2.5 ft) above floor</height>
+    </dimensions>
+    <surfaceTypes>Dark green or blue painted wood or fibreglass table; net height 15.25 cm</surfaceTypes>
+    <venues>Sports halls, clubs, community centres, basements</venues>
+  </courtFieldImage>
+  <healthBenefits>
+    <benefit>Improves hand-eye coordination and reflexes dramatically</benefit>
+    <benefit>Burns 270-400 calories per hour</benefit>
+    <benefit>Enhances cognitive function and tactical thinking</benefit>
+    <benefit>Low-impact aerobic exercise suitable for all ages</benefit>
+    <benefit>Improves balance and core stability</benefit>
+  </healthBenefits>
+  <warmupCooldown>
+    <warmup>
+      <stretching>Wrist rotations, shoulder circles, light jog or footwork shuffle (5 min)</stretching>
+      <pregameExercises>10 min rally with partner focusing on consistency; multiball warm-up</pregameExercises>
+      <duration>15 minutes</duration>
+    </warmup>
+    <cooldown>
+      <postgameRecovery>5 min easy rallying, forearm and wrist stretches, light shoulder stretch</postgameRecovery>
+      <duration>5-10 minutes</duration>
+    </cooldown>
+  </warmupCooldown>
+  <rulesRegulations>
+    <basicRules>
+      <rule>Games are played to 11 points; win by 2 clear points.</rule>
+      <rule>Best of 5 or 7 games in most competitions.</rule>
+      <rule>Serve must be behind the end line, ball tossed 16 cm, struck to bounce on server's side then opponent's.</rule>
+      <rule>Service alternates every 2 points (except deuce at 10-10, then every point).</rule>
+      <rule>Ball must clear the net and land on opponent's half; edge of table counts.</rule>
+      <rule>A "let" is called if the ball clips the net on service; re-serve.</rule>
+    </basicRules>
+    <numberOfPlayers>2 (singles) or 4 (doubles)</numberOfPlayers>
+    <matchTimings>
+      <singles>Best of 7 games: approx 20-45 minutes</singles>
+      <doubles>Best of 5 games: approx 15-30 minutes</doubles>
+    </matchTimings>
+    <breaksIntervals>
+      <standard>1-2 min break between games; towel break every 6 points in some events</standard>
+    </breaksIntervals>
+    <scoringSystem>
+      <win>Win a game by reaching 11 points first (by 2 clear)</win>
+    </scoringSystem>
+    <howToWin>Win the majority of games in the match (best of 5 or 7)</howToWin>
+    <foulsAndPenalties>
+      <penalty>Point lost for illegal serve (not tossing ball 16 cm, hiding contact)</penalty>
+      <penalty>Point lost for hitting ball before it bounces on your side</penalty>
+      <penalty>Obstruction: touching table or moving it results in point loss</penalty>
+    </foulsAndPenalties>
+  </rulesRegulations>
+  <injuryPrevention>
+    <commonInjuries>
+      <injury>Elbow tendinitis (tennis elbow from topspin strokes)</injury>
+      <injury>Wrist sprain or strain</injury>
+      <injury>Lower back pain from twisting</injury>
+      <injury>Knee strain from rapid footwork</injury>
+    </commonInjuries>
+    <preventionMethods>
+      <method>Warm up wrists and forearms thoroughly before play</method>
+      <method>Use correct grip to reduce elbow stress (shakehand vs penhold)</method>
+      <method>Strengthen core to protect lower back during rotation</method>
+      <method>Wear quality non-slip shoes for fast footwork</method>
+    </preventionMethods>
+    <diseasesToAvoidPlaying>
+      <condition>Tennis elbow flare-up - rest and ice before returning</condition>
+      <condition>Wrist fracture or sprain - requires healing time</condition>
+    </diseasesToAvoidPlaying>
+  </injuryPrevention>
+  <hydrationImportance>
+    <beforeMatch>300 ml water 30-60 min before play</beforeMatch>
+    <duringMatch>Sip between games; 150 ml every 15-20 min of play</duringMatch>
+    <afterMatch>400 ml water or sports drink after session</afterMatch>
+    <warningAvoid>Sugary drinks cause energy spikes and crashes mid-match</warningAvoid>
+    <signsOfDehydration>Muscle cramps, slowed reaction, loss of focus</signsOfDehydration>
+  </hydrationImportance>
+  <nutritionTips>
+    <preGame>Light snack 1 hour before: banana, toast with nut butter</preGame>
+    <duringGame>Water; glucose tablets or small fruit if match runs long</duringGame>
+    <postGame>Protein + carbs: yogurt with fruit, or chicken and rice</postGame>
+    <daily>Balanced diet with lean protein, complex carbs, and vegetables</daily>
+  </nutritionTips>
+  <avoidingBurnout>
+    <physicalBurnout>
+      <limit>Max 2-hour sessions; avoid daily high-intensity sessions</limit>
+      <restDays>2 rest days per week</restDays>
+      <crossTrain>Footwork ladder drills, running, and core exercises off-table</crossTrain>
+    </physicalBurnout>
+    <mentalBurnout>
+      <signs>Loss of motivation, frustration at plateau, skipping practice</signs>
+      <solution>Play social games, try doubles, take a week off</solution>
+    </mentalBurnout>
+  </avoidingBurnout>
+  <equipment>
+    <item>Table tennis bat/paddle (ITTF approved rubber on both sides)</item>
+    <item>Table tennis balls (3-star ITTF approved, 40 mm plastic)</item>
+    <item>Table (regulation size, indoor or outdoor)</item>
+    <item>Non-marking athletic shoes with good lateral support</item>
+    <item>Comfortable sportswear allowing free arm movement</item>
+  </equipment>
+  <safetyGear>
+    <item>Proper footwear - prevents ankle rolls on fast lateral movement</item>
+    <item>Wrist brace - optional for players with existing wrist issues</item>
+  </safetyGear>
+  <importantSkills>
+    <coordination>
+      <desc>Hand-eye coordination to read spin and place ball precisely</desc>
+      <drill>Multi-ball training: coach feeds 100 balls rapidly to one spot</drill>
+    </coordination>
+    <speedAgility>
+      <desc>Explosive footwork to get in position for every shot</desc>
+    </speedAgility>
+    <focusReaction>
+      <desc>React to ball in under 0.3 seconds at elite level</desc>
+    </focusReaction>
+    <xFactors>
+      <strategy>
+        <offensive>Aggressive topspin loop to force weak returns</offensive>
+        <defensive>Chop defense - heavy backspin to neutralise attacks</defensive>
+      </strategy>
+      <gameSense>Read opponent's serve and anticipate placement</gameSense>
+      <decisionMaking>Know when to attack vs play safe</decisionMaking>
+    </xFactors>
+  </importantSkills>
+  <practiceRoutines>
+    <dailyPlan>
+      <day label="Monday">Footwork drills + forehand loop practice (1 hr)</day>
+      <day label="Tuesday">Serve and receive training (1 hr)</day>
+      <day label="Wednesday">Match play + video analysis</day>
+      <day label="Thursday">Backhand and transition drills</day>
+      <day label="Friday">Tournament simulation (best of 7 sets)</day>
+      <day label="Saturday">Multiball training + physical conditioning</day>
+      <day label="Sunday">Rest or light social play</day>
+    </dailyPlan>
+    <drillsForBeginners>
+      <drill name="Forehand drive">Hit 50 consecutive forehands cross-court with partner</drill>
+      <drill name="Bounce and catch">Bounce ball on bat 50 times each side without dropping</drill>
+      <drill name="Serve practice">Practice basic pendulum serve 20 times per session</drill>
+    </drillsForBeginners>
+  </practiceRoutines>
+  <mentalPreparation>
+    <focusingTechniques>
+      <technique name="Point reset">Take a breath and reset between every point</technique>
+      <technique name="Serve routine">Same physical routine before every serve to stay calm</technique>
+    </focusingTechniques>
+    <pressureHandling>
+      <tip>At deuce, focus on serve placement not outcome</tip>
+      <tip>Slow down between points when nervous to regain control</tip>
+    </pressureHandling>
+    <sportsmanship>
+      <rule>Acknowledge good shots by opponent</rule>
+      <rule>Don't dispute edges - call your own faults honestly</rule>
+    </sportsmanship>
+    <howToJoinSport>
+      <step>Find a local table tennis club or leisure centre with tables</step>
+      <step>Buy a beginner bat ($20-40) and practice basics</step>
+      <step>Join a club and enter league play</step>
+      <step>Register with national association for graded tournaments</step>
+      <costEstimate>Beginner bat $20-40; club membership $30-80/year; balls $5-15/pack</costEstimate>
+    </howToJoinSport>
+    <qualitiesOfGoodPlayer>
+      <quality>Quick reflexes and sharp focus</quality>
+      <quality>Tactical intelligence to read opponent</quality>
+      <quality>Consistent footwork discipline</quality>
+      <quality>Variety of spins and serves</quality>
+    </qualitiesOfGoodPlayer>
+  </mentalPreparation>
+  <strategies>
+    <strategy name="Topspin loop">Heavy topspin to force opponent into defensive position</strategy>
+    <strategy name="Serve variation">Mix of fast, short, and heavy spin serves to disrupt rhythm</strategy>
+    <strategy name="Smash and run">Attack short ball, follow up with smash</strategy>
+    <strategy name="Chop defense">Heavy backspin returns to force errors from aggressive opponent</strategy>
+  </strategies>
+  <terminologies>
+    <term>Topspin - forward spin making ball dip and kick up</term>
+    <term>Backspin - reverse spin making ball skid low</term>
+    <term>Loop - heavy topspin stroke brushed upward</term>
+    <term>Smash - flat fast attacking shot</term>
+    <term>Chop - defensive stroke with heavy backspin</term>
+    <term>Let - serve replayed when ball clips the net</term>
+    <term>Deuce - score tied at 10-10</term>
+    <term>ITTF - International Table Tennis Federation</term>
+    <term>Penhold grip - Chinese/Japanese style grip</term>
+    <term>Shakehand grip - most common European grip</term>
+  </terminologies>
+</tableTennisCompleteGuide>
+
+<!-- ===================== BADMINTON ===================== -->
+<badmintonCompleteGuide>
+  <courtFieldImage>
+    <imageUrl>images/badminton_court.png</imageUrl>
+    <dimensions>
+      <length>13.4 m</length>
+      <width>6.1 m (doubles) / 5.18 m (singles)</width>
+      <netHeight>1.55 m at sides / 1.524 m at centre</netHeight>
+    </dimensions>
+    <surfaceTypes>Wooden sprung floor, synthetic mat, or outdoor concrete/asphalt</surfaceTypes>
+    <venues>Sports halls, recreation centres, outdoor courts</venues>
+  </courtFieldImage>
+  <healthBenefits>
+    <benefit>One of the best calorie-burning sports (450-550 cal/hr)</benefit>
+    <benefit>Improves agility, reflexes, and hand-eye coordination</benefit>
+    <benefit>Excellent cardiovascular workout</benefit>
+    <benefit>Strengthens core, legs, and upper body</benefit>
+    <benefit>Improves mental alertness and concentration</benefit>
+  </healthBenefits>
+  <warmupCooldown>
+    <warmup>
+      <stretching>Lunges, hamstring stretch, shoulder rotations, wrist and ankle circles (5 min)</stretching>
+      <pregameExercises>Footwork shadow practice, easy net shots and clears (10 min)</pregameExercises>
+      <duration>15 minutes</duration>
+    </warmup>
+    <cooldown>
+      <postgameRecovery>Easy walking, static stretches for quads, calves, and shoulders</postgameRecovery>
+      <duration>10 minutes</duration>
+    </cooldown>
+  </warmupCooldown>
+  <rulesRegulations>
+    <basicRules>
+      <rule>Games are played to 21 points; must win by 2 clear points (cap at 30-29).</rule>
+      <rule>Match is best of 3 games.</rule>
+      <rule>Rally scoring: a point is scored on every rally regardless of who served.</rule>
+      <rule>Service must be below the server's waist; shuttlecock hit diagonally to opposite service box.</rule>
+      <rule>Shuttlecock landing on the line is IN.</rule>
+      <rule>Players switch ends at start of third game and when first player reaches 11.</rule>
+    </basicRules>
+    <numberOfPlayers>2 (singles) or 4 (doubles/mixed doubles)</numberOfPlayers>
+    <matchTimings>
+      <game>Approx 15-25 min per game</game>
+      <match>Approx 40-90 minutes for a full match</match>
+    </matchTimings>
+    <breaksIntervals>
+      <standard>90-second break at 11 points in each game; 2-minute break between games</standard>
+    </breaksIntervals>
+    <scoringSystem>
+      <win>First to 21 points (by 2); at 20-20, first to lead by 2; cap at 30-29</win>
+    </scoringSystem>
+    <howToWin>Win 2 out of 3 games</howToWin>
+    <foulsAndPenalties>
+      <penalty>Fault: illegal serve, hitting shuttle out, shuttle touching body</penalty>
+      <penalty>Let: shuttle caught in net, external disturbance - rally replayed</penalty>
+      <penalty>Service fault: racket above waist, feet off ground on serve</penalty>
+    </foulsAndPenalties>
+  </rulesRegulations>
+  <injuryPrevention>
+    <commonInjuries>
+      <injury>Ankle sprain (most common - landing from jumps)</injury>
+      <injury>Rotator cuff injury (overhead smashing)</injury>
+      <injury>Patellar tendinitis (jumper's knee)</injury>
+      <injury>Tennis elbow from grip tension</injury>
+      <injury>Lower back strain</injury>
+    </commonInjuries>
+    <preventionMethods>
+      <method>Always wear proper non-slip badminton shoes</method>
+      <method>Strengthen ankles with balance exercises</method>
+      <method>Land softly from jumps with bent knees</method>
+      <method>Don't over-grip the racket</method>
+      <method>Strengthen shoulder rotator cuff with resistance bands</method>
+    </preventionMethods>
+    <diseasesToAvoidPlaying>
+      <condition>Ankle sprain - needs full healing before return</condition>
+      <condition>Knee tendinitis flare-up - rest and ice</condition>
+    </diseasesToAvoidPlaying>
+  </injuryPrevention>
+  <hydrationImportance>
+    <beforeMatch>400 ml water 1 hour before</beforeMatch>
+    <duringMatch>150-200 ml every 15-20 minutes; use breaks between games</duringMatch>
+    <afterMatch>500 ml water or electrolyte drink after match</afterMatch>
+    <warningAvoid>Avoid energy drinks - cause irregular heartbeat during high-intensity play</warningAvoid>
+    <signsOfDehydration>Muscle cramps (common in calves), fatigue, reduced reaction time</signsOfDehydration>
+  </hydrationImportance>
+  <nutritionTips>
+    <preGame>Pasta or rice 2-3 hours before; banana 30 min before for quick energy</preGame>
+    <duringGame>Water; isotonic sports drink between games for matches over 1 hour</duringGame>
+    <postGame>Protein shake or chicken sandwich within 30 min for recovery</postGame>
+    <daily>Carbohydrate-rich diet; lean protein; omega-3 for joint health</daily>
+  </nutritionTips>
+  <avoidingBurnout>
+    <physicalBurnout>
+      <limit>No more than 2-hour sessions; 5-6 sessions per week maximum</limit>
+      <restDays>1-2 complete rest days per week</restDays>
+      <crossTrain>Running for stamina, gym for strength, yoga for flexibility</crossTrain>
+    </physicalBurnout>
+    <mentalBurnout>
+      <signs>Frustration on court, dreading matches, persistent fatigue</signs>
+      <solution>Play social doubles, take a week off, set small achievable goals</solution>
+    </mentalBurnout>
+  </avoidingBurnout>
+  <equipment>
+    <item>Badminton racket (lightweight: 80-100 g; graphite for competitive)</item>
+    <item>Shuttlecock (feather for competition; nylon for recreational)</item>
+    <item>Badminton shoes (non-marking, lateral ankle support)</item>
+    <item>Sport socks (cushioned, ankle length)</item>
+    <item>Grip tape or overgrip for sweat absorption</item>
+  </equipment>
+  <safetyGear>
+    <item>Ankle supports (if history of sprains)</item>
+    <item>Knee brace (for players with knee issues)</item>
+    <item>Wristband (sweat absorption)</item>
+  </safetyGear>
+  <importantSkills>
+    <coordination>
+      <desc>Hand-eye coordination for precise shuttle placement and reading opponent's shot</desc>
+      <drill>Solo feeding practice against wall; toss shuttle and hit at specific target</drill>
+    </coordination>
+    <speedAgility>
+      <desc>Explosive footwork to cover all six corners of the court</desc>
+    </speedAgility>
+    <focusReaction>
+      <desc>React to shuttle speed (can exceed 400 km/h in smash)</desc>
+    </focusReaction>
+    <xFactors>
+      <strategy>
+        <offensive>Powerful jump smash to back corners</offensive>
+        <defensive>Tight net play and lift to force shuttle above opponent's head</defensive>
+      </strategy>
+      <gameSense>Move opponent around court to create space and fatigue them</gameSense>
+      <decisionMaking>Choose drop shot vs smash vs clear based on shuttle height</decisionMaking>
+    </xFactors>
+  </importantSkills>
+  <practiceRoutines>
+    <dailyPlan>
+      <day label="Monday">Footwork drills (6-corner) + net shots (1 hr)</day>
+      <day label="Tuesday">Smash and defence (1 hr) + fitness run</day>
+      <day label="Wednesday">Match play + video review</day>
+      <day label="Thursday">Serve and return practice (30 min) + clears and drops</day>
+      <day label="Friday">Simulated match conditions (3 games)</day>
+      <day label="Saturday">Physical conditioning + flexibility</day>
+      <day label="Sunday">Rest</day>
+    </dailyPlan>
+    <drillsForBeginners>
+      <drill name="Clear drill">Hit full-length clears from baseline to baseline 20 times</drill>
+      <drill name="Net drop">Practice soft net drops from mid-court 15 times each side</drill>
+      <drill name="Footwork shadow">Shadow all 6 corners without shuttle, 3 sets of 1 minute</drill>
+    </drillsForBeginners>
+  </practiceRoutines>
+  <mentalPreparation>
+    <focusingTechniques>
+      <technique name="Between-point routine">Bounce on toes, tap racket, take breath before each point</technique>
+      <technique name="Target focus">Pick specific court zone to aim for on each shot</technique>
+    </focusingTechniques>
+    <pressureHandling>
+      <tip>At 20-20, focus on serve placement and first-shot attack</tip>
+      <tip>Slow down service motion when nervous to increase accuracy</tip>
+    </pressureHandling>
+    <sportsmanship>
+      <rule>Acknowledge opponent's good shots</rule>
+      <rule>Don't argue line calls; play a let if genuinely unsure</rule>
+    </sportsmanship>
+    <howToJoinSport>
+      <step>Find a local badminton club or leisure centre court</step>
+      <step>Buy a beginner racket ($20-50) and feather or nylon shuttles</step>
+      <step>Take beginner group coaching sessions</step>
+      <step>Enter local club ladder or league matches</step>
+      <costEstimate>Racket $20-150; shuttles $15-40/tube; court hire $5-15/hr; club $30-80/year</costEstimate>
+    </howToJoinSport>
+    <qualitiesOfGoodPlayer>
+      <quality>Explosive speed and agility</quality>
+      <quality>Deceptive stroke play</quality>
+      <quality>Tactical court awareness</quality>
+      <quality>Mental composure under pressure</quality>
+    </qualitiesOfGoodPlayer>
+  </mentalPreparation>
+  <strategies>
+    <strategy name="Attacking formation">Both players attack from rear and mid-court alternately</strategy>
+    <strategy name="Defending formation">Side-by-side when under attack; one covers net, one covers rear</strategy>
+    <strategy name="Smash and net">Jump smash, partner covers net for kill shot</strategy>
+    <strategy name="Baseline control">Keep opponent pinned at back with deep clears</strategy>
+  </strategies>
+  <terminologies>
+    <term>Shuttle / shuttlecock - the feathered or plastic projectile</term>
+    <term>Smash - powerful downward attacking shot</term>
+    <term>Clear - high deep shot to opponent's baseline</term>
+    <term>Drop - soft shot falling close to net</term>
+    <term>Drive - flat fast shot played horizontally</term>
+    <term>Net kill - fast put-away shot from above net tape</term>
+    <term>Let - rally replayed due to interference or disturbance</term>
+    <term>Fault - rule violation costing a point</term>
+    <term>BWF - Badminton World Federation (governing body)</term>
+    <term>Love - zero (score of zero)</term>
+  </terminologies>
+</badmintonCompleteGuide>
+
+<!-- ===================== BASKETBALL ===================== -->
+<basketballCompleteGuide>
+  <courtFieldImage>
+    <imageUrl>images/basketball_court.png</imageUrl>
+    <dimensions>
+      <length>28 m (NBA: 28.65 m)</length>
+      <width>15 m (NBA: 15.24 m)</width>
+      <hoopHeight>3.05 m (10 feet)</hoopHeight>
+    </dimensions>
+    <surfaceTypes>Hardwood (indoor); asphalt or rubber (outdoor)</surfaceTypes>
+    <venues>Indoor arenas, gymnasiums, outdoor courts</venues>
+  </courtFieldImage>
+  <healthBenefits>
+    <benefit>Burns 600-900 calories per hour</benefit>
+    <benefit>Builds explosive leg power and upper body strength</benefit>
+    <benefit>Improves coordination, agility, and spatial awareness</benefit>
+    <benefit>Develops teamwork and communication skills</benefit>
+    <benefit>Cardiovascular endurance from continuous running</benefit>
+  </healthBenefits>
+  <warmupCooldown>
+    <warmup>
+      <stretching>Dynamic leg swings, hip circles, shoulder arm swings, calf raises (5 min)</stretching>
+      <pregameExercises>Layup lines, free throw shooting, defensive slides (10 min)</pregameExercises>
+      <duration>15-20 minutes</duration>
+    </warmup>
+    <cooldown>
+      <postgameRecovery>Light shooting, static stretching of quads, hamstrings, and hip flexors</postgameRecovery>
+      <duration>10 minutes</duration>
+    </cooldown>
+  </warmupCooldown>
+  <rulesRegulations>
+    <basicRules>
+      <rule>5 players per side on court; unlimited substitutions.</rule>
+      <rule>Ball advanced by dribbling; no carrying or double-dribble.</rule>
+      <rule>Field goal: 2 points inside arc, 3 points outside arc, 1 point free throw.</rule>
+      <rule>Shot clock: 24 seconds (NBA) / 30 seconds (FIBA) to attempt a shot.</rule>
+      <rule>Backcourt violation: cannot return ball to own half once past half-court.</rule>
+      <rule>Player fouls out after 5 fouls (FIBA) or 6 fouls (NBA).</rule>
+    </basicRules>
+    <numberOfPlayers>5 per team (10 total); rosters of 12-15</numberOfPlayers>
+    <matchTimings>
+      <quarters>4 x 10-minute quarters (FIBA) or 4 x 12 min (NBA)</quarters>
+      <overtime>5-minute periods until winner decided</overtime>
+    </matchTimings>
+    <breaksIntervals>
+      <standard>2-minute break between quarters; 15-minute halftime; timeouts 30 sec or 60 sec</standard>
+    </breaksIntervals>
+    <scoringSystem>
+      <win>Team with most points at end of regulation or overtime wins</win>
+    </scoringSystem>
+    <howToWin>Score more points than the opponent</howToWin>
+    <foulsAndPenalties>
+      <penalty>Personal foul: contact on shooter gives 2 or 3 free throws</penalty>
+      <penalty>Technical foul: unsportsmanlike conduct gives opponent 1 free throw + possession</penalty>
+      <penalty>Flagrant foul: severe contact - ejection possible</penalty>
+    </foulsAndPenalties>
+  </rulesRegulations>
+  <injuryPrevention>
+    <commonInjuries>
+      <injury>Ankle sprain (most common)</injury>
+      <injury>ACL/MCL knee ligament tear</injury>
+      <injury>Finger jams and fractures</injury>
+      <injury>Shin splints from running on hard floors</injury>
+      <injury>Concussion from collisions</injury>
+    </commonInjuries>
+    <preventionMethods>
+      <method>Wear ankle braces or tape ankles preventively</method>
+      <method>Land with bent knees to absorb impact</method>
+      <method>Strengthen VMO (quad muscle) for knee stability</method>
+      <method>Wear proper basketball shoes with ankle support</method>
+      <method>Use mouthguard to protect teeth in physical play</method>
+    </preventionMethods>
+    <diseasesToAvoidPlaying>
+      <condition>Heart conditions - intense sprinting can trigger cardiac events</condition>
+      <condition>Concussion - must pass return-to-play protocol</condition>
+    </diseasesToAvoidPlaying>
+  </injuryPrevention>
+  <hydrationImportance>
+    <beforeMatch>500 ml water 2 hours before; 250 ml 30 min before</beforeMatch>
+    <duringMatch>150-200 ml every timeout or quarter break</duringMatch>
+    <afterMatch>750 ml water or electrolyte drink; continue drinking throughout recovery</afterMatch>
+    <warningAvoid>Avoid carbonated drinks before play - causes bloating and cramps</warningAvoid>
+    <signsOfDehydration>Cramps, dizziness, reduced jump height, loss of concentration</signsOfDehydration>
+  </hydrationImportance>
+  <nutritionTips>
+    <preGame>Pasta or rice with chicken 3 hours before; banana or energy bar 1 hour before</preGame>
+    <duringGame>Orange slices or banana at halftime; sports drink during timeouts</duringGame>
+    <postGame>Recovery meal within 30 min: protein shake, then full meal within 2 hours</postGame>
+    <daily>High carbohydrate and protein diet; 3-5 g carbs per kg body weight on game days</daily>
+  </nutritionTips>
+  <avoidingBurnout>
+    <physicalBurnout>
+      <limit>Max 90-min practice sessions; 5-6 days per week</limit>
+      <restDays>1-2 full rest days per week</restDays>
+      <crossTrain>Swimming, cycling, or yoga for active recovery</crossTrain>
+    </physicalBurnout>
+    <mentalBurnout>
+      <signs>Loss of motivation, poor on-court communication, declining enjoyment</signs>
+      <solution>Set individual and team goals, vary training drills, watch inspiring games</solution>
+    </mentalBurnout>
+  </avoidingBurnout>
+  <equipment>
+    <item>Basketball (size 7 men / size 6 women / size 5 youth - FIBA standard)</item>
+    <item>Basketball shoes (ankle support, cushioning)</item>
+    <item>Shorts and jersey (breathable fabric)</item>
+    <item>Mouthguard (recommended)</item>
+    <item>Ankle brace (preventive)</item>
+  </equipment>
+  <safetyGear>
+    <item>Mouthguard</item>
+    <item>Ankle brace</item>
+    <item>Knee pads (for players prone to floor burns)</item>
+    <item>Compression sleeves</item>
+  </safetyGear>
+  <importantSkills>
+    <coordination>
+      <desc>Dribbling while scanning court, passing accurately under pressure</desc>
+      <drill>Dribble two balls simultaneously for 2 minutes without looking at hands</drill>
+    </coordination>
+    <speedAgility>
+      <desc>First-step explosiveness, lateral quickness, and sprint endurance</desc>
+    </speedAgility>
+    <focusReaction>
+      <desc>Read defender movements, anticipate passing lanes, react to shot clock</desc>
+    </focusReaction>
+    <xFactors>
+      <strategy>
+        <offensive>Pick and roll, drive and kick, transition fast break</offensive>
+        <defensive>Switching defence, zone trap, help-side positioning</defensive>
+      </strategy>
+      <gameSense>Know when to attack, when to pass, when to hold the ball</gameSense>
+      <decisionMaking>Choose shoot, pass, or drive in under 1 second</decisionMaking>
+    </xFactors>
+  </importantSkills>
+  <practiceRoutines>
+    <dailyPlan>
+      <day label="Monday">Ball handling drills + shooting (1 hr) + fitness</day>
+      <day label="Tuesday">Defensive slides + team scrimmage (1.5 hr)</day>
+      <day label="Wednesday">Film study + free throw practice (30 min)</day>
+      <day label="Thursday">Pick and roll plays + transition drills</day>
+      <day label="Friday">Full team practice + strength training</day>
+      <day label="Saturday">Game or scrimmage</day>
+      <day label="Sunday">Rest or light shooting</day>
+    </dailyPlan>
+    <drillsForBeginners>
+      <drill name="Mikan drill">Alternating layups under the basket (left and right)</drill>
+      <drill name="Chair dribbling">Dribble around chairs in zigzag pattern both hands</drill>
+      <drill name="Spot shooting">Shoot 10 shots from 5 spots around the key</drill>
+    </drillsForBeginners>
+  </practiceRoutines>
+  <mentalPreparation>
+    <focusingTechniques>
+      <technique name="Free throw routine">Same bounce-routine-shot sequence every free throw</technique>
+      <technique name="Zone focus">Play one possession at a time; forget previous mistakes</technique>
+    </focusingTechniques>
+    <pressureHandling>
+      <tip>In clutch moments, slow down and trust your training</tip>
+      <tip>Communicate with teammates to reduce individual pressure</tip>
+    </pressureHandling>
+    <sportsmanship>
+      <rule>Help opponents up after falls</rule>
+      <rule>Accept referee decisions without argument</rule>
+      <rule>Celebrate team success, not individual glory</rule>
+    </sportsmanship>
+    <howToJoinSport>
+      <step>Find a local YMCA, school, or recreational league</step>
+      <step>Buy a good basketball and practice fundamentals daily</step>
+      <step>Join open gym sessions to meet players and teams</step>
+      <step>Register for a local recreational league or tryout for school team</step>
+      <costEstimate>Basketball $20-150; shoes $50-200; league registration $50-150/season</costEstimate>
+    </howToJoinSport>
+    <qualitiesOfGoodPlayer>
+      <quality>Basketball IQ - understanding of the game</quality>
+      <quality>Unselfish team-first attitude</quality>
+      <quality>Consistency under pressure</quality>
+      <quality>Physical conditioning</quality>
+    </qualitiesOfGoodPlayer>
+  </mentalPreparation>
+  <strategies>
+    <strategy name="Pick and Roll">Screen for ball handler, roll to basket for pass</strategy>
+    <strategy name="Zone Defense">Players guard areas not individual opponents</strategy>
+    <strategy name="Fast Break">Push ball up court quickly before defense can set</strategy>
+    <strategy name="Triangle Offense">Spacing and movement to create open shots</strategy>
+  </strategies>
+  <terminologies>
+    <term>Dribble - bounce ball with one hand while moving</term>
+    <term>Layup - shot close to basket off the backboard</term>
+    <term>Three-pointer - shot scored from beyond the arc</term>
+    <term>Pick and roll - screen play for ball handler</term>
+    <term>Fast break - quick offensive push after turnover</term>
+    <term>Turnover - losing possession without a shot</term>
+    <term>Rebound - recovering ball after missed shot</term>
+    <term>Assist - pass leading directly to a score</term>
+    <term>Foul - illegal contact with opponent</term>
+    <term>Free throw - uncontested shot from foul line</term>
+    <term>FIBA - International Basketball Federation</term>
+    <term>NBA - National Basketball Association</term>
+  </terminologies>
+</basketballCompleteGuide>
+
+<!-- ===================== GYMNASTICS ===================== -->
+<gymnasticsCompleteGuide>
+  <courtFieldImage>
+    <imageUrl>images/gymnastics_hall.png</imageUrl>
+    <dimensions>
+      <floorArea>12 m x 12 m (floor exercise)</floorArea>
+      <vaultHeight>125 cm (men) / 125 cm (women)</vaultHeight>
+      <balanceBeamHeight>125 cm above floor; 5 m long, 10 cm wide</balanceBeamHeight>
+    </dimensions>
+    <surfaceTypes>Spring floor, foam mats, padded landing areas, leather-covered apparatus</surfaceTypes>
+    <venues>Gymnastics halls, sports complexes</venues>
+  </courtFieldImage>
+  <healthBenefits>
+    <benefit>Exceptional body strength relative to body weight</benefit>
+    <benefit>Extraordinary flexibility and range of motion</benefit>
+    <benefit>Superior body coordination and spatial awareness</benefit>
+    <benefit>Builds discipline and mental toughness from early age</benefit>
+    <benefit>Improves posture and core stability</benefit>
+  </healthBenefits>
+  <warmupCooldown>
+    <warmup>
+      <stretching>Full-body dynamic stretch: leg swings, trunk rotations, wrist/shoulder circles (10 min)</stretching>
+      <pregameExercises>Cartwheel and handstand practise, run-through of floor routine at 50% intensity</pregameExercises>
+      <duration>20-30 minutes</duration>
+    </warmup>
+    <cooldown>
+      <postgameRecovery>Full-body passive stretching: splits, shoulder stretch, back arch; foam rolling</postgameRecovery>
+      <duration>15 minutes</duration>
+    </cooldown>
+  </warmupCooldown>
+  <rulesRegulations>
+    <basicRules>
+      <rule>Athletes scored by a panel of judges on Difficulty (D) and Execution (E) scores.</rule>
+      <rule>Final score = D score + E score (max E is 10.0; deductions for errors).</rule>
+      <rule>Deductions: 0.1 (small error), 0.3 (medium), 0.5 (fall from apparatus), 1.0 (fall to floor).</rule>
+      <rule>Time limits apply to floor exercise routines (70-90 seconds for women).</rule>
+      <rule>Stepping out of bounds on floor costs 0.1 per foot outside line.</rule>
+    </basicRules>
+    <numberOfPlayers>Individual or team of 5 (3 scores count)</numberOfPlayers>
+    <matchTimings>
+      <routine>Each event routine 30-90 seconds (depends on apparatus)</routine>
+      <competition>Full competition session: 4-6 hours</competition>
+    </matchTimings>
+    <breaksIntervals>
+      <standard>Rest between rotations: 15-30 min while other athletes compete</standard>
+    </breaksIntervals>
+    <scoringSystem>
+      <win>Highest combined D + E score wins; team totals summed across events</win>
+    </scoringSystem>
+    <howToWin>Score the highest combined total across all apparatus</howToWin>
+    <foulsAndPenalties>
+      <penalty>Fall from apparatus: 1.0 deduction</penalty>
+      <penalty>Boundary violation: 0.1 deduction per foot</penalty>
+      <penalty>Time violation: 0.1-0.3 deduction</penalty>
+    </foulsAndPenalties>
+  </rulesRegulations>
+  <injuryPrevention>
+    <commonInjuries>
+      <injury>Wrist sprain and growth plate injuries (young gymnasts)</injury>
+      <injury>Ankle sprains from landings</injury>
+      <injury>Shoulder impingement (bars and rings)</injury>
+      <injury>Lower back stress fractures (spondylolysis)</injury>
+      <injury>ACL tears from vault landings</injury>
+    </commonInjuries>
+    <preventionMethods>
+      <method>Always use crash mats and spotters for new skills</method>
+      <method>Progress skills gradually - master lower difficulty before advancing</method>
+      <method>Strengthen wrists with specific conditioning exercises</method>
+      <method>Use proper landing technique: absorb with bent knees, soft feet</method>
+      <method>Take growth plate pain seriously in young athletes</method>
+    </preventionMethods>
+    <diseasesToAvoidPlaying>
+      <condition>Wrist growth plate injury - can cause permanent damage if ignored</condition>
+      <condition>Spondylolysis flare-up - requires physiotherapy and rest</condition>
+    </diseasesToAvoidPlaying>
+  </injuryPrevention>
+  <hydrationImportance>
+    <beforeMatch>500 ml water 2 hours before; light snack if needed</beforeMatch>
+    <duringMatch>100-150 ml between each event rotation</duringMatch>
+    <afterMatch>500 ml water or electrolyte drink; full meal within 1-2 hours</afterMatch>
+    <warningAvoid>Heavy meals before competition cause nausea during inversions and rotation skills</warningAvoid>
+    <signsOfDehydration>Muscle cramps, dizziness, nausea, reduced focus</signsOfDehydration>
+  </hydrationImportance>
+  <nutritionTips>
+    <preGame>Light complex carbs 2-3 hours before: oatmeal, toast with nut butter</preGame>
+    <duringGame>Banana or energy gel between events</duringGame>
+    <postGame>Protein and carbs within 30 min; chocolate milk is ideal recovery drink</postGame>
+    <daily>Adequate calories to support training load; do not under-fuel (RED-S risk)</daily>
+  </nutritionTips>
+  <avoidingBurnout>
+    <physicalBurnout>
+      <limit>Max 25-30 hours training per week for elite; 10-15 for club</limit>
+      <restDays>1 full rest day minimum; 1-2 active recovery days</restDays>
+      <crossTrain>Swimming, dance, or Pilates for active recovery</crossTrain>
+    </physicalBurnout>
+    <mentalBurnout>
+      <signs>Fear of skills previously mastered, perfectionism causing anxiety, dreading gym</signs>
+      <solution>Mental performance coach, reduce competitive pressure, rebuild confidence on easier skills</solution>
+    </mentalBurnout>
+  </avoidingBurnout>
+  <equipment>
+    <item>Gymnastics leotard or shorts and vest</item>
+    <item>Hand grips (for bars)</item>
+    <item>Gymnastics shoes or bare feet</item>
+    <item>Chalk (magnesium carbonate) for grip</item>
+    <item>Spring floor, vault, parallel bars, uneven bars, beam, rings, pommel horse</item>
+  </equipment>
+  <safetyGear>
+    <item>Crash mats (8-inch and 12-inch)</item>
+    <item>Spotting belt (for aerial skills in training)</item>
+    <item>Wrist braces (for gymnasts with wrist issues)</item>
+    <item>Ankle supports</item>
+  </safetyGear>
+  <importantSkills>
+    <coordination>
+      <desc>Full-body kinesthetic awareness - knowing your body position in space</desc>
+      <drill>Handstand holds (30-60 sec against wall); improve proprioception</drill>
+    </coordination>
+    <speedAgility>
+      <desc>Explosive power for vault and tumbling run-ups</desc>
+    </speedAgility>
+    <focusReaction>
+      <desc>Mental focus during high-pressure routines with no room for error</desc>
+    </focusReaction>
+    <xFactors>
+      <strategy>
+        <offensive>Maximise D score with high-difficulty connections</offensive>
+        <defensive>Prioritise clean execution over risky high-D skills in finals</defensive>
+      </strategy>
+      <gameSense>Know when to attempt a risky skill vs play it safe</gameSense>
+      <decisionMaking>Choose routine composition that maximises total score</decisionMaking>
+    </xFactors>
+  </importantSkills>
+  <practiceRoutines>
+    <dailyPlan>
+      <day label="Monday">Conditioning + beam (1.5 hr)</day>
+      <day label="Tuesday">Floor + vault (2 hr)</day>
+      <day label="Wednesday">Bars + skills drills (2 hr)</day>
+      <day label="Thursday">Full routine run-throughs all events</day>
+      <day label="Friday">Conditioning + simulated competition</day>
+      <day label="Saturday">Light practice or rest</day>
+      <day label="Sunday">Rest and recovery</day>
+    </dailyPlan>
+    <drillsForBeginners>
+      <drill name="Cartwheel progression">Start with side roll, then hurdle cartwheel</drill>
+      <drill name="Bridge">Back bend bridge hold for 10-30 seconds (spine flexibility)</drill>
+      <drill name="Hollow body hold">Lie on back, press lower back down, arms overhead: 30 sec</drill>
+    </drillsForBeginners>
+  </practiceRoutines>
+  <mentalPreparation>
+    <focusingTechniques>
+      <technique name="Pre-routine ritual">Deep breath, chalk hands, visualise routine, step up</technique>
+      <technique name="Skill by skill focus">Think only about the current skill, not the whole routine</technique>
+    </focusingTechniques>
+    <pressureHandling>
+      <tip>If you fall, compose yourself in 5 seconds and continue confidently</tip>
+      <tip>Compete your best practice routine, not a perfect routine</tip>
+    </pressureHandling>
+    <sportsmanship>
+      <rule>Applaud competitors' good routines</rule>
+      <rule>Respect judges' scores and appeal through official channels only</rule>
+    </sportsmanship>
+    <howToJoinSport>
+      <step>Find a local gymnastics club with qualified coaching staff</step>
+      <step>Start in a recreational or beginner group class</step>
+      <step>Progress through graded levels (club, regional, national)</step>
+      <step>Register with national federation (e.g., USA Gymnastics, British Gymnastics)</step>
+      <costEstimate>Lessons $80-200/month; leotard $20-60; grips $15-30; competition fees $30-80</costEstimate>
+    </howToJoinSport>
+    <qualitiesOfGoodPlayer>
+      <quality>Exceptional body awareness and coordination</quality>
+      <quality>Mental courage to attempt difficult skills</quality>
+      <quality>Discipline for repetitive drilling</quality>
+      <quality>Artistic expression in floor and beam</quality>
+    </qualitiesOfGoodPlayer>
+  </mentalPreparation>
+  <strategies>
+    <strategy name="High D-score routine">Pack in difficult connections to maximise start value</strategy>
+    <strategy name="Clean execution">Lower difficulty but perfect form to minimise deductions</strategy>
+    <strategy name="Safe competition set">One skill grade below training maximum for consistency</strategy>
+  </strategies>
+  <terminologies>
+    <term>D score - difficulty score based on skills performed</term>
+    <term>E score - execution score out of 10.0</term>
+    <term>Stuck landing - landing with no movement of feet</term>
+    <term>Salto - aerial somersault</term>
+    <term>Twisting - rotation around vertical axis in air</term>
+    <term>Roundoff - entry skill for tumbling (like cartwheel but feet together)</term>
+    <term>Back handspring - explosive back flip with hands</term>
+    <term>Yurchenko - vault with roundoff onto springboard, back handspring onto table</term>
+    <term>FIG - Federation Internationale de Gymnastique</term>
+    <term>Apparatus - the equipment used (beam, bars, vault, floor)</term>
+  </terminologies>
+</gymnasticsCompleteGuide>
+
+<!-- ===================== JUDO ===================== -->
+<judoCompleteGuide>
+  <courtFieldImage>
+    <imageUrl>images/judo_mat.png</imageUrl>
+    <dimensions>
+      <contestArea>8 m x 8 m (IJF) to 10 m x 10 m</contestArea>
+      <safetyArea>3 m border around contest area</safetyArea>
+      <totalMat>14 m x 14 m minimum</totalMat>
+    </dimensions>
+    <surfaceTypes>Tatami mats (spring-loaded foam or compressed straw covered with rush)</surfaceTypes>
+    <venues>Dojo, sports halls, indoor arenas</venues>
+  </courtFieldImage>
+  <healthBenefits>
+    <benefit>Builds full-body strength, especially grip and core</benefit>
+    <benefit>Teaches safe falling (ukemi) - reduces injury risk in daily life</benefit>
+    <benefit>Develops discipline, respect, and self-confidence</benefit>
+    <benefit>Excellent cardiovascular workout</benefit>
+    <benefit>Improves flexibility and balance</benefit>
+  </healthBenefits>
+  <warmupCooldown>
+    <warmup>
+      <stretching>Neck rotations, wrist circles, hip flexor stretch, ukemi (breakfalls) practice (10 min)</stretching>
+      <pregameExercises>Uchikomi (throwing technique repetitions) with partner - 5 min</pregameExercises>
+      <duration>15-20 minutes</duration>
+    </warmup>
+    <cooldown>
+      <postgameRecovery>Light partner stretching, shoulder and neck release, ice on any impact points</postgameRecovery>
+      <duration>10 minutes</duration>
+    </cooldown>
+  </warmupCooldown>
+  <rulesRegulations>
+    <basicRules>
+      <rule>Contest area is the mat (tatami); stepping outside is penalised.</rule>
+      <rule>Win by ippon (full point): clean throw onto back, 20-second pin, submission, or opponent's disqualification.</rule>
+      <rule>Waza-ari (half point): near-ippon throw or 10-second pin; two waza-ari = ippon.</rule>
+      <rule>Shido (penalty) awarded for passivity, false attacks, or rule violations; 3 shido = disqualification.</rule>
+      <rule>Golden score: sudden death overtime if tied after regulation.</rule>
+    </basicRules>
+    <numberOfPlayers>2 (individual); team events of 5 or 7</numberOfPlayers>
+    <matchTimings>
+      <seniors>4 minutes regulation</seniors>
+      <juniors>3 minutes regulation</juniors>
+      <goldenScore>Unlimited until ippon or penalty decides</goldenScore>
+    </matchTimings>
+    <breaksIntervals>
+      <standard>Matte (stop) called by referee - brief pause to reset</standard>
+    </breaksIntervals>
+    <scoringSystem>
+      <win>Ippon = immediate win; Waza-ari x2 = win; Shido x3 = opponent wins</win>
+    </scoringSystem>
+    <howToWin>Score ippon, accumulate waza-ari, or opponent receives 3 shido penalties</howToWin>
+    <foulsAndPenalties>
+      <penalty>Shido: warning for passivity or minor violation</penalty>
+      <penalty>Hansoku-make: disqualification for dangerous technique or third shido</penalty>
+    </foulsAndPenalties>
+  </rulesRegulations>
+  <injuryPrevention>
+    <commonInjuries>
+      <injury>Finger and thumb sprains from grip fighting</injury>
+      <injury>Shoulder dislocation from throw landings</injury>
+      <injury>Knee ligament injury from leg sweeps</injury>
+      <injury>Cauliflower ear from ground grappling</injury>
+      <injury>Neck strain from pins and strangles</injury>
+    </commonInjuries>
+    <preventionMethods>
+      <method>Master ukemi (safe falling technique) before learning throws</method>
+      <method>Tap out immediately when caught in a strangle or armlock</method>
+      <method>Tape fingers to prevent sprains during grip fighting</method>
+      <method>Wear ear guards to prevent cauliflower ear</method>
+      <method>Warm up neck thoroughly before sparring</method>
+    </preventionMethods>
+    <diseasesToAvoidPlaying>
+      <condition>Neck injury - throws and pins can worsen cervical problems</condition>
+      <condition>Concussion - contact sport, head must be fully recovered</condition>
+    </diseasesToAvoidPlaying>
+  </injuryPrevention>
+  <hydrationImportance>
+    <beforeMatch>500 ml water 2 hours before; avoid heavy meals</beforeMatch>
+    <duringMatch>Drink between matches at tournaments; 200 ml per break</duringMatch>
+    <afterMatch>500-750 ml electrolyte drink to replace sweat lost through gi</afterMatch>
+    <warningAvoid>Never use dehydration for weight cutting - dangerous and impairs performance</warningAvoid>
+    <signsOfDehydration>Muscle cramps, reduced power, dizziness, poor grip strength</signsOfDehydration>
+  </hydrationImportance>
+  <nutritionTips>
+    <preGame>Rice, pasta or bread with lean protein 2-3 hours before</preGame>
+    <duringGame>Banana or energy gel between matches at tournaments</duringGame>
+    <postGame>High protein meal within 1 hour; chocolate milk for recovery</postGame>
+    <daily>High protein (1.6-2 g/kg) for muscle repair; complex carbs for energy</daily>
+  </nutritionTips>
+  <avoidingBurnout>
+    <physicalBurnout>
+      <limit>4-5 randori (sparring) sessions per week maximum</limit>
+      <restDays>2 full rest days; 1-2 active recovery</restDays>
+      <crossTrain>Strength and conditioning, swimming for active recovery</crossTrain>
+    </physicalBurnout>
+    <mentalBurnout>
+      <signs>Reluctance to randori, persistent soreness, loss of motivation</signs>
+      <solution>Focus on technique over winning in sparring; take a week of light drilling only</solution>
+    </mentalBurnout>
+  </avoidingBurnout>
+  <equipment>
+    <item>Judogi (judo uniform) - IJF approved white or blue gi</item>
+    <item>Belt indicating rank (from white to black)</item>
+    <item>Tatami mats</item>
+    <item>Ear guards (optional, recommended for heavy randori)</item>
+    <item>Finger tape</item>
+  </equipment>
+  <safetyGear>
+    <item>Judogi (thick collar protects neck)</item>
+    <item>Ear guards for grappling-heavy training</item>
+    <item>Mouthguard (recommended for competitions)</item>
+    <item>Knee brace for players with knee history</item>
+  </safetyGear>
+  <importantSkills>
+    <coordination>
+      <desc>Kuzushi (breaking opponent's balance) then timing the throw</desc>
+      <drill>Uchikomi: repeat entry for one throw 50 times per session</drill>
+    </coordination>
+    <speedAgility>
+      <desc>Explosive hip drive and footwork for throwing techniques</desc>
+    </speedAgility>
+    <focusReaction>
+      <desc>React to opponent's movement and weight shift to initiate throws</desc>
+    </focusReaction>
+    <xFactors>
+      <strategy>
+        <offensive>Combination attacks: failed throw sets up second technique</offensive>
+        <defensive>Grip fighting to deny opponent their preferred grip</defensive>
+      </strategy>
+      <gameSense>Use clock and shido count to decide risk level in golden score</gameSense>
+      <decisionMaking>Know when to go for ippon vs secure waza-ari lead</decisionMaking>
+    </xFactors>
+  </importantSkills>
+  <practiceRoutines>
+    <dailyPlan>
+      <day label="Monday">Ukemi + uchikomi (50 reps x 3 throws) + light randori</day>
+      <day label="Tuesday">Newaza (ground work) - pins, chokes, armlocks</day>
+      <day label="Wednesday">Heavy randori (6 x 5 min rounds)</day>
+      <day label="Thursday">Kata practice + strength conditioning</day>
+      <day label="Friday">Situation training (e.g., start from grip fight, from guard)</day>
+      <day label="Saturday">Competition simulation</day>
+      <day label="Sunday">Rest and stretching</day>
+    </dailyPlan>
+    <drillsForBeginners>
+      <drill name="Breakfall practice">Mae ukemi (forward roll), yoko ukemi (side fall) - 20 reps each</drill>
+      <drill name="O-goshi entry">Hip throw entry uchikomi without completing throw - 30 reps</drill>
+      <drill name="Grip drill">Establish proper sleeve and lapel grip, maintain for 30 seconds against resisting partner</drill>
+    </drillsForBeginners>
+  </practiceRoutines>
+  <mentalPreparation>
+    <focusingTechniques>
+      <technique name="Mushin">Clear mind, react instinctively without over-thinking</technique>
+      <technique name="Pre-match bow">Use the rei (bow) as a mental reset and focus signal</technique>
+    </focusingTechniques>
+    <pressureHandling>
+      <tip>In golden score, focus on grip control not winning - points follow good grip</tip>
+      <tip>Breathe slowly between matte calls to stay calm and conserve energy</tip>
+    </pressureHandling>
+    <sportsmanship>
+      <rule>Always bow to partner before and after every practice</rule>
+      <rule>Tap immediately when caught - ego causes injuries</rule>
+      <rule>Respect all belt levels; a white belt deserves the same courtesy as a black belt</rule>
+    </sportsmanship>
+    <howToJoinSport>
+      <step>Find an IJF-affiliated dojo in your area</step>
+      <step>Purchase a basic judogi (white gi, $40-80)</step>
+      <step>Attend beginner group classes to learn ukemi and basic throws</step>
+      <step>Grade through kyu grades (coloured belts) toward black belt</step>
+      <costEstimate>Gi $40-120; club membership $50-150/year; competition entry $20-50; grading fees $15-40</costEstimate>
+    </howToJoinSport>
+    <qualitiesOfGoodPlayer>
+      <quality>Strong grip and upper body strength</quality>
+      <quality>Tactical patience in grip fighting</quality>
+      <quality>Explosive timing for throws</quality>
+      <quality>Discipline and respect (core judo values)</quality>
+    </qualitiesOfGoodPlayer>
+  </mentalPreparation>
+  <strategies>
+    <strategy name="Grip dominance">Win the grip fight to dictate the match</strategy>
+    <strategy name="Combination attack">Set up seoi-nage with ko-uchi-gari leg attack</strategy>
+    <strategy name="Transition to newaza">After an unsuccessful throw, transition immediately to ground work</strategy>
+    <strategy name="Defensive contest">Use shido strategy in golden score - let opponent risk and penalise</strategy>
+  </strategies>
+  <terminologies>
+    <term>Ippon - full point, immediate win</term>
+    <term>Waza-ari - half point</term>
+    <term>Shido - penalty warning</term>
+    <term>Randori - free practice/sparring</term>
+    <term>Uchikomi - technique entry repetitions</term>
+    <term>Newaza - ground work (pins, chokes, armlocks)</term>
+    <term>Kuzushi - breaking opponent's balance</term>
+    <term>Ukemi - safe falling technique</term>
+    <term>Matte - referee call to stop</term>
+    <term>Hajime - referee call to begin</term>
+    <term>Judogi - judo uniform</term>
+    <term>Dojo - training hall</term>
+    <term>Sensei - instructor/teacher</term>
+    <term>IJF - International Judo Federation</term>
+  </terminologies>
+</judoCompleteGuide>
 
 </indoorGames>
-<!-- outdoorGames section continues unchanged -->
+
+<outdoorGames>
+
+<!-- ===================== FOOTBALL (SOCCER) ===================== -->
+<footballCompleteGuide>
+  <courtFieldImage>
+    <imageUrl>images/football_pitch.png</imageUrl>
+    <dimensions>
+      <length>100-110 m (international)</length>
+      <width>64-75 m (international)</width>
+      <goalSize>7.32 m wide x 2.44 m tall</goalSize>
+    </dimensions>
+    <surfaceTypes>Natural grass, artificial turf (FIFA certified), hybrid grass</surfaceTypes>
+    <venues>Stadiums, school pitches, public parks, indoor 5-a-side courts</venues>
+  </courtFieldImage>
+  <healthBenefits>
+    <benefit>Burns 600-900 calories per match</benefit>
+    <benefit>Builds cardiovascular endurance (players run 10-13 km per match)</benefit>
+    <benefit>Develops leg strength, agility, and balance</benefit>
+    <benefit>Improves teamwork, communication, and leadership</benefit>
+    <benefit>Reduces risk of cardiovascular disease</benefit>
+  </healthBenefits>
+  <warmupCooldown>
+    <warmup>
+      <stretching>Dynamic stretches: leg swings, high knees, butt kicks, hip circles (5-8 min)</stretching>
+      <pregameExercises>Light jog, passing drills, shooting practice (10 min)</pregameExercises>
+      <duration>15-20 minutes</duration>
+    </warmup>
+    <cooldown>
+      <postgameRecovery>5-minute jog, static stretching (quads, hamstrings, calves, hip flexors), foam rolling</postgameRecovery>
+      <duration>10-15 minutes</duration>
+    </cooldown>
+  </warmupCooldown>
+  <rulesRegulations>
+    <basicRules>
+      <rule>11 players per team; 3 substitutes allowed (up to 5 in some competitions).</rule>
+      <rule>Ball is in play until it fully crosses touchline or goal line.</rule>
+      <rule>No handling the ball (except goalkeeper in own penalty area).</rule>
+      <rule>Offside: attacker nearer to goal than second-last defender when ball is played.</rule>
+      <rule>Goal kick, corner kick, or throw-in depending on which team caused ball to go out.</rule>
+    </basicRules>
+    <numberOfPlayers>11 per team (7-a-side, 5-a-side variants also popular)</numberOfPlayers>
+    <matchTimings>
+      <halves>2 x 45 minutes + stoppage time</halves>
+      <extraTime>2 x 15 minutes (if tied in knockout matches)</extraTime>
+      <penalties>5 kicks each then sudden death if still tied</penalties>
+    </matchTimings>
+    <breaksIntervals>
+      <standard>15-minute halftime; water breaks in extreme heat</standard>
+    </breaksIntervals>
+    <scoringSystem>
+      <win>3 points in league; advance in knockout; goal = 1 point</win>
+    </scoringSystem>
+    <howToWin>Score more goals than the opponent in 90 minutes</howToWin>
+    <foulsAndPenalties>
+      <penalty>Foul: free kick; in penalty area: penalty kick from 12 yards</penalty>
+      <penalty>Yellow card: official warning (2 yellows = red)</penalty>
+      <penalty>Red card: immediate dismissal, team plays with 10 men</penalty>
+    </foulsAndPenalties>
+  </rulesRegulations>
+  <injuryPrevention>
+    <commonInjuries>
+      <injury>Ankle sprain</injury>
+      <injury>Hamstring strain</injury>
+      <injury>ACL/MCL knee injury</injury>
+      <injury>Groin strain</injury>
+      <injury>Shin splints</injury>
+    </commonInjuries>
+    <preventionMethods>
+      <method>Follow FIFA 11+ warm-up programme (proven to reduce injuries by 50%)</method>
+      <method>Wear shin guards in all matches and training</method>
+      <method>Strengthen hamstrings with Nordic curls</method>
+      <method>Use proper footwear for surface type (FG/SG/AG boots)</method>
+      <method>Land with bent knees when jumping for headers</method>
+    </preventionMethods>
+    <diseasesToAvoidPlaying>
+      <condition>Hamstring Grade 2+ tear - at least 4-6 weeks rest required</condition>
+      <condition>Concussion - head injury protocol must be completed</condition>
+    </diseasesToAvoidPlaying>
+  </injuryPrevention>
+  <hydrationImportance>
+    <beforeMatch>500 ml water 2 hours before; 250 ml 15 min before kickoff</beforeMatch>
+    <duringMatch>150-200 ml at every water break and halftime</duringMatch>
+    <afterMatch>750 ml water or electrolyte drink; continue hydrating for 2-3 hours</afterMatch>
+    <warningAvoid>Carbonated drinks before match; alcohol within 24 hours of game</warningAvoid>
+    <signsOfDehydration>Reduced sprint speed, cramps, dizziness, poor decision-making</signsOfDehydration>
+  </hydrationImportance>
+  <nutritionTips>
+    <preGame>Pasta or rice with lean protein 3 hours before; banana 1 hour before</preGame>
+    <duringGame>Isotonic sports drink at halftime; orange slices for quick sugars</duringGame>
+    <postGame>Recovery protein + carbs within 30 min; full balanced meal within 2 hours</postGame>
+    <daily>55-65% carbohydrates; 15-20% protein; 20-25% healthy fats</daily>
+  </nutritionTips>
+  <avoidingBurnout>
+    <physicalBurnout>
+      <limit>1-2 matches per week maximum; monitor weekly training load</limit>
+      <restDays>1-2 full rest days; active recovery on light days</restDays>
+      <crossTrain>Swimming or cycling on rest days for cardiovascular maintenance without impact</crossTrain>
+    </physicalBurnout>
+    <mentalBurnout>
+      <signs>Loss of motivation, poor on-field communication, persistent fatigue</signs>
+      <solution>Vary training drills, set fresh goals, engage in team-building activities</solution>
+    </mentalBurnout>
+  </avoidingBurnout>
+  <equipment>
+    <item>Football (size 5 adult / size 4 youth / size 3 mini)</item>
+    <item>Football boots (FG for grass, AG for artificial, TF for astro)</item>
+    <item>Shin guards (mandatory in all organised matches)</item>
+    <item>Kit: jersey, shorts, socks (above shin guards)</item>
+    <item>Goalkeeper: gloves and padded jersey</item>
+  </equipment>
+  <safetyGear>
+    <item>Shin guards (mandatory)</item>
+    <item>Ankle supports (recommended)</item>
+    <item>Mouthguard (optional but protective)</item>
+    <item>Goalkeeper gloves and padded shorts</item>
+  </safetyGear>
+  <importantSkills>
+    <coordination>
+      <desc>First touch control, passing accuracy, and shooting technique</desc>
+      <drill>Rondo (passing circle): maintain possession in small space</drill>
+    </coordination>
+    <speedAgility>
+      <desc>Explosive sprint speed and change of direction (COD)</desc>
+    </speedAgility>
+    <focusReaction>
+      <desc>Read the game - anticipate where the ball will go before it arrives</desc>
+    </focusReaction>
+    <xFactors>
+      <strategy>
+        <offensive>Overlapping runs, through balls, pressing high to win possession</offensive>
+        <defensive>Compact block, press triggers, cover shadow</defensive>
+      </strategy>
+      <gameSense>Know when to shoot, when to pass, when to dribble</gameSense>
+      <decisionMaking>Two-touch maximum in tight spaces; look before receiving the ball</decisionMaking>
+    </xFactors>
+  </importantSkills>
+  <practiceRoutines>
+    <dailyPlan>
+      <day label="Monday">Recovery - light jog and stretching</day>
+      <day label="Tuesday">Technical skills - passing, dribbling, shooting (1.5 hr)</day>
+      <day label="Wednesday">Tactical training - shape, set pieces (1.5 hr)</day>
+      <day label="Thursday">Physical conditioning - sprints, agility</day>
+      <day label="Friday">Rondo + pre-match activation</day>
+      <day label="Saturday">Match day</day>
+      <day label="Sunday">Rest</day>
+    </dailyPlan>
+    <drillsForBeginners>
+      <drill name="Wall passing">Pass against wall with inside of foot, control return - 5 min each foot</drill>
+      <drill name="Cone dribble">Dribble through 10 cones in zigzag with both feet</drill>
+      <drill name="Target shooting">Shoot at small targets in corners of goal from 15 m</drill>
+    </drillsForBeginners>
+  </practiceRoutines>
+  <mentalPreparation>
+    <focusingTechniques>
+      <technique name="Pre-match routine">Same music, same warm-up, same mental cues every match day</technique>
+      <technique name="Process focus">Think about your role and tasks, not the score</technique>
+    </focusingTechniques>
+    <pressureHandling>
+      <tip>After making a mistake, take one deep breath and move on immediately</tip>
+      <tip>In penalty shootout, focus only on your technique, not the goalkeeper</tip>
+    </pressureHandling>
+    <sportsmanship>
+      <rule>Return ball to opposition after injury stoppage</rule>
+      <rule>Don't dive or simulate injury</rule>
+      <rule>Respect the referee's decisions</rule>
+    </sportsmanship>
+    <howToJoinSport>
+      <step>Find a local grassroots football club or school team</step>
+      <step>Buy basic boots and a ball ($30-80 starter budget)</step>
+      <step>Attend open training sessions or trials</step>
+      <step>Register with local football association for league play</step>
+      <costEstimate>Boots $30-150; ball $15-50; kit $20-60; club registration $30-150/season</costEstimate>
+    </howToJoinSport>
+    <qualitiesOfGoodPlayer>
+      <quality>Technical skill with both feet</quality>
+      <quality>Tactical understanding (positional awareness)</quality>
+      <quality>Physical fitness and work rate</quality>
+      <quality>Mental resilience after mistakes</quality>
+      <quality>Leadership and communication</quality>
+    </qualitiesOfGoodPlayer>
+  </mentalPreparation>
+  <strategies>
+    <strategy name="High press">Press opponents in their own half to win ball high up the pitch</strategy>
+    <strategy name="Counter-attack">Defend deep, win ball, attack quickly in transition</strategy>
+    <strategy name="Tiki-taka">Short passing and movement to maintain possession</strategy>
+    <strategy name="Parking the bus">Ultra-defensive, protect a lead with 10+ men behind the ball</strategy>
+  </strategies>
+  <terminologies>
+    <term>Offside - attacker in offside position when ball is played</term>
+    <term>Throw-in - ball returned to play from touchline</term>
+    <term>Corner kick - awarded when defender puts ball over own goal line</term>
+    <term>Free kick - direct or indirect kick after foul</term>
+    <term>Penalty - awarded for foul in own penalty area</term>
+    <term>Dribbling - running with ball under control</term>
+    <term>Nutmeg - playing ball through opponent's legs</term>
+    <term>Hat-trick - 3 goals in one match by same player</term>
+    <term>Clean sheet - goalkeeper concedes no goals in match</term>
+    <term>FIFA - Federation Internationale de Football Association</term>
+    <term>VAR - Video Assistant Referee</term>
+  </terminologies>
+</footballCompleteGuide>
+
+<!-- ===================== CRICKET ===================== -->
+<cricketCompleteGuide>
+  <courtFieldImage>
+    <imageUrl>images/cricket_ground.png</imageUrl>
+    <dimensions>
+      <pitchLength>20.12 m (22 yards)</pitchLength>
+      <groundDiameter>137-160 m (oval, no fixed size)</groundDiameter>
+      <creaseWidth>2.64 m</creaseWidth>
+    </dimensions>
+    <surfaceTypes>Natural grass outfield; clay or loam pitch; can be mat pitch for lower levels</surfaceTypes>
+    <venues>Cricket grounds, stadiums, club grounds, park pitches</venues>
+  </courtFieldImage>
+  <healthBenefits>
+    <benefit>Builds hand-eye coordination from batting and catching</benefit>
+    <benefit>Develops explosive power for bowling and batting</benefit>
+    <benefit>Improves concentration and tactical thinking over long formats</benefit>
+    <benefit>Aerobic exercise from fielding and running between wickets</benefit>
+    <benefit>Develops teamwork and strategic thinking</benefit>
+  </healthBenefits>
+  <warmupCooldown>
+    <warmup>
+      <stretching>Shoulder rotations, hip flexor stretch, wrist rolls, spine rotations (10 min)</stretching>
+      <pregameExercises>Catching practice, batting throw-downs, short run fielding drills (15 min)</pregameExercises>
+      <duration>25-30 minutes</duration>
+    </warmup>
+    <cooldown>
+      <postgameRecovery>Static stretches for shoulders, back, and hamstrings; ice on bowler's shoulder or knee</postgameRecovery>
+      <duration>10-15 minutes</duration>
+    </cooldown>
+  </warmupCooldown>
+  <rulesRegulations>
+    <basicRules>
+      <rule>11 players per side; batting team sends two batters to the crease.</rule>
+      <rule>Bowling team aims to dismiss (get out) all 10 batters.</rule>
+      <rule>Ways out: bowled, caught, LBW (leg before wicket), run out, stumped, hit wicket, handled ball.</rule>
+      <rule>Batters score runs by hitting the ball and running between wickets or hitting boundaries (4 = runs to boundary, 6 = over boundary).</rule>
+      <rule>Bowling: bowler delivers 6 legal balls = 1 over; same bowler cannot bowl consecutive overs.</rule>
+    </basicRules>
+    <numberOfPlayers>11 per team</numberOfPlayers>
+    <matchTimings>
+      <test>Up to 5 days (2 innings per team)</test>
+      <odi>50 overs per side (approx 8 hours)</odi>
+      <t20>20 overs per side (approx 3 hours)</t20>
+    </matchTimings>
+    <breaksIntervals>
+      <standard>Lunch (40 min) and tea (20 min) breaks in Test cricket; drinks every 10 overs in ODI/T20</standard>
+    </breaksIntervals>
+    <scoringSystem>
+      <win>Team with most runs wins; in Tests, win by runs or wickets or draw</win>
+    </scoringSystem>
+    <howToWin>Score more runs than the opposition (or bowl them out for fewer)</howToWin>
+    <foulsAndPenalties>
+      <penalty>No-ball: extra delivery bowled; batter cannot be out (except run out)</penalty>
+      <penalty>Wide: extra run added to batting team's total</penalty>
+      <penalty>Ball tampering: 5-run penalty and possible suspension</penalty>
+    </foulsAndPenalties>
+  </rulesRegulations>
+  <injuryPrevention>
+    <commonInjuries>
+      <injury>Bowler's side strain (fast bowlers)</injury>
+      <injury>Shoulder injury from throwing</injury>
+      <injury>Hamstring and quad strains</injury>
+      <injury>Finger fractures from catching</injury>
+      <injury>Stress fractures in back (especially junior fast bowlers)</injury>
+    </commonInjuries>
+    <preventionMethods>
+      <method>Limit overs bowled per session for junior cricketers (ICC guidelines)</method>
+      <method>Strengthen core and side muscles to protect spine</method>
+      <method>Wear helmet and body padding when batting against fast bowling</method>
+      <method>Practice catching with soft balls for beginners</method>
+      <method>Stretch shoulder and thoracic spine regularly</method>
+    </preventionMethods>
+    <diseasesToAvoidPlaying>
+      <condition>Side strain - needs full healing before bowling resumes</condition>
+      <condition>Heat exhaustion - common in long outdoor formats; must rest and rehydrate</condition>
+    </diseasesToAvoidPlaying>
+  </injuryPrevention>
+  <hydrationImportance>
+    <beforeMatch>750 ml water from morning of match day; no large amounts just before</beforeMatch>
+    <duringMatch>200 ml every drinks break (every 10 overs); more in heat</duringMatch>
+    <afterMatch>1 litre water or electrolyte drink after day's play</afterMatch>
+    <warningAvoid>Dehydration is serious in long formats - players can be on field for 6+ hours</warningAvoid>
+    <signsOfDehydration>Cramps, fatigue, headache, reduced concentration at crease</signsOfDehydration>
+  </hydrationImportance>
+  <nutritionTips>
+    <preGame>High-carb breakfast: porridge, toast, eggs on match morning</preGame>
+    <duringGame>Lunch: balanced meal (rice/pasta + protein + salad); snacks between overs</duringGame>
+    <postGame>Recovery meal: protein and carbs within 30 min; full meal in evening</postGame>
+    <daily>High protein for muscle maintenance; iron-rich foods to combat fatigue</daily>
+  </nutritionTips>
+  <avoidingBurnout>
+    <physicalBurnout>
+      <limit>Fast bowlers: max 20-25 overs per day; rotate bowlers</limit>
+      <restDays>1-2 full rest days per week during season</restDays>
+      <crossTrain>Gym for strength; swimming for active recovery</crossTrain>
+    </physicalBurnout>
+    <mentalBurnout>
+      <signs>Dreading matches, poor concentration at crease, loss of enjoyment</signs>
+      <solution>Play a shorter format for variety; take a break between series</solution>
+    </mentalBurnout>
+  </avoidingBurnout>
+  <equipment>
+    <item>Cricket bat (willow blade; size 6 youth to full adult)</item>
+    <item>Cricket ball (red leather for Test; white for ODI/T20)</item>
+    <item>Batting pads (leg guards)</item>
+    <item>Batting gloves</item>
+    <item>Helmet with face grille (mandatory for batting against hard ball)</item>
+    <item>Box/abdominal protector</item>
+    <item>Cricket whites (Test) or coloured kit (limited overs)</item>
+    <item>Spiked cricket shoes</item>
+  </equipment>
+  <safetyGear>
+    <item>Helmet (mandatory for all batting and wicketkeeping up to the stumps)</item>
+    <item>Batting pads</item>
+    <item>Batting gloves</item>
+    <item>Box (abdominal guard)</item>
+    <item>Chest guard and arm guard (optional for facing fast bowling)</item>
+  </safetyGear>
+  <importantSkills>
+    <coordination>
+      <desc>Hand-eye coordination for batting (picking line and length of delivery)</desc>
+      <drill>Throw-down practice: coach feeds balls to specific areas for batter to hit</drill>
+    </coordination>
+    <speedAgility>
+      <desc>Running between wickets, fielding sprints, bowler run-up speed</desc>
+    </speedAgility>
+    <focusReaction>
+      <desc>Batters must react to 140+ km/h deliveries in under 0.5 seconds</desc>
+    </focusReaction>
+    <xFactors>
+      <strategy>
+        <offensive>Attacking batting: charge the bowler, use the sweep and slog sweep</offensive>
+        <defensive>Defensive batting: occupation of crease, play late, leave deliveries outside off-stump</defensive>
+      </strategy>
+      <gameSense>Calculate run rate vs wickets in hand in limited overs</gameSense>
+      <decisionMaking>Field placement strategy based on batter's weaknesses</decisionMaking>
+    </xFactors>
+  </importantSkills>
+  <practiceRoutines>
+    <dailyPlan>
+      <day label="Monday">Batting nets (30 min) + catching + throwing</day>
+      <day label="Tuesday">Bowling spells (3 x 6-over simulations) + fielding</day>
+      <day label="Wednesday">Match simulation + video analysis</day>
+      <day label="Thursday">Fitness (speed and agility) + skills</day>
+      <day label="Friday">Light activation + pre-match preparation</day>
+      <day label="Saturday">Match</day>
+      <day label="Sunday">Rest and recovery</day>
+    </dailyPlan>
+    <drillsForBeginners>
+      <drill name="Soft toss batting">Partner tosses ball gently from side; batter hits to target</drill>
+      <drill name="Underarm catching">Simple catches at various heights to build confidence</drill>
+      <drill name="Bowling action">Practice run-up and delivery action without ball first</drill>
+    </drillsForBeginners>
+  </practiceRoutines>
+  <mentalPreparation>
+    <focusingTechniques>
+      <technique name="Watch the ball">Focus your eyes on the ball from the bowler's hand; single cue word "ball"</technique>
+      <technique name="Innings routine">Same pad-up routine, same walk to crease, same guard every time</technique>
+    </focusingTechniques>
+    <pressureHandling>
+      <tip>After being dismissed cheaply, do a brief review then reset - the next innings starts fresh</tip>
+      <tip>In a run chase, focus on the current over not the total required</tip>
+    </pressureHandling>
+    <sportsmanship>
+      <rule>Walk when you know you're out (even if umpire doesn't give it)</rule>
+      <rule>Applaud opponent's good deliveries and catches</rule>
+      <rule>Spirit of cricket: play hard but play fair</rule>
+    </sportsmanship>
+    <howToJoinSport>
+      <step>Find a local cricket club and attend beginner coaching sessions</step>
+      <step>Buy basic equipment: bat and pads ($50-150 starter set)</step>
+      <step>Join a club age group or adult beginner team</step>
+      <step>Register with the national cricket board (e.g., ECB, BCCI, CA)</step>
+      <costEstimate>Starter bat and pads $50-150; helmet $30-80; club membership $50-200/year</costEstimate>
+    </howToJoinSport>
+    <qualitiesOfGoodPlayer>
+      <quality>Patience and concentration (especially in Test format)</quality>
+      <quality>Technical skill in batting or bowling</quality>
+      <quality>Resilience after failure</quality>
+      <quality>Team commitment and fielding effort</quality>
+    </qualitiesOfGoodPlayer>
+  </mentalPreparation>
+  <strategies>
+    <strategy name="Death bowling">Yorkers and slower balls in final overs of T20 to restrict runs</strategy>
+    <strategy name="Powerplay batting">Attack in first 6 overs when only 2 fielders outside circle</strategy>
+    <strategy name="Swing bowling">Move ball in air early with new ball to take top-order wickets</strategy>
+    <strategy name="Reverse sweep">Unconventional shot to disrupt field placement</strategy>
+  </strategies>
+  <terminologies>
+    <term>Wicket - three stumps and two bails; also means dismissal of batter</term>
+    <term>Over - 6 legal deliveries bowled by same bowler</term>
+    <term>LBW - leg before wicket dismissal</term>
+    <term>No-ball - illegal delivery</term>
+    <term>Wide - delivery too wide for batter to play</term>
+    <term>Boundary - 4 runs (ball reaches boundary) or 6 (over boundary)</term>
+    <term>Duck - batter dismissed for 0 runs</term>
+    <term>Hat-trick - 3 wickets in 3 consecutive balls</term>
+    <term>Maiden over - over with no runs scored</term>
+    <term>DRS - Decision Review System (use of technology for umpire decisions)</term>
+    <term>ICC - International Cricket Council</term>
+    <term>Test cricket - 5-day format, highest form of the game</term>
+    <term>T20 - Twenty20 format, 20 overs per side</term>
+  </terminologies>
+</cricketCompleteGuide>
+
+<!-- ===================== ATHLETICS ===================== -->
+<athleticsCompleteGuide>
+  <courtFieldImage>
+    <imageUrl>images/athletics_track.png</imageUrl>
+    <dimensions>
+      <trackLength>400 m (standard)</trackLength>
+      <lanes>8 lanes (standard), each 1.22 m wide</lanes>
+      <fieldArea>Infield for jumps, throws, and pole vault</fieldArea>
+    </dimensions>
+    <surfaceTypes>Synthetic rubber track (polyurethane); grass or dirt for cross country</surfaceTypes>
+    <venues>Athletics stadiums, school tracks, roads (marathon), cross country courses</venues>
+  </courtFieldImage>
+  <healthBenefits>
+    <benefit>Outstanding cardiovascular fitness development</benefit>
+    <benefit>Burns 500-1000+ calories per session depending on event</benefit>
+    <benefit>Builds lean muscle mass (sprinting and throwing events)</benefit>
+    <benefit>Improves bone density especially in running and jumping events</benefit>
+    <benefit>Develops mental resilience and goal-setting habits</benefit>
+  </healthBenefits>
+  <warmupCooldown>
+    <warmup>
+      <stretching>Dynamic: A-skips, B-skips, high knees, leg swings, arm swings (10 min)</stretching>
+      <pregameExercises>Strides (4 x 80 m at 90% effort), event-specific activation (blocks for sprinters)</pregameExercises>
+      <duration>20-30 minutes</duration>
+    </warmup>
+    <cooldown>
+      <postgameRecovery>10-min easy jog, full static stretch routine, foam rolling</postgameRecovery>
+      <duration>15-20 minutes</duration>
+    </cooldown>
+  </warmupCooldown>
+  <rulesRegulations>
+    <basicRules>
+      <rule>Sprints: run in assigned lane; DQ for false start (one false start rule).</rule>
+      <rule>Relays: baton must be passed within 20 m exchange zone.</rule>
+      <rule>Long/Triple jump: take-off must be behind the board; foot over = no jump.</rule>
+      <rule>Throws: implement must land within sector; thrower must not leave circle before implement lands.</rule>
+      <rule>High jump/Pole vault: bar must not fall off for jump to count; 3 failures = eliminated.</rule>
+    </basicRules>
+    <numberOfPlayers>Individual events; relay teams of 4</numberOfPlayers>
+    <matchTimings>
+      <sprints>100 m: 9-10 sec (elite); 400 m: 43-50 sec</sprints>
+      <middle>800 m: 1:40-2:00; 1500 m: 3:30-4:30</middle>
+      <distance>5000 m: 13-15 min; 10000 m: 27-30 min (elite)</distance>
+    </matchTimings>
+    <breaksIntervals>
+      <standard>Heats, semis, finals across a 1-3 day competition schedule</standard>
+    </breaksIntervals>
+    <scoringSystem>
+      <win>Fastest time or furthest/highest distance wins; points in multi-events (decathlon, heptathlon)</win>
+    </scoringSystem>
+    <howToWin>Cross finish line first (track) or achieve the furthest/highest mark (field)</howToWin>
+    <foulsAndPenalties>
+      <penalty>False start: DQ from race (one allowed in some junior formats)</penalty>
+      <penalty>Lane infringement: DQ if causing interference</penalty>
+      <penalty>No jump/throw: recorded as foul; 3 fouls = eliminated in field events</penalty>
+    </foulsAndPenalties>
+  </rulesRegulations>
+  <injuryPrevention>
+    <commonInjuries>
+      <injury>Hamstring strain (most common in sprinting)</injury>
+      <injury>Shin splints (overuse in running)</injury>
+      <injury>Achilles tendinopathy</injury>
+      <injury>IT band syndrome (long-distance runners)</injury>
+      <injury>Stress fractures in tibia or foot</injury>
+    </commonInjuries>
+    <preventionMethods>
+      <method>Gradual mileage increase (10% rule per week)</method>
+      <method>Strengthen hamstrings with Nordic curls</method>
+      <method>Run on softer surfaces where possible</method>
+      <method>Replace running shoes every 500-800 km</method>
+      <method>Never skip warm-up before speed sessions</method>
+    </preventionMethods>
+    <diseasesToAvoidPlaying>
+      <condition>Achilles tendinopathy flare - rest and physiotherapy required</condition>
+      <condition>Stress fracture - complete rest for 6-12 weeks</condition>
+    </diseasesToAvoidPlaying>
+  </injuryPrevention>
+  <hydrationImportance>
+    <beforeMatch>500 ml water 2 hours before; 250 ml 30 min before</beforeMatch>
+    <duringMatch>Water at aid stations (marathon); sip between rounds (track)</duringMatch>
+    <afterMatch>750 ml water or electrolyte drink immediately after</afterMatch>
+    <warningAvoid>Over-hydration (hyponatremia) risk in marathon - don't drink excessive plain water</warningAvoid>
+    <signsOfDehydration>Reduced pace, cramps, headache, dizziness</signsOfDehydration>
+  </hydrationImportance>
+  <nutritionTips>
+    <preGame>High-carb meal 3 hours before; sports gel or banana 30 min before for sprinters</preGame>
+    <duringGame>Energy gels every 45 min in marathon (with water); nothing needed for short sprints</duringGame>
+    <postGame>Protein + carb recovery within 30 min; replenish glycogen stores</postGame>
+    <daily>5-7 g carbs/kg body weight for distance runners; 4-5 g/kg for sprinters</daily>
+  </nutritionTips>
+  <avoidingBurnout>
+    <physicalBurnout>
+      <limit>Weekly mileage caps based on event; periodised training with off-season</limit>
+      <restDays>1-2 full rest days; base training vs peak training cycles</restDays>
+      <crossTrain>Cycling or swimming for aerobic maintenance without impact</crossTrain>
+    </physicalBurnout>
+    <mentalBurnout>
+      <signs>Dreading training, PBs stagnating despite effort, chronic fatigue</signs>
+      <solution>Reduce volume and intensity; change training environment; race for fun</solution>
+    </mentalBurnout>
+  </avoidingBurnout>
+  <equipment>
+    <item>Running spikes (sprint, middle, cross country, or long jump spikes)</item>
+    <item>Training shoes (neutral or stability depending on gait)</item>
+    <item>Technical vest and shorts</item>
+    <item>Starting blocks (sprinting)</item>
+    <item>Implements: discus, shot put, javelin, hammer (throwing events)</item>
+    <item>Pole vault pole (fibreglass, event-specific)</item>
+  </equipment>
+  <safetyGear>
+    <item>Properly fitted running shoes</item>
+    <item>Sun protection (sunscreen, hat) for outdoor events</item>
+    <item>Compression socks (for long-distance runners)</item>
+  </safetyGear>
+  <importantSkills>
+    <coordination>
+      <desc>Sprint mechanics: drive phase, maximal velocity, relay baton exchange</desc>
+      <drill>Baton exchange drill: 4 athletes practice split timing for 20 m zone</drill>
+    </coordination>
+    <speedAgility>
+      <desc>Explosive power from blocks; stride frequency and length optimisation</desc>
+    </speedAgility>
+    <focusReaction>
+      <desc>React to starter's gun in under 0.15 sec for elite sprinters</desc>
+    </focusReaction>
+    <xFactors>
+      <strategy>
+        <offensive>Negative split in 800 m-1500 m for last-lap surge</offensive>
+        <defensive>Run tangents (shortest path) in road and cross country races</defensive>
+      </strategy>
+      <gameSense>Race awareness - know your competitors' strengths and when to make a move</gameSense>
+      <decisionMaking>Choose to lead or follow based on conditions and competitors</decisionMaking>
+    </xFactors>
+  </importantSkills>
+  <practiceRoutines>
+    <dailyPlan>
+      <day label="Monday">Speed session: 6 x 60 m at 95% effort</day>
+      <day label="Tuesday">Tempo run: 4 x 800 m at 80% effort</day>
+      <day label="Wednesday">Strength and conditioning</day>
+      <day label="Thursday">Technical drills + event-specific practice</day>
+      <day label="Friday">Easy run + strides (race prep)</day>
+      <day label="Saturday">Race or time trial</day>
+      <day label="Sunday">Rest or easy jog</day>
+    </dailyPlan>
+    <drillsForBeginners>
+      <drill name="A-skips">March forward driving knee up to hip height alternately - 20 m x 4</drill>
+      <drill name="Wall drills">Against wall, drive knee up rapidly in place - 15 sec x 3</drill>
+      <drill name="Acceleration runs">From standing start, build speed over 60 m - 6 reps</drill>
+    </drillsForBeginners>
+  </practiceRoutines>
+  <mentalPreparation>
+    <focusingTechniques>
+      <technique name="Pre-race routine">Same stretch, same strides, same breathing before every race</technique>
+      <technique name="Cue words">Relax (on drive phase), tall (at maximal velocity), smooth (in distance)</technique>
+    </focusingTechniques>
+    <pressureHandling>
+      <tip>If false started, reset completely - forget the error and focus on the next start</tip>
+      <tip>In championship finals, race your race plan regardless of competitors</tip>
+    </pressureHandling>
+    <sportsmanship>
+      <rule>Congratulate competitors after races</rule>
+      <rule>Help fallen competitors where safe to do so</rule>
+    </sportsmanship>
+    <howToJoinSport>
+      <step>Find a local athletics club (most have beginner groups)</step>
+      <step>Try different events to find your best event</step>
+      <step>Buy suitable running shoes first; spikes come later</step>
+      <step>Register with national federation (e.g., UK Athletics, USATF)</step>
+      <costEstimate>Running shoes $60-150; club $30-80/year; spikes $40-150; competition licence $15-30</costEstimate>
+    </howToJoinSport>
+    <qualitiesOfGoodPlayer>
+      <quality>Discipline for repetitive training</quality>
+      <quality>Competitive drive to push limits</quality>
+      <quality>Technical precision in event mechanics</quality>
+      <quality>Resilience to injuries and setbacks</quality>
+    </qualitiesOfGoodPlayer>
+  </mentalPreparation>
+  <strategies>
+    <strategy name="Negative split">Run second half of race faster than first</strategy>
+    <strategy name="Front running">Set fast pace from gun to break opponents psychologically</strategy>
+    <strategy name="Kicking">Sit in pack and unleash sprint finish in last 200 m</strategy>
+    <strategy name="Surge">Mid-race acceleration to break away from pack</strategy>
+  </strategies>
+  <terminologies>
+    <term>PB - personal best time or distance</term>
+    <term>Blocks - starting blocks used in sprint events</term>
+    <term>False start - leaving blocks before starter's gun</term>
+    <term>Baton - relay stick passed between runners</term>
+    <term>Foul - invalid attempt in field events</term>
+    <term>Decathlon - 10-event competition (men)</term>
+    <term>Heptathlon - 7-event competition (women)</term>
+    <term>DNF - did not finish</term>
+    <term>DQ - disqualified</term>
+    <term>PW - personal worst (informal)</term>
+    <term>World Athletics - global governing body (formerly IAAF)</term>
+    <term>Road race - running race on public roads</term>
+  </terminologies>
+</athleticsCompleteGuide>
+
+<!-- ===================== TENNIS ===================== -->
+<tennisCompleteGuide>
+  <courtFieldImage>
+    <imageUrl>images/tennis_court.png</imageUrl>
+    <dimensions>
+      <length>23.77 m</length>
+      <width>8.23 m (singles) / 10.97 m (doubles)</width>
+      <netHeight>0.914 m at centre / 1.07 m at posts</netHeight>
+    </dimensions>
+    <surfaceTypes>Grass (Wimbledon), clay (Roland Garros), hard court (US/Australian Open), carpet (indoor)</surfaceTypes>
+    <venues>Tennis clubs, public courts, indoor centres, Grand Slam stadiums</venues>
+  </courtFieldImage>
+  <healthBenefits>
+    <benefit>Burns 400-600 calories per hour</benefit>
+    <benefit>Develops full-body coordination and agility</benefit>
+    <benefit>Improves cardiovascular endurance and muscular strength</benefit>
+    <benefit>Enhances mental alertness, strategy, and focus</benefit>
+    <benefit>Low injury rate when proper technique is used</benefit>
+  </healthBenefits>
+  <warmupCooldown>
+    <warmup>
+      <stretching>Shoulder arm swings, hip flexors, wrist rotations, calf raises, lateral lunges (5-8 min)</stretching>
+      <pregameExercises>Easy groundstroke rally from service line, then baseline; serve practice (10 min)</pregameExercises>
+      <duration>15-20 minutes</duration>
+    </warmup>
+    <cooldown>
+      <postgameRecovery>Easy mini-tennis (close to net), static stretches for shoulders, forearm, calves</postgameRecovery>
+      <duration>10 minutes</duration>
+    </cooldown>
+  </warmupCooldown>
+  <rulesRegulations>
+    <basicRules>
+      <rule>Match format: best of 3 sets (best of 5 in Grand Slams for men).</rule>
+      <rule>Set: first to 6 games with 2 clear game advantage; tiebreak at 6-6 (first to 7 points by 2).</rule>
+      <rule>Game: won at 40-30 advantage, or deuce then 2 consecutive points.</rule>
+      <rule>Serve: 2 attempts per point; first serve fault = second serve; double fault = point lost.</rule>
+      <rule>Ball is in play if it lands on the line or inside the court boundary.</rule>
+    </basicRules>
+    <numberOfPlayers>2 (singles) or 4 (doubles)</numberOfPlayers>
+    <matchTimings>
+      <match>Best of 3: 1-2 hours; Grand Slam best of 5: up to 5+ hours</match>
+    </matchTimings>
+    <breaksIntervals>
+      <standard>90-second break at change of ends; 2 min between sets; medical timeout if injured</standard>
+    </breaksIntervals>
+    <scoringSystem>
+      <win>Win games to win sets; win sets to win match</win>
+    </scoringSystem>
+    <howToWin>Win the majority of sets (best of 3 or 5)</howToWin>
+    <foulsAndPenalties>
+      <penalty>Foot fault on serve: counts as a fault</penalty>
+      <penalty>Hindrance: deliberate distraction = point penalty</penalty>
+      <penalty>Code violation: time warning, then point penalty, then game penalty</penalty>
+    </foulsAndPenalties>
+  </rulesRegulations>
+  <injuryPrevention>
+    <commonInjuries>
+      <injury>Tennis elbow (lateral epicondylitis)</injury>
+      <injury>Rotator cuff strain (serving)</injury>
+      <injury>Ankle sprain</injury>
+      <injury>Knee tendinitis</injury>
+      <injury>Wrist sprain</injury>
+    </commonInjuries>
+    <preventionMethods>
+      <method>Use correct grip size to reduce elbow stress</method>
+      <method>Strengthen rotator cuff with resistance bands</method>
+      <method>Wear court-specific shoes (different for clay vs hard court)</method>
+      <method>Don't over-grip racket when nervous</method>
+      <method>Forearm and wrist exercises daily to prevent elbow injury</method>
+    </preventionMethods>
+    <diseasesToAvoidPlaying>
+      <condition>Tennis elbow flare - rest and physio; avoid topspin shots until healed</condition>
+      <condition>Rotator cuff tear - requires MRI and specialist assessment</condition>
+    </diseasesToAvoidPlaying>
+  </injuryPrevention>
+  <hydrationImportance>
+    <beforeMatch>500 ml water 2 hours before; 250 ml 15 min before</beforeMatch>
+    <duringMatch>150-200 ml at every changeover (every 2 games)</duringMatch>
+    <afterMatch>750 ml water or electrolyte drink within 30 min</afterMatch>
+    <warningAvoid>Avoid caffeinated drinks within 2 hours of match - can cause irregular heartbeat in heat</warningAvoid>
+    <signsOfDehydration>Cramping (common in long matches), reduced first step, poor ball toss on serve</signsOfDehydration>
+  </hydrationImportance>
+  <nutritionTips>
+    <preGame>Pasta or rice 3 hours before; banana and nut butter 1 hour before</preGame>
+    <duringGame>Banana at changeovers in long matches; sports drink for matches over 1.5 hours</duringGame>
+    <postGame>Protein shake within 30 min; full balanced meal within 2 hours</postGame>
+    <daily>Balanced diet; carbohydrate load day before important matches</daily>
+  </nutritionTips>
+  <avoidingBurnout>
+    <physicalBurnout>
+      <limit>Max 5-6 sessions per week; mix heavy and light days</limit>
+      <restDays>1 full rest day; periodise season with off-season training blocks</restDays>
+      <crossTrain>Swimming, running, or gym work for fitness without racket stress on elbow</crossTrain>
+    </physicalBurnout>
+    <mentalBurnout>
+      <signs>Unforced errors rising, dreading match play, persistent frustration</signs>
+      <solution>Play social or doubles; focus on technique not results; take a week off competitive play</solution>
+    </mentalBurnout>
+  </avoidingBurnout>
+  <equipment>
+    <item>Tennis racket (adult frame: 27 inches; junior: 21-26 inches; appropriate grip size)</item>
+    <item>Tennis balls (pressurised for hard/grass; pressureless for clay)</item>
+    <item>Court-specific shoes (clay: herringbone sole; hard: durable sole; grass: pimples)</item>
+    <item>Tennis bag</item>
+    <item>Wristbands and headband (sweat management)</item>
+  </equipment>
+  <safetyGear>
+    <item>Proper tennis shoes for court surface (most important safety item)</item>
+    <item>Elbow support if prone to tennis elbow</item>
+    <item>Sunhat and sunscreen for outdoor courts</item>
+  </safetyGear>
+  <importantSkills>
+    <coordination>
+      <desc>Hand-eye coordination to time contact point; split-step timing before shots</desc>
+      <drill>Ball machine practice: set to varied location at 60% pace, focus on contact point</drill>
+    </coordination>
+    <speedAgility>
+      <desc>Explosive first step and recovery speed back to centre</desc>
+    </speedAgility>
+    <focusReaction>
+      <desc>Read opponent's body, racket angle, and ball spin in under 0.5 seconds</desc>
+    </focusReaction>
+    <xFactors>
+      <strategy>
+        <offensive>Serve and volley; inside-out forehand to opponent's backhand</offensive>
+        <defensive>High heavy topspin to backhand to push opponent deep and reset</defensive>
+      </strategy>
+      <gameSense>Know when to go for winner vs play high-percentage ball</gameSense>
+      <decisionMaking>Attack short balls; defend deep balls</decisionMaking>
+    </xFactors>
+  </importantSkills>
+  <practiceRoutines>
+    <dailyPlan>
+      <day label="Monday">Groundstroke consistency (cross-court forehands and backhands)</day>
+      <day label="Tuesday">Serve practice (100 serves) + return of serve drills</day>
+      <day label="Wednesday">Match play + video analysis</day>
+      <day label="Thursday">Volleys and net play + overhead practice</day>
+      <day label="Friday">Point construction drills + physical fitness</day>
+      <day label="Saturday">Tournament match or practice set</day>
+      <day label="Sunday">Rest</day>
+    </dailyPlan>
+    <drillsForBeginners>
+      <drill name="Mini tennis">Rally from service boxes over low net - builds control</drill>
+      <drill name="Forehand loop">Hit 20 consecutive cross-court forehands without error</drill>
+      <drill name="Serve toss">Practice ball toss alone 50 times - toss is foundation of serve</drill>
+    </drillsForBeginners>
+  </practiceRoutines>
+  <mentalPreparation>
+    <focusingTechniques>
+      <technique name="Bounce-hit">Say "bounce" when ball bounces, "hit" at contact - keeps focus on ball</technique>
+      <technique name="Between-point routine">Strings, breathe, walk, plan - same every point</technique>
+    </focusingTechniques>
+    <pressureHandling>
+      <tip>At break point, focus on first serve percentage not outcome</tip>
+      <tip>After losing a close set, tell yourself "new match" for the next set</tip>
+    </pressureHandling>
+    <sportsmanship>
+      <rule>Call opponent's shots honestly even if it costs you a point</rule>
+      <rule>Don't celebrate opponent's unforced errors</rule>
+    </sportsmanship>
+    <howToJoinSport>
+      <step>Find a local tennis club or public court</step>
+      <step>Book group beginner lessons (often cheapest way to start)</step>
+      <step>Buy a mid-range racket ($50-100) suitable for beginners</step>
+      <step>Join a club membership for court access and social play</step>
+      <costEstimate>Racket $50-200; balls $8-20/can; court hire $10-25/hr; club membership $50-300/year</costEstimate>
+    </howToJoinSport>
+    <qualitiesOfGoodPlayer>
+      <quality>Consistency on high-percentage shots</quality>
+      <quality>Mental strength in tiebreaks and deuce games</quality>
+      <quality>Tactical adaptability to different surfaces</quality>
+      <quality>Strong serve as a weapon</quality>
+    </qualitiesOfGoodPlayer>
+  </mentalPreparation>
+  <strategies>
+    <strategy name="Serve and volley">Big serve, follow to net, put away volley</strategy>
+    <strategy name="Baseline grind">High-margin topspin groundstrokes to wear opponent down</strategy>
+    <strategy name="Inside-out forehand">Run around backhand to hit powerful forehand cross-court</strategy>
+    <strategy name="Drop shot">Surprise short ball to bring aggressive baseliner to net</strategy>
+  </strategies>
+  <terminologies>
+    <term>Ace - serve not touched by receiver</term>
+    <term>Double fault - two consecutive failed serves; point lost</term>
+    <term>Deuce - game score tied at 40-40</term>
+    <term>Advantage - point won at deuce; one more needed to win game</term>
+    <term>Tiebreak - 7-point game to decide set at 6-6</term>
+    <term>Fault - serve landing out of service box</term>
+    <term>Let - serve clips net and lands in; re-served</term>
+    <term>Break of serve - winning game on opponent's serve</term>
+    <term>Volley - hitting ball before it bounces</term>
+    <term>Overhead / smash - powerful shot above head</term>
+    <term>ITF - International Tennis Federation</term>
+    <term>Grand Slam - Australian Open, French Open, Wimbledon, US Open</term>
+  </terminologies>
+</tennisCompleteGuide>
+
+<!-- ===================== ARCHERY ===================== -->
+<archeryCompleteGuide>
+  <courtFieldImage>
+    <imageUrl>images/archery_range.png</imageUrl>
+    <dimensions>
+      <outdoorDistance>18-90 m (standard distances)</outdoorDistance>
+      <indoorDistance>18-25 m</indoorDistance>
+      <targetFace>40 cm (indoor) to 122 cm (outdoor) diameter</targetFace>
+    </dimensions>
+    <surfaceTypes>Grass range (outdoor), wooden floor range (indoor), foam backstop</surfaceTypes>
+    <venues>Archery clubs, sports halls (indoor), outdoor ranges, Olympic venues</venues>
+  </courtFieldImage>
+  <healthBenefits>
+    <benefit>Develops upper body strength (shoulders, back, core)</benefit>
+    <benefit>Excellent for focus, concentration, and mindfulness</benefit>
+    <benefit>Improves posture through consistent alignment training</benefit>
+    <benefit>Suitable for all ages and abilities including wheelchair users</benefit>
+    <benefit>Mental calm and stress reduction through meditative repetition</benefit>
+  </healthBenefits>
+  <warmupCooldown>
+    <warmup>
+      <stretching>Shoulder rolls, arm circles, pectoral stretch, wrist flexion (5-8 min)</stretching>
+      <pregameExercises>Draw and hold (no arrow) 10 reps; 6 arrows at close range (5 m) for feel</pregameExercises>
+      <duration>15 minutes</duration>
+    </warmup>
+    <cooldown>
+      <postgameRecovery>Shoulder and chest static stretches; release tension with arm shakes; note improvement areas</postgameRecovery>
+      <duration>5-10 minutes</duration>
+    </cooldown>
+  </warmupCooldown>
+  <rulesRegulations>
+    <basicRules>
+      <rule>Archers shoot in defined ends (groups of arrows): 3 arrows (indoor) or 6 arrows (outdoor).</rule>
+      <rule>Scoring zones: 10 (inner gold), 9 (outer gold), 8, 7, 6, 5, 4, 3, 2, 1 (white outer).</rule>
+      <rule>Arrow breaking the line scores the higher value.</rule>
+      <rule>All archers must be on the shooting line at the same time per end.</rule>
+      <rule>No archer may retrieve arrows until all have shot and signal is given.</rule>
+    </basicRules>
+    <numberOfPlayers>Individual or team of 3</numberOfPlayers>
+    <matchTimings>
+      <indoor>18 m: 60 arrows = 2-3 hours</indoor>
+      <outdoor>70 m: 72 arrows = 3-4 hours</outdoor>
+      <olympic>Set system: best of 5 sets (3 arrows each) per match</olympic>
+    </matchTimings>
+    <breaksIntervals>
+      <standard>Break between distances; drink and snack permitted on range</standard>
+    </breaksIntervals>
+    <scoringSystem>
+      <win>Highest cumulative score wins; Olympic set system uses 2 pts per set win</win>
+    </scoringSystem>
+    <howToWin>Score the most cumulative points across all ends</howToWin>
+    <foulsAndPenalties>
+      <penalty>Calling arrow on wrong target: 0 scored for that arrow</penalty>
+      <penalty>Shooting after time signal: arrow not scored (or worst arrow removed)</penalty>
+      <penalty>Encroaching on safety zones: warning then disqualification</penalty>
+    </foulsAndPenalties>
+  </rulesRegulations>
+  <injuryPrevention>
+    <commonInjuries>
+      <injury>Rotator cuff strain from repetitive drawing</injury>
+      <injury>Bow arm bruising (string slap)</injury>
+      <injury>Finger soreness and blisters (recurve/longbow)</injury>
+      <injury>Elbow tendinitis from release issues</injury>
+    </commonInjuries>
+    <preventionMethods>
+      <method>Use an arm guard to prevent string slap</method>
+      <method>Use finger tab or mechanical release to protect fingers</method>
+      <method>Build draw weight gradually - don't exceed what you can hold for 5 seconds</method>
+      <method>Strengthen rotator cuff and back muscles in gym</method>
+      <method>Use a bow stringer - never brace a recurve bow by hand</method>
+    </preventionMethods>
+    <diseasesToAvoidPlaying>
+      <condition>Rotator cuff tear - drawing bow will worsen injury significantly</condition>
+      <condition>Severe arthritis in fingers - seek lighter draw weight or compound bow</condition>
+    </diseasesToAvoidPlaying>
+  </injuryPrevention>
+  <hydrationImportance>
+    <beforeMatch>250-500 ml water before session; more in outdoor heat</beforeMatch>
+    <duringMatch>Sip regularly between ends; water bottle on range is allowed</duringMatch>
+    <afterMatch>Rehydrate with 300-500 ml water</afterMatch>
+    <warningAvoid>Don't ignore hydration in outdoor summer sessions - standing in sun is deceptive</warningAvoid>
+    <signsOfDehydration>Loss of focus, trembling draw arm, poor consistency</signsOfDehydration>
+  </hydrationImportance>
+  <nutritionTips>
+    <preGame>Light meal: oats, eggs, or toast 1-2 hours before (avoid heavy food affecting steadiness)</preGame>
+    <duringGame>Light snack between ends if session is 3+ hours</duringGame>
+    <postGame>Normal balanced meal; protein to support shoulder muscle recovery</postGame>
+    <daily>Anti-inflammatory diet (omega-3, turmeric) for shoulder and elbow joint health</daily>
+  </nutritionTips>
+  <avoidingBurnout>
+    <physicalBurnout>
+      <limit>Max 120-150 arrows per session; no more than 5 sessions per week</limit>
+      <restDays>2 rest days minimum; never shoot through pain</restDays>
+      <crossTrain>Shoulder and back strengthening in gym; yoga for flexibility</crossTrain>
+    </physicalBurnout>
+    <mentalBurnout>
+      <signs>Loss of concentration, dreading range sessions, inconsistent form despite practice</signs>
+      <solution>Shoot at short distances for fun, remove scoring pressure, try a different style</solution>
+    </mentalBurnout>
+  </avoidingBurnout>
+  <equipment>
+    <item>Recurve or compound bow (beginners: recurve recommended; compound for hunting/3D)</item>
+    <item>Arrows (matched to bow draw weight and archer's draw length)</item>
+    <item>Arm guard (bracer)</item>
+    <item>Finger tab (recurve) or mechanical release (compound)</item>
+    <item>Sight and stabilisers (recurve/compound)</item>
+    <item>Quiver (hip or back)</item>
+    <item>Arrow puller</item>
+  </equipment>
+  <safetyGear>
+    <item>Arm guard - prevents string bruising</item>
+    <item>Finger tab or glove - protects drawing fingers</item>
+    <item>Chest guard - prevents string catching clothing</item>
+    <item>Always maintain arrow point downrange - never point at people</item>
+  </safetyGear>
+  <importantSkills>
+    <coordination>
+      <desc>Consistent anchor point, draw, and release every shot</desc>
+      <drill>Blank bale at 1-2 m: shoot with eyes closed to feel perfect release</drill>
+    </coordination>
+    <speedAgility>
+      <desc>Timed rounds: shoot 3 arrows in 120 seconds (Olympic) with accuracy</desc>
+    </speedAgility>
+    <focusReaction>
+      <desc>Meditative focus: block out distractions, focus on process not target</desc>
+    </focusReaction>
+    <xFactors>
+      <strategy>
+        <offensive>Score 10s early to apply psychological pressure on opponent</offensive>
+        <defensive>Steady scoring with 8s and 9s beats inconsistent 10s and 5s</defensive>
+      </strategy>
+      <gameSense>Know your average score and execute it under pressure</gameSense>
+      <decisionMaking>Aim at gold but accept 9 as a good shot - chasing 10s causes misses</decisionMaking>
+    </xFactors>
+  </importantSkills>
+  <practiceRoutines>
+    <dailyPlan>
+      <day label="Monday">Blank bale technique (30 arrows at 2 m) + shoulder exercises</day>
+      <day label="Tuesday">Short distance accuracy (18 m, 60 arrows)</day>
+      <day label="Wednesday">Long distance practice (50 m or 70 m)</day>
+      <day label="Thursday">Olympic simulation (5 sets x 3 arrows under 40 sec)</day>
+      <day label="Friday">Mixed distance session + mental practice (visualisation)</day>
+      <day label="Saturday">Club shoot or practice round</day>
+      <day label="Sunday">Rest</day>
+    </dailyPlan>
+    <drillsForBeginners>
+      <drill name="String alignment">Draw bow with eyes closed; check alignment before opening eyes</drill>
+      <drill name="Anchor consistency">10 draws holding for 5 sec, checking anchor point each time</drill>
+      <drill name="Clicker drill">Draw through the clicker slowly 10 reps for expansion feel</drill>
+    </drillsForBeginners>
+  </practiceRoutines>
+  <mentalPreparation>
+    <focusingTechniques>
+      <technique name="Shot routine">Same pre-shot routine every arrow: stance, nock, draw, aim, expand, release</technique>
+      <technique name="One arrow at a time">Each arrow is a fresh start; forget the last shot completely</technique>
+    </focusingTechniques>
+    <pressureHandling>
+      <tip>In shoot-offs, focus on your routine not your competitor's score</tip>
+      <tip>If trembling, slow your breath and reduce draw weight pressure by rotating elbow out</tip>
+    </pressureHandling>
+    <sportsmanship>
+      <rule>Never coach or advise a competitor during competition</rule>
+      <rule>Help retrieve arrows carefully to avoid bending other archers' arrows</rule>
+    </sportsmanship>
+    <howToJoinSport>
+      <step>Attend a "have a go" or beginners' archery session at a local club</step>
+      <step>Complete a beginner's course (typically 6-8 sessions)</step>
+      <step>Buy starter recurve equipment after completing course ($150-300)</step>
+      <step>Join the club and register with national federation (e.g., World Archery affiliate)</step>
+      <costEstimate>Beginner course $100-200; starter recurve set $150-300; club membership $50-120/year</costEstimate>
+    </howToJoinSport>
+    <qualitiesOfGoodPlayer>
+      <quality>Mental calm and consistency under pressure</quality>
+      <quality>Repeatable technical form shot after shot</quality>
+      <quality>Analytical approach to diagnosing errors</quality>
+      <quality>Patience for the slow improvement curve of archery</quality>
+    </qualitiesOfGoodPlayer>
+  </mentalPreparation>
+  <strategies>
+    <strategy name="Consistent 9s">High average score beats volatile score with occasional 10s</strategy>
+    <strategy name="Wind management">Shoot between gusts in outdoor; learn to read flag or grass movement</strategy>
+    <strategy name="Set score building">Win the first set of an Olympic match to apply psychological pressure</strategy>
+  </strategies>
+  <terminologies>
+    <term>End - a group of arrows shot before scoring (3 or 6 arrows)</term>
+    <term>Gold - innermost scoring zone (10 or X ring)</term>
+    <term>Draw length - distance archer draws bowstring (personalised to each archer)</term>
+    <term>Draw weight - resistance in pounds at full draw</term>
+    <term>Clicker - metal plate that falls when archer draws to correct length</term>
+    <term>Anchor point - consistent point where draw hand contacts face</term>
+    <term>Stabiliser - rod attached to bow to reduce vibration and improve balance</term>
+    <term>Nock - plastic groove at arrow end that clips onto bowstring</term>
+    <term>Fletching - feathers or vanes at arrow tail for stability in flight</term>
+    <term>World Archery - international governing body (formerly FITA)</term>
+  </terminologies>
+</archeryCompleteGuide>
+
+</outdoorGames>
 </sportsData>
