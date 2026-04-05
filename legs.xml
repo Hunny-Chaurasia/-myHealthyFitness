@@ -101,7 +101,7 @@
 
     <!-- GLUTES - Beginner -->
     <Pose id="LEG-G-01" difficulty="Beginner" safety="Keep your core engaged and ribs down. Avoid arching your lower back. Squeeze your glutes forcefully at the top of the movement." Pose_type="Strength, Activation">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/hip_thrust_bodyweight.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Barbell%20Hip%20Thrust.gif</url>
         <Name>Hip Thrust (Bodyweight)</Name>
         <Equipment>Exercise Mat, Bench or Couch</Equipment>
         <Focused_Muscles>Glutes (Primary), Hamstrings (Secondary), Core Stabilizers</Focused_Muscles>
@@ -124,7 +124,7 @@
     </Pose>
 
     <Pose id="LEG-G-02" difficulty="Beginner" safety="Keep your core engaged and back flat. Avoid arching your lower back. Squeeze your glutes at the top of each kick." Pose_type="Activation, Strength">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/donkey_kick.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Donkey%20Kick.gif</url>
         <Name>Donkey Kick</Name>
         <Equipment>Exercise Mat</Equipment>
         <Focused_Muscles>Glutes (Primary), Hamstrings (Secondary), Core Stabilizers</Focused_Muscles>
@@ -148,7 +148,7 @@
 
     <!-- CALVES - Beginner -->
     <Pose id="LEG-C-01" difficulty="Beginner" safety="Keep your core engaged for balance. Use a wall or sturdy object for support. Move through a full range of motion—rise as high as possible, then lower until you feel a stretch." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/standing_calf_raise.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/standing-calf-raise.gif</url>
         <Name>Standing Calf Raise</Name>
         <Equipment>Wall or Sturdy Object for Support</Equipment>
         <Focused_Muscles>Gastrocnemius (Upper Calf)</Focused_Muscles>
@@ -171,7 +171,7 @@
     </Pose>
 
     <Pose id="LEG-C-02" difficulty="Beginner" safety="Keep your knees bent at a consistent angle throughout. Do not use your hands to push down on your knees. Move through a full range of motion." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_calf_raise.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/dumbbell-seated-calf-raise.gif</url>
         <Name>Seated Calf Raise</Name>
         <Equipment>Seated Calf Raise Machine or Dumbbell on Knee</Equipment>
         <Focused_Muscles>Soleus (Lower Calf)</Focused_Muscles>
@@ -199,7 +199,7 @@
     
     <!-- QUADS - Novice -->
     <Pose id="LEG-Q-03" difficulty="Novice" safety="Keep your chest up and core braced. Hold the dumbbell close to your chest. Do not let your knees cave inward. Lower until thighs are parallel to the floor." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/goblet_squat.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/dumbbell-goblet-squat.gif</url>
         <Name>Goblet Squat</Name>
         <Equipment>Single Dumbbell or Kettlebell</Equipment>
         <Focused_Muscles>Quadriceps (Primary), Glutes, Core Stabilizers, Hamstrings</Focused_Muscles>
@@ -222,7 +222,7 @@
     </Pose>
 
     <Pose id="LEG-Q-04" difficulty="Novice" safety="Keep your lower back pressed against the seat. Do not lock your knees at the top. Control the weight on both the press and the return." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/leg_press_novice.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/leg-press.gif</url>
         <Name>Leg Press</Name>
         <Equipment>Leg Press Machine</Equipment>
         <Focused_Muscles>Quadriceps (Primary), Glutes, Hamstrings</Focused_Muscles>
@@ -245,7 +245,7 @@
     </Pose>
 
     <Pose id="LEG-Q-05" difficulty="Novice" safety="Keep your lower back pressed against the seat. Do not lock your knees at the top. Control the weight on both the extension and the return." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/leg_extension.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/lever-leg-extension.gif</url>
         <Name>Leg Extension</Name>
         <Equipment>Leg Extension Machine</Equipment>
         <Focused_Muscles>Quadriceps (Rectus Femoris, Vastus Medialis/Lateralis/Intermedius)</Focused_Muscles>
@@ -269,7 +269,7 @@
 
     <!-- HAMSTRINGS - Novice -->
     <Pose id="LEG-H-03" difficulty="Novice" safety="Keep your back straight and core braced. Hinge at your hips, not your lower back. Maintain a slight bend in your knees throughout. Avoid rounding your back." Pose_type="Strength, Hip Hinge">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/romanian_deadlift_light.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Romanian%20Deadlift%20dumbell.gif</url>
         <Name>Romanian Deadlift (Light)</Name>
         <Equipment>Dumbbells or Light Barbell</Equipment>
         <Focused_Muscles>Hamstrings (Primary), Glutes, Lower Back (Erector Spinae)</Focused_Muscles>
@@ -292,7 +292,7 @@
     </Pose>
 
     <Pose id="LEG-H-04" difficulty="Novice" safety="Keep your hips pressed into the pad. Avoid jerking the weight. Do not lock your knees at the bottom. Control the movement throughout." Pose_type="Hypertrophy, Isolation">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lying_leg_curl_novice.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/leg-curl.gif</url>
         <Name>Lying Leg Curl</Name>
         <Equipment>Lying Leg Curl Machine</Equipment>
         <Focused_Muscles>Hamstrings (Primary), Calves (Minor)</Focused_Muscles>
@@ -315,7 +315,7 @@
     </Pose>
 
     <Pose id="LEG-H-05" difficulty="Novice" safety="Keep your core engaged and lower back neutral. Squeeze your glutes at the top. Avoid arching your lower back." Pose_type="Activation, Strength">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/glute_bridge_novice.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/glute-bridge.gif</url>
         <Name>Glute Bridge</Name>
         <Equipment>Exercise Mat, Optional: Dumbbell on Hips</Equipment>
         <Focused_Muscles>Glutes (Primary), Hamstrings (Secondary), Core</Focused_Muscles>
@@ -339,7 +339,7 @@
 
     <!-- GLUTES - Novice -->
     <Pose id="LEG-G-03" difficulty="Novice" safety="Keep your core engaged and ribs down. Avoid arching your lower back. Squeeze your glutes forcefully at the top. Use a pad on the barbell for comfort." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/hip_thrust_light_barbell.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Barbell%20Hip%20Thrust.gif</url>
         <Name>Hip Thrust (Barbell, Light)</Name>
         <Equipment>Barbell with Light Plates, Bench, Hip Thrust Pad (Optional)</Equipment>
         <Focused_Muscles>Glutes (Primary), Hamstrings (Secondary), Core</Focused_Muscles>
@@ -362,7 +362,7 @@
     </Pose>
 
     <Pose id="LEG-G-04" difficulty="Novice" safety="Keep your chest up and core braced. Push your knees outward as you squat to protect your knees. Do not let your knees cave inward." Pose_type="Strength, Glute Focus">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/sumo_squat.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/dumbbells-sumo-squat.gif</url>
         <Name>Sumo Squat</Name>
         <Equipment>Dumbbell or Kettlebell (Optional)</Equipment>
         <Focused_Muscles>Glutes (Primary), Quadriceps, Adductors (Inner Thighs), Hamstrings</Focused_Muscles>
@@ -385,7 +385,7 @@
     </Pose>
 
     <Pose id="LEG-G-05" difficulty="Novice" safety="Keep your core engaged and back flat. Avoid arching your lower back. Squeeze your glute at the peak of the kick. Do not use momentum to swing your leg." Pose_type="Isolation, Activation">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_kickback.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Cable%20Kickback.gif</url>
         <Name>Cable Kickback</Name>
         <Equipment>Cable Machine with Ankle Strap</Equipment>
         <Focused_Muscles>Glutes (Primary), Hamstrings (Secondary)</Focused_Muscles>
@@ -409,7 +409,7 @@
 
     <!-- CALVES - Novice -->
     <Pose id="LEG-C-03" difficulty="Novice" safety="Keep your core engaged and stand tall. Use a full range of motion. Do not bounce at the bottom. Control the descent." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/standing_calf_raise_weighted.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Standing%20Calf%20Raise%20(Weighted).gif</url>
         <Name>Standing Calf Raise (Weighted)</Name>
         <Equipment>Dumbbell or Barbell, Step or Elevated Surface</Equipment>
         <Focused_Muscles>Gastrocnemius (Upper Calf)</Focused_Muscles>
@@ -432,7 +432,7 @@
     </Pose>
 
     <Pose id="LEG-C-04" difficulty="Novice" safety="Keep your knees bent at a consistent angle. Do not use your hands to push down. Control the weight throughout." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_calf_raise_weighted.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/dumbbell-seated-calf-raise.gif</url>
         <Name>Seated Calf Raise (Weighted)</Name>
         <Equipment>Seated Calf Raise Machine or Barbell on Knees</Equipment>
         <Focused_Muscles>Soleus (Lower Calf)</Focused_Muscles>
@@ -455,7 +455,7 @@
     </Pose>
 
     <Pose id="LEG-C-05" difficulty="Novice" safety="Keep your legs straight (but not locked) on the leg press. Use a full range of motion. Do not let the weight stack slam at the bottom." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/calf_press_leg_press.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Calf%20Press%20on%20Leg%20Press.gif</url>
         <Name>Calf Press on Leg Press</Name>
         <Equipment>Leg Press Machine</Equipment>
         <Focused_Muscles>Gastrocnemius (Upper Calf), Soleus (Minor)</Focused_Muscles>
@@ -483,7 +483,7 @@
     
     <!-- QUADS - Advanced -->
     <Pose id="LEG-Q-06" difficulty="Advanced" safety="Keep your core braced and back straight. Do not round your lower back. Use a squat rack with safety bars. Maintain proper depth (thighs parallel or below)." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_back_squat.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Barbell%20Back%20Squat.gif</url>
         <Name>Barbell Back Squat</Name>
         <Equipment>Barbell, Squat Rack, Weight Plates</Equipment>
         <Focused_Muscles>Quadriceps (Primary), Glutes, Hamstrings, Core, Lower Back</Focused_Muscles>
@@ -506,7 +506,7 @@
     </Pose>
 
     <Pose id="LEG-Q-07" difficulty="Advanced" safety="Keep your core braced and back straight. Do not round your lower back. Maintain an upright torso throughout. Use a squat rack with safety bars." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/leg_press_heavy.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/leg-press.gif</url>
         <Name>Leg Press (Heavy)</Name>
         <Equipment>Leg Press Machine</Equipment>
         <Focused_Muscles>Quadriceps (Primary), Glutes, Hamstrings</Focused_Muscles>
@@ -529,7 +529,7 @@
     </Pose>
 
     <Pose id="LEG-Q-08" difficulty="Advanced" safety="Keep your lower back pressed against the seat. Control the weight on both extension and return. Do not lock your knees at the top." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/leg_extension_advanced.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/lever-leg-extension.gif</url>
         <Name>Leg Extension</Name>
         <Equipment>Leg Extension Machine</Equipment>
         <Focused_Muscles>Quadriceps (All 4 Heads)</Focused_Muscles>
@@ -552,7 +552,7 @@
     </Pose>
 
     <Pose id="LEG-Q-09" difficulty="Advanced" safety="Keep your chest up and core braced. Do not let your front knee travel past your toes. Control the movement on both the descent and ascent." Pose_type="Strength, Unilateral">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bulgarian_split_squat.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Bulgarian%20Split%20Squat.gif</url>
         <Name>Bulgarian Split Squat</Name>
         <Equipment>Dumbbells or Barbell, Bench</Equipment>
         <Focused_Muscles>Quadriceps (Primary), Glutes, Hamstrings, Core Stabilizers</Focused_Muscles>
@@ -599,7 +599,7 @@
     </Pose>
 
     <Pose id="LEG-H-07" difficulty="Advanced" safety="Keep your hips pressed into the pad. Control the weight—do not let it slam. Do not lock your knees at the bottom." Pose_type="Hypertrophy, Isolation">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lying_leg_curl_advanced.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/leg-curl.gif</url>
         <Name>Lying Leg Curl</Name>
         <Equipment>Lying Leg Curl Machine</Equipment>
         <Focused_Muscles>Hamstrings (Primary)</Focused_Muscles>
@@ -622,7 +622,7 @@
     </Pose>
 
     <Pose id="LEG-H-08" difficulty="Advanced" safety="This is a demanding exercise. Use a pad under your knees for comfort. Control the descent—do not drop. Use a partner or anchor for stability." Pose_type="Strength, Eccentric">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/nordic_curl.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Nordic%20Curl.gif</url>
         <Name>Nordic Curl</Name>
         <Equipment>Nordic Bench or Partner, Pad for Knees</Equipment>
         <Focused_Muscles>Hamstrings (Eccentric Strength), Glutes (Minor)</Focused_Muscles>
@@ -645,7 +645,7 @@
     </Pose>
 
     <Pose id="LEG-H-09" difficulty="Advanced" safety="Keep your lower back pressed against the seat. Control the weight throughout. Do not lock your knees at the bottom." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_leg_curl.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Seated%20Leg%20Curl.gif</url>
         <Name>Seated Leg Curl</Name>
         <Equipment>Seated Leg Curl Machine</Equipment>
         <Focused_Muscles>Hamstrings (Short Head - Knee Flexion Focus)</Focused_Muscles>
@@ -669,7 +669,7 @@
 
     <!-- GLUTES - Advanced -->
     <Pose id="LEG-G-06" difficulty="Advanced" safety="Keep your core engaged and ribs down. Squeeze your glutes forcefully at the top. Use a pad on the barbell for comfort. Do not arch your lower back." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_hip_thrust_heavy.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Barbell%20Hip%20Thrust.gif</url>
         <Name>Barbell Hip Thrust (Heavy)</Name>
         <Equipment>Barbell with Heavy Plates, Bench, Hip Thrust Pad</Equipment>
         <Focused_Muscles>Glutes (Primary), Hamstrings (Secondary), Core</Focused_Muscles>
@@ -692,7 +692,7 @@
     </Pose>
 
     <Pose id="LEG-G-07" difficulty="Advanced" safety="Keep your back straight and core braced. Maintain a slight bend in your knees throughout. Do not round your back. Push through your heels." Pose_type="Strength, Hip Hinge">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/sumo_deadlift_advanced.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Sumo%20Deadlift.gif</url>
         <Name>Sumo Deadlift</Name>
         <Equipment>Barbell with Heavy Plates</Equipment>
         <Focused_Muscles>Glutes (Primary), Adductors (Inner Thighs), Hamstrings, Quadriceps, Lower Back</Focused_Muscles>
@@ -715,7 +715,7 @@
     </Pose>
 
     <Pose id="LEG-G-08" difficulty="Advanced" safety="Keep your core engaged and back flat. Avoid arching your lower back. Squeeze your glute at the peak of the kick. Control the movement—do not swing." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_kickback_advanced.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Cable%20Kickback.gif</url>
         <Name>Cable Kickback</Name>
         <Equipment>Cable Machine with Ankle Strap</Equipment>
         <Focused_Muscles>Glutes (Primary), Hamstrings (Secondary)</Focused_Muscles>
@@ -738,7 +738,7 @@
     </Pose>
 
     <Pose id="LEG-G-09" difficulty="Advanced" safety="Keep your chest up and core braced. Take controlled steps—do not rush. Do not let your front knee travel past your toes." Pose_type="Strength, Unilateral">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/walking_lunge.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Walking%20Lunge.gif</url>
         <Name>Walking Lunge</Name>
         <Equipment>Dumbbells or Barbell</Equipment>
         <Focused_Muscles>Glutes (Primary), Quadriceps, Hamstrings, Core</Focused_Muscles>
@@ -762,7 +762,7 @@
 
     <!-- CALVES - Advanced -->
     <Pose id="LEG-C-06" difficulty="Advanced" safety="Keep your core engaged and stand tall. Use a full range of motion. Do not bounce at the bottom. Control the descent." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/standing_calf_raise_heavy.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Standing%20Calf%20Raise%20(Weighted).gif</url>
         <Name>Standing Calf Raise (Weighted - Heavy)</Name>
         <Equipment>Standing Calf Raise Machine or Heavy Barbell with Step</Equipment>
         <Focused_Muscles>Gastrocnemius (Upper Calf)</Focused_Muscles>
@@ -785,7 +785,7 @@
     </Pose>
 
     <Pose id="LEG-C-07" difficulty="Advanced" safety="Keep your knees bent at a consistent angle. Do not use your hands to push down. Control the weight throughout." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_calf_raise_heavy.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/dumbbell-seated-calf-raise.gif</url>
         <Name>Seated Calf Raise (Heavy)</Name>
         <Equipment>Seated Calf Raise Machine or Heavy Barbell on Knees</Equipment>
         <Focused_Muscles>Soleus (Lower Calf)</Focused_Muscles>
@@ -808,7 +808,7 @@
     </Pose>
 
     <Pose id="LEG-C-08" difficulty="Advanced" safety="Keep your core engaged and body stable. Use a full range of motion. Do not bounce. Control the descent." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/donkey_calf_raise.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Donkey%20Calf%20Raise.gif</url>
         <Name>Donkey Calf Raise</Name>
         <Equipment>Donkey Calf Raise Machine or Partner with Weights on Lower Back</Equipment>
         <Focused_Muscles>Gastrocnemius (Upper Calf)</Focused_Muscles>
@@ -831,7 +831,7 @@
     </Pose>
 
     <Pose id="LEG-C-09" difficulty="Advanced" safety="Keep your core engaged and body stable. Use a full range of motion. Do not lock your knee. Control the descent." Pose_type="Strength, Unilateral">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/single_leg_calf_raise.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Single-Leg%20Calf%20Raise.gif</url>
         <Name>Single-Leg Calf Raise</Name>
         <Equipment>Dumbbell (Optional), Step, Wall for Support</Equipment>
         <Focused_Muscles>Gastrocnemius (Unilateral - Addresses Imbalances)</Focused_Muscles>
@@ -859,7 +859,7 @@
     
     <!-- QUADS - Expert -->
     <Pose id="LEG-Q-10" difficulty="Expert" safety="Use a squat rack with safety bars. Keep your core braced and back straight. Do not round your lower back. Use a spotter for heavy sets. Warm up thoroughly." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_back_squat_heavy.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Barbell%20Back%20Squat.gif</url>
         <Name>Barbell Back Squat (Heavy)</Name>
         <Equipment>Barbell, Squat Rack, Heavy Plates, Belt (Optional), Spotter</Equipment>
         <Focused_Muscles>Quadriceps (Primary), Glutes, Hamstrings, Core, Lower Back</Focused_Muscles>
@@ -882,7 +882,7 @@
     </Pose>
 
     <Pose id="LEG-Q-11" difficulty="Expert" safety="Keep your torso as upright as possible. The bar will rest on your front deltoids—this may be uncomfortable at first. Keep your elbows high." Pose_type="Strength, Quad Focus">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/front_squat.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Front%20Squat.gif</url>
         <Name>Front Squat</Name>
         <Equipment>Barbell, Squat Rack, Light Plates</Equipment>
         <Focused_Muscles>Quadriceps (Primary), Core, Glutes (Minor), Upper Back</Focused_Muscles>
@@ -905,7 +905,7 @@
     </Pose>
 
     <Pose id="LEG-Q-12" difficulty="Expert" safety="Keep your lower back pressed against the seat. Do not let your hips lift. Control the sled throughout. Use safety stops." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/hack_squat.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Hack%20Squat.gif</url>
         <Name>Hack Squat</Name>
         <Equipment>Hack Squat Machine</Equipment>
         <Focused_Muscles>Quadriceps (Primary), Glutes, Hamstrings</Focused_Muscles>
@@ -928,7 +928,7 @@
     </Pose>
 
     <Pose id="LEG-Q-13" difficulty="Expert" safety="This is a drop set—have lighter weights ready. Do not rest between drops. Control the weight throughout. Stop if form breaks." Pose_type="Drop Set, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/leg_extension_drop_set.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/lever-leg-extension.gif</url>
         <Name>Leg Extension (Drop Set)</Name>
         <Equipment>Leg Extension Machine, Multiple Weight Increments</Equipment>
         <Focused_Muscles>Quadriceps (All 4 Heads)</Focused_Muscles>
@@ -951,7 +951,7 @@
     </Pose>
 
     <Pose id="LEG-Q-14" difficulty="Expert" safety="Keep your chest up and core braced. Do not let your front knee travel past your toes. Use a heavy dumbbell in each hand for loading." Pose_type="Strength, Unilateral">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bulgarian_split_squat_weighted.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Bulgarian%20Split%20Squat.gif</url>
         <Name>Bulgarian Split Squat (Weighted - Heavy)</Name>
         <Equipment>Heavy Dumbbells, Bench</Equipment>
         <Focused_Muscles>Quadriceps (Primary), Glutes, Hamstrings, Core</Focused_Muscles>
@@ -975,7 +975,7 @@
 
     <!-- HAMSTRINGS - Expert -->
     <Pose id="LEG-H-10" difficulty="Expert" safety="Keep your back straight and core braced. Hinge at your hips. Maintain a slight bend in your knees. Do not round your back at any point." Pose_type="Strength, Hip Hinge">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/romanian_deadlift_heavy_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Romanian%20Deadlift%20dumbell.gif</url>
         <Name>Romanian Deadlift (Heavy - Expert)</Name>
         <Equipment>Heavy Barbell with Plates</Equipment>
         <Focused_Muscles>Hamstrings (Primary), Glutes, Lower Back, Core</Focused_Muscles>
@@ -998,7 +998,7 @@
     </Pose>
 
     <Pose id="LEG-H-11" difficulty="Expert" safety="Use a pad under your knees. Control the descent—do not drop. This is an advanced exercise. Build up to full ROM over weeks." Pose_type="Strength, Eccentric">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/nordic_curl_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Nordic%20Curl.gif</url>
         <Name>Nordic Curl</Name>
         <Equipment>Nordic Bench, Pad for Knees, Partner or Anchor</Equipment>
         <Focused_Muscles>Hamstrings (Eccentric Strength)</Focused_Muscles>
@@ -1021,7 +1021,7 @@
     </Pose>
 
     <Pose id="LEG-H-12" difficulty="Expert" safety="This is a drop set. Do not rest between drops. Control the weight throughout. Stop if form breaks." Pose_type="Drop Set, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/lying_leg_curl_drop_set.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/leg-curl.gif</url>
         <Name>Lying Leg Curl (Drop Set)</Name>
         <Equipment>Lying Leg Curl Machine, Multiple Weight Increments</Equipment>
         <Focused_Muscles>Hamstrings</Focused_Muscles>
@@ -1044,7 +1044,7 @@
     </Pose>
 
     <Pose id="LEG-H-13" difficulty="Expert" safety="Keep your lower back pressed against the seat. Control the weight throughout. Do not lock your knees at the bottom." Pose_type="Isolation, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_leg_curl_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Seated%20Leg%20Curl.gif</url>
         <Name>Seated Leg Curl</Name>
         <Equipment>Seated Leg Curl Machine</Equipment>
         <Focused_Muscles>Hamstrings (Short Head - Knee Flexion)</Focused_Muscles>
@@ -1067,7 +1067,7 @@
     </Pose>
 
     <Pose id="LEG-H-14" difficulty="Expert" safety="Keep your back straight and core braced. Hinge at your hips. Do not round your back. Start with light weight to master form." Pose_type="Strength, Posterior Chain">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/good_morning.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Good%20Morning.gif</url>
         <Name>Good Morning</Name>
         <Equipment>Barbell, Squat Rack</Equipment>
         <Focused_Muscles>Hamstrings, Glutes, Lower Back (Erector Spinae), Core</Focused_Muscles>
@@ -1091,7 +1091,7 @@
 
     <!-- GLUTES - Expert -->
     <Pose id="LEG-G-10" difficulty="Expert" safety="Keep your core engaged and ribs down. Squeeze your glutes forcefully at the top. Use a pad on the barbell. Do not arch your lower back." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/barbell_hip_thrust_heavy_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Barbell%20Hip%20Thrust.gif</url>
         <Name>Barbell Hip Thrust (Heavy - Expert)</Name>
         <Equipment>Heavy Barbell, Bench, Hip Thrust Pad, Belt (Optional)</Equipment>
         <Focused_Muscles>Glutes (Primary), Hamstrings, Core</Focused_Muscles>
@@ -1114,7 +1114,7 @@
     </Pose>
 
     <Pose id="LEG-G-11" difficulty="Expert" safety="Keep your back straight and core braced. Drive through your heels. Do not round your back. Use a mixed grip for heavy weight." Pose_type="Strength, Power">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/sumo_deadlift_heavy_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Sumo%20Deadlift.gif</url>
         <Name>Sumo Deadlift (Heavy - Expert)</Name>
         <Equipment>Heavy Barbell with Plates, Deadlift Platform</Equipment>
         <Focused_Muscles>Glutes, Adductors (Inner Thighs), Hamstrings, Quadriceps, Lower Back</Focused_Muscles>
@@ -1137,7 +1137,7 @@
     </Pose>
 
     <Pose id="LEG-G-12" difficulty="Expert" safety="Keep your chest up and core braced. Do not let your front knee travel past your toes. Use heavy dumbbells. Control the movement." Pose_type="Strength, Unilateral">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/bulgarian_split_squat_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Bulgarian%20Split%20Squat.gif</url>
         <Name>Bulgarian Split Squat (Expert - Heavy)</Name>
         <Equipment>Heavy Dumbbells or Barbell, Bench</Equipment>
         <Focused_Muscles>Glutes (Primary), Quadriceps, Hamstrings, Core</Focused_Muscles>
@@ -1160,7 +1160,7 @@
     </Pose>
 
     <Pose id="LEG-G-13" difficulty="Expert" safety="Keep your core engaged and back flat. Avoid arching your lower back. Squeeze your glute at the peak. Control the slow return." Pose_type="Isolation, Eccentric Focus">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/cable_kickback_slow_eccentric.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Cable%20Kickback.gif</url>
         <Name>Cable Kickback (Slow Eccentric)</Name>
         <Equipment>Cable Machine with Ankle Strap</Equipment>
         <Focused_Muscles>Glutes (Primary), Hamstrings (Secondary)</Focused_Muscles>
@@ -1207,7 +1207,7 @@
 
     <!-- CALVES - Expert -->
     <Pose id="LEG-C-10" difficulty="Expert" safety="Keep your core engaged and stand tall. Use a full range of motion. Do not bounce at the bottom. Control the descent. Use a heavy weight." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/standing_calf_raise_heavy_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Standing%20Calf%20Raise%20(Weighted).gif</url>
         <Name>Standing Calf Raise (Heavy - Expert)</Name>
         <Equipment>Standing Calf Raise Machine or Heavy Barbell with Step</Equipment>
         <Focused_Muscles>Gastrocnemius (Upper Calf)</Focused_Muscles>
@@ -1230,7 +1230,7 @@
     </Pose>
 
     <Pose id="LEG-C-11" difficulty="Expert" safety="Keep your knees bent at a consistent angle. Do not use your hands to push down. Control the weight throughout." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/seated_calf_raise_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/dumbbell-seated-calf-raise.gif</url>
         <Name>Seated Calf Raise (Heavy - Expert)</Name>
         <Equipment>Seated Calf Raise Machine or Heavy Barbell on Knees</Equipment>
         <Focused_Muscles>Soleus (Lower Calf)</Focused_Muscles>
@@ -1253,7 +1253,7 @@
     </Pose>
 
     <Pose id="LEG-C-12" difficulty="Expert" safety="Keep your core engaged and body stable. Use a full range of motion. Do not bounce. Control the descent." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/donkey_calf_raise_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Donkey%20Calf%20Raise.gif</url>
         <Name>Donkey Calf Raise (Heavy - Expert)</Name>
         <Equipment>Donkey Calf Raise Machine or Weighted Partner</Equipment>
         <Focused_Muscles>Gastrocnemius (Upper Calf)</Focused_Muscles>
@@ -1276,7 +1276,7 @@
     </Pose>
 
     <Pose id="LEG-C-13" difficulty="Expert" safety="Keep your core engaged and body stable. Use a full range of motion. Do not lock your knee. Control the descent. Use heavy weight." Pose_type="Strength, Unilateral">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/single_leg_calf_raise_weighted.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Single-Leg%20Calf%20Raise.gif</url>
         <Name>Single-Leg Calf Raise (Weighted - Expert)</Name>
         <Equipment>Heavy Dumbbell, Step, Wall for Support</Equipment>
         <Focused_Muscles>Gastrocnemius (Unilateral - Corrects Imbalances)</Focused_Muscles>
@@ -1299,7 +1299,7 @@
     </Pose>
 
     <Pose id="LEG-C-14" difficulty="Expert" safety="Keep your legs straight (but not locked) on the leg press. Use a full range of motion. Do not let the weight stack slam at the bottom." Pose_type="Strength, Hypertrophy">
-        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/GIF-ONLY/main/calf_press_leg_press_expert.gif</url>
+        <url type="gif">https://raw.githubusercontent.com/Hunny-Chaurasia/legs-gif/main/Calf%20Press%20on%20Leg%20Press.gif</url>
         <Name>Calf Press on Leg Press (Heavy - Expert)</Name>
         <Equipment>Leg Press Machine, Heavy Plates</Equipment>
         <Focused_Muscles>Gastrocnemius (Upper Calf), Soleus (Minor)</Focused_Muscles>
