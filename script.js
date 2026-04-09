@@ -2242,130 +2242,218 @@ function change_text6() {
 }
 // news-shelter
 const API_KEY = 'pub_f5d56eeaa27e40b78e43569ccf60c896';
-        const TAG_CYCLE = ['training', 'sports', 'nutrition', 'fitness', 'training'];
+let ALL = [];
+let currentTab = 'all';
 
-        function readTime(text) {
-            if (!text) return '3 min read';
-            const words = text.trim().split(/\s+/).length;
-            return Math.max(1, Math.round(words / 200)) + ' min read';
-        }
+const CAT_MAP = {
+  sports: { label: 'Sports', cls: 'tag-sports', api: 'sports' },
+  health: { label: 'Health', cls: 'tag-health', api: 'health' },
+  nutrition: { label: 'Nutrition', cls: 'tag-nutrition', api: 'food' },
+  training: { label: 'Training', cls: 'tag-training', api: 'lifestyle' },
+  fitness: { label: 'Fitness', cls: 'tag-fitness', api: 'lifestyle' }
+};
 
-        function timeAgo(pubDate) {
-            if (!pubDate) return '';
-            const diff = Date.now() - new Date(pubDate).getTime();
-            const h = Math.floor(diff / 3600000);
-            if (h < 1) return 'Just now';
-            if (h < 24) return h + ' hour' + (h > 1 ? 's' : '') + ' ago';
-            const d = Math.floor(h / 24);
-            return d + ' day' + (d > 1 ? 's' : '') + ' ago';
-        }
+const SPORTS_KW = ['football','cricket','tennis','basketball','olympic','athlete','match','tournament','league','game','player','team','goal','score','champion','race','swim','run','marathon','gym','workout','exercise','training','fitness','strength','endurance'];
+const HEALTH_KW = ['health','mental health','disease','doctor','hospital','therapy','wellness','medicine','immune','heart','brain','sleep','stress','diet','weight','body','injury','recovery','pain','surgery','cancer','diabetes','blood'];
+const NUTRI_KW = ['protein','carb','calorie','vitamin','mineral','supplement','diet','food','eat','meal','nutrition','hydration','fat','sugar','fiber','nutrient','vegetable','fruit','omega','probiotic'];
+const TRAIN_KW = ['workout','training','exercise','strength','endurance','cardio','hiit','crossfit','yoga','pilates','rep','set','muscle','squat','deadlift','bench','performance','coach','program','routine','sprint'];
 
-        function buildTrending(articles) {
-            const seeds = [
-                { tag: 'HIITWorkouts',       category: 'Training',   growth: '+23%' },
-                { tag: 'PlantBasedAthletes', category: 'Nutrition',  growth: '+18%' },
-                { tag: 'RecoveryTips',       category: 'Wellness',   growth: '+15%' },
-                { tag: 'MentalTraining',     category: 'Psychology', growth: '+31%' },
-                { tag: 'OlympicPrep',        category: 'Sports',     growth: '+42%' }
-            ];
-            return seeds.map(seed => {
-                const kw = seed.tag.replace(/([A-Z])/g, ' $1').toLowerCase().trim();
-                const hits = articles.filter(a =>
-                    ((a.title || '') + ' ' + (a.description || '')).toLowerCase().includes(kw)
-                ).length;
-                const posts = (900 + hits * 50 + Math.floor(Math.random() * 300)).toLocaleString();
-                return { ...seed, posts };
-            });
-        }
+function classify(article) {
+  const txt = ((article.title||'') + ' ' + (article.description||'')).toLowerCase();
+  const scores = { sports:0, health:0, nutrition:0, training:0 };
+  SPORTS_KW.forEach(k => { if(txt.includes(k)) scores.sports += (k.length > 5 ? 2 : 1) });
+  HEALTH_KW.forEach(k => { if(txt.includes(k)) scores.health += (k.length > 5 ? 2 : 1) });
+  NUTRI_KW.forEach(k => { if(txt.includes(k)) scores.nutrition += (k.length > 5 ? 2 : 1) });
+  TRAIN_KW.forEach(k => { if(txt.includes(k)) scores.training += (k.length > 5 ? 2 : 1) });
+  if (article._apiCat === 'sports') scores.sports += 5;
+  if (article._apiCat === 'health') scores.health += 5;
+  if (article._apiCat === 'food') scores.nutrition += 5;
+  if (article._apiCat === 'lifestyle') scores.training += 2;
+  const best = Object.entries(scores).sort((a,b)=>b[1]-a[1])[0];
+  return best[1] > 0 ? best[0] : 'health';
+}
 
-        function renderBreaking(article) {
-            const el = document.getElementById('breaking-article');
-            el.innerHTML = `
-                <h2>${article.title || 'Top Sports Story'}</h2>
-                <p>${article.description || ''}</p>
-                <div class="article-meta">
-                    <span>${readTime(article.description)}</span>
-                    <span><i class="fa-solid fa-eye"></i> ${(Math.floor(Math.random()*25000)+8000).toLocaleString()}</span>
-                    <span><i class="fa-regular fa-heart"></i> ${(Math.floor(Math.random()*5000)+800).toLocaleString()}</span>
-                    <div class="article-actions">
-                        <a href="${article.link || '#'}" target="_blank" rel="noopener" class="btn-read">
-                            <i class="fa-solid fa-book-open-reader"></i> Read
-                        </a>
-                    </div>
-                </div>`;
-        }
+function readTime(text) {
+  if (!text) return '2 min';
+  return Math.max(1, Math.round(text.trim().split(/\s+/).length / 200)) + ' min read';
+}
 
-        function renderGrid(articles) {
-            const grid = document.getElementById('articles-grid');
-            if (!articles.length) { grid.innerHTML = '<p style="padding:1rem;color:#888;">No articles found.</p>'; return; }
-            const fallbackAuthors = ['Dr. Sarah Johnson','Mike Chen','Emma Rodriguez','Lisa Thompson','Jake Morrison'];
-            grid.innerHTML = articles.map((a, i) => {
-                const tagClass = TAG_CYCLE[i % TAG_CYCLE.length];
-                const desc = a.description ? a.description.slice(0, 160) + (a.description.length > 160 ? '…' : '') : '';
-                return `
-                <div class="article-card">
-                    <span class="article-tag ${tagClass}">${tagClass.charAt(0).toUpperCase()+tagClass.slice(1)}</span>
-                    <h3><a href="${a.link||'#'}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">${a.title||'Untitled'}</a></h3>
-                    <p>${desc}</p>
-                    <div class="article-footer">
-                        <div class="author-info">
-                            <span>${a.source_id || fallbackAuthors[i % fallbackAuthors.length]}</span>
-                            <span>${timeAgo(a.pubDate)}</span>
-                        </div>
-                        <span class="read-time">${readTime(a.description)}</span>
-                    </div>
-                </div>`;
-            }).join('');
-        }
+function timeAgo(d) {
+  if (!d) return '';
+  const h = Math.floor((Date.now() - new Date(d).getTime()) / 3600000);
+  if (h < 1) return 'Just now';
+  if (h < 24) return h + 'h ago';
+  return Math.floor(h/24) + 'd ago';
+}
 
-        function renderTrending(articles) {
-            document.getElementById('trending-list').innerHTML = buildTrending(articles).map(t => `
-                <div class="trending-item">
-                    <div class="trending-info">
-                        <h4>#${t.tag}</h4>
-                        <div class="trending-stats">${t.posts} posts • ${t.category} <span class="growth">${t.growth}</span></div>
-                    </div>
-                </div>`).join('');
-        }
+async function fetchBatch(category) {
+  const url = `https://newsdata.io/api/1/latest?apikey=${API_KEY}&language=en&category=${category}&size=10`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const data = await res.json();
+  if (data.status === 'error') throw new Error(data.results?.message || 'API error');
+  return (data.results || []).map(a => ({ ...a, _apiCat: category }));
+}
 
-        function showError(msg, detail) {
-            document.getElementById('breaking-article').innerHTML = `
-                <h2 style="color:#f87171;">⚠ ${msg}</h2>
-                <p style="font-size:.85rem;opacity:.7;">${detail}</p>
-                <div class="article-meta"><div class="article-actions">
-                    <button class="btn-read" onclick="fetchNews()"><i class="fa-solid fa-rotate-right"></i> Retry</button>
-                </div></div>`;
-            document.getElementById('articles-grid').innerHTML = `<p style="padding:1rem;color:#f87171;">${detail}</p>`;
-            document.getElementById('trending-list').innerHTML = `<p style="padding:.5rem;color:#f87171;">Could not load.</p>`;
-        }
+async function init() {
+  ALL = [];
+  document.getElementById('breaking-wrap').innerHTML = '<div class="loader"><span class="spinner"></span>Fetching live articles…</div>';
+  document.getElementById('grid-wrap').innerHTML = '';
+  document.getElementById('trending-wrap').innerHTML = '<div class="loader" style="padding:1rem">Loading…</div>';
+  try {
+    const [b1, b2] = await Promise.allSettled([
+      fetchBatch('sports,health'),
+      fetchBatch('food,lifestyle')
+    ]);
+    const raw = [];
+    if (b1.status === 'fulfilled') raw.push(...b1.value);
+    if (b2.status === 'fulfilled') raw.push(...b2.value);
+    if (!raw.length) throw new Error('No articles returned. Check API plan.');
+    const seen = new Set();
+    raw.forEach(a => {
+      if (!a.title) return;
+      if (seen.has(a.title)) return;
+      seen.add(a.title);
+      a._category = classify(a);
+      ALL.push(a);
+    });
+    ALL.sort((a,b) => new Date(b.pubDate||0) - new Date(a.pubDate||0));
+    updateCounts();
+    render();
+    renderTrending();
+  } catch(e) {
+    document.getElementById('breaking-wrap').innerHTML = `<div class="error-box">⚠ Could not load news.<br><small>${e.message}</small><br><button class="retry-btn" onclick="init()">↺ Retry</button></div>`;
+    document.getElementById('grid-wrap').innerHTML = '';
+    document.getElementById('trending-wrap').innerHTML = '<div style="padding:.5rem;font-size:13px;color:var(--color-text-tertiary)">Unavailable</div>';
+  }
+}
 
-        async function fetchOneBatch(category) {
-            const url = `https://newsdata.io/api/1/latest?apikey=${API_KEY}&country=in,us,wo,np,mm&language=hi,en&category=${category}&size=10`;
-            const res = await fetch(url, { mode: 'cors' });
-            if (!res.ok) throw new Error(`HTTP ${res.status} for category: ${category}`);
-            const data = await res.json();
-            if (data.status === 'error') throw new Error(data.results?.message || JSON.stringify(data));
-            return data.results || [];
-        }
+function updateCounts() {
+  const c = { sports:0, health:0, nutrition:0, training:0 };
+  ALL.forEach(a => { if(c[a._category] !== undefined) c[a._category]++; });
+  document.getElementById('count-total').textContent = ALL.length;
+  document.getElementById('count-sports').textContent = c.sports;
+  document.getElementById('count-health').textContent = c.health;
+  document.getElementById('count-nutrition').textContent = c.nutrition;
+  document.getElementById('count-training').textContent = c.training;
+}
 
-        async function fetchNews() {
-            document.getElementById('breaking-article').querySelector('h2').textContent = 'Fetching live news…';
-            try {
-                const batch1 = await fetchOneBatch('sports,health');
-                const batch2 = await fetchOneBatch('food,lifestyle');
-                const valid = [...batch1, ...batch2].filter(a => a.title && a.description);
-                if (!valid.length) { showError('No articles returned', 'Check your plan limits at newsdata.io.'); return; }
-                valid.sort((a, b) => new Date(b.pubDate||0) - new Date(a.pubDate||0));
-                document.getElementById('articles-today').textContent = valid.length;
-                document.getElementById('topics').textContent = 5;
-                renderBreaking(valid[0]);
-                renderGrid(valid.slice(1, 6));
-                renderTrending(valid);
-            } catch (err) {
-                console.error('[NewsHub]', err);
-                showError('Could not load live news.', err.message + '. Check DevTools Console.');
-            }
-        }
+function filtered() {
+  if (currentTab === 'all') return ALL;
+  if (currentTab === 'training') return ALL.filter(a => a._category === 'training' || a._category === 'fitness');
+  return ALL.filter(a => a._category === currentTab);
+}
 
-        fetchNews();
+function render() {
+  const list = filtered();
+  if (!list.length) {
+    document.getElementById('breaking-wrap').innerHTML = '<div class="loader">No articles in this category yet.</div>';
+    document.getElementById('grid-wrap').innerHTML = '';
+    return;
+  }
+  renderBreaking(list[0]);
+  renderGrid(list.slice(1, 10));
+}
 
+function renderBreaking(a) {
+  const cat = CAT_MAP[a._category] || CAT_MAP.health;
+  document.getElementById('breaking-wrap').innerHTML = `
+    <div class="breaking-card">
+      <div style="display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap">
+        <div style="flex:1;min-width:200px">
+          <span class="breaking-badge">Breaking</span>
+          <span class="cat-tag ${cat.cls}" style="margin-left:6px;font-size:11px;padding:3px 10px;border-radius:20px">${cat.label}</span>
+          <h2 class="breaking-title">${a.title}</h2>
+          <p class="breaking-desc">${a.description || 'No description available.'}</p>
+          <div class="meta-row">
+            <span class="meta-chip">📰 ${a.source_id || 'News'}</span>
+            <span class="meta-chip">🕐 ${timeAgo(a.pubDate)}</span>
+            <span class="meta-chip">📖 ${readTime(a.description)}</span>
+            <button class="btn-read" onclick="openModal(${ALL.indexOf(a)})">Read Article →</button>
+          </div>
+        </div>
+      </div>
+    </div>`;
+}
+
+function renderGrid(list) {
+  if (!list.length) { document.getElementById('grid-wrap').innerHTML = ''; return; }
+  document.getElementById('grid-wrap').innerHTML = list.map((a,i) => {
+    const cat = CAT_MAP[a._category] || CAT_MAP.health;
+    const desc = (a.description||'').slice(0,130) + ((a.description||'').length>130?'…':'');
+    const idx = ALL.indexOf(a);
+    return `<div class="article-card" onclick="openModal(${idx})">
+      <span class="cat-tag ${cat.cls}">${cat.label}</span>
+      <div class="card-title">${a.title}</div>
+      <div class="card-desc">${desc || 'Tap to read more.'}</div>
+      <div class="card-footer">
+        <span class="card-source">${a.source_id||'News'} · ${timeAgo(a.pubDate)}</span>
+        <button class="card-read-btn" onclick="event.stopPropagation();openModal(${idx})">Read →</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderTrending() {
+  const tags = [
+    { tag:'#HIITWorkouts', cat:'Training', growth:'+23%', cat_key:'training' },
+    { tag:'#SportsMedicine', cat:'Health', growth:'+18%', cat_key:'health' },
+    { tag:'#PlantProtein', cat:'Nutrition', growth:'+31%', cat_key:'nutrition' },
+    { tag:'#OlympicSports', cat:'Sports', growth:'+42%', cat_key:'sports' },
+    { tag:'#MentalFitness', cat:'Wellness', growth:'+15%', cat_key:'health' }
+  ];
+  document.getElementById('trending-wrap').innerHTML = tags.map((t,i) => {
+    const count = ALL.filter(a=>a._category===t.cat_key).length;
+    const posts = Math.max(count*50, 200) + Math.floor(Math.random()*300);
+    return `<div class="trending-item">
+      <div class="trend-rank">${i+1}</div>
+      <div class="trend-text">
+        <h4>${t.tag}</h4>
+        <div class="trend-meta">${posts}+ posts · ${t.cat} <span class="growth">${t.growth}</span></div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openModal(idx) {
+  const a = ALL[idx];
+  if (!a) return;
+  const cat = CAT_MAP[a._category] || CAT_MAP.health;
+  const modal = document.getElementById('modal');
+  modal.style.display = 'flex';
+  modal.style.position = 'fixed';
+  modal.style.inset = '0';
+  modal.style.background = 'rgba(0,0,0,0.5)';
+  modal.style.zIndex = '1000';
+  modal.style.alignItems = 'center';
+  modal.style.justifyContent = 'center';
+  modal.style.padding = '1rem';
+  modal.innerHTML = `<div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-tag"><span class="cat-tag ${cat.cls}">${cat.label}</span></div>
+    <div class="modal-title">${a.title}</div>
+    <div class="modal-meta">
+      <span>📰 ${a.source_id||'News Source'}</span>
+      <span>🕐 ${timeAgo(a.pubDate)}</span>
+      <span>📖 ${readTime(a.description)}</span>
+    </div>
+    <div class="modal-body">${a.description || 'No detailed description available for this article. Click the button below to read the full article on the source website.'}</div>
+    ${a.link ? `<a href="${a.link}" target="_blank" class="btn-ext">Read full article ↗</a>` : ''}
+  </div>`;
+}
+
+function closeModal() {
+  const m = document.getElementById('modal');
+  m.style.display = 'none';
+  m.innerHTML = '';
+}
+
+function switchTab(tab, el) {
+  currentTab = tab;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  if (ALL.length) render();
+}
+
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
+init();
