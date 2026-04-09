@@ -2882,136 +2882,52 @@
     </div>
 
     <!-- newsletter -->
-    <div class="screen" id="News-Shelter">
-        <div id="diplay-news">
-
-            <!-- Header -->
-            <div class="News-header">
-                <div class="News-header-top">
-                    <div class="logo">📰</div>
-                    <div class="header-text">
-                        <h1>Sports News Hub</h1>
-                        <p>Stay updated with the latest in fitness, sports, and wellness</p>
+        <div class="screen" id="News-Shelter">
+        <div class="hub">
+            <div class="hub-header">
+                <div class="hub-title">FitNews Hub</div>
+                <div style="display:flex;gap:8px;align-items:center">
+                    <div class="live-badge">
+                        <div class="dot"></div> Live
                     </div>
-                </div>
-                <div class="stats">
-                    <div class="stat-item">
-                        <div class="stat-number blue" id="articles-today">—</div>
-                        <div class="stat-label">Articles Today</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number green" id="readers">2.4M</div>
-                        <div class="stat-label">Readers</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number purple" id="topics">—</div>
-                        <div class="stat-label">Topics</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number orange">Live</div>
-                        <div class="stat-label">Updates</div>
-                    </div>
+                    <button class="btn-read" id="refresh-btn" onclick="init()">&#8635; Refresh</button>
                 </div>
             </div>
-
-            <div class="main-content-news">
-                <div class="content-left">
-
-                    <!-- Breaking News -->
-                    <div class="section-header">
-                        <span class="section-icon">
-                            <div class="icon-flame"></div>
-                        </span>
-                        <h2 class="section-title">Breaking News</h2>
-                        <span class="live-badge">Live</span>
+            <div class="stats-bar">
+                <div class="stat-pill">Articles today: <b id="count-total">—</b></div>
+                <div class="stat-pill">Sports: <b id="count-sports">—</b></div>
+                <div class="stat-pill">Health: <b id="count-health">—</b></div>
+                <div class="stat-pill">Nutrition: <b id="count-nutrition">—</b></div>
+                <div class="stat-pill">Training: <b id="count-training">—</b></div>
+            </div>
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('all',this)">All</button>
+                <button class="tab" onclick="switchTab('sports',this)">Sports</button>
+                <button class="tab" onclick="switchTab('health',this)">Health</button>
+                <button class="tab" onclick="switchTab('nutrition',this)">Nutrition</button>
+                <button class="tab" onclick="switchTab('training',this)">Training &amp; Fitness</button>
+            </div>
+            <div class="layout">
+                <div>
+                    <div class="section-label">Breaking</div>
+                    <div id="breaking-wrap">
+                        <div class="loader"><span class="spinner"></span>Loading…</div>
                     </div>
-                    <div class="breaking-news">
-                        <div class="news-tags">
-                            <span class="tag breaking">Breaking</span>
-                            <span class="tag trending">
-                                <i class="fa-solid fa-arrow-trend-up"></i> Trending
-                            </span>
-                        </div>
-                        <div class="breaking-article" id="breaking-article">
-                            <h2>Loading top story…</h2>
-                            <p></p>
-                            <div class="article-meta">
-                                <span>
-                                    <div class="icon-timer"></div> — min read
-                                </span>
-                                <span><i class="fa-solid fa-eye"></i> —</span>
-                                <span><i class="fa-regular fa-heart"></i> —</span>
-                                <div class="article-actions">
-                                    <button class="btn-read">
-                                        <i class="fa-solid fa-book-open-reader"></i> Read
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Latest Articles -->
-                    <div class="section-header">
-                        <span class="section-icon">
-                            <div class="icon-clipboard-clock"></div>
-                        </span>
-                        <h2 class="section-title">Latest Articles</h2>
-                    </div>
-                    <div class="latest-articles">
-                        <div class="articles-grid" id="articles-grid">
-                            <p style="padding:1rem;color:#888;">Loading latest articles…</p>
-                        </div>
-                    </div>
-
+                    <div class="section-label" style="margin-top:1.5rem">Latest Articles</div>
+                    <div id="grid-wrap" class="grid"></div>
                 </div>
-
-                <!-- Sidebar -->
-                <div class="sidebar-news">
-
-                    <div class="trending-topics">
-                        <div class="section-header">
-                            <span class="section-icon"><i class="fa-solid fa-arrow-trend-up"></i></span>
-                            <h3 class="section-title">Trending Topics</h3>
-                        </div>
-                        <div id="trending-list">
-                            <p style="padding:.5rem;color:#888;">Loading…</p>
-                        </div>
+                <div class="sidebar">
+                    <div class="section-label">Trending</div>
+                    <div class="trending-box" id="trending-wrap">
+                        <div class="loader" style="padding:1rem">Loading…</div>
                     </div>
-
-                    <div class="reading-stats">
-                        <div class="section-header">
-                            <span class="section-icon">🎯</span>
-                            <h3 class="section-title">Your Reading Stats</h3>
-                        </div>
-                        <div class="stat-row">
-                            <span class="stat-label-left">Articles Read</span>
-                            <span class="stat-value">23</span>
-                        </div>
-                        <div class="stat-row">
-                            <span class="stat-label-left">Reading Time</span>
-                            <span class="stat-value" style="color:#60a5fa;">4h 12m</span>
-                        </div>
-                        <div class="stat-row">
-                            <span class="stat-label-left">Favorite Topic</span>
-                            <span class="stat-value" style="color:#10b981;">Training</span>
-                        </div>
-                        <div class="stat-row">
-                            <span class="stat-label-left">Streak</span>
-                            <span class="stat-value" style="color:#f59e0b;">7 days</span>
-                        </div>
-                    </div>
-
-                    <div class="newsletter">
-                        <div class="newsletter-icon">📧</div>
-                        <h3>Daily Sports Brief</h3>
-                        <p>Get personalized sports and fitness news delivered to your inbox</p>
-                        <a href="#" class="btn-subscribe">Subscribe Now</a>
-                    </div>
-
                 </div>
             </div>
         </div>
+
+        <div id="modal" style="display:none"></div>
     </div>
+    
     <!-- Consult -->
 
     <div class="screen" id="Expert-Consult">
