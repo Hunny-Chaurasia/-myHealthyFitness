@@ -617,251 +617,222 @@
     </div>
 
     <!-- Nutrition -->
-    <div class="screen" id="Nutrition">
-        <div class="container-nutrition">
-            <header class="header-nutrition">
-                <div class="logo-nutrition">
-                    <div class="icon-chef-hat"></div>
-                </div>
-                <div class="title-nutrition">
-                    <h1>Today's Nutrition</h1>
-                    <p class="subtitle-nutrition">Fuel your fitness journey with smart eating</p>
-                </div>
-            </header>
+    <div class="nutrition-section screen" id="Nutrition">
+ 
+    <div class="container-nutrition">
 
-            <main class="main-content-nutrition">
-                <div class="stats-grid-nutrition">
-                    <div class="stat-card-nutrition">
-                        <div class="stat-header-nutrition">
-                            <div class="stat-icon-nutrition calories-icon-nutrition">
-                                <div class="icon-salad"></div>
-                            </div>
-                            <span>Calories</span>
-                        </div>
-                        <div class="stat-value-nutrition">1245<span
-                                style="color: #6b7280; font-size: 16px;">/2200</span></div>
-                        <div class="progress-bar-nutrition">
-                            <div class="progress-fill-nutrition calories-progress-nutrition" style="width: 56.6%;">
-                            </div>
-                        </div>
-                        <div class="stat-target-nutrition">kcal</div>
-                    </div>
-
-                    <div class="stat-card-nutrition">
-                        <div class="stat-header-nutrition">
-                            <div class="stat-icon-nutrition water-icon-nutrition"><i class="fa-solid fa-droplet"></i>
-                            </div>
-                            <span>Water</span>
-                        </div>
-                        <div class="stat-value-nutrition">2.1<span style="color: #6b7280; font-size: 16px;">/3.5</span>
-                        </div>
-                        <div class="progress-bar-nutrition">
-                            <div class="progress-fill-nutrition water-progress-nutrition" style="width: 60%;"></div>
-                        </div>
-                        <div class="stat-target-nutrition">L</div>
-                    </div>
-
-                    <div class="stat-card-nutrition">
-                        <div class="stat-header-nutrition">
-                            <div class="stat-icon-nutrition protein-icon-nutrition">
-                                <div class="icon-hand-platter"></div>
-                            </div>
-                            <span>Protein</span>
-                        </div>
-                        <div class="stat-value-nutrition">89<span style="color: #6b7280; font-size: 16px;">/120</span>
-                        </div>
-                        <div class="progress-bar-nutrition">
-                            <div class="progress-fill-nutrition protein-progress-nutrition" style="width: 74.2%;"></div>
-                        </div>
-                        <div class="stat-target-nutrition">g</div>
-                    </div>
-
-                    <div class="stat-card-nutrition">
-                        <div class="stat-header-nutrition">
-                            <div class="stat-icon-nutrition fruits-icon-nutrition">
-                                <div class="icon-leafy-green"></div>
-                            </div>
-                            <span>Fruits & Veggies</span>
-                        </div>
-                        <div class="stat-value-nutrition">5<span style="color: #6b7280; font-size: 16px;">/8</span>
-                        </div>
-                        <div class="progress-bar-nutrition">
-                            <div class="progress-fill-nutrition fruits-progress-nutrition" style="width: 62.5%;"></div>
-                        </div>
-                        <div class="stat-target-nutrition">servings</div>
-                    </div>
-                </div>
-
-                <div class="action-buttons-nutrition">
-                    <button class="btn-nutrition btn-primary-nutrition" onclick="logMeal()">
-                        <i class="fa-solid fa-plate-wheat"></i> Log Meal
-                    </button>
-                    <button class="btn-nutrition btn-secondary-nutrition" onclick="addWater()">
-                        <i class="fa-solid fa-glass-water-droplet"></i> Add Water
-                    </button>
-                    <button class="btn-nutrition btn-secondary-nutrition" onclick="scanFood()">
-                        <div class="icon-scan"></div> Scan Food
-                    </button>
-                </div>
-
-                <div class="meals-section-nutrition">
-                    <div class="section-title-nutrition">
-                        <div class="icon-utensils"></div> Today's Meals
-                    </div>
-
-                    <div class="meal-item-nutrition">
-                        <div class="meal-icon-nutrition breakfast-icon-nutrition">
-                            <div class="icon-sunrise"></div>
-                        </div>
-                        <div class="meal-details-nutrition">
-                            <div style="display: flex; align-items: center; gap: 10px;">
-                                <div class="meal-name-nutrition">Breakfast</div>
-                                <div class="meal-status-nutrition">Logged</div>
-                            </div>
-                            <div class="meal-description-nutrition">Avocado Toast & Greek Yogurt</div>
-                            <div class="meal-time-nutrition">8:30 AM</div>
-                            <div class="meal-macros-nutrition">
-                                <span class="macro-nutrition protein-macro-nutrition">18g Protein</span>
-                                <span class="macro-nutrition carbs-macro-nutrition">35g Carbs</span>
-                                <span class="macro-nutrition fat-macro-nutrition">22g Fat</span>
-                            </div>
-                        </div>
-                        <div class="meal-calories-nutrition">
-                            <div class="calories-number-nutrition">420</div>
-                            <div class="calories-label-nutrition">calories</div>
-                        </div>
-                    </div>
-
-                    <div class="meal-item-nutrition">
-                        <div class="meal-icon-nutrition lunch-icon-nutrition">
-                            <div class="icon-sun"></div>
-                        </div>
-                        <div class="meal-details-nutrition">
-                            <div style="display: flex; align-items: center; gap: 10px;">
-                                <div class="meal-name-nutrition">Lunch</div>
-                                <div class="meal-status-nutrition">Logged</div>
-                            </div>
-                            <div class="meal-description-nutrition">Grilled Chicken Salad</div>
-                            <div class="meal-time-nutrition">12:45 PM</div>
-                            <div class="meal-macros-nutrition">
-                                <span class="macro-nutrition protein-macro-nutrition">32g Protein</span>
-                                <span class="macro-nutrition carbs-macro-nutrition">15g Carbs</span>
-                                <span class="macro-nutrition fat-macro-nutrition">18g Fat</span>
-                            </div>
-                        </div>
-                        <div class="meal-calories-nutrition">
-                            <div class="calories-number-nutrition">385</div>
-                            <div class="calories-label-nutrition">calories</div>
-                        </div>
-                    </div>
-
-                    <div class="meal-item-nutrition">
-                        <div class="meal-icon-nutrition snack-icon-nutrition">
-                            <div class="icon-donut"></div>
-                        </div>
-                        <div class="meal-details-nutrition">
-                            <div style="display: flex; align-items: center; gap: 10px;">
-                                <div class="meal-name-nutrition">Snack</div>
-                                <div class="meal-status-nutrition">Logged</div>
-                            </div>
-                            <div class="meal-description-nutrition">Mixed Nuts & Apple</div>
-                            <div class="meal-time-nutrition">3:20 PM</div>
-                            <div class="meal-macros-nutrition">
-                                <span class="macro-nutrition protein-macro-nutrition">8g Protein</span>
-                                <span class="macro-nutrition carbs-macro-nutrition">28g Carbs</span>
-                                <span class="macro-nutrition fat-macro-nutrition">14g Fat</span>
-                            </div>
-                        </div>
-                        <div class="meal-calories-nutrition">
-                            <div class="calories-number-nutrition">240</div>
-                            <div class="calories-label-nutrition">calories</div>
-                        </div>
-                    </div>
-
-                    <div class="meal-item-nutrition">
-                        <div class="meal-icon-nutrition dinner-icon-nutrition">
-                            <div class="icon-sunset"></div>
-                        </div>
-                        <div class="meal-details-nutrition">
-                            <div class="meal-name-nutrition">Dinner</div>
-                            <div class="meal-description-nutrition">Salmon with Quinoa</div>
-                            <div class="meal-time-nutrition">7:00 PM</div>
-                            <div class="meal-macros-nutrition">
-                                <span class="macro-nutrition protein-macro-nutrition">35g Protein</span>
-                                <span class="macro-nutrition carbs-macro-nutrition">42g Carbs</span>
-                                <span class="macro-nutrition fat-macro-nutrition">24g Fat</span>
-                            </div>
-                        </div>
-                        <div class="meal-calories-nutrition">
-                            <div class="calories-number-nutrition">520</div>
-                            <div class="calories-label-nutrition">calories</div>
-                        </div>
-                    </div>
-                    <button class="log-meal-btn-nutrition" onclick="logMeal()">Log This Meal</button>
-                </div>
-            </main>
-
-            <aside class="sidebar-nutrition">
-                <div class="summary-card-nutrition">
-                    <div class="section-title-nutrition">
-                        <div class="icon-file-chart-column"></div> Daily Summary
-                    </div>
-                    <div class="summary-item-nutrition">
-                        <span class="summary-label-nutrition">Calories Consumed</span>
-                        <span class="summary-value-nutrition">1045 kcal</span>
-                    </div>
-                    <div class="summary-item-nutrition">
-                        <span class="summary-label-nutrition">Protein Intake</span>
-                        <span class="summary-value-nutrition">58g</span>
-                    </div>
-                    <div class="summary-item-nutrition">
-                        <span class="summary-label-nutrition">Meals Logged</span>
-                        <span class="summary-value-nutrition">3/4</span>
-                    </div>
-                    <div class="summary-item-nutrition">
-                        <span class="summary-label-nutrition">Hydration</span>
-                        <span class="summary-value-nutrition">60%</span>
-                    </div>
-                </div>
-
-                <div class="insights-card-nutrition">
-                    <div class="section-title-nutrition">
-                        <div class="icon-lightbulb"></div> Nutrition Insights
-                    </div>
-                    <div class="insight-item-nutrition">
-                        <div class="insight-title-nutrition">Great Progress!</div>
-                        <div class="insight-text-nutrition">You're on track with your protein goals. Keep it up!</div>
-                    </div>
-                    <div class="reminder-item-nutrition">
-                        <div class="reminder-title-nutrition">Reminder</div>
-                        <div class="insight-text-nutrition">Don't forget to log your dinner and reach your calorie goal.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="week-progress-nutrition">
-                    <div class="section-title-nutrition">
-                        <div class="icon-chart-pie"></div> This Week
-                    </div>
-                    <div class="week-stat-nutrition">
-                        <span class="week-label-nutrition">Nutrition Goals Met</span>
-                        <span class="week-value-nutrition">5/7 days</span>
-                    </div>
-                    <div class="progress-bar-nutrition" style="margin: 15px 0;">
-                        <div class="progress-fill-nutrition fruits-progress-nutrition" style="width: 71.4%;"></div>
-                    </div>
-                    <div class="week-stat-nutrition">
-                        <span class="week-label-nutrition">Avg Calories</span>
-                        <span class="week-value-nutrition">1,750</span>
-                    </div>
-                    <div class="week-stat-nutrition">
-                        <span class="week-label-nutrition">Avg Water</span>
-                        <span class="week-value-nutrition">2.3L</span>
-                    </div>
-                </div>
-            </aside>
+      <!-- HEADER -->
+      <header class="header-nutrition">
+        <div class="logo-nutrition">🥗</div>
+        <div class="title-nutrition">
+          <h1>Today's Nutrition</h1>
+          <p class="subtitle-nutrition">Fuel your fitness journey with smart eating</p>
         </div>
-    </div>
+      </header>
+
+      <!-- MAIN -->
+      <main class="main-content-nutrition">
+
+        <!-- STATS -->
+        <div class="stats-grid-nutrition">
+          <div class="stat-card-nutrition">
+            <div class="stat-header-nutrition">
+              <div class="stat-icon-nutrition calories-icon-nutrition">🔥</div>
+              <span>Calories</span>
+            </div>
+            <div class="stat-value-nutrition" id="stat-cal">1245<span style="color:#6b7280;font-size:15px;">/2200</span></div>
+            <div class="progress-bar-nutrition"><div class="progress-fill-nutrition calories-progress-nutrition" id="prog-cal" style="width:56.6%"></div></div>
+            <div class="stat-target-nutrition">kcal consumed</div>
+          </div>
+          <div class="stat-card-nutrition">
+            <div class="stat-header-nutrition">
+              <div class="stat-icon-nutrition water-icon-nutrition"><i class="fa-solid fa-droplet"></i></div>
+              <span>Water</span>
+            </div>
+            <div class="stat-value-nutrition" id="stat-water">2.1<span style="color:#6b7280;font-size:15px;">/3.5</span></div>
+            <div class="progress-bar-nutrition"><div class="progress-fill-nutrition water-progress-nutrition" id="prog-water" style="width:60%"></div></div>
+            <div class="stat-target-nutrition">liters today</div>
+          </div>
+          <div class="stat-card-nutrition">
+            <div class="stat-header-nutrition">
+              <div class="stat-icon-nutrition protein-icon-nutrition">💪</div>
+              <span>Protein</span>
+            </div>
+            <div class="stat-value-nutrition" id="stat-protein">89<span style="color:#6b7280;font-size:15px;">/120</span></div>
+            <div class="progress-bar-nutrition"><div class="progress-fill-nutrition protein-progress-nutrition" id="prog-protein" style="width:74.2%"></div></div>
+            <div class="stat-target-nutrition">grams intake</div>
+          </div>
+          <div class="stat-card-nutrition">
+            <div class="stat-header-nutrition">
+              <div class="stat-icon-nutrition fruits-icon-nutrition">🥦</div>
+              <span>Fruits &amp; Veggies</span>
+            </div>
+            <div class="stat-value-nutrition" id="stat-fruits">5<span style="color:#6b7280;font-size:15px;">/8</span></div>
+            <div class="progress-bar-nutrition"><div class="progress-fill-nutrition fruits-progress-nutrition" id="prog-fruits" style="width:62.5%"></div></div>
+            <div class="stat-target-nutrition">servings today</div>
+          </div>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="action-buttons-nutrition">
+          <button class="btn-nutrition btn-primary-nutrition" onclick="nutritionLogMeal()">
+            <i class="fa-solid fa-plate-wheat"></i> Log Meal
+          </button>
+          <button class="btn-nutrition btn-secondary-nutrition" onclick="nutritionAddWater()">
+            <i class="fa-solid fa-glass-water-droplet"></i> Add Water
+          </button>
+          <button class="btn-nutrition btn-secondary-nutrition" onclick="nutritionScanFood()">
+            📸 Scan Food
+          </button>
+        </div>
+
+        <!-- MEALS -->
+        <div class="meals-section-nutrition">
+          <div class="section-title-nutrition">🍽️ Today's Meals</div>
+          <div id="meals-list">
+            <div class="meal-item-nutrition">
+              <div class="meal-icon-nutrition breakfast-icon-nutrition">🌅</div>
+              <div class="meal-details-nutrition">
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px;">
+                  <div class="meal-name-nutrition">Breakfast</div>
+                  <div class="meal-status-nutrition">Logged</div>
+                </div>
+                <div class="meal-description-nutrition">Avocado Toast &amp; Greek Yogurt</div>
+                <div class="meal-time-nutrition">8:30 AM</div>
+                <div class="meal-macros-nutrition">
+                  <span class="macro-nutrition protein-macro-nutrition">18g Protein</span>
+                  <span class="macro-nutrition carbs-macro-nutrition">35g Carbs</span>
+                  <span class="macro-nutrition fat-macro-nutrition">22g Fat</span>
+                </div>
+              </div>
+              <div class="meal-calories-nutrition">
+                <div class="calories-number-nutrition">420</div>
+                <div class="calories-label-nutrition">kcal</div>
+              </div>
+            </div>
+
+            <div class="meal-item-nutrition">
+              <div class="meal-icon-nutrition lunch-icon-nutrition">☀️</div>
+              <div class="meal-details-nutrition">
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px;">
+                  <div class="meal-name-nutrition">Lunch</div>
+                  <div class="meal-status-nutrition">Logged</div>
+                </div>
+                <div class="meal-description-nutrition">Grilled Chicken Salad</div>
+                <div class="meal-time-nutrition">12:45 PM</div>
+                <div class="meal-macros-nutrition">
+                  <span class="macro-nutrition protein-macro-nutrition">32g Protein</span>
+                  <span class="macro-nutrition carbs-macro-nutrition">15g Carbs</span>
+                  <span class="macro-nutrition fat-macro-nutrition">18g Fat</span>
+                </div>
+              </div>
+              <div class="meal-calories-nutrition">
+                <div class="calories-number-nutrition">385</div>
+                <div class="calories-label-nutrition">kcal</div>
+              </div>
+            </div>
+
+            <div class="meal-item-nutrition">
+              <div class="meal-icon-nutrition snack-icon-nutrition">🍎</div>
+              <div class="meal-details-nutrition">
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px;">
+                  <div class="meal-name-nutrition">Snack</div>
+                  <div class="meal-status-nutrition">Logged</div>
+                </div>
+                <div class="meal-description-nutrition">Mixed Nuts &amp; Apple</div>
+                <div class="meal-time-nutrition">3:20 PM</div>
+                <div class="meal-macros-nutrition">
+                  <span class="macro-nutrition protein-macro-nutrition">8g Protein</span>
+                  <span class="macro-nutrition carbs-macro-nutrition">28g Carbs</span>
+                  <span class="macro-nutrition fat-macro-nutrition">14g Fat</span>
+                </div>
+              </div>
+              <div class="meal-calories-nutrition">
+                <div class="calories-number-nutrition">240</div>
+                <div class="calories-label-nutrition">kcal</div>
+              </div>
+            </div>
+
+            <div class="meal-item-nutrition" id="dinner-row">
+              <div class="meal-icon-nutrition dinner-icon-nutrition">🌇</div>
+              <div class="meal-details-nutrition">
+                <div class="meal-name-nutrition">Dinner</div>
+                <div class="meal-description-nutrition">Salmon with Quinoa</div>
+                <div class="meal-time-nutrition">7:00 PM</div>
+                <div class="meal-macros-nutrition">
+                  <span class="macro-nutrition protein-macro-nutrition">35g Protein</span>
+                  <span class="macro-nutrition carbs-macro-nutrition">42g Carbs</span>
+                  <span class="macro-nutrition fat-macro-nutrition">24g Fat</span>
+                </div>
+              </div>
+              <div class="meal-calories-nutrition">
+                <div class="calories-number-nutrition">520</div>
+                <div class="calories-label-nutrition">kcal</div>
+              </div>
+            </div>
+          </div>
+          <button class="log-meal-btn-nutrition" onclick="nutritionLogMeal()">+ Log a New Meal</button>
+        </div>
+
+      </main>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar-nutrition">
+        <div class="summary-card-nutrition">
+          <div class="section-title-nutrition" style="font-size:15px;">📊 Daily Summary</div>
+          <div class="summary-item-nutrition">
+            <span class="summary-label-nutrition">Calories Consumed</span>
+            <span class="summary-value-nutrition" id="sum-cal">1,245 kcal</span>
+          </div>
+          <div class="summary-item-nutrition">
+            <span class="summary-label-nutrition">Protein Intake</span>
+            <span class="summary-value-nutrition" id="sum-protein">89g</span>
+          </div>
+          <div class="summary-item-nutrition">
+            <span class="summary-label-nutrition">Meals Logged</span>
+            <span class="summary-value-nutrition" id="sum-meals">3/4</span>
+          </div>
+          <div class="summary-item-nutrition">
+            <span class="summary-label-nutrition">Hydration</span>
+            <span class="summary-value-nutrition" id="sum-water">60%</span>
+          </div>
+        </div>
+
+        <div class="insights-card-nutrition">
+          <div class="section-title-nutrition" style="font-size:15px;">💡 Nutrition Insights</div>
+          <div class="insight-item-nutrition">
+            <div class="insight-title-nutrition">Great Progress!</div>
+            <div class="insight-text-nutrition">You're on track with your protein goals. Keep it up!</div>
+          </div>
+          <div class="reminder-item-nutrition">
+            <div class="reminder-title-nutrition">Reminder</div>
+            <div class="insight-text-nutrition">Don't forget to log your dinner and reach your calorie goal.</div>
+          </div>
+        </div>
+
+        <div class="week-progress-nutrition">
+          <div class="section-title-nutrition" style="font-size:15px;">📅 This Week</div>
+          <div class="week-stat-nutrition">
+            <span class="week-label-nutrition">Nutrition Goals Met</span>
+            <span class="week-value-nutrition">5/7 days</span>
+          </div>
+          <div class="progress-bar-nutrition" style="margin:12px 0;">
+            <div class="progress-fill-nutrition fruits-progress-nutrition" style="width:71.4%"></div>
+          </div>
+          <div class="week-stat-nutrition">
+            <span class="week-label-nutrition">Avg Calories</span>
+            <span class="week-value-nutrition">1,750</span>
+          </div>
+          <div class="week-stat-nutrition">
+            <span class="week-label-nutrition">Avg Water</span>
+            <span class="week-value-nutrition">2.3L</span>
+          </div>
+        </div>
+      </aside>
+
+    </div><!-- /container -->
+ 
+</div>
 
     <!-- Community -->
     <div class="screen" id="Community">
