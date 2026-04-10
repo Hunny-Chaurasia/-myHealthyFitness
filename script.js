@@ -210,74 +210,624 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 // Nutrition tracking functionality
-let nutritionData = {
-  calories: { current: 1245, target: 2200 },
-  water: { current: 2.1, target: 3.5 },
-  protein: { current: 89, target: 120 },
-  fruits: { current: 5, target: 8 }
+'use strict';
+
+/* ══════════════════════════════════════════════
+   NUTRITION TRACKER — nutrition.js
+   Drop-in safe: all globals namespaced to nutrition*
+   No body/window assumptions.
+══════════════════════════════════════════════ */
+
+/* ── Gemini Config ── */
+const NUTRITION_GEMINI_KEY = 'AIzaSyDT80dAyuhtxEAEFI2R4JLmWawX14aNJ-c';
+const NUTRITION_GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${NUTRITION_GEMINI_KEY}`;
+
+/* ── App State ── */
+const nutritionState = {
+  cal:     { cur: 1245, max: 2200 },
+  water:   { cur: 2.1,  max: 3.5  },
+  protein: { cur: 89,   max: 120  },
+  fruits:  { cur: 5,    max: 8    },
+  loggedMeals: 3,
 };
 
-function updateProgress() {
-  const progressBars = document.querySelectorAll('.progress-fill-nutrition');
+/* ══════════════════════════════════════════════
+   TOAST
+══════════════════════════════════════════════ */
+let _naiToast = null;
+function naiToast(msg, icon = '✅') {
+  if (!_naiToast) {
+    _naiToast = document.createElement('div');
+    _naiToast.className = 'nai-toast';
+    document.body.appendChild(_naiToast);
+  }
+  _naiToast.innerHTML = `${icon} ${msg}`;
+  _naiToast.classList.add('show');
+  clearTimeout(_naiToast._t);
+  _naiToast._t = setTimeout(() => _naiToast.classList.remove('show'), 2800);
+}
 
-  progressBars.forEach(bar => {
-    if (bar.classList.contains('calories-progress-nutrition')) {
-      const percentage = (nutritionData.calories.current / nutritionData.calories.target) * 100;
-      bar.style.width = Math.min(percentage, 100) + '%';
+/* ══════════════════════════════════════════════
+   MODAL ENGINE
+══════════════════════════════════════════════ */
+let _naiOverlay = null;
+function naiOpenModal(title, icon, buildFn) {
+  naiCloseModal();
+  const ov = document.createElement('div');
+  ov.className = 'nai-overlay';
+  ov.addEventListener('click', e => { if (e.target === ov) naiCloseModal(); });
+
+  ov.innerHTML = `
+    <div class="nai-modal">
+      <div class="nai-modal-header">
+        <div class="nai-modal-title">${icon} ${title}</div>
+        <button class="nai-close" onclick="naiCloseModal()">✕</button>
+      </div>
+      <div class="nai-modal-body" id="_nai_mb"></div>
+    </div>`;
+
+  document.body.appendChild(ov);
+  _naiOverlay = ov;
+  buildFn(ov.querySelector('#_nai_mb'));
+}
+function naiCloseModal() {
+  if (_naiOverlay) { _naiOverlay.remove(); _naiOverlay = null; }
+}
+// Expose for inline onclick in dynamically built HTML
+window.naiCloseModal = naiCloseModal;
+
+/* ══════════════════════════════════════════════
+   STATS UPDATER
+══════════════════════════════════════════════ */
+function nutritionUpdateStats() {
+  const S = nutritionState;
+
+  const q = id => document.getElementById(id);
+
+  q('stat-cal').innerHTML =
+    `${Math.round(S.cal.cur)}<span style="color:#6b7280;font-size:15px;">/${S.cal.max}</span>`;
+  q('prog-cal').style.width =
+    Math.min(100, (S.cal.cur / S.cal.max) * 100).toFixed(1) + '%';
+
+  q('stat-water').innerHTML =
+    `${S.water.cur.toFixed(1)}<span style="color:#6b7280;font-size:15px;">/${S.water.max}</span>`;
+  q('prog-water').style.width =
+    Math.min(100, (S.water.cur / S.water.max) * 100).toFixed(1) + '%';
+
+  q('stat-protein').innerHTML =
+    `${Math.round(S.protein.cur)}<span style="color:#6b7280;font-size:15px;">/${S.protein.max}</span>`;
+  q('prog-protein').style.width =
+    Math.min(100, (S.protein.cur / S.protein.max) * 100).toFixed(1) + '%';
+
+  q('sum-cal').textContent     = Math.round(S.cal.cur).toLocaleString() + ' kcal';
+  q('sum-protein').textContent = Math.round(S.protein.cur) + 'g';
+  q('sum-meals').textContent   = S.loggedMeals + '/4';
+  q('sum-water').textContent   = Math.round((S.water.cur / S.water.max) * 100) + '%';
+}
+
+/* ══════════════════════════════════════════════
+   ADD LOGGED MEAL TO DOM
+══════════════════════════════════════════════ */
+function naiAppendMealRow(icon, name, desc, time, cal, p, c, f, logged = true) {
+  const list = document.getElementById('meals-list');
+  const div = document.createElement('div');
+  div.className = 'meal-item-nutrition';
+  div.innerHTML = `
+    <div class="meal-icon-nutrition" style="background:#22c55e15;font-size:18px;">${icon}</div>
+    <div class="meal-details-nutrition">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px;">
+        <div class="meal-name-nutrition">${naiEsc(name)}</div>
+        ${logged ? '<div class="meal-status-nutrition">Logged</div>' : ''}
+      </div>
+      <div class="meal-description-nutrition">${naiEsc(desc)}</div>
+      <div class="meal-time-nutrition">${naiEsc(time)}</div>
+      <div class="meal-macros-nutrition">
+        <span class="macro-nutrition protein-macro-nutrition">${p}g Protein</span>
+        <span class="macro-nutrition carbs-macro-nutrition">${c}g Carbs</span>
+        <span class="macro-nutrition fat-macro-nutrition">${f}g Fat</span>
+      </div>
+    </div>
+    <div class="meal-calories-nutrition">
+      <div class="calories-number-nutrition">${cal}</div>
+      <div class="calories-label-nutrition">kcal</div>
+    </div>`;
+  list.appendChild(div);
+}
+
+/* ══════════════════════════════════════════════
+   SCAN FOOD — Gemini Vision
+══════════════════════════════════════════════ */
+function nutritionScanFood() {
+  naiOpenModal('Scan Food', '📸', naiRenderUpload);
+}
+window.nutritionScanFood = nutritionScanFood;
+
+function naiRenderUpload(body) {
+  body.innerHTML = `
+    <div class="nai-upload-zone" id="_nai_uz">
+      <input type="file" id="_nai_fi" accept="image/*"/>
+      <span class="nai-upload-icon">🍽️</span>
+      <div class="nai-upload-text">Drop a food photo or tap to browse</div>
+      <div class="nai-upload-sub">JPG · PNG · WEBP — analyzed by Gemini AI Vision</div>
+    </div>
+    <button class="nai-btn nai-btn-green nai-btn-full" id="_nai_ab" style="display:none;">
+      🔍 Analyze This Food
+    </button>`;
+
+  let file = null;
+  const zone = body.querySelector('#_nai_uz');
+  const inp  = body.querySelector('#_nai_fi');
+  const btn  = body.querySelector('#_nai_ab');
+
+  zone.addEventListener('dragover',  e => { e.preventDefault(); zone.classList.add('drag-over'); });
+  zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
+  zone.addEventListener('drop', e => {
+    e.preventDefault(); zone.classList.remove('drag-over');
+    const f = e.dataTransfer.files[0];
+    if (f && f.type.startsWith('image/')) pick(f);
+  });
+  inp.addEventListener('change', () => inp.files[0] && pick(inp.files[0]));
+
+  function pick(f) {
+    file = f;
+    const url = URL.createObjectURL(f);
+    zone.innerHTML = `
+      <div class="nai-preview-wrap">
+        <img src="${url}" class="nai-preview-img" alt="preview"/>
+        <button class="nai-preview-change" id="_nai_chg">↺ Change</button>
+        <input type="file" id="_nai_fi2" accept="image/*" style="display:none"/>
+      </div>`;
+    body.querySelector('#_nai_chg').addEventListener('click', e => {
+      e.stopPropagation(); body.querySelector('#_nai_fi2').click();
+    });
+    body.querySelector('#_nai_fi2').addEventListener('change', function () {
+      if (this.files[0]) pick(this.files[0]);
+    });
+    btn.style.display = 'flex';
+  }
+  btn.addEventListener('click', () => file && naiDoAnalyze(body, file));
+}
+
+/* ─── Step 1: Analyze image ─── */
+async function naiDoAnalyze(body, file) {
+  naiShowSpinner(body, 'Gemini is analyzing your food...', 'Identifying ingredients & nutrition data');
+  try {
+    const b64  = await naiToB64(file);
+    const mime = file.type || 'image/jpeg';
+
+    const prompt = `You are an expert nutritionist and food-recognition AI.
+
+Analyze the food image carefully. Respond ONLY with a single valid JSON object — no markdown, no explanation, no extra text. Use this exact structure:
+
+{
+  "identified": true,
+  "confidence": "high",
+  "food_name": "Name of dish",
+  "description": "Short description",
+  "needs_clarification": false,
+  "clarification_question": "",
+  "ingredients": ["item1", "item2"],
+  "serving_size": "e.g. 1 plate ~300g",
+  "nutrition": {
+    "calories": 400,
+    "protein_g": 25,
+    "carbs_g": 35,
+    "fat_g": 12,
+    "fiber_g": 5,
+    "sugar_g": 8,
+    "sodium_mg": 480,
+    "cholesterol_mg": 60,
+    "vitamin_c_mg": 15,
+    "calcium_mg": 80,
+    "iron_mg": 2,
+    "potassium_mg": 420
+  }
+}
+
+Rules:
+- If food is unclear, set needs_clarification: true and write a helpful clarification_question.
+- If completely unidentifiable, set identified: false, needs_clarification: true.
+- confidence: "high" | "medium" | "low"
+- Base all nutrition on the visible serving size.
+- All nutrition fields must be numbers (use 0 if unknown).`;
+
+    const raw  = await naiCallGemini(b64, mime, prompt);
+    const data = naiParseJSON(raw);
+
+    if (!data) { naiShowErr(body, 'Could not parse the AI response. Please try again.'); return; }
+
+    if (!data.identified || data.needs_clarification) {
+      naiShowClarify(body, file, data);
+    } else {
+      naiShowResults(body, data);
     }
-    if (bar.classList.contains('water-progress-nutrition')) {
-      const percentage = (nutritionData.water.current / nutritionData.water.target) * 100;
-      bar.style.width = Math.min(percentage, 100) + '%';
-    }
-    if (bar.classList.contains('protein-progress-nutrition')) {
-      const percentage = (nutritionData.protein.current / nutritionData.protein.target) * 100;
-      bar.style.width = Math.min(percentage, 100) + '%';
-    }
-    if (bar.classList.contains('fruits-progress-nutrition')) {
-      const percentage = (nutritionData.fruits.current / nutritionData.fruits.target) * 100;
-      bar.style.width = Math.min(percentage, 100) + '%';
-    }
+  } catch (e) {
+    naiShowErr(body, e.message || 'Network error. Check your connection.');
+  }
+}
+
+/* ─── Step 2: Clarification ─── */
+function naiShowClarify(body, file, data) {
+  const url = URL.createObjectURL(file);
+  body.innerHTML = `
+    <div class="nai-preview-wrap" style="margin-bottom:14px;">
+      <img src="${url}" class="nai-preview-img" alt="preview"/>
+    </div>
+    <div class="nai-clarify-box">
+      <div class="nai-clarify-title">🤔 Need a bit more info</div>
+      <div class="nai-clarify-text">${naiEsc(data.clarification_question || 'Please describe the food — ingredients, portion size, and how it was prepared.')}</div>
+      <textarea class="nai-clarify-input" id="_nai_ctxt"
+        placeholder="e.g. Grilled chicken breast with white rice and steamed broccoli, about 400g total..."></textarea>
+    </div>
+    <div class="nai-btn-row">
+      <button class="nai-btn nai-btn-secondary" onclick="naiCloseModal()">Cancel</button>
+      <button class="nai-btn nai-btn-primary" id="_nai_csub">🔍 Calculate Nutrition</button>
+    </div>`;
+
+  body.querySelector('#_nai_csub').addEventListener('click', async () => {
+    const desc = body.querySelector('#_nai_ctxt').value.trim();
+    if (!desc) { naiToast('Please describe the food first', '⚠️'); return; }
+    naiShowSpinner(body, 'Calculating from your description...', 'Combining image + text analysis');
+    try {
+      const b64  = await naiToB64(file);
+      const mime = file.type || 'image/jpeg';
+      const prompt = `You are an expert nutritionist.
+
+The user describes this food as: "${desc}"
+
+Also use the attached food image for additional context.
+
+Respond ONLY with valid JSON (no markdown, no extra text):
+
+{
+  "identified": true,
+  "confidence": "high",
+  "food_name": "Name from description",
+  "description": "Brief description",
+  "needs_clarification": false,
+  "clarification_question": "",
+  "ingredients": ["item1", "item2"],
+  "serving_size": "as described",
+  "nutrition": {
+    "calories": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0,
+    "fiber_g": 0, "sugar_g": 0, "sodium_mg": 0, "cholesterol_mg": 0,
+    "vitamin_c_mg": 0, "calcium_mg": 0, "iron_mg": 0, "potassium_mg": 0
+  }
+}
+
+Replace all 0s with real values from standard food composition databases.`;
+
+      const raw = await naiCallGemini(b64, mime, prompt);
+      const d2  = naiParseJSON(raw);
+      if (!d2) { naiShowErr(body, 'Parse failed. Please try again.'); return; }
+      naiShowResults(body, d2);
+    } catch (e) { naiShowErr(body, e.message); }
   });
 }
 
-function logMeal() {
-  alert('Meal logging feature would open here! 🍽️');
-  // In a real app, this would open a meal logging interface
-}
+/* ─── Step 3: Show results ─── */
+function naiShowResults(body, d) {
+  const n = d.nutrition;
+  const pKcal = (n.protein_g || 0) * 4;
+  const cKcal = (n.carbs_g   || 0) * 4;
+  const fKcal = (n.fat_g     || 0) * 9;
+  const tot   = pKcal + cKcal + fKcal || 1;
+  const pPct  = Math.round(pKcal / tot * 100);
+  const cPct  = Math.round(cKcal / tot * 100);
+  const fPct  = 100 - pPct - cPct;
 
-function addWater() {
-  nutritionData.water.current += 0.25;
-  if (nutritionData.water.current > nutritionData.water.target) {
-    nutritionData.water.current = nutritionData.water.target;
-  }
+  const confCfg = {
+    high:   { color: '#22c55e', bg: '#22c55e18', border: '#22c55e40' },
+    medium: { color: '#f59e0b', bg: '#f59e0b10', border: '#f59e0b35' },
+    low:    { color: '#ef4444', bg: '#ef444415', border: '#ef444440' },
+  }[d.confidence] || { color: '#9ca3af', bg: '#ffffff0a', border: '#ffffff18' };
 
-  // Update the display
-  const waterValue = document.querySelector('.stat-card-nutrition:nth-child(2) .stat-value-nutrition');
-  waterValue.innerHTML = `${nutritionData.water.current.toFixed(1)}<span style="color: #6b7280; font-size: 16px;">/${nutritionData.water.target}</span>`;
+  body.innerHTML = `
+    <div class="nai-result-header">
+      <div class="nai-food-badge">✅ ${naiEsc(d.food_name)}</div>
+      <span class="nai-confidence-badge"
+        style="color:${confCfg.color};background:${confCfg.bg};border:1px solid ${confCfg.border};">
+        ${(d.confidence || '').toUpperCase()}
+      </span>
+    </div>
 
-  updateProgress();
+    <div class="nai-serving">📐 ${naiEsc(d.serving_size || '1 serving')}${d.description ? ' · ' + naiEsc(d.description) : ''}</div>
 
-  // Show feedback
-  if (nutritionData.water.current >= nutritionData.water.target) {
-    alert('Great! You\'ve reached your daily water goal! 💧');
-  }
-}
+    <div class="nai-nutrition-grid">
+      <div class="nai-nut-card highlight">
+        <div class="nai-nut-label">Calories</div>
+        <div class="nai-nut-value">${n.calories}</div>
+        <div class="nai-nut-unit">kcal per serving</div>
+      </div>
+      <div class="nai-nut-card">
+        <div class="nai-nut-label">Protein</div>
+        <div class="nai-nut-value">${n.protein_g}<small style="font-size:13px;font-weight:400">g</small></div>
+        <div class="nai-nut-unit">muscle building</div>
+      </div>
+      <div class="nai-nut-card">
+        <div class="nai-nut-label">Carbohydrates</div>
+        <div class="nai-nut-value">${n.carbs_g}<small style="font-size:13px;font-weight:400">g</small></div>
+        <div class="nai-nut-unit">energy source</div>
+      </div>
+      <div class="nai-nut-card">
+        <div class="nai-nut-label">Total Fat</div>
+        <div class="nai-nut-value">${n.fat_g}<small style="font-size:13px;font-weight:400">g</small></div>
+        <div class="nai-nut-unit">per serving</div>
+      </div>
+      <div class="nai-nut-card">
+        <div class="nai-nut-label">Dietary Fiber</div>
+        <div class="nai-nut-value">${n.fiber_g}<small style="font-size:13px;font-weight:400">g</small></div>
+        <div class="nai-nut-unit">digestive health</div>
+      </div>
+      <div class="nai-nut-card">
+        <div class="nai-nut-label">Sugar</div>
+        <div class="nai-nut-value">${n.sugar_g}<small style="font-size:13px;font-weight:400">g</small></div>
+        <div class="nai-nut-unit">natural + added</div>
+      </div>
+    </div>
 
-function scanFood() {
-  alert('Food scanning feature would activate camera here! 📷');
-  // In a real app, this would open camera for food recognition
-}
+    <div class="nai-macro-bar-wrap">
+      <div class="nai-macro-lbl">Macro Calorie Ratio</div>
+      <div class="nai-macro-bar">
+        <div class="nai-macro-seg p" style="width:${pPct}%"></div>
+        <div class="nai-macro-seg c" style="width:${cPct}%"></div>
+        <div class="nai-macro-seg f" style="width:${fPct}%"></div>
+      </div>
+      <div class="nai-macro-legend">
+        <div class="nai-leg-item"><div class="nai-leg-dot" style="background:#a855f7"></div>Protein ${pPct}%</div>
+        <div class="nai-leg-item"><div class="nai-leg-dot" style="background:#3b82f6"></div>Carbs ${cPct}%</div>
+        <div class="nai-leg-item"><div class="nai-leg-dot" style="background:#f59e0b"></div>Fat ${fPct}%</div>
+      </div>
+    </div>
 
-// Add click animations
-document.querySelectorAll('.btn-nutrition').forEach(button => {
-  button.addEventListener('click', function () {
-    this.style.transform = 'scale(0.95)';
-    setTimeout(() => {
-      this.style.transform = '';
-    }, 150);
+    <div class="nai-micros">
+      <div class="nai-micros-title">🧪 Micronutrients</div>
+      <div class="nai-micro-grid">
+        <div class="nai-micro-row"><span class="nai-micro-name">Sodium</span><span class="nai-micro-val">${n.sodium_mg} mg</span></div>
+        <div class="nai-micro-row"><span class="nai-micro-name">Cholesterol</span><span class="nai-micro-val">${n.cholesterol_mg} mg</span></div>
+        <div class="nai-micro-row"><span class="nai-micro-name">Vitamin C</span><span class="nai-micro-val">${n.vitamin_c_mg} mg</span></div>
+        <div class="nai-micro-row"><span class="nai-micro-name">Calcium</span><span class="nai-micro-val">${n.calcium_mg} mg</span></div>
+        <div class="nai-micro-row"><span class="nai-micro-name">Iron</span><span class="nai-micro-val">${n.iron_mg} mg</span></div>
+        <div class="nai-micro-row"><span class="nai-micro-name">Potassium</span><span class="nai-micro-val">${n.potassium_mg} mg</span></div>
+      </div>
+    </div>
+
+    ${d.ingredients && d.ingredients.length ? `
+    <div class="nai-ingredients">
+      <div class="nai-ing-title">🥦 Detected Ingredients</div>
+      <div class="nai-ing-list">
+        ${d.ingredients.map(i => `<span class="nai-ing-tag">${naiEsc(i)}</span>`).join('')}
+      </div>
+    </div>` : ''}
+
+    <div class="nai-btn-row">
+      <button class="nai-btn nai-btn-secondary" onclick="nutritionScanFood()">📸 Scan Another</button>
+      <button class="nai-btn nai-btn-green" id="_nai_add">+ Add to Log</button>
+    </div>`;
+
+  body.querySelector('#_nai_add').addEventListener('click', () => {
+    nutritionState.cal.cur     += n.calories  || 0;
+    nutritionState.protein.cur += n.protein_g || 0;
+    nutritionState.loggedMeals  = Math.min(4, nutritionState.loggedMeals + 1);
+
+    const now  = new Date();
+    const time = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+    naiAppendMealRow('🍽️', d.food_name, d.description || d.food_name, time,
+      n.calories, n.protein_g, n.carbs_g, n.fat_g, true);
+
+    nutritionUpdateStats();
+    naiCloseModal();
+    naiToast(`${d.food_name} added — ${n.calories} kcal`, '🍽️');
   });
-});
+}
 
+/* ─── Error ─── */
+function naiShowErr(body, msg) {
+  body.innerHTML = `
+    <div style="text-align:center;padding:28px 0;">
+      <div style="font-size:2.5rem;margin-bottom:12px;">⚠️</div>
+      <div style="font-size:14px;font-weight:600;color:#e8eaf0;margin-bottom:6px;">Analysis Failed</div>
+      <div style="font-size:12px;color:#6b7280;margin-bottom:20px;">${naiEsc(msg)}</div>
+      <div class="nai-btn-row">
+        <button class="nai-btn nai-btn-secondary" onclick="naiCloseModal()">Cancel</button>
+        <button class="nai-btn nai-btn-primary" onclick="nutritionScanFood()">Try Again</button>
+      </div>
+    </div>`;
+}
+
+/* ─── Spinner ─── */
+function naiShowSpinner(body, txt, sub) {
+  body.innerHTML = `
+    <div class="nai-analyzing">
+      <div class="nai-spinner"></div>
+      <div class="nai-analyzing-text">${naiEsc(txt)}</div>
+      <div class="nai-analyzing-sub">${naiEsc(sub)}</div>
+    </div>`;
+}
+
+/* ══════════════════════════════════════════════
+   LOG MEAL MODAL
+══════════════════════════════════════════════ */
+function nutritionLogMeal() {
+  const icons = { Breakfast: '🌅', Lunch: '☀️', Snack: '🍎', Dinner: '🌇', Other: '🥘' };
+  naiOpenModal('Log a Meal', '🍽️', body => {
+    body.innerHTML = `
+      <div class="nai-form-group">
+        <label class="nai-label">Meal Type</label>
+        <select class="nai-select" id="_nai_mtype">
+          ${Object.keys(icons).map(k => `<option value="${k}">${icons[k]} ${k}</option>`).join('')}
+        </select>
+      </div>
+      <div class="nai-form-group">
+        <label class="nai-label">Food Description</label>
+        <input class="nai-input" id="_nai_mdesc" placeholder="e.g. Grilled salmon with quinoa and spinach"/>
+      </div>
+      <div class="nai-input-row">
+        <div class="nai-form-group">
+          <label class="nai-label">Calories (kcal)</label>
+          <input class="nai-input" id="_nai_mcal" type="number" placeholder="400" min="0"/>
+        </div>
+        <div class="nai-form-group">
+          <label class="nai-label">Protein (g)</label>
+          <input class="nai-input" id="_nai_mpro" type="number" placeholder="30" min="0"/>
+        </div>
+      </div>
+      <div class="nai-input-row">
+        <div class="nai-form-group">
+          <label class="nai-label">Carbs (g)</label>
+          <input class="nai-input" id="_nai_mcar" type="number" placeholder="45" min="0"/>
+        </div>
+        <div class="nai-form-group">
+          <label class="nai-label">Fat (g)</label>
+          <input class="nai-input" id="_nai_mfat" type="number" placeholder="14" min="0"/>
+        </div>
+      </div>
+      <div class="nai-form-group">
+        <label class="nai-label">Time</label>
+        <input class="nai-input" id="_nai_mtime" type="time" value="${naiNowTime()}"/>
+      </div>
+      <div class="nai-btn-row">
+        <button class="nai-btn nai-btn-secondary" onclick="naiCloseModal()">Cancel</button>
+        <button class="nai-btn nai-btn-green" id="_nai_msub">✅ Log Meal</button>
+      </div>`;
+
+    body.querySelector('#_nai_msub').addEventListener('click', () => {
+      const desc = body.querySelector('#_nai_mdesc').value.trim();
+      const cal  = parseInt(body.querySelector('#_nai_mcal').value)  || 0;
+      const pro  = parseInt(body.querySelector('#_nai_mpro').value)  || 0;
+      const car  = parseInt(body.querySelector('#_nai_mcar').value)  || 0;
+      const fat  = parseInt(body.querySelector('#_nai_mfat').value)  || 0;
+      const type = body.querySelector('#_nai_mtype').value;
+      const time = naiFmtTime(body.querySelector('#_nai_mtime').value);
+      if (!desc) { naiToast('Please enter a food description', '⚠️'); return; }
+
+      nutritionState.cal.cur     += cal;
+      nutritionState.protein.cur += pro;
+      nutritionState.loggedMeals  = Math.min(4, nutritionState.loggedMeals + 1);
+      naiAppendMealRow(icons[type] || '🥘', type, desc, time, cal, pro, car, fat, true);
+      nutritionUpdateStats();
+      naiCloseModal();
+      naiToast(`${type} logged — ${cal} kcal`, '✅');
+    });
+  });
+}
+window.nutritionLogMeal = nutritionLogMeal;
+
+/* ══════════════════════════════════════════════
+   ADD WATER MODAL
+══════════════════════════════════════════════ */
+function nutritionAddWater() {
+  const opts = [
+    { emoji: '🥛', label: 'Small Cup', ml: 200  },
+    { emoji: '🥤', label: 'Glass',     ml: 250  },
+    { emoji: '🍶', label: 'Bottle',    ml: 500  },
+    { emoji: '💧', label: 'Large',     ml: 750  },
+    { emoji: '🫗', label: '1 Liter',   ml: 1000 },
+    { emoji: '✏️', label: 'Custom',    ml: null },
+  ];
+  let selMl = 250;
+
+  naiOpenModal('Add Water', '💧', body => {
+    body.innerHTML = `
+      <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;">
+        Current: <strong style="color:#3b82f6;">${nutritionState.water.cur.toFixed(1)}L</strong> / ${nutritionState.water.max}L goal
+      </div>
+      <div class="nai-water-grid">
+        ${opts.map((o, i) => `
+          <button class="nai-water-opt ${o.ml === 250 ? 'sel' : ''}" data-i="${i}" data-ml="${o.ml || ''}">
+            <span class="nai-water-emoji">${o.emoji}</span>
+            <span class="nai-water-lbl">${o.label}</span>
+            ${o.ml ? `<span class="nai-water-ml">${o.ml}ml</span>` : '<span class="nai-water-ml">enter ml</span>'}
+          </button>`).join('')}
+      </div>
+      <div id="_nai_custom" style="display:none;margin-bottom:14px;">
+        <input class="nai-input" id="_nai_cml" type="number" placeholder="Enter amount in ml..." min="50" max="2000"/>
+      </div>
+      <div class="nai-btn-row">
+        <button class="nai-btn nai-btn-secondary" onclick="naiCloseModal()">Cancel</button>
+        <button class="nai-btn nai-btn-primary" id="_nai_wsub">💧 Add Water</button>
+      </div>`;
+
+    body.querySelectorAll('.nai-water-opt').forEach(btn => {
+      btn.addEventListener('click', () => {
+        body.querySelectorAll('.nai-water-opt').forEach(b => b.classList.remove('sel'));
+        btn.classList.add('sel');
+        selMl = parseInt(btn.dataset.ml) || null;
+        body.querySelector('#_nai_custom').style.display = selMl ? 'none' : 'block';
+      });
+    });
+
+    body.querySelector('#_nai_wsub').addEventListener('click', () => {
+      const ml = selMl || parseInt(body.querySelector('#_nai_cml')?.value);
+      if (!ml || ml < 50) { naiToast('Please pick or enter a valid amount', '⚠️'); return; }
+      const L = parseFloat((ml / 1000).toFixed(2));
+      nutritionState.water.cur = parseFloat(
+        Math.min(nutritionState.water.max, nutritionState.water.cur + L).toFixed(2)
+      );
+      nutritionUpdateStats();
+      naiCloseModal();
+      naiToast(`+${ml}ml water added`, '💧');
+    });
+  });
+}
+window.nutritionAddWater = nutritionAddWater;
+
+/* ══════════════════════════════════════════════
+   GEMINI API
+══════════════════════════════════════════════ */
+async function naiCallGemini(b64, mime, prompt) {
+  const res = await fetch(NUTRITION_GEMINI_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      contents: [{
+        parts: [
+          { inline_data: { mime_type: mime, data: b64 } },
+          { text: prompt }
+        ]
+      }],
+      generationConfig: { temperature: 0.15, maxOutputTokens: 1400 }
+    })
+  });
+  if (!res.ok) {
+    const e = await res.json().catch(() => ({}));
+    throw new Error(e?.error?.message || `API error ${res.status}`);
+  }
+  const d = await res.json();
+  return d?.candidates?.[0]?.content?.parts?.[0]?.text || '';
+}
+
+/* ══════════════════════════════════════════════
+   UTILS
+══════════════════════════════════════════════ */
+function naiToB64(file) {
+  return new Promise((res, rej) => {
+    const r = new FileReader();
+    r.onload  = () => res(r.result.split(',')[1]);
+    r.onerror = rej;
+    r.readAsDataURL(file);
+  });
+}
+function naiParseJSON(txt) {
+  try {
+    return JSON.parse(txt.replace(/```json\s*/gi, '').replace(/```\s*/g, '').trim());
+  } catch (_) {
+    const m = txt.match(/\{[\s\S]*\}/);
+    if (m) try { return JSON.parse(m[0]); } catch (_2) { /* fall through */ }
+    return null;
+  }
+}
+function naiEsc(s) {
+  return String(s || '').replace(/[&<>"']/g, m => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]
+  ));
+}
+function naiNowTime() { return new Date().toTimeString().slice(0, 5); }
+function naiFmtTime(t) {
+  if (!t) return new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+  const [h, m] = t.split(':').map(Number);
+  return `${h % 12 || 12}:${String(m).padStart(2, '0')} ${h < 12 ? 'AM' : 'PM'}`;
+}
 // Add hover effects for meal items
 document.querySelectorAll('.meal-item-nutrition').forEach(item => {
   item.addEventListener('mouseenter', function () {
